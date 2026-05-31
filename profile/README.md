@@ -29,7 +29,7 @@ side — pre-built native packages on every supported platform.
 
 ## Highlights
 
-- **75 indicators** across eight families (moving averages, momentum
+- **214 indicators** across eight families (moving averages, momentum
   oscillators, trend & directional, price oscillators, volatility &
   bands, trailing stops, volume, price statistics)
 - **`batch == streaming` equivalence** — every indicator passes a
