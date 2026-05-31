@@ -16,6 +16,8 @@ Python, Node.js, and WebAssembly. Every indicator is a state machine
 that updates in O(1) per new data point — same code for backtest and
 live tick.
 
+**Site:** [wickra.org](https://wickra.org) · **Docs:** [docs.wickra.org](https://docs.wickra.org)
+
 ```python
 import wickra as ta
 
@@ -55,7 +57,8 @@ side — pre-built native packages on every supported platform.
 ## Repositories
 
 - [**wickra**](https://github.com/wickra-lib/wickra) — main library (Rust core + Python / Node / WASM bindings)
-- [**wickra-docs**](https://github.com/wickra-lib/wickra-docs) — documentation site: per-indicator deep-dives (formulas, parameters, warmup), quickstarts and migration guides
+- [**wickra-docs**](https://github.com/wickra-lib/wickra-docs) — documentation site, live at [**docs.wickra.org**](https://docs.wickra.org): per-indicator deep-dives (formulas, parameters, warmup), quickstarts and migration guides
+- [**webpage**](https://github.com/wickra-lib/webpage) — marketing site, live at [**wickra.org**](https://wickra.org): landing page, live in-browser WASM demo, benchmarks, and per-language API overviews
 
 ## License
 
