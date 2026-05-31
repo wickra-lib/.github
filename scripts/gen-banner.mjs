@@ -8,10 +8,13 @@
  *
  *   1. read the canonical count from profile/README.md,
  *   2. patch it into assets/wickra-banner.svg (idempotent),
- *   3. render profile/wickra-banner.png from the SVG.
+ *   3. render profile/wickra-banner.webp from the SVG.
+ *
+ * resvg renders the SVG to a PNG buffer (deterministic font handling); sharp
+ * then encodes it as WebP, which is markedly smaller than PNG.
  *
  * The CI workflow (.github/workflows/banner.yml) runs this whenever the count
- * in profile/README.md changes and commits the refreshed PNG, so the rendered
+ * in profile/README.md changes and commits the refreshed image, so the rendered
  * org profile always shows the current banner. Run locally with:
  *   npm install && npm run gen:banner
  */
@@ -19,12 +22,13 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 import { Resvg } from '@resvg/resvg-js'
+import sharp from 'sharp'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const root = resolve(here, '..')
 const svgPath = resolve(root, 'assets/wickra-banner.svg')
 const readmePath = resolve(root, 'profile/README.md')
-const outPath = resolve(root, 'profile/wickra-banner.png')
+const outPath = resolve(root, 'profile/wickra-banner.webp')
 
 // 1. Canonical indicator count from the profile README (kept in sync by the
 //    wickra repo's sync-about.yml).
@@ -46,12 +50,16 @@ if (svg !== before) {
   console.log(`assets/wickra-banner.svg already at "${count} indicators"`)
 }
 
-// 3. Render the PNG at 3x the 1280x640 viewBox for a crisp retina banner.
-//    The SVG pins 'DejaVu Sans Mono' (present on the CI ubuntu runner), so the
-//    committed PNG renders deterministically in CI.
-const resvg = new Resvg(svg, {
+// 3. Render at 3x the 1280x640 viewBox for a crisp 4K banner. The SVG pins
+//    'DejaVu Sans Mono' (present on the CI ubuntu runner), so it renders
+//    deterministically in CI. resvg -> PNG buffer, sharp -> WebP.
+const png = new Resvg(svg, {
   fitTo: { mode: 'width', value: 3840 },
   font: { loadSystemFonts: true },
 })
-writeFileSync(outPath, resvg.render().asPng())
-console.log(`rendered profile/wickra-banner.png (3840x1920, "${count} indicators")`)
+  .render()
+  .asPng()
+
+const webp = await sharp(png).webp({ quality: 90 }).toBuffer()
+writeFileSync(outPath, webp)
+console.log(`rendered profile/wickra-banner.webp (3840x1920, "${count} indicators")`)
