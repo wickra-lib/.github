@@ -1,6 +1,6 @@
 name: Regenerate profile banner
 
-# Keeps profile/wickra-banner.png (shown at the top of the org profile) in sync
+# Keeps profile/wickra-banner.webp (shown at the top of the org profile) in sync
 # with the indicator count. The count is written into profile/README.md by the
 # wickra repo's sync-about.yml (via a PAT push, which DOES trigger this run);
 # this job re-renders the banner from the SVG and commits it back. The commit
@@ -35,12 +35,12 @@ jobs:
 
       - name: Commit the refreshed banner if it changed
         run: |
-          if git diff --quiet -- profile/wickra-banner.png assets/wickra-banner.svg; then
+          if git diff --quiet -- profile/wickra-banner.webp assets/wickra-banner.svg; then
             echo "Banner already up to date — nothing to commit."
             exit 0
           fi
           git config user.name "wickra-bot"
           git config user.email "wickra-bot@users.noreply.github.com"
-          git add profile/wickra-banner.png assets/wickra-banner.svg
+          git add profile/wickra-banner.webp assets/wickra-banner.svg
           git commit -m "chore: regenerate profile banner from current indicator count"
           git push
