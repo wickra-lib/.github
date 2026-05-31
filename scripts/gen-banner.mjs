@@ -46,12 +46,12 @@ if (svg !== before) {
   console.log(`assets/wickra-banner.svg already at "${count} indicators"`)
 }
 
-// 3. Render the PNG at 2x the 1280x640 viewBox for a crisp retina banner.
+// 3. Render the PNG at 3x the 1280x640 viewBox for a crisp retina banner.
 //    The SVG pins 'DejaVu Sans Mono' (present on the CI ubuntu runner), so the
 //    committed PNG renders deterministically in CI.
 const resvg = new Resvg(svg, {
-  fitTo: { mode: 'width', value: 2560 },
+  fitTo: { mode: 'width', value: 3840 },
   font: { loadSystemFonts: true },
 })
 writeFileSync(outPath, resvg.render().asPng())
-console.log(`rendered profile/wickra-banner.png (2560x1280, "${count} indicators")`)
+console.log(`rendered profile/wickra-banner.png (3840x1920, "${count} indicators")`)
