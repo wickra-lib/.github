@@ -42,7 +42,7 @@ side — pre-built native packages on every supported platform.
 ## Repositories
 
 - [**wickra**](https://github.com/wickra-lib/wickra) — main library (Rust core + Python / Node / WASM bindings)
-- [**wickra.wiki**](https://github.com/wickra-lib/wickra/wiki) — 84 pages of deep-dive docs (per-indicator formulas, parameters, warmup)
+- [**wickra-docs**](https://github.com/wickra-lib/wickra-docs) — documentation site: per-indicator deep-dives (formulas, parameters, warmup), quickstarts and migration guides
 
 ## License
 
