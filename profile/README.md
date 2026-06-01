@@ -44,7 +44,7 @@ side — pre-built native packages on every supported platform.
 
 ## Highlights
 
-- **231 indicators** across sixteen families (moving averages, momentum
+- **232 indicators** across sixteen families (moving averages, momentum
   oscillators, trend & directional, price oscillators, volatility & bands,
   bands & channels, trailing stops, volume, price statistics, Ehlers / cycle
   DSP, pivots & S/R, DeMark, Ichimoku, candlestick patterns, market profile,
