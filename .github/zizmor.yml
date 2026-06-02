@@ -1,0 +1,11 @@
+# zizmor configuration — https://docs.zizmor.sh/configuration/
+#
+# artipacked (banner.yml):
+#   The banner job checks out with persisted credentials on purpose: it commits
+#   and pushes the regenerated profile banner back to the repo (git commit +
+#   git push), which needs the token in the runner's git config. It uploads no
+#   artifacts, so the persisted token is never packaged or leaked; accept it.
+rules:
+  artipacked:
+    ignore:
+      - banner.yml
