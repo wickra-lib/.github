@@ -15,7 +15,8 @@
 [![Build provenance](https://img.shields.io/badge/provenance-attested-brightgreen?logo=github)](https://github.com/wickra-lib/wickra/attestations)
 
 **Streaming-first technical indicators.** Rust core with bindings for
-Python, Node.js, and WebAssembly. Every indicator is a state machine
+Python, Node.js and WebAssembly, plus a C ABI any C-capable language links
+against. Every indicator is a state machine
 that updates in O(1) per new data point — same code for backtest and
 live tick.
 
@@ -39,17 +40,21 @@ for price in live_feed:
 | Rust | `cargo add wickra` |
 | Node.js | `npm install wickra` |
 | Browser / WASM | `npm install wickra-wasm` |
+| C / C++ (C ABI) | pre-built header + library from [releases](https://github.com/wickra-lib/wickra/releases) |
 
-No C compiler, no headers, no Rust toolchain required on the install
-side — pre-built native packages on every supported platform.
+No C compiler, no headers, no Rust toolchain required to install the native
+packages — pre-built on every supported platform. The C ABI ships the same
+way: a ready-to-link `wickra.h` + shared/static library per platform.
 
 ## Highlights
 
-- **514 indicators** across sixteen families (moving averages, momentum
+- **514 indicators** across twenty-four families (moving averages, momentum
   oscillators, trend & directional, price oscillators, volatility & bands,
   bands & channels, trailing stops, volume, price statistics, Ehlers / cycle
-  DSP, pivots & S/R, DeMark, Ichimoku, candlestick patterns, market profile,
-  risk & performance)
+  DSP, pivots & S/R, DeMark, Ichimoku & charts, alt-chart bars, candlestick
+  patterns, chart patterns, harmonic patterns, Fibonacci, microstructure,
+  derivatives, market profile, market breadth, risk / performance, seasonality
+  & session)
 - **`batch == streaming` equivalence** — every indicator passes a
   bit-for-bit test that streaming results match batch results
 - **Rust core forbids `unsafe`** — every binding inherits a memory-safe
@@ -59,7 +64,7 @@ side — pre-built native packages on every supported platform.
 
 ## Repositories
 
-- [**wickra**](https://github.com/wickra-lib/wickra) — main library (Rust core + Python / Node / WASM bindings)
+- [**wickra**](https://github.com/wickra-lib/wickra) — main library (Rust core + Python / Node / WASM bindings + a C ABI for C / C++ / Go / C# / Java / R)
 - [**wickra-docs**](https://github.com/wickra-lib/wickra-docs) — documentation site, live at [**docs.wickra.org**](https://docs.wickra.org): per-indicator deep-dives (formulas, parameters, warmup), quickstarts and migration guides
 - [**webpage**](https://github.com/wickra-lib/webpage) — marketing site, live at [**wickra.org**](https://wickra.org): landing page, live in-browser WASM demo, benchmarks, and per-language API overviews
 
