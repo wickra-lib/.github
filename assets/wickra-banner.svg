@@ -41,5 +41,5 @@
 
   <line x1="118" y1="556" x2="1162" y2="556" stroke="#222a36" stroke-width="2"/>
   <text x="118" y="592" font-size="22" letter-spacing="1" fill="#5b6470">wickra.org</text>
-  <text x="1162" y="592" font-size="22" letter-spacing="1" fill="#5b6470" text-anchor="end">485 indicators · O(1) per tick</text>
+  <text x="1162" y="592" font-size="22" letter-spacing="1" fill="#5b6470" text-anchor="end">488 indicators · O(1) per tick</text>
 </svg>
