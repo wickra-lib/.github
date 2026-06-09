@@ -18,9 +18,9 @@
 [![OpenSSF Best Practices](./badges/best-practices.svg)](https://www.bestpractices.dev/projects/13094)
 [![Build provenance](./badges/provenance.svg)](https://github.com/wickra-lib/wickra/attestations)
 
-**Streaming-first technical indicators.** Rust core with bindings for
-Python, Node.js and WebAssembly, plus a C ABI any C-capable language links
-against. Every indicator is a state machine
+**Streaming-first technical indicators.** Rust core with native Python,
+Node.js and WebAssembly bindings, plus a C ABI that brings the same indicators
+to C, C++, C#, Go, Java and R. Every indicator is a state machine
 that updates in O(1) per new data point — same code for backtest and
 live tick.
 
@@ -46,9 +46,9 @@ for price in live_feed:
 | Browser / WASM | `npm install wickra-wasm` |
 | C / C++ (C ABI) | pre-built header + library from [releases](https://github.com/wickra-lib/wickra/releases) |
 | C# / .NET | `dotnet add package Wickra` |
-| Go (cgo) | `go get github.com/wickra-lib/wickra/bindings/go` |
+| Go (cgo) | `go get github.com/wickra-lib/wickra-go` |
 | Java (FFM) | `org.wickra:wickra` on Maven Central |
-| R (`.Call`) | `R CMD INSTALL bindings/r` (links the C ABI hub) |
+| R (`.Call`) | `install.packages("wickra", repos = "https://wickra-lib.r-universe.dev")` |
 
 No C compiler, no headers, no Rust toolchain required to install the native
 packages — pre-built on every supported platform. The C ABI ships the same
