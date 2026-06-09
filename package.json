@@ -4,7 +4,8 @@
   "type": "module",
   "description": "Regenerates the org-profile banner PNG from assets/wickra-banner.svg, keeping the indicator count in sync with profile/README.md.",
   "scripts": {
-    "gen:banner": "node scripts/gen-banner.mjs"
+    "gen:banner": "node scripts/gen-banner.mjs",
+    "gen:badges": "node scripts/gen-badges.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",
