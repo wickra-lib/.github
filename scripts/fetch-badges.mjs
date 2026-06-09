@@ -28,6 +28,8 @@ const badges = [
   { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra.svg?logo=npm&color=red' },
   { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.svg?logo=nuget&color=blue' },
   { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra.svg?logo=apachemaven&color=blue' },
+  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
+  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickra' },
   { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
   { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra/badge' },
   { slug: 'best-practices', src: 'https://www.bestpractices.dev/projects/13094/badge' },
@@ -59,7 +61,7 @@ for (const b of badges) {
     }
     // Version badges must read like a version (e.g. "v0.7.5"); anything else is
     // an upstream error (or an unpublished package, e.g. NuGet before release).
-    if (['release', 'crates', 'pypi', 'npm', 'nuget', 'maven'].includes(b.slug) && !/^v?\d/.test(valueText)) {
+    if (['release', 'crates', 'pypi', 'npm', 'nuget', 'maven', 'go', 'r-universe'].includes(b.slug) && !/^v?\d/.test(valueText)) {
       throw new Error(`version badge value is not a version: "${valueText}"`)
     }
     writeFileSync(target, svg)
