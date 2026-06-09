@@ -44,6 +44,7 @@ for price in live_feed:
 | C / C++ (C ABI) | pre-built header + library from [releases](https://github.com/wickra-lib/wickra/releases) |
 | C# / .NET | `dotnet add package Wickra` |
 | Go (cgo) | `go get github.com/wickra-lib/wickra/bindings/go` |
+| R (`.Call`) | `R CMD INSTALL bindings/r` (links the C ABI hub) |
 
 No C compiler, no headers, no Rust toolchain required to install the native
 packages — pre-built on every supported platform. The C ABI ships the same
