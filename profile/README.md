@@ -2,17 +2,18 @@
   <a href="https://wickra.org"><img src="./wickra-banner.webp" alt="Wickra — streaming-first technical indicators" width="100%"></a>
 </p>
 
-[![CI](https://github.com/wickra-lib/wickra/actions/workflows/ci.yml/badge.svg)](https://github.com/wickra-lib/wickra/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/wickra-lib/wickra/actions/workflows/codeql.yml/badge.svg)](https://github.com/wickra-lib/wickra/actions/workflows/codeql.yml)
-[![codecov](https://codecov.io/gh/wickra-lib/wickra/branch/main/graph/badge.svg)](https://codecov.io/gh/wickra-lib/wickra)
-[![GitHub release](https://img.shields.io/github/v/release/wickra-lib/wickra?logo=github&color=green)](https://github.com/wickra-lib/wickra/releases/latest)
-[![crates.io](https://img.shields.io/crates/v/wickra.svg?logo=rust&color=orange)](https://crates.io/crates/wickra)
-[![PyPI](https://img.shields.io/pypi/v/wickra.svg?logo=pypi&color=blue)](https://pypi.org/project/wickra/)
-[![npm](https://img.shields.io/npm/v/wickra.svg?logo=npm&color=red)](https://www.npmjs.com/package/wickra)
-[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue)](https://github.com/wickra-lib/wickra#license)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra/badge)](https://scorecard.dev/viewer/?uri=github.com/wickra-lib/wickra)
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/13094/badge)](https://www.bestpractices.dev/projects/13094)
-[![Build provenance](https://img.shields.io/badge/provenance-attested-brightgreen?logo=github)](https://github.com/wickra-lib/wickra/attestations)
+[![CI](./badges/ci.svg)](https://github.com/wickra-lib/wickra/actions/workflows/ci.yml)
+[![CodeQL](./badges/codeql.svg)](https://github.com/wickra-lib/wickra/actions/workflows/codeql.yml)
+[![codecov](./badges/codecov.svg)](https://codecov.io/gh/wickra-lib/wickra)
+[![GitHub release](./badges/release.svg)](https://github.com/wickra-lib/wickra/releases/latest)
+[![crates.io](./badges/crates.svg)](https://crates.io/crates/wickra)
+[![PyPI](./badges/pypi.svg)](https://pypi.org/project/wickra/)
+[![npm](./badges/npm.svg)](https://www.npmjs.com/package/wickra)
+[![NuGet](./badges/nuget.svg)](https://www.nuget.org/packages/Wickra)
+[![License: MIT OR Apache-2.0](./badges/license.svg)](https://github.com/wickra-lib/wickra#license)
+[![OpenSSF Scorecard](./badges/scorecard.svg)](https://scorecard.dev/viewer/?uri=github.com/wickra-lib/wickra)
+[![OpenSSF Best Practices](./badges/best-practices.svg)](https://www.bestpractices.dev/projects/13094)
+[![Build provenance](./badges/provenance.svg)](https://github.com/wickra-lib/wickra/attestations)
 
 **Streaming-first technical indicators.** Rust core with bindings for
 Python, Node.js and WebAssembly, plus a C ABI any C-capable language links
@@ -41,6 +42,7 @@ for price in live_feed:
 | Node.js | `npm install wickra` |
 | Browser / WASM | `npm install wickra-wasm` |
 | C / C++ (C ABI) | pre-built header + library from [releases](https://github.com/wickra-lib/wickra/releases) |
+| C# / .NET | `dotnet add package Wickra` |
 
 No C compiler, no headers, no Rust toolchain required to install the native
 packages — pre-built on every supported platform. The C ABI ships the same
