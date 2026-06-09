@@ -25,7 +25,7 @@
   </g>
 
   <!-- mark -->
-  <svg x="130" y="144" width="300" height="300" viewBox="-3 -3 106 106">
+  <svg x="130" y="132" width="300" height="300" viewBox="-3 -3 106 106">
     <polygon points="27.5,8 72.5,8 95,50 72.5,92 27.5,92 5,50" fill="#0e1219" stroke="url(#gold)" stroke-width="3.8" stroke-linejoin="round"/>
     <polygon points="33,20 67,20 84,50 67,80 33,80 16,50" fill="none" stroke="url(#gold)" stroke-width="1.1" opacity="0.45"/>
     <rect x="47.7" y="24" width="4.6" height="52" rx="2.3" fill="#f4f0e2"/>
@@ -34,13 +34,13 @@
   </svg>
 
   <!-- wordmark -->
-  <text x="494" y="326" font-size="138" font-weight="700" letter-spacing="-6"><tspan fill="#f3efe2">wick</tspan><tspan fill="url(#gold)">ra</tspan></text>
-  <rect x="500" y="366" width="44" height="7" rx="3.5" fill="#f8cf63"/>
-  <text x="560" y="378" font-size="27" letter-spacing="1.5" fill="#717c89">streaming-first technical indicators</text>
-  <text x="500" y="426" font-size="22" letter-spacing="1" fill="#4d5663">Native · Rust core · Python · Node.js · WebAssembly</text>
-  <text x="500" y="468" font-size="22" letter-spacing="1" fill="#4d5663">C ABI hub → C / C++ · C# · Go · Java · R</text>
+  <text x="494" y="260" font-size="138" font-weight="700" letter-spacing="-6"><tspan fill="#f3efe2">wick</tspan><tspan fill="url(#gold)">ra</tspan></text>
+  <rect x="500" y="300" width="44" height="7" rx="3.5" fill="#f8cf63"/>
+  <text x="560" y="312" font-size="27" letter-spacing="1.5" fill="#717c89">streaming-first technical indicators</text>
+  <text x="500" y="360" font-size="22" letter-spacing="1" fill="#4d5663">Native · Rust core · Python · Node.js · WebAssembly</text>
+  <text x="500" y="402" font-size="20" letter-spacing="1" fill="#4d5663">C ABI hub → C / C++ · C# · Go · Java · R</text>
 
-  <line x1="100" y1="556" x2="1180" y2="556" stroke="#222a36" stroke-width="2"/>
-  <text x="100" y="592" font-size="22" letter-spacing="1" fill="#5b6470">wickra.org</text>
-  <text x="1180" y="592" font-size="22" letter-spacing="1" fill="#5b6470" text-anchor="end">514 indicators · O(1) per tick</text>
+  <line x1="80" y1="556" x2="1200" y2="556" stroke="#222a36" stroke-width="2"/>
+  <text x="80" y="592" font-size="22" letter-spacing="1" fill="#5b6470">wickra.org</text>
+  <text x="1200" y="592" font-size="22" letter-spacing="1" fill="#5b6470" text-anchor="end">514 indicators · O(1) per tick</text>
 </svg>
