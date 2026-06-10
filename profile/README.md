@@ -65,6 +65,10 @@ way: a ready-to-link `wickra.h` + shared/static library per platform.
   & session)
 - **`batch == streaming` equivalence** — every indicator passes a
   bit-for-bit test that streaming results match batch results
+- **Orders of magnitude faster in streaming** — O(1) per-tick updates run
+  **11–56×** faster than the only other incremental peer and thousands of times
+  faster than recompute-on-every-tick libraries
+  ([benchmarks](https://wickra.org/benchmarks))
 - **Rust core forbids `unsafe`** — every binding inherits a memory-safe
   implementation
 - **Verified against reference values** from TA-Lib and Wilder's
