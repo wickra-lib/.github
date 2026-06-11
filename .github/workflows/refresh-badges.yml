@@ -38,6 +38,8 @@ jobs:
           node-version: '20'
 
       - name: Fetch badge snapshots
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/fetch-badges.mjs
 
       - name: Commit if changed
