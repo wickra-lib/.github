@@ -40,6 +40,43 @@ const badges = [
 const outDir = resolve(root, 'profile/badges')
 mkdirSync(outDir, { recursive: true })
 
+// Two badges read a version from the GitHub API. shields.io's hosted
+// github/v/* endpoints share one GitHub token pool that frequently answers
+// "Unable to select next GitHub token from pool" instead of a value, which then
+// freezes the snapshot at the last good version (release stuck at 0.8.6 while
+// 0.8.8 was live). Resolve those two ourselves with the workflow's
+// authenticated token and point the badge at a static shields render, so they
+// never depend on shields' pool. On any failure we keep the shields URL already
+// in the array as a fallback and let the fetch loop's guards handle it.
+const ghJson = async (path) => {
+  const res = await fetch(`https://api.github.com/${path}`, {
+    headers: {
+      'user-agent': 'wickra-badges',
+      accept: 'application/vnd.github+json',
+      ...(process.env.GH_TOKEN ? { authorization: `Bearer ${process.env.GH_TOKEN}` } : {}),
+    },
+  })
+  if (!res.ok) throw new Error(`GitHub API ${res.status}`)
+  return res.json()
+}
+// shields static-badge message escaping: '-' -> '--', '_' -> '__', ' ' -> '_'.
+const escBadge = (s) => String(s).replace(/-/g, '--').replace(/_/g, '__').replace(/ /g, '_')
+
+for (const b of badges) {
+  try {
+    if (b.slug === 'release') {
+      const v = (await ghJson('repos/wickra-lib/wickra/releases/latest')).tag_name
+      b.src = `https://img.shields.io/badge/release-${escBadge(v)}-green?logo=github`
+    } else if (b.slug === 'go') {
+      const v = (await ghJson('repos/wickra-lib/wickra-go/tags'))[0]?.name
+      if (!v) throw new Error('no tags')
+      b.src = `https://img.shields.io/badge/go-${escBadge(v)}-00ADD8?logo=go&logoColor=white`
+    }
+  } catch (err) {
+    console.warn(`fetch-badges: resolve ${b.slug} failed (${err.message}); keeping shields fallback`)
+  }
+}
+
 let failures = 0
 for (const b of badges) {
   const target = resolve(outDir, `${b.slug}.svg`)
