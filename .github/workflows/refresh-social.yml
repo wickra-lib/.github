@@ -1,26 +1,29 @@
-name: Refresh status badges
+name: Refresh social badges
 
-# Snapshots the repo-status badge SVGs into profile/badges/ so the org profile
-# README and the main wickra README both serve them from this repo (like the
-# banner) instead of hot-linking shields.io / codecov / … at page load. Runs
-# hourly and commits only when a badge actually changed, plus on demand and on
-# any change to the generator so a fresh setup populates immediately. See
-# scripts/fetch-badges.mjs.
+# Snapshots the community/social badges — GitHub stars, forks, issues — and the
+# star-history chart into profile/badges/ so the main wickra README serves them
+# from this repo instead of hot-linking shields.io / star-history (which showed
+# shields' "token from pool" error live and froze the chart behind GitHub Camo).
+# Runs hourly and commits only when a snapshot actually changed, plus on demand
+# and on any change to the generator so a fresh setup populates immediately.
+# Sibling of refresh-badges.yml; staggered minute + own concurrency group, and
+# rebases before pushing so the two badge workflows never clash. See
+# scripts/fetch-social.mjs.
 on:
   schedule:
-    - cron: '17 * * * *' # hourly at :17
+    - cron: '37 * * * *' # hourly at :37 (offset from refresh-badges at :17)
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - scripts/fetch-badges.mjs
-      - .github/workflows/refresh-badges.yml
+      - scripts/fetch-social.mjs
+      - .github/workflows/refresh-social.yml
 
 permissions:
   contents: write
 
 concurrency:
-  group: refresh-badges
+  group: refresh-social
   cancel-in-progress: true
 
 jobs:
@@ -37,22 +40,22 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch badge snapshots
-        run: node scripts/fetch-badges.mjs
+      - name: Fetch social badge snapshots
+        run: node scripts/fetch-social.mjs
 
       - name: Commit if changed
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -z "$(git status --porcelain profile/badges)" ]; then
-            echo "badges unchanged; nothing to commit"
+            echo "social badges unchanged; nothing to commit"
             exit 0
           fi
           git config user.name "wickra-bot"
           git config user.email "wickra-bot@users.noreply.github.com"
           git add profile/badges
-          git commit -m "chore: refresh status badge snapshots"
-          # refresh-social.yml writes the same directory; rebase onto anything it
+          git commit -m "chore: refresh social badge snapshots"
+          # refresh-badges.yml writes the same directory; rebase onto anything it
           # pushed in the meantime so the two badge workflows never clash on push.
           git pull --rebase "https://github.com/${GITHUB_REPOSITORY}.git" main
           git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
