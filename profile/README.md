@@ -54,6 +54,11 @@ No C compiler, no headers, no Rust toolchain required to install the native
 packages — pre-built on every supported platform. The C ABI ships the same
 way: a ready-to-link `wickra.h` + shared/static library per platform.
 
+**Supported versions:** Rust 1.86 · Python 3.9 · Node.js 20 · WASM (any modern
+engine) · C99 · C++14 · .NET 8 · Go 1.23 · Java 22 · R ≥ 2.10 — see the
+[Requirements page](https://docs.wickra.org/Requirements) for the per-language
+detail.
+
 ## Highlights
 
 - **514 indicators** across twenty-four families (moving averages, momentum
