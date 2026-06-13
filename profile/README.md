@@ -1,22 +1,22 @@
 <p align="center">
-  <a href="https://wickra.org"><img src="./wickra-banner.webp" alt="Wickra — streaming-first technical indicators" width="100%"></a>
+  <a href="https://wickra.org"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/wickra-banner.webp?v=514" alt="Wickra — streaming-first technical indicators" width="100%"></a>
 </p>
 
-[![CI](./badges/ci.svg)](https://github.com/wickra-lib/wickra/actions/workflows/ci.yml)
-[![CodeQL](./badges/codeql.svg)](https://github.com/wickra-lib/wickra/actions/workflows/codeql.yml)
-[![codecov](./badges/codecov.svg)](https://codecov.io/gh/wickra-lib/wickra)
-[![GitHub release](./badges/release.svg)](https://github.com/wickra-lib/wickra/releases/latest)
-[![crates.io](./badges/crates.svg)](https://crates.io/crates/wickra)
-[![PyPI](./badges/pypi.svg)](https://pypi.org/project/wickra/)
-[![npm](./badges/npm.svg)](https://www.npmjs.com/package/wickra)
-[![NuGet](./badges/nuget.svg)](https://www.nuget.org/packages/Wickra)
-[![Maven Central](./badges/maven.svg)](https://central.sonatype.com/artifact/org.wickra/wickra)
-[![Go module](./badges/go.svg)](https://pkg.go.dev/github.com/wickra-lib/wickra-go)
-[![R-universe](./badges/r-universe.svg)](https://wickra-lib.r-universe.dev)
-[![License: MIT OR Apache-2.0](./badges/license.svg)](https://github.com/wickra-lib/wickra#license)
-[![OpenSSF Scorecard](./badges/scorecard.svg)](https://scorecard.dev/viewer/?uri=github.com/wickra-lib/wickra)
-[![OpenSSF Best Practices](./badges/best-practices.svg)](https://www.bestpractices.dev/projects/13094)
-[![Build provenance](./badges/provenance.svg)](https://github.com/wickra-lib/wickra/attestations)
+[![CI](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/ci.svg)](https://github.com/wickra-lib/wickra/actions/workflows/ci.yml)
+[![CodeQL](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/codeql.svg)](https://github.com/wickra-lib/wickra/actions/workflows/codeql.yml)
+[![codecov](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/codecov.svg)](https://codecov.io/gh/wickra-lib/wickra)
+[![GitHub release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/release.svg)](https://github.com/wickra-lib/wickra/releases/latest)
+[![crates.io](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/crates.svg)](https://crates.io/crates/wickra)
+[![PyPI](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/pypi.svg)](https://pypi.org/project/wickra/)
+[![npm](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/npm.svg)](https://www.npmjs.com/package/wickra)
+[![NuGet](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/nuget.svg)](https://www.nuget.org/packages/Wickra)
+[![Maven Central](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/maven.svg)](https://central.sonatype.com/artifact/org.wickra/wickra)
+[![Go module](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/go.svg)](https://pkg.go.dev/github.com/wickra-lib/wickra-go)
+[![R-universe](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/r-universe.svg)](https://wickra-lib.r-universe.dev)
+[![License: MIT OR Apache-2.0](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/license.svg)](https://github.com/wickra-lib/wickra#license)
+[![OpenSSF Scorecard](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/scorecard.svg)](https://scorecard.dev/viewer/?uri=github.com/wickra-lib/wickra)
+[![OpenSSF Best Practices](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/best-practices.svg)](https://www.bestpractices.dev/projects/13094)
+[![Build provenance](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/provenance.svg)](https://github.com/wickra-lib/wickra/attestations)
 
 **Streaming-first technical indicators.** Rust core with native Python,
 Node.js and WASM bindings, plus a C ABI that brings the same indicators
