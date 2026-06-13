@@ -19,7 +19,7 @@
 [![Build provenance](./badges/provenance.svg)](https://github.com/wickra-lib/wickra/attestations)
 
 **Streaming-first technical indicators.** Rust core with native Python,
-Node.js and WebAssembly bindings, plus a C ABI that brings the same indicators
+Node.js and WASM bindings, plus a C ABI that brings the same indicators
 to C, C++, C#, Go, Java and R. Every indicator is a state machine
 that updates in O(1) per new data point — same code for backtest and
 live tick.
@@ -45,7 +45,7 @@ for price in live_feed:
 | Node.js | `npm install wickra` |
 | Browser / WASM | `npm install wickra-wasm` |
 | C / C++ (C ABI) | pre-built header + library from [releases](https://github.com/wickra-lib/wickra/releases) |
-| C# / .NET | `dotnet add package Wickra` |
+| C# | `dotnet add package Wickra` |
 | Go (cgo) | `go get github.com/wickra-lib/wickra-go` |
 | Java (FFM) | `org.wickra:wickra` on Maven Central |
 | R (`.Call`) | `install.packages("wickra", repos = "https://wickra-lib.r-universe.dev")` |
@@ -76,7 +76,7 @@ way: a ready-to-link `wickra.h` + shared/static library per platform.
 
 ## Repositories
 
-- [**wickra**](https://github.com/wickra-lib/wickra) — main library (Rust core + Python / Node / WASM bindings + a C ABI for C / C++ / Go / C# / Java / R)
+- [**wickra**](https://github.com/wickra-lib/wickra) — main library (Rust core + Python / Node.js / WASM bindings + a C ABI for C / C++ / C# / Go / Java / R)
 - [**wickra-docs**](https://github.com/wickra-lib/wickra-docs) — documentation site, live at [**docs.wickra.org**](https://docs.wickra.org): per-indicator deep-dives (formulas, parameters, warmup), quickstarts and migration guides
 - [**webpage**](https://github.com/wickra-lib/webpage) — marketing site, live at [**wickra.org**](https://wickra.org): landing page, live in-browser WASM demo, benchmarks, and per-language API overviews
 
