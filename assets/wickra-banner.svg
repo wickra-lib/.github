@@ -34,13 +34,13 @@
   </svg>
 
   <!-- wordmark -->
-  <text x="448" y="260" font-size="138" font-weight="700" letter-spacing="-6"><tspan fill="#f3efe2">wick</tspan><tspan fill="url(#gold)">ra</tspan></text>
+  <text x="448" y="260" font-size="138" font-weight="700" letter-spacing="-6"><tspan fill="#f7f3ea">wick</tspan><tspan fill="url(#gold)">ra</tspan></text>
   <rect x="454" y="300" width="44" height="7" rx="3.5" fill="#f8cf63"/>
-  <text x="514" y="312" font-size="28" letter-spacing="1.5" fill="#c6cdd7">streaming-first technical indicators</text>
-  <text x="454" y="360" font-size="23" letter-spacing="1" fill="#a6aeba">Native · Rust core · Python · Node.js · WASM</text>
-  <text x="454" y="402" font-size="21" letter-spacing="1" fill="#a6aeba">C ABI hub → C, C++ · C# · Go · Java · R</text>
+  <text x="514" y="312" font-size="28" letter-spacing="1.5" fill="#f6f9fc">streaming-first technical indicators</text>
+  <text x="454" y="360" font-size="23" letter-spacing="1" fill="#e0e6ed">Native · Rust core · Python · Node.js · WASM</text>
+  <text x="454" y="402" font-size="21" letter-spacing="1" fill="#ccd5df">C ABI hub → C, C++ · C# · Go · Java · R</text>
 
   <line x1="80" y1="556" x2="1200" y2="556" stroke="#222a36" stroke-width="2"/>
-  <text x="80" y="592" font-size="23" letter-spacing="1" fill="#aab2be">wickra.org</text>
-  <text x="1200" y="592" font-size="23" letter-spacing="1" fill="#aab2be" text-anchor="end">514 indicators · O(1) per tick</text>
+  <text x="80" y="592" font-size="23" letter-spacing="1" fill="#b8c1cc">wickra.org</text>
+  <text x="1200" y="592" font-size="23" letter-spacing="1" fill="#b8c1cc" text-anchor="end">514 indicators · O(1) per tick</text>
 </svg>
