@@ -35,6 +35,7 @@ const badges = [
   { slug: 'best-practices', src: 'https://www.bestpractices.dev/projects/13094/badge' },
   { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
   { slug: 'docs', src: 'https://img.shields.io/badge/docs-docs.wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
+  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen?logo=checkmarx&logoColor=white' },
 ]
 
 const outDir = resolve(root, 'profile/badges')
