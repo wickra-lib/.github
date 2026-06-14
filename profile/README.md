@@ -70,6 +70,10 @@ detail.
   & session)
 - **`batch == streaming` equivalence** — every indicator passes a
   bit-for-bit test that streaming results match batch results
+- **Identical across all 10 languages — proven, not promised** — every one of
+  the 514 indicators is replayed through Rust, Python, Node.js, WASM, C, C++,
+  C#, Go, Java and R and checked bit-for-bit against the Rust reference (golden
+  fixtures, in CI)
 - **Orders of magnitude faster in streaming** — O(1) per-tick updates run
   **11–56×** faster than the only other incremental peer and thousands of times
   faster than recompute-on-every-tick libraries
