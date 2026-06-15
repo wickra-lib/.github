@@ -17,6 +17,7 @@
 [![OpenSSF Scorecard](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/scorecard.svg)](https://scorecard.dev/viewer/?uri=github.com/wickra-lib/wickra)
 [![OpenSSF Best Practices](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/best-practices.svg)](https://www.bestpractices.dev/projects/13094)
 [![Build provenance](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/provenance.svg)](https://github.com/wickra-lib/wickra/attestations)
+[![Verified across 10 languages](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/verified.svg)](https://docs.wickra.org/FAQ#do-all-the-language-bindings-compute-the-same-values)
 
 **Streaming-first technical indicators.** Rust core with native Python,
 Node.js and WASM bindings, plus a C ABI that brings the same indicators
@@ -70,6 +71,10 @@ detail.
   & session)
 - **`batch == streaming` equivalence** — every indicator passes a
   bit-for-bit test that streaming results match batch results
+- **Identical across all 10 languages — proven, not promised** — every one of
+  the 514 indicators is replayed through Rust, Python, Node.js, WASM, C, C++,
+  C#, Go, Java and R and checked bit-for-bit against the Rust reference (golden
+  fixtures, in CI)
 - **Orders of magnitude faster in streaming** — O(1) per-tick updates run
   **11–56×** faster than the only other incremental peer and thousands of times
   faster than recompute-on-every-tick libraries
