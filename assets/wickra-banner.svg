@@ -43,7 +43,7 @@
   <text x="454" y="360" font-size="23" letter-spacing="1" fill="#e0e6ed">Native · Rust core · Python · Node.js · WASM</text>
   <text x="454" y="402" font-size="21" letter-spacing="1" fill="#ccd5df">C ABI hub → C, C++ · C# · Go · Java · R</text>
 
-  <text x="1200" y="528" font-size="23" letter-spacing="1" fill="#b8c1cc" text-anchor="end">10 languages · <tspan fill="#f7f3ea">0 dependencies</tspan></text>
+  <text x="1200" y="528" font-size="23" letter-spacing="1" fill="#c2cbd5" text-anchor="end">10 languages · 0 dependencies</text>
   <line x1="80" y1="556" x2="1200" y2="556" stroke="#222a36" stroke-width="2"/>
   <text x="80" y="592" font-size="23" letter-spacing="1" fill="#b8c1cc">wickra.org</text>
   <text x="1200" y="592" font-size="23" letter-spacing="1" fill="#b8c1cc" text-anchor="end">514 indicators · O(1) per tick</text>
