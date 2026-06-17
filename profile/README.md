@@ -69,6 +69,7 @@ detail.
   patterns, chart patterns, harmonic patterns, Fibonacci, microstructure,
   derivatives, market profile, market breadth, risk / performance, seasonality
   & session)
+- **Zero third-party dependencies, in every language** — `pip install wickra` / `npm install wickra` / … pull nothing else (not even NumPy), and a complete native data layer (CSV reader, tick aggregator, resampler, live Binance WebSocket feed, historical REST fetcher) ships in the box — no pandas, `ws`, `jackson` or `jsonlite`
 - **`batch == streaming` equivalence** — every indicator passes a
   bit-for-bit test that streaming results match batch results
 - **Identical across all 10 languages — proven, not promised** — every one of
