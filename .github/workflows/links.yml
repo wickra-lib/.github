@@ -1,0 +1,29 @@
+name: Link check
+
+# External link rot is non-deterministic (third-party sites go down, rate-limit,
+# or move). The authoritative check runs on a weekly schedule and on demand and
+# fails on hard errors; on pull requests the same check runs as a NON-blocking
+# heads-up (fail: false) so a transient external hiccup never gates a merge.
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: External links (lychee)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2
+        with:
+          args: --config lychee.toml --no-progress --root-dir "${{ github.workspace }}" "*.md" "profile/*.md"
+          # Blocking on schedule/dispatch; non-blocking on pull_request.
+          fail: ${{ github.event_name != 'pull_request' }}
