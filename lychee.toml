@@ -18,6 +18,4 @@ exclude_all_private = true
 exclude = [
   'crates\.io/crates/',
   'www\.npmjs\.com/package/',
-  # TODO(deploy): drop once the wickra-live site is up.
-  'live\.wickra\.org',
 ]
