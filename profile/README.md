@@ -18,12 +18,16 @@
 [![OpenSSF Best Practices](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/best-practices.svg)](https://www.bestpractices.dev/projects/13094)
 [![Build provenance](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/provenance.svg)](https://github.com/wickra-lib/wickra/attestations)
 [![Verified across 10 languages](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/verified.svg)](https://docs.wickra.org/FAQ#do-all-the-language-bindings-compute-the-same-values)
+[![Live demo](https://img.shields.io/badge/live%20demo-live.wickra.org-3b82f6)](https://live.wickra.org)
 
 **Streaming-first technical indicators.** Rust core with native Python,
 Node.js and WASM bindings, plus a C ABI that brings the same indicators
 to C, C++, C#, Go, Java and R. Every indicator is a state machine
 that updates in O(1) per new data point — same code for backtest and
 live tick.
+
+> **▶ Live demo:** all 514 indicators over real Binance market data, in your
+> browser — **[live.wickra.org](https://live.wickra.org)** · zero backend.
 
 **Site:** [wickra.org](https://wickra.org) · **Docs:** [docs.wickra.org](https://docs.wickra.org)
 
