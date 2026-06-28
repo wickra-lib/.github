@@ -153,6 +153,12 @@ const backtestBadges = [
   { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickrabacktest' },
   { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
   { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-backtest/badge' },
+  // OpenSSF Best Practices: shows the passing/silver/gold level (not the score).
+  // Placeholder until the bestpractices.dev project is registered; swap the src
+  // to https://www.bestpractices.dev/projects/<id>/badge once it has an id.
+  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
+  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
+  { slug: 'docs', src: 'https://img.shields.io/badge/docs-backtest.wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
   { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
 ]
 
