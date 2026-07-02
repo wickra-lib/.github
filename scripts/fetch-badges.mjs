@@ -162,6 +162,30 @@ const backtestBadges = [
   { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
 ]
 
+// ---------------------------------------------------------------------------
+// Row 3 — the wickra-terminal trading terminal. Same style; terminal packages.
+// Version badges read "unreleased" until the first publish, then auto-update.
+// ---------------------------------------------------------------------------
+const terminalBadges = [
+  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-terminal/actions/workflows/ci.yml/badge.svg' },
+  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-terminal/actions/workflows/codeql.yml/badge.svg' },
+  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-terminal/branch/main/graph/badge.svg' },
+  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-terminal?logo=github&color=green' },
+  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-terminal.svg?logo=rust&color=orange' },
+  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-terminal.svg?logo=pypi&color=blue' },
+  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-terminal.svg?logo=npm&color=red' },
+  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/WickraTerminal.svg?logo=nuget&color=blue' },
+  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-terminal.svg?logo=apachemaven&color=blue' },
+  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-terminal-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
+  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickraterminal' },
+  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
+  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-terminal/badge' },
+  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
+  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
+  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
+  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
+]
+
 const f1 = await snapshot(wickraBadges, resolve(root, 'profile/badges'), {
   releaseRepo: 'wickra-lib/wickra',
   goRepo: 'wickra-lib/wickra-go',
@@ -170,5 +194,9 @@ const f2 = await snapshot(backtestBadges, resolve(root, 'profile/badges/wickra-b
   releaseRepo: 'wickra-lib/wickra-backtest',
   goRepo: 'wickra-lib/wickra-backtest-go',
 })
+const f3 = await snapshot(terminalBadges, resolve(root, 'profile/badges/wickra-terminal'), {
+  releaseRepo: 'wickra-lib/wickra-terminal',
+  goRepo: 'wickra-lib/wickra-terminal-go',
+})
 
-console.log(`fetch-badges: done (${f1 + f2} failure(s) across both rows)`)
+console.log(`fetch-badges: done (${f1 + f2 + f3} failure(s) across all rows)`)
