@@ -234,6 +234,30 @@ const screenerBadges = [
   { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
 ]
 
+// ---------------------------------------------------------------------------
+// Row 6 — the wickra-xray market-microstructure explorer. Same style; xray packages.
+// Version badges read "unreleased" until the first publish, then auto-update.
+// ---------------------------------------------------------------------------
+const xrayBadges = [
+  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-xray/actions/workflows/ci.yml/badge.svg' },
+  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-xray/actions/workflows/codeql.yml/badge.svg' },
+  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-xray/branch/main/graph/badge.svg' },
+  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-xray?logo=github&color=green' },
+  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-xray.svg?logo=rust&color=orange' },
+  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-xray.svg?logo=pypi&color=blue' },
+  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-xray.svg?logo=npm&color=red' },
+  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.Xray.svg?logo=nuget&color=blue' },
+  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-xray.svg?logo=apachemaven&color=blue' },
+  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-xray-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
+  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickraxray' },
+  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
+  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-xray/badge' },
+  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
+  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
+  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
+  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
+]
+
 const f1 = await snapshot(wickraBadges, resolve(root, 'profile/badges'), {
   releaseRepo: 'wickra-lib/wickra',
   goRepo: 'wickra-lib/wickra-go',
@@ -254,5 +278,9 @@ const f5 = await snapshot(screenerBadges, resolve(root, 'profile/badges/wickra-s
   releaseRepo: 'wickra-lib/wickra-screener',
   goRepo: 'wickra-lib/wickra-screener-go',
 })
+const f6 = await snapshot(xrayBadges, resolve(root, 'profile/badges/wickra-xray'), {
+  releaseRepo: 'wickra-lib/wickra-xray',
+  goRepo: 'wickra-lib/wickra-xray-go',
+})
 
-console.log(`fetch-badges: done (${f1 + f2 + f3 + f4 + f5} failure(s) across all rows)`)
+console.log(`fetch-badges: done (${f1 + f2 + f3 + f4 + f5 + f6} failure(s) across all rows)`)
