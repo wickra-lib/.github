@@ -31,7 +31,7 @@ live tick.
 > **▶ Live demo:** all 514 indicators over real Binance market data, in your
 > browser — **[live.wickra.org](https://live.wickra.org)** · zero backend.
 
-**Part of the [Wickra ecosystem](#repositories):** the same data-driven core and ten-language binding surface also power [wickra-exchange](https://github.com/wickra-lib/wickra-exchange), [wickra-backtest](https://github.com/wickra-lib/wickra-backtest), [wickra-terminal](https://github.com/wickra-lib/wickra-terminal), [wickra-screener](https://github.com/wickra-lib/wickra-screener) and [wickra-xray](https://github.com/wickra-lib/wickra-xray) — with **wickra-radar**, **wickra-copilot** and **wickra-shazam** on the way.
+**Part of the [Wickra ecosystem](#repositories):** the same data-driven core and ten-language binding surface also power [wickra-exchange](https://github.com/wickra-lib/wickra-exchange), [wickra-backtest](https://github.com/wickra-lib/wickra-backtest), [wickra-terminal](https://github.com/wickra-lib/wickra-terminal), [wickra-screener](https://github.com/wickra-lib/wickra-screener), [wickra-xray](https://github.com/wickra-lib/wickra-xray) and [wickra-radar](https://github.com/wickra-lib/wickra-radar) — with **wickra-copilot** and **wickra-shazam** on the way.
 
 **Site:** [wickra.org](https://wickra.org) · **Docs:** [docs.wickra.org](https://docs.wickra.org)
 
@@ -108,7 +108,7 @@ detail.
 - [**wickra-terminal**](https://github.com/wickra-lib/wickra-terminal) — the trading terminal: a TUI and a browser renderer over the stack
 - [**wickra-screener**](https://github.com/wickra-lib/wickra-screener) — parallel multi-symbol screening over 514 streaming indicators
 - [**wickra-xray**](https://github.com/wickra-lib/wickra-xray) — market-microstructure explorer: footprint, order-book heatmap, liquidation map, funding/OI divergence
-- **wickra-radar** — *(coming soon)*
+- [**wickra-radar**](https://github.com/wickra-lib/wickra-radar) — perp-universe alert radar: OI delta, funding flip, book imbalance, liquidation clusters, OI/price divergence
 - **wickra-copilot** — *(coming soon)*
 - **wickra-shazam** — *(coming soon)*
 
