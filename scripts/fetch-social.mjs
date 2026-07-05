@@ -44,10 +44,19 @@ for (const it of items) {
     const svg = await res.text()
     if (!svg.includes('<svg')) throw new Error('response is not an SVG')
     if (it.chart) {
-      // The star-history chart is a real plot: require the data line and a
-      // non-trivial size so an error/placeholder SVG never replaces a good one.
-      if (svg.length < 800 || !/<(path|polyline)\b/.test(svg)) {
-        throw new Error('chart SVG looks empty or malformed')
+      // The star-history chart is a real plot: require the data series, not just
+      // the frame. When star-history's own GitHub token pool is exhausted it
+      // still returns a full-size SVG (embedded font ~60 kB) with the two white
+      // axes drawn as <path> but no data curve — the previous guard's "has any
+      // <path>" check accepted that and overwrote a good snapshot with a blank
+      // one. A real plot draws each repo's series as a coloured (non-white,
+      // non-currentColor) stroke and labels the axis ticks, so require both.
+      const shapeCount = (svg.match(/<(?:path|polyline)\b/g) || []).length
+      const hasDataSeries = (svg.match(/stroke\s*[:=]\s*["']?#[0-9a-fA-F]{3,6}/g) || [])
+        .some((s) => !/#(?:fff|ffffff)\b/i.test(s))
+      const tickLabels = (svg.match(/<text\b/g) || []).length
+      if (svg.length < 800 || shapeCount < 3 || !hasDataSeries || tickLabels < 8) {
+        throw new Error('chart SVG has no data series (upstream returned an empty chart)')
       }
     } else {
       // A shields badge can answer HTTP 200 with a well-formed SVG whose *text*
