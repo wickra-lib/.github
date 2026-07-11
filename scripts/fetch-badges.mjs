@@ -367,6 +367,27 @@ const playgroundBadges = [
   { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
 ]
 
+// Row 12 — wickra-strategy-ci: golden/regression/property/fuzz test harness for
+// trading strategies, in ten languages plus a composite GitHub Action.
+// ---------------------------------------------------------------------------
+const strategyCiBadges = [
+  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-strategy-ci/actions/workflows/ci.yml/badge.svg' },
+  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-strategy-ci/actions/workflows/codeql.yml/badge.svg' },
+  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-strategy-ci/branch/main/graph/badge.svg' },
+  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-strategy-ci?logo=github&color=green' },
+  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-strategy-ci-cli.svg?logo=rust&color=orange' },
+  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-strategy-ci.svg?logo=pypi&color=blue' },
+  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-strategy-ci.svg?logo=npm&color=red' },
+  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.StrategyCi.svg?logo=nuget&color=004880' },
+  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-strategy-ci.svg?logo=apachemaven&color=blue' },
+  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-strategy-ci.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
+  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
+  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-strategy-ci/badge' },
+  { slug: 'best-practices', src: 'https://img.shields.io/badge/OpenSSF-best_practices-3b82f6' },
+  { slug: 'provenance', src: 'https://img.shields.io/badge/SLSA-provenance-3b82f6' },
+  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
+]
+
 const f1 = await snapshot(wickraBadges, resolve(root, 'profile/badges'), {
   releaseRepo: 'wickra-lib/wickra',
   goRepo: 'wickra-lib/wickra-go',
@@ -411,7 +432,11 @@ const f11 = await snapshot(playgroundBadges, resolve(root, 'profile/badges/wickr
   releaseRepo: 'wickra-lib/wickra-playground',
   goRepo: 'wickra-lib/wickra-playground-go',
 })
+const f12 = await snapshot(strategyCiBadges, resolve(root, 'profile/badges/wickra-strategy-ci'), {
+  releaseRepo: 'wickra-lib/wickra-strategy-ci',
+  goRepo: 'wickra-lib/wickra-strategy-ci',
+})
 
 console.log(
-  `fetch-badges: done (${f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 + f11} failure(s) across all rows)`,
+  `fetch-badges: done (${f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 + f11 + f12} failure(s) across all rows)`,
 )
