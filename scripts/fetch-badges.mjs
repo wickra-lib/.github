@@ -356,6 +356,17 @@ const gymBadges = [
   { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
 ]
 
+// ---------------------------------------------------------------------------
+// Row 11 — the wickra-playground browser demo. A static web app (no package
+// registries), so only the workflow-status and static badges the README links.
+// ---------------------------------------------------------------------------
+const playgroundBadges = [
+  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-playground/actions/workflows/ci.yml/badge.svg' },
+  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-playground/actions/workflows/codeql.yml/badge.svg' },
+  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
+  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
+]
+
 const f1 = await snapshot(wickraBadges, resolve(root, 'profile/badges'), {
   releaseRepo: 'wickra-lib/wickra',
   goRepo: 'wickra-lib/wickra-go',
@@ -396,5 +407,11 @@ const f10 = await snapshot(gymBadges, resolve(root, 'profile/badges/wickra-gym')
   releaseRepo: 'wickra-lib/wickra-gym',
   goRepo: 'wickra-lib/wickra-gym',
 })
+const f11 = await snapshot(playgroundBadges, resolve(root, 'profile/badges/wickra-playground'), {
+  releaseRepo: 'wickra-lib/wickra-playground',
+  goRepo: 'wickra-lib/wickra-playground-go',
+})
 
-console.log(`fetch-badges: done (${f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10} failure(s) across all rows)`)
+console.log(
+  `fetch-badges: done (${f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 + f11} failure(s) across all rows)`,
+)
