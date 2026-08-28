@@ -1,7 +1,7 @@
 /*
  * Snapshot the community/social badges — GitHub stars, forks, issues — and the
- * star-history chart into profile/badges/ so the main wickra README serves them
- * from this repo (like the status badges and the banner) instead of hot-linking
+ * star-history chart into profile/badges/ so the org READMEs serve them from
+ * this repo (like the status badges and the banner) instead of hot-linking
  * shields.io / star-history at page load.
  *
  * Hot-linking made the README show shields' transient "unable to select next
@@ -9,6 +9,9 @@
  * GitHub's Camo image cache (the embedded <img> is proxied + cached, while the
  * linked page renders fresh). Serving committed snapshots from this repo fixes
  * both: a broken upstream is rejected here and the last good SVG is kept.
+ *
+ * Layout mirrors fetch-badges.mjs: the main wickra repo writes to
+ * profile/badges/, every other repo to profile/badges/<repo>/.
  *
  * Run by .github/workflows/refresh-social.yml hourly (commit-if-changed) and on
  * demand. Fault-tolerant: a badge that fails to fetch (HTTP error, non-SVG, or
@@ -23,20 +26,38 @@ import { dirname, resolve } from 'node:path'
 const here = dirname(fileURLToPath(import.meta.url))
 const root = resolve(here, '..')
 
-// Mirrors the footer of the main wickra README. The shields style/colours match
-// the previously hot-linked URLs so the rendered badges are unchanged.
-const items = [
-  { slug: 'stars', src: 'https://img.shields.io/github/stars/wickra-lib/wickra?style=for-the-badge&logo=github&logoColor=white&color=ffd866' },
-  { slug: 'forks', src: 'https://img.shields.io/github/forks/wickra-lib/wickra?style=for-the-badge&logo=github&logoColor=white&color=78dce8' },
-  { slug: 'issues', src: 'https://img.shields.io/github/issues/wickra-lib/wickra?style=for-the-badge&logo=github&logoColor=white&color=ff6188' },
-  { slug: 'star-history', src: 'https://api.star-history.com/svg?repos=wickra-lib/wickra&type=Date&theme=dark', chart: true },
+// Repos that render a social footer, and where their snapshots live.
+//
+// `chart` opts a repo into the star-history plot. GitHub restricted the
+// stargazers API on 2026-06-30, so star-history now answers every repo it does
+// not collaborate on with an explanatory placeholder carrying no data series.
+// The guard below rejects that, which keeps an existing good snapshot (wickra's
+// dates from before the restriction) but can never take a *first* one. Repos
+// added after that date therefore leave `chart` off until upstream serves data
+// again — fetching it would only log an hourly failure for an unusable asset.
+const targets = [
+  { repo: 'wickra-lib/wickra', dir: 'profile/badges', chart: true },
+  { repo: 'wickra-lib/wickra-backtest', dir: 'profile/badges/wickra-backtest', chart: false },
 ]
 
-const outDir = resolve(root, 'profile/badges')
-mkdirSync(outDir, { recursive: true })
+// The shields style/colours match the previously hot-linked URLs so the
+// rendered badges are unchanged. Counts come from the repo object, which the
+// stargazers restriction does not touch — only the chart above is affected.
+const socialBadges = ({ repo, dir, chart }) => [
+  { slug: 'stars', dir, src: `https://img.shields.io/github/stars/${repo}?style=for-the-badge&logo=github&logoColor=white&color=ffd866` },
+  { slug: 'forks', dir, src: `https://img.shields.io/github/forks/${repo}?style=for-the-badge&logo=github&logoColor=white&color=78dce8` },
+  { slug: 'issues', dir, src: `https://img.shields.io/github/issues/${repo}?style=for-the-badge&logo=github&logoColor=white&color=ff6188` },
+  ...(chart
+    ? [{ slug: 'star-history', dir, src: `https://api.star-history.com/svg?repos=${repo}&type=Date&theme=dark`, chart: true }]
+    : []),
+]
+
+const items = targets.flatMap(socialBadges)
 
 let failures = 0
 for (const it of items) {
+  const outDir = resolve(root, it.dir)
+  mkdirSync(outDir, { recursive: true })
   const target = resolve(outDir, `${it.slug}.svg`)
   try {
     const res = await fetch(it.src, { redirect: 'follow' })
@@ -45,8 +66,8 @@ for (const it of items) {
     if (!svg.includes('<svg')) throw new Error('response is not an SVG')
     if (it.chart) {
       // The star-history chart is a real plot: require the data series, not just
-      // the frame. When star-history's own GitHub token pool is exhausted it
-      // still returns a full-size SVG (embedded font ~60 kB) with the two white
+      // the frame. When star-history cannot read the stargazers list it still
+      // returns a full-size SVG (embedded font ~60 kB) with the two white
       // axes drawn as <path> but no data curve — the previous guard's "has any
       // <path>" check accepted that and overwrote a good snapshot with a blank
       // one. A real plot draws each repo's series as a coloured (non-white,
@@ -73,15 +94,15 @@ for (const it of items) {
       }
     }
     writeFileSync(target, svg)
-    console.log(`fetch-social: ${it.slug} ok`)
+    console.log(`fetch-social: ${it.dir}/${it.slug} ok`)
   } catch (err) {
     failures++
     if (existsSync(target)) {
       // keep the previous snapshot
       readFileSync(target)
-      console.warn(`fetch-social: ${it.slug} failed (${err.message}); kept previous snapshot`)
+      console.warn(`fetch-social: ${it.dir}/${it.slug} failed (${err.message}); kept previous snapshot`)
     } else {
-      console.warn(`fetch-social: ${it.slug} failed (${err.message}); no previous snapshot, skipped`)
+      console.warn(`fetch-social: ${it.dir}/${it.slug} failed (${err.message}); no previous snapshot, skipped`)
     }
   }
 }
