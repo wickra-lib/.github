@@ -182,7 +182,7 @@ const terminalBadges = [
   { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-terminal/badge' },
   { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
   { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
+  { slug: 'docs', src: 'https://img.shields.io/badge/docs-terminal.wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
   { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
 ]
 
