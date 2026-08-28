@@ -1,11 +1,12 @@
 # Organization-wide issue chooser defaults. GitHub applies this file to every
 # repository in wickra-lib that does not ship its own
-# .github/ISSUE_TEMPLATE/config.yml, which is how the ecosystem repositories
-# (Go module mirrors, marketing sites, tooling) point people at one place.
+# .github/ISSUE_TEMPLATE/config.yml — the Go module mirrors, the marketing
+# sites, and any repository added later.
 #
-# Discussions are consolidated on the organization tab, which mirrors the
-# wickra source repository. Per-repository discussion forums fragment a small
-# community across dozens of boards nobody watches.
+# The discussions link points at the organization tab, which mirrors the wickra
+# repository. Every repository also has its own discussions board; the
+# organization tab is the entry point for questions that are not about one
+# project in particular.
 #
 # Blank issues stay enabled: the repositories that inherit this file ship no
 # issue templates of their own, so disabling them would leave no way to open an
@@ -14,7 +15,7 @@ blank_issues_enabled: true
 contact_links:
   - name: Questions and ideas
     url: https://github.com/orgs/wickra-lib/discussions
-    about: Ask usage questions and share ideas for any Wickra project.
+    about: Ask usage questions and share ideas across the Wickra ecosystem.
   - name: Security report
     url: https://github.com/wickra-lib/wickra/security/advisories/new
     about: Report a vulnerability privately — do not open a public issue.
