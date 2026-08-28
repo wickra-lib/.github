@@ -1,8 +1,9 @@
 name: Refresh social badges
 
 # Snapshots the community/social badges — GitHub stars, forks, issues — and the
-# star-history chart into profile/badges/ so the main wickra README serves them
-# from this repo instead of hot-linking shields.io / star-history (which showed
+# star-history chart into profile/badges/ (the main wickra repo) and
+# profile/badges/<repo>/ (every other repo), so the org READMEs serve them from
+# this repo instead of hot-linking shields.io / star-history (which showed
 # shields' "token from pool" error live and froze the chart behind GitHub Camo).
 # Runs hourly and commits only when a snapshot actually changed, plus on demand
 # and on any change to the generator so a fresh setup populates immediately.
