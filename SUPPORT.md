@@ -4,16 +4,16 @@ This is the organization-wide support guide for the Wickra ecosystem. It
 applies to every repository under `wickra-lib` that does not ship its own
 `SUPPORT.md`.
 
-## Ask in one place
+## Where to ask
 
-All questions, ideas and general conversation belong in the organization
-discussions, regardless of which repository they concern:
+Every repository has its own discussions board, and there is an
+ecosystem-wide one:
 
 **<https://github.com/orgs/wickra-lib/discussions>**
 
-Individual repositories do not run their own discussion boards. A single board
-means questions are actually seen and answered, instead of sitting unread in one
-of several dozen forums.
+Ask in the repository your question is about. Use the organization
+discussions for anything that spans projects — comparing tools, general
+usage, or when you are unsure which repository applies.
 
 ## Documentation first
 
