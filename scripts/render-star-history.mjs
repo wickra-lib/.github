@@ -24,7 +24,7 @@ const here = dirname(fileURLToPath(import.meta.url))
 const root = resolve(here, '..')
 
 const targets = [
-  { repo: 'wickra-lib/wickra', dir: 'profile/badges' },
+  { repo: 'wickra-lib/wickra', dir: 'profile/badges/wickra' },
   { repo: 'wickra-lib/wickra-backtest', dir: 'profile/badges/wickra-backtest' },
 ]
 

@@ -388,7 +388,7 @@ const strategyCiBadges = [
   { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
 ]
 
-const f1 = await snapshot(wickraBadges, resolve(root, 'profile/badges'), {
+const f1 = await snapshot(wickraBadges, resolve(root, 'profile/badges/wickra'), {
   releaseRepo: 'wickra-lib/wickra',
   goRepo: 'wickra-lib/wickra-go',
 })

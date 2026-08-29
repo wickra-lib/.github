@@ -30,7 +30,7 @@ const root = resolve(here, '..')
 
 // Repos that render a social footer, and where their snapshots live.
 const targets = [
-  { repo: 'wickra-lib/wickra', dir: 'profile/badges' },
+  { repo: 'wickra-lib/wickra', dir: 'profile/badges/wickra' },
   { repo: 'wickra-lib/wickra-backtest', dir: 'profile/badges/wickra-backtest' },
 ]
 
