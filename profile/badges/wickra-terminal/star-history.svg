@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-label="wickra-lib/wickra-terminal star history">
+  <title>wickra-lib/wickra-terminal star history</title>
+  <rect width="800" height="400" fill="#1f2430"/>
+  <text x="62" y="26" fill="#e6e9ef" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="600">wickra-lib/wickra-terminal</text>
+  <text x="772" y="26" fill="#8a93a6" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">2 stars</text>
+  <g font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <line x1="62" y1="356.0" x2="772" y2="356.0" stroke="#333a48" stroke-width="1"/>
+  <line x1="62" y1="252.7" x2="772" y2="252.7" stroke="#333a48" stroke-width="1"/>
+  <line x1="62" y1="149.3" x2="772" y2="149.3" stroke="#333a48" stroke-width="1"/>
+  <line x1="62" y1="46.0" x2="772" y2="46.0" stroke="#333a48" stroke-width="1"/>
+  <line x1="62" y1="46" x2="62" y2="356" stroke="#8a93a6" stroke-width="1"/>
+  <line x1="62" y1="356" x2="772" y2="356" stroke="#8a93a6" stroke-width="1"/>
+  <path d="M 62.0 356.0 L 62.0 356.0 L 62.0 252.7 L 238.4 252.7 L 238.4 149.3 L 772.0 149.3 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
+  <path d="M 62.0 356.0 L 62.0 356.0 L 62.0 252.7 L 238.4 252.7 L 238.4 149.3 L 772.0 149.3" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
+  <text x="52" y="360.0" fill="#8a93a6" font-size="12" text-anchor="end">0</text>
+  <text x="52" y="256.7" fill="#8a93a6" font-size="12" text-anchor="end">1</text>
+  <text x="52" y="153.3" fill="#8a93a6" font-size="12" text-anchor="end">2</text>
+  <text x="52" y="50.0" fill="#8a93a6" font-size="12" text-anchor="end">3</text>
+  <text x="421.9" y="378" fill="#8a93a6" font-size="12" text-anchor="middle">Aug 2026</text>
+  </g>
+</svg>

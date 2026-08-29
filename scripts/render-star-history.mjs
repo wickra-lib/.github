@@ -19,14 +19,12 @@
 import { writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
+import { targets } from './repos.mjs'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const root = resolve(here, '..')
 
-const targets = [
-  { repo: 'wickra-lib/wickra', dir: 'profile/badges/wickra' },
-  { repo: 'wickra-lib/wickra-backtest', dir: 'profile/badges/wickra-backtest' },
-]
+
 
 const token = process.env.STAR_HISTORY_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_TOKEN
 if (!token) {
@@ -68,7 +66,9 @@ function yAxis(total) {
   const targetTicks = 4
   const raw = Math.max(1, total) / targetTicks
   const mag = 10 ** Math.floor(Math.log10(raw))
-  const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw) ?? 10 * mag
+  // Star counts are integers, so never step by a fraction: below three stars
+  // that rounded to duplicate axis labels ([0, 1, 1, 2, 2, 3]).
+  const step = Math.max(1, [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw) ?? 10 * mag)
   let max = Math.ceil(Math.max(1, total) / step) * step
   if (max <= total) max += step // keep the curve off the top border
   const ticks = []

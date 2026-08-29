@@ -24,15 +24,12 @@
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
+import { targets } from './repos.mjs'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const root = resolve(here, '..')
 
-// Repos that render a social footer, and where their snapshots live.
-const targets = [
-  { repo: 'wickra-lib/wickra', dir: 'profile/badges/wickra' },
-  { repo: 'wickra-lib/wickra-backtest', dir: 'profile/badges/wickra-backtest' },
-]
+
 
 // The shields style/colours match the previously hot-linked URLs so the
 // rendered badges are unchanged. Counts come from the repo object, which the

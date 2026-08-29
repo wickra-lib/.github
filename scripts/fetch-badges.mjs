@@ -19,6 +19,7 @@
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
+import { REPO_NAMES } from './repos.mjs'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const root = resolve(here, '..')
@@ -200,6 +201,16 @@ const REPOS = [
   // Publishes the CLI crate under the repo name; no language bindings.
   { repo: 'wickra-zk', set: RUST_ONLY },
 ]
+
+// Fail loudly if a repo is added to the shared list but not configured here,
+// or configured here but dropped from the list. Silent drift is how copilot,
+// radar and shazam ended up with two-month-old badges.
+const configured = REPOS.map((r) => r.repo)
+const missing = REPO_NAMES.filter((r) => !configured.includes(r))
+const extra = configured.filter((r) => !REPO_NAMES.includes(r))
+if (missing.length || extra.length) {
+  throw new Error(`fetch-badges: config out of step with repos.mjs (missing: ${missing.join(', ') || 'none'}; unknown: ${extra.join(', ') || 'none'})`)
+}
 
 function buildRow(cfg) {
   const repo = cfg.repo
