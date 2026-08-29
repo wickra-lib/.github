@@ -27,11 +27,16 @@ const root = resolve(here, '..')
 
 
 
-const token = process.env.STAR_HISTORY_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_TOKEN
-if (!token) {
+const tokenSource = ['STAR_HISTORY_TOKEN', 'GH_TOKEN', 'GITHUB_TOKEN'].find((n) => process.env[n])
+if (!tokenSource) {
   console.error('render-star-history: no token in STAR_HISTORY_TOKEN / GH_TOKEN / GITHUB_TOKEN')
   process.exit(1)
 }
+const token = process.env[tokenSource]
+// Say which token is in play. A 403 reading stargazers means either the secret
+// never arrived or it arrived without the access GitHub now requires, and the
+// error alone cannot tell those apart.
+console.log(`render-star-history: using ${tokenSource}`)
 
 // The org-wide aggregate lives beside the per-repo directories under the org
 // name, which is not a repo, so it cannot collide with one.
