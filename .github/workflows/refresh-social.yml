@@ -18,6 +18,7 @@ on:
     branches: [main]
     paths:
       - scripts/fetch-social.mjs
+      - scripts/repos.mjs
       - scripts/render-star-history.mjs
       - .github/workflows/refresh-social.yml
 

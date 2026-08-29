@@ -75,6 +75,7 @@ async function snapshot(badges, outDir, { releaseRepo, goRepo }) {
   }
 
   let failures = 0
+  let pending = 0
   for (const b of badges) {
     const target = resolve(outDir, `${b.slug}.svg`)
     try {
@@ -113,10 +114,19 @@ async function snapshot(badges, outDir, { releaseRepo, goRepo }) {
       writeFileSync(target, svg)
       console.log(`fetch-badges: ${outDir.split('badges')[1] || ''}/${b.slug} ok`)
     } catch (err) {
-      failures++
       if (existsSync(target)) {
         readFileSync(target) // keep the previous snapshot
-        console.warn(`fetch-badges: ${b.slug} failed (${err.message}); kept previous snapshot`)
+        // A version badge that cannot resolve because nothing is published yet
+        // keeps the "unreleased" snapshot on purpose. That is the design, so it
+        // is reported apart from real failures rather than inflating them.
+        const unpublished = VERSION_SLUGS.includes(b.slug) && readFileSync(target, 'utf-8').includes('unreleased')
+        if (unpublished) {
+          pending++
+          console.log(`fetch-badges: ${b.slug} still unreleased`)
+        } else {
+          failures++
+          console.warn(`fetch-badges: ${b.slug} failed (${err.message}); kept previous snapshot`)
+        }
       } else if (UNRELEASED[b.slug]) {
         // Nothing published yet. Write an explicit "unreleased" badge rather
         // than no file at all: a README can then carry the full row from the
@@ -129,17 +139,19 @@ async function snapshot(badges, outDir, { releaseRepo, goRepo }) {
           const svg = await res.text()
           if (!res.ok || !svg.includes('<svg')) throw new Error(`HTTP ${res.status}`)
           writeFileSync(target, svg)
+          pending++
           console.log(`fetch-badges: ${b.slug} unreleased placeholder written`)
-          failures--
         } catch (placeholderErr) {
+          failures++
           console.warn(`fetch-badges: ${b.slug} placeholder failed (${placeholderErr.message}); skipped`)
         }
       } else {
+        failures++
         console.warn(`fetch-badges: ${b.slug} failed (${err.message}); no previous snapshot, skipped`)
       }
     }
   }
-  return failures
+  return { failures, pending }
 }
 
 
@@ -193,11 +205,14 @@ if (process.argv.includes('--dry-run')) {
 }
 
 let failures = 0
+let pending = 0
 for (const cfg of REPOS) {
-  failures += await snapshot(buildRow(cfg), resolve(root, `profile/badges/${cfg.repo}`), {
+  const r = await snapshot(buildRow(cfg), resolve(root, `profile/badges/${cfg.repo}`), {
     releaseRepo: `wickra-lib/${cfg.repo}`,
     goRepo: `wickra-lib/${cfg.go ?? `${cfg.repo}-go`}`,
   })
+  failures += r.failures
+  pending += r.pending
 }
 
-console.log(`fetch-badges: done (${failures} failure(s) across ${REPOS.length} rows)`)
+console.log(`fetch-badges: done (${failures} failure(s), ${pending} awaiting a first publish, across ${REPOS.length} rows)`)
