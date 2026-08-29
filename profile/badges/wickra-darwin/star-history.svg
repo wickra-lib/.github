@@ -2,18 +2,18 @@
   <title>wickra-lib/wickra-darwin star history</title>
   <rect width="800" height="400" fill="#1f2430"/>
   <text x="62" y="26" fill="#e6e9ef" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="600">wickra-lib/wickra-darwin</text>
-  <text x="772" y="26" fill="#8a93a6" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">1 stars</text>
+  <text x="772" y="26" fill="#8a93a6" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">1 star</text>
   <g font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
   <line x1="62" y1="356.0" x2="772" y2="356.0" stroke="#333a48" stroke-width="1"/>
   <line x1="62" y1="201.0" x2="772" y2="201.0" stroke="#333a48" stroke-width="1"/>
   <line x1="62" y1="46.0" x2="772" y2="46.0" stroke="#333a48" stroke-width="1"/>
   <line x1="62" y1="46" x2="62" y2="356" stroke="#8a93a6" stroke-width="1"/>
   <line x1="62" y1="356" x2="772" y2="356" stroke="#8a93a6" stroke-width="1"/>
-  <path d="M 62.0 356.0 L 62.0 356.0 L 62.0 201.0 L 772.0 201.0 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
-  <path d="M 62.0 356.0 L 62.0 356.0 L 62.0 201.0 L 772.0 201.0" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
-  <text x="52" y="360.0" fill="#8a93a6" font-size="12" text-anchor="end">0</text>
-  <text x="52" y="205.0" fill="#8a93a6" font-size="12" text-anchor="end">1</text>
-  <text x="52" y="50.0" fill="#8a93a6" font-size="12" text-anchor="end">2</text>
-  <text x="300.3" y="378" fill="#8a93a6" font-size="12" text-anchor="middle">Aug 2026</text>
+  <path d="M 62.0 356.0 C 71.1 304.3, 80.2 201.0, 89.3 201.0 C 316.9 201.0, 544.4 201.0, 772.0 201.0 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
+  <path d="M 62.0 356.0 C 71.1 304.3, 80.2 201.0, 89.3 201.0 C 316.9 201.0, 544.4 201.0, 772.0 201.0" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
+  <text x="50" y="361.0" fill="#8a93a6" font-size="15" text-anchor="end">0</text>
+  <text x="50" y="206.0" fill="#8a93a6" font-size="15" text-anchor="end">1</text>
+  <text x="50" y="51.0" fill="#8a93a6" font-size="15" text-anchor="end">2</text>
+  <text x="318.4" y="378" fill="#8a93a6" font-size="12" text-anchor="middle">Aug 2026</text>
   </g>
 </svg>

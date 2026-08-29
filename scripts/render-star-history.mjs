@@ -90,6 +90,51 @@ function monthTicks(from, to) {
   return ticks.filter((_, i) => i % keep === 0)
 }
 
+// Monotone cubic interpolation (Fritsch-Carlson). A cumulative star count only
+// ever rises, and an ordinary spline through those points overshoots between
+// them -- it would draw the chart dipping back below a count already reached.
+// The limiter below clamps the tangents so the curve is smooth and still never
+// goes backwards. Input is screen coordinates, where the sequence descends.
+function smoothPath(points) {
+  const n = points.length
+  if (n < 2) return `M ${points[0][0].toFixed(1)} ${points[0][1].toFixed(1)}`
+  const dx = [], slope = [], tangent = new Array(n)
+  for (let i = 0; i < n - 1; i++) {
+    dx[i] = points[i + 1][0] - points[i][0]
+    slope[i] = (points[i + 1][1] - points[i][1]) / dx[i]
+  }
+  tangent[0] = slope[0]
+  tangent[n - 1] = slope[n - 2]
+  for (let i = 1; i < n - 1; i++) {
+    tangent[i] = slope[i - 1] * slope[i] <= 0 ? 0 : (slope[i - 1] + slope[i]) / 2
+  }
+  for (let i = 0; i < n - 1; i++) {
+    if (slope[i] === 0) {
+      tangent[i] = 0
+      tangent[i + 1] = 0
+      continue
+    }
+    const a = tangent[i] / slope[i]
+    const b = tangent[i + 1] / slope[i]
+    const sum = a * a + b * b
+    if (sum > 9) {
+      const tau = 3 / Math.sqrt(sum)
+      tangent[i] = tau * a * slope[i]
+      tangent[i + 1] = tau * b * slope[i]
+    }
+  }
+  let d = `M ${points[0][0].toFixed(1)} ${points[0][1].toFixed(1)}`
+  for (let i = 0; i < n - 1; i++) {
+    const h = dx[i] / 3
+    const c1x = points[i][0] + h
+    const c1y = points[i][1] + tangent[i] * h
+    const c2x = points[i + 1][0] - h
+    const c2y = points[i + 1][1] - tangent[i + 1] * h
+    d += ` C ${c1x.toFixed(1)} ${c1y.toFixed(1)}, ${c2x.toFixed(1)} ${c2y.toFixed(1)}, ${points[i + 1][0].toFixed(1)} ${points[i + 1][1].toFixed(1)}`
+  }
+  return d
+}
+
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 const label = (t) => {
   const d = new Date(t)
@@ -98,8 +143,11 @@ const label = (t) => {
 
 function render(repo, dates, now) {
   const total = dates.length
-  const from = total ? dates[0] : now - 30 * 864e5
-  const to = Math.max(now, total ? dates[total - 1] : now)
+  // A margin before the first star, so the curve has somewhere to rise from.
+  const first = total ? dates[0] : now - 30 * 864e5
+  const last = Math.max(now, total ? dates[total - 1] : now)
+  const from = first - Math.max(last - first, 864e5) * 0.04
+  const to = last
   const span = Math.max(to - from, 864e5)
   const { max, ticks } = yAxis(total)
 
@@ -107,20 +155,24 @@ function render(repo, dates, now) {
   const y = (v) => PAD.top + PLOT.h - (v / max) * PLOT.h
 
   // Cumulative step path: each star is a vertical jump at the moment it landed.
-  const pts = [`M ${x(from).toFixed(1)} ${y(0).toFixed(1)}`]
-  dates.forEach((t, i) => {
-    pts.push(`L ${x(t).toFixed(1)} ${y(i).toFixed(1)}`)
-    pts.push(`L ${x(t).toFixed(1)} ${y(i + 1).toFixed(1)}`)
+  // One point per star at the moment it landed, flat to the left of the first
+  // and to the right of the last. Stars sharing a timestamp collapse to the
+  // later count, so the interpolation never divides by a zero-width step.
+  const points = [[x(from), y(0)]]
+  dates.forEach((stamp, i) => {
+    const px = x(stamp)
+    if (points.length && Math.abs(px - points[points.length - 1][0]) < 0.05) points.pop()
+    points.push([px, y(i + 1)])
   })
-  pts.push(`L ${x(to).toFixed(1)} ${y(total).toFixed(1)}`)
-  const path = pts.join(' ')
+  if (Math.abs(x(to) - points[points.length - 1][0]) >= 0.05) points.push([x(to), y(total)])
+  const path = smoothPath(points)
   const area = `${path} L ${x(to).toFixed(1)} ${y(0).toFixed(1)} L ${x(from).toFixed(1)} ${y(0).toFixed(1)} Z`
 
   const gridRows = ticks
     .map((v) => `<line x1="${PAD.left}" y1="${y(v).toFixed(1)}" x2="${PAD.left + PLOT.w}" y2="${y(v).toFixed(1)}" stroke="${GRID}" stroke-width="1"/>`)
     .join('\n  ')
   const yLabels = ticks
-    .map((v) => `<text x="${PAD.left - 10}" y="${(y(v) + 4).toFixed(1)}" fill="${AXIS}" font-size="12" text-anchor="end">${v}</text>`)
+    .map((v) => `<text x="${PAD.left - 12}" y="${(y(v) + 5).toFixed(1)}" fill="${AXIS}" font-size="15" text-anchor="end">${v}</text>`)
     .join('\n  ')
   const xLabels = monthTicks(from, to)
     .map((t) => `<text x="${x(t).toFixed(1)}" y="${PAD.top + PLOT.h + 22}" fill="${AXIS}" font-size="12" text-anchor="middle">${label(t)}</text>`)
@@ -130,7 +182,7 @@ function render(repo, dates, now) {
   <title>${esc(repo)} star history</title>
   <rect width="${W}" height="${H}" fill="${BG}"/>
   <text x="${PAD.left}" y="26" fill="${INK}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="600">${esc(repo)}</text>
-  <text x="${W - PAD.right}" y="26" fill="${AXIS}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">${total} stars</text>
+  <text x="${W - PAD.right}" y="26" fill="${AXIS}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">${total} star${total === 1 ? '' : 's'}</text>
   <g font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
   ${gridRows}
   <line x1="${PAD.left}" y1="${PAD.top}" x2="${PAD.left}" y2="${PAD.top + PLOT.h}" stroke="${AXIS}" stroke-width="1"/>
