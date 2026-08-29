@@ -172,8 +172,14 @@ function buildRow(cfg) {
   const runiv = cfg.runiv ?? repo.replaceAll('-', '')
   const verified = cfg.verified ?? 10
   const src = {
-    ci: `https://github.com/wickra-lib/${repo}/actions/workflows/ci.yml/badge.svg`,
-    codeql: `https://github.com/wickra-lib/${repo}/actions/workflows/codeql.yml/badge.svg`,
+    // Read through shields rather than GitHub's own workflow badge endpoint.
+    // GitHub renders the label as a dark slate gradient while every other badge
+    // in the row is shields' flat #555, so those two sat visibly apart. Shields
+    // shares the token pool that occasionally errors, but the guard below
+    // catches that and keeps the previous snapshot, which is the whole point of
+    // committing them here.
+    ci: `https://img.shields.io/github/actions/workflow/status/wickra-lib/${repo}/ci.yml?branch=main&label=CI&logo=github`,
+    codeql: `https://img.shields.io/github/actions/workflow/status/wickra-lib/${repo}/codeql.yml?branch=main&label=CodeQL&logo=github`,
     codecov: `https://codecov.io/gh/wickra-lib/${repo}/branch/main/graph/badge.svg`,
     release: `https://img.shields.io/github/v/release/wickra-lib/${repo}?logo=github&color=green`,
     crates: `https://img.shields.io/crates/v/${crate}.svg?logo=rust&color=orange`,

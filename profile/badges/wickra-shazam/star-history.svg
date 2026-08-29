@@ -11,9 +11,9 @@
   <line x1="62" y1="356" x2="772" y2="356" stroke="#8a93a6" stroke-width="1"/>
   <path d="M 62.0 356.0 C 71.1 304.3, 80.2 201.0, 89.3 201.0 C 316.9 201.0, 544.4 201.0, 772.0 201.0 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
   <path d="M 62.0 356.0 C 71.1 304.3, 80.2 201.0, 89.3 201.0 C 316.9 201.0, 544.4 201.0, 772.0 201.0" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
-  <text x="50" y="361.0" fill="#8a93a6" font-size="15" text-anchor="end">0</text>
-  <text x="50" y="206.0" fill="#8a93a6" font-size="15" text-anchor="end">1</text>
-  <text x="50" y="51.0" fill="#8a93a6" font-size="15" text-anchor="end">2</text>
-  <text x="424.1" y="378" fill="#8a93a6" font-size="12" text-anchor="middle">Aug 2026</text>
+  <text x="50" y="362.0" fill="#8a93a6" font-size="17" text-anchor="end">0</text>
+  <text x="50" y="207.0" fill="#8a93a6" font-size="17" text-anchor="end">1</text>
+  <text x="50" y="52.0" fill="#8a93a6" font-size="17" text-anchor="end">2</text>
+  <text x="424.0" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
   </g>
 </svg>

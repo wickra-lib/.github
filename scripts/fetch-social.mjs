@@ -42,6 +42,25 @@ const socialBadges = ({ repo, dir }) => [
 
 const items = targets.flatMap(socialBadges)
 
+// shields renders the for-the-badge style with square corners and offers no
+// option to change it. These are snapshotted here rather than hot-linked, so
+// the corners are rounded on the way in: clip the whole badge to a rounded
+// rect of its own size. Every README points at these same files, so one pass
+// here rounds the footer in all of them.
+const RADIUS = 6
+function roundCorners(svg) {
+  const open = svg.match(/<svg[^>]*>/)
+  if (!open) return svg
+  const width = open[0].match(/width="([\d.]+)"/)
+  const height = open[0].match(/height="([\d.]+)"/)
+  if (!width || !height) return svg
+  if (svg.includes('id="wkr-round"')) return svg
+  const head = open[0]
+  const body = svg.slice(open.index + head.length).replace(/<\/svg>\s*$/, '')
+  const clip = `<clipPath id="wkr-round"><rect width="${width[1]}" height="${height[1]}" rx="${RADIUS}"/></clipPath>`
+  return `${head}${clip}<g clip-path="url(#wkr-round)">${body}</g></svg>`
+}
+
 let failures = 0
 for (const it of items) {
   const outDir = resolve(root, it.dir)
@@ -64,7 +83,7 @@ for (const it of items) {
     if (errorMarkers.some((m) => valueLower.includes(m))) {
       throw new Error(`badge value is an upstream error: "${valueText}"`)
     }
-    writeFileSync(target, svg)
+    writeFileSync(target, roundCorners(svg))
     console.log(`fetch-social: ${it.dir}/${it.slug} ok`)
   } catch (err) {
     failures++

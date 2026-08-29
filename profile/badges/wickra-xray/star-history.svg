@@ -10,12 +10,12 @@
   <line x1="62" y1="46.0" x2="772" y2="46.0" stroke="#333a48" stroke-width="1"/>
   <line x1="62" y1="46" x2="62" y2="356" stroke="#8a93a6" stroke-width="1"/>
   <line x1="62" y1="356" x2="772" y2="356" stroke="#8a93a6" stroke-width="1"/>
-  <path d="M 62.0 356.0 C 71.1 321.6, 80.2 258.6, 89.3 252.7 C 247.4 149.3, 405.6 149.3, 563.7 149.3 C 633.1 149.3, 702.6 149.3, 772.0 149.3 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
-  <path d="M 62.0 356.0 C 71.1 321.6, 80.2 258.6, 89.3 252.7 C 247.4 149.3, 405.6 149.3, 563.7 149.3 C 633.1 149.3, 702.6 149.3, 772.0 149.3" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
-  <text x="50" y="361.0" fill="#8a93a6" font-size="15" text-anchor="end">0</text>
-  <text x="50" y="257.7" fill="#8a93a6" font-size="15" text-anchor="end">1</text>
-  <text x="50" y="154.3" fill="#8a93a6" font-size="15" text-anchor="end">2</text>
-  <text x="50" y="51.0" fill="#8a93a6" font-size="15" text-anchor="end">3</text>
-  <text x="429.7" y="378" fill="#8a93a6" font-size="12" text-anchor="middle">Aug 2026</text>
+  <path d="M 62.0 356.0 C 71.1 321.6, 80.2 258.6, 89.3 252.7 C 247.4 149.3, 405.5 149.3, 563.6 149.3 C 633.1 149.3, 702.5 149.3, 772.0 149.3 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
+  <path d="M 62.0 356.0 C 71.1 321.6, 80.2 258.6, 89.3 252.7 C 247.4 149.3, 405.5 149.3, 563.6 149.3 C 633.1 149.3, 702.5 149.3, 772.0 149.3" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
+  <text x="50" y="362.0" fill="#8a93a6" font-size="17" text-anchor="end">0</text>
+  <text x="50" y="258.7" fill="#8a93a6" font-size="17" text-anchor="end">1</text>
+  <text x="50" y="155.3" fill="#8a93a6" font-size="17" text-anchor="end">2</text>
+  <text x="50" y="52.0" fill="#8a93a6" font-size="17" text-anchor="end">3</text>
+  <text x="429.6" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
   </g>
 </svg>

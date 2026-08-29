@@ -172,10 +172,10 @@ function render(repo, dates, now) {
     .map((v) => `<line x1="${PAD.left}" y1="${y(v).toFixed(1)}" x2="${PAD.left + PLOT.w}" y2="${y(v).toFixed(1)}" stroke="${GRID}" stroke-width="1"/>`)
     .join('\n  ')
   const yLabels = ticks
-    .map((v) => `<text x="${PAD.left - 12}" y="${(y(v) + 5).toFixed(1)}" fill="${AXIS}" font-size="15" text-anchor="end">${v}</text>`)
+    .map((v) => `<text x="${PAD.left - 12}" y="${(y(v) + 6).toFixed(1)}" fill="${AXIS}" font-size="17" text-anchor="end">${v}</text>`)
     .join('\n  ')
   const xLabels = monthTicks(from, to)
-    .map((t) => `<text x="${x(t).toFixed(1)}" y="${PAD.top + PLOT.h + 22}" fill="${AXIS}" font-size="12" text-anchor="middle">${label(t)}</text>`)
+    .map((t) => `<text x="${x(t).toFixed(1)}" y="${PAD.top + PLOT.h + 24}" fill="${AXIS}" font-size="15" text-anchor="middle">${label(t)}</text>`)
     .join('\n  ')
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(repo)} star history">
