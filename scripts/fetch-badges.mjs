@@ -40,6 +40,18 @@ const ghJson = async (path) => {
 
 const VERSION_SLUGS = ['release', 'crates', 'pypi', 'npm', 'nuget', 'maven', 'go', 'r-universe']
 
+// Label and logo for the "unreleased" placeholder below, per version badge.
+const UNRELEASED = {
+  release: ['release', 'github'],
+  crates: ['crates.io', 'rust'],
+  pypi: ['pypi', 'pypi'],
+  npm: ['npm', 'npm'],
+  nuget: ['nuget', 'nuget'],
+  maven: ['maven--central', 'apachemaven'],
+  go: ['go', 'go'],
+  'r-universe': ['r--universe', 'r'],
+}
+
 // Snapshot one badge row into outDir. `releaseRepo` / `goRepo` resolve the two
 // version badges that read from the GitHub API (shields' hosted github/v/*
 // endpoints share a token pool that frequently errors, freezing the snapshot).
@@ -104,6 +116,23 @@ async function snapshot(badges, outDir, { releaseRepo, goRepo }) {
       if (existsSync(target)) {
         readFileSync(target) // keep the previous snapshot
         console.warn(`fetch-badges: ${b.slug} failed (${err.message}); kept previous snapshot`)
+      } else if (UNRELEASED[b.slug]) {
+        // Nothing published yet. Write an explicit "unreleased" badge rather
+        // than no file at all: a README can then carry the full row from the
+        // start, and the badge flips to the real version on the first publish
+        // without the README changing. A real version is never overwritten --
+        // this branch only runs when no snapshot exists.
+        const [label, logo] = UNRELEASED[b.slug]
+        try {
+          const res = await fetch(`https://img.shields.io/badge/${label}-unreleased-lightgrey?logo=${logo}`, { redirect: 'follow' })
+          const svg = await res.text()
+          if (!res.ok || !svg.includes('<svg')) throw new Error(`HTTP ${res.status}`)
+          writeFileSync(target, svg)
+          console.log(`fetch-badges: ${b.slug} unreleased placeholder written`)
+          failures--
+        } catch (placeholderErr) {
+          console.warn(`fetch-badges: ${b.slug} placeholder failed (${placeholderErr.message}); skipped`)
+        }
       } else {
         console.warn(`fetch-badges: ${b.slug} failed (${err.message}); no previous snapshot, skipped`)
       }
@@ -113,330 +142,110 @@ async function snapshot(badges, outDir, { releaseRepo, goRepo }) {
 }
 
 // ---------------------------------------------------------------------------
-// Row 1 — the main wickra library.
+// One entry per repo. Everything that follows the org naming convention is
+// derived; only the parts that genuinely differ are spelled out.
+//
+//   crate      published crate name          default: the repo name
+//   nuget      NuGet package id              no default -- the casing is not
+//                                            derivable (Wickra.Backtest vs
+//                                            WickraExchange vs Wickra.StrategyCi)
+//   docs       docs host                     default: wickra.org
+//   go         repo the go tag is read from  default: <repo>-go
+//   runiv      r-universe package            default: the repo name, unhyphenated
+//   verified   languages the corpus covers   default: 10
+//   set        which badges apply            default: FULL
+//   overrides  per-slug URL, for one-offs
+//
+// `set` exists because the repos are not uniform: wickra-embed ships only a C
+// binding, wickra-pico publishes nothing to a package registry, and
+// wickra-playground is a site with no release at all. Giving those the full row
+// would point badges at packages that will never exist.
 // ---------------------------------------------------------------------------
-const wickraBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickra' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra/badge' },
-  { slug: 'best-practices', src: 'https://www.bestpractices.dev/projects/13094/badge' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-docs.wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
+const FULL = ['ci', 'codeql', 'codecov', 'release', 'crates', 'pypi', 'npm', 'nuget', 'maven', 'go', 'r-universe', 'license', 'scorecard', 'best-practices', 'provenance', 'docs', 'verified']
+const RUST_ONLY = ['ci', 'codeql', 'release', 'crates', 'license', 'scorecard', 'best-practices', 'provenance', 'docs']
+const NO_REGISTRY = ['ci', 'codeql', 'release', 'license', 'scorecard', 'best-practices', 'provenance', 'docs']
+const SITE_ONLY = ['ci', 'codeql', 'license', 'scorecard', 'docs']
+
+const BEST_PRACTICES_PENDING = 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey'
+
+const REPOS = [
+  { repo: 'wickra', nuget: 'Wickra', docs: 'docs.wickra.org',
+    overrides: { 'best-practices': 'https://www.bestpractices.dev/projects/13094/badge' } },
+  { repo: 'wickra-backtest', nuget: 'Wickra.Backtest', docs: 'backtest.wickra.org' },
+  { repo: 'wickra-benchmark', crate: 'wickra-benchmark-cli', nuget: 'Wickra.Benchmark' },
+  { repo: 'wickra-compile', nuget: 'Wickra.Compile' },
+  { repo: 'wickra-copilot', nuget: 'Wickra.Copilot', docs: 'copilot.wickra.org' },
+  { repo: 'wickra-darwin', nuget: 'Wickra.Darwin' },
+  // Ships a C binding only, and publishes the core crate under its own name.
+  { repo: 'wickra-embed', crate: 'embed-core', set: RUST_ONLY },
+  { repo: 'wickra-exchange', nuget: 'WickraExchange', verified: 9 },
+  { repo: 'wickra-feature-store', nuget: 'Wickra.FeatureStore' },
+  { repo: 'wickra-genome', nuget: 'Wickra.Genome' },
+  { repo: 'wickra-gym', nuget: 'Wickra.Gym' },
+  { repo: 'wickra-impact', nuget: 'Wickra.Impact' },
+  // Firmware: its release workflow attaches artefacts and publishes no package.
+  { repo: 'wickra-pico', set: NO_REGISTRY },
+  // A deployed site, not a released package.
+  { repo: 'wickra-playground', set: SITE_ONLY },
+  { repo: 'wickra-proof', crate: 'wickra-proof-cli', nuget: 'Wickra.Proof' },
+  { repo: 'wickra-radar', nuget: 'Wickra.Radar', docs: 'radar.wickra.org' },
+  { repo: 'wickra-screener', nuget: 'Wickra.Screener' },
+  { repo: 'wickra-shazam', nuget: 'Wickra.Shazam', docs: 'shazam.wickra.org' },
+  { repo: 'wickra-strategy-ci', crate: 'wickra-strategy-ci-cli', nuget: 'Wickra.StrategyCi' },
+  { repo: 'wickra-synth', nuget: 'Wickra.Synth' },
+  { repo: 'wickra-terminal', nuget: 'WickraTerminal', docs: 'terminal.wickra.org' },
+  { repo: 'wickra-timemachine', nuget: 'Wickra.TimeMachine' },
+  { repo: 'wickra-verify', crate: 'wickra-verify-cli', nuget: 'Wickra.Verify' },
+  { repo: 'wickra-xray', nuget: 'Wickra.Xray' },
+  // Publishes the CLI crate under the repo name; no language bindings.
+  { repo: 'wickra-zk', set: RUST_ONLY },
 ]
 
-// ---------------------------------------------------------------------------
-// Row 2 — the wickra-backtest backtester. Same style; backtest packages.
-// Version badges read "unreleased" until the first publish, then auto-update.
-// ---------------------------------------------------------------------------
-const backtestBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-backtest/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-backtest/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-backtest/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-backtest?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-backtest.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-backtest.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-backtest.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.Backtest.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-backtest.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-backtest-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickrabacktest' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-backtest/badge' },
-  // OpenSSF Best Practices: shows the passing/silver/gold level (not the score).
-  // Placeholder until the bestpractices.dev project is registered; swap the src
-  // to https://www.bestpractices.dev/projects/<id>/badge once it has an id.
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-backtest.wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
-]
+function buildRow(cfg) {
+  const repo = cfg.repo
+  const crate = cfg.crate ?? repo
+  const docs = cfg.docs ?? 'wickra.org'
+  const runiv = cfg.runiv ?? repo.replaceAll('-', '')
+  const verified = cfg.verified ?? 10
+  const src = {
+    ci: `https://github.com/wickra-lib/${repo}/actions/workflows/ci.yml/badge.svg`,
+    codeql: `https://github.com/wickra-lib/${repo}/actions/workflows/codeql.yml/badge.svg`,
+    codecov: `https://codecov.io/gh/wickra-lib/${repo}/branch/main/graph/badge.svg`,
+    release: `https://img.shields.io/github/v/release/wickra-lib/${repo}?logo=github&color=green`,
+    crates: `https://img.shields.io/crates/v/${crate}.svg?logo=rust&color=orange`,
+    pypi: `https://img.shields.io/pypi/v/${repo}.svg?logo=pypi&color=blue`,
+    npm: `https://img.shields.io/npm/v/${repo}.svg?logo=npm&color=red`,
+    nuget: `https://img.shields.io/nuget/v/${cfg.nuget}.svg?logo=nuget&color=blue`,
+    maven: `https://img.shields.io/maven-central/v/org.wickra/${repo}.svg?logo=apachemaven&color=blue`,
+    go: `https://img.shields.io/github/v/tag/wickra-lib/${cfg.go ?? `${repo}-go`}.svg?logo=go&logoColor=white&color=00ADD8&label=go`,
+    'r-universe': `https://wickra-lib.r-universe.dev/badges/${runiv}`,
+    license: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue',
+    scorecard: `https://api.securityscorecards.dev/projects/github.com/wickra-lib/${repo}/badge`,
+    'best-practices': BEST_PRACTICES_PENDING,
+    provenance: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github',
+    docs: `https://img.shields.io/badge/docs-${docs}-0ea5e9?logo=readthedocs&logoColor=white`,
+    verified: `https://img.shields.io/badge/verified-${verified}_languages-brightgreen`,
+  }
+  return (cfg.set ?? FULL).map((slug) => ({ slug, src: cfg.overrides?.[slug] ?? src[slug] }))
+}
 
-// ---------------------------------------------------------------------------
-// Row 3 — the wickra-terminal trading terminal. Same style; terminal packages.
-// Version badges read "unreleased" until the first publish, then auto-update.
-// ---------------------------------------------------------------------------
-const terminalBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-terminal/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-terminal/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-terminal/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-terminal?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-terminal.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-terminal.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-terminal.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/WickraTerminal.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-terminal.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-terminal-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickraterminal' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-terminal/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-terminal.wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
-]
+// --dry-run prints the resolved URLs instead of fetching, so a change to the
+// derivation above can be diffed against the previous output before it ships.
+if (process.argv.includes('--dry-run')) {
+  for (const cfg of REPOS) {
+    for (const b of buildRow(cfg)) {
+      console.log(`profile/badges/${cfg.repo}|${b.slug}\t${b.src}`)
+    }
+  }
+  process.exit(0)
+}
 
-// ---------------------------------------------------------------------------
-// Row 4 — the wickra-exchange connectivity layer. Same style; exchange packages.
-// Version badges read "unreleased" until the first publish, then auto-update.
-// ---------------------------------------------------------------------------
-const exchangeBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-exchange/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-exchange/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-exchange/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-exchange?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-exchange.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-exchange.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-exchange.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/WickraExchange.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-exchange.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-exchange-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickraexchange' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-exchange/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-9_languages-brightgreen' },
-]
+let failures = 0
+for (const cfg of REPOS) {
+  failures += await snapshot(buildRow(cfg), resolve(root, `profile/badges/${cfg.repo}`), {
+    releaseRepo: `wickra-lib/${cfg.repo}`,
+    goRepo: `wickra-lib/${cfg.go ?? `${cfg.repo}-go`}`,
+  })
+}
 
-// ---------------------------------------------------------------------------
-// Row 5 — the wickra-screener multi-symbol screener. Same style; screener packages.
-// Version badges read "unreleased" until the first publish, then auto-update.
-// ---------------------------------------------------------------------------
-const screenerBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-screener/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-screener/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-screener/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-screener?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-screener.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-screener.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-screener.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.Screener.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-screener.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-screener-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickrascreener' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-screener/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
-]
-
-// ---------------------------------------------------------------------------
-// Row 6 — the wickra-xray market-microstructure explorer. Same style; xray packages.
-// Version badges read "unreleased" until the first publish, then auto-update.
-// ---------------------------------------------------------------------------
-const xrayBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-xray/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-xray/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-xray/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-xray?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-xray.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-xray.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-xray.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.Xray.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-xray.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-xray-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickraxray' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-xray/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
-]
-
-// ---------------------------------------------------------------------------
-// Row 7 — the wickra-proof proof-of-backtest core. Same style; proof packages.
-// Version badges read "unreleased" until the first publish, then auto-update.
-// ---------------------------------------------------------------------------
-const proofBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-proof/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-proof/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-proof/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-proof?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-proof-cli.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-proof.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-proof.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.Proof.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-proof.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-proof-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickraproof' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-proof/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
-]
-
-// ---------------------------------------------------------------------------
-// Row 8 — the wickra-verify backtest verifier. Same style; verify packages.
-// Version badges read "unreleased" until the first publish, then auto-update.
-// ---------------------------------------------------------------------------
-const verifyBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-verify/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-verify/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-verify/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-verify?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-verify-cli.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-verify.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-verify.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.Verify.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-verify.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-verify-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickraverify' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-verify/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
-]
-
-// ---------------------------------------------------------------------------
-// Row 9 — the wickra-benchmark reproducible benchmark suite. Same style;
-// benchmark packages. Version badges read "unreleased" until the first publish.
-// ---------------------------------------------------------------------------
-const benchmarkBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-benchmark/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-benchmark/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-benchmark/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-benchmark?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-benchmark-cli.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-benchmark.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-benchmark.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.Benchmark.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-benchmark.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-benchmark-go.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickrabenchmark' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-benchmark/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
-]
-
-// ---------------------------------------------------------------------------
-// Row 10 — the wickra-gym RL environment. Same style; gym packages. The Go
-// module is published as a `bindings/go` subdirectory tag on wickra-gym itself
-// (no standalone mirror repo), so the go badge reads that repo's tags. Version
-// badges read "unreleased" until the first publish.
-// ---------------------------------------------------------------------------
-const gymBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-gym/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-gym/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-gym/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-gym?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-gym.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-gym.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-gym.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.Gym.svg?logo=nuget&color=blue' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-gym.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-gym.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'r-universe', src: 'https://wickra-lib.r-universe.dev/badges/wickragym' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-gym/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/openssf_best_practices-in_progress-lightgrey' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-  { slug: 'verified', src: 'https://img.shields.io/badge/verified-10_languages-brightgreen' },
-]
-
-// ---------------------------------------------------------------------------
-// Row 11 — the wickra-playground browser demo. A static web app (no package
-// registries), so only the workflow-status and static badges the README links.
-// ---------------------------------------------------------------------------
-const playgroundBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-playground/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-playground/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-]
-
-// Row 12 — wickra-strategy-ci: golden/regression/property/fuzz test harness for
-// trading strategies, in ten languages plus a composite GitHub Action.
-// ---------------------------------------------------------------------------
-const strategyCiBadges = [
-  { slug: 'ci', src: 'https://github.com/wickra-lib/wickra-strategy-ci/actions/workflows/ci.yml/badge.svg' },
-  { slug: 'codeql', src: 'https://github.com/wickra-lib/wickra-strategy-ci/actions/workflows/codeql.yml/badge.svg' },
-  { slug: 'codecov', src: 'https://codecov.io/gh/wickra-lib/wickra-strategy-ci/branch/main/graph/badge.svg' },
-  { slug: 'release', src: 'https://img.shields.io/github/v/release/wickra-lib/wickra-strategy-ci?logo=github&color=green' },
-  { slug: 'crates', src: 'https://img.shields.io/crates/v/wickra-strategy-ci-cli.svg?logo=rust&color=orange' },
-  { slug: 'pypi', src: 'https://img.shields.io/pypi/v/wickra-strategy-ci.svg?logo=pypi&color=blue' },
-  { slug: 'npm', src: 'https://img.shields.io/npm/v/wickra-strategy-ci.svg?logo=npm&color=red' },
-  { slug: 'nuget', src: 'https://img.shields.io/nuget/v/Wickra.StrategyCi.svg?logo=nuget&color=004880' },
-  { slug: 'maven', src: 'https://img.shields.io/maven-central/v/org.wickra/wickra-strategy-ci.svg?logo=apachemaven&color=blue' },
-  { slug: 'go', src: 'https://img.shields.io/github/v/tag/wickra-lib/wickra-strategy-ci.svg?logo=go&logoColor=white&color=00ADD8&label=go' },
-  { slug: 'license', src: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue' },
-  { slug: 'scorecard', src: 'https://api.securityscorecards.dev/projects/github.com/wickra-lib/wickra-strategy-ci/badge' },
-  { slug: 'best-practices', src: 'https://img.shields.io/badge/OpenSSF-best_practices-3b82f6' },
-  { slug: 'provenance', src: 'https://img.shields.io/badge/SLSA-provenance-3b82f6' },
-  { slug: 'docs', src: 'https://img.shields.io/badge/docs-wickra.org-0ea5e9?logo=readthedocs&logoColor=white' },
-]
-
-const f1 = await snapshot(wickraBadges, resolve(root, 'profile/badges/wickra'), {
-  releaseRepo: 'wickra-lib/wickra',
-  goRepo: 'wickra-lib/wickra-go',
-})
-const f2 = await snapshot(backtestBadges, resolve(root, 'profile/badges/wickra-backtest'), {
-  releaseRepo: 'wickra-lib/wickra-backtest',
-  goRepo: 'wickra-lib/wickra-backtest-go',
-})
-const f3 = await snapshot(terminalBadges, resolve(root, 'profile/badges/wickra-terminal'), {
-  releaseRepo: 'wickra-lib/wickra-terminal',
-  goRepo: 'wickra-lib/wickra-terminal-go',
-})
-const f4 = await snapshot(exchangeBadges, resolve(root, 'profile/badges/wickra-exchange'), {
-  releaseRepo: 'wickra-lib/wickra-exchange',
-  goRepo: 'wickra-lib/wickra-exchange-go',
-})
-const f5 = await snapshot(screenerBadges, resolve(root, 'profile/badges/wickra-screener'), {
-  releaseRepo: 'wickra-lib/wickra-screener',
-  goRepo: 'wickra-lib/wickra-screener-go',
-})
-const f6 = await snapshot(xrayBadges, resolve(root, 'profile/badges/wickra-xray'), {
-  releaseRepo: 'wickra-lib/wickra-xray',
-  goRepo: 'wickra-lib/wickra-xray-go',
-})
-const f7 = await snapshot(proofBadges, resolve(root, 'profile/badges/wickra-proof'), {
-  releaseRepo: 'wickra-lib/wickra-proof',
-  goRepo: 'wickra-lib/wickra-proof-go',
-})
-const f8 = await snapshot(verifyBadges, resolve(root, 'profile/badges/wickra-verify'), {
-  releaseRepo: 'wickra-lib/wickra-verify',
-  goRepo: 'wickra-lib/wickra-verify-go',
-})
-const f9 = await snapshot(benchmarkBadges, resolve(root, 'profile/badges/wickra-benchmark'), {
-  releaseRepo: 'wickra-lib/wickra-benchmark',
-  goRepo: 'wickra-lib/wickra-benchmark-go',
-})
-const f10 = await snapshot(gymBadges, resolve(root, 'profile/badges/wickra-gym'), {
-  releaseRepo: 'wickra-lib/wickra-gym',
-  goRepo: 'wickra-lib/wickra-gym',
-})
-const f11 = await snapshot(playgroundBadges, resolve(root, 'profile/badges/wickra-playground'), {
-  releaseRepo: 'wickra-lib/wickra-playground',
-  goRepo: 'wickra-lib/wickra-playground-go',
-})
-const f12 = await snapshot(strategyCiBadges, resolve(root, 'profile/badges/wickra-strategy-ci'), {
-  releaseRepo: 'wickra-lib/wickra-strategy-ci',
-  goRepo: 'wickra-lib/wickra-strategy-ci',
-})
-
-console.log(
-  `fetch-badges: done (${f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 + f11 + f12} failure(s) across all rows)`,
-)
+console.log(`fetch-badges: done (${failures} failure(s) across ${REPOS.length} rows)`)
