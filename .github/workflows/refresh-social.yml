@@ -49,9 +49,10 @@ jobs:
       # has served a data-less placeholder for every repo since GitHub restricted
       # the stargazers API on 2026-06-30. Reading it here keeps the chart working
       # without handing a token to a third party or carrying one in a README.
-      # Reading a sibling repo's stargazers may be beyond the repo-scoped
-      # GITHUB_TOKEN; STAR_HISTORY_TOKEN overrides it with one that can. A repo
-      # whose data is unreadable keeps its previous committed chart.
+      # The repo-scoped GITHUB_TOKEN answers 403 for a sibling repo's stargazers
+      # (measured, run 33247797105), so STAR_HISTORY_TOKEN must carry a token
+      # that can read them for the charts to refresh. Until it is set, each repo
+      # keeps its previous committed chart and the job still succeeds.
       - name: Render star-history charts
         env:
           STAR_HISTORY_TOKEN: ${{ secrets.STAR_HISTORY_TOKEN }}
