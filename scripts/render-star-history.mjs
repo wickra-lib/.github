@@ -20,6 +20,7 @@ import { writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 import { targets } from './repos.mjs'
+import { roundCorners } from './svg.mjs'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const root = resolve(here, '..')
@@ -31,6 +32,11 @@ if (!token) {
   console.error('render-star-history: no token in STAR_HISTORY_TOKEN / GH_TOKEN / GITHUB_TOKEN')
   process.exit(1)
 }
+
+// The org-wide aggregate lives beside the per-repo directories under the org
+// name, which is not a repo, so it cannot collide with one.
+const ORG_DIR = 'profile/badges/wickra-lib'
+const ORG_LABEL = 'wickra-lib · all repositories'
 
 const W = 800, H = 400
 const PAD = { top: 46, right: 28, bottom: 44, left: 62 }
@@ -180,6 +186,8 @@ function render(repo, dates, now) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(repo)} star history">
   <title>${esc(repo)} star history</title>
+  <clipPath id="frame"><rect width="${W}" height="${H}" rx="12" ry="12"/></clipPath>
+  <g clip-path="url(#frame)">
   <rect width="${W}" height="${H}" fill="${BG}"/>
   <text x="${PAD.left}" y="26" fill="${INK}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="600">${esc(repo)}</text>
   <text x="${W - PAD.right}" y="26" fill="${AXIS}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" text-anchor="end">${total} star${total === 1 ? '' : 's'}</text>
@@ -192,12 +200,16 @@ function render(repo, dates, now) {
   ${yLabels}
   ${xLabels}
   </g>
+  </g>
 </svg>
 `
 }
 
 const now = Date.parse(process.env.STAR_HISTORY_NOW || new Date().toISOString())
 let failures = 0
+const everyStar = []
+let covered = 0
+
 for (const { repo, dir } of targets) {
   const outDir = resolve(root, dir)
   mkdirSync(outDir, { recursive: true })
@@ -205,6 +217,8 @@ for (const { repo, dir } of targets) {
   try {
     const dates = await stargazerDates(repo)
     writeFileSync(target, render(repo, dates, now))
+    everyStar.push(...dates)
+    covered++
     console.log(`render-star-history: ${dir}/star-history ok (${dates.length} stars)`)
   } catch (err) {
     failures++
@@ -212,4 +226,30 @@ for (const { repo, dir } of targets) {
     console.warn(`render-star-history: ${repo} failed (${err.message}); ${kept}`)
   }
 }
-console.log(`render-star-history: ${targets.length - failures} ok, ${failures} failure(s)`)
+
+// The org-wide curve: every repo's stars on one timeline, merged in the order
+// they were actually given rather than concatenated per repo, so the shape is
+// the org's real growth. Written only when every repo was readable -- a partial
+// total would be a wrong number rather than a stale one, and the previous
+// snapshot is the better answer.
+if (failures === 0 && everyStar.length) {
+  const orgDir = resolve(root, ORG_DIR)
+  mkdirSync(orgDir, { recursive: true })
+  const merged = everyStar.slice().sort((a, b) => a - b)
+  writeFileSync(resolve(orgDir, 'star-history.svg'), render(ORG_LABEL, merged, now))
+  console.log(`render-star-history: ${ORG_DIR}/star-history ok (${merged.length} stars across ${covered} repos)`)
+  try {
+    const badge = `https://img.shields.io/badge/total%20stars-${merged.length}-ffd866?style=for-the-badge&logo=github&logoColor=white`
+    const res = await fetch(badge, { redirect: 'follow' })
+    const svg = await res.text()
+    if (!res.ok || !svg.includes('<svg')) throw new Error(`HTTP ${res.status}`)
+    writeFileSync(resolve(orgDir, 'stars.svg'), roundCorners(svg))
+    console.log(`render-star-history: ${ORG_DIR}/stars ok (${merged.length})`)
+  } catch (err) {
+    console.warn(`render-star-history: org total badge failed (${err.message}); kept previous snapshot`)
+  }
+} else if (failures) {
+  console.warn(`render-star-history: ${failures} repo(s) unreadable, org total left at its previous snapshot`)
+}
+
+console.log(`render-star-history: ${covered} ok, ${failures} failure(s)`)

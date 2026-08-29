@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-label="wickra-lib/wickra-impact star history">
   <title>wickra-lib/wickra-impact star history</title>
+  <clipPath id="frame"><rect width="800" height="400" rx="12" ry="12"/></clipPath>
+  <g clip-path="url(#frame)">
   <rect width="800" height="400" fill="#1f2430"/>
   <text x="62" y="26" fill="#e6e9ef" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="600">wickra-lib/wickra-impact</text>
   <text x="772" y="26" fill="#8a93a6" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" text-anchor="end">1 star</text>
@@ -14,6 +16,7 @@
   <text x="50" y="362.0" fill="#8a93a6" font-size="17" text-anchor="end">0</text>
   <text x="50" y="207.0" fill="#8a93a6" font-size="17" text-anchor="end">1</text>
   <text x="50" y="52.0" fill="#8a93a6" font-size="17" text-anchor="end">2</text>
-  <text x="314.8" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
+  <text x="314.7" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
+  </g>
   </g>
 </svg>

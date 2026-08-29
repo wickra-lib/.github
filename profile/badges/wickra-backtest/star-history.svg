@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-label="wickra-lib/wickra-backtest star history">
   <title>wickra-lib/wickra-backtest star history</title>
+  <clipPath id="frame"><rect width="800" height="400" rx="12" ry="12"/></clipPath>
+  <g clip-path="url(#frame)">
   <rect width="800" height="400" fill="#1f2430"/>
   <text x="62" y="26" fill="#e6e9ef" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="600">wickra-lib/wickra-backtest</text>
   <text x="772" y="26" fill="#8a93a6" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" text-anchor="end">3 stars</text>
@@ -11,14 +13,15 @@
   <line x1="62" y1="46.0" x2="772" y2="46.0" stroke="#333a48" stroke-width="1"/>
   <line x1="62" y1="46" x2="62" y2="356" stroke="#8a93a6" stroke-width="1"/>
   <line x1="62" y1="356" x2="772" y2="356" stroke="#8a93a6" stroke-width="1"/>
-  <path d="M 62.0 356.0 C 71.1 330.2, 80.2 289.1, 89.3 278.5 C 153.8 203.3, 218.3 219.5, 282.8 201.0 C 347.8 182.3, 412.8 123.5, 477.7 123.5 C 575.8 123.5, 673.9 123.5, 772.0 123.5 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
-  <path d="M 62.0 356.0 C 71.1 330.2, 80.2 289.1, 89.3 278.5 C 153.8 203.3, 218.3 219.5, 282.8 201.0 C 347.8 182.3, 412.8 123.5, 477.7 123.5 C 575.8 123.5, 673.9 123.5, 772.0 123.5" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 62.0 356.0 C 71.1 330.2, 80.2 289.1, 89.3 278.5 C 153.8 203.3, 218.3 219.5, 282.8 201.0 C 347.8 182.3, 412.7 123.5, 477.7 123.5 C 575.8 123.5, 673.9 123.5, 772.0 123.5 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
+  <path d="M 62.0 356.0 C 71.1 330.2, 80.2 289.1, 89.3 278.5 C 153.8 203.3, 218.3 219.5, 282.8 201.0 C 347.8 182.3, 412.7 123.5, 477.7 123.5 C 575.8 123.5, 673.9 123.5, 772.0 123.5" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
   <text x="50" y="362.0" fill="#8a93a6" font-size="17" text-anchor="end">0</text>
   <text x="50" y="284.5" fill="#8a93a6" font-size="17" text-anchor="end">1</text>
   <text x="50" y="207.0" fill="#8a93a6" font-size="17" text-anchor="end">2</text>
   <text x="50" y="129.5" fill="#8a93a6" font-size="17" text-anchor="end">3</text>
   <text x="50" y="52.0" fill="#8a93a6" font-size="17" text-anchor="end">4</text>
   <text x="101.5" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Jul 2026</text>
-  <text x="450.9" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
+  <text x="450.8" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
+  </g>
   </g>
 </svg>

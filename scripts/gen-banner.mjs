@@ -60,6 +60,19 @@ const png = new Resvg(svg, {
   .render()
   .asPng()
 
-const webp = await sharp(png).webp({ quality: 90 }).toBuffer()
+// Soften the corners. A README cannot round a raster image, so it is baked in
+// here: composite a rounded-rect mask with 'dest-in', which keeps the pixels
+// under the mask and makes the four corners transparent, and keep the alpha
+// channel through the WebP encode. The radius is small relative to the 3840px
+// width -- about 12px once GitHub scales the banner into the README column.
+const RADIUS = 56
+const cornerMask = Buffer.from(
+  `<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="1920"><rect width="3840" height="1920" rx="${RADIUS}" ry="${RADIUS}" fill="#fff"/></svg>`,
+)
+
+const webp = await sharp(png)
+  .composite([{ input: cornerMask, blend: 'dest-in' }])
+  .webp({ quality: 90, alphaQuality: 100 })
+  .toBuffer()
 writeFileSync(outPath, webp)
 console.log(`rendered profile/wickra-banner.webp (3840x1920, "${count} indicators")`)
