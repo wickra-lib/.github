@@ -181,8 +181,8 @@ function render(repo, dates, now) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(repo)} star history">
   <title>${esc(repo)} star history</title>
   <rect width="${W}" height="${H}" fill="${BG}"/>
-  <text x="${PAD.left}" y="26" fill="${INK}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="600">${esc(repo)}</text>
-  <text x="${W - PAD.right}" y="26" fill="${AXIS}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">${total} star${total === 1 ? '' : 's'}</text>
+  <text x="${PAD.left}" y="26" fill="${INK}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="600">${esc(repo)}</text>
+  <text x="${W - PAD.right}" y="26" fill="${AXIS}" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" text-anchor="end">${total} star${total === 1 ? '' : 's'}</text>
   <g font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
   ${gridRows}
   <line x1="${PAD.left}" y1="${PAD.top}" x2="${PAD.left}" y2="${PAD.top + PLOT.h}" stroke="${AXIS}" stroke-width="1"/>

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-label="wickra-lib/wickra-shazam star history">
   <title>wickra-lib/wickra-shazam star history</title>
   <rect width="800" height="400" fill="#1f2430"/>
-  <text x="62" y="26" fill="#e6e9ef" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="600">wickra-lib/wickra-shazam</text>
-  <text x="772" y="26" fill="#8a93a6" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">1 star</text>
+  <text x="62" y="26" fill="#e6e9ef" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="600">wickra-lib/wickra-shazam</text>
+  <text x="772" y="26" fill="#8a93a6" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" text-anchor="end">1 star</text>
   <g font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
   <line x1="62" y1="356.0" x2="772" y2="356.0" stroke="#333a48" stroke-width="1"/>
   <line x1="62" y1="201.0" x2="772" y2="201.0" stroke="#333a48" stroke-width="1"/>
