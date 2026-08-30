@@ -1,0 +1,106 @@
+name: Indicator count
+
+# The indicator count is decided in wickra-lib/wickra and appears three times in
+# profile/README.md: twice in prose and once as the ?v= cache-buster on the
+# banner image. It used to arrive by push -- that repository's sync-about.yml
+# cloned this one with a personal access token and committed the number. The
+# token carried write access to four repositories, administration rights on
+# wickra and admin:org, and existed for no other reason.
+#
+# This pulls instead. A schedule is the only trigger that can work: the number
+# changes in the OTHER repository, so a push here is not the event that makes
+# this profile wrong.
+#
+# It also regenerates the banner itself rather than leaving that to banner.yml.
+# That workflow fires on a push to profile/README.md, and a push made with
+# GITHUB_TOKEN does not start workflows -- only the personal access token did.
+# Relying on the trigger would have frozen the banner the moment the token went
+# away, quietly and with everything green. Doing both here removes the
+# dependency instead of re-creating it.
+#
+# The ?v= cache-buster matters for the same reason the banner does: GitHub proxies
+# the raw image through Camo, so a regenerated banner at an unchanged URL keeps
+# serving the old picture. Nothing bumped it before this.
+on:
+  schedule:
+    - cron: "43 * * * *" # hourly at :43, clear of refresh-badges :17 and refresh-social :37
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    name: Pull the indicator count from wickra
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write # commits the count, the cache-buster and the banner
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      # Same derivation the source repository uses: parse the re-export block,
+      # drop the FAMILIES constant and the *Output companion structs, count what
+      # is left. Reading the source keeps this profile from restating a figure
+      # nobody checked.
+      - name: Read the count from wickra
+        id: count
+        run: |
+          set -euo pipefail
+          src=$(curl -fsSL --retry 5 --retry-all-errors \
+            https://raw.githubusercontent.com/wickra-lib/wickra/main/crates/wickra-core/src/lib.rs)
+          n=$(printf '%s' "$src" \
+            | sed -n '/^pub use indicators::{/,/^};/p' \
+            | tr ',{}' '\n' \
+            | sed 's/[[:space:]]//g' \
+            | grep -E '^[A-Z][A-Za-z0-9_]*$' \
+            | grep -vE '^FAMILIES$|Output$' \
+            | sort -u | wc -l)
+          if [ "$n" -lt 100 ]; then
+            echo "::error::parsed only ${n} indicators — the re-export block moved or the fetch was truncated; refusing to write a wrong number"
+            exit 1
+          fi
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "wickra exports ${n} indicators"
+
+      - name: Apply it to the profile
+        env:
+          N: ${{ steps.count.outputs.count }}
+        run: |
+          set -euo pipefail
+          sed -i -E "s/[0-9]+ (streaming-first )?indicators/${N} \1indicators/g" profile/README.md
+          # Camo caches the raw banner by URL; a regenerated image at an unchanged
+          # URL keeps serving the old picture.
+          sed -i -E "s/(wickra-banner\.webp\?v=)[0-9]+/\1${N}/g" profile/README.md
+
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: "20"
+          cache: npm
+
+      - run: npm ci
+
+      # gen-banner.mjs reads the canonical count out of profile/README.md, which
+      # the step above has already corrected, and renders the image from it.
+      - run: npm run gen:banner
+
+      - name: Commit if anything changed
+        env:
+          N: ${{ steps.count.outputs.count }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain profile assets)" ]; then
+            echo "count already at ${N} and the banner matches; nothing to commit"
+            exit 0
+          fi
+          git config user.name "wickra-bot"
+          git config user.email "wickra-bot@users.noreply.github.com"
+          git add profile assets
+          git commit -m "chore: sync indicator count to ${N}"
+          # refresh-badges (:17) and refresh-social (:37) write this branch on
+          # their own schedules; rebase onto whatever they landed meanwhile.
+          git pull --rebase "https://github.com/${GITHUB_REPOSITORY}.git" main
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
