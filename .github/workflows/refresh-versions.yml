@@ -1,0 +1,66 @@
+name: Refresh version snapshot
+
+# Records, for every product repo, what version each of its manifests declares
+# and what each registry actually serves, so a partial release -- one publish
+# job that failed while the rest went through -- is visible in one table instead
+# of across six registry pages. Runs hourly and commits only when something
+# actually moved, so the file's git history doubles as the log of when a version
+# changed. Currently scans wickra alone; see scripts/fetch-versions.mjs.
+on:
+  schedule:
+    - cron: '47 * * * *' # hourly at :47 (offset from refresh-badges :17, refresh-social :37)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-versions.mjs
+      - scripts/repos.mjs
+      - .github/workflows/refresh-versions.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-versions
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Don't persist the token in .git/config (zizmor: artipacked); the push
+          # step below authenticates explicitly with an ephemeral token URL.
+          persist-credentials: false
+
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: '20'
+
+      - name: Collect versions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-versions.mjs
+
+      - name: Commit if changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # The timestamp moves on every run, so it alone is not worth a commit;
+          # only a differing table or snapshot body is. Untracked files are
+          # checked separately because git diff does not see them at all, which
+          # would make the very first run look like a no-op.
+          new=$(git ls-files --others --exclude-standard versions)
+          if [ -z "$new" ] && git diff --quiet -I '"scanned_at"' -I '^State last changed:' -- versions; then
+            echo "versions unchanged apart from the scan timestamp; nothing to commit"
+            exit 0
+          fi
+          git config user.name "wickra-bot"
+          git config user.email "wickra-bot@users.noreply.github.com"
+          git add versions
+          git commit -m "chore: refresh version snapshot"
+          # The badge workflows push to this branch on their own schedule; rebase
+          # onto whatever landed in the meantime so the three never clash.
+          git pull --rebase "https://github.com/${GITHUB_REPOSITORY}.git" main
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
