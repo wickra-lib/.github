@@ -38,6 +38,56 @@ const PILOT = ['wickra']
 
 const UA = 'wickra-lib-version-snapshot (https://github.com/wickra-lib/.github)'
 
+// --- Networking --------------------------------------------------------------
+//
+// A full scan is a few hundred requests an hour across six third-party services,
+// so a transient 5xx or a DNS blip is a matter of when, not if. Retrying keeps
+// those from turning into red runs that mean nothing; a service that is still
+// down afterwards is reported as unreachable in the table rather than taking the
+// whole scan with it.
+
+const ATTEMPTS = 3
+
+class Unreachable extends Error {}
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
+async function request(url, init) {
+  let reason = null
+  for (let attempt = 1; attempt <= ATTEMPTS; attempt++) {
+    let res
+    try {
+      res = await fetch(url, init)
+    } catch (err) {
+      // DNS, TLS and socket failures land here, and all of them are worth
+      // another try.
+      reason = err.message
+      if (attempt < ATTEMPTS) await sleep(attempt * 500)
+      continue
+    }
+    if (res.status === 404) return null
+    if (res.ok) return res
+    // Anything else in the 4xx range means the request itself is wrong -- a bad
+    // package name, a missing User-Agent -- and repeating it cannot help.
+    if (res.status < 500 && res.status !== 429) throw new Error(`${url} -> HTTP ${res.status}`)
+    reason = `HTTP ${res.status}`
+    if (attempt < ATTEMPTS) await sleep(attempt * 500)
+  }
+  throw new Unreachable(`${url} unreachable after ${ATTEMPTS} attempts: ${reason}`)
+}
+
+// Runs one registry lookup, turning an unreachable service into a rendered cell
+// instead of a failed run. Anything else still throws: a wrong package name is
+// a bug in the config, not weather.
+async function probe(lookup) {
+  try {
+    return { version: await lookup() }
+  } catch (err) {
+    if (err instanceof Unreachable) return { version: null, unreachable: true }
+    throw err
+  }
+}
+
 // Files read per repo. Paths that differ per repo are derived from that repo's
 // entry in repos.mjs rather than spelled out again here.
 function manifestPaths(entry) {
@@ -60,8 +110,11 @@ function manifestPaths(entry) {
 
 // --- GraphQL -----------------------------------------------------------------
 
+// Unlike a registry lookup this is not allowed to degrade: without the
+// manifests there is no version to compare anything against, and a table full
+// of unknowns would read like mass drift rather than like a failed scan.
 async function graphql(query, variables) {
-  const res = await fetch('https://api.github.com/graphql', {
+  const res = await request('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
       authorization: `bearer ${process.env.GH_TOKEN}`,
@@ -70,7 +123,6 @@ async function graphql(query, variables) {
     },
     body: JSON.stringify({ query, variables }),
   })
-  if (!res.ok) throw new Error(`GraphQL HTTP ${res.status}: ${await res.text()}`)
   const body = await res.json()
   if (body.errors) throw new Error(`GraphQL: ${body.errors.map((e) => e.message).join('; ')}`)
   return body.data
@@ -183,17 +235,13 @@ const pomArtifactId = (xml) => pomBody(xml).match(/<artifactId>([^<]+)<\/artifac
 // --- Registries --------------------------------------------------------------
 
 async function json(url) {
-  const res = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' } })
-  if (res.status === 404) return null
-  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`)
-  return res.json()
+  const res = await request(url, { headers: { 'user-agent': UA, accept: 'application/json' } })
+  return res === null ? null : res.json()
 }
 
 async function xml(url) {
-  const res = await fetch(url, { headers: { 'user-agent': UA } })
-  if (res.status === 404) return null
-  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`)
-  return res.text()
+  const res = await request(url, { headers: { 'user-agent': UA } })
+  return res === null ? null : res.text()
 }
 
 const registry = {
@@ -240,16 +288,26 @@ async function scanRepo(entry) {
   const artifactId = files.pom ? pomArtifactId(files.pom) : null
 
   const published = [
-    { registry: 'crates.io', pkg: crateName, version: await registry.crates(crateName) },
-    { registry: 'PyPI', pkg: name, version: await registry.pypi(name) },
-    { registry: 'npm', pkg: npmName, version: await registry.npm(npmName) },
-    ...(await Promise.all(platformPkgs.map(async ([pkg]) => ({ registry: 'npm', pkg, version: await registry.npm(pkg) })))),
-    ...(files.wasmCargo ? [{ registry: 'npm', pkg: `${name}-wasm`, version: await registry.npm(`${name}-wasm`) }] : []),
-    ...(entry.nuget ? [{ registry: 'NuGet', pkg: entry.nuget, version: await registry.nuget(entry.nuget) }] : []),
-    ...(groupId && artifactId
-      ? [{ registry: 'Maven', pkg: `${groupId}:${artifactId}`, version: await registry.maven(groupId, artifactId) }]
+    { registry: 'crates.io', pkg: crateName, ...(await probe(() => registry.crates(crateName))) },
+    { registry: 'PyPI', pkg: name, ...(await probe(() => registry.pypi(name))) },
+    { registry: 'npm', pkg: npmName, ...(await probe(() => registry.npm(npmName))) },
+    ...(await Promise.all(
+      platformPkgs.map(async ([pkg]) => ({ registry: 'npm', pkg, ...(await probe(() => registry.npm(pkg))) })),
+    )),
+    ...(files.wasmCargo
+      ? [{ registry: 'npm', pkg: `${name}-wasm`, ...(await probe(() => registry.npm(`${name}-wasm`))) }]
       : []),
-    { registry: 'r-universe', pkg: runivName, version: await registry.runiverse(runivName) },
+    ...(entry.nuget ? [{ registry: 'NuGet', pkg: entry.nuget, ...(await probe(() => registry.nuget(entry.nuget))) }] : []),
+    ...(groupId && artifactId
+      ? [
+          {
+            registry: 'Maven',
+            pkg: `${groupId}:${artifactId}`,
+            ...(await probe(() => registry.maven(groupId, artifactId))),
+          },
+        ]
+      : []),
+    { registry: 'r-universe', pkg: runivName, ...(await probe(() => registry.runiverse(runivName))) },
   ]
 
   return {
@@ -266,10 +324,11 @@ async function scanRepo(entry) {
 
 // --- Render ------------------------------------------------------------------
 
-function mark(version, expected) {
-  if (version === null) return 'missing'
+function mark(artefact, expected) {
+  if (artefact.unreachable) return 'unreachable'
+  if (artefact.version === null) return 'missing'
   if (expected === null) return 'unknown'
-  return version === expected ? 'ok' : 'differs'
+  return artefact.version === expected ? 'ok' : 'differs'
 }
 
 function render(snapshot) {
@@ -293,15 +352,15 @@ function render(snapshot) {
 
     lines.push('### Manifests', '', '| file | ecosystem | version | state |', '| --- | --- | --- | --- |')
     for (const m of repo.manifests) {
-      lines.push(`| \`${m.file}\` | ${m.ecosystem} | ${m.version ?? '-'} | ${mark(m.version, expected)} |`)
+      lines.push(`| \`${m.file}\` | ${m.ecosystem} | ${m.version ?? '-'} | ${mark(m, expected)} |`)
     }
 
     lines.push('', '### Published', '', '| registry | package | version | state |', '| --- | --- | --- | --- |')
     for (const p of repo.published) {
-      lines.push(`| ${p.registry} | \`${p.pkg}\` | ${p.version ?? '-'} | ${mark(p.version, expected)} |`)
+      lines.push(`| ${p.registry} | \`${p.pkg}\` | ${p.version ?? '-'} | ${mark(p, expected)} |`)
     }
     const goVersion = repo.go.tag ? stripV(repo.go.tag) : null
-    lines.push(`| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark(goVersion, expected)} |`)
+    lines.push(`| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark({ version: goVersion }, expected)} |`)
 
     lines.push('', '### Resolved wickra crates in `Cargo.lock`', '', '| crate | resolved | pulled in by |', '| --- | --- | --- |')
     for (const l of repo.lock) {
@@ -338,10 +397,12 @@ await writeFile(`${OUT_DIR}/state.json`, `${JSON.stringify(snapshot, null, 2)}\n
 await writeFile(`${OUT_DIR}/README.md`, render(snapshot))
 
 for (const repo of snapshot.repos) {
-  const off = [...repo.manifests, ...repo.published].filter((a) => mark(a.version, repo.declared) !== 'ok')
-  const duplicates = repo.lock.filter((l) => l.versions.length > 1)
+  const states = [...repo.manifests, ...repo.published].map((a) => mark(a, repo.declared))
+  const off = states.filter((s) => s !== 'ok' && s !== 'unreachable').length
+  const unreachable = states.filter((s) => s === 'unreachable').length
+  const duplicates = repo.lock.filter((l) => l.versions.length > 1).length
   console.log(
     `${repo.repo}: declared ${repo.declared}, tag ${repo.tag}, ` +
-      `${off.length} artefact(s) not matching, ${duplicates.length} duplicate crate(s)`,
+      `${off} artefact(s) not matching, ${unreachable} unreachable, ${duplicates} duplicate crate(s)`,
   )
 }
