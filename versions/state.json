@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T01:04:15Z",
+  "scanned_at": "2026-09-02T05:08:06Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -1668,7 +1668,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -1688,7 +1688,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         }
@@ -3054,7 +3054,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -3074,7 +3074,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -3443,7 +3443,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -3463,7 +3463,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -3836,7 +3836,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -3856,7 +3856,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -4639,7 +4639,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -4659,7 +4659,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -5002,7 +5002,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -5022,7 +5022,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -5365,7 +5365,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -5385,7 +5385,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -6305,7 +6305,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 29,
+            "behind": 32,
             "ahead": 0
           }
         },
@@ -6327,7 +6327,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 29,
+            "behind": 32,
             "ahead": 0
           }
         },
@@ -6663,7 +6663,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -7263,7 +7263,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -7283,7 +7283,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 34,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -7648,13 +7648,13 @@
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-darwin",
@@ -7726,13 +7726,13 @@
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-gym",
@@ -7768,13 +7768,13 @@
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-impact",
@@ -7804,13 +7804,13 @@
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-proof",
@@ -7834,13 +7834,13 @@
       "repo": "wickra-radar",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-radar",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-screener",
@@ -7864,13 +7864,13 @@
       "repo": "wickra-screener",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-screener",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-shazam",
@@ -7894,13 +7894,13 @@
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -7942,13 +7942,13 @@
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 330df912, 29 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 330df912, 32 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 330df912, 29 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 330df912, 32 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-timemachine",
@@ -7960,7 +7960,7 @@
       "repo": "wickra-timemachine",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-verify",
@@ -7984,13 +7984,13 @@
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-zk",
