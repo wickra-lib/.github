@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T00:06:10Z",
+  "scanned_at": "2026-09-02T00:12:33Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -150,9 +150,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": [
             "wickra-bench",
             "wickra-examples"
@@ -163,9 +161,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -173,9 +169,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -183,9 +177,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": [
             "wickra",
             "wickra-c",
@@ -200,9 +192,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": [
             "wickra",
             "wickra-bench",
@@ -218,9 +208,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -228,9 +216,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -238,9 +224,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -248,9 +232,7 @@
           "versions": [
             "1.0.4"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         }
       ]
@@ -404,9 +386,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": [
             "wickra-backtest-examples"
           ]
@@ -416,9 +396,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -426,9 +404,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -436,9 +412,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -446,9 +420,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": [
             "wickra-backtest",
             "wickra-backtest-bench",
@@ -465,9 +437,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": [
             "wickra-backtest",
             "wickra-backtest-cli",
@@ -479,9 +449,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -489,9 +457,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -499,9 +465,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -509,9 +473,7 @@
           "versions": [
             "0.1.2"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -519,9 +481,7 @@
           "versions": [
             "1.0.0"
           ],
-          "sources": [
-            "registry+https://github.com/rust-lang/crates.io-index"
-          ],
+          "fromRegistry": true,
           "pulledInBy": [
             "wickra-backtest-core",
             "wickra-backtest-data"
@@ -673,9 +633,7 @@
           "versions": [
             "0.9.9"
           ],
-          "sources": [
-            "registry+https://github.com/rust-lang/crates.io-index"
-          ],
+          "fromRegistry": true,
           "pulledInBy": [
             "wickra-exchange-core"
           ]
@@ -685,9 +643,7 @@
           "versions": [
             "0.1.0"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": [
             "wickra-exchange-c",
             "wickra-exchange-examples",
@@ -700,9 +656,7 @@
           "versions": [
             "0.1.0"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -710,9 +664,7 @@
           "versions": [
             "0.1.0"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -720,9 +672,7 @@
           "versions": [
             "0.1.0"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": [
             "wickra-exchange",
             "wickra-exchange-bench"
@@ -733,9 +683,7 @@
           "versions": [
             "0.1.0"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -743,9 +691,7 @@
           "versions": [
             "0.1.0"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         },
         {
@@ -753,12 +699,44 @@
           "versions": [
             "0.1.0"
           ],
-          "sources": [
-            "path"
-          ],
+          "fromRegistry": false,
           "pulledInBy": []
         }
       ]
+    }
+  ],
+  "crates": {
+    "wickra-backtest-core": {
+      "version": "0.1.2"
+    },
+    "wickra-backtest-data": {
+      "version": "0.1.2"
+    },
+    "wickra-core": {
+      "version": "1.0.4"
+    },
+    "wickra-data": {
+      "version": "1.0.4"
+    },
+    "wickra-exchange": {
+      "version": null
+    },
+    "wickra-exchange-core": {
+      "version": null
+    }
+  },
+  "findings": [
+    {
+      "repo": "wickra-backtest",
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 1.0.0 while wickra-core publishes 1.0.4; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
     }
   ]
 }

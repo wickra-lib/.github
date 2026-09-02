@@ -14,6 +14,10 @@
  *   2. Do the manifests inside the repo agree with the tag? A version bump
  *      touches a dozen files across six languages, and a missed one stays
  *      invisible until some later publish job fails on it.
+ *   3. Is a repo still building against a sibling crate that has moved on? Each
+ *      locked wickra crate is compared with what that crate publishes, and the
+ *      declared pin decides whether the gap is a stale lockfile or a range that
+ *      cannot reach the newer release at all.
  *
  * No version here is declared: every number comes from a manifest or from a
  * registry. The repo list comes from repos.mjs, and the only hand-written
@@ -214,7 +218,10 @@ function cargoLockWickra(lock) {
     .map(([name, entries]) => ({
       name,
       versions: entries.map((e) => e.version).sort(),
-      sources: [...new Set(entries.map((e) => e.source))],
+      // A crate pulled from crates.io can be compared against what it publishes;
+      // a workspace member resolved by path is this repo's own code and has
+      // nothing to lag behind.
+      fromRegistry: entries.some((e) => e.source.startsWith('registry+')),
       pulledInBy: [...(dependants.get(name) ?? [])].sort(),
     }))
     .sort((a, b) => a.name.localeCompare(b.name))
@@ -331,6 +338,111 @@ async function scanRepo(entry) {
 // org has several -- would report its whole artefact list as missing, which is
 // the opposite of what this table is for: `missing` has to keep meaning "this
 // one publish target fell out while the others went through".
+// crates.io answers per sibling crate are stored as probe results, so a service
+// outage stays distinguishable from a crate that genuinely is not published.
+const publishedVersion = (snapshot, name) => snapshot.crates[name]?.version ?? null
+
+const describeCrate = (snapshot, name) => {
+  const entry = snapshot.crates[name]
+  if (!entry) return 'not looked up'
+  if (entry.unreachable) return 'unreachable'
+  return entry.version ?? 'not on crates.io'
+}
+
+// Whether a cargo version requirement admits a given version. This decides the
+// difference that matters between two lockfiles that both look behind: a pin of
+// "1.0" already permits 1.0.4 and one cargo update closes it, while "0.9" cannot
+// reach it at all, because under cargo semver every 0.x minor is a breaking
+// change. Only bare and caret requirements are answered -- those are what the
+// org's manifests use; anything carrying another operator returns null rather
+// than a guess.
+function caretAllows(req, version) {
+  const bare = req.trim().replace(/^\^/, '')
+  if (!/^\d+(\.\d+){0,2}$/.test(bare) || !/^\d+\.\d+\.\d+$/.test(version)) return null
+
+  const parts = bare.split('.').map(Number)
+  const [major = 0, minor = 0, patch = 0] = parts
+  const lower = [major, minor, patch]
+
+  // The caret range runs up to the next increment of the leftmost non-zero
+  // component, which is what makes 0.x minors breaking.
+  let upper
+  if (major !== 0) upper = [major + 1, 0, 0]
+  else if (minor !== 0) upper = [0, minor + 1, 0]
+  else if (parts.length >= 3) upper = [0, 0, patch + 1]
+  else if (parts.length === 2) upper = [0, 1, 0]
+  else upper = [1, 0, 0]
+
+  const target = version.split('.').map(Number)
+  const cmp = (a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]
+  return cmp(target, lower) >= 0 && cmp(target, upper) < 0
+}
+
+// Everything in the snapshot that is not as it should be, gathered into one
+// list so the table can lead with it. Reading three sections per repo and
+// knowing by heart what each sibling crate publishes is not a thing anyone will
+// keep doing.
+function collectFindings(snapshot) {
+  const found = []
+  for (const repo of snapshot.repos) {
+    const released = repo.tag !== null
+
+    for (const m of repo.manifests) {
+      const state = mark(m, repo.declared)
+      if (state === 'ok') continue
+      found.push({
+        repo: repo.repo,
+        kind: state === 'missing' ? 'manifest absent' : `manifest ${state}`,
+        subject: m.file,
+        detail: `${m.version ?? 'absent'} against the declared ${repo.declared}`,
+      })
+    }
+
+    for (const p of repo.published) {
+      const state = mark(p, repo.declared, released)
+      if (state === 'ok' || state === 'unreleased') continue
+      found.push({
+        repo: repo.repo,
+        kind: state === 'missing' ? 'not published' : `registry ${state}`,
+        subject: `${p.registry} ${p.pkg}`,
+        detail: `${p.version ?? 'absent'} against the declared ${repo.declared}`,
+      })
+    }
+
+    for (const l of repo.lock) {
+      if (l.versions.length > 1) {
+        found.push({
+          repo: repo.repo,
+          kind: 'duplicate',
+          subject: l.name,
+          detail: `resolved at ${l.versions.join(' and ')} in one graph, so the two do not share types`,
+        })
+      }
+      if (!l.fromRegistry) continue
+      const latest = publishedVersion(snapshot, l.name)
+      if (!latest) continue
+      const behind = l.versions.filter((version) => version !== latest)
+      if (behind.length === 0) continue
+
+      const pin = repo.pins[l.name] ?? null
+      const allows = pin === null ? null : caretAllows(pin, latest)
+      found.push({
+        repo: repo.repo,
+        kind: allows === false ? 'pin blocks update' : 'stale lock',
+        subject: l.name,
+        detail:
+          `locked at ${behind.join(', ')} while ${l.name} publishes ${latest}; ` +
+          (allows === false
+            ? `the pin \`${pin}\` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh`
+            : allows === true
+              ? `the pin \`${pin}\` already allows it, so cargo update -p ${l.name} closes it`
+              : `the pin ${pin === null ? 'is not declared here' : `\`${pin}\` was not interpreted`}`),
+      })
+    }
+  }
+  return found
+}
+
 function mark(artefact, expected, released = true) {
   if (artefact.unreachable) return 'unreachable'
   if (artefact.version === null) return released ? 'missing' : 'unreleased'
@@ -351,6 +463,24 @@ function render(snapshot) {
     `State last changed: **${snapshot.scanned_at}**`,
     '',
   ]
+
+  if (snapshot.findings.length === 0) {
+    lines.push(
+      'Nothing to report: every artefact carries the version its repo declares, and every locked sibling crate is the one that crate publishes.',
+      '',
+    )
+  } else {
+    lines.push(
+      `## Findings (${snapshot.findings.length})`,
+      '',
+      '| repo | finding | subject | detail |',
+      '| --- | --- | --- | --- |',
+    )
+    for (const f of snapshot.findings) {
+      lines.push(`| \`${f.repo}\` | ${f.kind} | \`${f.subject}\` | ${f.detail} |`)
+    }
+    lines.push('')
+  }
 
   for (const repo of snapshot.repos) {
     const expected = repo.declared
@@ -375,16 +505,38 @@ function render(snapshot) {
     const goVersion = repo.go.tag ? stripV(repo.go.tag) : null
     lines.push(`| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark({ version: goVersion }, expected, released)} |`)
 
-    lines.push('', '### Resolved wickra crates in `Cargo.lock`', '', '| crate | resolved | pulled in by |', '| --- | --- | --- |')
+    lines.push(
+      '',
+      '### Resolved wickra crates in `Cargo.lock`',
+      '',
+      '| crate | resolved | crates.io | state | pulled in by |',
+      '| --- | --- | --- | --- | --- |',
+    )
     for (const l of repo.lock) {
-      const duplicate = l.versions.length > 1 ? ' **duplicate**' : ''
-      lines.push(`| \`${l.name}\` | ${l.versions.join(', ')}${duplicate} | ${l.pulledInBy.map((d) => `\`${d}\``).join(', ') || '-'} |`)
+      const published = publishedVersion(snapshot, l.name)
+      const latest = l.fromRegistry ? describeCrate(snapshot, l.name) : 'workspace member'
+      const states = []
+      if (l.versions.length > 1) states.push('duplicate')
+      if (l.fromRegistry && published && l.versions.some((v) => v !== published)) states.push('behind')
+      const by = l.pulledInBy.map((d) => `\`${d}\``).join(', ') || '-'
+      lines.push(`| \`${l.name}\` | ${l.versions.join(', ')} | ${latest} | ${states.join(', ') || 'ok'} | ${by} |`)
     }
 
     const pins = Object.entries(repo.pins)
     if (pins.length > 0) {
-      lines.push('', '### Declared pins on sibling crates', '', '| crate | pin |', '| --- | --- |')
-      for (const [crate, pin] of pins) lines.push(`| \`${crate}\` | \`${pin}\` |`)
+      lines.push('', '### Declared pins on sibling crates', '', '| crate | pin | admits the newest release |', '| --- | --- | --- |')
+      for (const [crate, pin] of pins) {
+        const latest = publishedVersion(snapshot, crate)
+        const allows = latest ? caretAllows(pin, latest) : null
+        const verdict = !latest
+          ? describeCrate(snapshot, crate)
+          : allows === null
+            ? 'not interpreted'
+            : allows
+              ? `yes, ${latest}`
+              : `no, ${latest} is out of range`
+        lines.push(`| \`${crate}\` | \`${pin}\` | ${verdict} |`)
+      }
     }
     lines.push('')
   }
@@ -405,6 +557,19 @@ const snapshot = {
 }
 for (const entry of entries) snapshot.repos.push(await scanRepo(entry))
 
+// What each sibling crate publishes, so a lockfile can be judged against the
+// crate it locks rather than against a number someone has to remember. Both the
+// crates a lock pulls from the registry and the crates a manifest pins are
+// looked up, deduplicated across repos.
+const siblings = new Set([
+  ...snapshot.repos.flatMap((r) => r.lock.filter((l) => l.fromRegistry).map((l) => l.name)),
+  ...snapshot.repos.flatMap((r) => Object.keys(r.pins)),
+])
+snapshot.crates = {}
+for (const crate of [...siblings].sort()) snapshot.crates[crate] = await probe(() => registry.crates(crate))
+
+snapshot.findings = collectFindings(snapshot)
+
 await mkdir(OUT_DIR, { recursive: true })
 await writeFile(`${OUT_DIR}/state.json`, `${JSON.stringify(snapshot, null, 2)}\n`)
 await writeFile(`${OUT_DIR}/README.md`, render(snapshot))
@@ -423,4 +588,11 @@ for (const repo of snapshot.repos) {
       `${off} artefact(s) not matching, ${count('unreleased')} unreleased, ` +
       `${count('unreachable')} unreachable, ${duplicates} duplicate crate(s)`,
   )
+}
+
+if (snapshot.findings.length === 0) {
+  console.log('no findings')
+} else {
+  console.log(`${snapshot.findings.length} finding(s):`)
+  for (const f of snapshot.findings) console.log(`  ${f.repo}: ${f.kind} -- ${f.subject}`)
 }
