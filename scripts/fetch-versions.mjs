@@ -18,6 +18,9 @@
  *      locked wickra crate is compared with what that crate publishes, and the
  *      declared pin decides whether the gap is a stale lockfile or a range that
  *      cannot reach the newer release at all.
+ *   4. Do two repos disagree about a third-party dependency? Every ecosystem a
+ *      repo ships is read -- Cargo, npm, Maven, Python, R, NuGet, Go -- and the
+ *      disagreements worth acting on are written to versions/dependencies.md.
  *
  * No version here is declared: every number comes from a manifest or from a
  * registry. The repo list comes from repos.mjs, and the only hand-written
@@ -103,6 +106,7 @@ function manifestPaths(entry) {
     cargoLock: 'Cargo.lock',
     pyproject: 'bindings/python/pyproject.toml',
     nodePkg: 'bindings/node/package.json',
+    nodeLock: 'bindings/node/package-lock.json',
     // The wasm npm package is built by wasm-pack, so its package.json is a
     // build artefact and gitignored. The crate manifest is what tells us the
     // binding exists at all; the version only exists in the registry.
@@ -241,6 +245,142 @@ const pomVersion = (xml) => pomBody(xml).match(/<version>([^<]+)<\/version>/)?.[
 const pomGroupId = (xml) => pomBody(xml).match(/<groupId>([^<]+)<\/groupId>/)?.[1] ?? null
 const pomArtifactId = (xml) => pomBody(xml).match(/<artifactId>([^<]+)<\/artifactId>/)?.[1] ?? null
 
+// --- Dependency parsing ------------------------------------------------------
+//
+// Six ecosystems, two shapes. Cargo and npm commit a lockfile, so what comes out
+// is the version actually built against. Maven, Python, R and NuGet declare a
+// requirement and resolve it at build time, so what comes out is the range the
+// repo asked for. The comparison downstream treats the two differently and says
+// which it is.
+
+// Everything in the lock that is not one of our own crates. cargoLockWickra
+// answers the sibling question; this answers the third-party one.
+function cargoLockThirdParty(lock) {
+  const out = []
+  for (const block of lock.split('\n[[package]]\n').slice(1)) {
+    const name = block.match(/^name = "([^"]+)"/m)?.[1]
+    const version = block.match(/^version = "([^"]+)"/m)?.[1]
+    if (!name || !version || name.startsWith('wickra')) continue
+    out.push({ name, version })
+  }
+  return out
+}
+
+// lockfileVersion 2 and 3 both key packages by install path; the trailing
+// node_modules segment carries the name, including the scope.
+function npmLockPackages(text) {
+  const lock = JSON.parse(text)
+  const out = []
+  for (const [path, entry] of Object.entries(lock.packages ?? {})) {
+    if (path === '' || entry.link || !entry.version) continue
+    const marker = path.lastIndexOf('node_modules/')
+    const name = marker === -1 ? path : path.slice(marker + 'node_modules/'.length)
+    if (name.startsWith('wickra')) continue
+    out.push({ name, version: entry.version })
+  }
+  return out
+}
+
+// Maven versions are routinely written as ${some.version} and defined once in
+// <properties>, so the properties are resolved before the dependency is
+// reported -- an unresolved placeholder would compare as a literal string and
+// call two identical versions a divergence.
+function pomDeps(xml) {
+  const props = {}
+  const block = xml.match(/<properties>([\s\S]*?)<\/properties>/)
+  if (block) for (const prop of block[1].matchAll(/<([\w.-]+)>([^<]*)<\/\1>/g)) props[prop[1]] = prop[2].trim()
+
+  const out = []
+  for (const dep of xml.matchAll(/<dependency>([\s\S]*?)<\/dependency>/g)) {
+    const groupId = dep[1].match(/<groupId>([^<]+)<\/groupId>/)?.[1]
+    const artifactId = dep[1].match(/<artifactId>([^<]+)<\/artifactId>/)?.[1]
+    const declared = dep[1].match(/<version>([^<]+)<\/version>/)?.[1]
+    if (!groupId || !artifactId || !declared) continue
+    const placeholder = declared.match(/^\$\{([\w.-]+)\}$/)
+    out.push({ name: `${groupId}:${artifactId}`, version: placeholder ? (props[placeholder[1]] ?? declared) : declared })
+  }
+  return out
+}
+
+// Runtime, build and optional requirements alike: all three decide what a user
+// ends up installing, and the runtime list is empty in these repos anyway.
+function pyprojectDeps(toml) {
+  const arrays = []
+  for (const pattern of [/^\s*dependencies\s*=\s*\[([\s\S]*?)\]/m, /^\s*requires\s*=\s*\[([\s\S]*?)\]/m]) {
+    const match = toml.match(pattern)
+    if (match) arrays.push(match[1])
+  }
+  const optional = toml.match(/\[project\.optional-dependencies\]([\s\S]*?)(?:\n\[|$)/)?.[1] ?? ''
+  for (const group of optional.matchAll(/=\s*\[([\s\S]*?)\]/g)) {
+    arrays.push(group[1])
+  }
+
+  const out = []
+  for (const array of arrays) {
+    for (const item of array.matchAll(/"([^"]+)"/g)) {
+      const spec = item[1].trim()
+      const name = spec.match(/^[A-Za-z0-9._-]+/)?.[0]
+      if (!name) continue
+      out.push({ name: name.toLowerCase(), version: spec.slice(name.length).trim() || '*' })
+    }
+  }
+  return out
+}
+
+// R spreads its requirements over four fields and writes the constraint in
+// parentheses after the package name, or omits it entirely.
+function descriptionDeps(text) {
+  const out = []
+  const fields = /^(?:Depends|Imports|LinkingTo|Suggests):[ \t]*([\s\S]*?)(?=\n[A-Za-z][\w/]*:|$)/gm
+  for (const section of text.matchAll(fields)) {
+    for (const part of section[1].split(',')) {
+      const name = part.trim().match(/^[A-Za-z][\w.]*/)?.[0]
+      if (!name) continue
+      out.push({ name, version: part.match(/\(([^)]+)\)/)?.[1].trim() ?? '*' })
+    }
+  }
+  return out
+}
+
+const csprojDeps = (xml) =>
+  [...xml.matchAll(/<PackageReference\s+Include="([^"]+)"[^>]*?Version="([^"]+)"/g)].map((m) => ({
+    name: m[1],
+    version: m[2],
+  }))
+
+const goModDeps = (text) =>
+  [...text.matchAll(/^\s*(?:require\s+)?([\w.\-]+\/[^\s]+)\s+(v[^\s/]+)/gm)].map((m) => ({
+    name: m[1],
+    version: m[2],
+  }))
+
+// Locked ecosystems report what was built; declared ecosystems report what was
+// asked for. Kept apart because a patch difference means something quite
+// different on each side.
+const LOCKED_ECOSYSTEMS = new Set(['cargo', 'npm'])
+
+function collectDeps(files, paths) {
+  const sources = [
+    ['cargo', 'Cargo.lock', files.cargoLock, cargoLockThirdParty],
+    ['npm', 'bindings/node/package-lock.json', files.nodeLock, npmLockPackages],
+    ['maven', 'bindings/java/pom.xml', files.pom, pomDeps],
+    ['python', 'bindings/python/pyproject.toml', files.pyproject, pyprojectDeps],
+    ['r', 'bindings/r/DESCRIPTION', files.rDescription, descriptionDeps],
+    ['nuget', paths.csproj, files.csproj, csprojDeps],
+    ['go', 'bindings/go/go.mod', files.goMod, goModDeps],
+  ]
+  const deps = []
+  const ecosystems = []
+  for (const [ecosystem, source, text, parse] of sources) {
+    if (!text) continue
+    // Recorded even when it parses to nothing, so a binding with no third-party
+    // dependencies reads as checked-and-empty rather than as not looked at.
+    ecosystems.push(ecosystem)
+    for (const item of parse(text)) deps.push({ ecosystem, source, name: item.name, version: item.version })
+  }
+  return { deps, ecosystems }
+}
+
 // --- Registries --------------------------------------------------------------
 
 async function json(url) {
@@ -328,6 +468,7 @@ async function scanRepo(entry) {
     go: { repo: goRepo, module: files.goMod ? goModule(files.goMod) : null, tag: tagName(data.go) },
     pins: files.cargoToml ? cargoWorkspaceDeps(files.cargoToml) : {},
     lock: files.cargoLock ? cargoLockWickra(files.cargoLock) : [],
+    ...collectDeps(files, paths),
   }
 }
 
@@ -544,6 +685,177 @@ function render(snapshot) {
   return `${lines.join('\n')}\n`
 }
 
+// --- Dependency divergence ---------------------------------------------------
+//
+// The question here is narrower than "which versions exist": it is which
+// dependency two repos disagree about in a way worth acting on.
+//
+// For a locked ecosystem a patch difference is almost always the two lockfiles
+// having been refreshed on different days, and reporting it would bury the real
+// rows under noise nobody acts on. Only a difference crossing a semver
+// compatibility boundary is reported -- that is the one that yields two
+// incompatible copies once anything pulls in both.
+//
+// For a declared ecosystem there is no such noise floor: the repo wrote the
+// requirement down by hand, so any difference in it was a decision.
+
+// The range a version belongs to under semver, where every 0.x minor is its own
+// incompatible track.
+function compatibilityTrack(version) {
+  const [major = 0, minor = 0, patch = 0] = (version.match(/\d+/g) ?? []).slice(0, 3).map(Number)
+  if (major !== 0) return `${major}`
+  if (minor !== 0) return `0.${minor}`
+  return `0.0.${patch}`
+}
+
+function commonPrefix(names) {
+  const [first, ...rest] = names
+  let end = first.length
+  for (const name of rest) {
+    let i = 0
+    while (i < end && i < name.length && name[i] === first[i]) i++
+    end = i
+  }
+  return first.slice(0, end)
+}
+
+// A family that moves as one release -- windows_x86_64_msvc and its eight
+// siblings -- is one decision, not nine findings. Rows sharing an ecosystem and
+// an identical per-repo version map collapse onto their common prefix.
+function collapseFamilies(rows) {
+  const groups = new Map()
+  for (const row of rows) {
+    const key = `${row.ecosystem} ${JSON.stringify(Object.entries(row.byRepo).sort())}`
+    if (!groups.has(key)) groups.set(key, [])
+    groups.get(key).push(row)
+  }
+
+  const out = []
+  for (const members of groups.values()) {
+    if (members.length < 3) {
+      out.push(...members)
+      continue
+    }
+    const prefix = commonPrefix(members.map((m) => m.name))
+    out.push({
+      ...members[0],
+      name: prefix ? `${prefix}*` : members[0].name,
+      family: members.map((m) => m.name).sort(),
+    })
+  }
+  return out.sort((a, b) => a.ecosystem.localeCompare(b.ecosystem) || a.name.localeCompare(b.name))
+}
+
+function dependencyIndex(snapshot) {
+  const index = new Map()
+  for (const repo of snapshot.repos) {
+    for (const dep of repo.deps) {
+      const key = `${dep.ecosystem} ${dep.name}`
+      if (!index.has(key)) index.set(key, { ecosystem: dep.ecosystem, name: dep.name, byRepo: {} })
+      index.get(key).byRepo[repo.repo] = dep.version
+    }
+  }
+  return index
+}
+
+function collectDivergences(snapshot) {
+  const rows = []
+  for (const entry of dependencyIndex(snapshot).values()) {
+    if (Object.keys(entry.byRepo).length < 2) continue
+    const values = new Set(Object.values(entry.byRepo))
+    if (values.size < 2) continue
+    if (LOCKED_ECOSYSTEMS.has(entry.ecosystem) && new Set([...values].map(compatibilityTrack)).size < 2) continue
+    rows.push(entry)
+  }
+  return collapseFamilies(rows)
+}
+
+function dependencyStats(snapshot) {
+  const stats = {}
+  for (const repo of snapshot.repos) {
+    for (const ecosystem of repo.ecosystems) stats[ecosystem] ??= { total: 0, shared: 0, differing: 0 }
+  }
+  for (const entry of dependencyIndex(snapshot).values()) {
+    const bucket = (stats[entry.ecosystem] ??= { total: 0, shared: 0, differing: 0 })
+    bucket.total++
+    if (Object.keys(entry.byRepo).length < 2) continue
+    bucket.shared++
+    if (new Set(Object.values(entry.byRepo)).size > 1) bucket.differing++
+  }
+  return stats
+}
+
+const DEPENDENCY_SOURCE = {
+  cargo: '`Cargo.lock` (resolved)',
+  npm: '`package-lock.json` (resolved)',
+  maven: '`pom.xml` (declared)',
+  python: '`pyproject.toml` (declared)',
+  r: '`DESCRIPTION` (declared)',
+  nuget: '`.csproj` (declared)',
+  go: '`go.mod` (declared)',
+}
+
+function renderDependencies(snapshot, divergences) {
+  const stats = dependencyStats(snapshot)
+  const repos = snapshot.repos.map((r) => r.repo)
+  const lines = [
+    '# Dependency divergence',
+    '',
+    'Generated by [`scripts/fetch-versions.mjs`](../scripts/fetch-versions.mjs) -- do not edit by hand.',
+    '',
+    `State last changed: **${snapshot.scanned_at}**`,
+    '',
+    `Comparing ${repos.map((r) => `\`${r}\``).join(', ')} across every ecosystem they ship.`,
+    '',
+  ]
+
+  if (divergences.length === 0) {
+    lines.push('Nothing to report: no dependency shared by two of these repos disagrees in a way worth acting on.', '')
+  } else {
+    lines.push(
+      `## Findings (${divergences.length})`,
+      '',
+      `| ecosystem | dependency | ${repos.join(' | ')} |`,
+      `| --- | --- | ${repos.map(() => '---').join(' | ')} |`,
+    )
+    for (const row of divergences) {
+      const cells = repos.map((repo) => row.byRepo[repo] ?? '-')
+      lines.push(`| ${row.ecosystem} | \`${row.name}\` | ${cells.join(' | ')} |`)
+    }
+    lines.push('')
+
+    const families = divergences.filter((row) => row.family)
+    if (families.length > 0) {
+      lines.push('### Collapsed families', '')
+      for (const row of families) {
+        lines.push(`- \`${row.name}\` covers ${row.family.map((n) => `\`${n}\``).join(', ')}`)
+      }
+      lines.push('')
+    }
+  }
+
+  lines.push(
+    '## Coverage',
+    '',
+    '| ecosystem | source of truth | dependencies seen | shared by two or more | of those, differing |',
+    '| --- | --- | --- | --- | --- |',
+  )
+  for (const ecosystem of Object.keys(stats).sort()) {
+    const bucket = stats[ecosystem]
+    lines.push(`| ${ecosystem} | ${DEPENDENCY_SOURCE[ecosystem]} | ${bucket.total} | ${bucket.shared} | ${bucket.differing} |`)
+  }
+
+  lines.push(
+    '',
+    'A resolved ecosystem only reports a difference that crosses a semver compatibility boundary: two lockfiles refreshed on different days differ by a patch across half their transitive tree, and reporting that would bury the rows that matter. A declared ecosystem reports every difference, because a written-down requirement was a decision rather than a resolver outcome.',
+    '',
+    'Divergence between independent repos is a maintenance signal rather than a build error -- two versions to review when an advisory lands, two behaviours free to drift apart. It becomes a defect only once both land in one graph, which is what the duplicate rows in the [version snapshot](README.md) report.',
+    '',
+  )
+
+  return `${lines.join('\n')}\n`
+}
+
 // --- Main --------------------------------------------------------------------
 
 const entries = REPOS.filter((r) => PILOT.includes(r.repo))
@@ -570,9 +882,25 @@ for (const crate of [...siblings].sort()) snapshot.crates[crate] = await probe((
 
 snapshot.findings = collectFindings(snapshot)
 
+const divergences = collectDivergences(snapshot)
+
 await mkdir(OUT_DIR, { recursive: true })
-await writeFile(`${OUT_DIR}/state.json`, `${JSON.stringify(snapshot, null, 2)}\n`)
+
+// The dependency lists are an order of magnitude larger than everything else in
+// the snapshot, so they get their own file instead of swamping state.json.
+const dependencies = {
+  scanned_at: snapshot.scanned_at,
+  owner: OWNER,
+  stats: dependencyStats(snapshot),
+  divergences,
+  repos: Object.fromEntries(snapshot.repos.map((repo) => [repo.repo, repo.deps])),
+}
+const versionState = { ...snapshot, repos: snapshot.repos.map(({ deps, ecosystems, ...rest }) => rest) }
+
+await writeFile(`${OUT_DIR}/state.json`, `${JSON.stringify(versionState, null, 2)}\n`)
 await writeFile(`${OUT_DIR}/README.md`, render(snapshot))
+await writeFile(`${OUT_DIR}/dependencies.json`, `${JSON.stringify(dependencies, null, 2)}\n`)
+await writeFile(`${OUT_DIR}/dependencies.md`, renderDependencies(snapshot, divergences))
 
 for (const repo of snapshot.repos) {
   const released = repo.tag !== null
@@ -589,6 +917,10 @@ for (const repo of snapshot.repos) {
       `${count('unreachable')} unreachable, ${duplicates} duplicate crate(s)`,
   )
 }
+
+console.log(
+  `dependencies: ${divergences.length} divergence(s) over ${Object.keys(dependencyStats(snapshot)).length} ecosystem(s)`,
+)
 
 if (snapshot.findings.length === 0) {
   console.log('no findings')
