@@ -889,7 +889,25 @@ function collectFindings(snapshot) {
 
     for (const m of repo.manifests) {
       const state = markManifest(m, repo.declared)
-      if (state === 'ok' || state === 'absent' || state === 'no reference') continue
+      if (state === 'ok') continue
+      // Neither of these is a defect, and both are worth seeing: absent says
+      // which bindings a repo does not ship, and no reference says which files
+      // could name the release and do not. Reported as findings so the page
+      // holds every state in one place, marked informational so they cannot
+      // drown the rows that need acting on.
+      if (state === 'absent' || state === 'no reference') {
+        found.push({
+          repo: repo.repo,
+          kind: state === 'absent' ? 'not in the repository' : 'no version reference',
+          subject: m.file,
+          detail:
+            state === 'absent'
+              ? 'a binding or file this repository does not have'
+              : 'present, and names no version -- legitimate for a file that only may reference one',
+          informational: true,
+        })
+        continue
+      }
       found.push({
         repo: repo.repo,
         kind:
@@ -1015,7 +1033,14 @@ const FINDING_ORDER = [
   'not published',
   'stale lock',
   'git pin behind',
+  'no version reference',
+  'not in the repository',
 ]
+
+// The two states that describe a repository rather than fault it. Rendered
+// last, collapsed, and aggregated by file: 334 rows of "this repo has no web/"
+// would bury 114 that matter, and one row per file says the same thing.
+const INFORMATIONAL_KINDS = new Set(['no version reference', 'not in the repository'])
 
 function mark(artefact, expected, released = true) {
   if (artefact.unreachable) return 'unreachable'
@@ -1046,7 +1071,13 @@ function render(snapshot) {
       '',
     )
   } else {
-    lines.push(`## Findings (${snapshot.findings.length})`, '')
+    const actionable = snapshot.findings.filter((f) => !f.informational).length
+    lines.push(
+      `## Findings (${actionable})`,
+      '',
+      `Plus ${snapshot.findings.length - actionable} informational rows, collapsed at the end of this section: which files a repository does not have, and which of the ones it has name no version by design.`,
+      '',
+    )
     // Grouped by kind and ordered by what would be acted on first: a crate
     // resolving twice is a defect today, a pin that cannot reach the newer
     // release is a decision to make, and a commit pin drifting is housekeeping.
@@ -1055,6 +1086,25 @@ function render(snapshot) {
     )
     for (const kind of kinds) {
       const group = snapshot.findings.filter((f) => f.kind === kind)
+      if (INFORMATIONAL_KINDS.has(kind)) {
+        const byFile = new Map()
+        for (const f of group) {
+          if (!byFile.has(f.subject)) byFile.set(f.subject, [])
+          byFile.get(f.subject).push(f.repo)
+        }
+        lines.push(
+          '<details>',
+          `<summary><b>${kind}</b> -- ${group.length} across ${byFile.size} file(s), nothing to act on</summary>`,
+          '',
+          '| file | repos |',
+          '| --- | --- |',
+        )
+        for (const [file, repos] of [...byFile].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))) {
+          lines.push(`| \`${file}\` | ${repos.length}: ${repos.map((r) => `\`${r}\``).join(', ')} |`)
+        }
+        lines.push('', '</details>', '')
+        continue
+      }
       lines.push(`### ${kind} (${group.length})`, '', '| repo | subject | detail |', '| --- | --- | --- |')
       for (const f of group) lines.push(`| \`${f.repo}\` | \`${f.subject}\` | ${f.detail} |`)
       lines.push('')
@@ -1072,7 +1122,7 @@ function render(snapshot) {
     // neither half of the ratio.
     const applicable = states.filter((state) => state !== 'absent' && state !== 'no reference')
     const ok = applicable.filter((state) => state === 'ok').length
-    const count = snapshot.findings.filter((f) => f.repo === repo.repo).length
+    const count = snapshot.findings.filter((f) => f.repo === repo.repo && !f.informational).length
     lines.push(
       `| \`${repo.repo}\` | ${repo.declared ?? '?'} | ${repo.tag ?? '-'} | ${repo.release ?? '-'} | ${ok}/${applicable.length} ok | ${count || '-'} |`,
     )
@@ -1409,9 +1459,10 @@ console.log(
   `dependencies: ${divergences.length} divergence(s) over ${Object.keys(dependencyStats(snapshot)).length} ecosystem(s)`,
 )
 
-if (snapshot.findings.length === 0) {
+const actionable = snapshot.findings.filter((f) => !f.informational)
+if (actionable.length === 0) {
   console.log('no findings')
 } else {
-  console.log(`${snapshot.findings.length} finding(s):`)
-  for (const f of snapshot.findings) console.log(`  ${f.repo}: ${f.kind} -- ${f.subject}`)
+  console.log(`${actionable.length} finding(s), plus ${snapshot.findings.length - actionable.length} informational:`)
+  for (const f of actionable) console.log(`  ${f.repo}: ${f.kind} -- ${f.subject}`)
 }

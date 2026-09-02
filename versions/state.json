@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T11:06:13Z",
+  "scanned_at": "2026-09-02T12:33:21Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -2509,7 +2509,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -2529,7 +2529,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         }
@@ -4617,7 +4617,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -4637,7 +4637,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -5163,7 +5163,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -5183,7 +5183,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -5713,7 +5713,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -5733,7 +5733,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -6978,7 +6978,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -6998,7 +6998,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -7431,50 +7431,37 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
-        "wickra-data": "0.9",
+        "wickra-core": "1.0",
+        "wickra-data": "1.0",
         "wickra-exchange": "0.1",
-        "wickra-backtest-core": "0.1"
+        "wickra-backtest-core": "0.1.2"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.0"
-          ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
-          "pulledInBy": [
-            "screener-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 126,
-            "ahead": 0
-          }
-        },
-        {
-          "name": "wickra-core",
-          "versions": [
-            "0.9.9"
+            "0.1.2"
           ],
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "screener-core",
-            "wickra-backtest-core",
-            "wickra-data",
-            "wickra-exchange-core"
+            "screener-core"
           ]
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9",
+            "1.0.4"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": []
         },
         {
           "name": "wickra-data",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -7498,7 +7485,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -7518,7 +7505,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -8018,7 +8005,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -8038,7 +8025,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -9439,7 +9426,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 35,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -9461,7 +9448,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 35,
+            "behind": 37,
             "ahead": 0
           }
         },
@@ -9954,7 +9941,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -10868,7 +10855,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -10888,7 +10875,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 40,
+            "behind": 42,
             "ahead": 0
           }
         },
@@ -11274,6 +11261,216 @@
   },
   "findings": [
     {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "crates/wickra-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "crates/wickra-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "crates/wickra/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "bindings/wasm/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/Wickra.Tests/Wickra.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/benchmarks/Benchmarks.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "crates/wickra-backtest-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "crates/wickra-backtest-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "crates/wickra-backtest-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "crates/wickra-backtest-data/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "crates/wickra-backtest/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "bindings/wasm/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/Wickra.Backtest.Tests/Wickra.Backtest.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/benchmarks/Benchmarks.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "not in the repository",
+      "subject": "examples/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
       "repo": "wickra-backtest",
       "kind": "stale lock",
       "subject": "wickra-core",
@@ -11290,6 +11487,97 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "crates/benchmark-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "crates/benchmark-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraBenchmark.Tests/WickraBenchmark.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-benchmark",
@@ -11314,6 +11602,76 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "crates/compile-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraCompile.Tests/WickraCompile.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-compile",
@@ -11350,6 +11708,104 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "crates/copilot-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "crates/copilot-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "crates/copilot-llm/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraCopilot.Tests/WickraCopilot.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-copilot",
@@ -11373,13 +11829,13 @@
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-darwin",
@@ -11392,6 +11848,69 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "no version reference",
+      "subject": "crates/darwin-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraDarwin.Tests/WickraDarwin.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-darwin",
@@ -11419,6 +11938,48 @@
     },
     {
       "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "bindings/python/pyproject.toml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "bindings/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "bindings/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "bindings/r/DESCRIPTION",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "bindings/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "bindings/node/index.js",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
       "kind": "carries no version",
       "subject": "CITATION.cff",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
@@ -11431,9 +11992,198 @@
     },
     {
       "repo": "wickra-embed",
+      "kind": "no version reference",
+      "subject": "crates/embed-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "no version reference",
+      "subject": "crates/embed-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "examples/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "not in the repository",
+      "subject": "bindings/java/README.md",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-embed",
       "kind": "pin blocks update",
       "subject": "wickra-core",
       "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "crates/wickra-exchange-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "crates/wickra-exchange-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "crates/wickra-exchange/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "bindings/wasm/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraExchange.Tests/WickraExchange.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "not in the repository",
+      "subject": "examples/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-exchange",
@@ -11455,6 +12205,111 @@
     },
     {
       "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "crates/feature-store-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "crates/feature-store-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "crates/feature-store-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraFeatureStore.Tests/WickraFeatureStore.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-feature-store",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
       "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
@@ -11479,6 +12334,69 @@
     },
     {
       "repo": "wickra-genome",
+      "kind": "no version reference",
+      "subject": "crates/genome-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraGenome.Tests/WickraGenome.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
       "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
@@ -11499,13 +12417,13 @@
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-gym",
@@ -11518,6 +12436,90 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "crates/gym-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "crates/gym-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraGym.Tests/WickraGym.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-gym",
@@ -11553,13 +12555,13 @@
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-impact",
@@ -11572,6 +12574,69 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "no version reference",
+      "subject": "crates/impact-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraImpact.Tests/WickraImpact.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-impact",
@@ -11601,13 +12666,55 @@
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "bindings/python/pyproject.toml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "bindings/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "bindings/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "bindings/r/DESCRIPTION",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "bindings/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "bindings/node/index.js",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
     },
     {
       "repo": "wickra-pico",
@@ -11620,6 +12727,125 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "no version reference",
+      "subject": "crates/wickra-pico-signal/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "examples/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "not in the repository",
+      "subject": "bindings/java/README.md",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "Cargo.toml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "bindings/python/pyproject.toml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "bindings/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "bindings/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "bindings/r/DESCRIPTION",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "bindings/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "bindings/node/index.js",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "CITATION.cff",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
     },
     {
       "repo": "wickra-playground",
@@ -11628,6 +12854,62 @@
       "detail": "the file is present and names no version, while the repo declares null"
     },
     {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "examples/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "not in the repository",
+      "subject": "bindings/java/README.md",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
       "repo": "wickra-proof",
       "kind": "carries no version",
       "subject": "CITATION.cff",
@@ -11638,6 +12920,104 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "crates/proof-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "crates/proof-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "crates/wickra-proof-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraProof.Tests/WickraProof.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-proof",
@@ -11665,6 +13045,104 @@
     },
     {
       "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "crates/radar-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "crates/radar-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraRadar.Tests/WickraRadar.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-radar",
       "kind": "pin blocks update",
       "subject": "wickra-core",
       "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
@@ -11673,13 +13151,13 @@
       "repo": "wickra-radar",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-radar",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-screener",
@@ -11695,33 +13173,118 @@
     },
     {
       "repo": "wickra-screener",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "kind": "no version reference",
+      "subject": "crates/screener-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-screener",
-      "kind": "pin blocks update",
+      "kind": "no version reference",
+      "subject": "crates/screener-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraScreener.Tests/WickraScreener.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "duplicate",
       "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+      "detail": "resolved at 0.9.9 and 1.0.4 in one graph, so the two do not share types"
     },
     {
       "repo": "wickra-screener",
-      "kind": "pin blocks update",
-      "subject": "wickra-data",
-      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
     },
     {
       "repo": "wickra-screener",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-screener",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-shazam",
@@ -11737,6 +13300,97 @@
     },
     {
       "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "crates/shazam-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "crates/shazam-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraShazam.Tests/WickraShazam.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
       "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
@@ -11757,13 +13411,13 @@
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -11776,6 +13430,111 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "crates/strategy-ci-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "crates/strategy-ci-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "crates/strategy-ci-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraStrategyCi.Tests/WickraStrategyCi.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-strategy-ci",
@@ -11800,6 +13559,111 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "crates/synth-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "crates/synth-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "crates/synth-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraSynth.Tests/WickraSynth.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-synth",
@@ -11818,6 +13682,90 @@
       "kind": "carries no version",
       "subject": "CITATION.cff",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "crates/ui-tui/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "crates/wickra-terminal-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "crates/wickra-terminal-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraTerminal.Tests/WickraTerminal.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/benchmarks/Benchmarks.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-terminal",
@@ -11835,13 +13783,13 @@
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 330df912, 35 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 330df912, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 330df912, 35 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 330df912, 37 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-timemachine",
@@ -11854,6 +13802,69 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "no version reference",
+      "subject": "crates/timemachine-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraTimeMachine.Tests/WickraTimeMachine.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-timemachine",
@@ -11865,7 +13876,7 @@
       "repo": "wickra-timemachine",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-verify",
@@ -11878,6 +13889,111 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "crates/verify-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "crates/verify-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "crates/wickra-verify-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraVerify.Tests/WickraVerify.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-verify",
@@ -11905,6 +14021,90 @@
     },
     {
       "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "crates/xray-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "crates/xray-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "bindings/csharp/WickraXray.Tests/WickraXray.Tests.csproj",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "examples/node/package.json",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "bindings/java/README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-xray",
       "kind": "pin blocks update",
       "subject": "wickra-core",
       "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
@@ -11913,13 +14113,55 @@
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 40 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 42 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "bindings/python/pyproject.toml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "bindings/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "bindings/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "bindings/r/DESCRIPTION",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "bindings/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "bindings/node/index.js",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
     },
     {
       "repo": "wickra-zk",
@@ -11932,6 +14174,83 @@
       "kind": "carries no version",
       "subject": "SECURITY.md",
       "detail": "the file is present and names no version, while the repo declares 0.1.0"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "no version reference",
+      "subject": "crates/wickra-zk-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "no version reference",
+      "subject": "crates/wickra-zk-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "no version reference",
+      "subject": "crates/wickra-zk-host/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "examples/node/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "examples/node/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "web/package.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "web/package-lock.json",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "examples/java/pom.xml",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "not in the repository",
+      "subject": "bindings/java/README.md",
+      "detail": "a binding or file this repository does not have",
+      "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "no version reference",
+      "subject": "README.md",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-zk",
