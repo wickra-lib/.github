@@ -1,11 +1,12 @@
 {
-  "scanned_at": "2026-09-02T00:27:34Z",
+  "scanned_at": "2026-09-02T00:36:23Z",
   "owner": "wickra-lib",
   "repos": [
     {
       "repo": "wickra",
       "declared": "1.0.4",
       "tag": "v1.0.4",
+      "release": "v1.0.4",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -66,6 +67,51 @@
           "file": "bindings/node/package.json optionalDependencies.wickra-win32-arm64-msvc",
           "ecosystem": "npm",
           "version": "1.0.4"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "1.0.4"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": "1.0.4"
         }
       ],
       "published": [
@@ -75,9 +121,20 @@
           "version": "1.0.4"
         },
         {
+          "registry": "crates.io",
+          "pkg": "wickra-core",
+          "version": "1.0.4"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-data",
+          "version": "1.0.4"
+        },
+        {
           "registry": "PyPI",
           "pkg": "wickra",
-          "version": "1.0.4"
+          "version": "1.0.4",
+          "note": "9 files"
         },
         {
           "registry": "npm",
@@ -241,6 +298,7 @@
       "repo": "wickra-backtest",
       "declared": "0.1.2",
       "tag": "v0.1.2",
+      "release": "v0.1.2",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -301,6 +359,46 @@
           "file": "bindings/node/package.json optionalDependencies.wickra-backtest-win32-arm64-msvc",
           "ecosystem": "npm",
           "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
         }
       ],
       "published": [
@@ -310,9 +408,25 @@
           "version": "0.1.2"
         },
         {
+          "registry": "crates.io",
+          "pkg": "wickra-backtest-cli",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-backtest-core",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-backtest-data",
+          "version": "0.1.2"
+        },
+        {
           "registry": "PyPI",
           "pkg": "wickra-backtest",
-          "version": "0.1.2"
+          "version": "0.1.2",
+          "note": "9 files"
         },
         {
           "registry": "npm",
@@ -493,6 +607,7 @@
       "repo": "wickra-exchange",
       "declared": "0.1.0",
       "tag": null,
+      "release": null,
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -551,6 +666,41 @@
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-exchange-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
           "ecosystem": "npm",
           "version": "0.1.0"
         }
@@ -726,6 +876,12 @@
     }
   },
   "findings": [
+    {
+      "repo": "wickra-backtest",
+      "kind": "manifest differs",
+      "subject": "bindings/java/benchmarks/pom.xml",
+      "detail": "0.1.0 against the declared 0.1.2"
+    },
     {
       "repo": "wickra-backtest",
       "kind": "stale lock",
