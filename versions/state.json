@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-01T23:59:44Z",
+  "scanned_at": "2026-09-02T00:06:10Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -526,6 +526,237 @@
             "wickra-backtest-core",
             "wickra-backtest-data"
           ]
+        }
+      ]
+    },
+    {
+      "repo": "wickra-exchange",
+      "declared": "0.1.0",
+      "tag": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/WickraExchange/WickraExchange.csproj",
+          "ecosystem": "nuget",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-exchange-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-exchange-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-exchange-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-exchange-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-exchange-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-exchange-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-exchange",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-exchange",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-exchange",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-exchange-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-exchange-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-exchange-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-exchange-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-exchange-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-exchange-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "WickraExchange",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-exchange",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickraexchange",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-exchange-go",
+        "module": "github.com/wickra-lib/wickra-exchange-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-exchange-core": "0.1.0",
+        "wickra-exchange": "0.1.0"
+      },
+      "lock": [
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "sources": [
+            "registry+https://github.com/rust-lang/crates.io-index"
+          ],
+          "pulledInBy": [
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": [
+            "wickra-exchange-c",
+            "wickra-exchange-examples",
+            "wickra-exchange-node",
+            "wickra-exchange-python"
+          ]
+        },
+        {
+          "name": "wickra-exchange-bench",
+          "versions": [
+            "0.1.0"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-exchange-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": [
+            "wickra-exchange",
+            "wickra-exchange-bench"
+          ]
+        },
+        {
+          "name": "wickra-exchange-examples",
+          "versions": [
+            "0.1.0"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-exchange-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-exchange-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
         }
       ]
     }
