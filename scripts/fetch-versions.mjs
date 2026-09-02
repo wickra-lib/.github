@@ -45,6 +45,10 @@ const OUT_DIR = 'versions'
 // a package that was never meant to exist would report a wall of absences.
 const ships = (entry, slug) => (entry.set ?? FULL).includes(slug)
 
+// The package-name prefix every first-party artefact shares, which is what
+// makes it usable as the "is this ours" test when reading a dependency.
+const PROJECT_PREFIX = 'wickra'
+
 const UA = 'wickra-lib-version-snapshot (https://github.com/wickra-lib/.github)'
 
 // --- Networking --------------------------------------------------------------
@@ -131,7 +135,15 @@ function manifestPaths(entry) {
     nodeIndex: 'bindings/node/index.js',
     examplePom: 'examples/java/pom.xml',
     javaReadme: 'bindings/java/README.md',
-    dataCargo: `crates/${entry.repo}-data/Cargo.toml`,
+    // The root README carries an install snippet in some repos and only a
+    // coordinate without a version in others; which of the two is what the
+    // extraction decides, not this table.
+    readme: 'README.md',
+    exampleNodePkg: 'examples/node/package.json',
+    // The terminal's Vue renderer. No sibling has one, and asking for a file
+    // that is not there costs nothing.
+    webPkg: 'web/package.json',
+    webLock: 'web/package-lock.json',
   }
 }
 
@@ -183,6 +195,15 @@ function repoQuery(paths) {
         platformDir: object(expression: "HEAD:bindings/node/npm") {
           ... on Tree { entries { name } }
         }
+        cratesDir: object(expression: "HEAD:crates") {
+          ... on Tree { entries { name } }
+        }
+        bindingsDir: object(expression: "HEAD:bindings") {
+          ... on Tree { entries { name } }
+        }
+        csharpDir: object(expression: "HEAD:bindings/csharp") {
+          ... on Tree { entries { name object { ... on Tree { entries { name } } } } }
+        }
         ${blobs}
       }
       go: repository(owner: $owner, name: $goName) {
@@ -192,13 +213,14 @@ function repoQuery(paths) {
     }`
 }
 
-// The six platform packages each carry their own version and are bumped with
-// every release, so they are read rather than trusted. Their directory names are
-// listed by the first query, which keeps the set derived rather than declared.
-async function fetchPlatformManifests(name, dirs) {
-  if (dirs.length === 0) return {}
-  const blobs = dirs
-    .map((dir, i) => `d${i}: object(expression: "HEAD:bindings/node/npm/${dir}/package.json") { ...blob }`)
+// Everything whose path is only known once the repository tree has been read:
+// the platform stubs, the C# projects, and the per-crate manifests. Fetched in
+// one further query so the shape of a repo costs one round trip, not one per
+// file.
+async function fetchDiscovered(name, paths) {
+  if (paths.length === 0) return {}
+  const blobs = paths
+    .map((path, i) => `d${i}: object(expression: "HEAD:${path}") { ...blob }`)
     .join('\n        ')
   const data = await graphql(
     `
@@ -210,7 +232,7 @@ async function fetchPlatformManifests(name, dirs) {
     }`,
     { owner: OWNER, name },
   )
-  return Object.fromEntries(dirs.map((dir, i) => [dir, blobText(data.repo[`d${i}`])]))
+  return Object.fromEntries(paths.map((path, i) => [path, blobText(data.repo[`d${i}`])]))
 }
 
 function blobText(node) {
@@ -487,6 +509,23 @@ const pathDependencyVersions = (toml) =>
     (m) => m[1] ?? m[2],
   )
 
+// An npm manifest carries our version in two places: as its own, when the
+// package is ours, and as a pinned dependency on one of our packages. A
+// `file:` reference is neither.
+// Dependency pins only. An example's own version is a placeholder nobody bumps
+// -- wickra's examples/node sits at 0.0.0 -- so reading it reports the example
+// as drifting on every release.
+function npmManifestVersions(text, prefix) {
+  const pkg = JSON.parse(text)
+  const found = []
+  for (const group of [pkg.dependencies, pkg.devDependencies, pkg.optionalDependencies]) {
+    for (const [dep, spec] of Object.entries(group ?? {})) {
+      if (dep.startsWith(prefix) && /^\d+\.\d+\.\d+$/.test(spec)) found.push(spec)
+    }
+  }
+  return found
+}
+
 const csprojDeps = (xml) =>
   [...xml.matchAll(/<PackageReference\s+Include="([^"]+)"[^>]*?Version="([^"]+)"/g)].map((m) => ({
     name: m[1],
@@ -588,77 +627,117 @@ async function scanRepo(entry) {
   const platformPkgs = Object.entries(nodePkg?.optionalDependencies ?? {})
 
   const platformDirs = (data.repo.platformDir?.entries ?? []).map((e) => e.name).sort()
-  const platformManifests = await fetchPlatformManifests(name, platformDirs)
+
+  // Paths that depend on the shape of this repository rather than on a
+  // convention every repo follows. Read off the tree so a new crate, binding or
+  // C# project is picked up by being there, not by being remembered.
+  const crateManifests = (data.repo.cratesDir?.entries ?? []).map((e) => `crates/${e.name}/Cargo.toml`)
+  const bindingManifests = (data.repo.bindingsDir?.entries ?? []).map((e) => `bindings/${e.name}/Cargo.toml`)
+  const csprojPaths = (data.repo.csharpDir?.entries ?? []).flatMap((dir) =>
+    (dir.object?.entries ?? [])
+      .filter((file) => file.name.endsWith('.csproj'))
+      .map((file) => `bindings/csharp/${dir.name}/${file.name}`),
+  )
+  const discovered = [
+    ...platformDirs.map((dir) => `bindings/node/npm/${dir}/package.json`),
+    ...crateManifests,
+    ...bindingManifests,
+    ...csprojPaths,
+  ]
+  const extra = await fetchDiscovered(name, discovered)
+
+  // Every row records whether the file is in the repository, separately from
+  // whether it carries a version. Conflating the two hides the more interesting
+  // half: a binding a repo does not ship is not a defect, but a file that is
+  // there and names no version, in a place where the version belongs, is.
+  // `required` marks a file that has to name the release whenever it exists.
+  // The rest reference it instead of declaring it -- a README with an install
+  // snippet, an example that pins a real version -- and carrying nothing is a
+  // legitimate state for those, not a defect.
+  // `range` marks a value that is a version *requirement* rather than a
+  // version: a sibling pinned as "0.1" admits 0.1.0 and is correct, and
+  // comparing the two as strings reports every caret pin in the org as drift.
+  const row = (file, ecosystem, text, extract, required = false, range = false) => ({
+    file,
+    ecosystem,
+    required,
+    range,
+    present: text !== null && text !== undefined,
+    version: text === null || text === undefined ? null : extract(text),
+  })
 
   const manifests = [
-    { file: 'Cargo.toml', ecosystem: 'cargo', version: declared },
-    { file: 'bindings/python/pyproject.toml', ecosystem: 'python', version: files.pyproject ? pyprojectVersion(files.pyproject) : null },
-    { file: 'bindings/node/package.json', ecosystem: 'npm', version: nodePkg?.version ?? null },
-    { file: paths.csproj, ecosystem: 'nuget', version: files.csproj ? csprojVersion(files.csproj) : null },
-    { file: 'bindings/java/pom.xml', ecosystem: 'maven', version: files.pom ? pomVersion(files.pom) : null },
-    { file: 'bindings/r/DESCRIPTION', ecosystem: 'r', version: files.rDescription ? descriptionVersion(files.rDescription) : null },
+    row('Cargo.toml', 'cargo', files.cargoToml, () => declared, true),
+    row('bindings/python/pyproject.toml', 'python', files.pyproject, pyprojectVersion, true),
+    row('bindings/node/package.json', 'npm', files.nodePkg, (t) => JSON.parse(t).version ?? null, true),
+    row('bindings/java/pom.xml', 'maven', files.pom, pomVersion, true),
+    row('bindings/r/DESCRIPTION', 'r', files.rDescription, descriptionVersion, true),
+    row('bindings/node/package-lock.json', 'npm', files.nodeLock, (t) => JSON.parse(t).version ?? null, true),
+    row('bindings/node/index.js', 'npm', files.nodeIndex, (t) => reportVersions(napiGuardVersions(t)), true),
+    row('CITATION.cff', 'citation', files.citation, citationVersion, true),
+    row('SECURITY.md', 'docs', files.security, (t) => reportVersions(securityVersions(t)), true),
+
+    // Declared expectations rather than files: the six platform packages the
+    // node manifest promises exist at this version.
     ...platformPkgs.map(([pkg, version]) => ({
       file: `bindings/node/package.json optionalDependencies.${pkg}`,
       ecosystem: 'npm',
+      present: true,
       version,
     })),
-    ...platformDirs.map((dir) => ({
-      file: `bindings/node/npm/${dir}/package.json`,
-      ecosystem: 'npm',
-      version: platformManifests[dir] ? JSON.parse(platformManifests[dir]).version : null,
-    })),
-    {
-      file: 'bindings/node/package-lock.json',
-      ecosystem: 'npm',
-      version: files.nodeLock ? JSON.parse(files.nodeLock).version : null,
-    },
-    {
-      file: 'examples/node/package-lock.json',
-      ecosystem: 'npm',
-      version: files.exampleLock ? linkedLockVersion(files.exampleLock, nodePkg?.name ?? name) : null,
-    },
-    {
-      file: 'bindings/java/benchmarks/pom.xml',
-      ecosystem: 'maven',
-      version: files.pomBench && files.pom ? ownDependencyVersion(files.pomBench, files.pom) : null,
-    },
-    {
-      file: 'examples/java/pom.xml',
-      ecosystem: 'maven',
-      version: files.examplePom && files.pom ? reportVersions(ownPomVersions(files.examplePom, files.pom)) : null,
-    },
-    {
-      file: 'bindings/java/README.md',
-      ecosystem: 'maven',
-      version: files.javaReadme && files.pom ? reportVersions(snippetVersions(files.javaReadme, files.pom)) : null,
-    },
-    {
-      file: `crates/${name}-data/Cargo.toml`,
-      ecosystem: 'cargo',
-      version: files.dataCargo ? reportVersions(pathDependencyVersions(files.dataCargo)) : null,
-    },
+    // Pins on the repo's own crates, which publish a dependency on a version
+    // that has to exist.
     ...Object.entries(files.cargoToml ? cargoWorkspaceDeps(files.cargoToml) : {})
       .filter(([crate]) => crate.startsWith(name))
       .map(([crate, pin]) => ({
         file: `Cargo.toml [workspace.dependencies] ${crate}`,
         ecosystem: 'cargo',
+        present: true,
+        range: true,
         version: pin,
       })),
-    {
-      file: 'CITATION.cff',
-      ecosystem: 'citation',
-      version: files.citation ? citationVersion(files.citation) : null,
-    },
-    {
-      file: 'SECURITY.md',
-      ecosystem: 'docs',
-      version: files.security ? reportVersions(securityVersions(files.security)) : null,
-    },
-    {
-      file: 'bindings/node/index.js',
-      ecosystem: 'npm',
-      version: files.nodeIndex ? reportVersions(napiGuardVersions(files.nodeIndex)) : null,
-    },
+
+    // Discovered rather than assumed: whatever crates, bindings, C# projects and
+    // platform stubs this repository actually has. A path built from a directory
+    // listing that turns out to hold no such file is dropped rather than shown
+    // as absent -- absence is worth rendering for a candidate the org expects,
+    // not for one this scan constructed on spec.
+    ...discovered.map((path) => {
+      if (path.endsWith('.csproj')) {
+        // The published project, whose directory is the NuGet id, must carry the
+        // version; the test and benchmark projects beside it need not.
+        const published = entry.nuget !== undefined && path === `bindings/csharp/${entry.nuget}/${entry.nuget}.csproj`
+        return row(path, 'nuget', extra[path], csprojVersion, published)
+      }
+      if (path.endsWith('Cargo.toml')) {
+        // A crate inheriting version.workspace = true carries nothing of its
+        // own, which is the normal case; only a path-and-version pin does.
+        return row(path, 'cargo', extra[path], (t) => reportVersions(pathDependencyVersions(t)), false, true)
+      }
+      return row(path, 'npm', extra[path], (t) => JSON.parse(t).version ?? null, true)
+    }).filter((m) => m.present),
+
+    // Files that reference the release rather than declare it. Each is read
+    // through our own coordinates, so a plugin or third-party pin sitting at the
+    // same number is not mistaken for ours.
+    row('examples/node/package-lock.json', 'npm', files.exampleLock, (t) =>
+      linkedLockVersion(t, nodePkg?.name ?? name),
+    ),
+    row('examples/node/package.json', 'npm', files.exampleNodePkg, (t) =>
+      reportVersions(npmManifestVersions(t, PROJECT_PREFIX)),
+    ),
+    row('web/package.json', 'npm', files.webPkg, (t) => JSON.parse(t).version ?? null),
+    row('web/package-lock.json', 'npm', files.webLock, (t) => JSON.parse(t).version ?? null),
+    row('bindings/java/benchmarks/pom.xml', 'maven', files.pomBench, (t) =>
+      files.pom ? ownDependencyVersion(t, files.pom) : null,
+    ),
+    row('examples/java/pom.xml', 'maven', files.examplePom, (t) =>
+      files.pom ? reportVersions(ownPomVersions(t, files.pom)) : null,
+    ),
+    row('bindings/java/README.md', 'maven', files.javaReadme, (t) =>
+      files.pom ? reportVersions(snippetVersions(t, files.pom)) : null,
+    ),
+    row('README.md', 'docs', files.readme, (t) => (files.pom ? reportVersions(snippetVersions(t, files.pom)) : null)),
   ].filter((m) => m.file !== null)
 
   const crateName = entry.crate ?? name
@@ -810,12 +889,22 @@ function collectFindings(snapshot) {
 
     for (const m of repo.manifests) {
       const state = markManifest(m, repo.declared)
-      if (state === 'ok' || state === 'absent') continue
+      if (state === 'ok' || state === 'absent' || state === 'no reference') continue
       found.push({
         repo: repo.repo,
-        kind: `manifest ${state}`,
+        kind:
+          state === 'no version'
+            ? 'carries no version'
+            : state === 'out of range'
+              ? 'pin excludes the declared version'
+              : `manifest ${state}`,
         subject: m.file,
-        detail: `${m.version ?? 'absent'} against the declared ${repo.declared}`,
+        detail:
+          state === 'no version'
+            ? `the file is present and names no version, while the repo declares ${repo.declared}`
+            : state === 'out of range'
+              ? `pinned \`${m.version}\`, which does not admit the declared ${repo.declared}`
+            : `${m.version} against the declared ${repo.declared}`,
       })
     }
 
@@ -888,18 +977,37 @@ function collectFindings(snapshot) {
   return found
 }
 
-// A manifest that is not in the repository is a binding this repo does not
-// ship, which across 25 repos of differing surface is the common case rather
-// than a defect. It stays in the table so the coverage is visible, but it is
-// not a finding -- only a file that exists and disagrees is.
-const markManifest = (manifest, expected) =>
-  manifest.version === null ? 'absent' : mark(manifest, expected)
+// Four ways a manifest row can fail to name the release, and only two of them
+// are findings:
+//
+//   absent        the file is not in the repository -- a binding this repo does
+//                 not ship. Across 25 repos of differing surface that is the
+//                 common case, not a defect.
+//   no version    the file is there, the version belongs in it, and it names
+//                 none. This is what a list-driven check cannot see at all: it
+//                 fails on a wrong number, never on an absent one.
+//   no reference  the file is there and merely *may* reference the release --
+//                 a README snippet, an example pinning a real version. Carrying
+//                 nothing is legitimate.
+//   differs       it names a version, and not the declared one.
+function markManifest(manifest, expected) {
+  if (!manifest.present) return 'absent'
+  if (manifest.version === null) return manifest.required ? 'no version' : 'no reference'
+  if (manifest.range && expected !== null) {
+    const admits = caretAllows(manifest.version, expected)
+    if (admits === null) return mark(manifest, expected)
+    return admits ? 'ok' : 'out of range'
+  }
+  return mark(manifest, expected)
+}
 
 // Most consequential first: a crate resolving twice is broken now, a pin that
 // cannot reach the newer release is a decision someone has to make, and a
 // commit pin drifting is housekeeping.
 const FINDING_ORDER = [
   'duplicate',
+  'carries no version',
+  'pin excludes the declared version',
   'no release for the newest tag',
   'pin blocks update',
   'manifest differs',
@@ -962,7 +1070,7 @@ function render(snapshot) {
     ]
     // Absent rows are bindings this repo does not ship, so they belong in
     // neither half of the ratio.
-    const applicable = states.filter((state) => state !== 'absent')
+    const applicable = states.filter((state) => state !== 'absent' && state !== 'no reference')
     const ok = applicable.filter((state) => state === 'ok').length
     const count = snapshot.findings.filter((f) => f.repo === repo.repo).length
     lines.push(
@@ -1287,7 +1395,7 @@ for (const repo of snapshot.repos) {
     ...repo.published.map((a) => mark(a, repo.declared, released)),
   ]
   const count = (state) => states.filter((s) => s === state).length
-  const benign = new Set(['ok', 'absent', 'unreachable', 'unreleased'])
+  const benign = new Set(['ok', 'absent', 'no reference', 'unreachable', 'unreleased'])
   const off = states.filter((s) => !benign.has(s)).length
   const duplicates = repo.lock.filter((l) => l.versions.length > 1).length
   console.log(
