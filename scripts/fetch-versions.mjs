@@ -33,17 +33,17 @@
  */
 
 import { mkdir, writeFile } from 'node:fs/promises'
-import { REPOS } from './repos.mjs'
+import { FULL, REPOS } from './repos.mjs'
 
 const OWNER = 'wickra-lib'
 const OUT_DIR = 'versions'
 
-// Pilot scope, chosen so each addition has to prove something the one before
-// could not: wickra is the widest case in the org, wickra-backtest is the first
-// repo the paths were not written against, and wickra-exchange is the first that
-// has never released. Widen to REPOS.map(r => r.repo) once the table still reads
-// well at that length.
-const PILOT = ['wickra', 'wickra-backtest', 'wickra-exchange']
+// Which registries a repo publishes to at all. repos.mjs already carries this
+// as the badge set, because the org is not uniform: wickra-embed ships a C
+// binding and one crate, wickra-pico is firmware that attaches artefacts and
+// publishes no package, wickra-playground is a deployed site. Asking npm about
+// a package that was never meant to exist would report a wall of absences.
+const ships = (entry, slug) => (entry.set ?? FULL).includes(slug)
 
 const UA = 'wickra-lib-version-snapshot (https://github.com/wickra-lib/.github)'
 
@@ -151,7 +151,10 @@ async function graphql(query, variables) {
     body: JSON.stringify({ query, variables }),
   })
   const body = await res.json()
-  if (body.errors) throw new Error(`GraphQL: ${body.errors.map((e) => e.message).join('; ')}`)
+  // Not every repo has a -go mirror, and GraphQL reports an absent repository as
+  // an error rather than as null. That one is expected; anything else is not.
+  const fatal = (body.errors ?? []).filter((e) => e.type !== 'NOT_FOUND')
+  if (fatal.length > 0) throw new Error(`GraphQL: ${fatal.map((e) => e.message).join('; ')}`)
   return body.data
 }
 
@@ -248,6 +251,13 @@ function cargoWorkspaceDeps(toml) {
 // Two entries under one name is the cross-repo diamond that made this worth
 // writing: wickra-terminal resolves wickra-core twice, 1.0.x directly and 0.9.9
 // through wickra-exchange-core.
+// A git dependency records the exact commit it resolved to, which is the only
+// version it has: no tag, no semver, just a point in that repository's history.
+function gitSource(source) {
+  const match = source.match(/^git\+https:\/\/github\.com\/([^/]+)\/([^#?]+?)(?:\.git)?(?:\?[^#]*)?#([0-9a-f]{7,40})$/)
+  return match ? { owner: match[1], repo: match[2], sha: match[3] } : null
+}
+
 function cargoLockWickra(lock) {
   const resolved = new Map()
   const dependants = new Map()
@@ -269,10 +279,17 @@ function cargoLockWickra(lock) {
     .map(([name, entries]) => ({
       name,
       versions: entries.map((e) => e.version).sort(),
-      // A crate pulled from crates.io can be compared against what it publishes;
-      // a workspace member resolved by path is this repo's own code and has
+      // Three origins, and each asks a different question. A crate from
+      // crates.io can be compared against what it publishes. A crate pinned by
+      // git commit can be compared against the branch it was pinned from. A
+      // workspace member resolved by path is this repo's own code and has
       // nothing to lag behind.
-      fromRegistry: entries.some((e) => e.source.startsWith('registry+')),
+      origin: entries.some((e) => e.source.startsWith('registry+'))
+        ? 'registry'
+        : entries.some((e) => e.source.startsWith('git+'))
+          ? 'git'
+          : 'path',
+      git: entries.map((e) => gitSource(e.source)).find(Boolean) ?? null,
       pulledInBy: [...(dependants.get(name) ?? [])].sort(),
     }))
     .sort((a, b) => a.name.localeCompare(b.name))
@@ -413,15 +430,6 @@ function ownDependencyVersion(benchXml, mainXml) {
 
 // Files that legitimately do not exist in every repo: absent is not a finding,
 // only a present-but-wrong version is.
-// Files that legitimately do not exist in every repo, or that carry no version
-// in some of them. Absent is not a finding here; a present-but-wrong value is.
-const OPTIONAL_MANIFESTS = new Set([
-  'examples/node/package-lock.json',
-  'bindings/java/benchmarks/pom.xml',
-  'examples/java/pom.xml',
-  'bindings/java/README.md',
-])
-
 // Several carriers hold the version more than once, and one of them being
 // stale is the whole point of looking. The distinct set is reported: one value
 // renders as that value, more than one renders as the set and can never equal
@@ -549,6 +557,22 @@ const registry = {
   runiverse: async (name) => (await json(`https://${OWNER}.r-universe.dev/api/packages/${name}`))?.Version ?? null,
 }
 
+// How far the pinned commit sits behind the branch it was taken from. This is
+// the one drift a lockfile cannot express as a version: a git dependency has no
+// semver to compare, only a position in someone else's history.
+async function commitDistance(git) {
+  const res = await request(`https://api.github.com/repos/${git.owner}/${git.repo}/compare/HEAD...${git.sha}`, {
+    headers: {
+      authorization: `bearer ${process.env.GH_TOKEN}`,
+      accept: 'application/vnd.github+json',
+      'user-agent': UA,
+    },
+  })
+  if (res === null) return null
+  const body = await res.json()
+  return { status: body.status, behind: body.behind_by, ahead: body.ahead_by }
+}
+
 // --- Scan --------------------------------------------------------------------
 
 async function scanRepo(entry) {
@@ -635,11 +659,7 @@ async function scanRepo(entry) {
       ecosystem: 'npm',
       version: files.nodeIndex ? reportVersions(napiGuardVersions(files.nodeIndex)) : null,
     },
-  ].filter(
-    (m) =>
-      m.file !== null &&
-      !(m.version === null && (OPTIONAL_MANIFESTS.has(m.file) || m.file.endsWith('-data/Cargo.toml'))),
-  )
+  ].filter((m) => m.file !== null)
 
   const crateName = entry.crate ?? name
   const npmName = nodePkg?.name ?? name
@@ -653,36 +673,50 @@ async function scanRepo(entry) {
   // at all -- a crate marked publish = false simply is not there.
   const members = files.cargoLock
     ? cargoLockWickra(files.cargoLock)
-        .filter((entry) => !entry.fromRegistry && entry.name !== crateName)
+        .filter((entry) => entry.origin === 'path' && entry.name !== crateName)
         .map((entry) => entry.name)
     : []
   const memberRows = []
-  for (const member of members) {
-    const result = await probe(() => registry.crates(member))
-    if (result.version === null && !result.unreachable) continue
-    memberRows.push({ registry: 'crates.io', pkg: member, ...result })
+  if (ships(entry, 'crates')) {
+    for (const member of members) {
+      const result = await probe(() => registry.crates(member))
+      if (result.version === null && !result.unreachable) continue
+      memberRows.push({ registry: 'crates.io', pkg: member, ...result })
+    }
   }
 
-  const pypi = await probe(() => registry.pypi(name))
+  const pypi = ships(entry, 'pypi') ? await probe(() => registry.pypi(name)) : null
   const published = [
-    { registry: 'crates.io', pkg: crateName, ...(await probe(() => registry.crates(crateName))) },
-    ...memberRows,
-    {
-      registry: 'PyPI',
-      pkg: name,
-      version: pypi.version?.version ?? null,
-      unreachable: pypi.unreachable,
-      note: pypi.version ? `${pypi.version.files} files` : undefined,
-    },
-    { registry: 'npm', pkg: npmName, ...(await probe(() => registry.npm(npmName))) },
-    ...(await Promise.all(
-      platformPkgs.map(async ([pkg]) => ({ registry: 'npm', pkg, ...(await probe(() => registry.npm(pkg))) })),
-    )),
-    ...(files.wasmCargo
-      ? [{ registry: 'npm', pkg: `${name}-wasm`, ...(await probe(() => registry.npm(`${name}-wasm`))) }]
+    ...(ships(entry, 'crates')
+      ? [{ registry: 'crates.io', pkg: crateName, ...(await probe(() => registry.crates(crateName))) }]
       : []),
-    ...(entry.nuget ? [{ registry: 'NuGet', pkg: entry.nuget, ...(await probe(() => registry.nuget(entry.nuget))) }] : []),
-    ...(groupId && artifactId
+    ...memberRows,
+    ...(pypi
+      ? [
+          {
+            registry: 'PyPI',
+            pkg: name,
+            version: pypi.version?.version ?? null,
+            unreachable: pypi.unreachable,
+            note: pypi.version ? `${pypi.version.files} files` : undefined,
+          },
+        ]
+      : []),
+    ...(ships(entry, 'npm')
+      ? [
+          { registry: 'npm', pkg: npmName, ...(await probe(() => registry.npm(npmName))) },
+          ...(await Promise.all(
+            platformPkgs.map(async ([pkg]) => ({ registry: 'npm', pkg, ...(await probe(() => registry.npm(pkg))) })),
+          )),
+          ...(files.wasmCargo
+            ? [{ registry: 'npm', pkg: `${name}-wasm`, ...(await probe(() => registry.npm(`${name}-wasm`))) }]
+            : []),
+        ]
+      : []),
+    ...(ships(entry, 'nuget') && entry.nuget
+      ? [{ registry: 'NuGet', pkg: entry.nuget, ...(await probe(() => registry.nuget(entry.nuget))) }]
+      : []),
+    ...(ships(entry, 'maven') && groupId && artifactId
       ? [
           {
             registry: 'Maven',
@@ -691,7 +725,9 @@ async function scanRepo(entry) {
           },
         ]
       : []),
-    { registry: 'r-universe', pkg: runivName, ...(await probe(() => registry.runiverse(runivName))) },
+    ...(ships(entry, 'r-universe')
+      ? [{ registry: 'r-universe', pkg: runivName, ...(await probe(() => registry.runiverse(runivName))) }]
+      : []),
   ]
 
   const release = data.repo.releases?.nodes?.[0]
@@ -702,14 +738,14 @@ async function scanRepo(entry) {
     release: release && !release.isDraft ? release.tagName : null,
     manifests,
     published,
-    go: {
+    go: ships(entry, 'go') ? {
       repo: goRepo,
       // The module path that actually resolves is the mirror's, since that is
       // the repository a `go get` fetches and the tag comes from there too.
       module: data.go?.goMod ? goModule(blobText(data.go.goMod)) : null,
       declaredInRepo: files.goMod ? goModule(files.goMod) : null,
       tag: tagName(data.go),
-    },
+    } : null,
     pins: files.cargoToml ? cargoWorkspaceDeps(files.cargoToml) : {},
     lock: files.cargoLock ? cargoLockWickra(files.cargoLock) : [],
     ...collectDeps(files, paths),
@@ -773,11 +809,11 @@ function collectFindings(snapshot) {
     const released = repo.tag !== null
 
     for (const m of repo.manifests) {
-      const state = mark(m, repo.declared)
-      if (state === 'ok') continue
+      const state = markManifest(m, repo.declared)
+      if (state === 'ok' || state === 'absent') continue
       found.push({
         repo: repo.repo,
-        kind: state === 'missing' ? 'manifest absent' : `manifest ${state}`,
+        kind: `manifest ${state}`,
         subject: m.file,
         detail: `${m.version ?? 'absent'} against the declared ${repo.declared}`,
       })
@@ -791,15 +827,6 @@ function collectFindings(snapshot) {
         kind: state === 'missing' ? 'not published' : `registry ${state}`,
         subject: `${p.registry} ${p.pkg}`,
         detail: `${p.version ?? 'absent'} against the declared ${repo.declared}`,
-      })
-    }
-
-    if (repo.go.module && repo.go.declaredInRepo && repo.go.module !== repo.go.declaredInRepo) {
-      found.push({
-        repo: repo.repo,
-        kind: 'go module path differs from its mirror',
-        subject: 'bindings/go/go.mod',
-        detail: `declares \`${repo.go.declaredInRepo}\` while ${repo.go.repo} publishes \`${repo.go.module}\`, which is the path a go get resolves`,
       })
     }
 
@@ -824,7 +851,19 @@ function collectFindings(snapshot) {
           detail: `resolved at ${l.versions.join(' and ')} in one graph, so the two do not share types`,
         })
       }
-      if (!l.fromRegistry) continue
+      if (l.origin === 'git') {
+        const distance = l.gitDistance
+        if (distance && distance.behind > 0) {
+          found.push({
+            repo: repo.repo,
+            kind: 'git pin behind',
+            subject: l.name,
+            detail: `pinned at ${l.git.sha.slice(0, 8)}, ${distance.behind} commit(s) behind the default branch of ${l.git.owner}/${l.git.repo}`,
+          })
+        }
+        continue
+      }
+      if (l.origin !== 'registry') continue
       const latest = publishedVersion(snapshot, l.name)
       if (!latest) continue
       const behind = l.versions.filter((version) => version !== latest)
@@ -849,6 +888,27 @@ function collectFindings(snapshot) {
   return found
 }
 
+// A manifest that is not in the repository is a binding this repo does not
+// ship, which across 25 repos of differing surface is the common case rather
+// than a defect. It stays in the table so the coverage is visible, but it is
+// not a finding -- only a file that exists and disagrees is.
+const markManifest = (manifest, expected) =>
+  manifest.version === null ? 'absent' : mark(manifest, expected)
+
+// Most consequential first: a crate resolving twice is broken now, a pin that
+// cannot reach the newer release is a decision someone has to make, and a
+// commit pin drifting is housekeeping.
+const FINDING_ORDER = [
+  'duplicate',
+  'no release for the newest tag',
+  'pin blocks update',
+  'manifest differs',
+  'registry differs',
+  'not published',
+  'stale lock',
+  'git pin behind',
+]
+
 function mark(artefact, expected, released = true) {
   if (artefact.unreachable) return 'unreachable'
   if (artefact.version === null) return released ? 'missing' : 'unreleased'
@@ -870,28 +930,51 @@ function render(snapshot) {
     '',
   ]
 
+  lines.push(`Scanning ${snapshot.repos.length} product repositories.`, '')
+
   if (snapshot.findings.length === 0) {
     lines.push(
       'Nothing to report: every artefact carries the version its repo declares, and every locked sibling crate is the one that crate publishes.',
       '',
     )
   } else {
-    lines.push(
-      `## Findings (${snapshot.findings.length})`,
-      '',
-      '| repo | finding | subject | detail |',
-      '| --- | --- | --- | --- |',
+    lines.push(`## Findings (${snapshot.findings.length})`, '')
+    // Grouped by kind and ordered by what would be acted on first: a crate
+    // resolving twice is a defect today, a pin that cannot reach the newer
+    // release is a decision to make, and a commit pin drifting is housekeeping.
+    const kinds = [...new Set(snapshot.findings.map((f) => f.kind))].sort(
+      (a, b) => (FINDING_ORDER.indexOf(a) + 1 || 99) - (FINDING_ORDER.indexOf(b) + 1 || 99) || a.localeCompare(b),
     )
-    for (const f of snapshot.findings) {
-      lines.push(`| \`${f.repo}\` | ${f.kind} | \`${f.subject}\` | ${f.detail} |`)
+    for (const kind of kinds) {
+      const group = snapshot.findings.filter((f) => f.kind === kind)
+      lines.push(`### ${kind} (${group.length})`, '', '| repo | subject | detail |', '| --- | --- | --- |')
+      for (const f of group) lines.push(`| \`${f.repo}\` | \`${f.subject}\` | ${f.detail} |`)
+      lines.push('')
     }
-    lines.push('')
   }
+
+  lines.push('## Repositories', '', '| repo | declared | tag | release | artefacts | findings |', '| --- | --- | --- | --- | --- | --- |')
+  for (const repo of snapshot.repos) {
+    const released = repo.tag !== null
+    const states = [
+      ...repo.manifests.map((a) => markManifest(a, repo.declared)),
+      ...repo.published.map((a) => mark(a, repo.declared, released)),
+    ]
+    // Absent rows are bindings this repo does not ship, so they belong in
+    // neither half of the ratio.
+    const applicable = states.filter((state) => state !== 'absent')
+    const ok = applicable.filter((state) => state === 'ok').length
+    const count = snapshot.findings.filter((f) => f.repo === repo.repo).length
+    lines.push(
+      `| \`${repo.repo}\` | ${repo.declared ?? '?'} | ${repo.tag ?? '-'} | ${repo.release ?? '-'} | ${ok}/${applicable.length} ok | ${count || '-'} |`,
+    )
+  }
+  lines.push('', '## Detail', '')
 
   for (const repo of snapshot.repos) {
     const expected = repo.declared
     const released = repo.tag !== null
-    lines.push(`## ${repo.repo}`, '')
+    lines.push('<details>', `<summary><code>${repo.repo}</code> -- ${repo.declared ?? '?'}</summary>`, '')
     lines.push(
       released
         ? `Declared \`${expected ?? '?'}\`, newest tag \`${repo.tag}\`, newest release \`${repo.release ?? 'none'}\`.`
@@ -901,7 +984,7 @@ function render(snapshot) {
 
     lines.push('### Manifests', '', '| file | ecosystem | version | state |', '| --- | --- | --- | --- |')
     for (const m of repo.manifests) {
-      lines.push(`| \`${m.file}\` | ${m.ecosystem} | ${m.version ?? '-'} | ${mark(m, expected)} |`)
+      lines.push(`| \`${m.file}\` | ${m.ecosystem} | ${m.version ?? '-'} | ${markManifest(m, expected)} |`)
     }
 
     lines.push(
@@ -916,10 +999,12 @@ function render(snapshot) {
         `| ${p.registry} | \`${p.pkg}\` | ${p.version ?? '-'} | ${mark(p, expected, released)} | ${p.note ?? '-'} |`,
       )
     }
-    const goVersion = repo.go.tag ? stripV(repo.go.tag) : null
-    lines.push(
-      `| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark({ version: goVersion }, expected, released)} | - |`,
-    )
+    if (repo.go) {
+      const goVersion = repo.go.tag ? stripV(repo.go.tag) : null
+      lines.push(
+        `| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark({ version: goVersion }, expected, released)} | - |`,
+      )
+    }
 
     lines.push(
       '',
@@ -930,10 +1015,16 @@ function render(snapshot) {
     )
     for (const l of repo.lock) {
       const published = publishedVersion(snapshot, l.name)
-      const latest = l.fromRegistry ? describeCrate(snapshot, l.name) : 'workspace member'
+      const latest =
+        l.origin === 'registry'
+          ? describeCrate(snapshot, l.name)
+          : l.origin === 'git'
+            ? `git ${l.git ? l.git.sha.slice(0, 8) : '?'}`
+            : 'workspace member'
       const states = []
       if (l.versions.length > 1) states.push('duplicate')
-      if (l.fromRegistry && published && l.versions.some((v) => v !== published)) states.push('behind')
+      if (l.origin === 'registry' && published && l.versions.some((v) => v !== published)) states.push('behind')
+      if (l.origin === 'git' && l.gitDistance?.behind > 0) states.push(`${l.gitDistance.behind} commits behind`)
       const by = l.pulledInBy.map((d) => `\`${d}\``).join(', ') || '-'
       lines.push(`| \`${l.name}\` | ${l.versions.join(', ')} | ${latest} | ${states.join(', ') || 'ok'} | ${by} |`)
     }
@@ -954,7 +1045,7 @@ function render(snapshot) {
         lines.push(`| \`${crate}\` | \`${pin}\` | ${verdict} |`)
       }
     }
-    lines.push('')
+    lines.push('', '</details>', '')
   }
 
   return `${lines.join('\n')}\n`
@@ -1133,9 +1224,10 @@ function renderDependencies(snapshot, divergences) {
 
 // --- Main --------------------------------------------------------------------
 
-const entries = REPOS.filter((r) => PILOT.includes(r.repo))
-const unknown = PILOT.filter((name) => !entries.some((e) => e.repo === name))
-if (unknown.length > 0) throw new Error(`not listed in repos.mjs: ${unknown.join(', ')}`)
+// Every product repo in the org. repos.mjs is the list, and it already fails
+// loudly when it drifts from the badge directories, so the scan inherits that
+// guarantee rather than keeping a second list of its own.
+const entries = REPOS
 
 const snapshot = {
   scanned_at: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
@@ -1149,11 +1241,22 @@ for (const entry of entries) snapshot.repos.push(await scanRepo(entry))
 // crates a lock pulls from the registry and the crates a manifest pins are
 // looked up, deduplicated across repos.
 const siblings = new Set([
-  ...snapshot.repos.flatMap((r) => r.lock.filter((l) => l.fromRegistry).map((l) => l.name)),
+  ...snapshot.repos.flatMap((r) => r.lock.filter((l) => l.origin === 'registry').map((l) => l.name)),
   ...snapshot.repos.flatMap((r) => Object.keys(r.pins)),
 ])
 snapshot.crates = {}
 for (const crate of [...siblings].sort()) snapshot.crates[crate] = await probe(() => registry.crates(crate))
+
+// One lookup per distinct pinned commit, shared across the repos that pin it.
+const distances = new Map()
+for (const repo of snapshot.repos) {
+  for (const entry of repo.lock) {
+    if (entry.origin !== 'git' || !entry.git) continue
+    const key = `${entry.git.owner}/${entry.git.repo}@${entry.git.sha}`
+    if (!distances.has(key)) distances.set(key, (await probe(() => commitDistance(entry.git))).version)
+    entry.gitDistance = distances.get(key)
+  }
+}
 
 snapshot.findings = collectFindings(snapshot)
 
@@ -1180,11 +1283,12 @@ await writeFile(`${OUT_DIR}/dependencies.md`, renderDependencies(snapshot, diver
 for (const repo of snapshot.repos) {
   const released = repo.tag !== null
   const states = [
-    ...repo.manifests.map((a) => mark(a, repo.declared)),
+    ...repo.manifests.map((a) => markManifest(a, repo.declared)),
     ...repo.published.map((a) => mark(a, repo.declared, released)),
   ]
   const count = (state) => states.filter((s) => s === state).length
-  const off = states.filter((s) => s !== 'ok' && s !== 'unreachable' && s !== 'unreleased').length
+  const benign = new Set(['ok', 'absent', 'unreachable', 'unreleased'])
+  const off = states.filter((s) => !benign.has(s)).length
   const duplicates = repo.lock.filter((l) => l.versions.length > 1).length
   console.log(
     `${repo.repo}: declared ${repo.declared}, ${released ? `tag ${repo.tag}` : 'no tag yet'}, ` +
