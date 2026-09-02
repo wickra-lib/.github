@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T14:43:51Z",
+  "scanned_at": "2026-09-02T18:59:03Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -32283,7 +32283,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.0"
+        "version": "4.3.2"
       },
       {
         "ecosystem": "npm",

@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T14:43:51Z",
+  "scanned_at": "2026-09-02T18:59:03Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -1061,7 +1061,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "1.0.0"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -1137,7 +1137,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -1465,7 +1465,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -1601,7 +1601,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -1928,7 +1928,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -1949,7 +1949,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -1969,7 +1969,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -2061,7 +2061,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -2399,7 +2399,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -2509,7 +2509,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -2529,7 +2529,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         }
@@ -2600,7 +2600,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -2930,7 +2930,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -2951,7 +2951,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -2971,7 +2971,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -3090,7 +3090,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -3291,7 +3291,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": "0.1.0"
@@ -3613,7 +3613,7 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
+        "wickra-core": "1.0",
         "wickra-exchange-core": "0.1.0",
         "wickra-exchange": "0.1.0"
       },
@@ -3621,7 +3621,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -3777,7 +3777,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -4106,7 +4106,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -4242,7 +4242,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -4572,7 +4572,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -4617,7 +4617,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -4637,7 +4637,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -4744,7 +4744,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -5074,7 +5074,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -5095,7 +5095,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -5115,7 +5115,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -5163,7 +5163,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -5183,7 +5183,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -5308,7 +5308,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -5639,7 +5639,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -5660,7 +5660,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -5680,7 +5680,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -5713,7 +5713,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -5733,7 +5733,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -5840,7 +5840,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -5962,7 +5962,7 @@
     },
     {
       "repo": "wickra-playground",
-      "declared": null,
+      "declared": "0.1.0",
       "tag": null,
       "release": null,
       "manifests": [
@@ -6025,7 +6025,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": false,
           "version": null
@@ -6037,6 +6037,14 @@
           "range": false,
           "present": true,
           "version": null
+        },
+        {
+          "file": "package.json",
+          "ecosystem": "npm",
+          "required": true,
+          "range": false,
+          "present": true,
+          "version": "0.1.0"
         },
         {
           "file": "examples/node/package-lock.json",
@@ -6173,7 +6181,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -6501,7 +6509,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -6637,7 +6645,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -6978,7 +6986,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -6998,7 +7006,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -7123,10 +7131,10 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "SECURITY.md",
@@ -7484,8 +7492,8 @@
             "screener-core"
           ],
           "gitDistance": {
-            "status": "ahead",
-            "behind": 0,
+            "status": "diverged",
+            "behind": 5,
             "ahead": 1
           }
         },
@@ -7504,8 +7512,8 @@
             "wickra-exchange"
           ],
           "gitDistance": {
-            "status": "ahead",
-            "behind": 0,
+            "status": "diverged",
+            "behind": 5,
             "ahead": 1
           }
         },
@@ -7630,7 +7638,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -7960,7 +7968,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -8005,7 +8013,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -8025,7 +8033,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -8150,7 +8158,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -8479,7 +8487,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -8615,7 +8623,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -9071,7 +9079,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -9426,7 +9434,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 38,
+            "behind": 43,
             "ahead": 0
           }
         },
@@ -9448,7 +9456,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 38,
+            "behind": 43,
             "ahead": 0
           }
         },
@@ -9599,7 +9607,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -9941,7 +9949,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -10048,7 +10056,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -10378,7 +10386,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 126,
+            "behind": 127,
             "ahead": 0
           }
         },
@@ -10514,7 +10522,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -10855,7 +10863,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -10875,7 +10883,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 43,
+            "behind": 48,
             "ahead": 0
           }
         },
@@ -11000,7 +11008,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": true,
+          "required": false,
           "range": false,
           "present": true,
           "version": null
@@ -11131,7 +11139,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 137,
+            "behind": 138,
             "ahead": 0
           }
         },
@@ -11153,7 +11161,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 137,
+            "behind": 138,
             "ahead": 0
           }
         },
@@ -11173,7 +11181,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 137,
+            "behind": 138,
             "ahead": 0
           }
         },
@@ -11471,16 +11479,11 @@
       "informational": true
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "stale lock",
-      "subject": "wickra-core",
-      "detail": "locked at 1.0.0 while wickra-core publishes 1.0.4; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
-    },
-    {
       "repo": "wickra-benchmark",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-benchmark",
@@ -11583,7 +11586,7 @@
       "repo": "wickra-benchmark",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-benchmark",
@@ -11593,9 +11596,10 @@
     },
     {
       "repo": "wickra-compile",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-compile",
@@ -11677,19 +11681,19 @@
       "repo": "wickra-compile",
       "kind": "git pin behind",
       "subject": "wickra-backtest",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-compile",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-compile",
       "kind": "git pin behind",
       "subject": "wickra-backtest-data",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-compile",
@@ -11699,9 +11703,10 @@
     },
     {
       "repo": "wickra-copilot",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-copilot",
@@ -11811,7 +11816,7 @@
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-copilot",
@@ -11829,19 +11834,20 @@
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-darwin",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-darwin",
@@ -11916,19 +11922,19 @@
       "repo": "wickra-darwin",
       "kind": "git pin behind",
       "subject": "wickra-backtest",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-darwin",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-darwin",
       "kind": "git pin behind",
       "subject": "wickra-backtest-data",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-darwin",
@@ -11980,9 +11986,10 @@
     },
     {
       "repo": "wickra-embed",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-embed",
@@ -12186,16 +12193,11 @@
       "informational": true
     },
     {
-      "repo": "wickra-exchange",
-      "kind": "pin blocks update",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
-    },
-    {
       "repo": "wickra-feature-store",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-feature-store",
@@ -12312,7 +12314,7 @@
       "repo": "wickra-feature-store",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-feature-store",
@@ -12322,9 +12324,10 @@
     },
     {
       "repo": "wickra-genome",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-genome",
@@ -12399,7 +12402,7 @@
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-genome",
@@ -12417,19 +12420,20 @@
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-gym",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-gym",
@@ -12525,19 +12529,19 @@
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-backtest",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-backtest-data",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-gym",
@@ -12555,19 +12559,20 @@
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-impact",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-impact",
@@ -12642,19 +12647,19 @@
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-backtest",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-backtest-data",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-impact",
@@ -12666,13 +12671,13 @@
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-pico",
@@ -12718,9 +12723,10 @@
     },
     {
       "repo": "wickra-pico",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-pico",
@@ -12851,7 +12857,7 @@
       "repo": "wickra-playground",
       "kind": "carries no version",
       "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares null"
+      "detail": "the file is present and names no version, while the repo declares 0.1.0"
     },
     {
       "repo": "wickra-playground",
@@ -12911,9 +12917,10 @@
     },
     {
       "repo": "wickra-proof",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-proof",
@@ -13023,7 +13030,7 @@
       "repo": "wickra-proof",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-proof",
@@ -13033,9 +13040,10 @@
     },
     {
       "repo": "wickra-radar",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-radar",
@@ -13151,19 +13159,13 @@
       "repo": "wickra-radar",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-radar",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
-    },
-    {
-      "repo": "wickra-screener",
-      "kind": "carries no version",
-      "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-screener",
@@ -13272,13 +13274,26 @@
       "repo": "wickra-screener",
       "kind": "stale lock",
       "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `1.0` already admits it, so the older copy is not this pin's -- another dependent in the graph requires it, and raising that one closes both this and the duplicate above"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at e3e821ec, 5 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at e3e821ec, 5 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-shazam",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-shazam",
@@ -13381,7 +13396,7 @@
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-shazam",
@@ -13399,19 +13414,20 @@
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-strategy-ci",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-strategy-ci",
@@ -13528,7 +13544,7 @@
       "repo": "wickra-strategy-ci",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -13538,9 +13554,10 @@
     },
     {
       "repo": "wickra-synth",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-synth",
@@ -13667,9 +13684,10 @@
     },
     {
       "repo": "wickra-terminal",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-terminal",
@@ -13765,25 +13783,26 @@
       "repo": "wickra-terminal",
       "kind": "stale lock",
       "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `1` already allows it, so cargo update -p wickra-core closes it"
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `1` already admits it, so the older copy is not this pin's -- another dependent in the graph requires it, and raising that one closes both this and the duplicate above"
     },
     {
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 330df912, 38 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 330df912, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 330df912, 38 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 330df912, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-timemachine",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-timemachine",
@@ -13864,13 +13883,14 @@
       "repo": "wickra-timemachine",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-verify",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-verify",
@@ -13987,7 +14007,7 @@
       "repo": "wickra-verify",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 126 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bd50f973, 127 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-verify",
@@ -13997,9 +14017,10 @@
     },
     {
       "repo": "wickra-xray",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-xray",
@@ -14101,13 +14122,13 @@
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 43 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 48 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-zk",
@@ -14153,9 +14174,10 @@
     },
     {
       "repo": "wickra-zk",
-      "kind": "carries no version",
+      "kind": "no version reference",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-zk",
@@ -14244,19 +14266,19 @@
       "repo": "wickra-zk",
       "kind": "git pin behind",
       "subject": "wickra-backtest",
-      "detail": "pinned at bef35acf, 137 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bef35acf, 138 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-zk",
       "kind": "git pin behind",
       "subject": "wickra-backtest-core",
-      "detail": "pinned at bef35acf, 137 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bef35acf, 138 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-zk",
       "kind": "git pin behind",
       "subject": "wickra-backtest-data",
-      "detail": "pinned at bef35acf, 137 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "detail": "pinned at bef35acf, 138 commit(s) behind the default branch of wickra-lib/wickra-backtest"
     },
     {
       "repo": "wickra-zk",
