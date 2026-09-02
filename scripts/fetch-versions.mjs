@@ -626,6 +626,13 @@ async function scanRepo(entry) {
 
   const files = Object.fromEntries(Object.keys(paths).map((alias) => [alias, blobText(data.repo[alias])]))
 
+  // `version` and `date-released` are what GitHub's citation box and Zenodo
+  // present as the release being cited, so a repository with no release has
+  // nothing to name there and correctly omits both. Requiring them against a
+  // version that was only ever declared asks the file to date something that
+  // never happened -- wickra-terminal enforces exactly the opposite rule, in a
+  // test, and is right to. Once a tag exists the field is expected again.
+  const citationNamesARelease = tagName(data.repo) !== null
   const rootPkgIsCarrier = !files.cargoToml && Boolean(files.rootPkg)
   const declared = files.cargoToml
     ? cargoWorkspaceVersion(files.cargoToml)
@@ -683,7 +690,7 @@ async function scanRepo(entry) {
     row('bindings/r/DESCRIPTION', 'r', files.rDescription, descriptionVersion, true),
     row('bindings/node/package-lock.json', 'npm', files.nodeLock, (t) => JSON.parse(t).version ?? null, true),
     row('bindings/node/index.js', 'npm', files.nodeIndex, (t) => reportVersions(napiGuardVersions(t)), true),
-    row('CITATION.cff', 'citation', files.citation, citationVersion, true),
+    row('CITATION.cff', 'citation', files.citation, citationVersion, citationNamesARelease),
     row('SECURITY.md', 'docs', files.security, (t) => reportVersions(securityVersions(t)), true),
     ...(rootPkgIsCarrier
       ? [row('package.json', 'npm', files.rootPkg, (t) => JSON.parse(t).version ?? null, true)]
