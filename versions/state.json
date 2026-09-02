@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T00:51:29Z",
+  "scanned_at": "2026-09-02T01:04:15Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -248,7 +248,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": [
             "wickra-bench",
             "wickra-examples"
@@ -259,7 +260,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -267,7 +269,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -275,7 +278,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": [
             "wickra",
             "wickra-c",
@@ -290,7 +294,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": [
             "wickra",
             "wickra-bench",
@@ -306,7 +311,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -314,7 +320,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -322,7 +329,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -330,7 +338,8 @@
           "versions": [
             "1.0.4"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         }
       ]
@@ -437,6 +446,11 @@
           "version": "0.1.2"
         },
         {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
           "file": "bindings/java/benchmarks/pom.xml",
           "ecosystem": "maven",
           "version": "0.1.0"
@@ -445,6 +459,16 @@
           "file": "examples/java/pom.xml",
           "ecosystem": "maven",
           "version": "0.1.2"
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-backtest-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
         },
         {
           "file": "Cargo.toml [workspace.dependencies] wickra-backtest-core",
@@ -572,7 +596,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest-examples"
           ]
@@ -582,7 +607,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -590,7 +616,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -598,7 +625,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -606,7 +634,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest",
             "wickra-backtest-bench",
@@ -623,7 +652,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest",
             "wickra-backtest-cli",
@@ -635,7 +665,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -643,7 +674,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -651,7 +683,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -659,7 +692,8 @@
           "versions": [
             "0.1.2"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -667,11 +701,1440 @@
           "versions": [
             "1.0.0"
           ],
-          "fromRegistry": true,
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest-core",
             "wickra-backtest-data"
           ]
+        }
+      ]
+    },
+    {
+      "repo": "wickra-benchmark",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Benchmark/Wickra.Benchmark.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-benchmark-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-benchmark-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-benchmark-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-benchmark-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-benchmark-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-benchmark-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-benchmark-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-benchmark-cli",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-benchmark",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-benchmark",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-benchmark-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-benchmark-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-benchmark-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-benchmark-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-benchmark-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-benchmark-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-benchmark-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Benchmark",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-benchmark",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickrabenchmark",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-benchmark-go",
+        "module": "github.com/wickra-lib/wickra-benchmark-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-benchmark-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-backtest-core": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "benchmark-bench",
+            "benchmark-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-benchmark-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-benchmark-cli",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-benchmark-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-benchmark-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-benchmark-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-benchmark-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core"
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "wickra-compile",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Compile/Wickra.Compile.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-compile-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-compile-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-compile-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-compile-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-compile-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-compile-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-compile-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-compile",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-compile",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-compile",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-compile-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-compile-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-compile-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-compile-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-compile-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-compile-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-compile-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Compile",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-compile",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickracompile",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-compile-go",
+        "module": "github.com/wickra-lib/wickra-compile-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-compile/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-backtest": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "compile-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "wickra-backtest",
+            "wickra-backtest-data"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-data",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "wickra-backtest"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-compile",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core",
+            "wickra-backtest-data"
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "wickra-copilot",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Copilot/Wickra.Copilot.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-copilot-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-copilot-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-copilot-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-copilot-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-copilot-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-copilot-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-copilot-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-copilot",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-copilot",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-copilot",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-copilot-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-copilot-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-copilot-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-copilot-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-copilot-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-copilot-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-copilot-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Copilot",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-copilot",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickracopilot",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-copilot-go",
+        "module": "github.com/wickra-lib/wickra-copilot-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-copilot-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-exchange": "0.1",
+        "wickra-backtest-core": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "copilot-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-copilot",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-copilot-ask-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-copilot-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-copilot-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-copilot-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-copilot-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-copilot-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "copilot-core",
+            "wickra-backtest-core",
+            "wickra-data",
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-data",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "copilot-core",
+            "wickra-copilot"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "copilot-core",
+            "wickra-copilot"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "wickra-exchange"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        }
+      ]
+    },
+    {
+      "repo": "wickra-darwin",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Darwin/Wickra.Darwin.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-darwin-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-darwin-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-darwin-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-darwin-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-darwin-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-darwin-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-darwin-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-darwin",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-darwin",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-darwin",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-darwin-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-darwin-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-darwin-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-darwin-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-darwin-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-darwin-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-darwin-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Darwin",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-darwin",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickradarwin",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-darwin-go",
+        "module": "github.com/wickra-lib/wickra-darwin-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-darwin/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-backtest": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "darwin-bench",
+            "darwin-cli",
+            "darwin-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "wickra-backtest",
+            "wickra-backtest-data"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-data",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "wickra-backtest"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core",
+            "wickra-backtest-data"
+          ]
+        },
+        {
+          "name": "wickra-darwin-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-darwin-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-darwin-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-darwin-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-embed",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": null
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": null
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-embed-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": null
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "embed-core",
+          "version": null
+        }
+      ],
+      "go": null,
+      "pins": {
+        "wickra-core": "0.9"
+      },
+      "lock": [
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "embed-core"
+          ]
+        },
+        {
+          "name": "wickra-embed-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
         }
       ]
     },
@@ -775,6 +2238,31 @@
           "file": "bindings/node/package-lock.json",
           "ecosystem": "npm",
           "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-exchange-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
         },
         {
           "file": "Cargo.toml [workspace.dependencies] wickra-exchange-core",
@@ -886,7 +2374,8 @@
           "versions": [
             "0.9.9"
           ],
-          "fromRegistry": true,
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-exchange-core"
           ]
@@ -896,7 +2385,8 @@
           "versions": [
             "0.1.0"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": [
             "wickra-exchange-c",
             "wickra-exchange-examples",
@@ -909,7 +2399,8 @@
           "versions": [
             "0.1.0"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -917,7 +2408,8 @@
           "versions": [
             "0.1.0"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -925,7 +2417,8 @@
           "versions": [
             "0.1.0"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": [
             "wickra-exchange",
             "wickra-exchange-bench",
@@ -937,7 +2430,8 @@
           "versions": [
             "0.1.0"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -945,7 +2439,8 @@
           "versions": [
             "0.1.0"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -953,7 +2448,8 @@
           "versions": [
             "0.1.0"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
         },
         {
@@ -961,13 +2457,5104 @@
           "versions": [
             "0.1.0"
           ],
-          "fromRegistry": false,
+          "origin": "path",
+          "git": null,
           "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-feature-store",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.FeatureStore/Wickra.FeatureStore.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-feature-store-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-feature-store",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-feature-store",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.FeatureStore",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-feature-store",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickrafeaturestore",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-feature-store-go",
+        "module": "github.com/wickra-lib/wickra-feature-store-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-feature-store/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-backtest-core": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "feature-store-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core"
+          ]
+        },
+        {
+          "name": "wickra-feature-store",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-feature-store-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-feature-store-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-feature-store-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-feature-store-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-feature-store-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-genome",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Genome/Wickra.Genome.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-genome-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-genome-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-genome-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-genome-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-genome-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-genome-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-genome-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-genome",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-genome",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-genome",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-genome-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-genome-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-genome-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-genome-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-genome-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-genome-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-genome-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Genome",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-genome",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickragenome",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-genome-go",
+        "module": "github.com/wickra-lib/wickra-genome-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-genome/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-backtest-core": "0.1",
+        "wickra-exchange": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "genome-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "genome-core",
+            "wickra-backtest-core",
+            "wickra-data",
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-data",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "genome-core"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "genome-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "wickra-exchange"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-genome-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-genome-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-genome-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-genome-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-gym",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Gym/Wickra.Gym.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-gym-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-gym-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-gym-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-gym-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-gym-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-gym-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-gym-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-gym",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-gym",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-gym",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-gym-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-gym-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-gym-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-gym-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-gym-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-gym-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-gym-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Gym",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-gym",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickragym",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-gym-go",
+        "module": "github.com/wickra-lib/wickra-gym-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-gym/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-backtest": "0.1",
+        "wickra-exchange": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "gym-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "wickra-backtest",
+            "wickra-backtest-data"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-data",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "wickra-backtest"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "gym-core",
+            "wickra-backtest-core",
+            "wickra-backtest-data",
+            "wickra-data",
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-data",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "gym-core",
+            "wickra-gym",
+            "wickra-gym-example"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "gym-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "wickra-exchange"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-gym",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-gym-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-gym-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-gym-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-gym-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-gym-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-impact",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Impact/Wickra.Impact.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-impact-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-impact-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-impact-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-impact-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-impact-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-impact-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-impact-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-impact",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-impact",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-impact",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-impact-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-impact-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-impact-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-impact-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-impact-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-impact-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-impact-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Impact",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-impact",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickraimpact",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-impact-go",
+        "module": "github.com/wickra-lib/wickra-impact-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-impact/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-backtest": "0.1",
+        "wickra-exchange": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "impact-bench",
+            "impact-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "wickra-backtest",
+            "wickra-backtest-data"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-data",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "wickra-backtest"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core",
+            "wickra-backtest-data",
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "impact-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "wickra-exchange"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-impact-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-impact-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-impact-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-impact-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-pico",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": null
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": null
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-pico-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": null
+        }
+      ],
+      "published": [],
+      "go": null,
+      "pins": {},
+      "lock": [
+        {
+          "name": "wickra-pico-host",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-pico-signal",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "wickra-pico-host"
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "wickra-playground",
+      "declared": null,
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": null
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": null
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-playground-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": null
+        }
+      ],
+      "published": [],
+      "go": null,
+      "pins": {},
+      "lock": []
+    },
+    {
+      "repo": "wickra-proof",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Proof/Wickra.Proof.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-proof-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-proof-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-proof-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-proof-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-proof-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-proof-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-proof-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-proof-cli",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-proof",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-proof",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-proof-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-proof-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-proof-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-proof-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-proof-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-proof-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-proof-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Proof",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-proof",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickraproof",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-proof-go",
+        "module": "github.com/wickra-lib/wickra-proof-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-proof-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-backtest-core": "0.1",
+        "wickra-data": "0.9"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "proof-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core"
+          ]
+        },
+        {
+          "name": "wickra-proof-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-proof-cli",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-proof-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-proof-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-proof-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-proof-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-radar",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Radar/Wickra.Radar.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-radar-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-radar-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-radar-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-radar-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-radar-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-radar-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-radar-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-radar",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-radar",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-radar",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-radar-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-radar-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-radar-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-radar-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-radar-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-radar-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-radar-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Radar",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-radar",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickraradar",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-radar-go",
+        "module": "github.com/wickra-lib/wickra-radar-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-radar-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-exchange": "0.1",
+        "wickra-backtest-core": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "radar-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "wickra-exchange"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-radar",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-radar-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-radar-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-radar-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-radar-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-radar-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-screener",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Screener/Wickra.Screener.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-screener-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-screener",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-screener",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Screener",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-screener",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickrascreener",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-screener-go",
+        "module": "github.com/wickra-lib/wickra-screener-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-screener-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-exchange": "0.1",
+        "wickra-backtest-core": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "screener-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "screener-core",
+            "wickra-backtest-core",
+            "wickra-data",
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-data",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "screener-core"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "screener-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "wickra-exchange"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-screener",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-screener-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-screener-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-screener-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-screener-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-screener-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-shazam",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Shazam/Wickra.Shazam.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-shazam-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-shazam-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-shazam-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-shazam-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-shazam-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-shazam-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-shazam-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-shazam",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-shazam",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-shazam",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-shazam-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-shazam-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-shazam-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-shazam-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-shazam-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-shazam-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-shazam-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Shazam",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-shazam",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickrashazam",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-shazam-go",
+        "module": "github.com/wickra-lib/wickra-shazam-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-shazam-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-exchange": "0.1",
+        "wickra-backtest-core": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "shazam-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "shazam-core",
+            "wickra-backtest-core",
+            "wickra-data",
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-data",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "shazam-core"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "shazam-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "wickra-exchange"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-shazam",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-shazam-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-shazam-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-shazam-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-shazam-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-shazam-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.StrategyCi/Wickra.StrategyCi.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-strategy-ci-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-strategy-ci-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-strategy-ci-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-strategy-ci-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-strategy-ci-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-strategy-ci-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-strategy-ci-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-strategy-ci-cli",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-strategy-ci",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-strategy-ci",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-strategy-ci-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-strategy-ci-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-strategy-ci-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-strategy-ci-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-strategy-ci-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-strategy-ci-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-strategy-ci-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.StrategyCi",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-strategy-ci",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickrastrategyci",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-strategy-ci-go",
+        "module": "github.com/wickra-lib/wickra-strategy-ci-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-strategy-ci/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-data": "0.9",
+        "wickra-backtest-core": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "proof-core",
+            "strategy-ci-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core"
+          ]
+        },
+        {
+          "name": "wickra-strategy-ci",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-strategy-ci-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-strategy-ci-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-strategy-ci-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-strategy-ci-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-strategy-ci-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-synth",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Synth/Wickra.Synth.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-synth-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-synth-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-synth-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-synth-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-synth-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-synth-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-synth-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-synth",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-synth",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-synth",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-synth-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-synth-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-synth-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-synth-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-synth-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-synth-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-synth-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Synth",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-synth",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickrasynth",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-synth-go",
+        "module": "github.com/wickra-lib/wickra-synth-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-synth/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-data": "0.9",
+        "wickra-core": "0.9"
+      },
+      "lock": [
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "synth-core",
+            "wickra-data"
+          ]
+        },
+        {
+          "name": "wickra-data",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-synth"
+          ]
+        },
+        {
+          "name": "wickra-synth",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-synth-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-synth-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-synth-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-synth-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-synth-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-terminal",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/WickraTerminal/WickraTerminal.csproj",
+          "ecosystem": "nuget",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-terminal-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-terminal-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-terminal-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-terminal-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-terminal-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-terminal-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "crates/wickra-terminal-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-terminal-core",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-terminal",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-terminal",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-terminal",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-terminal-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-terminal-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-terminal-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-terminal-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-terminal-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-terminal-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-terminal-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "WickraTerminal",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-terminal",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickraterminal",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-terminal-go",
+        "module": "github.com/wickra-lib/wickra-terminal-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-terminal-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "1",
+        "wickra-exchange-core": "0.1",
+        "wickra-exchange": "0.1",
+        "wickra-terminal-core": "0.1.0"
+      },
+      "lock": [
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9",
+            "1.0.1"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "330df9127829e0caaab4d097d8ce6e659586aa71"
+          },
+          "pulledInBy": [
+            "wickra-terminal-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 29,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "330df9127829e0caaab4d097d8ce6e659586aa71"
+          },
+          "pulledInBy": [
+            "wickra-exchange",
+            "wickra-terminal-bench",
+            "wickra-terminal-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 29,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-terminal",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-terminal-bench",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-terminal-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-terminal-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "wickra-terminal",
+            "wickra-terminal-bench",
+            "wickra-terminal-c",
+            "wickra-terminal-example",
+            "wickra-terminal-node",
+            "wickra-terminal-python",
+            "wickra-terminal-wasm"
+          ]
+        },
+        {
+          "name": "wickra-terminal-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-terminal-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-terminal-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-terminal-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-timemachine",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.TimeMachine/Wickra.TimeMachine.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-timemachine-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-timemachine-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-timemachine-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-timemachine-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-timemachine-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-timemachine-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-timemachine-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-timemachine",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-timemachine",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-timemachine",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-timemachine-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-timemachine-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-timemachine-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-timemachine-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-timemachine-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-timemachine-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-timemachine-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.TimeMachine",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-timemachine",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickratimemachine",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-timemachine-go",
+        "module": "github.com/wickra-lib/wickra-timemachine-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-timemachine/bindings/go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-exchange-core": "0.1",
+        "wickra-exchange": "0.1",
+        "wickra-backtest": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "timemachine-core",
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "timemachine-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-timemachine-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-timemachine-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-timemachine-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-timemachine-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-verify",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Verify/Wickra.Verify.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-verify-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-verify-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-verify-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-verify-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-verify-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-verify-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-verify-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-verify-cli",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-verify",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-verify",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-verify-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-verify-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-verify-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-verify-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-verify-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-verify-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-verify-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Verify",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-verify",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickraverify",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-verify-go",
+        "module": "github.com/wickra-lib/wickra-verify-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-verify-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-backtest-core": "0.1",
+        "wickra-data": "0.9"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+          },
+          "pulledInBy": [
+            "verify-bench",
+            "verify-core",
+            "wickra-verify-example"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 125,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core"
+          ]
+        },
+        {
+          "name": "wickra-verify-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-verify-cli",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-verify-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-verify-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-verify-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-verify-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-xray",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Xray/Wickra.Xray.csproj",
+          "ecosystem": "nuget",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-arm64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/win32-x64-msvc/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-xray-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-xray",
+          "version": null
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-xray",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray-linux-x64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray-linux-arm64-gnu",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray-darwin-x64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray-darwin-arm64",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray-win32-x64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray-wasm",
+          "version": null
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Xray",
+          "version": null
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-xray",
+          "version": null
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickraxray",
+          "version": null
+        }
+      ],
+      "go": {
+        "repo": "wickra-xray-go",
+        "module": "github.com/wickra-lib/wickra-xray-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-xray-go",
+        "tag": null
+      },
+      "pins": {
+        "wickra-core": "0.9",
+        "wickra-data": "0.9",
+        "wickra-exchange": "0.1",
+        "wickra-backtest-core": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-exchange-core"
+          ]
+        },
+        {
+          "name": "wickra-exchange",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "xray-core"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-exchange-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-exchange",
+            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
+          },
+          "pulledInBy": [
+            "wickra-exchange"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 34,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-xray",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-xray-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-xray-example",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-xray-node",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-xray-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-xray-wasm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-zk",
+      "declared": "0.1.0",
+      "tag": null,
+      "release": null,
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": null
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": null
+        },
+        {
+          "file": "bindings/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "examples/node/package-lock.json",
+          "ecosystem": "npm",
+          "version": null
+        },
+        {
+          "file": "bindings/java/benchmarks/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": null
+        },
+        {
+          "file": "crates/wickra-zk-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": null
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": null
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": null
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": null
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-zk",
+          "version": null
+        }
+      ],
+      "go": null,
+      "pins": {
+        "wickra-backtest": "0.1",
+        "wickra-data": "0.1"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bef35acfefb0c1170812cc27bca58df6d548cff8"
+          },
+          "pulledInBy": [
+            "wickra-zk-host"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 136,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bef35acfefb0c1170812cc27bca58df6d548cff8"
+          },
+          "pulledInBy": [
+            "proof-core",
+            "wickra-backtest",
+            "wickra-backtest-data"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 136,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-backtest-data",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-backtest",
+            "sha": "bef35acfefb0c1170812cc27bca58df6d548cff8"
+          },
+          "pulledInBy": [
+            "wickra-backtest"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 136,
+            "ahead": 0
+          }
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "0.9.9"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest-core",
+            "wickra-backtest-data"
+          ]
+        },
+        {
+          "name": "wickra-zk",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-zk-bench",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-zk-host",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "wickra-zk",
+            "wickra-zk-bench"
+          ]
+        },
+        {
+          "name": "wickra-zk-methods",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "wickra-zk-host"
+          ]
         }
       ]
     }
   ],
   "crates": {
+    "wickra-backtest": {
+      "version": "0.1.2"
+    },
     "wickra-backtest-core": {
       "version": "0.1.2"
     },
@@ -985,15 +7572,12 @@
     },
     "wickra-exchange-core": {
       "version": null
+    },
+    "wickra-terminal-core": {
+      "version": null
     }
   },
   "findings": [
-    {
-      "repo": "wickra",
-      "kind": "go module path differs from its mirror",
-      "subject": "bindings/go/go.mod",
-      "detail": "declares `github.com/wickra-lib/wickra/bindings/go` while wickra-go publishes `github.com/wickra-lib/wickra-go`, which is the path a go get resolves"
-    },
     {
       "repo": "wickra-backtest",
       "kind": "manifest differs",
@@ -1007,10 +7591,430 @@
       "detail": "locked at 1.0.0 while wickra-core publishes 1.0.4; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
     },
     {
+      "repo": "wickra-benchmark",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-data",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "pin blocks update",
+      "subject": "wickra-data",
+      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-data",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-embed",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
       "repo": "wickra-exchange",
       "kind": "pin blocks update",
       "subject": "wickra-core",
       "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "pin blocks update",
+      "subject": "wickra-data",
+      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-data",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "pin blocks update",
+      "subject": "wickra-data",
+      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-data",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "pin blocks update",
+      "subject": "wickra-data",
+      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "pin blocks update",
+      "subject": "wickra-data",
+      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "pin blocks update",
+      "subject": "wickra-data",
+      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "duplicate",
+      "subject": "wickra-core",
+      "detail": "resolved at 0.9.9 and 1.0.1 in one graph, so the two do not share types"
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9, 1.0.1 while wickra-core publishes 1.0.4; the pin `1` already allows it, so cargo update -p wickra-core closes it"
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 330df912, 29 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 330df912, 29 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bd50f973, 125 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "pin blocks update",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "git pin behind",
+      "subject": "wickra-exchange-core",
+      "detail": "pinned at 83e123e8, 34 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest",
+      "detail": "pinned at bef35acf, 136 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-core",
+      "detail": "pinned at bef35acf, 136 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "git pin behind",
+      "subject": "wickra-backtest-data",
+      "detail": "pinned at bef35acf, 136 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "stale lock",
+      "subject": "wickra-core",
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
     }
   ]
 }
