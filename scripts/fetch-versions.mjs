@@ -107,6 +107,12 @@ function manifestPaths(entry) {
     pyproject: 'bindings/python/pyproject.toml',
     nodePkg: 'bindings/node/package.json',
     nodeLock: 'bindings/node/package-lock.json',
+    // Not published, but both are bumped with every release and a stale one
+    // fails `npm ci` in the examples rather than at publish time.
+    exampleLock: 'examples/node/package-lock.json',
+    // Benchmarks depend on the released artefact by version, so they go stale
+    // the same way a manifest does.
+    pomBench: 'bindings/java/benchmarks/pom.xml',
     // The wasm npm package is built by wasm-pack, so its package.json is a
     // build artefact and gitignored. The crate manifest is what tells us the
     // binding exists at all; the version only exists in the registry.
@@ -157,10 +163,37 @@ function repoQuery(paths) {
     query ($owner: String!, $name: String!, $goName: String!) {
       repo: repository(owner: $owner, name: $name) {
         ...newestTag
+        releases(first: 1, orderBy: { field: CREATED_AT, direction: DESC }) {
+          nodes { tagName isDraft }
+        }
+        platformDir: object(expression: "HEAD:bindings/node/npm") {
+          ... on Tree { entries { name } }
+        }
         ${blobs}
       }
       go: repository(owner: $owner, name: $goName) { ...newestTag }
     }`
+}
+
+// The six platform packages each carry their own version and are bumped with
+// every release, so they are read rather than trusted. Their directory names are
+// listed by the first query, which keeps the set derived rather than declared.
+async function fetchPlatformManifests(name, dirs) {
+  if (dirs.length === 0) return {}
+  const blobs = dirs
+    .map((dir, i) => `d${i}: object(expression: "HEAD:bindings/node/npm/${dir}/package.json") { ...blob }`)
+    .join('\n        ')
+  const data = await graphql(
+    `
+    fragment blob on Blob { text isTruncated byteSize }
+    query ($owner: String!, $name: String!) {
+      repo: repository(owner: $owner, name: $name) {
+        ${blobs}
+      }
+    }`,
+    { owner: OWNER, name },
+  )
+  return Object.fromEntries(dirs.map((dir, i) => [dir, blobText(data.repo[`d${i}`])]))
 }
 
 function blobText(node) {
@@ -342,6 +375,32 @@ function descriptionDeps(text) {
   return out
 }
 
+// An npm lockfile records the version of a linked local package under its
+// node_modules path, and that copy goes stale on a bump like any other file.
+// npm records a locally linked package twice: the node_modules entry is a link
+// pointing at a relative path, and the version lives on the entry keyed by that
+// path.
+function linkedLockVersion(text, pkgName) {
+  const lock = JSON.parse(text)
+  const entry = lock.packages?.[`node_modules/${pkgName}`]
+  if (!entry) return null
+  if (entry.link && entry.resolved) return lock.packages?.[entry.resolved]?.version ?? null
+  return entry.version ?? null
+}
+
+// What a benchmark pom depends on from its own project, matched by the
+// coordinates the shipped pom declares for itself.
+function ownDependencyVersion(benchXml, mainXml) {
+  const groupId = pomGroupId(mainXml)
+  const artifactId = pomArtifactId(mainXml)
+  if (!groupId || !artifactId) return null
+  return pomDeps(benchXml).find((dep) => dep.name === `${groupId}:${artifactId}`)?.version ?? null
+}
+
+// Files that legitimately do not exist in every repo: absent is not a finding,
+// only a present-but-wrong version is.
+const OPTIONAL_MANIFESTS = new Set(['examples/node/package-lock.json', 'bindings/java/benchmarks/pom.xml'])
+
 const csprojDeps = (xml) =>
   [...xml.matchAll(/<PackageReference\s+Include="([^"]+)"[^>]*?Version="([^"]+)"/g)].map((m) => ({
     name: m[1],
@@ -396,7 +455,13 @@ async function xml(url) {
 const registry = {
   // crates.io rejects requests whose User-Agent carries no contact address.
   crates: async (name) => (await json(`https://crates.io/api/v1/crates/${name}`))?.crate?.max_stable_version ?? null,
-  pypi: async (name) => (await json(`https://pypi.org/pypi/${name}/json`))?.info?.version ?? null,
+  // The file count comes along because a release publishes nine wheels and a
+  // sdist; one of them failing to build leaves the version present but short.
+  pypi: async (name) => {
+    const body = await json(`https://pypi.org/pypi/${name}/json`)
+    if (!body) return null
+    return { version: body.info?.version ?? null, files: body.urls?.length ?? 0 }
+  },
   npm: async (name) => (await json(`https://registry.npmjs.org/${encodeURIComponent(name)}`))?.['dist-tags']?.latest ?? null,
   nuget: async (id) => (await json(`https://api.nuget.org/v3-flatcontainer/${id.toLowerCase()}/index.json`))?.versions?.at(-1) ?? null,
   maven: async (groupId, artifactId) => {
@@ -420,6 +485,9 @@ async function scanRepo(entry) {
   const nodePkg = files.nodePkg ? JSON.parse(files.nodePkg) : null
   const platformPkgs = Object.entries(nodePkg?.optionalDependencies ?? {})
 
+  const platformDirs = (data.repo.platformDir?.entries ?? []).map((e) => e.name).sort()
+  const platformManifests = await fetchPlatformManifests(name, platformDirs)
+
   const manifests = [
     { file: 'Cargo.toml', ecosystem: 'cargo', version: declared },
     { file: 'bindings/python/pyproject.toml', ecosystem: 'python', version: files.pyproject ? pyprojectVersion(files.pyproject) : null },
@@ -427,8 +495,32 @@ async function scanRepo(entry) {
     { file: paths.csproj, ecosystem: 'nuget', version: files.csproj ? csprojVersion(files.csproj) : null },
     { file: 'bindings/java/pom.xml', ecosystem: 'maven', version: files.pom ? pomVersion(files.pom) : null },
     { file: 'bindings/r/DESCRIPTION', ecosystem: 'r', version: files.rDescription ? descriptionVersion(files.rDescription) : null },
-    ...platformPkgs.map(([pkg, version]) => ({ file: `bindings/node/package.json optionalDependencies.${pkg}`, ecosystem: 'npm', version })),
-  ].filter((m) => m.file !== null)
+    ...platformPkgs.map(([pkg, version]) => ({
+      file: `bindings/node/package.json optionalDependencies.${pkg}`,
+      ecosystem: 'npm',
+      version,
+    })),
+    ...platformDirs.map((dir) => ({
+      file: `bindings/node/npm/${dir}/package.json`,
+      ecosystem: 'npm',
+      version: platformManifests[dir] ? JSON.parse(platformManifests[dir]).version : null,
+    })),
+    {
+      file: 'bindings/node/package-lock.json',
+      ecosystem: 'npm',
+      version: files.nodeLock ? JSON.parse(files.nodeLock).version : null,
+    },
+    {
+      file: 'examples/node/package-lock.json',
+      ecosystem: 'npm',
+      version: files.exampleLock ? linkedLockVersion(files.exampleLock, nodePkg?.name ?? name) : null,
+    },
+    {
+      file: 'bindings/java/benchmarks/pom.xml',
+      ecosystem: 'maven',
+      version: files.pomBench && files.pom ? ownDependencyVersion(files.pomBench, files.pom) : null,
+    },
+  ].filter((m) => m.file !== null && !(m.version === null && OPTIONAL_MANIFESTS.has(m.file)))
 
   const crateName = entry.crate ?? name
   const npmName = nodePkg?.name ?? name
@@ -436,9 +528,33 @@ async function scanRepo(entry) {
   const groupId = files.pom ? pomGroupId(files.pom) : null
   const artifactId = files.pom ? pomArtifactId(files.pom) : null
 
+  // Every crate the workspace builds, not just the one named after the repo:
+  // a workspace publishes several and each one publishes on its own. Membership
+  // comes from the lockfile, and crates.io decides which of them are published
+  // at all -- a crate marked publish = false simply is not there.
+  const members = files.cargoLock
+    ? cargoLockWickra(files.cargoLock)
+        .filter((entry) => !entry.fromRegistry && entry.name !== crateName)
+        .map((entry) => entry.name)
+    : []
+  const memberRows = []
+  for (const member of members) {
+    const result = await probe(() => registry.crates(member))
+    if (result.version === null && !result.unreachable) continue
+    memberRows.push({ registry: 'crates.io', pkg: member, ...result })
+  }
+
+  const pypi = await probe(() => registry.pypi(name))
   const published = [
     { registry: 'crates.io', pkg: crateName, ...(await probe(() => registry.crates(crateName))) },
-    { registry: 'PyPI', pkg: name, ...(await probe(() => registry.pypi(name))) },
+    ...memberRows,
+    {
+      registry: 'PyPI',
+      pkg: name,
+      version: pypi.version?.version ?? null,
+      unreachable: pypi.unreachable,
+      note: pypi.version ? `${pypi.version.files} files` : undefined,
+    },
     { registry: 'npm', pkg: npmName, ...(await probe(() => registry.npm(npmName))) },
     ...(await Promise.all(
       platformPkgs.map(async ([pkg]) => ({ registry: 'npm', pkg, ...(await probe(() => registry.npm(pkg))) })),
@@ -459,10 +575,12 @@ async function scanRepo(entry) {
     { registry: 'r-universe', pkg: runivName, ...(await probe(() => registry.runiverse(runivName))) },
   ]
 
+  const release = data.repo.releases?.nodes?.[0]
   return {
     repo: name,
     declared,
     tag: tagName(data.repo),
+    release: release && !release.isDraft ? release.tagName : null,
     manifests,
     published,
     go: { repo: goRepo, module: files.goMod ? goModule(files.goMod) : null, tag: tagName(data.go) },
@@ -550,6 +668,18 @@ function collectFindings(snapshot) {
       })
     }
 
+    if (released && repo.release !== repo.tag) {
+      found.push({
+        repo: repo.repo,
+        kind: 'no release for the newest tag',
+        subject: repo.tag,
+        detail:
+          repo.release === null
+            ? 'the repository has no published release at all'
+            : `the newest release is ${repo.release}; attaching assets depends on every publish job, so one failing leaves the tag without one`,
+      })
+    }
+
     for (const l of repo.lock) {
       if (l.versions.length > 1) {
         found.push({
@@ -629,7 +759,7 @@ function render(snapshot) {
     lines.push(`## ${repo.repo}`, '')
     lines.push(
       released
-        ? `Declared \`${expected ?? '?'}\`, newest tag \`${repo.tag}\`.`
+        ? `Declared \`${expected ?? '?'}\`, newest tag \`${repo.tag}\`, newest release \`${repo.release ?? 'none'}\`.`
         : `Declared \`${expected ?? '?'}\`, no tag yet -- nothing published.`,
       '',
     )
@@ -639,12 +769,22 @@ function render(snapshot) {
       lines.push(`| \`${m.file}\` | ${m.ecosystem} | ${m.version ?? '-'} | ${mark(m, expected)} |`)
     }
 
-    lines.push('', '### Published', '', '| registry | package | version | state |', '| --- | --- | --- | --- |')
+    lines.push(
+      '',
+      '### Published',
+      '',
+      '| registry | package | version | state | artefacts |',
+      '| --- | --- | --- | --- | --- |',
+    )
     for (const p of repo.published) {
-      lines.push(`| ${p.registry} | \`${p.pkg}\` | ${p.version ?? '-'} | ${mark(p, expected, released)} |`)
+      lines.push(
+        `| ${p.registry} | \`${p.pkg}\` | ${p.version ?? '-'} | ${mark(p, expected, released)} | ${p.note ?? '-'} |`,
+      )
     }
     const goVersion = repo.go.tag ? stripV(repo.go.tag) : null
-    lines.push(`| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark({ version: goVersion }, expected, released)} |`)
+    lines.push(
+      `| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark({ version: goVersion }, expected, released)} | - |`,
+    )
 
     lines.push(
       '',
