@@ -31,11 +31,12 @@ import { REPOS } from './repos.mjs'
 const OWNER = 'wickra-lib'
 const OUT_DIR = 'versions'
 
-// Pilot scope. wickra is the widest case in the org -- seven registries, nine
-// manifests, six npm platform packages -- and wickra-backtest is the first repo
-// that has to work without being the one the paths were written against. Widen
-// to REPOS.map(r => r.repo) once the table still reads well at that length.
-const PILOT = ['wickra', 'wickra-backtest']
+// Pilot scope, chosen so each addition has to prove something the one before
+// could not: wickra is the widest case in the org, wickra-backtest is the first
+// repo the paths were not written against, and wickra-exchange is the first that
+// has never released. Widen to REPOS.map(r => r.repo) once the table still reads
+// well at that length.
+const PILOT = ['wickra', 'wickra-backtest', 'wickra-exchange']
 
 const UA = 'wickra-lib-version-snapshot (https://github.com/wickra-lib/.github)'
 
@@ -325,9 +326,14 @@ async function scanRepo(entry) {
 
 // --- Render ------------------------------------------------------------------
 
-function mark(artefact, expected) {
+// A registry that does not carry a package is only a finding once the repo has
+// released at all. Without that distinction every pre-release repo -- and the
+// org has several -- would report its whole artefact list as missing, which is
+// the opposite of what this table is for: `missing` has to keep meaning "this
+// one publish target fell out while the others went through".
+function mark(artefact, expected, released = true) {
   if (artefact.unreachable) return 'unreachable'
-  if (artefact.version === null) return 'missing'
+  if (artefact.version === null) return released ? 'missing' : 'unreleased'
   if (expected === null) return 'unknown'
   return artefact.version === expected ? 'ok' : 'differs'
 }
@@ -348,8 +354,14 @@ function render(snapshot) {
 
   for (const repo of snapshot.repos) {
     const expected = repo.declared
+    const released = repo.tag !== null
     lines.push(`## ${repo.repo}`, '')
-    lines.push(`Declared \`${expected ?? '?'}\`, newest tag \`${repo.tag ?? '-'}\`.`, '')
+    lines.push(
+      released
+        ? `Declared \`${expected ?? '?'}\`, newest tag \`${repo.tag}\`.`
+        : `Declared \`${expected ?? '?'}\`, no tag yet -- nothing published.`,
+      '',
+    )
 
     lines.push('### Manifests', '', '| file | ecosystem | version | state |', '| --- | --- | --- | --- |')
     for (const m of repo.manifests) {
@@ -358,10 +370,10 @@ function render(snapshot) {
 
     lines.push('', '### Published', '', '| registry | package | version | state |', '| --- | --- | --- | --- |')
     for (const p of repo.published) {
-      lines.push(`| ${p.registry} | \`${p.pkg}\` | ${p.version ?? '-'} | ${mark(p, expected)} |`)
+      lines.push(`| ${p.registry} | \`${p.pkg}\` | ${p.version ?? '-'} | ${mark(p, expected, released)} |`)
     }
     const goVersion = repo.go.tag ? stripV(repo.go.tag) : null
-    lines.push(`| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark({ version: goVersion }, expected)} |`)
+    lines.push(`| Go | \`${repo.go.module ?? repo.go.repo}\` | ${repo.go.tag ?? '-'} | ${mark({ version: goVersion }, expected, released)} |`)
 
     lines.push('', '### Resolved wickra crates in `Cargo.lock`', '', '| crate | resolved | pulled in by |', '| --- | --- | --- |')
     for (const l of repo.lock) {
@@ -398,12 +410,17 @@ await writeFile(`${OUT_DIR}/state.json`, `${JSON.stringify(snapshot, null, 2)}\n
 await writeFile(`${OUT_DIR}/README.md`, render(snapshot))
 
 for (const repo of snapshot.repos) {
-  const states = [...repo.manifests, ...repo.published].map((a) => mark(a, repo.declared))
-  const off = states.filter((s) => s !== 'ok' && s !== 'unreachable').length
-  const unreachable = states.filter((s) => s === 'unreachable').length
+  const released = repo.tag !== null
+  const states = [
+    ...repo.manifests.map((a) => mark(a, repo.declared)),
+    ...repo.published.map((a) => mark(a, repo.declared, released)),
+  ]
+  const count = (state) => states.filter((s) => s === state).length
+  const off = states.filter((s) => s !== 'ok' && s !== 'unreachable' && s !== 'unreleased').length
   const duplicates = repo.lock.filter((l) => l.versions.length > 1).length
   console.log(
-    `${repo.repo}: declared ${repo.declared}, tag ${repo.tag}, ` +
-      `${off} artefact(s) not matching, ${unreachable} unreachable, ${duplicates} duplicate crate(s)`,
+    `${repo.repo}: declared ${repo.declared}, ${released ? `tag ${repo.tag}` : 'no tag yet'}, ` +
+      `${off} artefact(s) not matching, ${count('unreleased')} unreleased, ` +
+      `${count('unreachable')} unreachable, ${duplicates} duplicate crate(s)`,
   )
 }
