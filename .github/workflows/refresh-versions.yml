@@ -5,7 +5,7 @@ name: Refresh version snapshot
 # job that failed while the rest went through -- is visible in one table instead
 # of across six registry pages. Runs hourly and commits only when something
 # actually moved, so the file's git history doubles as the log of when a version
-# changed. Currently scans wickra alone; see scripts/fetch-versions.mjs.
+# changed. Scans every product repository in the org; see scripts/fetch-versions.mjs.
 on:
   schedule:
     - cron: '47 * * * *' # hourly at :47 (offset from refresh-badges :17, refresh-social :37)

@@ -142,6 +142,10 @@ function manifestPaths(entry) {
     exampleNodePkg: 'examples/node/package.json',
     // The terminal's Vue renderer. No sibling has one, and asking for a file
     // that is not there costs nothing.
+    // A repository with no Cargo.toml declares its version here instead --
+    // the web apps do. In a Rust repo a root package.json is tooling config
+    // and names no release, so it is read as a carrier only where it is one.
+    rootPkg: 'package.json',
     webPkg: 'web/package.json',
     webLock: 'web/package-lock.json',
   }
@@ -622,7 +626,19 @@ async function scanRepo(entry) {
 
   const files = Object.fromEntries(Object.keys(paths).map((alias) => [alias, blobText(data.repo[alias])]))
 
-  const declared = files.cargoToml ? cargoWorkspaceVersion(files.cargoToml) : null
+  // `version` and `date-released` are what GitHub's citation box and Zenodo
+  // present as the release being cited, so a repository with no release has
+  // nothing to name there and correctly omits both. Requiring them against a
+  // version that was only ever declared asks the file to date something that
+  // never happened -- wickra-terminal enforces exactly the opposite rule, in a
+  // test, and is right to. Once a tag exists the field is expected again.
+  const citationNamesARelease = tagName(data.repo) !== null
+  const rootPkgIsCarrier = !files.cargoToml && Boolean(files.rootPkg)
+  const declared = files.cargoToml
+    ? cargoWorkspaceVersion(files.cargoToml)
+    : rootPkgIsCarrier
+      ? (JSON.parse(files.rootPkg).version ?? null)
+      : null
   const nodePkg = files.nodePkg ? JSON.parse(files.nodePkg) : null
   const platformPkgs = Object.entries(nodePkg?.optionalDependencies ?? {})
 
@@ -674,8 +690,11 @@ async function scanRepo(entry) {
     row('bindings/r/DESCRIPTION', 'r', files.rDescription, descriptionVersion, true),
     row('bindings/node/package-lock.json', 'npm', files.nodeLock, (t) => JSON.parse(t).version ?? null, true),
     row('bindings/node/index.js', 'npm', files.nodeIndex, (t) => reportVersions(napiGuardVersions(t)), true),
-    row('CITATION.cff', 'citation', files.citation, citationVersion, true),
+    row('CITATION.cff', 'citation', files.citation, citationVersion, citationNamesARelease),
     row('SECURITY.md', 'docs', files.security, (t) => reportVersions(securityVersions(t)), true),
+    ...(rootPkgIsCarrier
+      ? [row('package.json', 'npm', files.rootPkg, (t) => JSON.parse(t).version ?? null, true)]
+      : []),
 
     // Declared expectations rather than files: the six platform packages the
     // node manifest promises exist at this version.
@@ -908,6 +927,19 @@ function collectFindings(snapshot) {
         })
         continue
       }
+      // Nothing to hold the file to: a repository that declares no version
+      // anywhere cannot have a file that disagrees with it. Recorded, not
+      // reported, so the row still shows in the collapsed listing.
+      if (state === 'no version' && repo.declared === null) {
+        found.push({
+          repo: repo.repo,
+          kind: 'no version reference',
+          subject: m.file,
+          detail: 'present, and names no version -- the repository declares none either',
+          informational: true,
+        })
+        continue
+      }
       found.push({
         repo: repo.repo,
         kind:
@@ -978,6 +1010,11 @@ function collectFindings(snapshot) {
 
       const pin = repo.pins[l.name] ?? null
       const allows = pin === null ? null : caretAllows(pin, latest)
+      // When the crate resolves more than once, the copy left behind is not the
+      // one this repository's pin selected -- another dependent in the graph
+      // requires it, and no `cargo update` here can move it. Saying otherwise
+      // sends the reader after the wrong file.
+      const duplicated = l.versions.length > 1
       found.push({
         repo: repo.repo,
         kind: allows === false ? 'pin blocks update' : 'stale lock',
@@ -987,7 +1024,9 @@ function collectFindings(snapshot) {
           (allows === false
             ? `the pin \`${pin}\` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh`
             : allows === true
-              ? `the pin \`${pin}\` already allows it, so cargo update -p ${l.name} closes it`
+              ? duplicated
+                ? `the pin \`${pin}\` already admits it, so the older copy is not this pin's -- another dependent in the graph requires it, and raising that one closes both this and the duplicate above`
+                : `the pin \`${pin}\` already allows it, so cargo update -p ${l.name} closes it`
               : `the pin ${pin === null ? 'is not declared here' : `\`${pin}\` was not interpreted`}`),
       })
     }
