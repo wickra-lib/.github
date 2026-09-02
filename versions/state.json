@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T00:36:23Z",
+  "scanned_at": "2026-09-02T00:51:29Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -112,6 +112,46 @@
           "file": "bindings/java/benchmarks/pom.xml",
           "ecosystem": "maven",
           "version": "1.0.4"
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/java/README.md",
+          "ecosystem": "maven",
+          "version": "1.0.4"
+        },
+        {
+          "file": "crates/wickra-data/Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "1.0.4"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-core",
+          "ecosystem": "cargo",
+          "version": "1.0.4"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-data",
+          "ecosystem": "cargo",
+          "version": "1.0.4"
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": "1.0.4"
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": "1.0.4"
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "1.0.4"
         }
       ],
       "published": [
@@ -194,7 +234,8 @@
       ],
       "go": {
         "repo": "wickra-go",
-        "module": "github.com/wickra-lib/wickra/bindings/go",
+        "module": "github.com/wickra-lib/wickra-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra/bindings/go",
         "tag": "v1.0.4"
       },
       "pins": {
@@ -399,6 +440,36 @@
           "file": "bindings/java/benchmarks/pom.xml",
           "ecosystem": "maven",
           "version": "0.1.0"
+        },
+        {
+          "file": "examples/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.2"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-backtest-core",
+          "ecosystem": "cargo",
+          "version": "0.1.2"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-backtest-data",
+          "ecosystem": "cargo",
+          "version": "0.1.2"
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": "0.1.2"
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.2"
         }
       ],
       "published": [
@@ -487,6 +558,7 @@
       "go": {
         "repo": "wickra-backtest-go",
         "module": "github.com/wickra-lib/wickra-backtest-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-backtest-go",
         "tag": "v0.1.2"
       },
       "pins": {
@@ -703,6 +775,31 @@
           "file": "bindings/node/package-lock.json",
           "ecosystem": "npm",
           "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-exchange-core",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-exchange",
+          "ecosystem": "cargo",
+          "version": "0.1.0"
+        },
+        {
+          "file": "CITATION.cff",
+          "ecosystem": "citation",
+          "version": "0.1.0"
+        },
+        {
+          "file": "SECURITY.md",
+          "ecosystem": "docs",
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/index.js",
+          "ecosystem": "npm",
+          "version": "0.1.0"
         }
       ],
       "published": [
@@ -752,6 +849,11 @@
           "version": null
         },
         {
+          "registry": "npm",
+          "pkg": "wickra-exchange-wasm",
+          "version": null
+        },
+        {
           "registry": "NuGet",
           "pkg": "WickraExchange",
           "version": null
@@ -770,6 +872,7 @@
       "go": {
         "repo": "wickra-exchange-go",
         "module": "github.com/wickra-lib/wickra-exchange-go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-exchange-go",
         "tag": null
       },
       "pins": {
@@ -825,7 +928,8 @@
           "fromRegistry": false,
           "pulledInBy": [
             "wickra-exchange",
-            "wickra-exchange-bench"
+            "wickra-exchange-bench",
+            "wickra-exchange-wasm"
           ]
         },
         {
@@ -846,6 +950,14 @@
         },
         {
           "name": "wickra-exchange-python",
+          "versions": [
+            "0.1.0"
+          ],
+          "fromRegistry": false,
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-exchange-wasm",
           "versions": [
             "0.1.0"
           ],
@@ -876,6 +988,12 @@
     }
   },
   "findings": [
+    {
+      "repo": "wickra",
+      "kind": "go module path differs from its mirror",
+      "subject": "bindings/go/go.mod",
+      "detail": "declares `github.com/wickra-lib/wickra/bindings/go` while wickra-go publishes `github.com/wickra-lib/wickra-go`, which is the path a go get resolves"
+    },
     {
       "repo": "wickra-backtest",
       "kind": "manifest differs",

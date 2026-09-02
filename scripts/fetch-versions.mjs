@@ -121,6 +121,17 @@ function manifestPaths(entry) {
     pom: 'bindings/java/pom.xml',
     rDescription: 'bindings/r/DESCRIPTION',
     goMod: 'bindings/go/go.mod',
+    // Carriers outside the package managers. Every one of them was found by
+    // grepping the three repos for their own version, and every one is bumped
+    // on release: a citation record, the supported-version table, the version
+    // napi compiles into the loader, and the poms and snippets that depend on
+    // the released artefact by version.
+    citation: 'CITATION.cff',
+    security: 'SECURITY.md',
+    nodeIndex: 'bindings/node/index.js',
+    examplePom: 'examples/java/pom.xml',
+    javaReadme: 'bindings/java/README.md',
+    dataCargo: `crates/${entry.repo}-data/Cargo.toml`,
   }
 }
 
@@ -171,7 +182,10 @@ function repoQuery(paths) {
         }
         ${blobs}
       }
-      go: repository(owner: $owner, name: $goName) { ...newestTag }
+      go: repository(owner: $owner, name: $goName) {
+        ...newestTag
+        goMod: object(expression: "HEAD:go.mod") { ...blob }
+      }
     }`
 }
 
@@ -399,7 +413,71 @@ function ownDependencyVersion(benchXml, mainXml) {
 
 // Files that legitimately do not exist in every repo: absent is not a finding,
 // only a present-but-wrong version is.
-const OPTIONAL_MANIFESTS = new Set(['examples/node/package-lock.json', 'bindings/java/benchmarks/pom.xml'])
+// Files that legitimately do not exist in every repo, or that carry no version
+// in some of them. Absent is not a finding here; a present-but-wrong value is.
+const OPTIONAL_MANIFESTS = new Set([
+  'examples/node/package-lock.json',
+  'bindings/java/benchmarks/pom.xml',
+  'examples/java/pom.xml',
+  'bindings/java/README.md',
+])
+
+// Several carriers hold the version more than once, and one of them being
+// stale is the whole point of looking. The distinct set is reported: one value
+// renders as that value, more than one renders as the set and can never equal
+// the declared version, which is exactly the outcome wanted.
+const distinct = (values) => [...new Set(values)].sort()
+
+const reportVersions = (values) => {
+  const unique = distinct(values)
+  if (unique.length === 0) return null
+  return unique.join(', ')
+}
+
+const citationVersion = (yaml) => yaml.match(/^version:\s*"?([^"\s]+)"?/m)?.[1] ?? null
+
+// A supported-version table names the release it supports and nothing else, so
+// every three-part version in the file has to be the current one.
+const securityVersions = (text) => text.match(/\b\d+\.\d+\.\d+\b/g) ?? []
+
+// napi compiles the expected native package version into the loader; if a bump
+// misses it, install-time validation rejects the very binary it shipped with.
+const napiGuardVersions = (js) =>
+  [...js.matchAll(/bindingPackageVersion !== '([^']+)'/g)].map((m) => m[1])
+
+// Only versions belonging to this project. A pom carries plugin and
+// third-party dependency versions too -- reading those would report the Maven
+// compiler plugin as a stale release of ours.
+function ownPomVersions(xml, mainXml) {
+  const found = []
+  const own = pomVersion(xml)
+  if (own) found.push(own)
+  const dependency = ownDependencyVersion(xml, mainXml)
+  if (dependency) found.push(dependency)
+  return found
+}
+
+// Install snippets, in both flavours a Java README shows: a Maven dependency
+// block and a Gradle coordinate string.
+function snippetVersions(text, mainXml) {
+  const groupId = pomGroupId(mainXml)
+  const artifactId = pomArtifactId(mainXml)
+  if (!groupId || !artifactId) return []
+  const found = pomDeps(text)
+    .filter((dep) => dep.name === `${groupId}:${artifactId}`)
+    .map((dep) => dep.version)
+  for (const coordinate of text.matchAll(/["']([\w.-]+):([\w.-]+):([^"']+)["']/g)) {
+    if (coordinate[1] === groupId && coordinate[2] === artifactId) found.push(coordinate[3])
+  }
+  return found
+}
+
+// A crate depending on a sibling by path AND version publishes a dependency on
+// a version that has to exist, so the pin is a carrier like any other.
+const pathDependencyVersions = (toml) =>
+  [...toml.matchAll(/path\s*=\s*"[^"]*"\s*,\s*version\s*=\s*"([^"]+)"|version\s*=\s*"([^"]+)"\s*,\s*path\s*=\s*"[^"]*"/g)].map(
+    (m) => m[1] ?? m[2],
+  )
 
 const csprojDeps = (xml) =>
   [...xml.matchAll(/<PackageReference\s+Include="([^"]+)"[^>]*?Version="([^"]+)"/g)].map((m) => ({
@@ -520,7 +598,48 @@ async function scanRepo(entry) {
       ecosystem: 'maven',
       version: files.pomBench && files.pom ? ownDependencyVersion(files.pomBench, files.pom) : null,
     },
-  ].filter((m) => m.file !== null && !(m.version === null && OPTIONAL_MANIFESTS.has(m.file)))
+    {
+      file: 'examples/java/pom.xml',
+      ecosystem: 'maven',
+      version: files.examplePom && files.pom ? reportVersions(ownPomVersions(files.examplePom, files.pom)) : null,
+    },
+    {
+      file: 'bindings/java/README.md',
+      ecosystem: 'maven',
+      version: files.javaReadme && files.pom ? reportVersions(snippetVersions(files.javaReadme, files.pom)) : null,
+    },
+    {
+      file: `crates/${name}-data/Cargo.toml`,
+      ecosystem: 'cargo',
+      version: files.dataCargo ? reportVersions(pathDependencyVersions(files.dataCargo)) : null,
+    },
+    ...Object.entries(files.cargoToml ? cargoWorkspaceDeps(files.cargoToml) : {})
+      .filter(([crate]) => crate.startsWith(name))
+      .map(([crate, pin]) => ({
+        file: `Cargo.toml [workspace.dependencies] ${crate}`,
+        ecosystem: 'cargo',
+        version: pin,
+      })),
+    {
+      file: 'CITATION.cff',
+      ecosystem: 'citation',
+      version: files.citation ? citationVersion(files.citation) : null,
+    },
+    {
+      file: 'SECURITY.md',
+      ecosystem: 'docs',
+      version: files.security ? reportVersions(securityVersions(files.security)) : null,
+    },
+    {
+      file: 'bindings/node/index.js',
+      ecosystem: 'npm',
+      version: files.nodeIndex ? reportVersions(napiGuardVersions(files.nodeIndex)) : null,
+    },
+  ].filter(
+    (m) =>
+      m.file !== null &&
+      !(m.version === null && (OPTIONAL_MANIFESTS.has(m.file) || m.file.endsWith('-data/Cargo.toml'))),
+  )
 
   const crateName = entry.crate ?? name
   const npmName = nodePkg?.name ?? name
@@ -583,7 +702,14 @@ async function scanRepo(entry) {
     release: release && !release.isDraft ? release.tagName : null,
     manifests,
     published,
-    go: { repo: goRepo, module: files.goMod ? goModule(files.goMod) : null, tag: tagName(data.go) },
+    go: {
+      repo: goRepo,
+      // The module path that actually resolves is the mirror's, since that is
+      // the repository a `go get` fetches and the tag comes from there too.
+      module: data.go?.goMod ? goModule(blobText(data.go.goMod)) : null,
+      declaredInRepo: files.goMod ? goModule(files.goMod) : null,
+      tag: tagName(data.go),
+    },
     pins: files.cargoToml ? cargoWorkspaceDeps(files.cargoToml) : {},
     lock: files.cargoLock ? cargoLockWickra(files.cargoLock) : [],
     ...collectDeps(files, paths),
@@ -665,6 +791,15 @@ function collectFindings(snapshot) {
         kind: state === 'missing' ? 'not published' : `registry ${state}`,
         subject: `${p.registry} ${p.pkg}`,
         detail: `${p.version ?? 'absent'} against the declared ${repo.declared}`,
+      })
+    }
+
+    if (repo.go.module && repo.go.declaredInRepo && repo.go.module !== repo.go.declaredInRepo) {
+      found.push({
+        repo: repo.repo,
+        kind: 'go module path differs from its mirror',
+        subject: 'bindings/go/go.mod',
+        detail: `declares \`${repo.go.declaredInRepo}\` while ${repo.go.repo} publishes \`${repo.go.module}\`, which is the path a go get resolves`,
       })
     }
 
