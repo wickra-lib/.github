@@ -32,9 +32,10 @@ const OWNER = 'wickra-lib'
 const OUT_DIR = 'versions'
 
 // Pilot scope. wickra is the widest case in the org -- seven registries, nine
-// manifests, six npm platform packages -- so whatever holds here holds for the
-// rest of REPOS. Widen to REPOS.map(r => r.repo) once the table reads well.
-const PILOT = ['wickra']
+// manifests, six npm platform packages -- and wickra-backtest is the first repo
+// that has to work without being the one the paths were written against. Widen
+// to REPOS.map(r => r.repo) once the table still reads well at that length.
+const PILOT = ['wickra', 'wickra-backtest']
 
 const UA = 'wickra-lib-version-snapshot (https://github.com/wickra-lib/.github)'
 
