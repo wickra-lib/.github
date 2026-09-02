@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-01T23:53:26Z",
+  "scanned_at": "2026-09-01T23:59:44Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -252,6 +252,280 @@
             "path"
           ],
           "pulledInBy": []
+        }
+      ]
+    },
+    {
+      "repo": "wickra-backtest",
+      "declared": "0.1.2",
+      "tag": "v0.1.2",
+      "manifests": [
+        {
+          "file": "Cargo.toml",
+          "ecosystem": "cargo",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/python/pyproject.toml",
+          "ecosystem": "python",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/package.json",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/csharp/Wickra.Backtest/Wickra.Backtest.csproj",
+          "ecosystem": "nuget",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/java/pom.xml",
+          "ecosystem": "maven",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/r/DESCRIPTION",
+          "ecosystem": "r",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-backtest-linux-x64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-backtest-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-backtest-darwin-x64",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-backtest-darwin-arm64",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-backtest-win32-x64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-backtest-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "version": "0.1.2"
+        }
+      ],
+      "published": [
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-backtest",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "PyPI",
+          "pkg": "wickra-backtest",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-backtest",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-backtest-linux-x64-gnu",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-backtest-linux-arm64-gnu",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-backtest-darwin-x64",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-backtest-darwin-arm64",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-backtest-win32-x64-msvc",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-backtest-win32-arm64-msvc",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-backtest-wasm",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "NuGet",
+          "pkg": "Wickra.Backtest",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "Maven",
+          "pkg": "org.wickra:wickra-backtest",
+          "version": "0.1.2"
+        },
+        {
+          "registry": "r-universe",
+          "pkg": "wickrabacktest",
+          "version": "0.1.2"
+        }
+      ],
+      "go": {
+        "repo": "wickra-backtest-go",
+        "module": "github.com/wickra-lib/wickra-backtest-go",
+        "tag": "v0.1.2"
+      },
+      "pins": {
+        "wickra-core": "1.0",
+        "wickra-backtest-core": "0.1.2",
+        "wickra-backtest-data": "0.1.2"
+      },
+      "lock": [
+        {
+          "name": "wickra-backtest",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": [
+            "wickra-backtest-examples"
+          ]
+        },
+        {
+          "name": "wickra-backtest-bench",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-backtest-c",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-backtest-cli",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": [
+            "wickra-backtest",
+            "wickra-backtest-bench",
+            "wickra-backtest-c",
+            "wickra-backtest-cli",
+            "wickra-backtest-data",
+            "wickra-backtest-node",
+            "wickra-backtest-python",
+            "wickra-backtest-wasm"
+          ]
+        },
+        {
+          "name": "wickra-backtest-data",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": [
+            "wickra-backtest",
+            "wickra-backtest-cli",
+            "wickra-backtest-examples"
+          ]
+        },
+        {
+          "name": "wickra-backtest-examples",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-backtest-node",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-backtest-python",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-backtest-wasm",
+          "versions": [
+            "0.1.2"
+          ],
+          "sources": [
+            "path"
+          ],
+          "pulledInBy": []
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "1.0.0"
+          ],
+          "sources": [
+            "registry+https://github.com/rust-lang/crates.io-index"
+          ],
+          "pulledInBy": [
+            "wickra-backtest-core",
+            "wickra-backtest-data"
+          ]
         }
       ]
     }
