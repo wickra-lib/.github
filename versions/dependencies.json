@@ -1,10 +1,10 @@
 {
-  "scanned_at": "2026-09-03T01:31:04Z",
+  "scanned_at": "2026-09-03T15:14:39Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 632,
-      "shared": 383,
+      "shared": 384,
       "differing": 132
     },
     "npm": {
@@ -658,6 +658,8 @@
       "name": "R",
       "byRepo": {
         "wickra": ">= 2.10",
+        "wickra-exchange": ">= 2.10",
+        "wickra-screener": ">= 2.10",
         "wickra-terminal": ">= 3.0.0"
       }
     }
@@ -14553,6 +14555,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "tracing-attributes",
+        "version": "0.1.31"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "tracing-core",
         "version": "0.1.36"
       },
@@ -15641,6 +15649,12 @@
         "source": "bindings/python/pyproject.toml",
         "name": "pytest",
         "version": ">=7"
+      },
+      {
+        "ecosystem": "r",
+        "source": "bindings/r/DESCRIPTION",
+        "name": "R",
+        "version": ">= 2.10"
       }
     ],
     "wickra-feature-store": [
@@ -32410,6 +32424,12 @@
         "source": "bindings/python/pyproject.toml",
         "name": "pytest",
         "version": ">=7"
+      },
+      {
+        "ecosystem": "r",
+        "source": "bindings/r/DESCRIPTION",
+        "name": "R",
+        "version": ">= 2.10"
       }
     ],
     "wickra-shazam": [
