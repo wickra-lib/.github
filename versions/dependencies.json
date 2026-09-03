@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T23:37:23Z",
+  "scanned_at": "2026-09-03T01:31:04Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -74,7 +74,7 @@
         "wickra-radar": "0.22.1",
         "wickra-screener": "0.22.1",
         "wickra-shazam": "0.22.1",
-        "wickra-terminal": "0.23.1",
+        "wickra-terminal": "0.22.1",
         "wickra-timemachine": "0.22.1",
         "wickra-xray": "0.22.1",
         "wickra-zk": "0.22.1"
@@ -38334,12 +38334,6 @@
         "source": "Cargo.lock",
         "name": "base64",
         "version": "0.22.1"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "base64",
-        "version": "0.23.1"
       },
       {
         "ecosystem": "cargo",

@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-02T23:37:23Z",
+  "scanned_at": "2026-09-03T01:31:04Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -9415,12 +9415,14 @@
         {
           "name": "wickra-core",
           "versions": [
-            "0.9.9",
             "1.0.4"
           ],
           "origin": "registry",
           "git": null,
-          "pulledInBy": []
+          "pulledInBy": [
+            "wickra-exchange-core",
+            "wickra-terminal-core"
+          ]
         },
         {
           "name": "wickra-exchange",
@@ -9431,14 +9433,14 @@
           "git": {
             "owner": "wickra-lib",
             "repo": "wickra-exchange",
-            "sha": "330df9127829e0caaab4d097d8ce6e659586aa71"
+            "sha": "73511aa99978bc34c5e65de885b9a1f653565155"
           },
           "pulledInBy": [
             "wickra-terminal-core"
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 51,
+            "behind": 8,
             "ahead": 0
           }
         },
@@ -9451,7 +9453,7 @@
           "git": {
             "owner": "wickra-lib",
             "repo": "wickra-exchange",
-            "sha": "330df9127829e0caaab4d097d8ce6e659586aa71"
+            "sha": "73511aa99978bc34c5e65de885b9a1f653565155"
           },
           "pulledInBy": [
             "wickra-exchange",
@@ -9460,7 +9462,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 51,
+            "behind": 8,
             "ahead": 0
           }
         },
@@ -13767,27 +13769,15 @@
     },
     {
       "repo": "wickra-terminal",
-      "kind": "duplicate",
-      "subject": "wickra-core",
-      "detail": "resolved at 0.9.9 and 1.0.4 in one graph, so the two do not share types"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "stale lock",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `1` already admits it, so the older copy is not this pin's -- another dependent in the graph requires it, and raising that one closes both this and the duplicate above"
-    },
-    {
-      "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 330df912, 51 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 73511aa9, 8 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 330df912, 51 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 73511aa9, 8 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-timemachine",
