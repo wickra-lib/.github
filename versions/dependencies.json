@@ -1,9 +1,9 @@
 {
-  "scanned_at": "2026-09-04T14:34:20Z",
+  "scanned_at": "2026-09-04T17:57:06Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
-      "total": 632,
+      "total": 630,
       "shared": 385,
       "differing": 136
     },
@@ -31079,18 +31079,6 @@
         "source": "Cargo.lock",
         "name": "schemars_derive",
         "version": "0.8.22"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "screener-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "screener-core",
-        "version": "0.1.0"
       },
       {
         "ecosystem": "cargo",
