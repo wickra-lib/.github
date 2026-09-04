@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-04T09:58:23Z",
+  "scanned_at": "2026-09-04T14:34:20Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -295,7 +295,9 @@
       "byRepo": {
         "wickra-backtest": "0.8.9",
         "wickra-exchange": "0.9.1",
-        "wickra-feature-store": "0.8.9"
+        "wickra-feature-store": "0.8.9",
+        "wickra-screener": "0.9.1",
+        "wickra-terminal": "0.9.1"
       }
     },
     {
@@ -29839,6 +29841,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "adler2",
+        "version": "2.0.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "ahash",
         "version": "0.7.8"
       },
@@ -30026,7 +30034,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "chacha20",
-        "version": "0.10.1"
+        "version": "0.10.2"
       },
       {
         "ecosystem": "cargo",
@@ -30129,6 +30137,12 @@
         "source": "Cargo.lock",
         "name": "cpufeatures",
         "version": "0.3.0"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "crc32fast",
+        "version": "1.5.1"
       },
       {
         "ecosystem": "cargo",
@@ -30273,6 +30287,12 @@
         "source": "Cargo.lock",
         "name": "find-msvc-tools",
         "version": "0.1.9"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "flate2",
+        "version": "1.1.10"
       },
       {
         "ecosystem": "cargo",
@@ -30603,6 +30623,12 @@
         "source": "Cargo.lock",
         "name": "memchr",
         "version": "2.8.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "miniz_oxide",
+        "version": "0.9.1"
       },
       {
         "ecosystem": "cargo",
@@ -31159,6 +31185,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "simd-adler32",
+        "version": "0.3.10"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "simdutf8",
         "version": "0.1.5"
       },
@@ -31377,6 +31409,12 @@
         "source": "Cargo.lock",
         "name": "tracing",
         "version": "0.1.44"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "tracing-attributes",
+        "version": "0.1.31"
       },
       {
         "ecosystem": "cargo",
@@ -31694,7 +31732,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wnaf",
-        "version": "0.14.0"
+        "version": "0.14.1"
       },
       {
         "ecosystem": "cargo",
@@ -31773,6 +31811,12 @@
         "source": "Cargo.lock",
         "name": "zerovec-derive",
         "version": "0.11.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "zlib-rs",
+        "version": "0.6.7"
       },
       {
         "ecosystem": "cargo",
@@ -38301,6 +38345,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "adler2",
+        "version": "2.0.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "ahash",
         "version": "0.7.8"
       },
@@ -38667,6 +38717,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "crc32fast",
+        "version": "1.5.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "criterion-plot",
         "version": "0.5.0"
       },
@@ -38909,6 +38965,12 @@
         "source": "Cargo.lock",
         "name": "fixedbitset",
         "version": "0.4.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "flate2",
+        "version": "1.1.10"
       },
       {
         "ecosystem": "cargo",
@@ -39353,6 +39415,12 @@
         "source": "Cargo.lock",
         "name": "minimal-lexical",
         "version": "0.2.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "miniz_oxide",
+        "version": "0.9.1"
       },
       {
         "ecosystem": "cargo",
@@ -40089,6 +40157,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "simd-adler32",
+        "version": "0.3.10"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "simdutf8",
         "version": "0.1.5"
       },
@@ -40379,6 +40453,12 @@
         "source": "Cargo.lock",
         "name": "tracing",
         "version": "0.1.44"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "tracing-attributes",
+        "version": "0.1.31"
       },
       {
         "ecosystem": "cargo",
@@ -40714,7 +40794,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wnaf",
-        "version": "0.14.0"
+        "version": "0.14.1"
       },
       {
         "ecosystem": "cargo",
@@ -40793,6 +40873,12 @@
         "source": "Cargo.lock",
         "name": "zerovec-derive",
         "version": "0.11.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "zlib-rs",
+        "version": "0.6.7"
       },
       {
         "ecosystem": "cargo",
