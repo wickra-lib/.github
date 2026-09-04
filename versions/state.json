@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-04T00:26:59Z",
+  "scanned_at": "2026-09-04T09:58:23Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -2509,7 +2509,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -2529,7 +2529,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         }
@@ -3228,8 +3228,8 @@
     },
     {
       "repo": "wickra-exchange",
-      "declared": "0.1.0",
-      "tag": "v0.1.0",
+      "declared": "0.1.1",
+      "tag": "v0.1.1",
       "release": null,
       "manifests": [
         {
@@ -3238,7 +3238,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/python/pyproject.toml",
@@ -3246,7 +3246,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/package.json",
@@ -3254,7 +3254,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/java/pom.xml",
@@ -3262,7 +3262,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/r/DESCRIPTION",
@@ -3270,7 +3270,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/package-lock.json",
@@ -3278,7 +3278,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/index.js",
@@ -3286,7 +3286,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "CITATION.cff",
@@ -3302,57 +3302,57 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-exchange-darwin-arm64",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-exchange-darwin-x64",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-exchange-linux-arm64-gnu",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-exchange-linux-x64-gnu",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-exchange-win32-arm64-msvc",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-exchange-win32-x64-msvc",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "Cargo.toml [workspace.dependencies] wickra-exchange-core",
           "ecosystem": "cargo",
           "present": true,
           "range": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "Cargo.toml [workspace.dependencies] wickra-exchange",
           "ecosystem": "cargo",
           "present": true,
           "range": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/npm/darwin-arm64/package.json",
@@ -3360,7 +3360,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/npm/darwin-x64/package.json",
@@ -3368,7 +3368,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/npm/linux-arm64-gnu/package.json",
@@ -3376,7 +3376,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/npm/linux-x64-gnu/package.json",
@@ -3384,7 +3384,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/npm/win32-arm64-msvc/package.json",
@@ -3392,7 +3392,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "bindings/node/npm/win32-x64-msvc/package.json",
@@ -3400,7 +3400,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "crates/wickra-exchange-bench/Cargo.toml",
@@ -3472,7 +3472,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "file": "examples/node/package-lock.json",
@@ -3543,48 +3543,48 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-exchange",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-exchange-core",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-exchange",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-darwin-arm64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-darwin-x64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-linux-arm64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-linux-x64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-win32-arm64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
@@ -3594,7 +3594,7 @@
         {
           "registry": "npm",
           "pkg": "wickra-exchange-wasm",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "NuGet",
@@ -3616,12 +3616,12 @@
         "repo": "wickra-exchange-go",
         "module": "github.com/wickra-lib/wickra-exchange-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-exchange-go",
-        "tag": null
+        "tag": "v0.1.1"
       },
       "pins": {
         "wickra-core": "1.0",
-        "wickra-exchange-core": "0.1.0",
-        "wickra-exchange": "0.1.0"
+        "wickra-exchange-core": "0.1.1",
+        "wickra-exchange": "0.1.1"
       },
       "lock": [
         {
@@ -3638,7 +3638,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.0"
+            "0.1.1"
           ],
           "origin": "path",
           "git": null,
@@ -3652,7 +3652,7 @@
         {
           "name": "wickra-exchange-bench",
           "versions": [
-            "0.1.0"
+            "0.1.1"
           ],
           "origin": "path",
           "git": null,
@@ -3661,7 +3661,7 @@
         {
           "name": "wickra-exchange-c",
           "versions": [
-            "0.1.0"
+            "0.1.1"
           ],
           "origin": "path",
           "git": null,
@@ -3670,7 +3670,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.0"
+            "0.1.1"
           ],
           "origin": "path",
           "git": null,
@@ -3683,7 +3683,7 @@
         {
           "name": "wickra-exchange-examples",
           "versions": [
-            "0.1.0"
+            "0.1.1"
           ],
           "origin": "path",
           "git": null,
@@ -3692,7 +3692,7 @@
         {
           "name": "wickra-exchange-node",
           "versions": [
-            "0.1.0"
+            "0.1.1"
           ],
           "origin": "path",
           "git": null,
@@ -3701,7 +3701,7 @@
         {
           "name": "wickra-exchange-python",
           "versions": [
-            "0.1.0"
+            "0.1.1"
           ],
           "origin": "path",
           "git": null,
@@ -3710,7 +3710,7 @@
         {
           "name": "wickra-exchange-wasm",
           "versions": [
-            "0.1.0"
+            "0.1.1"
           ],
           "origin": "path",
           "git": null,
@@ -4623,7 +4623,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -4643,7 +4643,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -5169,7 +5169,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -5189,7 +5189,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -5719,7 +5719,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -5739,7 +5739,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -6992,7 +6992,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -7012,7 +7012,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -7503,7 +7503,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 19,
+            "behind": 20,
             "ahead": 0
           }
         },
@@ -7523,7 +7523,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 19,
+            "behind": 20,
             "ahead": 0
           }
         },
@@ -8023,7 +8023,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -8043,7 +8043,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -9446,7 +9446,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 28,
+            "behind": 29,
             "ahead": 0
           }
         },
@@ -9468,7 +9468,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 28,
+            "behind": 29,
             "ahead": 0
           }
         },
@@ -9961,7 +9961,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -10875,7 +10875,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -10895,7 +10895,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 76,
+            "behind": 77,
             "ahead": 0
           }
         },
@@ -11270,10 +11270,10 @@
       "version": "1.0.4"
     },
     "wickra-exchange": {
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "wickra-exchange-core": {
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "wickra-terminal-core": {
       "version": null
@@ -11846,13 +11846,13 @@
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-copilot",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-darwin",
@@ -12096,7 +12096,7 @@
       "repo": "wickra-exchange",
       "kind": "carries no version",
       "subject": "CITATION.cff",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "detail": "the file is present and names no version, while the repo declares 0.1.1"
     },
     {
       "repo": "wickra-exchange",
@@ -12212,20 +12212,32 @@
     },
     {
       "repo": "wickra-exchange",
+      "kind": "registry differs",
+      "subject": "npm wickra-exchange-win32-x64-msvc",
+      "detail": "0.1.0 against the declared 0.1.1"
+    },
+    {
+      "repo": "wickra-exchange",
       "kind": "not published",
       "subject": "NuGet WickraExchange",
-      "detail": "absent against the declared 0.1.0"
+      "detail": "absent against the declared 0.1.1"
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "registry differs",
+      "subject": "Maven org.wickra:wickra-exchange",
+      "detail": "0.1.0 against the declared 0.1.1"
     },
     {
       "repo": "wickra-exchange",
       "kind": "not published",
       "subject": "r-universe wickraexchange",
-      "detail": "absent against the declared 0.1.0"
+      "detail": "absent against the declared 0.1.1"
     },
     {
       "repo": "wickra-exchange",
       "kind": "no release for the newest tag",
-      "subject": "v0.1.0",
+      "subject": "v0.1.1",
       "detail": "the repository has no published release at all"
     },
     {
@@ -12456,13 +12468,13 @@
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-genome",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-gym",
@@ -12595,13 +12607,13 @@
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-gym",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-impact",
@@ -12707,13 +12719,13 @@
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-impact",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-pico",
@@ -13195,13 +13207,13 @@
       "repo": "wickra-radar",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-radar",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-screener",
@@ -13311,13 +13323,13 @@
       "repo": "wickra-screener",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 1fc83114, 19 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 1fc83114, 20 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-screener",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 1fc83114, 19 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 1fc83114, 20 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-shazam",
@@ -13445,13 +13457,13 @@
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-shazam",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -13808,13 +13820,13 @@
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 73511aa9, 28 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 73511aa9, 29 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-terminal",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 73511aa9, 28 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 73511aa9, 29 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-timemachine",
@@ -13902,7 +13914,7 @@
       "repo": "wickra-timemachine",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-verify",
@@ -14141,13 +14153,13 @@
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 76 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 83e123e8, 77 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-zk",
