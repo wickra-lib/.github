@@ -12,6 +12,7 @@ on:
       - profile/README.md
       - assets/wickra-banner.svg
       - scripts/gen-banner.mjs
+      - scripts/banner-svg.mjs
       - package.json
   workflow_dispatch:
 
