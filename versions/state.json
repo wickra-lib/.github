@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-04T23:23:11Z",
+  "scanned_at": "2026-09-05T02:26:17Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -1445,7 +1445,8 @@
         "tag": null
       },
       "pins": {
-        "wickra-backtest-core": "0.1.4"
+        "wickra-backtest-core": "0.1.4",
+        "wickra-core": "1.0.4"
       },
       "lock": [
         {
@@ -1522,6 +1523,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
+            "benchmark-core",
             "wickra-backtest-core"
           ]
         }
@@ -8489,7 +8491,6 @@
         "tag": null
       },
       "pins": {
-        "wickra-data": "0.9",
         "wickra-backtest-core": "0.1"
       },
       "lock": [
@@ -8693,6 +8694,13 @@
           "file": "bindings/node/package.json optionalDependencies.wickra-synth-win32-arm64-msvc",
           "ecosystem": "npm",
           "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-synth-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
           "version": "0.1.0"
         },
         {
@@ -8955,7 +8963,8 @@
       },
       "pins": {
         "wickra-data": "1.0",
-        "wickra-core": "1.0"
+        "wickra-core": "1.0",
+        "wickra-synth-core": "0.1.0"
       },
       "lock": [
         {
@@ -8966,8 +8975,8 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "synth-core",
-            "wickra-data"
+            "wickra-data",
+            "wickra-synth-core"
           ]
         },
         {
@@ -8998,6 +9007,23 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-synth-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "synth-bench",
+            "wickra-synth",
+            "wickra-synth-c",
+            "wickra-synth-example",
+            "wickra-synth-node",
+            "wickra-synth-python",
+            "wickra-synth-wasm"
+          ]
         },
         {
           "name": "wickra-synth-example",
@@ -11278,6 +11304,9 @@
     },
     "wickra-screener-core": {
       "version": "0.1.3"
+    },
+    "wickra-synth-core": {
+      "version": null
     },
     "wickra-terminal-core": {
       "version": "0.1.2"
