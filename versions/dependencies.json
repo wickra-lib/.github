@@ -1,9 +1,9 @@
 {
-  "scanned_at": "2026-09-06T00:17:10Z",
+  "scanned_at": "2026-09-06T06:31:28Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
-      "total": 629,
+      "total": 628,
       "shared": 385,
       "differing": 139
     },
@@ -5116,13 +5116,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "benchmark-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "benchmark-core",
-        "version": "0.1.0"
+        "version": "0.1.1"
       },
       {
         "ecosystem": "cargo",
