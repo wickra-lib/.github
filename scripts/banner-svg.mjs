@@ -34,7 +34,7 @@ export const LIBRARIES = [
   { name: 'wickra', layer: 'core', shipped: true },
 
   { name: 'wickra-exchange', layer: 'data', shipped: true },
-  { name: 'wickra-synth', layer: 'data' },
+  { name: 'wickra-synth', layer: 'data', shipped: true },
   { name: 'wickra-timemachine', layer: 'data' },
   { name: 'wickra-genome', layer: 'data' },
   { name: 'wickra-feature-store', layer: 'data' },
