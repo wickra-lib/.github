@@ -81,7 +81,7 @@ export const REPOS = [
   { repo: 'wickra-darwin', nuget: 'Wickra.Darwin' },
   // Ships a C binding only, and publishes the core crate under its own name.
   { repo: 'wickra-embed', crate: 'embed-core', set: RUST_ONLY },
-  { repo: 'wickra-exchange', nuget: 'WickraExchange', verified: 9 },
+  { repo: 'wickra-exchange', nuget: 'WickraExchange', docs: 'exchange.wickra.org', verified: 9 },
   { repo: 'wickra-feature-store', nuget: 'Wickra.FeatureStore' },
   { repo: 'wickra-genome', nuget: 'Wickra.Genome' },
   { repo: 'wickra-gym', nuget: 'Wickra.Gym' },
@@ -92,14 +92,14 @@ export const REPOS = [
   { repo: 'wickra-playground', set: SITE_ONLY },
   { repo: 'wickra-proof', crate: 'wickra-proof-cli', nuget: 'Wickra.Proof' },
   { repo: 'wickra-radar', nuget: 'Wickra.Radar', docs: 'radar.wickra.org' },
-  { repo: 'wickra-screener', nuget: 'Wickra.Screener' },
+  { repo: 'wickra-screener', nuget: 'Wickra.Screener', docs: 'screener.wickra.org' },
   { repo: 'wickra-shazam', nuget: 'Wickra.Shazam', docs: 'shazam.wickra.org' },
   { repo: 'wickra-strategy-ci', crate: 'wickra-strategy-ci-cli', nuget: 'Wickra.StrategyCi' },
   { repo: 'wickra-synth', nuget: 'Wickra.Synth' },
   { repo: 'wickra-terminal', nuget: 'WickraTerminal', docs: 'terminal.wickra.org' },
   { repo: 'wickra-timemachine', nuget: 'Wickra.TimeMachine' },
   { repo: 'wickra-verify', crate: 'wickra-verify-cli', nuget: 'Wickra.Verify' },
-  { repo: 'wickra-xray', nuget: 'Wickra.Xray' },
+  { repo: 'wickra-xray', nuget: 'Wickra.Xray', docs: 'xray.wickra.org' },
   // Publishes the CLI crate under the repo name; no language bindings.
   { repo: 'wickra-zk', set: RUST_ONLY },
 ]
