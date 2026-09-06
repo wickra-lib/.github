@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-06T14:25:37Z",
+  "scanned_at": "2026-09-06T23:16:57Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -8152,7 +8152,7 @@
     {
       "repo": "wickra-strategy-ci",
       "declared": "0.1.0",
-      "tag": null,
+      "tag": "v0.1.0",
       "release": null,
       "manifests": [
         {
@@ -8214,10 +8214,10 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": false,
+          "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "SECURITY.md",
@@ -8457,52 +8457,53 @@
         {
           "registry": "PyPI",
           "pkg": "wickra-strategy-ci",
-          "version": null
+          "version": "0.1.0",
+          "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-linux-x64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-linux-arm64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-darwin-x64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-darwin-arm64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-win32-x64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-win32-arm64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-wasm",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.StrategyCi",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "Maven",
@@ -8519,37 +8520,27 @@
         "repo": "wickra-strategy-ci-go",
         "module": "github.com/wickra-lib/wickra-strategy-ci-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-strategy-ci/bindings/go",
-        "tag": null
+        "tag": "v0.1.0"
       },
       "pins": {
-        "wickra-backtest-core": "0.1"
+        "wickra-backtest-core": "0.1.4"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
-            "proof-core",
             "strategy-ci-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-core",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -13473,13 +13464,6 @@
     {
       "repo": "wickra-strategy-ci",
       "kind": "no version reference",
-      "subject": "CITATION.cff",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "no version reference",
       "subject": "crates/strategy-ci-bench/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -13584,15 +13568,27 @@
     },
     {
       "repo": "wickra-strategy-ci",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
+      "kind": "not published",
+      "subject": "crates.io wickra-strategy-ci-cli",
+      "detail": "absent against the declared 0.1.0"
     },
     {
       "repo": "wickra-strategy-ci",
-      "kind": "stale lock",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
+      "kind": "not published",
+      "subject": "Maven org.wickra:wickra-strategy-ci",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "not published",
+      "subject": "r-universe wickrastrategyci",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "no release for the newest tag",
+      "subject": "v0.1.0",
+      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-synth",
