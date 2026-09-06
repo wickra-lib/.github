@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-06T11:22:38Z",
+  "scanned_at": "2026-09-06T14:25:37Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -37573,7 +37573,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "synth-bench",
-        "version": "0.1.0"
+        "version": "0.1.1"
       },
       {
         "ecosystem": "cargo",
