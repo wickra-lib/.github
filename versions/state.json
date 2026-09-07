@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-07T01:19:23Z",
+  "scanned_at": "2026-09-07T13:03:21Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -8525,7 +8525,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrastrategyci",
-          "version": null
+          "version": "0.1.1"
         }
       ],
       "go": {
@@ -13598,12 +13598,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "not published",
-      "subject": "r-universe wickrastrategyci",
-      "detail": "absent against the declared 0.1.1"
     },
     {
       "repo": "wickra-synth",
