@@ -1,9 +1,9 @@
 {
-  "scanned_at": "2026-09-06T23:16:57Z",
+  "scanned_at": "2026-09-07T01:19:23Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
-      "total": 628,
+      "total": 627,
       "shared": 385,
       "differing": 139
     },
@@ -35867,13 +35867,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "strategy-ci-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "strategy-ci-core",
-        "version": "0.1.0"
+        "version": "0.1.1"
       },
       {
         "ecosystem": "cargo",
