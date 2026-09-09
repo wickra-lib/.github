@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-09T18:53:11Z",
+  "scanned_at": "2026-09-09T21:58:57Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -617,7 +617,7 @@
         "wickra-genome": "6.1.2",
         "wickra-gym": "6.1.2",
         "wickra-impact": "6.1.2",
-        "wickra-proof": "6.1.2",
+        "wickra-proof": "6.1.3",
         "wickra-radar": "6.1.2",
         "wickra-screener": "6.1.3",
         "wickra-shazam": "6.1.2",
@@ -25742,12 +25742,6 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "arrayref",
-        "version": "0.3.9"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "arrayvec",
         "version": "0.7.8"
       },
@@ -25779,7 +25773,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "blake3",
-        "version": "1.8.5"
+        "version": "1.8.7"
       },
       {
         "ecosystem": "cargo",
@@ -25827,13 +25821,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap",
-        "version": "4.6.4"
+        "version": "4.6.6"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_builder",
-        "version": "4.6.2"
+        "version": "4.6.6"
       },
       {
         "ecosystem": "cargo",
@@ -26097,25 +26091,25 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.11.0"
+        "version": "3.12.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.3.2"
+        "version": "2.4.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.0"
+        "version": "3.6.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.1"
+        "version": "6.1.2"
       },
       {
         "ecosystem": "cargo",
@@ -26223,31 +26217,31 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
@@ -26379,19 +26373,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_core",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_derive",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
@@ -26457,13 +26451,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror",
-        "version": "2.0.19"
+        "version": "2.0.20"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror-impl",
-        "version": "2.0.19"
+        "version": "2.0.20"
       },
       {
         "ecosystem": "cargo",
@@ -26475,7 +26469,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.3+spec-1.1.0"
+        "version": "1.1.5+spec-1.1.0"
       },
       {
         "ecosystem": "cargo",
@@ -26487,7 +26481,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.2+spec-1.1.0"
+        "version": "1.1.3+spec-1.1.0"
       },
       {
         "ecosystem": "cargo",
@@ -26751,7 +26745,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.7.4"
+        "version": "3.9.0"
       },
       {
         "ecosystem": "npm",
@@ -26979,85 +26973,103 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-android-arm-eabi",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-android-arm64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-darwin-arm64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-darwin-x64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-freebsd-x64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-arm64-gnu",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-arm64-musl",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-x64-gnu",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-x64-musl",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-wasm32-wasi",
-        "version": "1.0.1"
+        "version": "1.1.0"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/core",
+        "version": "1.9.2"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/runtime",
+        "version": "1.9.2"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/wasi-threads",
+        "version": "1.2.1"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-arm64-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-ia32-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-x64-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
@@ -27188,12 +27200,6 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
-        "name": "emnapi",
-        "version": "1.11.2"
-      },
-      {
-        "ecosystem": "npm",
-        "source": "bindings/node/package-lock.json",
         "name": "es-toolkit",
         "version": "1.49.0"
       },
@@ -27225,7 +27231,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.0"
+        "version": "4.3.2"
       },
       {
         "ecosystem": "npm",
@@ -27284,6 +27290,12 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "typescript",
+        "version": "6.0.3"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "universal-user-agent",
         "version": "7.0.3"
       },
@@ -27291,7 +27303,7 @@
         "ecosystem": "maven",
         "source": "bindings/java/pom.xml",
         "name": "org.junit.jupiter:junit-jupiter",
-        "version": "6.1.2"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "python",
