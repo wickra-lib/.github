@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-09T21:58:57Z",
+  "scanned_at": "2026-09-10T00:45:41Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -8524,7 +8524,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrastrategyci",
-          "version": "0.1.1"
+          "version": "0.1.2"
         }
       ],
       "go": {
@@ -10460,20 +10460,19 @@
         "tag": null
       },
       "pins": {
-        "wickra-backtest-core": "0.1",
-        "wickra-data": "0.9"
+        "wickra-backtest-core": "0.1"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
           "origin": "git",
           "git": {
             "owner": "wickra-lib",
             "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
+            "sha": "d58e357506dbb95211d2313eae7bae93d1f73777"
           },
           "pulledInBy": [
             "verify-bench",
@@ -10481,15 +10480,15 @@
             "wickra-verify-example"
           ],
           "gitDistance": {
-            "status": "behind",
-            "behind": 130,
+            "status": "identical",
+            "behind": 0,
             "ahead": 0
           }
         },
         {
           "name": "wickra-core",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -10629,7 +10628,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-xray-linux-x64-gnu",
@@ -10926,8 +10925,6 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
-        "wickra-data": "0.9",
         "wickra-exchange": "0.1",
         "wickra-backtest-core": "0.1"
       },
@@ -13580,12 +13577,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "r-universe wickrastrategyci",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
       "repo": "wickra-synth",
       "kind": "carries no version",
       "subject": "CITATION.cff",
@@ -13999,29 +13990,11 @@
       "informational": true
     },
     {
-      "repo": "wickra-verify",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "stale lock",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
-    },
-    {
       "repo": "wickra-xray",
       "kind": "no version reference",
       "subject": "CITATION.cff",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
     },
     {
       "repo": "wickra-xray",
@@ -14109,9 +14082,9 @@
     },
     {
       "repo": "wickra-xray",
-      "kind": "pin blocks update",
+      "kind": "stale lock",
       "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
+      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin is not declared here"
     },
     {
       "repo": "wickra-xray",
