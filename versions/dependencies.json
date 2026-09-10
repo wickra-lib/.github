@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-09-10T19:40:23Z",
+  "scanned_at": "2026-09-10T22:02:32Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 633,
       "shared": 382,
-      "differing": 147
+      "differing": 148
     },
     "npm": {
       "total": 110,
@@ -140,7 +140,8 @@
         "wickra-terminal": "0.11.0",
         "wickra-timemachine": "0.12.0",
         "wickra-verify": "0.11.0",
-        "wickra-xray": "0.11.0"
+        "wickra-xray": "0.11.0",
+        "wickra-zk": "0.12.0"
       }
     },
     {
@@ -632,7 +633,8 @@
         "wickra-terminal": "6.1.3",
         "wickra-timemachine": "6.1.3",
         "wickra-verify": "6.1.3",
-        "wickra-xray": "6.1.2"
+        "wickra-xray": "6.1.2",
+        "wickra-zk": "6.1.3"
       }
     },
     {
@@ -48401,6 +48403,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "convert_case",
+        "version": "0.12.0"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "core-foundation",
         "version": "0.9.4"
       },
@@ -48463,6 +48471,12 @@
         "source": "Cargo.lock",
         "name": "crypto-common",
         "version": "0.1.7"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "ctor",
+        "version": "1.0.13"
       },
       {
         "ecosystem": "cargo",
@@ -48725,6 +48739,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "futures",
+        "version": "0.3.32"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "futures-channel",
         "version": "0.3.32"
       },
@@ -48732,6 +48752,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-core",
+        "version": "0.3.32"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "futures-executor",
         "version": "0.3.32"
       },
       {
@@ -49091,6 +49117,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "libloading",
+        "version": "0.9.0"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "libm",
         "version": "0.2.16"
       },
@@ -49163,6 +49195,36 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "napi",
+        "version": "3.12.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "napi-build",
+        "version": "2.4.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "napi-derive",
+        "version": "3.6.4"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "napi-derive-backend",
+        "version": "6.1.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "napi-sys",
+        "version": "3.3.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "nix",
         "version": "0.31.3"
       },
@@ -49171,6 +49233,12 @@
         "source": "Cargo.lock",
         "name": "no_std_strings",
         "version": "0.1.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "nohash-hasher",
+        "version": "0.2.0"
       },
       {
         "ecosystem": "cargo",
@@ -49375,6 +49443,36 @@
         "source": "Cargo.lock",
         "name": "prost-derive",
         "version": "0.13.5"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "pyo3",
+        "version": "0.29.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "pyo3-build-config",
+        "version": "0.29.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "pyo3-ffi",
+        "version": "0.29.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "pyo3-macros",
+        "version": "0.29.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "pyo3-macros-backend",
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
@@ -49901,6 +49999,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "target-lexicon",
+        "version": "0.13.5"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "tempfile",
         "version": "3.27.0"
       },
@@ -50101,6 +50205,12 @@
         "source": "Cargo.lock",
         "name": "unicode-ident",
         "version": "1.0.24"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "unicode-segmentation",
+        "version": "1.13.3"
       },
       {
         "ecosystem": "cargo",
@@ -50437,6 +50547,18 @@
         "source": "Cargo.lock",
         "name": "zmij",
         "version": "1.0.23"
+      },
+      {
+        "ecosystem": "maven",
+        "source": "bindings/java/pom.xml",
+        "name": "org.junit.jupiter:junit-jupiter",
+        "version": "6.1.3"
+      },
+      {
+        "ecosystem": "python",
+        "source": "bindings/python/pyproject.toml",
+        "name": "maturin",
+        "version": ">=1.7,<2.0"
       }
     ]
   }
