@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-10T14:44:48Z",
+  "scanned_at": "2026-09-10T19:40:23Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -2635,7 +2635,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-darwin-linux-x64-gnu",
@@ -2727,7 +2727,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": "0.1.0"
         },
         {
           "file": "crates/darwin-cli/Cargo.toml",
@@ -2735,7 +2735,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "crates/darwin-core/Cargo.toml",
@@ -2751,7 +2751,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/node/Cargo.toml",
@@ -2759,7 +2759,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/python/Cargo.toml",
@@ -2767,7 +2767,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/wasm/Cargo.toml",
@@ -2775,7 +2775,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": "0.1.0"
         },
         {
           "file": "bindings/csharp/WickraDarwin.Tests/WickraDarwin.Tests.csproj",
@@ -2932,77 +2932,50 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
-        "wickra-backtest": "0.1"
+        "wickra-core": "1.0",
+        "wickra-backtest": "0.1.4"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "darwin-bench",
             "darwin-cli",
             "darwin-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest",
             "wickra-backtest-data"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-core",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -3821,13 +3794,7 @@
           "version": "0.1.0"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-linux-x64-gnu",
-          "ecosystem": "npm",
-          "present": true,
-          "version": "0.1.0"
-        },
-        {
-          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-linux-arm64-gnu",
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-darwin-arm64",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.0"
@@ -3839,19 +3806,25 @@
           "version": "0.1.0"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-darwin-arm64",
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-linux-arm64-gnu",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.0"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-win32-x64-msvc",
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-linux-x64-gnu",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-win32-x64-msvc",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.0"
@@ -3910,7 +3883,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "crates/feature-store-cli/Cargo.toml",
@@ -4059,12 +4032,7 @@
         },
         {
           "registry": "npm",
-          "pkg": "wickra-feature-store-linux-x64-gnu",
-          "version": null
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-feature-store-linux-arm64-gnu",
+          "pkg": "wickra-feature-store-darwin-arm64",
           "version": null
         },
         {
@@ -4074,17 +4042,22 @@
         },
         {
           "registry": "npm",
-          "pkg": "wickra-feature-store-darwin-arm64",
+          "pkg": "wickra-feature-store-linux-arm64-gnu",
           "version": null
         },
         {
           "registry": "npm",
-          "pkg": "wickra-feature-store-win32-x64-msvc",
+          "pkg": "wickra-feature-store-linux-x64-gnu",
           "version": null
         },
         {
           "registry": "npm",
           "pkg": "wickra-feature-store-win32-arm64-msvc",
+          "version": null
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-feature-store-win32-x64-msvc",
           "version": null
         },
         {
@@ -4275,7 +4248,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-genome-linux-x64-gnu",
@@ -4367,7 +4340,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": "0.1.0"
         },
         {
           "file": "crates/genome-cli/Cargo.toml",
@@ -4375,7 +4348,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "crates/genome-core/Cargo.toml",
@@ -4391,7 +4364,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/node/Cargo.toml",
@@ -4399,7 +4372,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/python/Cargo.toml",
@@ -4407,7 +4380,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/wasm/Cargo.toml",
@@ -4415,7 +4388,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": "0.1.0"
         },
         {
           "file": "bindings/csharp/WickraGenome.Tests/WickraGenome.Tests.csproj",
@@ -4572,36 +4545,27 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
-        "wickra-data": "0.9",
-        "wickra-backtest-core": "0.1",
-        "wickra-exchange": "0.1"
+        "wickra-core": "1.0",
+        "wickra-data": "1.0",
+        "wickra-backtest-core": "0.1.4",
+        "wickra-exchange": "0.1.3"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "genome-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-core",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -4615,7 +4579,7 @@
         {
           "name": "wickra-data",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -4626,42 +4590,24 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.0"
+            "0.1.3"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-exchange",
-            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "genome-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 82,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.0"
+            "0.1.3"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-exchange",
-            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-exchange"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 82,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-genome-c",
@@ -4777,7 +4723,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-gym-linux-x64-gnu",
@@ -5074,77 +5020,50 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
-        "wickra-data": "0.9",
-        "wickra-backtest": "0.1",
-        "wickra-exchange": "0.1"
+        "wickra-core": "1.0",
+        "wickra-data": "1.0",
+        "wickra-backtest": "0.1.4",
+        "wickra-exchange": "0.1.3"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "gym-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest",
             "wickra-backtest-data"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-core",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -5159,7 +5078,7 @@
         {
           "name": "wickra-data",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -5172,42 +5091,24 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.0"
+            "0.1.3"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-exchange",
-            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "gym-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 82,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.0"
+            "0.1.3"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-exchange",
-            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-exchange"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 82,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-gym",
@@ -5341,7 +5242,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-impact-linux-x64-gnu",
@@ -5433,7 +5334,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": "0.1.0"
         },
         {
           "file": "crates/impact-cli/Cargo.toml",
@@ -5441,7 +5342,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "crates/impact-core/Cargo.toml",
@@ -5457,7 +5358,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/node/Cargo.toml",
@@ -5465,7 +5366,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/python/Cargo.toml",
@@ -5473,7 +5374,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/wasm/Cargo.toml",
@@ -5481,7 +5382,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": "0.1.0"
         },
         {
           "file": "bindings/csharp/WickraImpact.Tests/WickraImpact.Tests.csproj",
@@ -5638,78 +5539,51 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
-        "wickra-data": "0.9",
-        "wickra-backtest": "0.1",
-        "wickra-exchange": "0.1"
+        "wickra-core": "1.0",
+        "wickra-data": "1.0",
+        "wickra-backtest": "0.1.4",
+        "wickra-exchange": "0.1.3"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "impact-bench",
             "impact-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest",
             "wickra-backtest-data"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.0"
+            "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-backtest"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-core",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
@@ -5722,42 +5596,24 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.0"
+            "0.1.3"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-exchange",
-            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "impact-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 82,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.0"
+            "0.1.3"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-exchange",
-            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-exchange"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 82,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-impact-c",
@@ -6253,6 +6109,13 @@
           "version": "0.1.0"
         },
         {
+          "file": "Cargo.toml [workspace.dependencies] wickra-proof-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "bindings/node/npm/darwin-arm64/package.json",
           "ecosystem": "npm",
           "required": true,
@@ -6309,7 +6172,7 @@
           "version": null
         },
         {
-          "file": "crates/proof-core/Cargo.toml",
+          "file": "crates/wickra-proof-cli/Cargo.toml",
           "ecosystem": "cargo",
           "required": false,
           "range": true,
@@ -6317,7 +6180,7 @@
           "version": null
         },
         {
-          "file": "crates/wickra-proof-cli/Cargo.toml",
+          "file": "crates/wickra-proof-core/Cargo.toml",
           "ecosystem": "cargo",
           "required": false,
           "range": true,
@@ -6511,7 +6374,8 @@
         "tag": null
       },
       "pins": {
-        "wickra-backtest-core": "0.1"
+        "wickra-backtest-core": "0.1",
+        "wickra-proof-core": "0.1.0"
       },
       "lock": [
         {
@@ -6526,7 +6390,7 @@
             "sha": "d58e357506dbb95211d2313eae7bae93d1f73777"
           },
           "pulledInBy": [
-            "proof-core"
+            "wickra-proof-core"
           ],
           "gitDistance": {
             "status": "identical",
@@ -6562,6 +6426,23 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-proof-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "proof-bench",
+            "wickra-proof-c",
+            "wickra-proof-cli",
+            "wickra-proof-example",
+            "wickra-proof-node",
+            "wickra-proof-python",
+            "wickra-proof-wasm"
+          ]
         },
         {
           "name": "wickra-proof-example",
@@ -9706,7 +9587,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-timemachine-linux-x64-gnu",
@@ -9798,7 +9679,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": "0.1.0"
         },
         {
           "file": "crates/timemachine-cli/Cargo.toml",
@@ -9806,7 +9687,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "crates/timemachine-core/Cargo.toml",
@@ -9822,7 +9703,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/node/Cargo.toml",
@@ -9830,7 +9711,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/python/Cargo.toml",
@@ -9838,7 +9719,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/wasm/Cargo.toml",
@@ -9846,7 +9727,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": "0.1.0"
         },
         {
           "file": "bindings/csharp/WickraTimeMachine.Tests/WickraTimeMachine.Tests.csproj",
@@ -10003,43 +9884,70 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
-        "wickra-exchange-core": "0.1",
-        "wickra-exchange": "0.1",
-        "wickra-backtest": "0.1"
+        "wickra-core": "1.0",
+        "wickra-exchange-core": "0.1.3",
+        "wickra-exchange": "0.1.3",
+        "wickra-backtest": "0.1.4"
       },
       "lock": [
         {
+          "name": "wickra-backtest",
+          "versions": [
+            "0.1.4"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "timemachine-core"
+          ]
+        },
+        {
+          "name": "wickra-backtest-core",
+          "versions": [
+            "0.1.4"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest",
+            "wickra-backtest-data"
+          ]
+        },
+        {
+          "name": "wickra-backtest-data",
+          "versions": [
+            "0.1.4"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "wickra-backtest"
+          ]
+        },
+        {
           "name": "wickra-core",
           "versions": [
-            "0.9.9"
+            "1.0.4"
           ],
           "origin": "registry",
           "git": null,
           "pulledInBy": [
             "timemachine-core",
+            "wickra-backtest-core",
+            "wickra-backtest-data",
             "wickra-exchange-core"
           ]
         },
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.0"
+            "0.1.3"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-exchange",
-            "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "timemachine-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 82,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-timemachine-c",
@@ -10194,6 +10102,13 @@
           "version": "0.1.0"
         },
         {
+          "file": "Cargo.toml [workspace.dependencies] wickra-verify-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "bindings/node/npm/darwin-arm64/package.json",
           "ecosystem": "npm",
           "required": true,
@@ -10250,7 +10165,7 @@
           "version": null
         },
         {
-          "file": "crates/verify-core/Cargo.toml",
+          "file": "crates/wickra-verify-cli/Cargo.toml",
           "ecosystem": "cargo",
           "required": false,
           "range": true,
@@ -10258,7 +10173,7 @@
           "version": null
         },
         {
-          "file": "crates/wickra-verify-cli/Cargo.toml",
+          "file": "crates/wickra-verify-core/Cargo.toml",
           "ecosystem": "cargo",
           "required": false,
           "range": true,
@@ -10452,7 +10367,8 @@
         "tag": null
       },
       "pins": {
-        "wickra-backtest-core": "0.1"
+        "wickra-backtest-core": "0.1",
+        "wickra-verify-core": "0.1.0"
       },
       "lock": [
         {
@@ -10468,7 +10384,7 @@
           },
           "pulledInBy": [
             "verify-bench",
-            "verify-core",
+            "wickra-verify-core",
             "wickra-verify-example"
           ],
           "gitDistance": {
@@ -10505,6 +10421,23 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-verify-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "verify-bench",
+            "wickra-verify-c",
+            "wickra-verify-cli",
+            "wickra-verify-example",
+            "wickra-verify-node",
+            "wickra-verify-python",
+            "wickra-verify-wasm"
+          ]
         },
         {
           "name": "wickra-verify-example",
@@ -10547,7 +10480,7 @@
     {
       "repo": "wickra-xray",
       "declared": "0.1.0",
-      "tag": null,
+      "tag": "v0.1.0",
       "release": null,
       "manifests": [
         {
@@ -10609,10 +10542,10 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": false,
+          "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "SECURITY.md",
@@ -10656,6 +10589,13 @@
           "file": "bindings/node/package.json optionalDependencies.wickra-xray-win32-arm64-msvc",
           "ecosystem": "npm",
           "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-xray-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
           "version": "0.1.0"
         },
         {
@@ -10707,7 +10647,7 @@
           "version": "0.1.0"
         },
         {
-          "file": "crates/xray-bench/Cargo.toml",
+          "file": "crates/wickra-xray-bench/Cargo.toml",
           "ecosystem": "cargo",
           "required": false,
           "range": true,
@@ -10715,7 +10655,7 @@
           "version": "0.1.0"
         },
         {
-          "file": "crates/xray-cli/Cargo.toml",
+          "file": "crates/wickra-xray-core/Cargo.toml",
           "ecosystem": "cargo",
           "required": false,
           "range": true,
@@ -10723,7 +10663,7 @@
           "version": null
         },
         {
-          "file": "crates/xray-core/Cargo.toml",
+          "file": "crates/xray-cli/Cargo.toml",
           "ecosystem": "cargo",
           "required": false,
           "range": true,
@@ -10918,7 +10858,8 @@
       },
       "pins": {
         "wickra-exchange": "0.1",
-        "wickra-backtest-core": "0.1"
+        "wickra-backtest-core": "0.1",
+        "wickra-xray-core": "0.1.0"
       },
       "lock": [
         {
@@ -10944,7 +10885,7 @@
             "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
           },
           "pulledInBy": [
-            "xray-core"
+            "wickra-xray-core"
           ],
           "gitDistance": {
             "status": "behind",
@@ -10982,6 +10923,15 @@
           "pulledInBy": []
         },
         {
+          "name": "wickra-xray-bench",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
           "name": "wickra-xray-c",
           "versions": [
             "0.1.0"
@@ -10989,6 +10939,23 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-xray-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "wickra-xray",
+            "wickra-xray-bench",
+            "wickra-xray-c",
+            "wickra-xray-example",
+            "wickra-xray-node",
+            "wickra-xray-python",
+            "wickra-xray-wasm"
+          ]
         },
         {
           "name": "wickra-xray-example",
@@ -11131,6 +11098,14 @@
           "version": "0.1.0"
         },
         {
+          "file": "bindings/c/Cargo.toml",
+          "ecosystem": "cargo",
+          "required": false,
+          "range": true,
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "examples/node/package-lock.json",
           "ecosystem": "npm",
           "required": false,
@@ -11204,7 +11179,8 @@
       ],
       "go": null,
       "pins": {
-        "wickra-backtest": "0.1"
+        "wickra-backtest": "0.1",
+        "wickra-proof-core": "0.1"
       },
       "lock": [
         {
@@ -11239,9 +11215,9 @@
             "sha": "d58e357506dbb95211d2313eae7bae93d1f73777"
           },
           "pulledInBy": [
-            "proof-core",
             "wickra-backtest",
-            "wickra-backtest-data"
+            "wickra-backtest-data",
+            "wickra-proof-core"
           ],
           "gitDistance": {
             "status": "identical",
@@ -11282,6 +11258,26 @@
           ]
         },
         {
+          "name": "wickra-proof-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "git",
+          "git": {
+            "owner": "wickra-lib",
+            "repo": "wickra-proof",
+            "sha": "971a41b26512807fdbd37b3f1da4a9b0689a77d0"
+          },
+          "pulledInBy": [
+            "wickra-zk-host"
+          ],
+          "gitDistance": {
+            "status": "behind",
+            "behind": 4,
+            "ahead": 0
+          }
+        },
+        {
           "name": "wickra-zk",
           "versions": [
             "0.1.0"
@@ -11300,6 +11296,15 @@
           "pulledInBy": []
         },
         {
+          "name": "wickra-zk-c",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
           "name": "wickra-zk-host",
           "versions": [
             "0.1.0"
@@ -11308,7 +11313,8 @@
           "git": null,
           "pulledInBy": [
             "wickra-zk",
-            "wickra-zk-bench"
+            "wickra-zk-bench",
+            "wickra-zk-c"
           ]
         },
         {
@@ -11350,6 +11356,9 @@
     "wickra-exchange-core": {
       "version": "0.1.3"
     },
+    "wickra-proof-core": {
+      "version": null
+    },
     "wickra-screener-core": {
       "version": "0.1.3"
     },
@@ -11361,6 +11370,12 @@
     },
     "wickra-terminal-core": {
       "version": "0.1.2"
+    },
+    "wickra-verify-core": {
+      "version": null
+    },
+    "wickra-xray-core": {
+      "version": null
     }
   },
   "findings": [
@@ -11922,14 +11937,36 @@
     },
     {
       "repo": "wickra-darwin",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "kind": "no version reference",
+      "subject": "crates/darwin-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-darwin",
       "kind": "no version reference",
       "subject": "crates/darwin-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -11988,30 +12025,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-data",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "pin blocks update",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
     },
     {
       "repo": "wickra-embed",
@@ -12279,13 +12292,6 @@
     {
       "repo": "wickra-feature-store",
       "kind": "no version reference",
-      "subject": "crates/feature-store-bench/Cargo.toml",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "no version reference",
       "subject": "crates/feature-store-cli/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -12390,14 +12396,36 @@
     },
     {
       "repo": "wickra-genome",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "kind": "no version reference",
+      "subject": "crates/genome-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-genome",
       "kind": "no version reference",
       "subject": "crates/genome-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -12458,47 +12486,11 @@
       "informational": true
     },
     {
-      "repo": "wickra-genome",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "pin blocks update",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "pin blocks update",
-      "subject": "wickra-data",
-      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "git pin behind",
-      "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 82 commit(s) behind the default branch of wickra-lib/wickra-exchange"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "git pin behind",
-      "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 82 commit(s) behind the default branch of wickra-lib/wickra-exchange"
-    },
-    {
       "repo": "wickra-gym",
       "kind": "no version reference",
       "subject": "CITATION.cff",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
     },
     {
       "repo": "wickra-gym",
@@ -12585,48 +12577,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-gym",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-data",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "pin blocks update",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "pin blocks update",
-      "subject": "wickra-data",
-      "detail": "locked at 0.9.9 while wickra-data publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "git pin behind",
-      "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 82 commit(s) behind the default branch of wickra-lib/wickra-exchange"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "git pin behind",
-      "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 82 commit(s) behind the default branch of wickra-lib/wickra-exchange"
-    },
-    {
       "repo": "wickra-impact",
       "kind": "no version reference",
       "subject": "CITATION.cff",
@@ -12635,14 +12585,36 @@
     },
     {
       "repo": "wickra-impact",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "kind": "no version reference",
+      "subject": "crates/impact-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-impact",
       "kind": "no version reference",
       "subject": "crates/impact-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -12701,42 +12673,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-data",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "pin blocks update",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "git pin behind",
-      "subject": "wickra-exchange",
-      "detail": "pinned at 83e123e8, 82 commit(s) behind the default branch of wickra-lib/wickra-exchange"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "git pin behind",
-      "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 82 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-pico",
@@ -12991,14 +12927,14 @@
     {
       "repo": "wickra-proof",
       "kind": "no version reference",
-      "subject": "crates/proof-core/Cargo.toml",
+      "subject": "crates/wickra-proof-cli/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
       "repo": "wickra-proof",
       "kind": "no version reference",
-      "subject": "crates/wickra-proof-cli/Cargo.toml",
+      "subject": "crates/wickra-proof-core/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -13766,14 +13702,36 @@
     },
     {
       "repo": "wickra-timemachine",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
+      "kind": "no version reference",
+      "subject": "crates/timemachine-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
     },
     {
       "repo": "wickra-timemachine",
       "kind": "no version reference",
       "subject": "crates/timemachine-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -13834,18 +13792,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-timemachine",
-      "kind": "pin blocks update",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "git pin behind",
-      "subject": "wickra-exchange-core",
-      "detail": "pinned at 83e123e8, 82 commit(s) behind the default branch of wickra-lib/wickra-exchange"
-    },
-    {
       "repo": "wickra-verify",
       "kind": "no version reference",
       "subject": "CITATION.cff",
@@ -13868,14 +13814,14 @@
     {
       "repo": "wickra-verify",
       "kind": "no version reference",
-      "subject": "crates/verify-core/Cargo.toml",
+      "subject": "crates/wickra-verify-cli/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
       "repo": "wickra-verify",
       "kind": "no version reference",
-      "subject": "crates/wickra-verify-cli/Cargo.toml",
+      "subject": "crates/wickra-verify-core/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -13966,7 +13912,7 @@
     {
       "repo": "wickra-xray",
       "kind": "no version reference",
-      "subject": "CITATION.cff",
+      "subject": "crates/wickra-xray-core/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -13974,13 +13920,6 @@
       "repo": "wickra-xray",
       "kind": "no version reference",
       "subject": "crates/xray-cli/Cargo.toml",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "no version reference",
-      "subject": "crates/xray-core/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -14053,6 +13992,90 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "crates.io wickra-xray",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "PyPI wickra-xray",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "npm wickra-xray",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "npm wickra-xray-linux-x64-gnu",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "npm wickra-xray-linux-arm64-gnu",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "npm wickra-xray-darwin-x64",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "npm wickra-xray-darwin-arm64",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "npm wickra-xray-win32-x64-msvc",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "npm wickra-xray-win32-arm64-msvc",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "npm wickra-xray-wasm",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "NuGet Wickra.Xray",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "Maven org.wickra:wickra-xray",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "not published",
+      "subject": "r-universe wickraxray",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "no release for the newest tag",
+      "subject": "v0.1.0",
+      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-xray",
@@ -14176,6 +14199,12 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "git pin behind",
+      "subject": "wickra-proof-core",
+      "detail": "pinned at 971a41b2, 4 commit(s) behind the default branch of wickra-lib/wickra-proof"
     }
   ]
 }
