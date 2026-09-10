@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-10T00:45:41Z",
+  "scanned_at": "2026-09-10T14:44:48Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -3818,7 +3818,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-feature-store-linux-x64-gnu",
@@ -4115,39 +4115,31 @@
         "tag": null
       },
       "pins": {
-        "wickra-core": "0.9",
-        "wickra-data": "0.9",
-        "wickra-backtest-core": "0.1"
+        "wickra-core": "1.0",
+        "wickra-data": "1.0",
+        "wickra-backtest-core": "0.1.4"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.0"
-          ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
-          },
-          "pulledInBy": [
-            "feature-store-core"
-          ],
-          "gitDistance": {
-            "status": "behind",
-            "behind": 130,
-            "ahead": 0
-          }
-        },
-        {
-          "name": "wickra-core",
-          "versions": [
-            "0.9.9"
+            "0.1.4"
           ],
           "origin": "registry",
           "git": null,
           "pulledInBy": [
+            "feature-store-core"
+          ]
+        },
+        {
+          "name": "wickra-core",
+          "versions": [
+            "1.0.4"
+          ],
+          "origin": "registry",
+          "git": null,
+          "pulledInBy": [
+            "feature-store-core",
             "wickra-backtest-core"
           ]
         },
@@ -12286,12 +12278,6 @@
     },
     {
       "repo": "wickra-feature-store",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
-    },
-    {
-      "repo": "wickra-feature-store",
       "kind": "no version reference",
       "subject": "crates/feature-store-bench/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
@@ -12394,18 +12380,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "git pin behind",
-      "subject": "wickra-backtest-core",
-      "detail": "pinned at bd50f973, 130 commit(s) behind the default branch of wickra-lib/wickra-backtest"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "pin blocks update",
-      "subject": "wickra-core",
-      "detail": "locked at 0.9.9 while wickra-core publishes 1.0.4; the pin `0.9` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh"
     },
     {
       "repo": "wickra-genome",
