@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-11T08:57:08Z",
+  "scanned_at": "2026-09-11T12:26:31Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -1948,7 +1948,7 @@
             "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
           },
           "pulledInBy": [
-            "compile-core"
+            "wickra-compile-core"
           ],
           "gitDistance": {
             "status": "behind",
@@ -2005,6 +2005,22 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-compile-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "compile-bench",
+            "compile-c",
+            "compile-node",
+            "compile-python",
+            "compile-wasm",
+            "wickra-compile"
+          ]
         },
         {
           "name": "wickra-core",
@@ -6590,7 +6606,7 @@
         "tag": null
       },
       "pins": {
-        "wickra-backtest-core": "0.1",
+        "wickra-backtest-core": "=0.1.4",
         "wickra-proof-core": "0.1.0"
       },
       "lock": [
@@ -6599,20 +6615,11 @@
           "versions": [
             "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "d58e357506dbb95211d2313eae7bae93d1f73777"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "wickra-proof-core"
-          ],
-          "gitDistance": {
-            "status": "identical",
-            "behind": 0,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-core",
@@ -10362,7 +10369,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-verify-linux-x64-gnu",
@@ -10666,7 +10673,7 @@
         "tag": null
       },
       "pins": {
-        "wickra-backtest-core": "0.1",
+        "wickra-backtest-core": "=0.1.4",
         "wickra-verify-core": "0.1.0"
       },
       "lock": [
@@ -10675,22 +10682,13 @@
           "versions": [
             "0.1.4"
           ],
-          "origin": "git",
-          "git": {
-            "owner": "wickra-lib",
-            "repo": "wickra-backtest",
-            "sha": "d58e357506dbb95211d2313eae7bae93d1f73777"
-          },
+          "origin": "registry",
+          "git": null,
           "pulledInBy": [
             "verify-bench",
             "wickra-verify-core",
             "wickra-verify-example"
-          ],
-          "gitDistance": {
-            "status": "identical",
-            "behind": 0,
-            "ahead": 0
-          }
+          ]
         },
         {
           "name": "wickra-core",
@@ -11666,7 +11664,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 4,
+            "behind": 9,
             "ahead": 0
           }
         },
@@ -14234,12 +14232,6 @@
     },
     {
       "repo": "wickra-verify",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.1.0"
-    },
-    {
-      "repo": "wickra-verify",
       "kind": "no version reference",
       "subject": "crates/verify-bench/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
@@ -14501,7 +14493,7 @@
       "repo": "wickra-zk",
       "kind": "git pin behind",
       "subject": "wickra-proof-core",
-      "detail": "pinned at 971a41b2, 4 commit(s) behind the default branch of wickra-lib/wickra-proof"
+      "detail": "pinned at 971a41b2, 9 commit(s) behind the default branch of wickra-lib/wickra-proof"
     }
   ]
 }
