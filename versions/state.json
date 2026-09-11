@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-11T00:06:21Z",
+  "scanned_at": "2026-09-11T01:30:22Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -10787,52 +10787,58 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-xray",
-          "version": null
+          "version": "0.1.0"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-xray-core",
+          "version": "0.1.0"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-xray",
-          "version": null
+          "version": "0.1.0",
+          "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray-linux-x64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray-linux-arm64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray-darwin-x64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray-darwin-arm64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray-win32-x64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray-win32-arm64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray-wasm",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "NuGet",
@@ -10842,7 +10848,7 @@
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-xray",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "r-universe",
@@ -10854,7 +10860,7 @@
         "repo": "wickra-xray-go",
         "module": "github.com/wickra-lib/wickra-xray-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-xray-go",
-        "tag": null
+        "tag": "v0.1.0"
       },
       "pins": {
         "wickra-exchange": "0.1",
@@ -11483,7 +11489,7 @@
       "version": null
     },
     "wickra-xray-core": {
-      "version": null
+      "version": "0.1.0"
     }
   },
   "findings": [
@@ -14092,73 +14098,7 @@
     {
       "repo": "wickra-xray",
       "kind": "not published",
-      "subject": "crates.io wickra-xray",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "PyPI wickra-xray",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "npm wickra-xray",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "npm wickra-xray-linux-x64-gnu",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "npm wickra-xray-linux-arm64-gnu",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "npm wickra-xray-darwin-x64",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "npm wickra-xray-darwin-arm64",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "npm wickra-xray-win32-x64-msvc",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "npm wickra-xray-win32-arm64-msvc",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "npm wickra-xray-wasm",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
       "subject": "NuGet Wickra.Xray",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "not published",
-      "subject": "Maven org.wickra:wickra-xray",
       "detail": "absent against the declared 0.1.0"
     },
     {
