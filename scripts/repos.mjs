@@ -79,8 +79,8 @@ export const REPOS = [
   { repo: 'wickra-compile', nuget: 'Wickra.Compile', docs: 'compile.wickra.org' },
   { repo: 'wickra-copilot', nuget: 'Wickra.Copilot', docs: 'copilot.wickra.org' },
   { repo: 'wickra-darwin', nuget: 'Wickra.Darwin', docs: 'darwin.wickra.org' },
-  // Ships a C binding only, and publishes the core crate under its own name.
-  { repo: 'wickra-embed', crate: 'embed-core', docs: 'embed.wickra.org', set: RUST_ONLY },
+  // Ships a C binding only; the one published crate is the core, not a CLI.
+  { repo: 'wickra-embed', crate: 'wickra-embed-core', docs: 'embed.wickra.org', set: RUST_ONLY },
   { repo: 'wickra-exchange', nuget: 'WickraExchange', docs: 'exchange.wickra.org', verified: 9 },
   { repo: 'wickra-feature-store', nuget: 'Wickra.FeatureStore', docs: 'feature-store.wickra.org' },
   { repo: 'wickra-genome', nuget: 'Wickra.Genome', docs: 'genome.wickra.org' },
