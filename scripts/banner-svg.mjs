@@ -52,7 +52,7 @@ export const LIBRARIES = [
   { name: 'wickra-benchmark', layer: 'trust', shipped: true },
 
   { name: 'wickra-terminal', layer: 'surface', shipped: true },
-  { name: 'wickra-xray', layer: 'surface' },
+  { name: 'wickra-xray', layer: 'surface', shipped: true },
   { name: 'wickra-radar', layer: 'surface' },
   { name: 'wickra-copilot', layer: 'surface' },
   { name: 'wickra-shazam', layer: 'surface' },
