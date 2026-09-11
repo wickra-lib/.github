@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-10T22:02:32Z",
+  "scanned_at": "2026-09-11T00:06:21Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -7356,7 +7356,7 @@
       "pins": {
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-exchange": "0.1.1",
+        "wickra-exchange": "0.1.3",
         "wickra-backtest-core": "0.1.3",
         "wickra-screener-core": "0.1.3"
       },
@@ -7400,7 +7400,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.1"
+            "0.1.3"
           ],
           "origin": "registry",
           "git": null,
@@ -7411,7 +7411,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.1"
+            "0.1.3"
           ],
           "origin": "registry",
           "git": null,
@@ -11046,16 +11046,16 @@
           "ecosystem": "npm",
           "required": true,
           "range": false,
-          "present": false,
-          "version": null
+          "present": true,
+          "version": "0.1.0"
         },
         {
           "file": "bindings/node/index.js",
           "ecosystem": "npm",
           "required": true,
           "range": false,
-          "present": false,
-          "version": null
+          "present": true,
+          "version": "0.1.0"
         },
         {
           "file": "CITATION.cff",
@@ -11068,6 +11068,62 @@
         {
           "file": "SECURITY.md",
           "ecosystem": "docs",
+          "required": true,
+          "range": false,
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-zk-darwin-arm64",
+          "ecosystem": "npm",
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-zk-darwin-x64",
+          "ecosystem": "npm",
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-zk-linux-arm64-gnu",
+          "ecosystem": "npm",
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-zk-linux-x64-gnu",
+          "ecosystem": "npm",
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-arm64/package.json",
+          "ecosystem": "npm",
+          "required": true,
+          "range": false,
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/darwin-x64/package.json",
+          "ecosystem": "npm",
+          "required": true,
+          "range": false,
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-arm64-gnu/package.json",
+          "ecosystem": "npm",
+          "required": true,
+          "range": false,
+          "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "bindings/node/npm/linux-x64-gnu/package.json",
+          "ecosystem": "npm",
           "required": true,
           "range": false,
           "present": true,
@@ -13288,18 +13344,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-screener",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.1 while wickra-exchange publishes 0.1.3; the pin `0.1.1` already allows it, so cargo update -p wickra-exchange closes it"
-    },
-    {
-      "repo": "wickra-screener",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.1 while wickra-exchange-core publishes 0.1.3; the pin is not declared here"
-    },
-    {
       "repo": "wickra-shazam",
       "kind": "no version reference",
       "subject": "CITATION.cff",
@@ -14146,20 +14190,6 @@
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
       "detail": "pinned at 83e123e8, 82 commit(s) behind the default branch of wickra-lib/wickra-exchange"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not in the repository",
-      "subject": "bindings/node/package-lock.json",
-      "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not in the repository",
-      "subject": "bindings/node/index.js",
-      "detail": "a binding or file this repository does not have",
-      "informational": true
     },
     {
       "repo": "wickra-zk",
