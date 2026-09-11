@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-11T06:39:06Z",
+  "scanned_at": "2026-09-11T08:57:08Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -2135,6 +2135,20 @@
           "version": "0.1.0"
         },
         {
+          "file": "Cargo.toml [workspace.dependencies] wickra-copilot-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-copilot-llm",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "bindings/node/npm/darwin-arm64/package.json",
           "ecosystem": "npm",
           "required": true,
@@ -2404,7 +2418,9 @@
         "wickra-core": "0.9",
         "wickra-data": "0.9",
         "wickra-exchange": "0.1",
-        "wickra-backtest-core": "0.1"
+        "wickra-backtest-core": "0.1",
+        "wickra-copilot-core": "0.1.0",
+        "wickra-copilot-llm": "0.1.0"
       },
       "lock": [
         {
@@ -2419,7 +2435,7 @@
             "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
           },
           "pulledInBy": [
-            "copilot-core"
+            "wickra-copilot-core"
           ],
           "gitDistance": {
             "status": "behind",
@@ -2455,6 +2471,25 @@
           "pulledInBy": []
         },
         {
+          "name": "wickra-copilot-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "copilot-bench",
+            "wickra-copilot",
+            "wickra-copilot-ask-example",
+            "wickra-copilot-c",
+            "wickra-copilot-example",
+            "wickra-copilot-llm",
+            "wickra-copilot-node",
+            "wickra-copilot-python",
+            "wickra-copilot-wasm"
+          ]
+        },
+        {
           "name": "wickra-copilot-example",
           "versions": [
             "0.1.0"
@@ -2462,6 +2497,18 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-copilot-llm",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "wickra-copilot",
+            "wickra-copilot-ask-example"
+          ]
         },
         {
           "name": "wickra-copilot-node",
@@ -2498,8 +2545,8 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "copilot-core",
             "wickra-backtest-core",
+            "wickra-copilot-core",
             "wickra-data",
             "wickra-exchange-core"
           ]
@@ -2512,8 +2559,8 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "copilot-core",
-            "wickra-copilot"
+            "wickra-copilot",
+            "wickra-copilot-core"
           ]
         },
         {
@@ -2528,8 +2575,8 @@
             "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
           },
           "pulledInBy": [
-            "copilot-core",
-            "wickra-copilot"
+            "wickra-copilot",
+            "wickra-copilot-core"
           ],
           "gitDistance": {
             "status": "behind",
@@ -2671,6 +2718,13 @@
           "file": "bindings/node/package.json optionalDependencies.wickra-darwin-win32-arm64-msvc",
           "ecosystem": "npm",
           "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-darwin-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
           "version": "0.1.0"
         },
         {
@@ -2932,6 +2986,7 @@
         "tag": null
       },
       "pins": {
+        "wickra-darwin-core": "0.1.0",
         "wickra-core": "1.0",
         "wickra-backtest": "0.1.4"
       },
@@ -2945,8 +3000,8 @@
           "git": null,
           "pulledInBy": [
             "darwin-bench",
-            "darwin-cli",
-            "darwin-core"
+            "wickra-darwin",
+            "wickra-darwin-core"
           ]
         },
         {
@@ -2985,6 +3040,15 @@
           ]
         },
         {
+          "name": "wickra-darwin",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
           "name": "wickra-darwin-c",
           "versions": [
             "0.1.0"
@@ -2992,6 +3056,22 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-darwin-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "darwin-bench",
+            "wickra-darwin",
+            "wickra-darwin-c",
+            "wickra-darwin-node",
+            "wickra-darwin-python",
+            "wickra-darwin-wasm"
+          ]
         },
         {
           "name": "wickra-darwin-node",
@@ -3101,6 +3181,13 @@
           "version": null
         },
         {
+          "file": "Cargo.toml [workspace.dependencies] wickra-embed-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "crates/embed-bench/Cargo.toml",
           "ecosystem": "cargo",
           "required": false,
@@ -3192,12 +3279,13 @@
       "published": [
         {
           "registry": "crates.io",
-          "pkg": "embed-core",
+          "pkg": "wickra-embed-core",
           "version": null
         }
       ],
       "go": null,
       "pins": {
+        "wickra-embed-core": "0.1.0",
         "wickra-core": "0.9"
       },
       "lock": [
@@ -3209,7 +3297,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "embed-core"
+            "wickra-embed-core"
           ]
         },
         {
@@ -3220,6 +3308,18 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-embed-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "embed-bench",
+            "wickra-embed-c"
+          ]
         }
       ]
     },
@@ -3830,6 +3930,13 @@
           "version": "0.1.0"
         },
         {
+          "file": "Cargo.toml [workspace.dependencies] wickra-feature-store-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "bindings/node/npm/darwin-arm64/package.json",
           "ecosystem": "npm",
           "required": true,
@@ -4088,6 +4195,7 @@
         "tag": null
       },
       "pins": {
+        "wickra-feature-store-core": "0.1.0",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
         "wickra-backtest-core": "0.1.4"
@@ -4101,7 +4209,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "feature-store-core"
+            "wickra-feature-store-core"
           ]
         },
         {
@@ -4112,8 +4220,8 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "feature-store-core",
-            "wickra-backtest-core"
+            "wickra-backtest-core",
+            "wickra-feature-store-core"
           ]
         },
         {
@@ -4133,6 +4241,23 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-feature-store-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "feature-store-bench",
+            "wickra-feature-store",
+            "wickra-feature-store-c",
+            "wickra-feature-store-example",
+            "wickra-feature-store-node",
+            "wickra-feature-store-python",
+            "wickra-feature-store-wasm"
+          ]
         },
         {
           "name": "wickra-feature-store-example",
@@ -4284,6 +4409,13 @@
           "file": "bindings/node/package.json optionalDependencies.wickra-genome-win32-arm64-msvc",
           "ecosystem": "npm",
           "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-genome-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
           "version": "0.1.0"
         },
         {
@@ -4545,6 +4677,7 @@
         "tag": null
       },
       "pins": {
+        "wickra-genome-core": "0.1.0",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
         "wickra-backtest-core": "0.1.4",
@@ -4559,7 +4692,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "genome-core"
+            "wickra-genome-core"
           ]
         },
         {
@@ -4570,10 +4703,10 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "genome-core",
             "wickra-backtest-core",
             "wickra-data",
-            "wickra-exchange-core"
+            "wickra-exchange-core",
+            "wickra-genome-core"
           ]
         },
         {
@@ -4584,7 +4717,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "genome-core"
+            "wickra-genome-core"
           ]
         },
         {
@@ -4595,7 +4728,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "genome-core"
+            "wickra-genome-core"
           ]
         },
         {
@@ -4610,6 +4743,15 @@
           ]
         },
         {
+          "name": "wickra-genome",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
           "name": "wickra-genome-c",
           "versions": [
             "0.1.0"
@@ -4617,6 +4759,22 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-genome-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "genome-bench",
+            "wickra-genome",
+            "wickra-genome-c",
+            "wickra-genome-node",
+            "wickra-genome-python",
+            "wickra-genome-wasm"
+          ]
         },
         {
           "name": "wickra-genome-node",
@@ -4759,6 +4917,13 @@
           "file": "bindings/node/package.json optionalDependencies.wickra-gym-win32-arm64-msvc",
           "ecosystem": "npm",
           "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-gym-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
           "version": "0.1.0"
         },
         {
@@ -5020,6 +5185,7 @@
         "tag": null
       },
       "pins": {
+        "wickra-gym-core": "0.1.0",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
         "wickra-backtest": "0.1.4",
@@ -5034,7 +5200,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "gym-core"
+            "wickra-gym-core"
           ]
         },
         {
@@ -5068,11 +5234,11 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "gym-core",
             "wickra-backtest-core",
             "wickra-backtest-data",
             "wickra-data",
-            "wickra-exchange-core"
+            "wickra-exchange-core",
+            "wickra-gym-core"
           ]
         },
         {
@@ -5083,8 +5249,8 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "gym-core",
             "wickra-gym",
+            "wickra-gym-core",
             "wickra-gym-example"
           ]
         },
@@ -5096,7 +5262,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "gym-core"
+            "wickra-gym-core"
           ]
         },
         {
@@ -5127,6 +5293,23 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-gym-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "gym-bench",
+            "wickra-gym",
+            "wickra-gym-c",
+            "wickra-gym-example",
+            "wickra-gym-node",
+            "wickra-gym-python",
+            "wickra-gym-wasm"
+          ]
         },
         {
           "name": "wickra-gym-example",
@@ -5278,6 +5461,13 @@
           "file": "bindings/node/package.json optionalDependencies.wickra-impact-win32-arm64-msvc",
           "ecosystem": "npm",
           "present": true,
+          "version": "0.1.0"
+        },
+        {
+          "file": "Cargo.toml [workspace.dependencies] wickra-impact-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
           "version": "0.1.0"
         },
         {
@@ -5539,6 +5729,7 @@
         "tag": null
       },
       "pins": {
+        "wickra-impact-core": "0.1.0",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
         "wickra-backtest": "0.1.4",
@@ -5554,7 +5745,7 @@
           "git": null,
           "pulledInBy": [
             "impact-bench",
-            "impact-core"
+            "wickra-impact-core"
           ]
         },
         {
@@ -5601,7 +5792,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "impact-core"
+            "wickra-impact-core"
           ]
         },
         {
@@ -5616,6 +5807,15 @@
           ]
         },
         {
+          "name": "wickra-impact",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
+        },
+        {
           "name": "wickra-impact-c",
           "versions": [
             "0.1.0"
@@ -5623,6 +5823,22 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-impact-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "impact-bench",
+            "wickra-impact",
+            "wickra-impact-c",
+            "wickra-impact-node",
+            "wickra-impact-python",
+            "wickra-impact-wasm"
+          ]
         },
         {
           "name": "wickra-impact-node",
@@ -6597,6 +6813,13 @@
           "version": "0.1.0"
         },
         {
+          "file": "Cargo.toml [workspace.dependencies] wickra-radar-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "bindings/node/npm/darwin-arm64/package.json",
           "ecosystem": "npm",
           "required": true,
@@ -6858,7 +7081,8 @@
         "wickra-core": "0.9",
         "wickra-data": "0.9",
         "wickra-exchange": "0.1",
-        "wickra-backtest-core": "0.1"
+        "wickra-backtest-core": "0.1",
+        "wickra-radar-core": "0.1.0"
       },
       "lock": [
         {
@@ -6884,7 +7108,7 @@
             "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
           },
           "pulledInBy": [
-            "radar-core"
+            "wickra-radar-core"
           ],
           "gitDistance": {
             "status": "behind",
@@ -6929,6 +7153,23 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-radar-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "radar-bench",
+            "wickra-radar",
+            "wickra-radar-c",
+            "wickra-radar-example",
+            "wickra-radar-node",
+            "wickra-radar-python",
+            "wickra-radar-wasm"
+          ]
         },
         {
           "name": "wickra-radar-example",
@@ -7616,6 +7857,13 @@
           "version": "0.1.0"
         },
         {
+          "file": "Cargo.toml [workspace.dependencies] wickra-shazam-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "bindings/node/npm/darwin-arm64/package.json",
           "ecosystem": "npm",
           "required": true,
@@ -7877,7 +8125,8 @@
         "wickra-core": "0.9",
         "wickra-data": "0.9",
         "wickra-exchange": "0.1",
-        "wickra-backtest-core": "0.1"
+        "wickra-backtest-core": "0.1",
+        "wickra-shazam-core": "0.1.0"
       },
       "lock": [
         {
@@ -7892,7 +8141,7 @@
             "sha": "bd50f9733f875bf839ba5ac06b79ca7147d0f104"
           },
           "pulledInBy": [
-            "shazam-core"
+            "wickra-shazam-core"
           ],
           "gitDistance": {
             "status": "behind",
@@ -7908,10 +8157,10 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "shazam-core",
             "wickra-backtest-core",
             "wickra-data",
-            "wickra-exchange-core"
+            "wickra-exchange-core",
+            "wickra-shazam-core"
           ]
         },
         {
@@ -7922,7 +8171,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "shazam-core"
+            "wickra-shazam-core"
           ]
         },
         {
@@ -7937,7 +8186,7 @@
             "sha": "83e123e83a80f2f8a30cf7b1a51b6623025bda0a"
           },
           "pulledInBy": [
-            "shazam-core"
+            "wickra-shazam-core"
           ],
           "gitDistance": {
             "status": "behind",
@@ -7982,6 +8231,23 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-shazam-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "shazam-bench",
+            "wickra-shazam",
+            "wickra-shazam-c",
+            "wickra-shazam-example",
+            "wickra-shazam-node",
+            "wickra-shazam-python",
+            "wickra-shazam-wasm"
+          ]
         },
         {
           "name": "wickra-shazam-example",
@@ -9626,6 +9892,13 @@
           "version": "0.1.0"
         },
         {
+          "file": "Cargo.toml [workspace.dependencies] wickra-timemachine-core",
+          "ecosystem": "cargo",
+          "present": true,
+          "range": true,
+          "version": "0.1.0"
+        },
+        {
           "file": "bindings/node/npm/darwin-arm64/package.json",
           "ecosystem": "npm",
           "required": true,
@@ -9884,6 +10157,7 @@
         "tag": null
       },
       "pins": {
+        "wickra-timemachine-core": "0.1.0",
         "wickra-core": "1.0",
         "wickra-exchange-core": "0.1.3",
         "wickra-exchange": "0.1.3",
@@ -9898,7 +10172,7 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "timemachine-core"
+            "wickra-timemachine-core"
           ]
         },
         {
@@ -9932,10 +10206,10 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "timemachine-core",
             "wickra-backtest-core",
             "wickra-backtest-data",
-            "wickra-exchange-core"
+            "wickra-exchange-core",
+            "wickra-timemachine-core"
           ]
         },
         {
@@ -9946,8 +10220,17 @@
           "origin": "registry",
           "git": null,
           "pulledInBy": [
-            "timemachine-core"
+            "wickra-timemachine-core"
           ]
+        },
+        {
+          "name": "wickra-timemachine",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": []
         },
         {
           "name": "wickra-timemachine-c",
@@ -9957,6 +10240,22 @@
           "origin": "path",
           "git": null,
           "pulledInBy": []
+        },
+        {
+          "name": "wickra-timemachine-core",
+          "versions": [
+            "0.1.0"
+          ],
+          "origin": "path",
+          "git": null,
+          "pulledInBy": [
+            "timemachine-bench",
+            "wickra-timemachine",
+            "wickra-timemachine-c",
+            "wickra-timemachine-node",
+            "wickra-timemachine-python",
+            "wickra-timemachine-wasm"
+          ]
         },
         {
           "name": "wickra-timemachine-node",
@@ -11458,11 +11757,23 @@
     "wickra-benchmark-core": {
       "version": "0.1.1"
     },
+    "wickra-copilot-core": {
+      "version": null
+    },
+    "wickra-copilot-llm": {
+      "version": null
+    },
     "wickra-core": {
       "version": "1.0.4"
     },
+    "wickra-darwin-core": {
+      "version": null
+    },
     "wickra-data": {
       "version": "1.0.4"
+    },
+    "wickra-embed-core": {
+      "version": null
     },
     "wickra-exchange": {
       "version": "0.1.3"
@@ -11470,11 +11781,29 @@
     "wickra-exchange-core": {
       "version": "0.1.3"
     },
+    "wickra-feature-store-core": {
+      "version": null
+    },
+    "wickra-genome-core": {
+      "version": null
+    },
+    "wickra-gym-core": {
+      "version": null
+    },
+    "wickra-impact-core": {
+      "version": null
+    },
     "wickra-proof-core": {
+      "version": null
+    },
+    "wickra-radar-core": {
       "version": null
     },
     "wickra-screener-core": {
       "version": "0.1.3"
+    },
+    "wickra-shazam-core": {
+      "version": null
     },
     "wickra-strategy-ci-core": {
       "version": "0.1.2"
@@ -11484,6 +11813,9 @@
     },
     "wickra-terminal-core": {
       "version": "0.1.2"
+    },
+    "wickra-timemachine-core": {
+      "version": null
     },
     "wickra-verify-core": {
       "version": null

@@ -1,10 +1,10 @@
 {
-  "scanned_at": "2026-09-11T06:39:06Z",
+  "scanned_at": "2026-09-11T08:57:08Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
-      "total": 633,
-      "shared": 382,
+      "total": 619,
+      "shared": 381,
       "differing": 148
     },
     "npm": {
@@ -7255,25 +7255,25 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.11.0"
+        "version": "3.12.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.3.2"
+        "version": "2.4.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.0"
+        "version": "3.6.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.1"
+        "version": "6.1.2"
       },
       {
         "ecosystem": "cargo",
@@ -8726,18 +8726,6 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "copilot-core",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "copilot-llm",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "cpubits",
         "version": "0.1.1"
       },
@@ -9219,25 +9207,25 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.11.0"
+        "version": "3.12.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.3.2"
+        "version": "2.4.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.0"
+        "version": "3.6.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.1"
+        "version": "6.1.2"
       },
       {
         "ecosystem": "cargo",
@@ -11290,18 +11278,6 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "darwin-cli",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "darwin-core",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "dyn-clone",
         "version": "1.0.20"
       },
@@ -12871,12 +12847,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "embed-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "embed-core",
         "version": "0.1.0"
       },
       {
@@ -16360,12 +16330,6 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "feature-store-core",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "find-msvc-tools",
         "version": "0.1.9"
       },
@@ -18493,18 +18457,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "genome-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "genome-cli",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "genome-core",
         "version": "0.1.0"
       },
       {
@@ -21045,12 +20997,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "gym-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "gym-core",
         "version": "0.1.0"
       },
       {
@@ -23705,18 +23651,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "impact-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "impact-cli",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "impact-core",
         "version": "0.1.0"
       },
       {
@@ -28272,25 +28206,25 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.11.0"
+        "version": "3.12.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.3.2"
+        "version": "2.4.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.0"
+        "version": "3.6.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.1"
+        "version": "6.1.2"
       },
       {
         "ecosystem": "cargo",
@@ -28518,12 +28452,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "radar-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "radar-core",
         "version": "0.1.0"
       },
       {
@@ -33514,25 +33442,25 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.11.0"
+        "version": "3.12.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.3.2"
+        "version": "2.4.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.0"
+        "version": "3.6.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.1"
+        "version": "6.1.2"
       },
       {
         "ecosystem": "cargo",
@@ -34036,12 +33964,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "shazam-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "shazam-core",
         "version": "0.1.0"
       },
       {
@@ -42918,18 +42840,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "timemachine-bench",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "timemachine-cli",
-        "version": "0.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "timemachine-core",
         "version": "0.1.0"
       },
       {
