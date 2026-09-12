@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-11T12:26:31Z",
+  "scanned_at": "2026-09-12T23:26:57Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -10361,7 +10361,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "SECURITY.md",
@@ -11664,7 +11664,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 9,
+            "behind": 11,
             "ahead": 0
           }
         },
@@ -14226,13 +14226,6 @@
     {
       "repo": "wickra-verify",
       "kind": "no version reference",
-      "subject": "CITATION.cff",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "no version reference",
       "subject": "crates/verify-bench/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -14493,7 +14486,7 @@
       "repo": "wickra-zk",
       "kind": "git pin behind",
       "subject": "wickra-proof-core",
-      "detail": "pinned at 971a41b2, 9 commit(s) behind the default branch of wickra-lib/wickra-proof"
+      "detail": "pinned at 971a41b2, 11 commit(s) behind the default branch of wickra-lib/wickra-proof"
     }
   ]
 }
