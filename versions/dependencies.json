@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-13T17:36:25Z",
+  "scanned_at": "2026-09-13T22:23:22Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -5274,7 +5274,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "benchmark-bench",
-        "version": "0.1.1"
+        "version": "0.1.2"
       },
       {
         "ecosystem": "cargo",
@@ -36067,7 +36067,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "strategy-ci-bench",
-        "version": "0.1.2"
+        "version": "0.1.3"
       },
       {
         "ecosystem": "cargo",
@@ -37695,7 +37695,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "synth-bench",
-        "version": "0.1.1"
+        "version": "0.1.2"
       },
       {
         "ecosystem": "cargo",
