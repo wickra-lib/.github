@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-13T01:32:52Z",
+  "scanned_at": "2026-09-13T06:47:47Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -6229,7 +6229,7 @@
     {
       "repo": "wickra-proof",
       "declared": "0.1.0",
-      "tag": null,
+      "tag": "v0.1.0",
       "release": null,
       "manifests": [
         {
@@ -6291,10 +6291,10 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": false,
+          "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "SECURITY.md",
@@ -6536,62 +6536,68 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-proof-cli",
-          "version": null
+          "version": "0.1.0"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-proof-core",
+          "version": "0.1.0"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-proof",
-          "version": null
+          "version": "0.1.0",
+          "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-linux-x64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-linux-arm64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-darwin-x64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-darwin-arm64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-win32-x64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-win32-arm64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-wasm",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Proof",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-proof",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "r-universe",
@@ -6603,7 +6609,7 @@
         "repo": "wickra-proof-go",
         "module": "github.com/wickra-lib/wickra-proof-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-proof-go",
-        "tag": null
+        "tag": "v0.1.0"
       },
       "pins": {
         "wickra-backtest-core": "=0.1.4",
@@ -10296,8 +10302,8 @@
     {
       "repo": "wickra-verify",
       "declared": "0.1.1",
-      "tag": "v0.1.0",
-      "release": null,
+      "tag": "v0.1.1",
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -10603,80 +10609,80 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-verify-cli",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-verify-core",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-verify",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-linux-x64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-linux-arm64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-darwin-x64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-darwin-arm64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-win32-x64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-win32-arm64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-wasm",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Verify",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-verify",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "r-universe",
           "pkg": "wickraverify",
-          "version": null
+          "version": "0.1.1"
         }
       ],
       "go": {
         "repo": "wickra-verify-go",
         "module": "github.com/wickra-lib/wickra-verify-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-verify-go",
-        "tag": "v0.1.0"
+        "tag": "v0.1.1"
       },
       "pins": {
         "wickra-backtest-core": "=0.1.4",
@@ -11670,7 +11676,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 13,
+            "behind": 14,
             "ahead": 0
           }
         },
@@ -11798,7 +11804,7 @@
       "version": null
     },
     "wickra-proof-core": {
-      "version": null
+      "version": "0.1.0"
     },
     "wickra-radar-core": {
       "version": null
@@ -11822,7 +11828,7 @@
       "version": null
     },
     "wickra-verify-core": {
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "wickra-xray-core": {
       "version": "0.1.1"
@@ -13363,13 +13369,6 @@
     {
       "repo": "wickra-proof",
       "kind": "no version reference",
-      "subject": "CITATION.cff",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "no version reference",
       "subject": "crates/proof-bench/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -13464,6 +13463,18 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "not published",
+      "subject": "r-universe wickraproof",
+      "detail": "absent against the declared 0.1.0"
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "no release for the newest tag",
+      "subject": "v0.1.0",
+      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-radar",
@@ -14335,96 +14346,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-verify-cli",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-verify-core",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-verify",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-linux-x64-gnu",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-linux-arm64-gnu",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-darwin-x64",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-darwin-arm64",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-win32-x64-msvc",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-win32-arm64-msvc",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-wasm",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Verify",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-verify",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "not published",
-      "subject": "r-universe wickraverify",
-      "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.0",
-      "detail": "the repository has no published release at all"
-    },
-    {
       "repo": "wickra-xray",
       "kind": "no version reference",
       "subject": "crates/wickra-xray-core/Cargo.toml",
@@ -14582,7 +14503,7 @@
       "repo": "wickra-zk",
       "kind": "git pin behind",
       "subject": "wickra-proof-core",
-      "detail": "pinned at 971a41b2, 13 commit(s) behind the default branch of wickra-lib/wickra-proof"
+      "detail": "pinned at 971a41b2, 14 commit(s) behind the default branch of wickra-lib/wickra-proof"
     }
   ]
 }
