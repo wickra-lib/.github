@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-14T03:27:53Z",
+  "scanned_at": "2026-09-14T05:29:37Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -2626,7 +2626,7 @@
       "repo": "wickra-darwin",
       "declared": "0.1.1",
       "tag": "v0.1.1",
-      "release": "v0.1.0",
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -2932,68 +2932,68 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-darwin",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-darwin-core",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-darwin",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-linux-x64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-linux-arm64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-darwin-x64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-darwin-arm64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-win32-x64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-win32-arm64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-wasm",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Darwin",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-darwin",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "r-universe",
@@ -3005,7 +3005,7 @@
         "repo": "wickra-darwin-go",
         "module": "github.com/wickra-lib/wickra-darwin-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-darwin/bindings/go",
-        "tag": "v0.1.0"
+        "tag": "v0.1.1"
       },
       "pins": {
         "wickra-darwin-core": "0.1.1",
@@ -3851,7 +3851,7 @@
       "repo": "wickra-feature-store",
       "declared": "0.1.0",
       "tag": "v0.1.0",
-      "release": null,
+      "release": "v0.1.0",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -4645,7 +4645,12 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-genome",
-          "version": null
+          "version": "0.1.0"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-genome-core",
+          "version": "0.1.0"
         },
         {
           "registry": "PyPI",
@@ -4655,52 +4660,52 @@
         {
           "registry": "npm",
           "pkg": "wickra-genome",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-genome-linux-x64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-genome-linux-arm64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-genome-darwin-x64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-genome-darwin-arm64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-genome-win32-x64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-genome-win32-arm64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-genome-wasm",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Genome",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-genome",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "r-universe",
@@ -4712,7 +4717,7 @@
         "repo": "wickra-genome-go",
         "module": "github.com/wickra-lib/wickra-genome-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-genome/bindings/go",
-        "tag": null
+        "tag": "v0.1.0"
       },
       "pins": {
         "wickra-genome-core": "0.1.0",
@@ -4857,7 +4862,7 @@
       "repo": "wickra-gym",
       "declared": "0.1.1",
       "tag": "v0.1.1",
-      "release": null,
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -5163,63 +5168,68 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-gym",
-          "version": null
+          "version": "0.1.1"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-gym-core",
+          "version": "0.1.1"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-gym",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-gym",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-gym-linux-x64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-gym-linux-arm64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-gym-darwin-x64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-gym-darwin-arm64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-gym-win32-x64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-gym-win32-arm64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-gym-wasm",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Gym",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-gym",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "r-universe",
@@ -5231,7 +5241,7 @@
         "repo": "wickra-gym-go",
         "module": "github.com/wickra-lib/wickra-gym-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-gym/bindings/go",
-        "tag": "v0.1.0"
+        "tag": "v0.1.1"
       },
       "pins": {
         "wickra-gym-core": "0.1.1",
@@ -5402,7 +5412,7 @@
       "repo": "wickra-impact",
       "declared": "0.1.1",
       "tag": "v0.1.1",
-      "release": "v0.1.0",
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -5708,68 +5718,68 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-impact",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-impact-core",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-impact",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-impact",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-impact-linux-x64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-impact-linux-arm64-gnu",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-impact-darwin-x64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-impact-darwin-arm64",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-impact-win32-x64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-impact-win32-arm64-msvc",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "npm",
           "pkg": "wickra-impact-wasm",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Impact",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-impact",
-          "version": "0.1.0"
+          "version": "0.1.1"
         },
         {
           "registry": "r-universe",
@@ -5781,7 +5791,7 @@
         "repo": "wickra-impact-go",
         "module": "github.com/wickra-lib/wickra-impact-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-impact/bindings/go",
-        "tag": "v0.1.0"
+        "tag": "v0.1.1"
       },
       "pins": {
         "wickra-impact-core": "0.1.1",
@@ -10130,7 +10140,12 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-timemachine",
-          "version": null
+          "version": "0.1.0"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-timemachine-core",
+          "version": "0.1.0"
         },
         {
           "registry": "PyPI",
@@ -10140,52 +10155,52 @@
         {
           "registry": "npm",
           "pkg": "wickra-timemachine",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-timemachine-linux-x64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-timemachine-linux-arm64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-timemachine-darwin-x64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-timemachine-darwin-arm64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-timemachine-win32-x64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-timemachine-win32-arm64-msvc",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-timemachine-wasm",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.TimeMachine",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-timemachine",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "r-universe",
@@ -10197,7 +10212,7 @@
         "repo": "wickra-timemachine-go",
         "module": "github.com/wickra-lib/wickra-timemachine-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-timemachine/bindings/go",
-        "tag": null
+        "tag": "v0.1.0"
       },
       "pins": {
         "wickra-timemachine-core": "0.1.0",
@@ -11854,7 +11869,7 @@
       "version": "1.0.4"
     },
     "wickra-darwin-core": {
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "wickra-data": {
       "version": "1.0.4"
@@ -11872,13 +11887,13 @@
       "version": "0.1.0"
     },
     "wickra-genome-core": {
-      "version": null
+      "version": "0.1.0"
     },
     "wickra-gym-core": {
-      "version": null
+      "version": "0.1.1"
     },
     "wickra-impact-core": {
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "wickra-proof-core": {
       "version": "0.1.2"
@@ -11902,7 +11917,7 @@
       "version": "0.1.3"
     },
     "wickra-timemachine-core": {
-      "version": null
+      "version": "0.1.0"
     },
     "wickra-verify-core": {
       "version": "0.1.2"
@@ -12561,92 +12576,8 @@
     {
       "repo": "wickra-darwin",
       "kind": "registry differs",
-      "subject": "crates.io wickra-darwin",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-darwin-core",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-darwin",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-linux-x64-gnu",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-linux-arm64-gnu",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-darwin-x64",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-darwin-arm64",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-win32-x64-msvc",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-win32-arm64-msvc",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-wasm",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Darwin",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-darwin",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
       "subject": "r-universe wickradarwin",
       "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.1",
-      "detail": "the newest release is v0.1.0; attaching assets depends on every publish job, so one failing leaves the tag without one"
     },
     {
       "repo": "wickra-darwin",
@@ -13010,12 +12941,6 @@
     },
     {
       "repo": "wickra-feature-store",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.0",
-      "detail": "the repository has no published release at all"
-    },
-    {
-      "repo": "wickra-feature-store",
       "kind": "stale lock",
       "subject": "wickra-backtest-core",
       "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.5; the pin `=0.1.4` was not interpreted"
@@ -13114,73 +13039,7 @@
     {
       "repo": "wickra-genome",
       "kind": "not published",
-      "subject": "crates.io wickra-genome",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
       "subject": "PyPI wickra-genome",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "npm wickra-genome",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "npm wickra-genome-linux-x64-gnu",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "npm wickra-genome-linux-arm64-gnu",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "npm wickra-genome-darwin-x64",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "npm wickra-genome-darwin-arm64",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "npm wickra-genome-win32-x64-msvc",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "npm wickra-genome-win32-arm64-msvc",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "npm wickra-genome-wasm",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "NuGet Wickra.Genome",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
-      "subject": "Maven org.wickra:wickra-genome",
       "detail": "absent against the declared 0.1.0"
     },
     {
@@ -13300,86 +13159,8 @@
     {
       "repo": "wickra-gym",
       "kind": "not published",
-      "subject": "crates.io wickra-gym",
-      "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-gym",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "npm wickra-gym",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "npm wickra-gym-linux-x64-gnu",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "npm wickra-gym-linux-arm64-gnu",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "npm wickra-gym-darwin-x64",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "npm wickra-gym-darwin-arm64",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "npm wickra-gym-win32-x64-msvc",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "npm wickra-gym-win32-arm64-msvc",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "npm wickra-gym-wasm",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Gym",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-gym",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "not published",
       "subject": "r-universe wickragym",
       "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.1",
-      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-gym",
@@ -13505,92 +13286,8 @@
     {
       "repo": "wickra-impact",
       "kind": "registry differs",
-      "subject": "crates.io wickra-impact",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-impact-core",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-impact",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "npm wickra-impact",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "npm wickra-impact-linux-x64-gnu",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "npm wickra-impact-linux-arm64-gnu",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "npm wickra-impact-darwin-x64",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "npm wickra-impact-darwin-arm64",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "npm wickra-impact-win32-x64-msvc",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "npm wickra-impact-win32-arm64-msvc",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "npm wickra-impact-wasm",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Impact",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-impact",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
       "subject": "r-universe wickraimpact",
       "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.1",
-      "detail": "the newest release is v0.1.0; attaching assets depends on every publish job, so one failing leaves the tag without one"
     },
     {
       "repo": "wickra-impact",
@@ -14716,73 +14413,7 @@
     {
       "repo": "wickra-timemachine",
       "kind": "not published",
-      "subject": "crates.io wickra-timemachine",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
       "subject": "PyPI wickra-timemachine",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "npm wickra-timemachine",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "npm wickra-timemachine-linux-x64-gnu",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "npm wickra-timemachine-linux-arm64-gnu",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "npm wickra-timemachine-darwin-x64",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "npm wickra-timemachine-darwin-arm64",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "npm wickra-timemachine-win32-x64-msvc",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "npm wickra-timemachine-win32-arm64-msvc",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "npm wickra-timemachine-wasm",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "NuGet Wickra.TimeMachine",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
-      "subject": "Maven org.wickra:wickra-timemachine",
       "detail": "absent against the declared 0.1.0"
     },
     {
