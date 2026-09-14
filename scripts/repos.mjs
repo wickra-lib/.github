@@ -100,6 +100,7 @@ export const REPOS = [
   { repo: 'wickra-timemachine', nuget: 'Wickra.TimeMachine', docs: 'timemachine.wickra.org' },
   { repo: 'wickra-verify', crate: 'wickra-verify-cli', nuget: 'Wickra.Verify', docs: 'verify.wickra.org' },
   { repo: 'wickra-xray', nuget: 'Wickra.Xray', docs: 'xray.wickra.org' },
-  // Publishes the CLI crate under the repo name; no language bindings.
-  { repo: 'wickra-zk', docs: 'zk.wickra.org', set: RUST_ONLY },
+  // The CLI crate carries the repo name. Every binding publishes; the wasm
+  // module is built but not released, since the prover needs a host.
+  { repo: 'wickra-zk', nuget: 'Wickra.Zk', docs: 'zk.wickra.org' },
 ]
