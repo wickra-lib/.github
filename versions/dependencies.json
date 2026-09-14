@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-09-14T00:33:40Z",
+  "scanned_at": "2026-09-14T03:27:53Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 669,
       "shared": 389,
-      "differing": 151
+      "differing": 173
     },
     "npm": {
       "total": 110,
@@ -47,7 +47,6 @@
         "wickra-copilot": "0.7.8",
         "wickra-exchange": "0.7.8",
         "wickra-feature-store": "0.8.12",
-        "wickra-radar": "0.7.8",
         "wickra-screener": "0.7.8",
         "wickra-shazam": "0.7.8",
         "wickra-terminal": "0.7.8",
@@ -131,7 +130,7 @@
         "wickra-gym": "0.11.0",
         "wickra-impact": "0.11.0",
         "wickra-proof": "0.11.0",
-        "wickra-radar": "0.11.0",
+        "wickra-radar": "0.12.0",
         "wickra-screener": "0.11.0",
         "wickra-shazam": "0.11.0",
         "wickra-strategy-ci": "0.11.0",
@@ -161,14 +160,14 @@
         "wickra-compile": "0.8.2",
         "wickra-copilot": "0.8.2",
         "wickra-darwin": "0.5.0",
-        "wickra-embed": "0.8.2",
+        "wickra-embed": "0.5.0",
         "wickra-exchange": "0.5.0",
         "wickra-feature-store": "0.5.0",
         "wickra-genome": "0.5.0",
         "wickra-gym": "0.5.0",
         "wickra-impact": "0.5.0",
         "wickra-proof": "0.5.0",
-        "wickra-radar": "0.8.2",
+        "wickra-radar": "0.5.0",
         "wickra-screener": "0.5.0",
         "wickra-shazam": "0.8.2",
         "wickra-strategy-ci": "0.5.0",
@@ -209,7 +208,7 @@
         "wickra-genome": "0.8.1",
         "wickra-gym": "0.8.1",
         "wickra-impact": "0.8.1",
-        "wickra-radar": "0.8.1",
+        "wickra-radar": "0.8.2",
         "wickra-screener": "0.8.1",
         "wickra-shazam": "0.8.1",
         "wickra-terminal": "0.8.1",
@@ -290,14 +289,14 @@
         "wickra-compile": "0.13.0",
         "wickra-copilot": "0.13.0",
         "wickra-darwin": "0.10.5",
-        "wickra-embed": "0.13.0",
+        "wickra-embed": "0.10.5",
         "wickra-exchange": "0.10.5",
         "wickra-feature-store": "0.10.5",
         "wickra-genome": "0.10.5",
         "wickra-gym": "0.10.5",
         "wickra-impact": "0.10.5",
         "wickra-proof": "0.10.5",
-        "wickra-radar": "0.13.0",
+        "wickra-radar": "0.10.5",
         "wickra-screener": "0.10.5",
         "wickra-shazam": "0.13.0",
         "wickra-strategy-ci": "0.10.5",
@@ -319,6 +318,7 @@
         "wickra-genome": "0.9.1",
         "wickra-gym": "0.9.1",
         "wickra-impact": "0.9.1",
+        "wickra-radar": "0.9.1",
         "wickra-screener": "0.9.1",
         "wickra-terminal": "0.9.1",
         "wickra-xray": "0.9.1",
@@ -570,7 +570,7 @@
         "wickra-impact": "3.0.3",
         "wickra-pico": "3.0.3",
         "wickra-proof": "3.0.3",
-        "wickra-radar": "3.0.3",
+        "wickra-radar": "3.0.5",
         "wickra-screener": "3.0.3",
         "wickra-shazam": "3.0.3",
         "wickra-strategy-ci": "3.0.3",
@@ -601,7 +601,7 @@
         "wickra-genome": "0.52.6",
         "wickra-gym": "0.52.6",
         "wickra-impact": "0.52.6",
-        "wickra-radar": "0.53.1",
+        "wickra-radar": "0.52.6",
         "wickra-screener": "0.53.1",
         "wickra-shazam": "0.53.1",
         "wickra-terminal": "0.52.6",
@@ -629,7 +629,7 @@
         "wickra-genome": "0.52.6",
         "wickra-gym": "0.52.6",
         "wickra-impact": "0.52.6",
-        "wickra-radar": "0.53.5",
+        "wickra-radar": "0.52.6",
         "wickra-screener": "0.53.5",
         "wickra-shazam": "0.53.5",
         "wickra-terminal": "0.52.6",
@@ -653,7 +653,7 @@
         "wickra-gym": "6.1.3",
         "wickra-impact": "6.1.3",
         "wickra-proof": "6.1.3",
-        "wickra-radar": "6.1.2",
+        "wickra-radar": "6.1.3",
         "wickra-screener": "6.1.3",
         "wickra-shazam": "6.1.2",
         "wickra-strategy-ci": "6.1.3",
@@ -765,7 +765,7 @@
         "wickra-gym": "4.3.2",
         "wickra-impact": "4.3.2",
         "wickra-proof": "4.3.2",
-        "wickra-radar": "4.3.0",
+        "wickra-radar": "5.4.2",
         "wickra-screener": "4.3.2",
         "wickra-shazam": "4.3.0",
         "wickra-strategy-ci": "4.3.2",
@@ -825,6 +825,7 @@
         "wickra-gym": ">= 2.10",
         "wickra-impact": ">= 2.10",
         "wickra-proof": ">= 2.10",
+        "wickra-radar": ">= 4.1",
         "wickra-screener": ">= 2.10",
         "wickra-strategy-ci": ">= 3.5",
         "wickra-synth": ">= 4.1",
@@ -11298,7 +11299,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "darwin-bench",
-        "version": "0.1.0"
+        "version": "0.1.1"
       },
       {
         "ecosystem": "cargo",
@@ -12727,12 +12728,6 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "alloca",
-        "version": "0.4.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "anes",
         "version": "0.1.6"
       },
@@ -12741,6 +12736,18 @@
         "source": "Cargo.lock",
         "name": "anstyle",
         "version": "1.0.14"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "anyhow",
+        "version": "1.0.104"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "approx",
+        "version": "0.5.1"
       },
       {
         "ecosystem": "cargo",
@@ -12793,6 +12800,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "cfg_aliases",
+        "version": "0.2.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "ciborium",
         "version": "0.2.2"
       },
@@ -12829,14 +12842,32 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "criterion",
-        "version": "0.8.2"
+        "name": "codspeed",
+        "version": "5.0.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "codspeed-criterion-compat",
+        "version": "5.0.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "codspeed-criterion-compat-walltime",
+        "version": "5.0.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "colored",
+        "version": "3.1.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "criterion-plot",
-        "version": "0.8.2"
+        "version": "0.5.0"
       },
       {
         "ecosystem": "cargo",
@@ -12931,14 +12962,32 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "glob",
+        "version": "0.3.4"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "half",
         "version": "2.7.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "hermit-abi",
+        "version": "0.5.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "is-terminal",
+        "version": "0.4.17"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "itertools",
-        "version": "0.13.0"
+        "version": "0.10.5"
       },
       {
         "ecosystem": "cargo",
@@ -12979,6 +13028,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "nix",
+        "version": "0.31.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "num-traits",
         "version": "0.2.19"
       },
@@ -12993,12 +13048,6 @@
         "source": "Cargo.lock",
         "name": "oorandom",
         "version": "11.1.5"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "page_size",
-        "version": "0.6.0"
       },
       {
         "ecosystem": "cargo",
@@ -13183,6 +13232,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "statrs",
+        "version": "0.18.0"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "syn",
         "version": "2.0.119"
       },
@@ -13273,26 +13328,8 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "winapi",
-        "version": "0.3.9"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "winapi-i686-pc-windows-gnu",
-        "version": "0.4.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "winapi-util",
         "version": "0.1.11"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "winapi-x86_64-pc-windows-gnu",
-        "version": "0.4.0"
       },
       {
         "ecosystem": "cargo",
@@ -21022,7 +21059,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "gym-bench",
-        "version": "0.1.0"
+        "version": "0.1.1"
       },
       {
         "ecosystem": "cargo",
@@ -23676,7 +23713,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "impact-bench",
-        "version": "0.1.0"
+        "version": "0.1.1"
       },
       {
         "ecosystem": "cargo",
@@ -27522,20 +27559,14 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "ahash",
-        "version": "0.7.8"
+        "name": "adler2",
+        "version": "2.0.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "aho-corasick",
-        "version": "1.1.4"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "alloca",
-        "version": "0.4.0"
+        "version": "1.1.5"
       },
       {
         "ecosystem": "cargo",
@@ -27572,6 +27603,18 @@
         "source": "Cargo.lock",
         "name": "anstyle-wincon",
         "version": "3.0.11"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "anyhow",
+        "version": "1.0.104"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "approx",
+        "version": "0.5.1"
       },
       {
         "ecosystem": "cargo",
@@ -27625,13 +27668,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bitflags",
-        "version": "2.13.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "bitvec",
-        "version": "1.1.1"
+        "version": "2.13.2"
       },
       {
         "ecosystem": "cargo",
@@ -27643,13 +27680,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "borsh",
-        "version": "1.7.0"
+        "version": "1.8.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "borsh-derive",
-        "version": "1.7.0"
+        "version": "1.8.1"
       },
       {
         "ecosystem": "cargo",
@@ -27660,20 +27697,8 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "bytecheck",
-        "version": "0.6.12"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "bytecheck_derive",
-        "version": "0.6.12"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "bytes",
-        "version": "1.12.0"
+        "version": "1.12.1"
       },
       {
         "ecosystem": "cargo",
@@ -27685,7 +27710,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cc",
-        "version": "1.2.65"
+        "version": "1.4.6"
       },
       {
         "ecosystem": "cargo",
@@ -27697,13 +27722,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cfg_aliases",
-        "version": "0.2.1"
+        "version": "0.2.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "chacha20",
-        "version": "0.10.1"
+        "version": "0.10.2"
       },
       {
         "ecosystem": "cargo",
@@ -27727,13 +27752,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap",
-        "version": "4.6.4"
+        "version": "4.6.6"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_builder",
-        "version": "4.6.2"
+        "version": "4.6.6"
       },
       {
         "ecosystem": "cargo",
@@ -27756,8 +27781,32 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "codspeed",
+        "version": "5.0.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "codspeed-criterion-compat",
+        "version": "5.0.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "codspeed-criterion-compat-walltime",
+        "version": "5.0.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "colorchoice",
         "version": "1.0.5"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "colored",
+        "version": "3.1.1"
       },
       {
         "ecosystem": "cargo",
@@ -27769,7 +27818,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0"
+        "version": "0.12.0"
       },
       {
         "ecosystem": "cargo",
@@ -27781,37 +27830,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cpufeatures",
-        "version": "0.3.0"
+        "version": "0.3.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "criterion",
-        "version": "0.8.2"
+        "name": "crc32fast",
+        "version": "1.5.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "criterion-plot",
-        "version": "0.8.2"
+        "version": "0.5.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-deque",
-        "version": "0.8.6"
+        "version": "0.8.8"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-epoch",
-        "version": "0.9.20"
+        "version": "0.9.21"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-utils",
-        "version": "0.8.21"
+        "version": "0.8.23"
       },
       {
         "ecosystem": "cargo",
@@ -27835,7 +27884,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctor",
-        "version": "1.0.7"
+        "version": "1.0.13"
       },
       {
         "ecosystem": "cargo",
@@ -27847,13 +27896,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "data-encoding",
-        "version": "2.11.0"
+        "version": "2.11.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "der",
-        "version": "0.8.1"
+        "version": "0.8.2"
       },
       {
         "ecosystem": "cargo",
@@ -27865,7 +27914,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "displaydoc",
-        "version": "0.2.6"
+        "version": "0.2.7"
       },
       {
         "ecosystem": "cargo",
@@ -27877,7 +27926,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "either",
-        "version": "1.16.0"
+        "version": "1.18.0"
       },
       {
         "ecosystem": "cargo",
@@ -27901,7 +27950,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "fastrand",
-        "version": "2.4.1"
+        "version": "2.5.0"
       },
       {
         "ecosystem": "cargo",
@@ -27913,7 +27962,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "find-msvc-tools",
-        "version": "0.1.9"
+        "version": "0.1.12"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "flate2",
+        "version": "1.1.10"
       },
       {
         "ecosystem": "cargo",
@@ -27930,62 +27985,56 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "funty",
-        "version": "2.0.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "futures",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-channel",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-core",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-executor",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-io",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-macro",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-sink",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-task",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-util",
-        "version": "0.3.32"
+        "version": "0.3.34"
       },
       {
         "ecosystem": "cargo",
@@ -28008,6 +28057,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "glob",
+        "version": "0.3.4"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "group",
         "version": "0.14.0"
       },
@@ -28021,12 +28076,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "hashbrown",
-        "version": "0.12.3"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "hashbrown",
         "version": "0.17.1"
       },
       {
@@ -28034,6 +28083,12 @@
         "source": "Cargo.lock",
         "name": "heck",
         "version": "0.5.0"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "hermit-abi",
+        "version": "0.5.3"
       },
       {
         "ecosystem": "cargo",
@@ -28051,19 +28106,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "http",
-        "version": "1.4.2"
+        "version": "1.5.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "http-body",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "http-body-util",
-        "version": "0.1.3"
+        "version": "0.1.5"
       },
       {
         "ecosystem": "cargo",
@@ -28075,13 +28130,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "hybrid-array",
-        "version": "0.4.13"
+        "version": "0.4.15"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "hyper",
-        "version": "1.10.1"
+        "version": "1.11.1"
       },
       {
         "ecosystem": "cargo",
@@ -28099,43 +28154,43 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_collections",
-        "version": "2.2.0"
+        "version": "2.3.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_locale_core",
-        "version": "2.2.0"
+        "version": "2.3.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_normalizer",
-        "version": "2.2.0"
+        "version": "2.3.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_normalizer_data",
-        "version": "2.2.0"
+        "version": "2.3.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_properties",
-        "version": "2.2.0"
+        "version": "2.3.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_properties_data",
-        "version": "2.2.0"
+        "version": "2.3.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_provider",
-        "version": "2.2.0"
+        "version": "2.3.1"
       },
       {
         "ecosystem": "cargo",
@@ -28153,13 +28208,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "indexmap",
-        "version": "2.14.0"
+        "version": "2.14.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ipnet",
-        "version": "2.12.0"
+        "version": "2.12.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "is-terminal",
+        "version": "0.4.17"
       },
       {
         "ecosystem": "cargo",
@@ -28171,7 +28232,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "itertools",
-        "version": "0.13.0"
+        "version": "0.10.5"
       },
       {
         "ecosystem": "cargo",
@@ -28183,13 +28244,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "js-sys",
-        "version": "0.3.103"
+        "version": "0.3.105"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "libc",
-        "version": "0.2.186"
+        "version": "0.2.189"
       },
       {
         "ecosystem": "cargo",
@@ -28207,61 +28268,73 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "litemap",
-        "version": "0.8.2"
+        "version": "0.8.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "log",
-        "version": "0.4.33"
+        "version": "0.4.34"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "lru-slab",
-        "version": "0.1.2"
+        "version": "0.1.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "memchr",
-        "version": "2.8.2"
+        "version": "2.8.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "miniz_oxide",
+        "version": "0.9.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "mio",
-        "version": "1.2.1"
+        "version": "1.2.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.2"
+        "version": "3.12.4"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.1"
+        "version": "2.4.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.3"
+        "version": "3.6.5"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.2"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0"
+        "version": "3.3.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "nix",
+        "version": "0.31.3"
       },
       {
         "ecosystem": "cargo",
@@ -28298,12 +28371,6 @@
         "source": "Cargo.lock",
         "name": "p256",
         "version": "0.14.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "page_size",
-        "version": "0.6.0"
       },
       {
         "ecosystem": "cargo",
@@ -28351,13 +28418,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "portable-atomic",
-        "version": "1.13.1"
+        "version": "1.15.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "potential_utf",
-        "version": "0.1.5"
+        "version": "0.1.6"
       },
       {
         "ecosystem": "cargo",
@@ -28387,7 +28454,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "proc-macro2",
-        "version": "1.0.106"
+        "version": "1.0.107"
       },
       {
         "ecosystem": "cargo",
@@ -28398,44 +28465,32 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "ptr_meta",
-        "version": "0.1.4"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "ptr_meta_derive",
-        "version": "0.1.4"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.0"
+        "version": "0.29.2"
       },
       {
         "ecosystem": "cargo",
@@ -28453,19 +28508,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "quinn-proto",
-        "version": "0.11.15"
+        "version": "0.11.17"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "quinn-udp",
-        "version": "0.5.14"
+        "version": "0.5.15"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "quote",
-        "version": "1.0.46"
+        "version": "1.0.47"
       },
       {
         "ecosystem": "cargo",
@@ -28488,20 +28543,14 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "radium",
-        "version": "0.7.0"
+        "name": "rand",
+        "version": "0.8.8"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rand",
-        "version": "0.8.6"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "rand",
-        "version": "0.9.4"
+        "version": "0.9.5"
       },
       {
         "ecosystem": "cargo",
@@ -28542,6 +28591,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "rand_pcg",
+        "version": "0.10.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "rand_xorshift",
         "version": "0.4.0"
       },
@@ -28561,25 +28616,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex",
-        "version": "1.12.4"
+        "version": "1.13.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex-automata",
-        "version": "0.4.14"
+        "version": "0.4.18"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex-syntax",
         "version": "0.8.11"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "rend",
-        "version": "0.4.2"
       },
       {
         "ecosystem": "cargo",
@@ -28602,20 +28651,8 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "rkyv",
-        "version": "0.7.46"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "rkyv_derive",
-        "version": "0.7.46"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "rust_decimal",
-        "version": "1.42.1"
+        "version": "1.43.0"
       },
       {
         "ecosystem": "cargo",
@@ -28633,25 +28670,25 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.41"
+        "version": "0.23.44"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-pki-types",
-        "version": "1.15.0"
+        "version": "1.15.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.13"
+        "version": "0.103.15"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustversion",
-        "version": "1.0.22"
+        "version": "1.0.23"
       },
       {
         "ecosystem": "cargo",
@@ -28674,12 +28711,6 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "seahash",
-        "version": "4.1.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "sec1",
         "version": "0.8.1"
       },
@@ -28693,19 +28724,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_core",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_derive",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
@@ -28758,8 +28789,8 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "simdutf8",
-        "version": "0.1.5"
+        "name": "simd-adler32",
+        "version": "0.3.10"
       },
       {
         "ecosystem": "cargo",
@@ -28771,13 +28802,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "smallvec",
-        "version": "1.15.2"
+        "version": "1.16.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "socket2",
-        "version": "0.6.4"
+        "version": "0.6.5"
       },
       {
         "ecosystem": "cargo",
@@ -28790,6 +28821,12 @@
         "source": "Cargo.lock",
         "name": "stable_deref_trait",
         "version": "1.2.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "statrs",
+        "version": "0.18.0"
       },
       {
         "ecosystem": "cargo",
@@ -28807,19 +28844,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
-        "version": "1.0.109"
+        "version": "2.0.119"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
-        "version": "2.0.118"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "syn",
-        "version": "3.0.3"
+        "version": "3.0.5"
       },
       {
         "ecosystem": "cargo",
@@ -28832,12 +28863,6 @@
         "source": "Cargo.lock",
         "name": "synstructure",
         "version": "0.13.2"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "tap",
-        "version": "1.0.1"
       },
       {
         "ecosystem": "cargo",
@@ -28855,19 +28880,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror",
-        "version": "2.0.19"
+        "version": "2.0.20"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror-impl",
-        "version": "2.0.19"
+        "version": "2.0.20"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tinystr",
-        "version": "0.8.3"
+        "version": "0.8.4"
       },
       {
         "ecosystem": "cargo",
@@ -28879,31 +28904,25 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tinyvec",
-        "version": "1.11.0"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "tinyvec_macros",
-        "version": "0.1.1"
+        "version": "1.13.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.52.3"
+        "version": "1.53.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio-macros",
-        "version": "2.7.0"
+        "version": "2.7.2"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio-rustls",
-        "version": "0.26.4"
+        "version": "0.26.5"
       },
       {
         "ecosystem": "cargo",
@@ -28915,7 +28934,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.3+spec-1.1.0"
+        "version": "1.1.6+spec-1.1.0"
       },
       {
         "ecosystem": "cargo",
@@ -28927,13 +28946,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_edit",
-        "version": "0.25.12+spec-1.1.0"
+        "version": "0.25.15+spec-1.1.0"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.2+spec-1.1.0"
+        "version": "1.1.3+spec-1.1.0"
       },
       {
         "ecosystem": "cargo",
@@ -28970,6 +28989,12 @@
         "source": "Cargo.lock",
         "name": "tracing",
         "version": "0.1.44"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "tracing-attributes",
+        "version": "0.1.31"
       },
       {
         "ecosystem": "cargo",
@@ -29040,18 +29065,6 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "uuid",
-        "version": "1.23.4"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "version_check",
-        "version": "0.9.5"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "wait-timeout",
         "version": "0.2.1"
       },
@@ -29083,37 +29096,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen",
-        "version": "0.2.126"
+        "version": "0.2.128"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-futures",
-        "version": "0.4.76"
+        "version": "0.4.78"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro",
-        "version": "0.2.126"
+        "version": "0.2.128"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro-support",
-        "version": "0.2.126"
+        "version": "0.2.128"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-shared",
-        "version": "0.2.126"
+        "version": "0.2.128"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "web-sys",
-        "version": "0.3.103"
+        "version": "0.3.105"
       },
       {
         "ecosystem": "cargo",
@@ -29131,31 +29144,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.8"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "winapi",
-        "version": "0.3.9"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "winapi-i686-pc-windows-gnu",
-        "version": "0.4.0"
+        "version": "1.0.9"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "winapi-util",
         "version": "0.1.11"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "winapi-x86_64-pc-windows-gnu",
-        "version": "0.4.0"
       },
       {
         "ecosystem": "cargo",
@@ -29173,12 +29168,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "windows-sys",
-        "version": "0.60.2"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "windows-sys",
         "version": "0.61.2"
       },
       {
@@ -29190,20 +29179,8 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "windows-targets",
-        "version": "0.53.5"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "windows_aarch64_gnullvm",
         "version": "0.52.6"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "windows_aarch64_gnullvm",
-        "version": "0.53.1"
       },
       {
         "ecosystem": "cargo",
@@ -29214,20 +29191,8 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "windows_aarch64_msvc",
-        "version": "0.53.1"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "windows_i686_gnu",
         "version": "0.52.6"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "windows_i686_gnu",
-        "version": "0.53.1"
       },
       {
         "ecosystem": "cargo",
@@ -29238,20 +29203,8 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "windows_i686_gnullvm",
-        "version": "0.53.1"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "windows_i686_msvc",
         "version": "0.52.6"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "windows_i686_msvc",
-        "version": "0.53.1"
       },
       {
         "ecosystem": "cargo",
@@ -29262,38 +29215,20 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "windows_x86_64_gnu",
-        "version": "0.53.1"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "windows_x86_64_gnullvm",
         "version": "0.52.6"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "windows_x86_64_gnullvm",
-        "version": "0.53.1"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "windows_x86_64_msvc",
         "version": "0.52.6"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "windows_x86_64_msvc",
-        "version": "0.53.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "winnow",
-        "version": "1.0.3"
+        "version": "1.0.4"
       },
       {
         "ecosystem": "cargo",
@@ -29305,19 +29240,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wnaf",
-        "version": "0.14.0"
+        "version": "0.14.1"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "writeable",
-        "version": "0.6.3"
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "wyz",
-        "version": "0.5.1"
+        "version": "0.6.4"
       },
       {
         "ecosystem": "cargo",
@@ -29335,13 +29264,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy",
-        "version": "0.8.52"
+        "version": "0.8.57"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy-derive",
-        "version": "0.8.52"
+        "version": "0.8.57"
       },
       {
         "ecosystem": "cargo",
@@ -29371,25 +29300,31 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerotrie",
-        "version": "0.2.4"
+        "version": "0.2.5"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerovec",
-        "version": "0.11.6"
+        "version": "0.11.8"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerovec-derive",
-        "version": "0.11.3"
+        "version": "0.11.6"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "zlib-rs",
+        "version": "0.6.7"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zmij",
-        "version": "1.0.21"
+        "version": "1.0.23"
       },
       {
         "ecosystem": "npm",
@@ -29509,7 +29444,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.7.4"
+        "version": "3.9.1"
       },
       {
         "ecosystem": "npm",
@@ -29737,85 +29672,103 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-android-arm-eabi",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-android-arm64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-darwin-arm64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-darwin-x64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-freebsd-x64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-arm64-gnu",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-arm64-musl",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-x64-gnu",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-x64-musl",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-wasm32-wasi",
-        "version": "1.0.1"
+        "version": "1.1.0"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/core",
+        "version": "1.9.2"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/runtime",
+        "version": "1.9.2"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/wasi-threads",
+        "version": "1.2.1"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-arm64-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-ia32-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-x64-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
@@ -29983,7 +29936,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.0"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -30042,6 +29995,12 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "typescript",
+        "version": "6.0.3"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "universal-user-agent",
         "version": "7.0.3"
       },
@@ -30049,7 +30008,7 @@
         "ecosystem": "maven",
         "source": "bindings/java/pom.xml",
         "name": "org.junit.jupiter:junit-jupiter",
-        "version": "6.1.2"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "python",
@@ -30062,6 +30021,18 @@
         "source": "bindings/python/pyproject.toml",
         "name": "pytest",
         "version": ">=7"
+      },
+      {
+        "ecosystem": "r",
+        "source": "bindings/r/DESCRIPTION",
+        "name": "R",
+        "version": ">= 4.1"
+      },
+      {
+        "ecosystem": "r",
+        "source": "bindings/r/DESCRIPTION",
+        "name": "jsonlite",
+        "version": "*"
       }
     ],
     "wickra-screener": [
