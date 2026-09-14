@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-14T05:29:37Z",
+  "scanned_at": "2026-09-14T10:59:31Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -2998,7 +2998,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickradarwin",
-          "version": "0.1.0"
+          "version": "0.1.1"
         }
       ],
       "go": {
@@ -4223,7 +4223,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrafeaturestore",
-          "version": null
+          "version": "0.1.0"
         }
       ],
       "go": {
@@ -5234,7 +5234,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickragym",
-          "version": null
+          "version": "0.1.1"
         }
       ],
       "go": {
@@ -5784,7 +5784,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraimpact",
-          "version": "0.1.0"
+          "version": "0.1.1"
         }
       ],
       "go": {
@@ -12575,12 +12575,6 @@
     },
     {
       "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "r-universe wickradarwin",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-darwin",
       "kind": "stale lock",
       "subject": "wickra-backtest",
       "detail": "locked at 0.1.4 while wickra-backtest publishes 0.1.5; the pin `=0.1.4` was not interpreted"
@@ -12935,12 +12929,6 @@
     },
     {
       "repo": "wickra-feature-store",
-      "kind": "not published",
-      "subject": "r-universe wickrafeaturestore",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-feature-store",
       "kind": "stale lock",
       "subject": "wickra-backtest-core",
       "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.5; the pin `=0.1.4` was not interpreted"
@@ -13158,12 +13146,6 @@
     },
     {
       "repo": "wickra-gym",
-      "kind": "not published",
-      "subject": "r-universe wickragym",
-      "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-gym",
       "kind": "stale lock",
       "subject": "wickra-backtest",
       "detail": "locked at 0.1.4 while wickra-backtest publishes 0.1.5; the pin `=0.1.4` was not interpreted"
@@ -13282,12 +13264,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "r-universe wickraimpact",
-      "detail": "0.1.0 against the declared 0.1.1"
     },
     {
       "repo": "wickra-impact",
