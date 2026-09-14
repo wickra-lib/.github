@@ -59,7 +59,7 @@ export const LIBRARIES = [
 
   { name: 'wickra-compile', layer: 'edge' },
   { name: 'wickra-embed', layer: 'edge', shipped: true },
-  { name: 'wickra-pico', layer: 'edge' },
+  { name: 'wickra-pico', layer: 'edge', shipped: true },
 ]
 
 // The four columns to the right of the core, and the layers each one draws from.
