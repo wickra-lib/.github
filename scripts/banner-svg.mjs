@@ -58,7 +58,7 @@ export const LIBRARIES = [
   { name: 'wickra-shazam', layer: 'surface' },
 
   { name: 'wickra-compile', layer: 'edge' },
-  { name: 'wickra-embed', layer: 'edge' },
+  { name: 'wickra-embed', layer: 'edge', shipped: true },
   { name: 'wickra-pico', layer: 'edge' },
 ]
 
