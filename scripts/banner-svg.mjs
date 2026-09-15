@@ -35,8 +35,8 @@ export const LIBRARIES = [
 
   { name: 'wickra-exchange', layer: 'data', shipped: true },
   { name: 'wickra-synth', layer: 'data', shipped: true },
-  { name: 'wickra-timemachine', layer: 'data' },
-  { name: 'wickra-genome', layer: 'data' },
+  { name: 'wickra-timemachine', layer: 'data', shipped: true },
+  { name: 'wickra-genome', layer: 'data', shipped: true },
   { name: 'wickra-feature-store', layer: 'data', shipped: true },
 
   { name: 'wickra-backtest', layer: 'research', shipped: true },
@@ -53,8 +53,8 @@ export const LIBRARIES = [
 
   { name: 'wickra-terminal', layer: 'surface', shipped: true },
   { name: 'wickra-xray', layer: 'surface', shipped: true },
-  { name: 'wickra-radar', layer: 'surface' },
-  { name: 'wickra-copilot', layer: 'surface' },
+  { name: 'wickra-radar', layer: 'surface', shipped: true },
+  { name: 'wickra-copilot', layer: 'surface', shipped: true },
   { name: 'wickra-shazam', layer: 'surface' },
 
   { name: 'wickra-compile', layer: 'edge' },
