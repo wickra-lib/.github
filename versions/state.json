@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-15T00:52:36Z",
+  "scanned_at": "2026-09-15T05:27:09Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -2072,7 +2072,7 @@
       "repo": "wickra-copilot",
       "declared": "0.1.0",
       "tag": "v0.1.0",
-      "release": null,
+      "release": "v0.1.0",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -2408,7 +2408,8 @@
         {
           "registry": "PyPI",
           "pkg": "wickra-copilot",
-          "version": null
+          "version": "0.1.0",
+          "note": "9 files"
         },
         {
           "registry": "npm",
@@ -4354,7 +4355,7 @@
       "repo": "wickra-genome",
       "declared": "0.1.1",
       "tag": "v0.1.1",
-      "release": null,
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -4670,7 +4671,8 @@
         {
           "registry": "PyPI",
           "pkg": "wickra-genome",
-          "version": null
+          "version": "0.1.1",
+          "note": "9 files"
         },
         {
           "registry": "npm",
@@ -6802,7 +6804,7 @@
       "repo": "wickra-radar",
       "declared": "0.1.1",
       "tag": "v0.1.1",
-      "release": null,
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -9846,7 +9848,7 @@
       "repo": "wickra-timemachine",
       "declared": "0.1.1",
       "tag": "v0.1.1",
-      "release": null,
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -10162,7 +10164,8 @@
         {
           "registry": "PyPI",
           "pkg": "wickra-timemachine",
-          "version": null
+          "version": "0.1.1",
+          "note": "9 files"
         },
         {
           "registry": "npm",
@@ -11652,7 +11655,17 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-zk",
-          "version": null
+          "version": "0.1.0"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-zk-host",
+          "version": "0.1.0"
+        },
+        {
+          "registry": "crates.io",
+          "pkg": "wickra-zk-methods",
+          "version": "0.1.0"
         },
         {
           "registry": "PyPI",
@@ -11662,27 +11675,27 @@
         {
           "registry": "npm",
           "pkg": "wickra-zk",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk-darwin-arm64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk-darwin-x64",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk-linux-arm64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk-linux-x64-gnu",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "npm",
@@ -11697,7 +11710,7 @@
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-zk",
-          "version": null
+          "version": "0.1.0"
         },
         {
           "registry": "r-universe",
@@ -12438,20 +12451,8 @@
     {
       "repo": "wickra-copilot",
       "kind": "not published",
-      "subject": "PyPI wickra-copilot",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-copilot",
-      "kind": "not published",
       "subject": "r-universe wickracopilot",
       "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-copilot",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.0",
-      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-darwin",
@@ -12991,20 +12992,8 @@
     {
       "repo": "wickra-genome",
       "kind": "not published",
-      "subject": "PyPI wickra-genome",
-      "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "not published",
       "subject": "r-universe wickragenome",
       "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.1",
-      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-genome",
@@ -13691,12 +13680,6 @@
       "detail": "absent against the declared 0.1.1"
     },
     {
-      "repo": "wickra-radar",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.1",
-      "detail": "the repository has no published release at all"
-    },
-    {
       "repo": "wickra-screener",
       "kind": "no version reference",
       "subject": "crates/screener-cli/Cargo.toml",
@@ -14320,20 +14303,8 @@
     {
       "repo": "wickra-timemachine",
       "kind": "not published",
-      "subject": "PyPI wickra-timemachine",
-      "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "not published",
       "subject": "r-universe wickratimemachine",
       "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.1",
-      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-timemachine",
@@ -14632,43 +14603,7 @@
     {
       "repo": "wickra-zk",
       "kind": "not published",
-      "subject": "crates.io wickra-zk",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
       "subject": "PyPI wickra-zk",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
-      "subject": "npm wickra-zk",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
-      "subject": "npm wickra-zk-darwin-arm64",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
-      "subject": "npm wickra-zk-darwin-x64",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
-      "subject": "npm wickra-zk-linux-arm64-gnu",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
-      "subject": "npm wickra-zk-linux-x64-gnu",
       "detail": "absent against the declared 0.1.0"
     },
     {
@@ -14681,12 +14616,6 @@
       "repo": "wickra-zk",
       "kind": "not published",
       "subject": "NuGet Wickra.Zk",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
-      "subject": "Maven org.wickra:wickra-zk",
       "detail": "absent against the declared 0.1.0"
     },
     {
