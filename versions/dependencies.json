@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-14T21:04:01Z",
+  "scanned_at": "2026-09-15T00:52:36Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -786,7 +786,7 @@
       "ecosystem": "npm",
       "name": "js-yaml",
       "byRepo": {
-        "wickra": "4.3.1",
+        "wickra": "4.3.2",
         "wickra-backtest": "4.3.2",
         "wickra-benchmark": "4.3.2",
         "wickra-compile": "5.4.2",
@@ -2901,7 +2901,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.1"
+        "version": "4.3.2"
       },
       {
         "ecosystem": "npm",

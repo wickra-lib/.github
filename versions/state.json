@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-14T21:04:01Z",
+  "scanned_at": "2026-09-15T00:52:36Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -1941,7 +1941,7 @@
       "go": {
         "repo": "wickra-compile-go",
         "module": "github.com/wickra-lib/wickra-compile/bindings/go",
-        "declaredInRepo": "github.com/wickra-lib/wickra-compile/bindings/go",
+        "declaredInRepo": "github.com/wickra-lib/wickra-compile-go",
         "tag": "v0.1.0"
       },
       "pins": {
@@ -3013,7 +3013,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickradarwin",
-          "version": "0.1.1"
+          "version": "0.1.2"
         }
       ],
       "go": {
@@ -4238,7 +4238,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrafeaturestore",
-          "version": "0.1.0"
+          "version": "0.1.1"
         }
       ],
       "go": {
@@ -5249,7 +5249,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickragym",
-          "version": "0.1.1"
+          "version": "0.1.2"
         }
       ],
       "go": {
@@ -5799,7 +5799,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraimpact",
-          "version": "0.1.1"
+          "version": "0.1.2"
         }
       ],
       "go": {
@@ -7118,7 +7118,8 @@
         {
           "registry": "PyPI",
           "pkg": "wickra-radar",
-          "version": null
+          "version": "0.1.1",
+          "note": "9 files"
         },
         {
           "registry": "npm",
@@ -12545,12 +12546,6 @@
     },
     {
       "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "r-universe wickradarwin",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-darwin",
       "kind": "stale lock",
       "subject": "wickra-backtest",
       "detail": "locked at 0.1.4 while wickra-backtest publishes 0.1.5; the pin `=0.1.4` was not interpreted"
@@ -12898,12 +12893,6 @@
     },
     {
       "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "r-universe wickrafeaturestore",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-feature-store",
       "kind": "stale lock",
       "subject": "wickra-backtest-core",
       "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.5; the pin `=0.1.4` was not interpreted"
@@ -13121,12 +13110,6 @@
     },
     {
       "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "r-universe wickragym",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-gym",
       "kind": "stale lock",
       "subject": "wickra-backtest",
       "detail": "locked at 0.1.4 while wickra-backtest publishes 0.1.5; the pin `=0.1.4` was not interpreted"
@@ -13245,12 +13228,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "r-universe wickraimpact",
-      "detail": "0.1.1 against the declared 0.1.2"
     },
     {
       "repo": "wickra-impact",
@@ -13706,12 +13683,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-radar",
-      "kind": "not published",
-      "subject": "PyPI wickra-radar",
-      "detail": "absent against the declared 0.1.1"
     },
     {
       "repo": "wickra-radar",
