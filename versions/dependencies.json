@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-15T05:27:09Z",
+  "scanned_at": "2026-09-15T10:28:47Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -850,25 +850,26 @@
       "name": "R",
       "byRepo": {
         "wickra": ">= 2.10",
+        "wickra-backtest": ">= 4.1",
         "wickra-benchmark": ">= 4.1",
         "wickra-compile": ">= 4.1",
         "wickra-copilot": ">= 4.1",
         "wickra-darwin": ">= 4.1",
-        "wickra-exchange": ">= 2.10",
+        "wickra-exchange": ">= 4.1",
         "wickra-feature-store": ">= 4.1",
         "wickra-genome": ">= 4.1",
         "wickra-gym": ">= 4.1",
         "wickra-impact": ">= 4.1",
-        "wickra-proof": ">= 2.10",
+        "wickra-proof": ">= 4.1",
         "wickra-radar": ">= 4.1",
-        "wickra-screener": ">= 2.10",
+        "wickra-screener": ">= 4.1",
         "wickra-shazam": ">= 4.1",
-        "wickra-strategy-ci": ">= 3.5",
+        "wickra-strategy-ci": ">= 4.1",
         "wickra-synth": ">= 4.1",
-        "wickra-terminal": ">= 3.0.0",
+        "wickra-terminal": ">= 4.1",
         "wickra-timemachine": ">= 4.1",
-        "wickra-verify": ">= 2.10",
-        "wickra-xray": ">= 2.10",
+        "wickra-verify": ">= 4.1",
+        "wickra-xray": ">= 4.1",
         "wickra-zk": ">= 4.1"
       }
     }
@@ -5238,6 +5239,12 @@
         "source": "bindings/r/DESCRIPTION",
         "name": "jsonlite",
         "version": "*"
+      },
+      {
+        "ecosystem": "r",
+        "source": "bindings/r/DESCRIPTION",
+        "name": "R",
+        "version": ">= 4.1"
       }
     ],
     "wickra-benchmark": [
@@ -7065,7 +7072,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "compile-bench",
-        "version": "0.1.0"
+        "version": "0.1.1"
       },
       {
         "ecosystem": "cargo",
@@ -15953,7 +15960,7 @@
         "ecosystem": "r",
         "source": "bindings/r/DESCRIPTION",
         "name": "R",
-        "version": ">= 2.10"
+        "version": ">= 4.1"
       }
     ],
     "wickra-feature-store": [
@@ -27918,7 +27925,7 @@
         "ecosystem": "r",
         "source": "bindings/r/DESCRIPTION",
         "name": "R",
-        "version": ">= 2.10"
+        "version": ">= 4.1"
       }
     ],
     "wickra-radar": [
@@ -33070,7 +33077,7 @@
         "ecosystem": "r",
         "source": "bindings/r/DESCRIPTION",
         "name": "R",
-        "version": ">= 2.10"
+        "version": ">= 4.1"
       }
     ],
     "wickra-shazam": [
@@ -37196,7 +37203,7 @@
         "ecosystem": "r",
         "source": "bindings/r/DESCRIPTION",
         "name": "R",
-        "version": ">= 3.5"
+        "version": ">= 4.1"
       }
     ],
     "wickra-synth": [
@@ -42084,7 +42091,7 @@
         "ecosystem": "r",
         "source": "bindings/r/DESCRIPTION",
         "name": "R",
-        "version": ">= 3.0.0"
+        "version": ">= 4.1"
       }
     ],
     "wickra-timemachine": [
@@ -45700,7 +45707,7 @@
         "ecosystem": "r",
         "source": "bindings/r/DESCRIPTION",
         "name": "R",
-        "version": ">= 2.10"
+        "version": ">= 4.1"
       }
     ],
     "wickra-xray": [
@@ -48222,7 +48229,7 @@
         "ecosystem": "r",
         "source": "bindings/r/DESCRIPTION",
         "name": "R",
-        "version": ">= 2.10"
+        "version": ">= 4.1"
       }
     ],
     "wickra-zk": [
