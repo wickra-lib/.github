@@ -806,7 +806,10 @@ async function scanRepo(entry) {
           ...(await Promise.all(
             platformPkgs.map(async ([pkg]) => ({ registry: 'npm', pkg, ...(await probe(() => registry.npm(pkg))) })),
           )),
-          ...(files.wasmCargo
+          // A wasm crate that says `publish = false` is a binding the repo builds
+          // and tests but never ships (wickra-zk's browser verifier); asking npm
+          // for it would report an absence nobody intends to fill.
+          ...(files.wasmCargo && !/^\s*publish\s*=\s*false/m.test(files.wasmCargo)
             ? [{ registry: 'npm', pkg: `${name}-wasm`, ...(await probe(() => registry.npm(`${name}-wasm`))) }]
             : []),
         ]
