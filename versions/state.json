@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-16T17:45:40Z",
+  "scanned_at": "2026-09-16T20:27:56Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -8208,7 +8208,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrashazam",
-          "version": null
+          "version": "0.1.0"
         }
       ],
       "go": {
@@ -13895,12 +13895,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "not published",
-      "subject": "r-universe wickrashazam",
-      "detail": "absent against the declared 0.1.0"
     },
     {
       "repo": "wickra-shazam",
