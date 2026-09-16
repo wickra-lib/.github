@@ -47,7 +47,7 @@ export const LIBRARIES = [
 
   { name: 'wickra-verify', layer: 'trust', shipped: true },
   { name: 'wickra-proof', layer: 'trust', shipped: true },
-  { name: 'wickra-zk', layer: 'trust' },
+  { name: 'wickra-zk', layer: 'trust', shipped: true },
   { name: 'wickra-strategy-ci', layer: 'trust', shipped: true },
   { name: 'wickra-benchmark', layer: 'trust', shipped: true },
 
