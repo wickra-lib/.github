@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-16T06:50:31Z",
+  "scanned_at": "2026-09-16T17:45:40Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -7836,7 +7836,7 @@
       "repo": "wickra-shazam",
       "declared": "0.1.0",
       "tag": "v0.1.0",
-      "release": null,
+      "release": "v0.1.0",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -8152,7 +8152,8 @@
         {
           "registry": "PyPI",
           "pkg": "wickra-shazam",
-          "version": null
+          "version": "0.1.0",
+          "note": "9 files"
         },
         {
           "registry": "npm",
@@ -11385,7 +11386,7 @@
       "repo": "wickra-zk",
       "declared": "0.1.1",
       "tag": "v0.1.1",
-      "release": null,
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -11679,7 +11680,7 @@
         {
           "registry": "PyPI",
           "pkg": "wickra-zk",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "note": "7 files"
         },
         {
@@ -11725,7 +11726,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrazk",
-          "version": null
+          "version": "0.1.1"
         }
       ],
       "go": {
@@ -13898,20 +13899,8 @@
     {
       "repo": "wickra-shazam",
       "kind": "not published",
-      "subject": "PyPI wickra-shazam",
-      "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "not published",
       "subject": "r-universe wickrashazam",
       "detail": "absent against the declared 0.1.0"
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.0",
-      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-shazam",
@@ -14630,27 +14619,9 @@
     },
     {
       "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-zk",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-zk",
       "kind": "not published",
       "subject": "npm wickra-zk-wasm",
       "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
-      "subject": "r-universe wickrazk",
-      "detail": "absent against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.1",
-      "detail": "the repository has no published release at all"
     },
     {
       "repo": "wickra-zk",
