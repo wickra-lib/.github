@@ -55,7 +55,7 @@ export const LIBRARIES = [
   { name: 'wickra-xray', layer: 'surface', shipped: true },
   { name: 'wickra-radar', layer: 'surface', shipped: true },
   { name: 'wickra-copilot', layer: 'surface', shipped: true },
-  { name: 'wickra-shazam', layer: 'surface' },
+  { name: 'wickra-shazam', layer: 'surface', shipped: true },
 
   { name: 'wickra-compile', layer: 'edge', shipped: true },
   { name: 'wickra-embed', layer: 'edge', shipped: true },
