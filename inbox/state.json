@@ -1,0 +1,45 @@
+{
+  "scanned_at": "2026-09-17T19:07:40Z",
+  "repos": 77,
+  "dependabot": [
+    {
+      "repo": "wickra-exchange",
+      "number": 232,
+      "title": "deps(cargo): bump the cargo group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/232",
+      "created": "2026-09-17T13:53:53Z",
+      "failing": [
+        "CodSpeed Performance Analysis"
+      ],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 135,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/135",
+      "created": "2026-09-17T04:33:22Z",
+      "failing": [
+        "CodSpeed Performance Analysis",
+        "Test (windows-latest, --no-default-features)",
+        "Node 22 on ubuntu-latest",
+        "Node 24 on ubuntu-latest",
+        "Node 22 on windows-latest",
+        "Examples",
+        "Test (macos-latest, --no-default-features)",
+        "Test (windows-latest, --all-features)",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Test (macos-latest, --all-features)",
+        "Test (ubuntu-latest, --all-features)",
+        "Node 22 on macos-latest",
+        "Node 24 on windows-latest",
+        "MSRV node (1.88)",
+        "Node 24 on macos-latest",
+        "Format & Clippy"
+      ],
+      "checks": 67
+    }
+  ],
+  "waiting": 0,
+  "people": []
+}

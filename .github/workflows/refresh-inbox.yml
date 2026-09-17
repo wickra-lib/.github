@@ -1,0 +1,63 @@
+name: Refresh inbox
+
+# Once a day, what is waiting for a person across every repository of the org:
+# Dependabot pull requests whose checks have finished (with the verdict), and
+# issues or pull requests opened by people outside the org. Both lists are
+# rewritten from scratch each run, so inbox/ holds only what is open now; the
+# commit history is the log of what came and went. See scripts/fetch-inbox.mjs.
+on:
+  schedule:
+    - cron: '13 5 * * *' # daily 05:13 UTC, clear of the hourly refreshes
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-inbox.mjs
+      - .github/workflows/refresh-inbox.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-inbox
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Don't persist the token in .git/config (zizmor: artipacked); the push
+          # step below authenticates explicitly with an ephemeral token URL.
+          persist-credentials: false
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+
+      - name: Collect the inbox
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-inbox.mjs
+
+      - name: Commit if changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # The timestamp and the ages move on every run; only a differing list
+          # is worth a commit. Untracked files are checked separately because
+          # git diff does not see them, which would make the first run a no-op.
+          new=$(git ls-files --others --exclude-standard inbox)
+          if [ -z "$new" ] && git diff --quiet -I '"scanned_at"' -I '^Last scan:' -I ' (today|[0-9]+ days?) ' -- inbox; then
+            echo "inbox unchanged apart from the scan timestamp; nothing to commit"
+            exit 0
+          fi
+          git config user.name "wickra-bot"
+          git config user.email "wickra-bot@users.noreply.github.com"
+          git add inbox
+          git commit -m "chore: refresh inbox"
+          # The other refresh workflows push to this branch on their own
+          # schedules; rebase onto whatever landed in the meantime.
+          git pull --rebase "https://github.com/${GITHUB_REPOSITORY}.git" main
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
