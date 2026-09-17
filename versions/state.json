@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-17T18:32:21Z",
+  "scanned_at": "2026-09-17T18:56:56Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -9056,7 +9056,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.2"
         },
         {
           "file": "README.md",
@@ -13718,13 +13718,6 @@
       "kind": "not in the repository",
       "subject": "examples/java/pom.xml",
       "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
