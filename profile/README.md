@@ -46,57 +46,237 @@ latest published version; the docs column is its own documentation site.
 
 ### Core — the indicator engine everything else is built on
 
-| Repository | What it does | Release | Docs |
-|---|---|---|---|
-| [**wickra**](https://github.com/wickra-lib/wickra) | main library (Rust core + Python / Node.js / WASM bindings + a C ABI for C / C++ / C# / Go / Java / R) | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra/release.svg)](https://github.com/wickra-lib/wickra/releases/latest) | [docs.wickra.org](https://docs.wickra.org) |
+<table>
+  <thead>
+    <tr>
+      <th width="18%" align="left">Repository</th>
+      <th width="56%" align="left">What it does</th>
+      <th width="12%" align="left">Release</th>
+      <th width="14%" align="left">Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra"><strong>wickra</strong></a></td>
+      <td>main library (Rust core + Python / Node.js / WASM bindings + a C ABI for C / C++ / C# / Go / Java / R)</td>
+      <td><a href="https://github.com/wickra-lib/wickra/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra/release.svg" alt="release"></a></td>
+      <td><a href="https://docs.wickra.org">docs.wickra.org</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Data — market data in, market data replayed, market data synthesised
 
-| Repository | What it does | Release | Docs |
-|---|---|---|---|
-| [**wickra-exchange**](https://github.com/wickra-lib/wickra-exchange) | unified market-data + execution across ten crypto exchanges | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-exchange/release.svg)](https://github.com/wickra-lib/wickra-exchange/releases/latest) | [exchange.wickra.org](https://exchange.wickra.org) |
-| [**wickra-synth**](https://github.com/wickra-lib/wickra-synth) | deterministic synthetic market microstructure: OHLCV, order book, trades and funding from a single seed | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-synth/release.svg)](https://github.com/wickra-lib/wickra-synth/releases/latest) | [synth.wickra.org](https://synth.wickra.org) |
-| [**wickra-timemachine**](https://github.com/wickra-lib/wickra-timemachine) | scrub the whole market like a video — every symbol, full order book, rewound to any moment via deterministic re-fold | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-timemachine/release.svg)](https://github.com/wickra-lib/wickra-timemachine/releases/latest) | [timemachine.wickra.org](https://timemachine.wickra.org) |
-| [**wickra-genome**](https://github.com/wickra-lib/wickra-genome) | a vector database of the whole market: every asset a 514-dim live vector, for similarity search, clustering and anomaly detection | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-genome/release.svg)](https://github.com/wickra-lib/wickra-genome/releases/latest) | [genome.wickra.org](https://genome.wickra.org) |
-| [**wickra-feature-store**](https://github.com/wickra-lib/wickra-feature-store) | OHLCV and microstructure streams into ML-ready feature matrices over 514 O(1) streaming indicators | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-feature-store/release.svg)](https://github.com/wickra-lib/wickra-feature-store/releases/latest) | [feature-store.wickra.org](https://feature-store.wickra.org) |
+<table>
+  <thead>
+    <tr>
+      <th width="18%" align="left">Repository</th>
+      <th width="56%" align="left">What it does</th>
+      <th width="12%" align="left">Release</th>
+      <th width="14%" align="left">Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-exchange"><strong>wickra-exchange</strong></a></td>
+      <td>unified market-data + execution across ten crypto exchanges</td>
+      <td><a href="https://github.com/wickra-lib/wickra-exchange/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-exchange/release.svg" alt="release"></a></td>
+      <td><a href="https://exchange.wickra.org">exchange.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-synth"><strong>wickra-synth</strong></a></td>
+      <td>deterministic synthetic market microstructure: OHLCV, order book, trades and funding from a single seed</td>
+      <td><a href="https://github.com/wickra-lib/wickra-synth/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-synth/release.svg" alt="release"></a></td>
+      <td><a href="https://synth.wickra.org">synth.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-timemachine"><strong>wickra-timemachine</strong></a></td>
+      <td>scrub the whole market like a video — every symbol, full order book, rewound to any moment via deterministic re-fold</td>
+      <td><a href="https://github.com/wickra-lib/wickra-timemachine/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-timemachine/release.svg" alt="release"></a></td>
+      <td><a href="https://timemachine.wickra.org">timemachine.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-genome"><strong>wickra-genome</strong></a></td>
+      <td>a vector database of the whole market: every asset a 514-dim live vector, for similarity search, clustering and anomaly detection</td>
+      <td><a href="https://github.com/wickra-lib/wickra-genome/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-genome/release.svg" alt="release"></a></td>
+      <td><a href="https://genome.wickra.org">genome.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-feature-store"><strong>wickra-feature-store</strong></a></td>
+      <td>OHLCV and microstructure streams into ML-ready feature matrices over 514 O(1) streaming indicators</td>
+      <td><a href="https://github.com/wickra-lib/wickra-feature-store/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-feature-store/release.svg" alt="release"></a></td>
+      <td><a href="https://feature-store.wickra.org">feature-store.wickra.org</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Research — backtest, screen, search, train
 
-| Repository | What it does | Release | Docs |
-|---|---|---|---|
-| [**wickra-backtest**](https://github.com/wickra-lib/wickra-backtest) | event-driven backtester over the Wickra core | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-backtest/release.svg)](https://github.com/wickra-lib/wickra-backtest/releases/latest) | [backtest.wickra.org](https://backtest.wickra.org) |
-| [**wickra-screener**](https://github.com/wickra-lib/wickra-screener) | parallel multi-symbol screening over 514 streaming indicators | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-screener/release.svg)](https://github.com/wickra-lib/wickra-screener/releases/latest) | [screener.wickra.org](https://screener.wickra.org) |
-| [**wickra-darwin**](https://github.com/wickra-lib/wickra-darwin) | evolutionary strategy search at millions of backtests per second, mutating and crossing JSON specs across the 514-indicator space | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-darwin/release.svg)](https://github.com/wickra-lib/wickra-darwin/releases/latest) | [darwin.wickra.org](https://darwin.wickra.org) |
-| [**wickra-gym**](https://github.com/wickra-lib/wickra-gym) | a Gymnasium-compatible, microstructure-aware backtest environment with O(1) steps for deterministic RL rollouts | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-gym/release.svg)](https://github.com/wickra-lib/wickra-gym/releases/latest) | [gym.wickra.org](https://gym.wickra.org) |
-| [**wickra-impact**](https://github.com/wickra-lib/wickra-impact) | the backtester that knows you would have moved the market: agent-based fills on the real historical L2 order book | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-impact/release.svg)](https://github.com/wickra-lib/wickra-impact/releases/latest) | [impact.wickra.org](https://impact.wickra.org) |
+<table>
+  <thead>
+    <tr>
+      <th width="18%" align="left">Repository</th>
+      <th width="56%" align="left">What it does</th>
+      <th width="12%" align="left">Release</th>
+      <th width="14%" align="left">Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-backtest"><strong>wickra-backtest</strong></a></td>
+      <td>event-driven backtester over the Wickra core</td>
+      <td><a href="https://github.com/wickra-lib/wickra-backtest/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-backtest/release.svg" alt="release"></a></td>
+      <td><a href="https://backtest.wickra.org">backtest.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-screener"><strong>wickra-screener</strong></a></td>
+      <td>parallel multi-symbol screening over 514 streaming indicators</td>
+      <td><a href="https://github.com/wickra-lib/wickra-screener/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-screener/release.svg" alt="release"></a></td>
+      <td><a href="https://screener.wickra.org">screener.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-darwin"><strong>wickra-darwin</strong></a></td>
+      <td>evolutionary strategy search at millions of backtests per second, mutating and crossing JSON specs across the 514-indicator space</td>
+      <td><a href="https://github.com/wickra-lib/wickra-darwin/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-darwin/release.svg" alt="release"></a></td>
+      <td><a href="https://darwin.wickra.org">darwin.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-gym"><strong>wickra-gym</strong></a></td>
+      <td>a Gymnasium-compatible, microstructure-aware backtest environment with O(1) steps for deterministic RL rollouts</td>
+      <td><a href="https://github.com/wickra-lib/wickra-gym/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-gym/release.svg" alt="release"></a></td>
+      <td><a href="https://gym.wickra.org">gym.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-impact"><strong>wickra-impact</strong></a></td>
+      <td>the backtester that knows you would have moved the market: agent-based fills on the real historical L2 order book</td>
+      <td><a href="https://github.com/wickra-lib/wickra-impact/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-impact/release.svg" alt="release"></a></td>
+      <td><a href="https://impact.wickra.org">impact.wickra.org</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Trust — prove, verify, benchmark and gate what a backtest claims
 
-| Repository | What it does | Release | Docs |
-|---|---|---|---|
-| [**wickra-verify**](https://github.com/wickra-lib/wickra-verify) | confirm or refute a claimed backtest report against its strategy and data, in ten languages | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-verify/release.svg)](https://github.com/wickra-lib/wickra-verify/releases/latest) | [verify.wickra.org](https://verify.wickra.org) |
-| [**wickra-proof**](https://github.com/wickra-lib/wickra-proof) | Proof-of-Backtest: deterministic (spec, data) → report + blake3 hash, recomputable byte-for-byte in ten languages | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-proof/release.svg)](https://github.com/wickra-lib/wickra-proof/releases/latest) | [proof.wickra.org](https://proof.wickra.org) |
-| [**wickra-zk**](https://github.com/wickra-lib/wickra-zk) | prove a backtest zero-knowledge — on-chain-verifiable performance without revealing the data or the strategy | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-zk/release.svg)](https://github.com/wickra-lib/wickra-zk/releases/latest) | [zk.wickra.org](https://zk.wickra.org) |
-| [**wickra-strategy-ci**](https://github.com/wickra-lib/wickra-strategy-ci) | Jest for trading strategies: golden-pin the report, catch regressions in CI, property-test against fuzzed data | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-strategy-ci/release.svg)](https://github.com/wickra-lib/wickra-strategy-ci/releases/latest) | [strategy-ci.wickra.org](https://strategy-ci.wickra.org) |
-| [**wickra-benchmark**](https://github.com/wickra-lib/wickra-benchmark) | reproducible, golden-verified benchmark suite — recompute any (strategy, dataset, report) in ten languages and confirm it byte-for-byte | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-benchmark/release.svg)](https://github.com/wickra-lib/wickra-benchmark/releases/latest) | [benchmark.wickra.org](https://benchmark.wickra.org) |
+<table>
+  <thead>
+    <tr>
+      <th width="18%" align="left">Repository</th>
+      <th width="56%" align="left">What it does</th>
+      <th width="12%" align="left">Release</th>
+      <th width="14%" align="left">Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-verify"><strong>wickra-verify</strong></a></td>
+      <td>confirm or refute a claimed backtest report against its strategy and data, in ten languages</td>
+      <td><a href="https://github.com/wickra-lib/wickra-verify/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-verify/release.svg" alt="release"></a></td>
+      <td><a href="https://verify.wickra.org">verify.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-proof"><strong>wickra-proof</strong></a></td>
+      <td>Proof-of-Backtest: deterministic (spec, data) → report + blake3 hash, recomputable byte-for-byte in ten languages</td>
+      <td><a href="https://github.com/wickra-lib/wickra-proof/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-proof/release.svg" alt="release"></a></td>
+      <td><a href="https://proof.wickra.org">proof.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-zk"><strong>wickra-zk</strong></a></td>
+      <td>prove a backtest zero-knowledge — on-chain-verifiable performance without revealing the data or the strategy</td>
+      <td><a href="https://github.com/wickra-lib/wickra-zk/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-zk/release.svg" alt="release"></a></td>
+      <td><a href="https://zk.wickra.org">zk.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-strategy-ci"><strong>wickra-strategy-ci</strong></a></td>
+      <td>Jest for trading strategies: golden-pin the report, catch regressions in CI, property-test against fuzzed data</td>
+      <td><a href="https://github.com/wickra-lib/wickra-strategy-ci/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-strategy-ci/release.svg" alt="release"></a></td>
+      <td><a href="https://strategy-ci.wickra.org">strategy-ci.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-benchmark"><strong>wickra-benchmark</strong></a></td>
+      <td>reproducible, golden-verified benchmark suite — recompute any (strategy, dataset, report) in ten languages and confirm it byte-for-byte</td>
+      <td><a href="https://github.com/wickra-lib/wickra-benchmark/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-benchmark/release.svg" alt="release"></a></td>
+      <td><a href="https://benchmark.wickra.org">benchmark.wickra.org</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Surface — what a trader looks at and talks to
 
-| Repository | What it does | Release | Docs |
-|---|---|---|---|
-| [**wickra-terminal**](https://github.com/wickra-lib/wickra-terminal) | the trading terminal: a TUI and a browser renderer over the stack | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-terminal/release.svg)](https://github.com/wickra-lib/wickra-terminal/releases/latest) | [terminal.wickra.org](https://terminal.wickra.org) |
-| [**wickra-xray**](https://github.com/wickra-lib/wickra-xray) | market-microstructure explorer: footprint, order-book heatmap, liquidation map, funding/OI divergence | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-xray/release.svg)](https://github.com/wickra-lib/wickra-xray/releases/latest) | [xray.wickra.org](https://xray.wickra.org) |
-| [**wickra-radar**](https://github.com/wickra-lib/wickra-radar) | perp-universe alert radar: OI delta, funding flip, book imbalance, liquidation clusters, OI/price divergence | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-radar/release.svg)](https://github.com/wickra-lib/wickra-radar/releases/latest) | [radar.wickra.org](https://radar.wickra.org) |
-| [**wickra-copilot**](https://github.com/wickra-lib/wickra-copilot) | local market copilot grounded in real order-book, liquidation and funding microstructure | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-copilot/release.svg)](https://github.com/wickra-lib/wickra-copilot/releases/latest) | [copilot.wickra.org](https://copilot.wickra.org) |
-| [**wickra-shazam**](https://github.com/wickra-lib/wickra-shazam) | match an asset's current microstructure fingerprint against its entire history | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-shazam/release.svg)](https://github.com/wickra-lib/wickra-shazam/releases/latest) | [shazam.wickra.org](https://shazam.wickra.org) |
+<table>
+  <thead>
+    <tr>
+      <th width="18%" align="left">Repository</th>
+      <th width="56%" align="left">What it does</th>
+      <th width="12%" align="left">Release</th>
+      <th width="14%" align="left">Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-terminal"><strong>wickra-terminal</strong></a></td>
+      <td>the trading terminal: a TUI and a browser renderer over the stack</td>
+      <td><a href="https://github.com/wickra-lib/wickra-terminal/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-terminal/release.svg" alt="release"></a></td>
+      <td><a href="https://terminal.wickra.org">terminal.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-xray"><strong>wickra-xray</strong></a></td>
+      <td>market-microstructure explorer: footprint, order-book heatmap, liquidation map, funding/OI divergence</td>
+      <td><a href="https://github.com/wickra-lib/wickra-xray/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-xray/release.svg" alt="release"></a></td>
+      <td><a href="https://xray.wickra.org">xray.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-radar"><strong>wickra-radar</strong></a></td>
+      <td>perp-universe alert radar: OI delta, funding flip, book imbalance, liquidation clusters, OI/price divergence</td>
+      <td><a href="https://github.com/wickra-lib/wickra-radar/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-radar/release.svg" alt="release"></a></td>
+      <td><a href="https://radar.wickra.org">radar.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-copilot"><strong>wickra-copilot</strong></a></td>
+      <td>local market copilot grounded in real order-book, liquidation and funding microstructure</td>
+      <td><a href="https://github.com/wickra-lib/wickra-copilot/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-copilot/release.svg" alt="release"></a></td>
+      <td><a href="https://copilot.wickra.org">copilot.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-shazam"><strong>wickra-shazam</strong></a></td>
+      <td>match an asset's current microstructure fingerprint against its entire history</td>
+      <td><a href="https://github.com/wickra-lib/wickra-shazam/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-shazam/release.svg" alt="release"></a></td>
+      <td><a href="https://shazam.wickra.org">shazam.wickra.org</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Edge — the core compiled for the browser, the binary, the chip
 
-| Repository | What it does | Release | Docs |
-|---|---|---|---|
-| [**wickra-compile**](https://github.com/wickra-lib/wickra-compile) | compile a strategy spec into a standalone deployable: a WASM module, a self-contained binary, or a `no_std` artifact | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-compile/release.svg)](https://github.com/wickra-lib/wickra-compile/releases/latest) | [compile.wickra.org](https://compile.wickra.org) |
-| [**wickra-embed**](https://github.com/wickra-lib/wickra-embed) | allocation-free, `no_std` streaming indicators for bare-metal and HFT, byte-for-byte identical to the core | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-embed/release.svg)](https://github.com/wickra-lib/wickra-embed/releases/latest) | [embed.wickra.org](https://embed.wickra.org) |
-| [**wickra-pico**](https://github.com/wickra-lib/wickra-pico) | the O(1) indicator core running bare-metal on a $5 Raspberry Pi Pico — the LED blinks on the EMA cross | [![release](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-pico/release.svg)](https://github.com/wickra-lib/wickra-pico/releases/latest) | [pico.wickra.org](https://pico.wickra.org) |
+<table>
+  <thead>
+    <tr>
+      <th width="18%" align="left">Repository</th>
+      <th width="56%" align="left">What it does</th>
+      <th width="12%" align="left">Release</th>
+      <th width="14%" align="left">Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-compile"><strong>wickra-compile</strong></a></td>
+      <td>compile a strategy spec into a standalone deployable: a WASM module, a self-contained binary, or a <code>no_std</code> artifact</td>
+      <td><a href="https://github.com/wickra-lib/wickra-compile/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-compile/release.svg" alt="release"></a></td>
+      <td><a href="https://compile.wickra.org">compile.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-embed"><strong>wickra-embed</strong></a></td>
+      <td>allocation-free, <code>no_std</code> streaming indicators for bare-metal and HFT, byte-for-byte identical to the core</td>
+      <td><a href="https://github.com/wickra-lib/wickra-embed/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-embed/release.svg" alt="release"></a></td>
+      <td><a href="https://embed.wickra.org">embed.wickra.org</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wickra-lib/wickra-pico"><strong>wickra-pico</strong></a></td>
+      <td>the O(1) indicator core running bare-metal on a $5 Raspberry Pi Pico — the LED blinks on the EMA cross</td>
+      <td><a href="https://github.com/wickra-lib/wickra-pico/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-pico/release.svg" alt="release"></a></td>
+      <td><a href="https://pico.wickra.org">pico.wickra.org</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Install
 
