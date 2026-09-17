@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://wickra.org"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/wickra-banner.webp?v=514-6" alt="Wickra — the streaming-first trading stack: one indicator core, twenty-four products, ten languages" width="100%"></a>
+  <a href="https://wickra.org"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/wickra-banner.webp?v=514-6" alt="Wickra — the streaming-first trading stack: one indicator core, twenty-three products, ten languages" width="100%"></a>
 </p>
 
 [![License: MIT OR Apache-2.0](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra/license.svg)](https://github.com/wickra-lib/wickra#license)
@@ -11,8 +11,8 @@
 
 ---
 
-**Wickra is a family of 25 open-source trading libraries: a streaming-first
-indicator core and twenty-four data-driven products built on it.** Every one of
+**Wickra is a family of 24 open-source trading libraries: a streaming-first
+indicator core and twenty-three data-driven products built on it.** Every one of
 them is a Rust core with a CLI and the same ten-language binding surface — native
 Python, Node.js and WASM, plus a C ABI for C, C++, C#, Go, Java and R — released
 to crates.io, PyPI, npm, NuGet, Maven Central, the Go module proxy and R-universe
@@ -41,7 +41,7 @@ for price in live_feed:
 
 ## The family
 
-Six layers, twenty-five repositories. The release badge is each repository's
+Six layers, twenty-four repositories. The release badge is each repository's
 latest published version; the docs column is its own documentation site.
 
 ### Core — the indicator engine everything else is built on
@@ -144,7 +144,7 @@ detail, and each product's README its own.
   Node.js, WASM, C, C++, C#, Go, Java and R and compares byte-for-byte.
 - **Zero third-party dependencies in every language**, `unsafe`-forbidden Rust
   cores, hash-locked CI, SHA-pinned actions, signed commits and build
-  provenance on every release — the same supply chain in all twenty-five repos.
+  provenance on every release — the same supply chain in all twenty-four repos.
 - **One release pipeline.** A tag publishes to every registry at once; the org
   keeps a [version snapshot](https://github.com/wickra-lib/.github/tree/main/versions)
   of what each registry actually holds.
