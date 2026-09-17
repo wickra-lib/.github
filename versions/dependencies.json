@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-17T18:56:56Z",
+  "scanned_at": "2026-09-17T22:31:49Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -122,7 +122,7 @@
         "wickra-compile": "0.12.0",
         "wickra-copilot": "0.12.0",
         "wickra-darwin": "0.11.0",
-        "wickra-exchange": "0.11.0",
+        "wickra-exchange": "0.12.0",
         "wickra-feature-store": "0.11.0",
         "wickra-genome": "0.11.0",
         "wickra-gym": "0.11.0",
@@ -132,7 +132,7 @@
         "wickra-screener": "0.11.0",
         "wickra-shazam": "0.12.0",
         "wickra-strategy-ci": "0.11.0",
-        "wickra-synth": "0.11.0",
+        "wickra-synth": "0.12.0",
         "wickra-terminal": "0.11.0",
         "wickra-timemachine": "0.11.0",
         "wickra-verify": "0.11.0",
@@ -13607,7 +13607,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0"
+        "version": "0.12.0"
       },
       {
         "ecosystem": "cargo",
@@ -14099,31 +14099,31 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.2"
+        "version": "3.12.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.1"
+        "version": "2.4.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.3"
+        "version": "3.6.4"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.2"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0"
+        "version": "3.3.1"
       },
       {
         "ecosystem": "cargo",
@@ -37360,7 +37360,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0"
+        "version": "0.12.0"
       },
       {
         "ecosystem": "cargo",
@@ -37606,31 +37606,31 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.2"
+        "version": "3.12.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.1"
+        "version": "2.4.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.3"
+        "version": "3.6.4"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.2"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0"
+        "version": "3.3.1"
       },
       {
         "ecosystem": "cargo",
@@ -48620,19 +48620,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap",
-        "version": "4.6.2"
+        "version": "4.6.7"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_builder",
-        "version": "4.6.2"
+        "version": "4.6.7"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_derive",
-        "version": "4.6.1"
+        "version": "4.6.7"
       },
       {
         "ecosystem": "cargo",
@@ -50468,19 +50468,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_core",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_derive",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
@@ -50492,7 +50492,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.150"
+        "version": "1.0.151"
       },
       {
         "ecosystem": "cargo",
@@ -50684,7 +50684,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror",
-        "version": "2.0.18"
+        "version": "2.0.20"
       },
       {
         "ecosystem": "cargo",
@@ -50696,7 +50696,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror-impl",
-        "version": "2.0.18"
+        "version": "2.0.20"
       },
       {
         "ecosystem": "cargo",
