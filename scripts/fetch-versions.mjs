@@ -1105,7 +1105,7 @@ function render(snapshot) {
     '',
   ]
 
-  lines.push(`Scanning ${snapshot.repos.length} product repositories.`, '')
+  lines.push(`Scanning ${snapshot.repos.length} product repositories. What the repositories declare against each other -- family pins, locks, toolchain floors, CI matrices, Dependabot coverage -- is in [drift.md](drift.md); the resolved third-party dependencies side by side in [dependencies.md](dependencies.md).`, '')
 
   if (snapshot.findings.length === 0) {
     lines.push(
