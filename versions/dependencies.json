@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-17T01:33:42Z",
+  "scanned_at": "2026-09-17T03:57:28Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -25,7 +25,7 @@
     "r": {
       "total": 5,
       "shared": 2,
-      "differing": 1
+      "differing": 0
     },
     "nuget": {
       "total": 0,
@@ -786,7 +786,7 @@
       "ecosystem": "npm",
       "name": "js-yaml",
       "byRepo": {
-        "wickra": "4.3.2",
+        "wickra": "5.4.2",
         "wickra-backtest": "4.3.2",
         "wickra-benchmark": "4.3.2",
         "wickra-compile": "5.4.2",
@@ -808,6 +808,34 @@
         "wickra-verify": "4.3.2",
         "wickra-xray": "4.3.2",
         "wickra-zk": "5.4.1"
+      }
+    },
+    {
+      "ecosystem": "npm",
+      "name": "obug",
+      "byRepo": {
+        "wickra": "3.0.0",
+        "wickra-backtest": "2.1.3",
+        "wickra-benchmark": "2.1.3",
+        "wickra-compile": "2.1.4",
+        "wickra-copilot": "2.1.3",
+        "wickra-darwin": "2.1.4",
+        "wickra-exchange": "2.1.3",
+        "wickra-feature-store": "2.1.4",
+        "wickra-genome": "2.1.4",
+        "wickra-gym": "2.1.3",
+        "wickra-impact": "2.1.4",
+        "wickra-proof": "2.1.3",
+        "wickra-radar": "2.1.3",
+        "wickra-screener": "2.1.3",
+        "wickra-shazam": "2.1.3",
+        "wickra-strategy-ci": "2.1.3",
+        "wickra-synth": "2.1.4",
+        "wickra-terminal": "2.1.3",
+        "wickra-timemachine": "2.1.4",
+        "wickra-verify": "2.1.3",
+        "wickra-xray": "2.1.3",
+        "wickra-zk": "2.2.1"
       }
     },
     {
@@ -843,34 +871,6 @@
         "wickra-timemachine": ">=7",
         "wickra-verify": ">=7",
         "wickra-xray": ">=7"
-      }
-    },
-    {
-      "ecosystem": "r",
-      "name": "R",
-      "byRepo": {
-        "wickra": ">= 2.10",
-        "wickra-backtest": ">= 4.1",
-        "wickra-benchmark": ">= 4.1",
-        "wickra-compile": ">= 4.1",
-        "wickra-copilot": ">= 4.1",
-        "wickra-darwin": ">= 4.1",
-        "wickra-exchange": ">= 4.1",
-        "wickra-feature-store": ">= 4.1",
-        "wickra-genome": ">= 4.1",
-        "wickra-gym": ">= 4.1",
-        "wickra-impact": ">= 4.1",
-        "wickra-proof": ">= 4.1",
-        "wickra-radar": ">= 4.1",
-        "wickra-screener": ">= 4.1",
-        "wickra-shazam": ">= 4.1",
-        "wickra-strategy-ci": ">= 4.1",
-        "wickra-synth": ">= 4.1",
-        "wickra-terminal": ">= 4.1",
-        "wickra-timemachine": ">= 4.1",
-        "wickra-verify": ">= 4.1",
-        "wickra-xray": ">= 4.1",
-        "wickra-zk": ">= 4.1"
       }
     }
   ],
@@ -2416,7 +2416,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.8.6"
+        "version": "3.10.3"
       },
       {
         "ecosystem": "npm",
@@ -2902,7 +2902,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -2926,7 +2926,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.3"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
@@ -3058,7 +3058,7 @@
         "ecosystem": "r",
         "source": "bindings/r/DESCRIPTION",
         "name": "R",
-        "version": ">= 2.10"
+        "version": ">= 4.1"
       },
       {
         "ecosystem": "r",
