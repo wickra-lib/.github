@@ -1,45 +1,224 @@
 {
-  "scanned_at": "2026-09-17T19:07:40Z",
+  "scanned_at": "2026-09-17T20:51:12Z",
   "repos": 77,
-  "dependabot": [
+  "dependabot": [],
+  "waiting": 2,
+  "people": [
     {
-      "repo": "wickra-exchange",
-      "number": 232,
-      "title": "deps(cargo): bump the cargo group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-exchange/pull/232",
-      "created": "2026-09-17T13:53:53Z",
-      "failing": [
-        "CodSpeed Performance Analysis"
-      ],
-      "checks": 66
+      "kind": "pull request",
+      "repo": "wickra-feature-store",
+      "number": 72,
+      "title": "release: 0.1.2",
+      "url": "https://github.com/wickra-lib/wickra-feature-store/pull/72",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:48:48Z"
     },
     {
+      "kind": "pull request",
+      "repo": "wickra-darwin",
+      "number": 69,
+      "title": "release: 0.1.3",
+      "url": "https://github.com/wickra-lib/wickra-darwin/pull/69",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:44:46Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-compile",
+      "number": 57,
+      "title": "release: 0.1.2",
+      "url": "https://github.com/wickra-lib/wickra-compile/pull/57",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:40:45Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-copilot",
+      "number": 120,
+      "title": "release: 0.1.1",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/120",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:39:11Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-backtest",
+      "number": 134,
+      "title": "release: 0.1.7",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/134",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:36:25Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-benchmark",
+      "number": 69,
+      "title": "release: 0.1.3",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/pull/69",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:32:51Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra",
+      "number": 457,
+      "title": "release: 1.0.5",
+      "url": "https://github.com/wickra-lib/wickra/pull/457",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:30:48Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-exchange",
+      "number": 236,
+      "title": "deps: serde 1.0.229 and futures-util 0.3.34; rust_decimal stays on 1.42.1",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/236",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:24:05Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-terminal",
+      "number": 112,
+      "title": "ci: the Go job also builds on 1.23, the floor go.mod declares, as the family's Go jobs do",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/112",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:19:06Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-zk",
+      "number": 60,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-zk/pull/60",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:51Z"
+    },
+    {
+      "kind": "pull request",
       "repo": "wickra-xray",
-      "number": 135,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/135",
-      "created": "2026-09-17T04:33:22Z",
-      "failing": [
-        "CodSpeed Performance Analysis",
-        "Test (windows-latest, --no-default-features)",
-        "Node 22 on ubuntu-latest",
-        "Node 24 on ubuntu-latest",
-        "Node 22 on windows-latest",
-        "Examples",
-        "Test (macos-latest, --no-default-features)",
-        "Test (windows-latest, --all-features)",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Test (macos-latest, --all-features)",
-        "Test (ubuntu-latest, --all-features)",
-        "Node 22 on macos-latest",
-        "Node 24 on windows-latest",
-        "MSRV node (1.88)",
-        "Node 24 on macos-latest",
-        "Format & Clippy"
-      ],
-      "checks": 67
+      "number": 138,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/138",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:46Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-verify",
+      "number": 100,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/100",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:39Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-timemachine",
+      "number": 65,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/65",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:34Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-terminal",
+      "number": 111,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/111",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:26Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-synth",
+      "number": 64,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/64",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:20Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-strategy-ci",
+      "number": 68,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/68",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:14Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-shazam",
+      "number": 118,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/118",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:07Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-screener",
+      "number": 177,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/177",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:01:00Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-radar",
+      "number": 112,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/112",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:00:54Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-proof",
+      "number": 98,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/98",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:00:47Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-impact",
+      "number": 67,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/67",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:00:39Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-gym",
+      "number": 59,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/59",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:00:33Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-genome",
+      "number": 63,
+      "title": "deps: actions/setup-java 6.0.1 and Microsoft.NET.Test.Sdk 18.10.0, the line Dependabot proposed in six siblings",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/63",
+      "author": "kingchenc",
+      "created": "2026-09-17T19:00:26Z"
+    },
+    {
+      "kind": "pull request",
+      "repo": "wickra-playground",
+      "number": 13,
+      "title": "deps: vitest 5, @types/node 26.5.1, eslint-plugin-vue 10.11.0; TypeScript stays on 6",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/13",
+      "author": "kingchenc",
+      "created": "2026-09-17T18:58:30Z"
     }
-  ],
-  "waiting": 0,
-  "people": []
+  ]
 }
