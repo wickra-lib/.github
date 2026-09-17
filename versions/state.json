@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-16T20:27:56Z",
+  "scanned_at": "2026-09-17T01:33:42Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -386,11 +386,6 @@
         {
           "registry": "npm",
           "pkg": "wickra-win32-arm64-msvc",
-          "version": "1.0.4"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-wasm",
           "version": "1.0.4"
         },
         {
@@ -921,11 +916,6 @@
           "version": "0.1.6"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-backtest-wasm",
-          "version": "0.1.6"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Backtest",
           "version": "0.1.6"
@@ -1431,11 +1421,6 @@
           "version": "0.1.2"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-benchmark-wasm",
-          "version": "0.1.2"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Benchmark",
           "version": "0.1.2"
@@ -1735,7 +1720,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "crates/compile-cli/Cargo.toml",
@@ -1743,7 +1728,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "crates/compile-core/Cargo.toml",
@@ -1759,7 +1744,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/node/Cargo.toml",
@@ -1767,7 +1752,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/python/Cargo.toml",
@@ -1775,7 +1760,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/wasm/Cargo.toml",
@@ -1783,7 +1768,7 @@
           "required": false,
           "range": true,
           "present": true,
-          "version": "0.1"
+          "version": null
         },
         {
           "file": "bindings/csharp/WickraCompile.Tests/WickraCompile.Tests.csproj",
@@ -1919,11 +1904,6 @@
           "version": "0.1.1"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-compile-wasm",
-          "version": "0.1.1"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Compile",
           "version": "0.1.1"
@@ -1947,13 +1927,13 @@
       },
       "pins": {
         "wickra-compile-core": "0.1.1",
-        "wickra-backtest": "=0.1.5"
+        "wickra-backtest": "=0.1.6"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.5"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -1964,7 +1944,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.5"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -1976,7 +1956,7 @@
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.5"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -2448,11 +2428,6 @@
           "version": "0.1.0"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-copilot-wasm",
-          "version": "0.1.0"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Copilot",
           "version": "0.1.0"
@@ -2477,8 +2452,8 @@
       "pins": {
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-exchange": "=0.1.4",
-        "wickra-backtest-core": "=0.1.5",
+        "wickra-exchange": "=0.1.5",
+        "wickra-backtest-core": "=0.1.6",
         "wickra-copilot-core": "0.1.0",
         "wickra-copilot-llm": "0.1.0"
       },
@@ -2486,7 +2461,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.5"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -2617,7 +2592,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.4"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -2629,7 +2604,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.4"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -2998,11 +2973,6 @@
           "version": "0.1.2"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-darwin-wasm",
-          "version": "0.1.2"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Darwin",
           "version": "0.1.2"
@@ -3027,13 +2997,13 @@
       "pins": {
         "wickra-darwin-core": "0.1.2",
         "wickra-core": "1.0",
-        "wickra-backtest": "=0.1.4"
+        "wickra-backtest": "=0.1.6"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -3046,7 +3016,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -3058,7 +3028,7 @@
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -3738,11 +3708,6 @@
           "version": "0.1.5"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-exchange-wasm",
-          "version": "0.1.5"
-        },
-        {
           "registry": "NuGet",
           "pkg": "WickraExchange",
           "version": "0.1.5"
@@ -4223,11 +4188,6 @@
           "version": "0.1.1"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-feature-store-wasm",
-          "version": "0.1.1"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.FeatureStore",
           "version": "0.1.1"
@@ -4253,13 +4213,13 @@
         "wickra-feature-store-core": "0.1.1",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-backtest-core": "=0.1.4"
+        "wickra-backtest-core": "=0.1.6"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -4711,11 +4671,6 @@
           "version": "0.1.1"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-genome-wasm",
-          "version": "0.1.1"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Genome",
           "version": "0.1.1"
@@ -4741,14 +4696,14 @@
         "wickra-genome-core": "0.1.1",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-backtest-core": "=0.1.4",
-        "wickra-exchange": "=0.1.3"
+        "wickra-backtest-core": "=0.1.6",
+        "wickra-exchange": "=0.1.5"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -4784,7 +4739,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.3"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -4795,7 +4750,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.3"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -5235,11 +5190,6 @@
           "version": "0.1.2"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-gym-wasm",
-          "version": "0.1.2"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Gym",
           "version": "0.1.2"
@@ -5265,14 +5215,14 @@
         "wickra-gym-core": "0.1.2",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-backtest": "=0.1.4",
-        "wickra-exchange": "=0.1.3"
+        "wickra-backtest": "=0.1.6",
+        "wickra-exchange": "=0.1.5"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -5283,7 +5233,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -5295,7 +5245,7 @@
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -5334,7 +5284,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.3"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -5345,7 +5295,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.3"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -5785,11 +5735,6 @@
           "version": "0.1.2"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-impact-wasm",
-          "version": "0.1.2"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Impact",
           "version": "0.1.2"
@@ -5815,14 +5760,14 @@
         "wickra-impact-core": "0.1.2",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-backtest": "=0.1.4",
-        "wickra-exchange": "=0.1.3"
+        "wickra-backtest": "=0.1.6",
+        "wickra-exchange": "=0.1.5"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -5834,7 +5779,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -5846,7 +5791,7 @@
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -5870,7 +5815,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.3"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -5881,7 +5826,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.3"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -6675,11 +6620,6 @@
           "version": "0.1.2"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-proof-wasm",
-          "version": "0.1.2"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Proof",
           "version": "0.1.2"
@@ -7160,11 +7100,6 @@
           "version": "0.1.1"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-radar-wasm",
-          "version": "0.1.1"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Radar",
           "version": "0.1.1"
@@ -7189,7 +7124,7 @@
       "pins": {
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-exchange": "=0.1.4",
+        "wickra-exchange": "=0.1.5",
         "wickra-radar-core": "0.1.1"
       },
       "lock": [
@@ -7207,7 +7142,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.4"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -7218,7 +7153,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.4"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -7658,11 +7593,6 @@
           "version": "0.1.5"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-screener-wasm",
-          "version": "0.1.5"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Screener",
           "version": "0.1.5"
@@ -7687,15 +7617,15 @@
       "pins": {
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-exchange": "0.1.3",
-        "wickra-backtest-core": "0.1.3",
+        "wickra-exchange": "=0.1.5",
+        "wickra-backtest-core": "=0.1.6",
         "wickra-screener-core": "0.1.5"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -7731,7 +7661,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.3"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -7742,7 +7672,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.3"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -8191,11 +8121,6 @@
           "version": "0.1.0"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-shazam-wasm",
-          "version": "0.1.0"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Shazam",
           "version": "0.1.0"
@@ -8220,15 +8145,15 @@
       "pins": {
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-exchange": "=0.1.4",
-        "wickra-backtest-core": "=0.1.5",
+        "wickra-exchange": "=0.1.5",
+        "wickra-backtest-core": "=0.1.6",
         "wickra-shazam-core": "0.1.0"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.5"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -8264,7 +8189,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.4"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -8275,7 +8200,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.4"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -8712,11 +8637,6 @@
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-win32-arm64-msvc",
-          "version": "0.1.3"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-strategy-ci-wasm",
           "version": "0.1.3"
         },
         {
@@ -9197,11 +9117,6 @@
         {
           "registry": "npm",
           "pkg": "wickra-synth-win32-x64-msvc",
-          "version": "0.1.2"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-synth-wasm",
           "version": "0.1.2"
         },
         {
@@ -9692,11 +9607,6 @@
         {
           "registry": "npm",
           "pkg": "wickra-terminal-win32-arm64-msvc",
-          "version": "0.1.4"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-terminal-wasm",
           "version": "0.1.4"
         },
         {
@@ -10202,11 +10112,6 @@
         {
           "registry": "npm",
           "pkg": "wickra-timemachine-win32-arm64-msvc",
-          "version": "0.1.1"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-timemachine-wasm",
           "version": "0.1.1"
         },
         {
@@ -10730,11 +10635,6 @@
           "version": "0.1.2"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-verify-wasm",
-          "version": "0.1.2"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Verify",
           "version": "0.1.2"
@@ -11217,11 +11117,6 @@
           "version": "0.1.3"
         },
         {
-          "registry": "npm",
-          "pkg": "wickra-xray-wasm",
-          "version": "0.1.3"
-        },
-        {
           "registry": "NuGet",
           "pkg": "Wickra.Xray",
           "version": "0.1.3"
@@ -11276,7 +11171,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 5,
+            "behind": 6,
             "ahead": 0
           }
         },
@@ -11296,7 +11191,7 @@
           ],
           "gitDistance": {
             "status": "behind",
-            "behind": 5,
+            "behind": 6,
             "ahead": 0
           }
         },
@@ -11707,11 +11602,6 @@
           "registry": "npm",
           "pkg": "wickra-zk-linux-x64-gnu",
           "version": "0.1.1"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-zk-wasm",
-          "version": null
         },
         {
           "registry": "NuGet",
@@ -12276,7 +12166,49 @@
     {
       "repo": "wickra-compile",
       "kind": "no version reference",
+      "subject": "crates/compile-bench/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "crates/compile-cli/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
       "subject": "crates/compile-core/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "bindings/c/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "bindings/node/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "bindings/python/Cargo.toml",
+      "detail": "present, and names no version -- legitimate for a file that only may reference one",
+      "informational": true
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "no version reference",
+      "subject": "bindings/wasm/Cargo.toml",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
@@ -12342,24 +12274,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "stale lock",
-      "subject": "wickra-backtest",
-      "detail": "locked at 0.1.5 while wickra-backtest publishes 0.1.6; the pin `=0.1.5` was not interpreted"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.5 while wickra-backtest-core publishes 0.1.6; the pin is not declared here"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-data",
-      "detail": "locked at 0.1.5 while wickra-backtest-data publishes 0.1.6; the pin is not declared here"
     },
     {
       "repo": "wickra-copilot",
@@ -12460,24 +12374,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-copilot",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.5 while wickra-backtest-core publishes 0.1.6; the pin `=0.1.5` was not interpreted"
-    },
-    {
-      "repo": "wickra-copilot",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.4 while wickra-exchange publishes 0.1.5; the pin `=0.1.4` was not interpreted"
-    },
-    {
-      "repo": "wickra-copilot",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.4 while wickra-exchange-core publishes 0.1.5; the pin is not declared here"
-    },
-    {
       "repo": "wickra-darwin",
       "kind": "no version reference",
       "subject": "crates/darwin-cli/Cargo.toml",
@@ -12567,24 +12463,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "stale lock",
-      "subject": "wickra-backtest",
-      "detail": "locked at 0.1.4 while wickra-backtest publishes 0.1.6; the pin `=0.1.4` was not interpreted"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin is not declared here"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-data",
-      "detail": "locked at 0.1.4 while wickra-backtest-data publishes 0.1.6; the pin is not declared here"
     },
     {
       "repo": "wickra-embed",
@@ -12916,12 +12794,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-feature-store",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin `=0.1.4` was not interpreted"
-    },
-    {
       "repo": "wickra-genome",
       "kind": "no version reference",
       "subject": "crates/genome-cli/Cargo.toml",
@@ -13013,24 +12885,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-genome",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin `=0.1.4` was not interpreted"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.3 while wickra-exchange publishes 0.1.5; the pin `=0.1.3` was not interpreted"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.3 while wickra-exchange-core publishes 0.1.5; the pin is not declared here"
-    },
-    {
       "repo": "wickra-gym",
       "kind": "no version reference",
       "subject": "crates/gym-cli/Cargo.toml",
@@ -13113,36 +12967,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "stale lock",
-      "subject": "wickra-backtest",
-      "detail": "locked at 0.1.4 while wickra-backtest publishes 0.1.6; the pin `=0.1.4` was not interpreted"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin is not declared here"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-data",
-      "detail": "locked at 0.1.4 while wickra-backtest-data publishes 0.1.6; the pin is not declared here"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.3 while wickra-exchange publishes 0.1.5; the pin `=0.1.3` was not interpreted"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.3 while wickra-exchange-core publishes 0.1.5; the pin is not declared here"
     },
     {
       "repo": "wickra-impact",
@@ -13234,36 +13058,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "stale lock",
-      "subject": "wickra-backtest",
-      "detail": "locked at 0.1.4 while wickra-backtest publishes 0.1.6; the pin `=0.1.4` was not interpreted"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin is not declared here"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-data",
-      "detail": "locked at 0.1.4 while wickra-backtest-data publishes 0.1.6; the pin is not declared here"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.3 while wickra-exchange publishes 0.1.5; the pin `=0.1.3` was not interpreted"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.3 while wickra-exchange-core publishes 0.1.5; the pin is not declared here"
     },
     {
       "repo": "wickra-pico",
@@ -13685,18 +13479,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-radar",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.4 while wickra-exchange publishes 0.1.5; the pin `=0.1.4` was not interpreted"
-    },
-    {
-      "repo": "wickra-radar",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.4 while wickra-exchange-core publishes 0.1.5; the pin is not declared here"
-    },
-    {
       "repo": "wickra-screener",
       "kind": "no version reference",
       "subject": "crates/screener-cli/Cargo.toml",
@@ -13788,24 +13570,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-screener",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin `0.1.3` already allows it, so cargo update -p wickra-backtest-core closes it"
-    },
-    {
-      "repo": "wickra-screener",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.3 while wickra-exchange publishes 0.1.5; the pin `0.1.3` already allows it, so cargo update -p wickra-exchange closes it"
-    },
-    {
-      "repo": "wickra-screener",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.3 while wickra-exchange-core publishes 0.1.5; the pin is not declared here"
-    },
-    {
       "repo": "wickra-shazam",
       "kind": "no version reference",
       "subject": "crates/shazam-cli/Cargo.toml",
@@ -13895,24 +13659,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.5 while wickra-backtest-core publishes 0.1.6; the pin `=0.1.5` was not interpreted"
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.4 while wickra-exchange publishes 0.1.5; the pin `=0.1.4` was not interpreted"
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.4 while wickra-exchange-core publishes 0.1.5; the pin is not declared here"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -14540,13 +14286,13 @@
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange",
-      "detail": "pinned at 7393b080, 5 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 7393b080, 6 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-xray",
       "kind": "git pin behind",
       "subject": "wickra-exchange-core",
-      "detail": "pinned at 7393b080, 5 commit(s) behind the default branch of wickra-lib/wickra-exchange"
+      "detail": "pinned at 7393b080, 6 commit(s) behind the default branch of wickra-lib/wickra-exchange"
     },
     {
       "repo": "wickra-zk",
@@ -14610,12 +14356,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "not published",
-      "subject": "npm wickra-zk-wasm",
-      "detail": "absent against the declared 0.1.1"
     },
     {
       "repo": "wickra-zk",
