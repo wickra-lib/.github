@@ -566,7 +566,13 @@ function scanDependabot(name, paths, files) {
     if ((m = line.match(/^\s*directory:\s*['"]?([^'"\s]+)/))) covered[eco].add(m[1].replace(/\/$/, '') || '/')
     else if ((m = line.match(/^\s*directories:\s*\[([^\]]*)\]/))) for (const d of m[1].split(',')) { const x = d.trim().replace(/^['"]|['"]$/g, ''); if (x) covered[eco].add(x.replace(/\/$/, '') || '/') }
     else if (/^\s*directories:\s*$/.test(line)) {
-      while (i + 1 < lines.length && /^\s*-\s*/.test(lines[i + 1])) { const x = lines[++i].replace(/^\s*-\s*/, '').trim().replace(/^['"]|['"]$/g, ''); if (x) covered[eco].add(x.replace(/\/$/, '') || '/') }
+      // the list runs until the next key; comment and blank lines inside it are skipped
+      while (i + 1 < lines.length && /^\s*(-\s*|#|$)/.test(lines[i + 1])) {
+        const item = lines[++i].split('#')[0]
+        if (!/^\s*-\s*/.test(item)) continue
+        const x = item.replace(/^\s*-\s*/, '').trim().replace(/^['"]|['"]$/g, '')
+        if (x) covered[eco].add(x.replace(/\/$/, '') || '/')
+      }
     }
   }
   const dirExists = (d) => d === '/' || paths.some((p) => p.startsWith(d.replace(/^\//, '') + '/'))
