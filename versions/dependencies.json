@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-17T03:57:28Z",
+  "scanned_at": "2026-09-17T18:32:21Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -10,17 +10,17 @@
     "npm": {
       "total": 110,
       "shared": 110,
-      "differing": 83
+      "differing": 66
     },
     "maven": {
       "total": 2,
       "shared": 1,
-      "differing": 1
+      "differing": 0
     },
     "python": {
       "total": 12,
       "shared": 3,
-      "differing": 2
+      "differing": 1
     },
     "r": {
       "total": 5,
@@ -671,34 +671,6 @@
       }
     },
     {
-      "ecosystem": "maven",
-      "name": "org.junit.jupiter:junit-jupiter",
-      "byRepo": {
-        "wickra": "6.1.3",
-        "wickra-backtest": "6.1.2",
-        "wickra-benchmark": "6.1.3",
-        "wickra-compile": "6.1.3",
-        "wickra-copilot": "6.1.3",
-        "wickra-darwin": "6.1.3",
-        "wickra-exchange": "6.1.3",
-        "wickra-feature-store": "6.1.3",
-        "wickra-genome": "6.1.3",
-        "wickra-gym": "6.1.3",
-        "wickra-impact": "6.1.3",
-        "wickra-proof": "6.1.3",
-        "wickra-radar": "6.1.3",
-        "wickra-screener": "6.1.3",
-        "wickra-shazam": "6.1.3",
-        "wickra-strategy-ci": "6.1.3",
-        "wickra-synth": "6.1.3",
-        "wickra-terminal": "6.1.3",
-        "wickra-timemachine": "6.1.3",
-        "wickra-verify": "6.1.3",
-        "wickra-xray": "6.1.3",
-        "wickra-zk": "6.1.3"
-      }
-    },
-    {
       "ecosystem": "npm",
       "name": "@inquirer/core",
       "byRepo": {
@@ -787,12 +759,12 @@
       "name": "js-yaml",
       "byRepo": {
         "wickra": "5.4.2",
-        "wickra-backtest": "4.3.2",
-        "wickra-benchmark": "4.3.2",
+        "wickra-backtest": "5.4.2",
+        "wickra-benchmark": "5.4.2",
         "wickra-compile": "5.4.2",
         "wickra-copilot": "5.4.2",
         "wickra-darwin": "4.3.2",
-        "wickra-exchange": "4.3.2",
+        "wickra-exchange": "5.4.2",
         "wickra-feature-store": "4.3.2",
         "wickra-genome": "4.3.2",
         "wickra-gym": "4.3.2",
@@ -801,9 +773,9 @@
         "wickra-radar": "5.4.2",
         "wickra-screener": "4.3.2",
         "wickra-shazam": "5.4.2",
-        "wickra-strategy-ci": "4.3.2",
-        "wickra-synth": "4.3.2",
-        "wickra-terminal": "4.3.2",
+        "wickra-strategy-ci": "5.4.2",
+        "wickra-synth": "5.4.2",
+        "wickra-terminal": "5.4.2",
         "wickra-timemachine": "4.3.2",
         "wickra-verify": "4.3.2",
         "wickra-xray": "4.3.2",
@@ -815,12 +787,12 @@
       "name": "obug",
       "byRepo": {
         "wickra": "3.0.0",
-        "wickra-backtest": "2.1.3",
-        "wickra-benchmark": "2.1.3",
+        "wickra-backtest": "3.0.0",
+        "wickra-benchmark": "3.0.0",
         "wickra-compile": "2.1.4",
         "wickra-copilot": "2.1.3",
         "wickra-darwin": "2.1.4",
-        "wickra-exchange": "2.1.3",
+        "wickra-exchange": "3.0.0",
         "wickra-feature-store": "2.1.4",
         "wickra-genome": "2.1.4",
         "wickra-gym": "2.1.3",
@@ -829,9 +801,9 @@
         "wickra-radar": "2.1.3",
         "wickra-screener": "2.1.3",
         "wickra-shazam": "2.1.3",
-        "wickra-strategy-ci": "2.1.3",
-        "wickra-synth": "2.1.4",
-        "wickra-terminal": "2.1.3",
+        "wickra-strategy-ci": "3.0.0",
+        "wickra-synth": "3.0.0",
+        "wickra-terminal": "3.0.0",
         "wickra-timemachine": "2.1.4",
         "wickra-verify": "2.1.3",
         "wickra-xray": "2.1.3",
@@ -844,33 +816,6 @@
       "byRepo": {
         "wickra": ">=1.22",
         "wickra-gym": ">=1.21"
-      }
-    },
-    {
-      "ecosystem": "python",
-      "name": "pytest",
-      "byRepo": {
-        "wickra": ">=7",
-        "wickra-backtest": ">=7",
-        "wickra-benchmark": ">=7",
-        "wickra-compile": ">=7",
-        "wickra-copilot": ">=7",
-        "wickra-darwin": ">=7",
-        "wickra-exchange": ">=7",
-        "wickra-feature-store": ">=7",
-        "wickra-genome": ">=7",
-        "wickra-gym": ">=7",
-        "wickra-impact": ">=7",
-        "wickra-proof": ">=7",
-        "wickra-radar": ">=7",
-        "wickra-screener": ">=7",
-        "wickra-shazam": ">=7",
-        "wickra-strategy-ci": ">=7",
-        "wickra-synth": ">=7",
-        "wickra-terminal": ">=9.0.3; python_version >= '3.10'",
-        "wickra-timemachine": ">=7",
-        "wickra-verify": ">=7",
-        "wickra-xray": ">=7"
       }
     }
   ],
@@ -4674,7 +4619,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.7.4"
+        "version": "3.10.3"
       },
       {
         "ecosystem": "npm",
@@ -4902,85 +4847,103 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-android-arm-eabi",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-android-arm64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-darwin-arm64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-darwin-x64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-freebsd-x64",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-arm64-gnu",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-arm64-musl",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-x64-gnu",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-linux-x64-musl",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-wasm32-wasi",
-        "version": "1.0.1"
+        "version": "1.1.0"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/core",
+        "version": "1.9.2"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/runtime",
+        "version": "1.9.2"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@emnapi/wasi-threads",
+        "version": "1.2.1"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-arm64-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-ia32-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-tools-win32-x64-msvc",
-        "version": "1.0.1"
+        "version": "1.1.0"
       },
       {
         "ecosystem": "npm",
@@ -5148,7 +5111,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -5172,7 +5135,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.3"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
@@ -5207,6 +5170,12 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "typescript",
+        "version": "6.0.3"
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "universal-user-agent",
         "version": "7.0.3"
       },
@@ -5214,7 +5183,7 @@
         "ecosystem": "maven",
         "source": "bindings/java/pom.xml",
         "name": "org.junit.jupiter:junit-jupiter",
-        "version": "6.1.2"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "maven",
@@ -6302,7 +6271,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.8.6"
+        "version": "3.10.3"
       },
       {
         "ecosystem": "npm",
@@ -6788,7 +6757,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -6812,7 +6781,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.3"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
@@ -15378,7 +15347,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.8.6"
+        "version": "3.10.3"
       },
       {
         "ecosystem": "npm",
@@ -15870,7 +15839,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -15894,7 +15863,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.3"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
@@ -36627,7 +36596,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.8.6"
+        "version": "3.10.3"
       },
       {
         "ecosystem": "npm",
@@ -37113,7 +37082,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -37137,7 +37106,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.3"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
@@ -38261,7 +38230,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.8.6"
+        "version": "3.10.3"
       },
       {
         "ecosystem": "npm",
@@ -38753,7 +38722,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -38777,7 +38746,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.4"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
@@ -41509,7 +41478,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.8.6"
+        "version": "3.10.3"
       },
       {
         "ecosystem": "npm",
@@ -41995,7 +41964,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -42019,7 +41988,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.3"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
@@ -42079,13 +42048,7 @@
         "ecosystem": "python",
         "source": "bindings/python/pyproject.toml",
         "name": "pytest",
-        "version": ">=8.4.2; python_version < '3.10'"
-      },
-      {
-        "ecosystem": "python",
-        "source": "bindings/python/pyproject.toml",
-        "name": "pytest",
-        "version": ">=9.0.3; python_version >= '3.10'"
+        "version": ">=7"
       },
       {
         "ecosystem": "r",

@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-17T03:57:28Z",
+  "scanned_at": "2026-09-17T18:32:21Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -842,7 +842,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.6"
         },
         {
           "file": "README.md",
@@ -1357,7 +1357,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.2"
         },
         {
           "file": "README.md",
@@ -1443,15 +1443,15 @@
         "tag": "v0.1.2"
       },
       "pins": {
-        "wickra-backtest-core": "0.1.4",
+        "wickra-backtest-core": "=0.1.6",
         "wickra-benchmark-core": "0.1.2",
-        "wickra-core": "1.0.4"
+        "wickra-core": "1.0"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -1840,7 +1840,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.1"
         },
         {
           "file": "README.md",
@@ -2359,7 +2359,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "README.md",
@@ -2909,7 +2909,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.2"
         },
         {
           "file": "README.md",
@@ -3644,7 +3644,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.5"
         },
         {
           "file": "README.md",
@@ -4124,7 +4124,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.1"
         },
         {
           "file": "README.md",
@@ -4607,7 +4607,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.1"
         },
         {
           "file": "README.md",
@@ -5126,7 +5126,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.2"
         },
         {
           "file": "README.md",
@@ -5671,7 +5671,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.2"
         },
         {
           "file": "README.md",
@@ -6556,7 +6556,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.2"
         },
         {
           "file": "README.md",
@@ -6642,14 +6642,14 @@
         "tag": "v0.1.2"
       },
       "pins": {
-        "wickra-backtest-core": "=0.1.4",
+        "wickra-backtest-core": "=0.1.6",
         "wickra-proof-core": "0.1.2"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -7036,7 +7036,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.1"
         },
         {
           "file": "README.md",
@@ -7529,7 +7529,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.5"
         },
         {
           "file": "README.md",
@@ -8057,7 +8057,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.0"
         },
         {
           "file": "README.md",
@@ -8576,7 +8576,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.3"
         },
         {
           "file": "README.md",
@@ -8662,14 +8662,14 @@
         "tag": "v0.1.3"
       },
       "pins": {
-        "wickra-backtest-core": "0.1.4",
+        "wickra-backtest-core": "=0.1.6",
         "wickra-strategy-ci-core": "0.1.3"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -9632,9 +9632,9 @@
         "tag": "v0.1.4"
       },
       "pins": {
-        "wickra-core": "1",
-        "wickra-exchange-core": "0.1.1",
-        "wickra-exchange": "0.1.1",
+        "wickra-core": "1.0",
+        "wickra-exchange-core": "=0.1.5",
+        "wickra-exchange": "=0.1.5",
         "wickra-terminal-core": "0.1.4"
       },
       "lock": [
@@ -9653,7 +9653,7 @@
         {
           "name": "wickra-exchange",
           "versions": [
-            "0.1.1"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -9664,7 +9664,7 @@
         {
           "name": "wickra-exchange-core",
           "versions": [
-            "0.1.1"
+            "0.1.5"
           ],
           "origin": "registry",
           "git": null,
@@ -10051,7 +10051,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.1"
         },
         {
           "file": "README.md",
@@ -10570,7 +10570,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.2"
         },
         {
           "file": "README.md",
@@ -10656,14 +10656,14 @@
         "tag": "v0.1.2"
       },
       "pins": {
-        "wickra-backtest-core": "=0.1.4",
+        "wickra-backtest-core": "=0.1.6",
         "wickra-verify-core": "0.1.2"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.4"
+            "0.1.6"
           ],
           "origin": "registry",
           "git": null,
@@ -11052,7 +11052,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.1.3"
         },
         {
           "file": "README.md",
@@ -12036,13 +12036,6 @@
     {
       "repo": "wickra-backtest",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -12127,22 +12120,9 @@
     {
       "repo": "wickra-benchmark",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin `0.1.4` already allows it, so cargo update -p wickra-backtest-core closes it"
     },
     {
       "repo": "wickra-compile",
@@ -12245,13 +12225,6 @@
     {
       "repo": "wickra-compile",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -12343,13 +12316,6 @@
     {
       "repo": "wickra-copilot",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-copilot",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -12429,13 +12395,6 @@
       "kind": "not in the repository",
       "subject": "bindings/java/benchmarks/pom.xml",
       "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
@@ -12665,13 +12624,6 @@
     {
       "repo": "wickra-exchange",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -12763,13 +12715,6 @@
     {
       "repo": "wickra-feature-store",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -12854,13 +12799,6 @@
     {
       "repo": "wickra-genome",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -12933,13 +12871,6 @@
       "kind": "not in the repository",
       "subject": "bindings/java/benchmarks/pom.xml",
       "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
@@ -13024,13 +12955,6 @@
       "kind": "not in the repository",
       "subject": "bindings/java/benchmarks/pom.xml",
       "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
@@ -13344,22 +13268,9 @@
     {
       "repo": "wickra-proof",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin `=0.1.4` was not interpreted"
     },
     {
       "repo": "wickra-radar",
@@ -13443,13 +13354,6 @@
       "kind": "not in the repository",
       "subject": "examples/java/pom.xml",
       "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-radar",
-      "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
@@ -13539,13 +13443,6 @@
     {
       "repo": "wickra-screener",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-screener",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
@@ -13625,13 +13522,6 @@
       "kind": "not in the repository",
       "subject": "examples/java/pom.xml",
       "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
@@ -13735,22 +13625,9 @@
     {
       "repo": "wickra-strategy-ci",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin `0.1.4` already allows it, so cargo update -p wickra-backtest-core closes it"
     },
     {
       "repo": "wickra-synth",
@@ -13942,18 +13819,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-terminal",
-      "kind": "stale lock",
-      "subject": "wickra-exchange",
-      "detail": "locked at 0.1.1 while wickra-exchange publishes 0.1.5; the pin `0.1.1` already allows it, so cargo update -p wickra-exchange closes it"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "stale lock",
-      "subject": "wickra-exchange-core",
-      "detail": "locked at 0.1.1 while wickra-exchange-core publishes 0.1.5; the pin `0.1.1` already allows it, so cargo update -p wickra-exchange-core closes it"
-    },
-    {
       "repo": "wickra-timemachine",
       "kind": "no version reference",
       "subject": "crates/timemachine-cli/Cargo.toml",
@@ -14028,13 +13893,6 @@
       "kind": "not in the repository",
       "subject": "bindings/java/benchmarks/pom.xml",
       "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
@@ -14138,22 +13996,9 @@
     {
       "repo": "wickra-verify",
       "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
-      "informational": true
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "no version reference",
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.4 while wickra-backtest-core publishes 0.1.6; the pin `=0.1.4` was not interpreted"
     },
     {
       "repo": "wickra-xray",
@@ -14223,13 +14068,6 @@
       "kind": "not in the repository",
       "subject": "examples/java/pom.xml",
       "detail": "a binding or file this repository does not have",
-      "informational": true
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "no version reference",
-      "subject": "bindings/java/README.md",
-      "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
     },
     {
