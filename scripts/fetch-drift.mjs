@@ -491,7 +491,12 @@ function scanCi(p) {
         if (['--require-hashes', '-r ', '--no-index', '--find-links', '-e ', './', 'dist'].some((x) => args.includes(x))) continue
         add('defect', 'ci-unpinned', `${p.name} ${src}`, `\`pip install ${args}\` resolves from the index without a hash-locked requirements file`, [p.name])
       }
-      for (const m of text.matchAll(/(nightly-\d{4}-\d{2}-\d{2}|\bnightly\b)/g)) declNote('ci-matrix', 'fuzz nightly', p.name, m[1] === 'nightly' ? 'floating' : 'pinned', src)
+      // Only the lines that select a toolchain count; a comment explaining why
+      // the nightly is pinned names the word too.
+      for (const line of text.split('\n')) {
+        if (/^\s*#/.test(line)) continue
+        for (const m of line.matchAll(/(nightly-\d{4}-\d{2}-\d{2}|\bnightly\b)/g)) declNote('ci-matrix', 'fuzz nightly', p.name, m[1] === 'nightly' ? 'floating' : 'pinned', src)
+      }
     }
   }
   const ul = p.files.get('scripts/update-lockfiles.sh')
