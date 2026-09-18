@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-09-18T06:42:10Z",
+  "scanned_at": "2026-09-18T12:43:40Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 664,
       "shared": 386,
-      "differing": 168
+      "differing": 169
     },
     "npm": {
       "total": 110,
@@ -48,6 +48,7 @@
         "wickra-feature-store": "0.8.12",
         "wickra-screener": "0.7.8",
         "wickra-terminal": "0.7.8",
+        "wickra-xray": "0.7.8",
         "wickra-zk": "0.8.12"
       }
     },
@@ -12885,7 +12886,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "embed-bench",
-        "version": "0.1.0"
+        "version": "0.1.1"
       },
       {
         "ecosystem": "cargo",
@@ -26790,7 +26791,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "proof-bench",
-        "version": "0.1.2"
+        "version": "0.1.3"
       },
       {
         "ecosystem": "cargo",
@@ -36308,7 +36309,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "strategy-ci-bench",
-        "version": "0.1.3"
+        "version": "0.1.4"
       },
       {
         "ecosystem": "cargo",
@@ -37936,7 +37937,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "synth-bench",
-        "version": "0.1.2"
+        "version": "0.1.3"
       },
       {
         "ecosystem": "cargo",
@@ -44872,7 +44873,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "verify-bench",
-        "version": "0.1.2"
+        "version": "0.1.3"
       },
       {
         "ecosystem": "cargo",
@@ -45683,6 +45684,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "ahash",
+        "version": "0.7.8"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "aho-corasick",
         "version": "1.1.4"
       },
@@ -45791,6 +45798,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "bitvec",
+        "version": "1.1.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "block-buffer",
         "version": "0.12.1"
       },
@@ -45811,6 +45824,18 @@
         "source": "Cargo.lock",
         "name": "bumpalo",
         "version": "3.20.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "bytecheck",
+        "version": "0.6.12"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "bytecheck_derive",
+        "version": "0.6.12"
       },
       {
         "ecosystem": "cargo",
@@ -46103,6 +46128,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "funty",
+        "version": "2.0.0"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "futures",
         "version": "0.3.32"
       },
@@ -46189,6 +46220,12 @@
         "source": "Cargo.lock",
         "name": "half",
         "version": "2.7.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "hashbrown",
+        "version": "0.12.3"
       },
       {
         "ecosystem": "cargo",
@@ -46583,6 +46620,18 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "ptr_meta",
+        "version": "0.1.4"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "ptr_meta_derive",
+        "version": "0.1.4"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "pyo3",
         "version": "0.29.2"
       },
@@ -46651,6 +46700,12 @@
         "source": "Cargo.lock",
         "name": "r-efi",
         "version": "6.0.0"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "radium",
+        "version": "0.7.0"
       },
       {
         "ecosystem": "cargo",
@@ -46739,6 +46794,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "rend",
+        "version": "0.4.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "reqwest",
         "version": "0.12.28"
       },
@@ -46757,8 +46818,20 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "rkyv",
+        "version": "0.7.46"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "rkyv_derive",
+        "version": "0.7.46"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "rust_decimal",
-        "version": "1.43.0"
+        "version": "1.42.1"
       },
       {
         "ecosystem": "cargo",
@@ -46813,6 +46886,12 @@
         "source": "Cargo.lock",
         "name": "same-file",
         "version": "1.0.6"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "seahash",
+        "version": "4.1.0"
       },
       {
         "ecosystem": "cargo",
@@ -46901,6 +46980,12 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "simdutf8",
+        "version": "0.1.5"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "slab",
         "version": "0.4.12"
       },
@@ -46950,6 +47035,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
+        "version": "1.0.109"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "syn",
         "version": "2.0.118"
       },
       {
@@ -46969,6 +47060,12 @@
         "source": "Cargo.lock",
         "name": "synstructure",
         "version": "0.13.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "tap",
+        "version": "1.0.1"
       },
       {
         "ecosystem": "cargo",
@@ -47173,6 +47270,18 @@
         "source": "Cargo.lock",
         "name": "utf8parse",
         "version": "0.2.2"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "uuid",
+        "version": "1.26.1"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "version_check",
+        "version": "0.9.5"
       },
       {
         "ecosystem": "cargo",
@@ -47419,6 +47528,12 @@
         "source": "Cargo.lock",
         "name": "writeable",
         "version": "0.6.3"
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "wyz",
+        "version": "0.5.1"
       },
       {
         "ecosystem": "cargo",
