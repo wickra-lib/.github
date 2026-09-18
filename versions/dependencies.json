@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-18T21:10:00Z",
+  "scanned_at": "2026-09-18T22:27:34Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -20,7 +20,7 @@
     "python": {
       "total": 12,
       "shared": 3,
-      "differing": 1
+      "differing": 0
     },
     "r": {
       "total": 5,
@@ -796,14 +796,6 @@
         "wickra-verify": "2.1.3",
         "wickra-xray": "2.1.3",
         "wickra-zk": "2.2.1"
-      }
-    },
-    {
-      "ecosystem": "python",
-      "name": "numpy",
-      "byRepo": {
-        "wickra": ">=1.22",
-        "wickra-gym": ">=1.21"
       }
     }
   ],
@@ -22877,7 +22869,7 @@
         "ecosystem": "python",
         "source": "bindings/python/pyproject.toml",
         "name": "numpy",
-        "version": ">=1.21"
+        "version": ">=1.22"
       },
       {
         "ecosystem": "python",
@@ -28754,7 +28746,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "radar-bench",
-        "version": "0.1.1"
+        "version": "0.1.2"
       },
       {
         "ecosystem": "cargo",
