@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-18T12:43:40Z",
+  "scanned_at": "2026-09-18T16:44:34Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -1065,8 +1065,8 @@
     {
       "repo": "wickra-benchmark",
       "declared": "0.1.3",
-      "tag": "v0.1.2",
-      "release": "v0.1.2",
+      "tag": "v0.1.3",
+      "release": "v0.1.3",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -1372,63 +1372,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-benchmark-cli",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-benchmark-core",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-benchmark",
-          "version": "0.1.2",
+          "version": "0.1.3",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-benchmark",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-benchmark-linux-x64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-benchmark-linux-arm64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-benchmark-darwin-x64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-benchmark-darwin-arm64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-benchmark-win32-x64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-benchmark-win32-arm64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Benchmark",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-benchmark",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "r-universe",
@@ -1440,10 +1440,10 @@
         "repo": "wickra-benchmark-go",
         "module": "github.com/wickra-lib/wickra-benchmark-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-benchmark-go",
-        "tag": "v0.1.2"
+        "tag": "v0.1.3"
       },
       "pins": {
-        "wickra-backtest-core": "=0.1.6",
+        "wickra-backtest-core": "=0.1.7",
         "wickra-benchmark-core": "0.1.3",
         "wickra-core": "1.0"
       },
@@ -1451,7 +1451,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -1548,8 +1548,8 @@
     {
       "repo": "wickra-compile",
       "declared": "0.1.2",
-      "tag": "v0.1.1",
-      "release": "v0.1.1",
+      "tag": "v0.1.2",
+      "release": "v0.1.2",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -1855,63 +1855,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-compile",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-compile-core",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-compile",
-          "version": "0.1.1",
+          "version": "0.1.2",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-compile",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-compile-linux-x64-gnu",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-compile-linux-arm64-gnu",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-compile-darwin-x64",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-compile-darwin-arm64",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-compile-win32-x64-msvc",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-compile-win32-arm64-msvc",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Compile",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-compile",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "r-universe",
@@ -1923,17 +1923,17 @@
         "repo": "wickra-compile-go",
         "module": "github.com/wickra-lib/wickra-compile-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-compile-go",
-        "tag": "v0.1.1"
+        "tag": "v0.1.2"
       },
       "pins": {
         "wickra-compile-core": "0.1.2",
-        "wickra-backtest": "=0.1.6"
+        "wickra-backtest": "=0.1.7"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -1944,7 +1944,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -1956,7 +1956,7 @@
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -2617,8 +2617,8 @@
     {
       "repo": "wickra-darwin",
       "declared": "0.1.3",
-      "tag": "v0.1.2",
-      "release": "v0.1.2",
+      "tag": "v0.1.3",
+      "release": "v0.1.3",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -2924,63 +2924,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-darwin",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-darwin-core",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-darwin",
-          "version": "0.1.2",
+          "version": "0.1.3",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-linux-x64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-linux-arm64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-darwin-x64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-darwin-arm64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-win32-x64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-darwin-win32-arm64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Darwin",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-darwin",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "r-universe",
@@ -2992,18 +2992,18 @@
         "repo": "wickra-darwin-go",
         "module": "github.com/wickra-lib/wickra-darwin-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-darwin/bindings/go",
-        "tag": "v0.1.2"
+        "tag": "v0.1.3"
       },
       "pins": {
         "wickra-darwin-core": "0.1.3",
         "wickra-core": "1.0",
-        "wickra-backtest": "=0.1.6"
+        "wickra-backtest": "=0.1.7"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -3016,7 +3016,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -3028,7 +3028,7 @@
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -3125,7 +3125,7 @@
       "repo": "wickra-embed",
       "declared": "0.1.1",
       "tag": "v0.1.1",
-      "release": "v0.1.0",
+      "release": "v0.1.1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -3299,7 +3299,7 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-embed-core",
-          "version": "0.1.0"
+          "version": "0.1.1"
         }
       ],
       "go": null,
@@ -3345,8 +3345,8 @@
     {
       "repo": "wickra-exchange",
       "declared": "0.1.6",
-      "tag": "v0.1.5",
-      "release": "v0.1.5",
+      "tag": "v0.1.6",
+      "release": "v0.1.6",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -3659,63 +3659,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-exchange",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-exchange-core",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-exchange",
-          "version": "0.1.5",
+          "version": "0.1.6",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-darwin-arm64",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-darwin-x64",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-linux-arm64-gnu",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-linux-x64-gnu",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-win32-arm64-msvc",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "npm",
           "pkg": "wickra-exchange-win32-x64-msvc",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "NuGet",
           "pkg": "WickraExchange",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-exchange",
-          "version": "0.1.5"
+          "version": "0.1.6"
         },
         {
           "registry": "r-universe",
@@ -3727,7 +3727,7 @@
         "repo": "wickra-exchange-go",
         "module": "github.com/wickra-lib/wickra-exchange-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-exchange-go",
-        "tag": "v0.1.5"
+        "tag": "v0.1.6"
       },
       "pins": {
         "wickra-core": "1.0",
@@ -3832,8 +3832,8 @@
     {
       "repo": "wickra-feature-store",
       "declared": "0.1.2",
-      "tag": "v0.1.1",
-      "release": "v0.1.1",
+      "tag": "v0.1.2",
+      "release": "v0.1.2",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -4139,63 +4139,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-feature-store",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-feature-store-core",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-feature-store",
-          "version": "0.1.1",
+          "version": "0.1.2",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-feature-store",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-feature-store-darwin-arm64",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-feature-store-darwin-x64",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-feature-store-linux-arm64-gnu",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-feature-store-linux-x64-gnu",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-feature-store-win32-arm64-msvc",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-feature-store-win32-x64-msvc",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.FeatureStore",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-feature-store",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "r-universe",
@@ -4207,19 +4207,19 @@
         "repo": "wickra-feature-store-go",
         "module": "github.com/wickra-lib/wickra-feature-store-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-feature-store/bindings/go",
-        "tag": "v0.1.1"
+        "tag": "v0.1.2"
       },
       "pins": {
         "wickra-feature-store-core": "0.1.2",
         "wickra-core": "1.0",
         "wickra-data": "1.0",
-        "wickra-backtest-core": "=0.1.6"
+        "wickra-backtest-core": "=0.1.7"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -6264,8 +6264,8 @@
     {
       "repo": "wickra-proof",
       "declared": "0.1.3",
-      "tag": "v0.1.2",
-      "release": "v0.1.2",
+      "tag": "v0.1.3",
+      "release": "v0.1.3",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -6571,63 +6571,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-proof-cli",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-proof-core",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-proof",
-          "version": "0.1.2",
+          "version": "0.1.3",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-linux-x64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-linux-arm64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-darwin-x64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-darwin-arm64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-win32-x64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-proof-win32-arm64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Proof",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-proof",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "r-universe",
@@ -6639,17 +6639,17 @@
         "repo": "wickra-proof-go",
         "module": "github.com/wickra-lib/wickra-proof-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-proof-go",
-        "tag": "v0.1.2"
+        "tag": "v0.1.3"
       },
       "pins": {
-        "wickra-backtest-core": "=0.1.6",
+        "wickra-backtest-core": "=0.1.7",
         "wickra-proof-core": "0.1.3"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -8284,8 +8284,8 @@
     {
       "repo": "wickra-strategy-ci",
       "declared": "0.1.4",
-      "tag": "v0.1.3",
-      "release": "v0.1.3",
+      "tag": "v0.1.4",
+      "release": "v0.1.4",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -8591,63 +8591,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-strategy-ci-cli",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-strategy-ci-core",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-strategy-ci",
-          "version": "0.1.3",
+          "version": "0.1.4",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-linux-x64-gnu",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-linux-arm64-gnu",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-darwin-x64",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-darwin-arm64",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-win32-x64-msvc",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "npm",
           "pkg": "wickra-strategy-ci-win32-arm64-msvc",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.StrategyCi",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-strategy-ci",
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "registry": "r-universe",
@@ -8659,17 +8659,17 @@
         "repo": "wickra-strategy-ci-go",
         "module": "github.com/wickra-lib/wickra-strategy-ci-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-strategy-ci/bindings/go",
-        "tag": "v0.1.3"
+        "tag": "v0.1.4"
       },
       "pins": {
-        "wickra-backtest-core": "=0.1.6",
+        "wickra-backtest-core": "=0.1.7",
         "wickra-strategy-ci-core": "0.1.4"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -8764,8 +8764,8 @@
     {
       "repo": "wickra-synth",
       "declared": "0.1.3",
-      "tag": "v0.1.2",
-      "release": "v0.1.2",
+      "tag": "v0.1.3",
+      "release": "v0.1.3",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -9071,63 +9071,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-synth",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-synth-core",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-synth",
-          "version": "0.1.2",
+          "version": "0.1.3",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-synth",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-synth-darwin-arm64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-synth-darwin-x64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-synth-linux-arm64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-synth-linux-x64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-synth-win32-arm64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-synth-win32-x64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Synth",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-synth",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "r-universe",
@@ -9139,7 +9139,7 @@
         "repo": "wickra-synth-go",
         "module": "github.com/wickra-lib/wickra-synth-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-synth/bindings/go",
-        "tag": "v0.1.2"
+        "tag": "v0.1.3"
       },
       "pins": {
         "wickra-data": "1.0",
@@ -10278,8 +10278,8 @@
     {
       "repo": "wickra-verify",
       "declared": "0.1.3",
-      "tag": "v0.1.2",
-      "release": "v0.1.2",
+      "tag": "v0.1.3",
+      "release": "v0.1.3",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -10585,63 +10585,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-verify-cli",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-verify-core",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-verify",
-          "version": "0.1.2",
+          "version": "0.1.3",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-linux-x64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-linux-arm64-gnu",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-darwin-x64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-darwin-arm64",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-win32-x64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "npm",
           "pkg": "wickra-verify-win32-arm64-msvc",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Verify",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-verify",
-          "version": "0.1.2"
+          "version": "0.1.3"
         },
         {
           "registry": "r-universe",
@@ -10653,17 +10653,17 @@
         "repo": "wickra-verify-go",
         "module": "github.com/wickra-lib/wickra-verify-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-verify-go",
-        "tag": "v0.1.2"
+        "tag": "v0.1.3"
       },
       "pins": {
-        "wickra-backtest-core": "=0.1.6",
+        "wickra-backtest-core": "=0.1.7",
         "wickra-verify-core": "0.1.3"
       },
       "lock": [
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.6"
+            "0.1.7"
           ],
           "origin": "registry",
           "git": null,
@@ -11764,10 +11764,10 @@
       "version": "0.1.7"
     },
     "wickra-benchmark-core": {
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     "wickra-compile-core": {
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     "wickra-copilot-core": {
       "version": "0.1.0"
@@ -11779,22 +11779,22 @@
       "version": "1.0.5"
     },
     "wickra-darwin-core": {
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     "wickra-data": {
       "version": "1.0.5"
     },
     "wickra-embed-core": {
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "wickra-exchange": {
-      "version": "0.1.5"
+      "version": "0.1.6"
     },
     "wickra-exchange-core": {
-      "version": "0.1.5"
+      "version": "0.1.6"
     },
     "wickra-feature-store-core": {
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     "wickra-genome-core": {
       "version": "0.1.1"
@@ -11806,7 +11806,7 @@
       "version": "0.1.2"
     },
     "wickra-proof-core": {
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     "wickra-radar-core": {
       "version": "0.1.1"
@@ -11818,10 +11818,10 @@
       "version": "0.1.0"
     },
     "wickra-strategy-ci-core": {
-      "version": "0.1.3"
+      "version": "0.1.4"
     },
     "wickra-synth-core": {
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     "wickra-terminal-core": {
       "version": "0.1.4"
@@ -11830,7 +11830,7 @@
       "version": "0.1.1"
     },
     "wickra-verify-core": {
-      "version": "0.1.2"
+      "version": "0.1.3"
     },
     "wickra-xray-core": {
       "version": "0.1.3"
@@ -12133,86 +12133,8 @@
     {
       "repo": "wickra-benchmark",
       "kind": "registry differs",
-      "subject": "crates.io wickra-benchmark-cli",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-benchmark-core",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-benchmark",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "npm wickra-benchmark",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "npm wickra-benchmark-linux-x64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "npm wickra-benchmark-linux-arm64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "npm wickra-benchmark-darwin-x64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "npm wickra-benchmark-darwin-arm64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "npm wickra-benchmark-win32-x64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "npm wickra-benchmark-win32-arm64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Benchmark",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-benchmark",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
       "subject": "r-universe wickrabenchmark",
       "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.6 while wickra-backtest-core publishes 0.1.7; the pin `=0.1.6` was not interpreted"
     },
     {
       "repo": "wickra-benchmark",
@@ -12328,98 +12250,8 @@
     {
       "repo": "wickra-compile",
       "kind": "registry differs",
-      "subject": "crates.io wickra-compile",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-compile-core",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-compile",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "npm wickra-compile",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "npm wickra-compile-linux-x64-gnu",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "npm wickra-compile-linux-arm64-gnu",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "npm wickra-compile-darwin-x64",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "npm wickra-compile-darwin-arm64",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "npm wickra-compile-win32-x64-msvc",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "npm wickra-compile-win32-arm64-msvc",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Compile",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-compile",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
       "subject": "r-universe wickracompile",
       "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "stale lock",
-      "subject": "wickra-backtest",
-      "detail": "locked at 0.1.6 while wickra-backtest publishes 0.1.7; the pin `=0.1.6` was not interpreted"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.6 while wickra-backtest-core publishes 0.1.7; the pin is not declared here"
-    },
-    {
-      "repo": "wickra-compile",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-data",
-      "detail": "locked at 0.1.6 while wickra-backtest-data publishes 0.1.7; the pin is not declared here"
     },
     {
       "repo": "wickra-compile",
@@ -12621,6 +12453,18 @@
       "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
     },
     {
+      "repo": "wickra-copilot",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin is not declared here"
+    },
+    {
       "repo": "wickra-darwin",
       "kind": "no version reference",
       "subject": "crates/darwin-cli/Cargo.toml",
@@ -12707,98 +12551,8 @@
     {
       "repo": "wickra-darwin",
       "kind": "registry differs",
-      "subject": "crates.io wickra-darwin",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-darwin-core",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-darwin",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-linux-x64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-linux-arm64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-darwin-x64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-darwin-arm64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-win32-x64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "npm wickra-darwin-win32-arm64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Darwin",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-darwin",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
       "subject": "r-universe wickradarwin",
       "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "stale lock",
-      "subject": "wickra-backtest",
-      "detail": "locked at 0.1.6 while wickra-backtest publishes 0.1.7; the pin `=0.1.6` was not interpreted"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.6 while wickra-backtest-core publishes 0.1.7; the pin is not declared here"
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-data",
-      "detail": "locked at 0.1.6 while wickra-backtest-data publishes 0.1.7; the pin is not declared here"
     },
     {
       "repo": "wickra-darwin",
@@ -12927,18 +12681,6 @@
     },
     {
       "repo": "wickra-embed",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-embed-core",
-      "detail": "0.1.0 against the declared 0.1.1"
-    },
-    {
-      "repo": "wickra-embed",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.1",
-      "detail": "the newest release is v0.1.0; attaching assets depends on every publish job, so one failing leaves the tag without one"
-    },
-    {
-      "repo": "wickra-embed",
       "kind": "stale lock",
       "subject": "wickra-core",
       "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
@@ -13051,78 +12793,6 @@
     {
       "repo": "wickra-exchange",
       "kind": "registry differs",
-      "subject": "crates.io wickra-exchange",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-exchange-core",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-exchange",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "npm wickra-exchange",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "npm wickra-exchange-darwin-arm64",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "npm wickra-exchange-darwin-x64",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "npm wickra-exchange-linux-arm64-gnu",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "npm wickra-exchange-linux-x64-gnu",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "npm wickra-exchange-win32-arm64-msvc",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "npm wickra-exchange-win32-x64-msvc",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "NuGet WickraExchange",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-exchange",
-      "detail": "0.1.5 against the declared 0.1.6"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
       "subject": "r-universe wickraexchange",
       "detail": "0.1.5 against the declared 0.1.6"
     },
@@ -13226,86 +12896,8 @@
     {
       "repo": "wickra-feature-store",
       "kind": "registry differs",
-      "subject": "crates.io wickra-feature-store",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-feature-store-core",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-feature-store",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "npm wickra-feature-store",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "npm wickra-feature-store-darwin-arm64",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "npm wickra-feature-store-darwin-x64",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "npm wickra-feature-store-linux-arm64-gnu",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "npm wickra-feature-store-linux-x64-gnu",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "npm wickra-feature-store-win32-arm64-msvc",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "npm wickra-feature-store-win32-x64-msvc",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.FeatureStore",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-feature-store",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
       "subject": "r-universe wickrafeaturestore",
       "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.6 while wickra-backtest-core publishes 0.1.7; the pin `=0.1.6` was not interpreted"
     },
     {
       "repo": "wickra-feature-store",
@@ -13416,6 +13008,18 @@
       "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
     },
     {
+      "repo": "wickra-genome",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin is not declared here"
+    },
+    {
       "repo": "wickra-gym",
       "kind": "no version reference",
       "subject": "crates/gym-cli/Cargo.toml",
@@ -13521,6 +13125,18 @@
       "kind": "stale lock",
       "subject": "wickra-data",
       "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin is not declared here"
     },
     {
       "repo": "wickra-impact",
@@ -13631,6 +13247,18 @@
       "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
     },
     {
+      "repo": "wickra-impact",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin is not declared here"
+    },
+    {
       "repo": "wickra-pico",
       "kind": "not in the repository",
       "subject": "bindings/python/pyproject.toml",
@@ -13734,6 +13362,12 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-pico",
+      "kind": "stale lock",
+      "subject": "wickra-embed-core",
+      "detail": "locked at 0.1.0 while wickra-embed-core publishes 0.1.1; the pin `=0.1.0` was not interpreted"
     },
     {
       "repo": "wickra-playground",
@@ -13941,86 +13575,8 @@
     {
       "repo": "wickra-proof",
       "kind": "registry differs",
-      "subject": "crates.io wickra-proof-cli",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-proof-core",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-proof",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "npm wickra-proof",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "npm wickra-proof-linux-x64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "npm wickra-proof-linux-arm64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "npm wickra-proof-darwin-x64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "npm wickra-proof-darwin-arm64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "npm wickra-proof-win32-x64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "npm wickra-proof-win32-arm64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Proof",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-proof",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
       "subject": "r-universe wickraproof",
       "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-proof",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.6 while wickra-backtest-core publishes 0.1.7; the pin `=0.1.6` was not interpreted"
     },
     {
       "repo": "wickra-proof",
@@ -14126,6 +13682,18 @@
       "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
     },
     {
+      "repo": "wickra-radar",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin is not declared here"
+    },
+    {
       "repo": "wickra-screener",
       "kind": "no version reference",
       "subject": "crates/screener-cli/Cargo.toml",
@@ -14226,6 +13794,18 @@
       "kind": "stale lock",
       "subject": "wickra-data",
       "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin is not declared here"
     },
     {
       "repo": "wickra-shazam",
@@ -14330,6 +13910,18 @@
       "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
     },
     {
+      "repo": "wickra-shazam",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin is not declared here"
+    },
+    {
       "repo": "wickra-strategy-ci",
       "kind": "no version reference",
       "subject": "crates/strategy-ci-bench/Cargo.toml",
@@ -14430,86 +14022,8 @@
     {
       "repo": "wickra-strategy-ci",
       "kind": "registry differs",
-      "subject": "crates.io wickra-strategy-ci-cli",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-strategy-ci-core",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-strategy-ci",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "npm wickra-strategy-ci",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "npm wickra-strategy-ci-linux-x64-gnu",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "npm wickra-strategy-ci-linux-arm64-gnu",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "npm wickra-strategy-ci-darwin-x64",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "npm wickra-strategy-ci-darwin-arm64",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "npm wickra-strategy-ci-win32-x64-msvc",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "npm wickra-strategy-ci-win32-arm64-msvc",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.StrategyCi",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-strategy-ci",
-      "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
       "subject": "r-universe wickrastrategyci",
       "detail": "0.1.3 against the declared 0.1.4"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.6 while wickra-backtest-core publishes 0.1.7; the pin `=0.1.6` was not interpreted"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -14614,78 +14128,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-synth",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-synth-core",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-synth",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "npm wickra-synth",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "npm wickra-synth-darwin-arm64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "npm wickra-synth-darwin-x64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "npm wickra-synth-linux-arm64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "npm wickra-synth-linux-x64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "npm wickra-synth-win32-arm64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "npm wickra-synth-win32-x64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Synth",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-synth",
-      "detail": "0.1.2 against the declared 0.1.3"
     },
     {
       "repo": "wickra-synth",
@@ -14796,6 +14238,18 @@
       "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
     },
     {
+      "repo": "wickra-terminal",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-terminal",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
       "repo": "wickra-timemachine",
       "kind": "no version reference",
       "subject": "crates/timemachine-cli/Cargo.toml",
@@ -14904,6 +14358,12 @@
       "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
     },
     {
+      "repo": "wickra-timemachine",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
       "repo": "wickra-verify",
       "kind": "no version reference",
       "subject": "crates/verify-bench/Cargo.toml",
@@ -15004,86 +14464,8 @@
     {
       "repo": "wickra-verify",
       "kind": "registry differs",
-      "subject": "crates.io wickra-verify-cli",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-verify-core",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-verify",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-linux-x64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-linux-arm64-gnu",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-darwin-x64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-darwin-arm64",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-win32-x64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "npm wickra-verify-win32-arm64-msvc",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Verify",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-verify",
-      "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
       "subject": "r-universe wickraverify",
       "detail": "0.1.2 against the declared 0.1.3"
-    },
-    {
-      "repo": "wickra-verify",
-      "kind": "stale lock",
-      "subject": "wickra-backtest-core",
-      "detail": "locked at 0.1.6 while wickra-backtest-core publishes 0.1.7; the pin `=0.1.6` was not interpreted"
     },
     {
       "repo": "wickra-verify",
@@ -15175,6 +14557,18 @@
       "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin is not declared here"
     },
     {
+      "repo": "wickra-xray",
+      "kind": "stale lock",
+      "subject": "wickra-exchange",
+      "detail": "locked at 0.1.5 while wickra-exchange publishes 0.1.6; the pin `=0.1.5` was not interpreted"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "stale lock",
+      "subject": "wickra-exchange-core",
+      "detail": "locked at 0.1.5 while wickra-exchange-core publishes 0.1.6; the pin is not declared here"
+    },
+    {
       "repo": "wickra-zk",
       "kind": "no version reference",
       "subject": "bindings/csharp/WickraZk.Tests/WickraZk.Tests.csproj",
@@ -15253,6 +14647,12 @@
       "kind": "stale lock",
       "subject": "wickra-core",
       "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin is not declared here"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "stale lock",
+      "subject": "wickra-proof-core",
+      "detail": "locked at 0.1.2 while wickra-proof-core publishes 0.1.3; the pin `=0.1.2` was not interpreted"
     }
   ]
 }
