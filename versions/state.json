@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-19T19:36:46Z",
+  "scanned_at": "2026-09-19T22:48:00Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -12042,9 +12042,10 @@
     },
     {
       "repo": "wickra-backtest",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-benchmark",
@@ -12132,9 +12133,10 @@
     },
     {
       "repo": "wickra-benchmark",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-compile",
@@ -12243,9 +12245,10 @@
     },
     {
       "repo": "wickra-compile",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin is not declared here"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-copilot",
@@ -12340,15 +12343,17 @@
     },
     {
       "repo": "wickra-copilot",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-copilot",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-data",
-      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
     },
     {
       "repo": "wickra-darwin",
@@ -12436,9 +12441,10 @@
     },
     {
       "repo": "wickra-darwin",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-embed",
@@ -12561,9 +12567,10 @@
     },
     {
       "repo": "wickra-embed",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-exchange",
@@ -12672,9 +12679,10 @@
     },
     {
       "repo": "wickra-exchange",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-feature-store",
@@ -12769,9 +12777,10 @@
     },
     {
       "repo": "wickra-feature-store",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-genome",
@@ -12859,15 +12868,17 @@
     },
     {
       "repo": "wickra-genome",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-genome",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-data",
-      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
     },
     {
       "repo": "wickra-gym",
@@ -12948,15 +12959,17 @@
     },
     {
       "repo": "wickra-gym",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-gym",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-data",
-      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
     },
     {
       "repo": "wickra-impact",
@@ -13044,9 +13057,10 @@
     },
     {
       "repo": "wickra-impact",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-pico",
@@ -13358,9 +13372,10 @@
     },
     {
       "repo": "wickra-proof",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin is not declared here"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-radar",
@@ -13455,9 +13470,10 @@
     },
     {
       "repo": "wickra-radar",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-screener",
@@ -13545,15 +13561,17 @@
     },
     {
       "repo": "wickra-screener",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-screener",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-data",
-      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
     },
     {
       "repo": "wickra-shazam",
@@ -13641,15 +13659,17 @@
     },
     {
       "repo": "wickra-shazam",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-shazam",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-data",
-      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -13751,9 +13771,10 @@
     },
     {
       "repo": "wickra-strategy-ci",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin is not declared here"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-synth",
@@ -13855,15 +13876,17 @@
     },
     {
       "repo": "wickra-synth",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-synth",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-data",
-      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-data closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-data publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
     },
     {
       "repo": "wickra-terminal",
@@ -13951,9 +13974,10 @@
     },
     {
       "repo": "wickra-terminal",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-timemachine",
@@ -14041,9 +14065,10 @@
     },
     {
       "repo": "wickra-timemachine",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-verify",
@@ -14145,9 +14170,10 @@
     },
     {
       "repo": "wickra-verify",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin is not declared here"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-xray",
@@ -14228,9 +14254,10 @@
     },
     {
       "repo": "wickra-xray",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin is not declared here"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     },
     {
       "repo": "wickra-zk",
@@ -14290,9 +14317,10 @@
     },
     {
       "repo": "wickra-zk",
-      "kind": "stale lock",
+      "kind": "lock behind",
       "subject": "wickra-core",
-      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin is not declared here"
+      "maintenance": true,
+      "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
     }
   ]
 }

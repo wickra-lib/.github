@@ -1,9 +1,9 @@
 {
- "scanned_at": "2026-09-19T19:38:41Z",
+ "scanned_at": "2026-09-19T22:50:24Z",
  "counts": {
   "defect": 0,
-  "drift": 51,
-  "info": 86
+  "drift": 50,
+  "info": 82
  },
  "keys": [
   "decl:cargo|getrandom|0.2=wickra-feature-store,wickra-gym,wickra-strategy-ci,wickra-terminal,wickra-timemachine|0.3=wickra-terminal,wickra-timemachine|0.4=wickra-exchange,wickra-terminal,wickra-timemachine",
@@ -21,8 +21,7 @@
   "decl:npm|@napi-rs/cli|^3.10.4=wickra-screener,wickra-xray|^3.9.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-zk",
   "decl:npm|@vitejs/plugin-vue|^6.0.7=wickra-playground|^6.0.9=wickra-terminal,wickra-xray",
   "decl:npm|typescript|^6.0.3=wickra-terminal,wickra-xray|~6.0.3=wickra-playground",
-  "decl:npm|vite|^8.1.3=wickra-playground|^8.3.0=wickra-terminal,wickra-xray",
-  "decl:npm|vitest|^4.1.9=wickra-playground|^5.0.1=wickra-terminal",
+  "decl:npm|vitest|^5.0.0=wickra-playground|^5.0.1=wickra-terminal",
   "decl:npm|vue-tsc|^3.3.11=wickra-terminal,wickra-xray|^3.3.6=wickra-playground",
   "decl:toolchain|CMAKE_CXX_STANDARD|11=wickra-embed|17=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:toolchain|rust-version (crate)|1.86=wickra-pico|1.88=wickra-terminal|1.90=wickra-zk",
@@ -133,16 +132,12 @@
   "lock:npm|@octokit/openapi-types|27.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|29.x=wickra-zk",
   "lock:npm|@octokit/types|16.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|18.x=wickra-zk",
   "lock:npm|@oxc-project/types|0.148.x=wickra-playground@package-lock.json|0.150.x=wickra-terminal@web,wickra-xray@web",
-  "lock:npm|@vitest/mocker|4.x=wickra-playground@package-lock.json|5.x=wickra-terminal@web",
-  "lock:npm|@vitest/spy|4.x=wickra-playground@package-lock.json|5.x=wickra-terminal@web",
   "lock:npm|content-type|2.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|3.x=wickra-zk",
   "lock:npm|estree-walker|2.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web|3.x=wickra-playground@package-lock.json,wickra-terminal@web",
   "lock:npm|js-yaml|4.x=wickra-darwin,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-timemachine,wickra-verify|5.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-exchange,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-xray,wickra-zk",
-  "lock:npm|magic-string|0.30.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web|1.x=wickra-terminal@web",
+  "lock:npm|magic-string|0.30.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web|1.x=wickra-playground@package-lock.json,wickra-terminal@web",
   "lock:npm|obug|2.x=wickra-compile,wickra-copilot,wickra-darwin,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-playground@package-lock.json,wickra-proof,wickra-radar,wickra-shazam,wickra-terminal@web,wickra-timemachine,wickra-verify,wickra-zk|3.x=wickra,wickra-backtest,wickra-benchmark,wickra-exchange,wickra-screener,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-xray",
-  "lock:npm|picomatch|2.x=wickra-playground@package-lock.json|4.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web",
-  "lock:npm|tinybench|2.x=wickra-playground@package-lock.json|6.x=wickra-terminal@web",
-  "lock:npm|vitest|4.x=wickra-playground@package-lock.json|5.x=wickra-terminal@web"
+  "lock:npm|picomatch|2.x=wickra-playground@package-lock.json|4.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web"
  ],
  "findings": [
   {
@@ -494,25 +489,13 @@
   {
    "severity": "drift",
    "kind": "decl:npm",
-   "subject": "vite",
-   "detail": "^8.3.0: 2 [terminal, xray] | ^8.1.3: 1 [playground]",
-   "repos": [
-    "wickra-playground",
-    "wickra-terminal",
-    "wickra-xray"
-   ],
-   "key": "decl:npm|vite|^8.1.3=wickra-playground|^8.3.0=wickra-terminal,wickra-xray"
-  },
-  {
-   "severity": "drift",
-   "kind": "decl:npm",
    "subject": "vitest",
-   "detail": "^4.1.9: 1 [playground] | ^5.0.1: 1 [terminal]",
+   "detail": "^5.0.0: 1 [playground] | ^5.0.1: 1 [terminal]",
    "repos": [
     "wickra-playground",
     "wickra-terminal"
    ],
-   "key": "decl:npm|vitest|^4.1.9=wickra-playground|^5.0.1=wickra-terminal"
+   "key": "decl:npm|vitest|^5.0.0=wickra-playground|^5.0.1=wickra-terminal"
   },
   {
    "severity": "drift",
@@ -2644,28 +2627,6 @@
   {
    "severity": "info",
    "kind": "lock:npm",
-   "subject": "@vitest/mocker",
-   "detail": "4.x: 1 [playground@package-lock.json] | 5.x: 1 [terminal@web]",
-   "repos": [
-    "wickra-playground",
-    "wickra-terminal"
-   ],
-   "key": "lock:npm|@vitest/mocker|4.x=wickra-playground@package-lock.json|5.x=wickra-terminal@web"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:npm",
-   "subject": "@vitest/spy",
-   "detail": "4.x: 1 [playground@package-lock.json] | 5.x: 1 [terminal@web]",
-   "repos": [
-    "wickra-playground",
-    "wickra-terminal"
-   ],
-   "key": "lock:npm|@vitest/spy|4.x=wickra-playground@package-lock.json|5.x=wickra-terminal@web"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:npm",
    "subject": "content-type",
    "detail": "2.x: 21 [backtest, benchmark, compile, copilot, darwin, exchange, feature-store, genome, gym, impact, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, xray] | 3.x: 1 [zk]",
    "repos": [
@@ -2741,13 +2702,13 @@
    "severity": "info",
    "kind": "lock:npm",
    "subject": "magic-string",
-   "detail": "0.30.x: 3 [playground@package-lock.json, terminal@web, xray@web] | 1.x: 1 [terminal@web]",
+   "detail": "0.30.x: 3 [playground@package-lock.json, terminal@web, xray@web] | 1.x: 2 [playground@package-lock.json, terminal@web]",
    "repos": [
     "wickra-playground",
     "wickra-terminal",
     "wickra-xray"
    ],
-   "key": "lock:npm|magic-string|0.30.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web|1.x=wickra-terminal@web"
+   "key": "lock:npm|magic-string|0.30.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web|1.x=wickra-playground@package-lock.json,wickra-terminal@web"
   },
   {
    "severity": "info",
@@ -2792,28 +2753,6 @@
     "wickra-xray"
    ],
    "key": "lock:npm|picomatch|2.x=wickra-playground@package-lock.json|4.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:npm",
-   "subject": "tinybench",
-   "detail": "2.x: 1 [playground@package-lock.json] | 6.x: 1 [terminal@web]",
-   "repos": [
-    "wickra-playground",
-    "wickra-terminal"
-   ],
-   "key": "lock:npm|tinybench|2.x=wickra-playground@package-lock.json|6.x=wickra-terminal@web"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:npm",
-   "subject": "vitest",
-   "detail": "4.x: 1 [playground@package-lock.json] | 5.x: 1 [terminal@web]",
-   "repos": [
-    "wickra-playground",
-    "wickra-terminal"
-   ],
-   "key": "lock:npm|vitest|4.x=wickra-playground@package-lock.json|5.x=wickra-terminal@web"
   }
  ]
 }
