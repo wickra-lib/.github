@@ -1,10 +1,16 @@
 name: Refresh inbox
 
 # Once a day, what is waiting for a person across every repository of the org:
-# Dependabot pull requests whose checks have finished (with the verdict), and
-# issues or pull requests opened by people outside the org. Both lists are
+# Dependabot pull requests whose checks have finished (with the verdict),
+# issues or pull requests opened by people outside the org, and the open
+# security alerts (code scanning, Dependabot, secret scanning). The lists are
 # rewritten from scratch each run, so inbox/ holds only what is open now; the
 # commit history is the log of what came and went. See scripts/fetch-inbox.mjs.
+#
+# The alert endpoints need security_events read on each repository. The
+# workflow token has that here only, so INBOX_TOKEN carries a fine-grained
+# token with read access to the three alert lists across the org; until it is
+# set, the inbox names the repositories it could not read.
 on:
   schedule:
     - cron: '13 5 * * *' # daily 05:13 UTC, clear of the hourly refreshes
@@ -17,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  security-events: read
 
 concurrency:
   group: refresh-inbox
@@ -39,6 +46,7 @@ jobs:
       - name: Collect the inbox
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INBOX_TOKEN: ${{ secrets.INBOX_TOKEN }}
         run: node scripts/fetch-inbox.mjs
 
       - name: Commit if changed

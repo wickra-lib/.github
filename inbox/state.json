@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-19T09:31:10Z",
+  "scanned_at": "2026-09-19T21:38:11Z",
   "repos": 77,
   "dependabot": [
     {
@@ -19,108 +19,10 @@
       "created": "2026-09-17T20:41:23Z",
       "failing": [],
       "checks": 3
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 182,
-      "title": "deps(cargo): bump serde from 1.0.228 to 1.0.229 in the cargo group across 1 directory",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/182",
-      "created": "2026-09-18T11:00:01Z",
-      "failing": [
-        "Links (advisory)"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 181,
-      "title": "deps(npm): bump @napi-rs/cli from 3.9.0 to 3.9.1 in /bindings/node in the node-binding group across 1 directory",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/181",
-      "created": "2026-09-18T10:59:59Z",
-      "failing": [
-        "Links (advisory)",
-        "Node 24 on ubuntu-latest",
-        "Node 22 on ubuntu-latest"
-      ],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 180,
-      "title": "deps(cargo): bump the napi group across 1 directory with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/180",
-      "created": "2026-09-18T10:59:39Z",
-      "failing": [
-        "Links (advisory)"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 116,
-      "title": "deps(cargo): bump serde from 1.0.228 to 1.0.229 in the cargo group across 1 directory",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/116",
-      "created": "2026-09-18T11:06:51Z",
-      "failing": [
-        "External links (non-blocking)"
-      ],
-      "checks": 70
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 115,
-      "title": "deps(cargo): bump the napi group across 1 directory with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/115",
-      "created": "2026-09-18T11:06:22Z",
-      "failing": [
-        "External links (non-blocking)"
-      ],
-      "checks": 70
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 142,
-      "title": "deps(cargo): bump the napi group across 1 directory with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/142",
-      "created": "2026-09-18T10:57:14Z",
-      "failing": [
-        "Links (advisory)"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 141,
-      "title": "deps(npm): bump @napi-rs/cli from 3.9.0 to 3.9.1 in /bindings/node in the node-binding group across 1 directory",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/141",
-      "created": "2026-09-18T10:54:29Z",
-      "failing": [
-        "Links (advisory)",
-        "Node 22 on ubuntu-latest",
-        "Node 24 on ubuntu-latest"
-      ],
-      "checks": 65
     }
   ],
   "waiting": 0,
-  "people": [
-    {
-      "kind": "pull request",
-      "repo": "wickra-zk",
-      "number": 61,
-      "title": "deps: the family pins follow the owners' releases; release: 0.1.2",
-      "url": "https://github.com/wickra-lib/wickra-zk/pull/61",
-      "author": "kingchenc",
-      "created": "2026-09-18T20:30:09Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-playground",
-      "number": 13,
-      "title": "deps: vitest 5, @types/node 26.5.1, eslint-plugin-vue 10.11.0; TypeScript stays on 6",
-      "url": "https://github.com/wickra-lib/wickra-playground/pull/13",
-      "author": "kingchenc",
-      "created": "2026-09-17T18:58:30Z"
-    }
-  ]
+  "people": [],
+  "alerts": [],
+  "unreadable": []
 }
