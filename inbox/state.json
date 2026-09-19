@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-19T21:38:11Z",
+  "scanned_at": "2026-09-19T21:40:05Z",
   "repos": 77,
   "dependabot": [
     {
@@ -22,7 +22,633 @@
     }
   ],
   "waiting": 0,
-  "people": [],
+  "people": [
+    {
+      "kind": "pull request",
+      "repo": "wickra-playground",
+      "number": 13,
+      "title": "deps: vitest 5, @types/node 26.5.1, eslint-plugin-vue 10.11.0; TypeScript stays on 6",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/13",
+      "author": "kingchenc",
+      "created": "2026-09-17T18:58:30Z"
+    }
+  ],
   "alerts": [],
-  "unreadable": []
+  "unreadable": [
+    {
+      "repo": ".github",
+      "kinds": [
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "webpage",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-backtest",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-backtest-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-backtest-live",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-backtest-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-benchmark-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-benchmark-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-compile",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-compile-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-compile-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-copilot",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-copilot-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-copilot-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-darwin",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-darwin-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-darwin-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-docs",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-embed",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-embed-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-exchange",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-exchange-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-exchange-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-feature-store",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-feature-store-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-feature-store-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-genome",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-genome-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-genome-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-gym",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-gym-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-gym-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-impact",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-impact-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-impact-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-lib.r-universe.dev",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-live",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-pico",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-pico-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-playground",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-playground-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-proof",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-proof-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-proof-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-radar",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-radar-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-radar-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-screener",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-screener-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-screener-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-shazam",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-shazam-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-shazam-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-strategy-ci-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-strategy-ci-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-synth",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-synth-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-synth-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-terminal",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-terminal-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-terminal-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-timemachine-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-timemachine-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-verify",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-verify-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-verify-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-xray",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-xray-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-xray-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-zk",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-zk-go",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    },
+    {
+      "repo": "wickra-zk-site",
+      "kinds": [
+        "code scanning",
+        "Dependabot",
+        "secret scanning"
+      ]
+    }
+  ]
 }
