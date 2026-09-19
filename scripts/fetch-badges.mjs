@@ -15,11 +15,17 @@
  * and on demand. Fault-tolerant: if a single badge can't be fetched, the
  * previous committed snapshot is kept rather than dropped (so an unreleased
  * package keeps its placeholder until the first version is published).
+ *
+ * The static badges ("built on wickra", "status pre-release", "live demo",
+ * "built with VitePress", ...) are not fetched at all: repos.mjs names them and
+ * scripts/static-badge.mjs renders them, for every repository in the org that
+ * carries one, into the same profile/badges/<repo>/ directories.
  */
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
-import { REPO_NAMES, REPOS, FULL, BEST_PRACTICES_PENDING } from './repos.mjs'
+import { REPO_NAMES, REPOS, FULL, BEST_PRACTICES_PENDING, STATIC, PRODUCT_STATICS, STATIC_ROWS, indicators } from './repos.mjs'
+import { renderStaticBadge } from './static-badge.mjs'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const root = resolve(here, '..')
@@ -164,6 +170,47 @@ const extra = configured.filter((r) => !REPO_NAMES.includes(r))
 if (missing.length || extra.length) {
   throw new Error(`fetch-badges: config out of step with repos.mjs (missing: ${missing.join(', ') || 'none'}; unknown: ${extra.join(', ') || 'none'})`)
 }
+const staticsMissing = REPO_NAMES.filter((r) => !PRODUCT_STATICS[r])
+const staticsExtra = Object.keys(PRODUCT_STATICS).filter((r) => !REPO_NAMES.includes(r))
+if (staticsMissing.length || staticsExtra.length) {
+  throw new Error(`fetch-badges: PRODUCT_STATICS out of step with repos.mjs (missing: ${staticsMissing.join(', ') || 'none'}; unknown: ${staticsExtra.join(', ') || 'none'})`)
+}
+
+// The static rows of every repository, resolved to {slug, label, message,
+// color, logo}. The indicator count is the one indicator-count.yml keeps in
+// profile/README.md, read the way gen-banner.mjs reads it, so the badge and
+// the banner can never disagree.
+function staticRows() {
+  const readme = readFileSync(resolve(root, 'profile/README.md'), 'utf-8')
+  const count = readme.match(/(\d+)\s+indicators/i)
+  if (!count) throw new Error('fetch-badges: could not find the indicator count in profile/README.md')
+  const resolveBadge = (b) => {
+    if (typeof b !== 'string') return b
+    if (b === 'indicators') return indicators(count[1])
+    if (!STATIC[b]) throw new Error(`fetch-badges: unknown static badge ${b}`)
+    return { slug: b, ...STATIC[b] }
+  }
+  return Object.entries({ ...PRODUCT_STATICS, ...STATIC_ROWS }).map(([repo, row]) => ({ repo, badges: row.map(resolveBadge) }))
+}
+
+// Write the static badges; returns how many files changed. Deterministic, so
+// an unchanged badge is byte-identical and the commit step sees nothing.
+function renderStatics() {
+  let changed = 0
+  for (const { repo, badges } of staticRows()) {
+    const dir = resolve(root, `profile/badges/${repo}`)
+    mkdirSync(dir, { recursive: true })
+    for (const b of badges) {
+      const target = resolve(dir, `${b.slug}.svg`)
+      const svg = renderStaticBadge(b)
+      if (existsSync(target) && readFileSync(target, 'utf-8') === svg) continue
+      writeFileSync(target, svg)
+      changed++
+      console.log(`fetch-badges: /${repo}/${b.slug} rendered`)
+    }
+  }
+  return changed
+}
 
 function buildRow(cfg) {
   const repo = cfg.repo
@@ -207,6 +254,18 @@ if (process.argv.includes('--dry-run')) {
       console.log(`profile/badges/${cfg.repo}|${b.slug}\t${b.src}`)
     }
   }
+  for (const { repo, badges } of staticRows()) {
+    for (const b of badges) {
+      console.log(`profile/badges/${repo}|${b.slug}\tstatic ${b.label}: ${b.message}`)
+    }
+  }
+  process.exit(0)
+}
+
+// --static-only renders the static badges and skips the badge hosts; the
+// scheduled run does both.
+if (process.argv.includes('--static-only')) {
+  console.log(`fetch-badges: ${renderStatics()} static badge(s) changed`)
   process.exit(0)
 }
 
@@ -221,4 +280,5 @@ for (const cfg of REPOS) {
   pending += r.pending
 }
 
-console.log(`fetch-badges: done (${failures} failure(s), ${pending} awaiting a first publish, across ${REPOS.length} rows)`)
+const rendered = renderStatics()
+console.log(`fetch-badges: done (${failures} failure(s), ${pending} awaiting a first publish, across ${REPOS.length} rows; ${rendered} static badge(s) changed)`)

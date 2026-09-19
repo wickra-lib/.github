@@ -7,7 +7,7 @@
 [![OpenSSF Scorecard](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra/scorecard.svg)](https://scorecard.dev/viewer/?uri=github.com/wickra-lib/wickra)
 [![Build provenance](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra/provenance.svg)](https://github.com/wickra-lib/wickra/attestations)
 [![Verified across 10 languages](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra/verified.svg)](https://docs.wickra.org/FAQ#do-all-the-language-bindings-compute-the-same-values)
-[![Live demo](https://img.shields.io/badge/live%20demo-live.wickra.org-3b82f6)](https://live.wickra.org)
+[![Live demo](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-lib/live-demo.svg)](https://live.wickra.org)
 
 ---
 
