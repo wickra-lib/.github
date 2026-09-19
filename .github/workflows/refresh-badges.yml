@@ -15,6 +15,8 @@ on:
     paths:
       - scripts/fetch-badges.mjs
       - scripts/repos.mjs
+      - scripts/static-badge.mjs
+      - assets/logos/**
       - .github/workflows/refresh-badges.yml
 
 permissions:

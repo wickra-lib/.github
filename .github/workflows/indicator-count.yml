@@ -86,6 +86,10 @@ jobs:
       # the step above has already corrected, and renders the image from it.
       - run: npm run gen:banner
 
+      # The indicators badge reads the same count, so it moves in this commit
+      # rather than on the next hourly badge refresh.
+      - run: node scripts/fetch-badges.mjs --static-only
+
       - name: Commit if anything changed
         env:
           N: ${{ steps.count.outputs.count }}
