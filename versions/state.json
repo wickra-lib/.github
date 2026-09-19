@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-19T12:40:08Z",
+  "scanned_at": "2026-09-19T13:29:58Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -9247,7 +9247,7 @@
       "repo": "wickra-terminal",
       "declared": "0.1.5",
       "tag": "v0.1.5",
-      "release": "v0.1.4",
+      "release": "v0.1.5",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -9561,63 +9561,63 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-terminal",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-terminal-core",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-terminal",
-          "version": "0.1.4",
+          "version": "0.1.5",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-terminal",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "npm",
           "pkg": "wickra-terminal-linux-x64-gnu",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "npm",
           "pkg": "wickra-terminal-linux-arm64-gnu",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "npm",
           "pkg": "wickra-terminal-darwin-x64",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "npm",
           "pkg": "wickra-terminal-darwin-arm64",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "npm",
           "pkg": "wickra-terminal-win32-x64-msvc",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "npm",
           "pkg": "wickra-terminal-win32-arm64-msvc",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "NuGet",
           "pkg": "WickraTerminal",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-terminal",
-          "version": "0.1.4"
+          "version": "0.1.5"
         },
         {
           "registry": "r-universe",
@@ -9629,7 +9629,7 @@
         "repo": "wickra-terminal-go",
         "module": "github.com/wickra-lib/wickra-terminal-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-terminal-go",
-        "tag": "v0.1.4"
+        "tag": "v0.1.5"
       },
       "pins": {
         "wickra-core": "1.0",
@@ -11824,7 +11824,7 @@
       "version": "0.1.3"
     },
     "wickra-terminal-core": {
-      "version": "0.1.4"
+      "version": "0.1.5"
     },
     "wickra-timemachine-core": {
       "version": "0.1.2"
@@ -13952,86 +13952,8 @@
     {
       "repo": "wickra-terminal",
       "kind": "registry differs",
-      "subject": "crates.io wickra-terminal",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-terminal-core",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-terminal",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "npm wickra-terminal",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "npm wickra-terminal-linux-x64-gnu",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "npm wickra-terminal-linux-arm64-gnu",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "npm wickra-terminal-darwin-x64",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "npm wickra-terminal-darwin-arm64",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "npm wickra-terminal-win32-x64-msvc",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "npm wickra-terminal-win32-arm64-msvc",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "NuGet WickraTerminal",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-terminal",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
       "subject": "r-universe wickraterminal",
       "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.5",
-      "detail": "the newest release is v0.1.4; attaching assets depends on every publish job, so one failing leaves the tag without one"
     },
     {
       "repo": "wickra-terminal",
