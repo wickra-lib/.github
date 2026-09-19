@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-18T09:46:36Z",
+  "scanned_at": "2026-09-19T09:31:10Z",
   "repos": 77,
   "dependabot": [
     {
@@ -19,153 +19,99 @@
       "created": "2026-09-17T20:41:23Z",
       "failing": [],
       "checks": 3
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 182,
+      "title": "deps(cargo): bump serde from 1.0.228 to 1.0.229 in the cargo group across 1 directory",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/182",
+      "created": "2026-09-18T11:00:01Z",
+      "failing": [
+        "Links (advisory)"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 181,
+      "title": "deps(npm): bump @napi-rs/cli from 3.9.0 to 3.9.1 in /bindings/node in the node-binding group across 1 directory",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/181",
+      "created": "2026-09-18T10:59:59Z",
+      "failing": [
+        "Links (advisory)",
+        "Node 24 on ubuntu-latest",
+        "Node 22 on ubuntu-latest"
+      ],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 180,
+      "title": "deps(cargo): bump the napi group across 1 directory with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/180",
+      "created": "2026-09-18T10:59:39Z",
+      "failing": [
+        "Links (advisory)"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 116,
+      "title": "deps(cargo): bump serde from 1.0.228 to 1.0.229 in the cargo group across 1 directory",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/116",
+      "created": "2026-09-18T11:06:51Z",
+      "failing": [
+        "External links (non-blocking)"
+      ],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 115,
+      "title": "deps(cargo): bump the napi group across 1 directory with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/115",
+      "created": "2026-09-18T11:06:22Z",
+      "failing": [
+        "External links (non-blocking)"
+      ],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 142,
+      "title": "deps(cargo): bump the napi group across 1 directory with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/142",
+      "created": "2026-09-18T10:57:14Z",
+      "failing": [
+        "Links (advisory)"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 141,
+      "title": "deps(npm): bump @napi-rs/cli from 3.9.0 to 3.9.1 in /bindings/node in the node-binding group across 1 directory",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/141",
+      "created": "2026-09-18T10:54:29Z",
+      "failing": [
+        "Links (advisory)",
+        "Node 22 on ubuntu-latest",
+        "Node 24 on ubuntu-latest"
+      ],
+      "checks": 65
     }
   ],
   "waiting": 0,
   "people": [
     {
       "kind": "pull request",
-      "repo": "wickra-embed",
-      "number": 30,
-      "title": "release: 0.1.1",
-      "url": "https://github.com/wickra-lib/wickra-embed/pull/30",
+      "repo": "wickra-zk",
+      "number": 61,
+      "title": "deps: the family pins follow the owners' releases; release: 0.1.2",
+      "url": "https://github.com/wickra-lib/wickra-zk/pull/61",
       "author": "kingchenc",
-      "created": "2026-09-17T23:29:25Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-proof",
-      "number": 99,
-      "title": "release: 0.1.3",
-      "url": "https://github.com/wickra-lib/wickra-proof/pull/99",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:27:56Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-verify",
-      "number": 101,
-      "title": "release: 0.1.3",
-      "url": "https://github.com/wickra-lib/wickra-verify/pull/101",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:27:47Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-synth",
-      "number": 65,
-      "title": "release: 0.1.3",
-      "url": "https://github.com/wickra-lib/wickra-synth/pull/65",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:27:36Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-strategy-ci",
-      "number": 69,
-      "title": "release: 0.1.4",
-      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/69",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:27:26Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-exchange",
-      "number": 237,
-      "title": "release: 0.1.6",
-      "url": "https://github.com/wickra-lib/wickra-exchange/pull/237",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:27:14Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-terminal",
-      "number": 113,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/113",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:26:42Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-screener",
-      "number": 178,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/178",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:26:33Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-copilot",
-      "number": 121,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-copilot/pull/121",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:26:13Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-xray",
-      "number": 139,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/139",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:26:05Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-timemachine",
-      "number": 66,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/66",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:25:57Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-shazam",
-      "number": 119,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-shazam/pull/119",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:25:49Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-radar",
-      "number": 113,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-radar/pull/113",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:25:42Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-impact",
-      "number": 68,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-impact/pull/68",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:25:34Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-genome",
-      "number": 64,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-genome/pull/64",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:25:28Z"
-    },
-    {
-      "kind": "pull request",
-      "repo": "wickra-gym",
-      "number": 60,
-      "title": "deps: rust_decimal stays on 1.42.1, held like wickra-exchange",
-      "url": "https://github.com/wickra-lib/wickra-gym/pull/60",
-      "author": "kingchenc",
-      "created": "2026-09-17T23:25:21Z"
+      "created": "2026-09-18T20:30:09Z"
     },
     {
       "kind": "pull request",
