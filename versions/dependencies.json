@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-19T13:29:58Z",
+  "scanned_at": "2026-09-19T16:49:22Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -117,14 +117,14 @@
         "wickra-impact": "0.11.0",
         "wickra-proof": "0.11.0",
         "wickra-radar": "0.12.0",
-        "wickra-screener": "0.11.0",
+        "wickra-screener": "0.12.0",
         "wickra-shazam": "0.12.0",
         "wickra-strategy-ci": "0.11.0",
         "wickra-synth": "0.12.0",
-        "wickra-terminal": "0.11.0",
+        "wickra-terminal": "0.12.0",
         "wickra-timemachine": "0.11.0",
         "wickra-verify": "0.11.0",
-        "wickra-xray": "0.11.0",
+        "wickra-xray": "0.12.0",
         "wickra-zk": "0.12.0"
       }
     },
@@ -759,14 +759,14 @@
         "wickra-impact": "4.3.2",
         "wickra-proof": "4.3.2",
         "wickra-radar": "5.4.2",
-        "wickra-screener": "4.3.2",
+        "wickra-screener": "5.4.2",
         "wickra-shazam": "5.4.2",
         "wickra-strategy-ci": "5.4.2",
         "wickra-synth": "5.4.2",
         "wickra-terminal": "5.4.2",
         "wickra-timemachine": "4.3.2",
         "wickra-verify": "4.3.2",
-        "wickra-xray": "4.3.2",
+        "wickra-xray": "5.4.2",
         "wickra-zk": "5.4.1"
       }
     },
@@ -787,14 +787,14 @@
         "wickra-impact": "2.1.4",
         "wickra-proof": "2.1.3",
         "wickra-radar": "2.1.3",
-        "wickra-screener": "2.1.3",
+        "wickra-screener": "3.0.0",
         "wickra-shazam": "2.1.3",
         "wickra-strategy-ci": "3.0.0",
         "wickra-synth": "3.0.0",
         "wickra-terminal": "3.0.0",
         "wickra-timemachine": "2.1.4",
         "wickra-verify": "2.1.3",
-        "wickra-xray": "2.1.3",
+        "wickra-xray": "3.0.0",
         "wickra-zk": "2.2.1"
       }
     }
@@ -30506,7 +30506,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0"
+        "version": "0.12.0"
       },
       {
         "ecosystem": "cargo",
@@ -31010,31 +31010,31 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.2"
+        "version": "3.12.4"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.1"
+        "version": "2.4.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.3"
+        "version": "3.6.5"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.2"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0"
+        "version": "3.3.1"
       },
       {
         "ecosystem": "cargo",
@@ -31430,19 +31430,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_core",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_derive",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
@@ -32222,7 +32222,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.9.0"
+        "version": "3.10.4"
       },
       {
         "ecosystem": "npm",
@@ -32708,7 +32708,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -32732,7 +32732,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.3"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
@@ -38896,7 +38896,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0"
+        "version": "0.12.0"
       },
       {
         "ecosystem": "cargo",
@@ -39622,31 +39622,31 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.2"
+        "version": "3.12.4"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.1"
+        "version": "2.4.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.3"
+        "version": "3.6.5"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.2"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0"
+        "version": "3.3.1"
       },
       {
         "ecosystem": "cargo",
@@ -40216,19 +40216,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_core",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_derive",
-        "version": "1.0.228"
+        "version": "1.0.229"
       },
       {
         "ecosystem": "cargo",
@@ -45592,7 +45592,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0"
+        "version": "0.12.0"
       },
       {
         "ecosystem": "cargo",
@@ -46078,31 +46078,31 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.11.0"
+        "version": "3.12.4"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.3.2"
+        "version": "2.4.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.0"
+        "version": "3.6.5"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.1"
+        "version": "6.1.3"
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0"
+        "version": "3.3.1"
       },
       {
         "ecosystem": "cargo",
@@ -47272,7 +47272,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.9.0"
+        "version": "3.10.4"
       },
       {
         "ecosystem": "npm",
@@ -47758,7 +47758,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "4.3.2"
+        "version": "5.4.2"
       },
       {
         "ecosystem": "npm",
@@ -47782,7 +47782,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.1.3"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",

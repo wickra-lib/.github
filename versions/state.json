@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-19T13:29:58Z",
+  "scanned_at": "2026-09-19T16:49:22Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -7313,13 +7313,7 @@
           "version": "0.1.6"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-screener-linux-x64-gnu",
-          "ecosystem": "npm",
-          "present": true,
-          "version": "0.1.6"
-        },
-        {
-          "file": "bindings/node/package.json optionalDependencies.wickra-screener-linux-arm64-gnu",
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-darwin-arm64",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.6"
@@ -7331,19 +7325,25 @@
           "version": "0.1.6"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-screener-darwin-arm64",
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-linux-arm64-gnu",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.6"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-screener-win32-x64-msvc",
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-linux-x64-gnu",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.6"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-screener-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "present": true,
+          "version": "0.1.6"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-screener-win32-x64-msvc",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.6"
@@ -7564,12 +7564,7 @@
         },
         {
           "registry": "npm",
-          "pkg": "wickra-screener-linux-x64-gnu",
-          "version": "0.1.6"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-screener-linux-arm64-gnu",
+          "pkg": "wickra-screener-darwin-arm64",
           "version": "0.1.6"
         },
         {
@@ -7579,17 +7574,22 @@
         },
         {
           "registry": "npm",
-          "pkg": "wickra-screener-darwin-arm64",
+          "pkg": "wickra-screener-linux-arm64-gnu",
           "version": "0.1.6"
         },
         {
           "registry": "npm",
-          "pkg": "wickra-screener-win32-x64-msvc",
+          "pkg": "wickra-screener-linux-x64-gnu",
           "version": "0.1.6"
         },
         {
           "registry": "npm",
           "pkg": "wickra-screener-win32-arm64-msvc",
+          "version": "0.1.6"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-screener-win32-x64-msvc",
           "version": "0.1.6"
         },
         {
@@ -9622,7 +9622,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraterminal",
-          "version": "0.1.4"
+          "version": "0.1.5"
         }
       ],
       "go": {
@@ -10836,13 +10836,7 @@
           "version": "0.1.4"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-xray-linux-x64-gnu",
-          "ecosystem": "npm",
-          "present": true,
-          "version": "0.1.4"
-        },
-        {
-          "file": "bindings/node/package.json optionalDependencies.wickra-xray-linux-arm64-gnu",
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-darwin-arm64",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.4"
@@ -10854,19 +10848,25 @@
           "version": "0.1.4"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-xray-darwin-arm64",
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-linux-arm64-gnu",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.4"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-xray-win32-x64-msvc",
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-linux-x64-gnu",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.4"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-xray-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "present": true,
+          "version": "0.1.4"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-xray-win32-x64-msvc",
           "ecosystem": "npm",
           "present": true,
           "version": "0.1.4"
@@ -11087,12 +11087,7 @@
         },
         {
           "registry": "npm",
-          "pkg": "wickra-xray-linux-x64-gnu",
-          "version": "0.1.4"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-xray-linux-arm64-gnu",
+          "pkg": "wickra-xray-darwin-arm64",
           "version": "0.1.4"
         },
         {
@@ -11102,17 +11097,22 @@
         },
         {
           "registry": "npm",
-          "pkg": "wickra-xray-darwin-arm64",
+          "pkg": "wickra-xray-linux-arm64-gnu",
           "version": "0.1.4"
         },
         {
           "registry": "npm",
-          "pkg": "wickra-xray-win32-x64-msvc",
+          "pkg": "wickra-xray-linux-x64-gnu",
           "version": "0.1.4"
         },
         {
           "registry": "npm",
           "pkg": "wickra-xray-win32-arm64-msvc",
+          "version": "0.1.4"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-xray-win32-x64-msvc",
           "version": "0.1.4"
         },
         {
@@ -11262,7 +11262,7 @@
       "repo": "wickra-zk",
       "declared": "0.1.2",
       "tag": "v0.1.2",
-      "release": "v0.1.1",
+      "release": "v0.1.2",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -11541,70 +11541,70 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-zk",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-zk-host",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-zk-methods",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-zk",
-          "version": "0.1.1",
+          "version": "0.1.2",
           "note": "7 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk-darwin-arm64",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk-darwin-x64",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk-linux-arm64-gnu",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "npm",
           "pkg": "wickra-zk-linux-x64-gnu",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Zk",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-zk",
-          "version": "0.1.1"
+          "version": "0.1.2"
         },
         {
           "registry": "r-universe",
           "pkg": "wickrazk",
-          "version": "0.1.1"
+          "version": "0.1.2"
         }
       ],
       "go": {
         "repo": "wickra-zk-go",
         "module": "github.com/wickra-lib/wickra-zk-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-zk-go",
-        "tag": "v0.1.1"
+        "tag": "v0.1.2"
       },
       "pins": {
         "wickra-backtest": "=0.1.7",
@@ -13951,12 +13951,6 @@
     },
     {
       "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "r-universe wickraterminal",
-      "detail": "0.1.4 against the declared 0.1.5"
-    },
-    {
-      "repo": "wickra-terminal",
       "kind": "stale lock",
       "subject": "wickra-core",
       "detail": "locked at 1.0.4 while wickra-core publishes 1.0.5; the pin `1.0` already allows it, so cargo update -p wickra-core closes it"
@@ -14293,84 +14287,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-zk",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-zk-host",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "crates.io wickra-zk-methods",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "PyPI wickra-zk",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "npm wickra-zk",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "npm wickra-zk-darwin-arm64",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "npm wickra-zk-darwin-x64",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "npm wickra-zk-linux-arm64-gnu",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "npm wickra-zk-linux-x64-gnu",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "NuGet Wickra.Zk",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "Maven org.wickra:wickra-zk",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "r-universe wickrazk",
-      "detail": "0.1.1 against the declared 0.1.2"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "no release for the newest tag",
-      "subject": "v0.1.2",
-      "detail": "the newest release is v0.1.1; attaching assets depends on every publish job, so one failing leaves the tag without one"
     },
     {
       "repo": "wickra-zk",
