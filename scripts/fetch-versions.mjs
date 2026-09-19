@@ -16,8 +16,11 @@
  *      invisible until some later publish job fails on it.
  *   3. Is a repo still building against a sibling crate that has moved on? Each
  *      locked wickra crate is compared with what that crate publishes, and the
- *      declared pin decides whether the gap is a stale lockfile or a range that
- *      cannot reach the newer release at all.
+ *      declared pin decides what the gap is: an exact pin (`=x.y.z`) behind the
+ *      owner's release is a defect the consumer round has to move; a caret
+ *      range that cannot reach the release is a breaking-change review; a lock
+ *      behind a caret range that already admits the release is maintenance --
+ *      Dependabot's weekly refresh -- and is listed collapsed, not counted.
  *   4. Do two repos disagree about a third-party dependency? Every ecosystem a
  *      repo ships is read -- Cargo, npm, Maven, Python, R, NuGet, Go -- and the
  *      disagreements worth acting on are written to versions/dependencies.md.
@@ -1012,26 +1015,51 @@ function collectFindings(snapshot) {
       if (behind.length === 0) continue
 
       const pin = repo.pins[l.name] ?? null
-      const allows = pin === null ? null : caretAllows(pin, latest)
+      const exact = pin !== null && /^\s*=/.test(pin)
+      const allows = pin === null || exact ? null : caretAllows(pin, latest)
       // When the crate resolves more than once, the copy left behind is not the
       // one this repository's pin selected -- another dependent in the graph
       // requires it, and no `cargo update` here can move it. Saying otherwise
       // sends the reader after the wrong file.
       const duplicated = l.versions.length > 1
-      found.push({
-        repo: repo.repo,
-        kind: allows === false ? 'pin blocks update' : 'stale lock',
-        subject: l.name,
-        detail:
-          `locked at ${behind.join(', ')} while ${l.name} publishes ${latest}; ` +
-          (allows === false
-            ? `the pin \`${pin}\` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh`
-            : allows === true
+      const where = `locked at ${behind.join(', ')} while ${l.name} publishes ${latest}; `
+      if (exact) {
+        // The family's consumers pin their owners exactly, so an owner's release
+        // leaves every consumer here until its pin is moved by hand -- nothing
+        // refreshes an exact pin on its own, which is what makes it a defect.
+        found.push({
+          repo: repo.repo,
+          kind: 'stale family pin',
+          subject: l.name,
+          detail: where + `the exact pin \`${pin}\` holds it there, and nothing moves an exact pin but the consumer round after the owner's release`,
+        })
+      } else if (allows === false) {
+        found.push({
+          repo: repo.repo,
+          kind: 'pin blocks update',
+          subject: l.name,
+          detail: where + `the pin \`${pin}\` cannot reach it -- raising the pin is a breaking-change review, not a lockfile refresh`,
+        })
+      } else {
+        // The range already admits the release, or the crate is not declared
+        // here and follows a sibling's range: the lock is one `cargo update`
+        // behind, which Dependabot's weekly cargo group refreshes on its own.
+        found.push({
+          repo: repo.repo,
+          kind: 'lock behind',
+          subject: l.name,
+          maintenance: true,
+          detail:
+            where +
+            (allows === true
               ? duplicated
                 ? `the pin \`${pin}\` already admits it, so the older copy is not this pin's -- another dependent in the graph requires it, and raising that one closes both this and the duplicate above`
-                : `the pin \`${pin}\` already allows it, so cargo update -p ${l.name} closes it`
-              : `the pin ${pin === null ? 'is not declared here' : `\`${pin}\` was not interpreted`}`),
-      })
+                : `the pin \`${pin}\` already allows it; Dependabot's weekly cargo refresh (or cargo update -p ${l.name}) closes it`
+              : pin === null
+                ? `the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p ${l.name}) closes it`
+                : `the pin \`${pin}\` was not interpreted`),
+        })
+      }
     }
   }
   return found
@@ -1069,12 +1097,13 @@ const FINDING_ORDER = [
   'carries no version',
   'pin excludes the declared version',
   'no release for the newest tag',
+  'stale family pin',
   'pin blocks update',
   'manifest differs',
   'registry differs',
   'not published',
-  'stale lock',
   'git pin behind',
+  'lock behind',
   'no version reference',
   'not in the repository',
 ]
@@ -1083,6 +1112,14 @@ const FINDING_ORDER = [
 // last, collapsed, and aggregated by file: 334 rows of "this repo has no web/"
 // would bury 114 that matter, and one row per file says the same thing.
 const INFORMATIONAL_KINDS = new Set(['no version reference', 'not in the repository'])
+
+// Rows that are somebody's scheduled work rather than a fault: a lock one
+// `cargo update` behind a range that already admits the release, which
+// Dependabot's weekly cargo group refreshes. Rendered collapsed and row by
+// row (the repo and crate matter, unlike an absent file), not counted as a
+// finding -- between an owner's release and the next Dependabot run every
+// consumer would otherwise carry a finding it cannot act on differently.
+const MAINTENANCE_KINDS = new Set(['lock behind'])
 
 function mark(artefact, expected, released = true) {
   if (artefact.unreachable) return 'unreachable'
@@ -1113,11 +1150,13 @@ function render(snapshot) {
       '',
     )
   } else {
-    const actionable = snapshot.findings.filter((f) => !f.informational).length
+    const actionable = snapshot.findings.filter((f) => !f.informational && !f.maintenance).length
+    const maintenance = snapshot.findings.filter((f) => f.maintenance).length
+    const informational = snapshot.findings.filter((f) => f.informational).length
     lines.push(
       `## Findings (${actionable})`,
       '',
-      `Plus ${snapshot.findings.length - actionable} informational rows, collapsed at the end of this section: which files a repository does not have, and which of the ones it has name no version by design.`,
+      `Plus ${maintenance} maintenance row(s) and ${informational} informational rows, collapsed at the end of this section: locks a range already admits (Dependabot's weekly refresh), which files a repository does not have, and which of the ones it has name no version by design.`,
       '',
     )
     // Grouped by kind and ordered by what would be acted on first: a crate
@@ -1128,6 +1167,18 @@ function render(snapshot) {
     )
     for (const kind of kinds) {
       const group = snapshot.findings.filter((f) => f.kind === kind)
+      if (MAINTENANCE_KINDS.has(kind)) {
+        lines.push(
+          '<details>',
+          `<summary><b>${kind}</b> -- ${group.length}, Dependabot's weekly refresh</summary>`,
+          '',
+          '| repo | subject | detail |',
+          '| --- | --- | --- |',
+        )
+        for (const f of group) lines.push(`| \`${f.repo}\` | \`${f.subject}\` | ${f.detail} |`)
+        lines.push('', '</details>', '')
+        continue
+      }
       if (INFORMATIONAL_KINDS.has(kind)) {
         const byFile = new Map()
         for (const f of group) {
@@ -1164,7 +1215,7 @@ function render(snapshot) {
     // neither half of the ratio.
     const applicable = states.filter((state) => state !== 'absent' && state !== 'no reference')
     const ok = applicable.filter((state) => state === 'ok').length
-    const count = snapshot.findings.filter((f) => f.repo === repo.repo && !f.informational).length
+    const count = snapshot.findings.filter((f) => f.repo === repo.repo && !f.informational && !f.maintenance).length
     lines.push(
       `| \`${repo.repo}\` | ${repo.declared ?? '?'} | ${repo.tag ?? '-'} | ${repo.release ?? '-'} | ${ok}/${applicable.length} ok | ${count || '-'} |`,
     )
@@ -1501,10 +1552,10 @@ console.log(
   `dependencies: ${divergences.length} divergence(s) over ${Object.keys(dependencyStats(snapshot)).length} ecosystem(s)`,
 )
 
-const actionable = snapshot.findings.filter((f) => !f.informational)
+const actionable = snapshot.findings.filter((f) => !f.informational && !f.maintenance)
 if (actionable.length === 0) {
   console.log('no findings')
 } else {
-  console.log(`${actionable.length} finding(s), plus ${snapshot.findings.length - actionable.length} informational:`)
+  console.log(`${actionable.length} finding(s), plus ${snapshot.findings.filter((f) => f.maintenance).length} maintenance and ${snapshot.findings.filter((f) => f.informational).length} informational:`)
   for (const f of actionable) console.log(`  ${f.repo}: ${f.kind} -- ${f.subject}`)
 }
