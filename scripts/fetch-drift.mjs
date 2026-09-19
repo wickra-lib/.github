@@ -6,8 +6,9 @@
  *
  * What it reports, by severity:
  *
- *   defect  wrong on its own terms: a family crate pinned or locked below the
- *           version its owner's main declares, a git source for a published
+ *   defect  wrong on its own terms: a family crate pinned exactly below the
+ *           version its owner's main declares (or locked below an exact pin's
+ *           promise), a git source for a published
  *           crate, a committed lock that disagrees with its manifest, two
  *           versions of one family crate in one graph, an unpinned pip install
  *           in CI, a uv checksum that belongs to another release, a Dependabot
@@ -247,6 +248,7 @@ class Product {
     const wp = this.root.workspace?.package || {}
     this.version = wp.version || this.root.package?.version || null
     this.crates = new Set()
+    this.pins = new Map() // crate -> the spec this repo declares for it
     this.crateVersion = new Map()
     this.publishFalse = new Set()
     for (const [p, text] of files) {
@@ -293,6 +295,7 @@ function scanCargo(p, owner) {
         const spec = isObj(v) && 'git' in v ? 'git:' + (v.rev || v.tag || v.branch || 'HEAD') : typeof v === 'string' ? v : v?.version
         if (!spec) continue
         declNote('cargo', real, p.name, spec, src)
+        if (!p.pins.has(real)) p.pins.set(real, spec)
         const own = owner.get(real)
         if (own && own !== p) familyPin(p, real, spec, src, own)
         else if (own === p && p.crateVersion.get(real)) {
@@ -324,7 +327,16 @@ function scanCargo(p, owner) {
       if (!seen.has(n)) seen.set(n, new Set())
       seen.get(n).add(v)
       if (s.startsWith('git+')) add('defect', 'lock-git', `${p.name} ${r}`, `${n} ${v} comes from ${s.split('#')[0]}; ${own.name} publishes it`, [p.name, own.name])
-      else if (own.version && vcmp(v, own.version) < 0) add('defect', 'lock-stale', `${p.name} ${r}`, `${n} locked at ${v}; ${own.name} main is ${own.version}`, [p.name, own.name])
+      else if (own.version && vcmp(v, own.version) < 0) {
+        // An exact pin is a promise, and a lock that contradicts it is a defect.
+        // A caret pin leaves the lock to Dependabot's weekly refresh; a lock a
+        // release behind is maintenance, not a wrong state -- otherwise every
+        // patch of the core would demand a release of every consumer.
+        const spec = p.pins.get(n)
+        const exact = !!spec && spec.trim().startsWith('=')
+        const note = exact ? '' : ' (caret pin; the lock refresh is Dependabot\'s)'
+        add(exact ? 'defect' : 'drift', exact ? 'lock-stale' : 'lock-behind', `${p.name} ${r}`, `${n} locked at ${v}; ${own.name} main is ${own.version}${note}`, [p.name, own.name])
+      }
     }
     for (const [n, vs] of seen) if (vs.size > 1) add('defect', 'lock-duplicate', `${p.name} ${r}`, `two copies of ${n} in one graph: ${[...vs].sort().join(', ')}`, [p.name])
   }
