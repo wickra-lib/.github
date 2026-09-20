@@ -1,26 +1,7 @@
 {
-  "scanned_at": "2026-09-19T21:53:58Z",
+  "scanned_at": "2026-09-20T00:32:33Z",
   "repos": 77,
-  "dependabot": [
-    {
-      "repo": "wickra-backtest-live",
-      "number": 12,
-      "title": "deps(npm): bump vite from 8.2.2 to 8.3.0 in the site group",
-      "url": "https://github.com/wickra-lib/wickra-backtest-live/pull/12",
-      "created": "2026-09-17T20:38:04Z",
-      "failing": [],
-      "checks": 2
-    },
-    {
-      "repo": "wickra-live",
-      "number": 15,
-      "title": "deps(npm): bump vite from 8.2.2 to 8.3.0 in the site group",
-      "url": "https://github.com/wickra-lib/wickra-live/pull/15",
-      "created": "2026-09-17T20:41:23Z",
-      "failing": [],
-      "checks": 3
-    }
-  ],
+  "dependabot": [],
   "waiting": 0,
   "people": [],
   "alerts": [],
