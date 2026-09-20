@@ -84,6 +84,18 @@ async function snapshot(badges, outDir, { releaseRepo, goRepo }) {
   let pending = 0
   for (const b of badges) {
     const target = resolve(outDir, `${b.slug}.svg`)
+    // A badge whose content this repository knows entirely is rendered, not
+    // fetched: nothing a host could answer would be more right, and a host can
+    // answer wrong -- shields split the docs badge of feature-store.wickra.org
+    // at the hyphen in the host and returned "badge not found" on every run.
+    if (b.render) {
+      const svg = renderStaticBadge(b.render)
+      if (!existsSync(target) || readFileSync(target, 'utf-8') !== svg) {
+        writeFileSync(target, svg)
+        console.log(`fetch-badges: ${outDir.split('badges')[1] || ''}/${b.slug} rendered`)
+      }
+      continue
+    }
     try {
       const res = await fetch(b.src, { redirect: 'follow' })
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
@@ -197,6 +209,19 @@ function staticRows() {
 // an unchanged badge is byte-identical and the commit step sees nothing.
 function renderStatics() {
   let changed = 0
+  for (const cfg of REPOS) {
+    const dir = resolve(root, `profile/badges/${cfg.repo}`)
+    mkdirSync(dir, { recursive: true })
+    for (const b of buildRow(cfg)) {
+      if (!b.render) continue
+      const target = resolve(dir, `${b.slug}.svg`)
+      const svg = renderStaticBadge(b.render)
+      if (existsSync(target) && readFileSync(target, 'utf-8') === svg) continue
+      writeFileSync(target, svg)
+      changed++
+      console.log(`fetch-badges: /${cfg.repo}/${b.slug} rendered`)
+    }
+  }
   for (const { repo, badges } of staticRows()) {
     const dir = resolve(root, `profile/badges/${repo}`)
     mkdirSync(dir, { recursive: true })
@@ -236,14 +261,21 @@ function buildRow(cfg) {
     maven: `https://img.shields.io/maven-central/v/org.wickra/${repo}.svg?logo=apachemaven&color=blue`,
     go: `https://img.shields.io/github/v/tag/wickra-lib/${cfg.go ?? `${repo}-go`}.svg?logo=go&logoColor=white&color=00ADD8&label=go`,
     'r-universe': `https://wickra-lib.r-universe.dev/badges/${runiv}`,
-    license: 'https://img.shields.io/badge/license-MIT_OR_Apache--2.0-blue',
     scorecard: `https://api.securityscorecards.dev/projects/github.com/wickra-lib/${repo}/badge`,
     'best-practices': BEST_PRACTICES_PENDING,
-    provenance: 'https://img.shields.io/badge/provenance-attested-brightgreen?logo=github',
-    docs: `https://img.shields.io/badge/docs-${docs}-0ea5e9?logo=readthedocs&logoColor=white`,
-    verified: `https://img.shields.io/badge/verified-${verified}_languages-brightgreen`,
   }
-  return (cfg.set ?? FULL).map((slug) => ({ slug, src: cfg.overrides?.[slug] ?? src[slug] }))
+  // The static members of the row, rendered by static-badge.mjs.
+  const render = {
+    license: { label: 'license', message: 'MIT OR Apache-2.0', color: 'blue' },
+    provenance: { label: 'provenance', message: 'attested', color: 'brightgreen', logo: 'github' },
+    docs: { label: 'docs', message: docs, color: '0ea5e9', logo: 'readthedocs' },
+    verified: { label: 'verified', message: `${verified} languages`, color: 'brightgreen' },
+  }
+  return (cfg.set ?? FULL).map((slug) => {
+    const override = cfg.overrides?.[slug]
+    if (!override && render[slug]) return { slug, render: render[slug] }
+    return { slug, src: override ?? src[slug] }
+  })
 }
 
 // --dry-run prints the resolved URLs instead of fetching, so a change to the
@@ -251,7 +283,7 @@ function buildRow(cfg) {
 if (process.argv.includes('--dry-run')) {
   for (const cfg of REPOS) {
     for (const b of buildRow(cfg)) {
-      console.log(`profile/badges/${cfg.repo}|${b.slug}\t${b.src}`)
+      console.log(`profile/badges/${cfg.repo}|${b.slug}\t${b.render ? `static ${b.render.label}: ${b.render.message}` : b.src}`)
     }
   }
   for (const { repo, badges } of staticRows()) {
