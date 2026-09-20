@@ -491,10 +491,20 @@ function scanCi(p) {
       }
       for (const lang of ['java', 'go', 'python', 'node', 'dotnet']) {
         const vals = new Set()
-        for (const m of text.matchAll(new RegExp(`${lang}-version:\\s*(\\[[^\\]]+\\]|['"]?[\\w.]+['"]?)`, 'g'))) {
-          const v = m[1]
-          if (v.includes('${{')) continue
+        const addAll = (v) => {
           for (const x of v.match(/[\w.]+/g) || []) if (x !== 'matrix') vals.add(x.replace(/\.x$/, ''))
+        }
+        for (const m of text.matchAll(new RegExp(`${lang}-version:\\s*(\\[[^\\]]+\\]|['"]?[\\w.]+['"]?|\\$\\{\\{\\s*matrix\\.([\\w-]+)\\s*\\}\\})`, 'g'))) {
+          const v = m[1]
+          if (!v.includes('${{')) {
+            addAll(v)
+            continue
+          }
+          // `node-version: ${{ matrix.node }}` -- the versions are the matrix
+          // key's list, `node: ['22', '24']`, somewhere in the same file.
+          const key = m[2]
+          if (!key) continue
+          for (const list of text.matchAll(new RegExp(`^\\s*${key}:\\s*\\[([^\\]]+)\\]`, 'gm'))) addAll(list[1])
         }
         if (vals.size && src === '.github/workflows/ci.yml') declNote('ci-matrix', `${lang}-version in ci.yml`, p.name, [...vals].sort(vcmp).join(','), src)
       }
@@ -504,9 +514,11 @@ function scanCi(p) {
         add('defect', 'ci-unpinned', `${p.name} ${src}`, `\`pip install ${args}\` resolves from the index without a hash-locked requirements file`, [p.name])
       }
       // Only the lines that select a toolchain count; a comment explaining why
-      // the nightly is pinned names the word too.
-      for (const line of text.split('\n')) {
-        if (/^\s*#/.test(line)) continue
+      // the nightly is pinned names the word too, and so does a step name
+      // ("Install nightly Rust") or a trailing comment ("# nightly at 03:00").
+      for (const raw of text.split('\n')) {
+        if (/^\s*-?\s*name:/.test(raw)) continue
+        const line = raw.replace(/(^|\s)#.*$/, '')
         for (const m of line.matchAll(/(nightly-\d{4}-\d{2}-\d{2}|\bnightly\b)/g)) declNote('ci-matrix', 'fuzz nightly', p.name, m[1] === 'nightly' ? 'floating' : 'pinned', src)
       }
     }
