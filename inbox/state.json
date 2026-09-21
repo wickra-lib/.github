@@ -1,7 +1,17 @@
 {
-  "scanned_at": "2026-09-20T00:32:33Z",
+  "scanned_at": "2026-09-21T10:45:09Z",
   "repos": 77,
-  "dependabot": [],
+  "dependabot": [
+    {
+      "repo": "webpage",
+      "number": 79,
+      "title": "deps(npm): bump the site group with 2 updates",
+      "url": "https://github.com/wickra-lib/webpage/pull/79",
+      "created": "2026-09-20T21:52:44Z",
+      "failing": [],
+      "checks": 4
+    }
+  ],
   "waiting": 0,
   "people": [],
   "alerts": [],
