@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-21T17:12:26Z",
+  "scanned_at": "2026-09-22T22:25:49Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -10,7 +10,7 @@
     "npm": {
       "total": 109,
       "shared": 109,
-      "differing": 65
+      "differing": 64
     },
     "maven": {
       "total": 2,
@@ -740,34 +740,6 @@
         "wickra-verify": "2.0.0",
         "wickra-xray": "2.0.0",
         "wickra-zk": "3.0.0"
-      }
-    },
-    {
-      "ecosystem": "npm",
-      "name": "obug",
-      "byRepo": {
-        "wickra": "3.0.0",
-        "wickra-backtest": "3.0.0",
-        "wickra-benchmark": "3.0.0",
-        "wickra-compile": "3.0.0",
-        "wickra-copilot": "3.0.0",
-        "wickra-darwin": "3.0.0",
-        "wickra-exchange": "3.0.0",
-        "wickra-feature-store": "3.0.0",
-        "wickra-genome": "3.0.0",
-        "wickra-gym": "3.0.0",
-        "wickra-impact": "3.0.0",
-        "wickra-proof": "3.0.0",
-        "wickra-radar": "3.0.0",
-        "wickra-screener": "3.0.0",
-        "wickra-shazam": "3.0.0",
-        "wickra-strategy-ci": "3.0.0",
-        "wickra-synth": "3.0.0",
-        "wickra-terminal": "3.0.0",
-        "wickra-timemachine": "3.0.0",
-        "wickra-verify": "3.0.0",
-        "wickra-xray": "3.0.0",
-        "wickra-zk": "2.2.1"
       }
     }
   ],
@@ -50960,7 +50932,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.9.1"
+        "version": "3.10.4"
       },
       {
         "ecosystem": "npm",
@@ -51512,7 +51484,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "obug",
-        "version": "2.2.1"
+        "version": "3.0.0"
       },
       {
         "ecosystem": "npm",
