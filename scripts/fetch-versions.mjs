@@ -349,12 +349,29 @@ const pomArtifactId = (xml) => pomBody(xml).match(/<artifactId>([^<]+)<\/artifac
 // Everything in the lock that is not one of our own crates. cargoLockWickra
 // answers the sibling question; this answers the third-party one.
 function cargoLockThirdParty(lock) {
+  const blocks = lock.split('\n[[package]]\n').slice(1)
+  // Who requires what, from the lock's own dependency lists. A divergent
+  // version is only worth a decision if something in this family chose it;
+  // when a third-party package requires it, that package is the answer.
+  const requiredBy = new Map()
+  for (const block of blocks) {
+    const name = block.match(/^name = "([^"]+)"/m)?.[1]
+    const version = block.match(/^version = "([^"]+)"/m)?.[1]
+    if (!name || !version) continue
+    const list = block.match(/^dependencies = \[([\s\S]*?)^\]/m)?.[1] ?? ''
+    for (const dep of list.matchAll(/"([^" ]+)/g)) {
+      if (!requiredBy.has(dep[1])) requiredBy.set(dep[1], new Set())
+      // Name and version together: hmac 0.12 requires digest 0.10 where hmac
+      // 0.13 requires digest 0.11, and the name alone cannot tell those apart.
+      requiredBy.get(dep[1]).add(`${name} ${version}`)
+    }
+  }
   const out = []
-  for (const block of lock.split('\n[[package]]\n').slice(1)) {
+  for (const block of blocks) {
     const name = block.match(/^name = "([^"]+)"/m)?.[1]
     const version = block.match(/^version = "([^"]+)"/m)?.[1]
     if (!name || !version || name.startsWith('wickra')) continue
-    out.push({ name, version })
+    out.push({ name, version, requiredBy: [...(requiredBy.get(name) ?? [])].sort() })
   }
   return out
 }
@@ -567,7 +584,7 @@ function collectDeps(files, paths) {
     // Recorded even when it parses to nothing, so a binding with no third-party
     // dependencies reads as checked-and-empty rather than as not looked at.
     ecosystems.push(ecosystem)
-    for (const item of parse(text)) deps.push({ ecosystem, source, name: item.name, version: item.version })
+    for (const item of parse(text)) deps.push({ ecosystem, source, name: item.name, version: item.version, requiredBy: item.requiredBy ?? null })
   }
   return { deps, ecosystems }
 }
@@ -1368,21 +1385,72 @@ function dependencyIndex(snapshot) {
   for (const repo of snapshot.repos) {
     for (const dep of repo.deps) {
       const key = `${dep.ecosystem} ${dep.name}`
-      if (!index.has(key)) index.set(key, { ecosystem: dep.ecosystem, name: dep.name, byRepo: {} })
+      if (!index.has(key)) index.set(key, { ecosystem: dep.ecosystem, name: dep.name, byRepo: {}, requiredBy: {} })
       index.get(key).byRepo[repo.repo] = dep.version
+      if (dep.requiredBy) index.get(key).requiredBy[repo.repo] = dep.requiredBy
     }
   }
   return index
 }
 
+// Which packages each repository's graph contains, per ecosystem. A package
+// only one repository builds is what makes that repository's resolution its
+// own rather than a choice the family could align.
+function packageSets(snapshot) {
+  const sets = new Map()
+  for (const repo of snapshot.repos) {
+    for (const dep of repo.deps) {
+      const key = `${dep.ecosystem} ${dep.name} ${dep.version}`
+      if (!sets.has(key)) sets.set(key, new Set())
+      sets.get(key).add(repo.repo)
+    }
+  }
+  return sets
+}
+
+// The reason a row's minority version sits where it does, when the lock can
+// give one: the packages that require it in those repositories and that no
+// repository on the majority version builds at all. Null when the row is a
+// disagreement the family could settle.
+function heldBy(entry, sets) {
+  if (!LOCKED_ECOSYSTEMS.has(entry.ecosystem)) return null
+  const byVersion = new Map()
+  for (const [repo, version] of Object.entries(entry.byRepo)) {
+    if (!byVersion.has(version)) byVersion.set(version, [])
+    byVersion.get(version).push(repo)
+  }
+  if (byVersion.size < 2) return null
+  const ranked = [...byVersion].sort((a, b) => b[1].length - a[1].length)
+  const majority = new Set(ranked[0][1])
+  const holders = new Set()
+  for (const [, repos] of ranked.slice(1)) {
+    for (const repo of repos) {
+      const parents = entry.requiredBy[repo]
+      // No recorded parent means the repository declares it itself: a decision,
+      // not something held in place.
+      if (!parents || !parents.length) return null
+      for (const parent of parents) {
+        const where = sets.get(`${entry.ecosystem} ${parent}`)
+        // No entry means the parent is one of our own crates: this repository
+        // chose the version itself, which is a decision, not a constraint.
+        // A parent the majority also builds cannot be the reason the two differ.
+        if (!where || [...majority].some((r) => where.has(r))) return null
+        holders.add(parent)
+      }
+    }
+  }
+  return holders.size ? [...holders].sort() : null
+}
+
 function collectDivergences(snapshot) {
+  const sets = packageSets(snapshot)
   const rows = []
   for (const entry of dependencyIndex(snapshot).values()) {
     if (Object.keys(entry.byRepo).length < 2) continue
     const values = new Set(Object.values(entry.byRepo))
     if (values.size < 2) continue
     if (LOCKED_ECOSYSTEMS.has(entry.ecosystem) && new Set([...values].map(compatibilityTrack)).size < 2) continue
-    rows.push(entry)
+    rows.push({ ...entry, held: heldBy(entry, sets) })
   }
   return collapseFamilies(rows)
 }
@@ -1426,20 +1494,53 @@ function renderDependencies(snapshot, divergences) {
     '',
   ]
 
+  // A row whose odd version is required by packages no repository on the other
+  // version builds is not a disagreement anyone here can settle: the package
+  // that requires it is the answer. Those are listed with what holds them,
+  // collapsed, and left out of the count.
+  const open = divergences.filter((row) => !row.held)
+  const held = divergences.filter((row) => row.held)
+
   if (divergences.length === 0) {
     lines.push('Nothing to report: no dependency shared by two of these repos disagrees in a way worth acting on.', '')
   } else {
-    lines.push(
-      `## Findings (${divergences.length})`,
-      '',
-      `| ecosystem | dependency | ${repos.join(' | ')} |`,
-      `| --- | --- | ${repos.map(() => '---').join(' | ')} |`,
-    )
-    for (const row of divergences) {
-      const cells = repos.map((repo) => row.byRepo[repo] ?? '-')
-      lines.push(`| ${row.ecosystem} | \`${row.name}\` | ${cells.join(' | ')} |`)
+    lines.push(`## Findings (${open.length})`, '')
+    if (held.length) {
+      lines.push(`Plus ${held.length} row(s) held by a dependency of one repository's own graph, collapsed at the end of this section.`, '')
     }
-    lines.push('')
+    if (open.length === 0) {
+      lines.push('None: every difference below is held in place by a package only one side builds.', '')
+    } else {
+      lines.push(`| ecosystem | dependency | ${repos.join(' | ')} |`, `| --- | --- | ${repos.map(() => '---').join(' | ')} |`)
+      for (const row of open) {
+        const cells = repos.map((repo) => row.byRepo[repo] ?? '-')
+        lines.push(`| ${row.ecosystem} | \`${row.name}\` | ${cells.join(' | ')} |`)
+      }
+      lines.push('')
+    }
+
+    if (held.length) {
+      lines.push(
+        '<details>',
+        `<summary><b>held by a dependency</b> -- ${held.length}, nothing the family can align</summary>`,
+        '',
+        '| ecosystem | dependency | versions | required by |',
+        '| --- | --- | --- | --- |',
+      )
+      for (const row of held) {
+        const byVersion = new Map()
+        for (const [repo, version] of Object.entries(row.byRepo)) {
+          if (!byVersion.has(version)) byVersion.set(version, [])
+          byVersion.get(version).push(repo.replace(/^wickra-/, ''))
+        }
+        const versions = [...byVersion]
+          .sort((a, b) => b[1].length - a[1].length)
+          .map(([v, rs]) => `${v}: ${rs.length === repos.length - 1 ? 'the rest' : rs.sort().join(', ')}`)
+          .join(' \\| ')
+        lines.push(`| ${row.ecosystem} | \`${row.name}\` | ${versions} | ${row.held.map((h) => `\`${h}\``).join(', ')} |`)
+      }
+      lines.push('', '</details>', '')
+    }
 
     const families = divergences.filter((row) => row.family)
     if (families.length > 0) {
