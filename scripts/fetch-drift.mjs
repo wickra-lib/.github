@@ -631,10 +631,24 @@ function reduce(owner) {
   for (const [k, per] of [...decl].sort()) {
     const [eco, subject] = k.split('|')
     if (per.size < 2 && eco !== 'cargo') continue
+    // A crate's owner declares the version it publishes at; a consumer declares
+    // the pin it holds that owner to. Those are different statements about the
+    // same name, so comparing them reports the family's own rule -- exact pins
+    // on owners, plain versions at home -- as a disagreement. The consumers are
+    // compared with each other; the owner's own line is said once, as info.
+    const home = eco === 'cargo' ? owner.get(subject) : null
+    const ownDecl = home && per.has(home.name) ? [...per.get(home.name).keys()].sort() : null
+    const rest = ownDecl ? new Map([...per].filter(([repo]) => repo !== home.name)) : per
     const values = new Map()
-    for (const [repo, vs] of per) for (const v of vs.keys()) { if (!values.has(v)) values.set(v, new Set()); values.get(v).add(repo) }
-    const dup = [...per].filter(([, vs]) => vs.size > 1).map(([repo, vs]) => [repo, [...vs.keys()].sort()])
-    if (values.size < 2 && !dup.length) continue
+    for (const [repo, vs] of rest) for (const v of vs.keys()) { if (!values.has(v)) values.set(v, new Set()); values.get(v).add(repo) }
+    const dup = [...rest].filter(([, vs]) => vs.size > 1).map(([repo, vs]) => [repo, [...vs.keys()].sort()])
+    if (values.size < 2 && !dup.length) {
+      if (ownDecl && values.size === 1) {
+        const [v, rs] = [...values][0]
+        add('info', 'decl:cargo', subject, `${rs.size} consumer(s) pin ${v}; ${short(home.name)} declares its own crate as ${ownDecl.join('/')}`, [...per.keys()], `decl:own|${subject}|${v}=${[...rs].sort().join(',')}|${ownDecl.join('/')}`)
+      }
+      continue
+    }
     let sev = eco === 'supply' ? 'info' : 'drift'
     if (eco === 'dependabot' && !(values.has('covered') && values.has('uncovered'))) continue
     const groups = [...values].sort((a, b) => b[1].size - a[1].size)
