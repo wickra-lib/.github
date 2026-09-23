@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-23T00:08:17Z",
+  "scanned_at": "2026-09-23T04:14:34Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -262,7 +262,7 @@
           "digest 0.11.3"
         ],
         "wickra-timemachine": [
-          "der 0.8.1",
+          "der 0.8.2",
           "digest 0.11.3"
         ],
         "wickra-xray": [
@@ -296,11 +296,11 @@
         "wickra-radar": "0.12.0",
         "wickra-screener": "0.12.0",
         "wickra-shazam": "0.12.0",
-        "wickra-strategy-ci": "0.11.0",
+        "wickra-strategy-ci": "0.12.0",
         "wickra-synth": "0.12.0",
         "wickra-terminal": "0.12.0",
-        "wickra-timemachine": "0.11.0",
-        "wickra-verify": "0.11.0",
+        "wickra-timemachine": "0.12.0",
+        "wickra-verify": "0.12.0",
         "wickra-xray": "0.12.0",
         "wickra-zk": "0.12.0"
       },
@@ -366,12 +366,12 @@
           "napi-derive-backend 6.1.3"
         ],
         "wickra-strategy-ci": [
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2"
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4"
         ],
         "wickra-synth": [
-          "napi-derive 3.6.4",
-          "napi-derive-backend 6.1.3"
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4"
         ],
         "wickra-terminal": [
           "derive_more-impl 2.1.1",
@@ -379,12 +379,12 @@
           "napi-derive-backend 6.1.3"
         ],
         "wickra-timemachine": [
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2"
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4"
         ],
         "wickra-verify": [
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2"
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4"
         ],
         "wickra-xray": [
           "napi-derive 3.6.5",
@@ -502,19 +502,19 @@
           "codspeed-criterion-compat-walltime 5.0.1"
         ],
         "wickra-strategy-ci": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ],
         "wickra-synth": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ],
         "wickra-terminal": [
           "codspeed-criterion-compat-walltime 5.0.1"
         ],
         "wickra-timemachine": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ],
         "wickra-verify": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ],
         "wickra-xray": [
           "codspeed-criterion-compat-walltime 5.0.1"
@@ -626,7 +626,7 @@
         "wickra-screener": "0.8.1",
         "wickra-shazam": "0.8.2",
         "wickra-terminal": "0.8.1",
-        "wickra-timemachine": "0.8.1",
+        "wickra-timemachine": "0.8.2",
         "wickra-xray": "0.8.1",
         "wickra-zk": "0.7.10"
       },
@@ -1084,11 +1084,11 @@
           "criterion-plot 0.5.0"
         ],
         "wickra-strategy-ci": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ],
         "wickra-synth": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ],
         "wickra-terminal": [
@@ -1099,11 +1099,11 @@
           "unicode-truncate 2.0.1"
         ],
         "wickra-timemachine": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ],
         "wickra-verify": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ],
         "wickra-xray": [
@@ -1221,7 +1221,7 @@
           "elliptic-curve 0.14.1"
         ],
         "wickra-timemachine": [
-          "der 0.8.1",
+          "der 0.8.2",
           "elliptic-curve 0.14.1"
         ],
         "wickra-xray": [
@@ -1318,7 +1318,7 @@
         "wickra-radar": "0.10.2",
         "wickra-screener": "0.10.2",
         "wickra-shazam": "0.10.2",
-        "wickra-strategy-ci": "0.10.2",
+        "wickra-strategy-ci": "0.10.3",
         "wickra-synth": "0.9.5",
         "wickra-terminal": "0.10.2",
         "wickra-timemachine": "0.9.5",
@@ -1668,7 +1668,7 @@
           "signature 3.0.0"
         ],
         "wickra-strategy-ci": [
-          "rand 0.10.2",
+          "rand 0.10.3",
           "rand 0.9.5",
           "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
@@ -1704,7 +1704,7 @@
           "getrandom 0.4.3",
           "group 0.14.0",
           "primefield 0.14.0",
-          "rand 0.8.7",
+          "rand 0.8.8",
           "rand 0.9.5",
           "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
@@ -56927,10 +56927,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "aho-corasick",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "requiredBy": [
-          "regex 1.13.0",
-          "regex-automata 0.4.15"
+          "regex 1.13.1",
+          "regex-automata 0.4.18"
         ]
       },
       {
@@ -56939,7 +56939,7 @@
         "name": "anes",
         "version": "0.1.6",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -56948,7 +56948,7 @@
         "name": "anstream",
         "version": "1.0.0",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -56959,7 +56959,7 @@
         "requiredBy": [
           "anstream 1.0.0",
           "anstyle-wincon 3.0.11",
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -56995,7 +56995,7 @@
         "name": "anyhow",
         "version": "1.0.104",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -57039,12 +57039,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bitflags",
-        "version": "2.13.0",
+        "version": "2.13.2",
         "requiredBy": [
-          "napi 3.12.2",
+          "napi 3.13.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -57053,7 +57053,7 @@
         "name": "bumpalo",
         "version": "3.20.3",
         "requiredBy": [
-          "wasm-bindgen-macro-support 0.2.126"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -57062,7 +57062,7 @@
         "name": "cast",
         "version": "0.3.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ]
       },
@@ -57070,25 +57070,25 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cc",
-        "version": "1.2.67",
+        "version": "1.4.7",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cfg-if",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "requiredBy": [
           "getrandom 0.2.17",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "half 2.7.1",
-          "js-sys 0.3.103",
+          "js-sys 0.3.105",
           "libloading 0.9.0",
           "nix 0.31.3",
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -57106,7 +57106,7 @@
         "name": "ciborium",
         "version": "0.2.2",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -57132,10 +57132,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap",
-        "version": "4.6.6",
+        "version": "4.6.7",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-strategy-ci-cli 0.1.4"
         ]
       },
@@ -57143,44 +57143,44 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_builder",
-        "version": "4.6.6",
+        "version": "4.6.7",
         "requiredBy": [
-          "clap 4.6.6"
+          "clap 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_derive",
-        "version": "4.6.4",
+        "version": "4.6.7",
         "requiredBy": [
-          "clap 4.6.6"
+          "clap 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_lex",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
           "strategy-ci-bench 0.1.4"
         ]
@@ -57189,9 +57189,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat-walltime",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1"
+          "codspeed-criterion-compat 5.0.2"
         ]
       },
       {
@@ -57209,18 +57209,18 @@
         "name": "colored",
         "version": "3.1.1",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat 5.0.1"
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0",
+        "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2"
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4"
         ]
       },
       {
@@ -57229,14 +57229,14 @@
         "name": "criterion-plot",
         "version": "0.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-deque",
-        "version": "0.8.7",
+        "version": "0.8.8",
         "requiredBy": [
           "rayon-core 1.13.0"
         ]
@@ -57245,19 +57245,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-epoch",
-        "version": "0.9.20",
+        "version": "0.9.21",
         "requiredBy": [
-          "crossbeam-deque 0.8.7"
+          "crossbeam-deque 0.8.8"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-utils",
-        "version": "0.8.22",
+        "version": "0.8.23",
         "requiredBy": [
-          "crossbeam-deque 0.8.7",
-          "crossbeam-epoch 0.9.20",
+          "crossbeam-deque 0.8.8",
+          "crossbeam-epoch 0.9.21",
           "rayon-core 1.13.0"
         ]
       },
@@ -57274,10 +57274,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctor",
-        "version": "1.0.8",
+        "version": "1.0.13",
         "requiredBy": [
-          "napi 3.12.2",
-          "napi-derive 3.6.3"
+          "napi 3.13.0",
+          "napi-derive 3.6.9"
         ]
       },
       {
@@ -57293,7 +57293,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "either",
-        "version": "1.16.0",
+        "version": "1.18.0",
         "requiredBy": [
           "itertools 0.10.5",
           "rayon 1.12.0"
@@ -57305,14 +57305,14 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "fastrand",
-        "version": "2.4.1",
+        "version": "2.5.0",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -57321,9 +57321,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "find-msvc-tools",
-        "version": "0.1.9",
+        "version": "0.1.13",
         "requiredBy": [
-          "cc 1.2.67"
+          "cc 1.4.7"
         ]
       },
       {
@@ -57339,92 +57339,92 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-channel",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-core",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-channel 0.3.32",
-          "futures-executor 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-channel 0.3.34",
+          "futures-executor 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-executor",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32"
+          "futures 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-io",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-macro",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures-util 0.3.32"
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-sink",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-channel 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-channel 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-task",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-executor 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-executor 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-util",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-executor 0.3.32",
-          "js-sys 0.3.103"
+          "futures 0.3.34",
+          "futures-executor 0.3.34",
+          "js-sys 0.3.105"
         ]
       },
       {
@@ -57433,8 +57433,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "rand 0.10.2",
+          "codspeed 5.0.2",
+          "rand 0.10.3",
           "rand_core 0.9.5",
           "tempfile 3.27.0",
           "wickra-strategy-ci-wasm 0.1.4"
@@ -57446,8 +57446,8 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "rand 0.10.2",
+          "codspeed 5.0.2",
+          "rand 0.10.3",
           "rand_core 0.9.5",
           "tempfile 3.27.0",
           "wickra-strategy-ci-wasm 0.1.4"
@@ -57459,8 +57459,8 @@
         "name": "getrandom",
         "version": "0.4.3",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "rand 0.10.2",
+          "codspeed 5.0.2",
+          "rand 0.10.3",
           "rand_core 0.9.5",
           "tempfile 3.27.0",
           "wickra-strategy-ci-wasm 0.1.4"
@@ -57472,7 +57472,7 @@
         "name": "glob",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -57490,7 +57490,7 @@
         "name": "heck",
         "version": "0.5.0",
         "requiredBy": [
-          "clap_derive 4.6.4",
+          "clap_derive 4.6.7",
           "pyo3-macros-backend 0.29.2"
         ]
       },
@@ -57509,7 +57509,7 @@
         "name": "is-terminal",
         "version": "0.4.17",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -57527,7 +57527,7 @@
         "name": "itertools",
         "version": "0.10.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ]
       },
@@ -57544,29 +57544,29 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "js-sys",
-        "version": "0.3.103",
+        "version": "0.3.105",
         "requiredBy": [
           "getrandom 0.2.17",
-          "web-sys 0.3.103"
+          "web-sys 0.3.105"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "libc",
-        "version": "0.2.186",
+        "version": "0.2.189",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "errno 0.3.14",
           "getrandom 0.2.17",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.12.2",
+          "napi 3.13.0",
           "nix 0.31.3",
           "pyo3 0.29.2",
           "pyo3-ffi 0.29.2",
-          "rustix 1.1.4",
+          "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
       },
@@ -57576,7 +57576,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.0"
+          "napi-sys 3.3.2"
         ]
       },
       {
@@ -57585,7 +57585,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -57594,10 +57594,10 @@
         "name": "memchr",
         "version": "2.8.3",
         "requiredBy": [
-          "aho-corasick 1.1.4",
-          "futures-util 0.3.32",
-          "regex 1.13.0",
-          "regex-automata 0.4.15",
+          "aho-corasick 1.1.5",
+          "futures-util 0.3.34",
+          "regex 1.13.1",
+          "regex-automata 0.4.18",
           "serde_json 1.0.151"
         ]
       },
@@ -57605,7 +57605,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.2",
+        "version": "3.13.0",
         "requiredBy": [
           "wickra-strategy-ci-node 0.1.4"
         ]
@@ -57614,9 +57614,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.1",
+        "version": "2.5.0",
         "requiredBy": [
-          "napi 3.12.2",
+          "napi 3.13.0",
           "wickra-strategy-ci-node 0.1.4"
         ]
       },
@@ -57624,7 +57624,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.3",
+        "version": "3.6.9",
         "requiredBy": [
           "wickra-strategy-ci-node 0.1.4"
         ]
@@ -57633,18 +57633,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.2",
+        "version": "6.1.4",
         "requiredBy": [
-          "napi-derive 3.6.3"
+          "napi-derive 3.6.9"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0",
+        "version": "3.3.2",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
@@ -57653,7 +57653,7 @@
         "name": "nix",
         "version": "0.31.3",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -57662,7 +57662,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
@@ -57672,7 +57672,7 @@
         "version": "0.2.19",
         "requiredBy": [
           "approx 0.5.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "statrs 0.18.0"
@@ -57684,10 +57684,10 @@
         "name": "once_cell",
         "version": "1.21.4",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "pyo3 0.29.2",
           "tempfile 3.27.0",
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -57705,7 +57705,7 @@
         "name": "oorandom",
         "version": "11.1.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -57714,7 +57714,7 @@
         "name": "pin-project-lite",
         "version": "0.2.17",
         "requiredBy": [
-          "futures-util 0.3.32"
+          "futures-util 0.3.34"
         ]
       },
       {
@@ -57723,7 +57723,7 @@
         "name": "plotters",
         "version": "0.3.7",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -57749,7 +57749,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "portable-atomic",
-        "version": "1.13.1",
+        "version": "1.15.0",
         "requiredBy": [
           "pyo3 0.29.2"
         ]
@@ -57767,23 +57767,23 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "proc-macro2",
-        "version": "1.0.106",
+        "version": "1.0.107",
         "requiredBy": [
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "quote 1.0.46",
+          "quote 1.0.47",
           "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "syn 2.0.118",
-          "syn 3.0.3",
+          "syn 2.0.119",
+          "syn 3.0.6",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54"
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
@@ -57854,23 +57854,23 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "quote",
-        "version": "1.0.46",
+        "version": "1.0.47",
         "requiredBy": [
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "syn 2.0.118",
-          "syn 3.0.3",
+          "syn 2.0.119",
+          "syn 3.0.6",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro 0.2.126",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54"
+          "wasm-bindgen-macro 0.2.128",
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
@@ -57907,7 +57907,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rand",
-        "version": "0.10.2",
+        "version": "0.10.3",
         "requiredBy": [
           "proptest 1.11.0",
           "wickra-strategy-ci-core 0.1.4"
@@ -57929,7 +57929,7 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "rand 0.10.2",
+          "rand 0.10.3",
           "rand 0.9.5",
           "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
@@ -57942,7 +57942,7 @@
         "name": "rand_core",
         "version": "0.10.1",
         "requiredBy": [
-          "rand 0.10.2",
+          "rand 0.10.3",
           "rand 0.9.5",
           "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
@@ -57973,7 +57973,7 @@
         "name": "rayon",
         "version": "1.12.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-core 1.0.5",
           "wickra-strategy-ci-core 0.1.4"
         ]
@@ -57991,19 +57991,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex",
-        "version": "1.13.0",
+        "version": "1.13.1",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex-automata",
-        "version": "0.4.15",
+        "version": "0.4.18",
         "requiredBy": [
-          "regex 1.13.0"
+          "regex 1.13.1"
         ]
       },
       {
@@ -58013,8 +58013,8 @@
         "version": "0.8.11",
         "requiredBy": [
           "proptest 1.11.0",
-          "regex 1.13.0",
-          "regex-automata 0.4.15"
+          "regex 1.13.1",
+          "regex-automata 0.4.18"
         ]
       },
       {
@@ -58023,14 +58023,14 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -58041,7 +58041,7 @@
         "name": "rustversion",
         "version": "1.0.23",
         "requiredBy": [
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -58086,7 +58086,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.2"
+          "napi-derive-backend 6.1.4"
         ]
       },
       {
@@ -58096,8 +58096,8 @@
         "version": "1.0.229",
         "requiredBy": [
           "ciborium 0.2.2",
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 0.8.22",
           "serde_json 1.0.151",
           "tinytemplate 1.2.1",
@@ -58121,7 +58121,7 @@
         "name": "serde_derive",
         "version": "1.0.229",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "serde 1.0.229",
           "serde_core 1.0.229"
         ]
@@ -58141,8 +58141,8 @@
         "name": "serde_json",
         "version": "1.0.151",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 0.8.22",
           "strategy-ci-bench 0.1.4",
           "tinytemplate 1.2.1",
@@ -58159,7 +58159,7 @@
         "name": "shlex",
         "version": "2.0.1",
         "requiredBy": [
-          "cc 1.2.67"
+          "cc 1.4.7"
         ]
       },
       {
@@ -58168,7 +58168,7 @@
         "name": "slab",
         "version": "0.4.12",
         "requiredBy": [
-          "futures-util 0.3.32"
+          "futures-util 0.3.34"
         ]
       },
       {
@@ -58177,7 +58177,7 @@
         "name": "statrs",
         "version": "0.18.0",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -58193,47 +58193,47 @@
         "name": "strsim",
         "version": "0.11.1",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
-        "version": "2.0.118",
+        "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54"
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
-        "version": "3.0.3",
+        "version": "3.0.6",
         "requiredBy": [
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54"
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
@@ -58281,7 +58281,7 @@
         "name": "tinytemplate",
         "version": "1.2.1",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -58297,12 +58297,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "unicode-ident",
-        "version": "1.0.24",
+        "version": "1.0.26",
         "requiredBy": [
-          "proc-macro2 1.0.106",
-          "syn 2.0.118",
-          "syn 3.0.3",
-          "wasm-bindgen-shared 0.2.126"
+          "proc-macro2 1.0.107",
+          "syn 2.0.119",
+          "syn 3.0.6",
+          "wasm-bindgen-shared 0.2.128"
         ]
       },
       {
@@ -58311,7 +58311,7 @@
         "name": "unicode-segmentation",
         "version": "1.13.3",
         "requiredBy": [
-          "convert_case 0.11.0"
+          "convert_case 0.12.0"
         ]
       },
       {
@@ -58339,7 +58339,7 @@
         "name": "walkdir",
         "version": "2.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -58364,12 +58364,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
           "getrandom 0.2.17",
-          "js-sys 0.3.103",
+          "js-sys 0.3.105",
           "plotters 0.3.7",
-          "web-sys 0.3.103",
+          "web-sys 0.3.105",
           "wickra-strategy-ci-wasm 0.1.4"
         ]
       },
@@ -58377,35 +58377,35 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro-support",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen-macro 0.2.126"
+          "wasm-bindgen-macro 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-shared",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen 0.2.126",
-          "wasm-bindgen-macro-support 0.2.126"
+          "wasm-bindgen 0.2.128",
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "web-sys",
-        "version": "0.3.103",
+        "version": "0.3.105",
         "requiredBy": [
           "plotters 0.3.7"
         ]
@@ -58441,7 +58441,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.4",
+          "rustix 1.1.5",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -58459,7 +58459,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy",
-        "version": "0.8.54",
+        "version": "0.8.57",
         "requiredBy": [
           "half 2.7.1",
           "ppv-lite86 0.2.21"
@@ -58469,16 +58469,16 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy-derive",
-        "version": "0.8.54",
+        "version": "0.8.57",
         "requiredBy": [
-          "zerocopy 0.8.54"
+          "zerocopy 0.8.57"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zmij",
-        "version": "1.0.21",
+        "version": "1.0.23",
         "requiredBy": [
           "serde_json 1.0.151"
         ]
@@ -59301,10 +59301,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "aho-corasick",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "requiredBy": [
           "regex 1.13.1",
-          "regex-automata 0.4.16"
+          "regex-automata 0.4.18"
         ]
       },
       {
@@ -59313,7 +59313,7 @@
         "name": "anes",
         "version": "0.1.6",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -59322,7 +59322,7 @@
         "name": "anstream",
         "version": "1.0.0",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -59333,7 +59333,7 @@
         "requiredBy": [
           "anstream 1.0.0",
           "anstyle-wincon 3.0.11",
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -59369,7 +59369,7 @@
         "name": "anyhow",
         "version": "1.0.104",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -59413,12 +59413,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bitflags",
-        "version": "2.13.1",
+        "version": "2.13.2",
         "requiredBy": [
-          "napi 3.12.3",
+          "napi 3.13.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -59427,7 +59427,7 @@
         "name": "bumpalo",
         "version": "3.20.3",
         "requiredBy": [
-          "wasm-bindgen-macro-support 0.2.126"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -59436,7 +59436,7 @@
         "name": "cast",
         "version": "0.3.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ]
       },
@@ -59444,24 +59444,24 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cc",
-        "version": "1.2.67",
+        "version": "1.4.7",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cfg-if",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "requiredBy": [
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "half 2.7.1",
-          "js-sys 0.3.103",
+          "js-sys 0.3.105",
           "libloading 0.9.0",
           "nix 0.31.3",
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -59479,7 +59479,7 @@
         "name": "ciborium",
         "version": "0.2.2",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -59505,10 +59505,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap",
-        "version": "4.6.6",
+        "version": "4.6.7",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-synth 0.1.3"
         ]
       },
@@ -59516,44 +59516,44 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_builder",
-        "version": "4.6.6",
+        "version": "4.6.7",
         "requiredBy": [
-          "clap 4.6.6"
+          "clap 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_derive",
-        "version": "4.6.4",
+        "version": "4.6.7",
         "requiredBy": [
-          "clap 4.6.6"
+          "clap 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_lex",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
           "synth-bench 0.1.3"
         ]
@@ -59562,9 +59562,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat-walltime",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1"
+          "codspeed-criterion-compat 5.0.2"
         ]
       },
       {
@@ -59582,8 +59582,8 @@
         "name": "colored",
         "version": "3.1.1",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat 5.0.1"
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat 5.0.2"
         ]
       },
       {
@@ -59592,8 +59592,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.4",
-          "napi-derive-backend 6.1.3"
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4"
         ]
       },
       {
@@ -59602,14 +59602,14 @@
         "name": "criterion-plot",
         "version": "0.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-deque",
-        "version": "0.8.7",
+        "version": "0.8.8",
         "requiredBy": [
           "rayon-core 1.13.0"
         ]
@@ -59618,19 +59618,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-epoch",
-        "version": "0.9.20",
+        "version": "0.9.21",
         "requiredBy": [
-          "crossbeam-deque 0.8.7"
+          "crossbeam-deque 0.8.8"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-utils",
-        "version": "0.8.22",
+        "version": "0.8.23",
         "requiredBy": [
-          "crossbeam-deque 0.8.7",
-          "crossbeam-epoch 0.9.20",
+          "crossbeam-deque 0.8.8",
+          "crossbeam-epoch 0.9.21",
           "rayon-core 1.13.0"
         ]
       },
@@ -59665,17 +59665,17 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctor",
-        "version": "1.0.9",
+        "version": "1.0.13",
         "requiredBy": [
-          "napi 3.12.3",
-          "napi-derive 3.6.4"
+          "napi 3.13.0",
+          "napi-derive 3.6.9"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "either",
-        "version": "1.16.0",
+        "version": "1.18.0",
         "requiredBy": [
           "itertools 0.10.5",
           "rayon 1.12.0"
@@ -59687,7 +59687,7 @@
         "name": "equivalent",
         "version": "1.0.2",
         "requiredBy": [
-          "indexmap 2.14.0"
+          "indexmap 2.14.2"
         ]
       },
       {
@@ -59696,14 +59696,14 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "fastrand",
-        "version": "2.4.1",
+        "version": "2.5.0",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -59712,9 +59712,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "find-msvc-tools",
-        "version": "0.1.9",
+        "version": "0.1.13",
         "requiredBy": [
-          "cc 1.2.67"
+          "cc 1.4.7"
         ]
       },
       {
@@ -59730,92 +59730,92 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "napi 3.12.3"
+          "napi 3.13.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-channel",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-core",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-channel 0.3.32",
-          "futures-executor 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-channel 0.3.34",
+          "futures-executor 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-executor",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32"
+          "futures 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-io",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-macro",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures-util 0.3.32"
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-sink",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-channel 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-channel 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-task",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-executor 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-executor 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-util",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-executor 0.3.32",
-          "js-sys 0.3.103"
+          "futures 0.3.34",
+          "futures-executor 0.3.34",
+          "js-sys 0.3.105"
         ]
       },
       {
@@ -59824,7 +59824,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
@@ -59835,7 +59835,7 @@
         "name": "getrandom",
         "version": "0.4.3",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
@@ -59846,7 +59846,7 @@
         "name": "glob",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -59864,7 +59864,7 @@
         "name": "hashbrown",
         "version": "0.17.1",
         "requiredBy": [
-          "indexmap 2.14.0"
+          "indexmap 2.14.2"
         ]
       },
       {
@@ -59873,7 +59873,7 @@
         "name": "heck",
         "version": "0.5.0",
         "requiredBy": [
-          "clap_derive 4.6.4",
+          "clap_derive 4.6.7",
           "pyo3-macros-backend 0.29.2"
         ]
       },
@@ -59890,9 +59890,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "indexmap",
-        "version": "2.14.0",
+        "version": "2.14.2",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -59901,7 +59901,7 @@
         "name": "is-terminal",
         "version": "0.4.17",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -59919,7 +59919,7 @@
         "name": "itertools",
         "version": "0.10.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ]
       },
@@ -59937,27 +59937,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "js-sys",
-        "version": "0.3.103",
+        "version": "0.3.105",
         "requiredBy": [
-          "web-sys 0.3.103"
+          "web-sys 0.3.105"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "libc",
-        "version": "0.2.186",
+        "version": "0.2.189",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "errno 0.3.14",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.12.3",
+          "napi 3.13.0",
           "nix 0.31.3",
           "pyo3 0.29.2",
           "pyo3-ffi 0.29.2",
-          "rustix 1.1.4",
+          "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
       },
@@ -59967,7 +59967,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.1"
+          "napi-sys 3.3.2"
         ]
       },
       {
@@ -59976,7 +59976,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -59985,11 +59985,11 @@
         "name": "memchr",
         "version": "2.8.3",
         "requiredBy": [
-          "aho-corasick 1.1.4",
+          "aho-corasick 1.1.5",
           "csv-core 0.1.13",
-          "futures-util 0.3.32",
+          "futures-util 0.3.34",
           "regex 1.13.1",
-          "regex-automata 0.4.16",
+          "regex-automata 0.4.18",
           "serde_json 1.0.151"
         ]
       },
@@ -59997,7 +59997,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.3",
+        "version": "3.13.0",
         "requiredBy": [
           "wickra-synth-node 0.1.3"
         ]
@@ -60006,9 +60006,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.3",
+        "version": "2.5.0",
         "requiredBy": [
-          "napi 3.12.3",
+          "napi 3.13.0",
           "wickra-synth-node 0.1.3"
         ]
       },
@@ -60016,7 +60016,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.4",
+        "version": "3.6.9",
         "requiredBy": [
           "wickra-synth-node 0.1.3"
         ]
@@ -60025,18 +60025,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.3",
+        "version": "6.1.4",
         "requiredBy": [
-          "napi-derive 3.6.4"
+          "napi-derive 3.6.9"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.1",
+        "version": "3.3.2",
         "requiredBy": [
-          "napi 3.12.3"
+          "napi 3.13.0"
         ]
       },
       {
@@ -60045,7 +60045,7 @@
         "name": "nix",
         "version": "0.31.3",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -60054,7 +60054,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.12.3"
+          "napi 3.13.0"
         ]
       },
       {
@@ -60064,7 +60064,7 @@
         "version": "0.2.19",
         "requiredBy": [
           "approx 0.5.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "statrs 0.18.0"
@@ -60076,10 +60076,10 @@
         "name": "once_cell",
         "version": "1.21.4",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "pyo3 0.29.2",
           "tempfile 3.27.0",
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -60097,7 +60097,7 @@
         "name": "oorandom",
         "version": "11.1.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -60106,7 +60106,7 @@
         "name": "pin-project-lite",
         "version": "0.2.17",
         "requiredBy": [
-          "futures-util 0.3.32"
+          "futures-util 0.3.34"
         ]
       },
       {
@@ -60115,7 +60115,7 @@
         "name": "plotters",
         "version": "0.3.7",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -60141,7 +60141,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "portable-atomic",
-        "version": "1.13.1",
+        "version": "1.15.0",
         "requiredBy": [
           "pyo3 0.29.2"
         ]
@@ -60159,21 +60159,21 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "proc-macro2",
-        "version": "1.0.106",
+        "version": "1.0.107",
         "requiredBy": [
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.4",
-          "napi-derive-backend 6.1.3",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "quote 1.0.46",
+          "quote 1.0.47",
           "serde_derive 1.0.229",
           "syn 2.0.119",
-          "syn 3.0.3",
+          "syn 3.0.6",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54"
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
@@ -60244,21 +60244,21 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "quote",
-        "version": "1.0.46",
+        "version": "1.0.47",
         "requiredBy": [
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.4",
-          "napi-derive-backend 6.1.3",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "serde_derive 1.0.229",
           "syn 2.0.119",
-          "syn 3.0.3",
+          "syn 3.0.6",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro 0.2.126",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54"
+          "wasm-bindgen-macro 0.2.128",
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
@@ -60326,7 +60326,7 @@
         "name": "rayon",
         "version": "1.12.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-core 1.0.5"
         ]
       },
@@ -60345,15 +60345,15 @@
         "name": "regex",
         "version": "1.13.1",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex-automata",
-        "version": "0.4.16",
+        "version": "0.4.18",
         "requiredBy": [
           "regex 1.13.1"
         ]
@@ -60366,7 +60366,7 @@
         "requiredBy": [
           "proptest 1.11.0",
           "regex 1.13.1",
-          "regex-automata 0.4.16"
+          "regex-automata 0.4.18"
         ]
       },
       {
@@ -60375,14 +60375,14 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.12.3"
+          "napi 3.13.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -60393,7 +60393,7 @@
         "name": "rustversion",
         "version": "1.0.23",
         "requiredBy": [
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -60429,7 +60429,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.3"
+          "napi-derive-backend 6.1.4"
         ]
       },
       {
@@ -60439,8 +60439,8 @@
         "version": "1.0.229",
         "requiredBy": [
           "ciborium 0.2.2",
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "serde_json 1.0.151",
           "tinytemplate 1.2.1",
           "wickra-data 1.0.5",
@@ -60457,7 +60457,7 @@
           "serde 1.0.229",
           "serde_json 1.0.151",
           "serde_spanned 1.1.1",
-          "toml 1.1.5+spec-1.1.0",
+          "toml 1.1.6+spec-1.1.0",
           "toml_datetime 1.1.1+spec-1.1.0"
         ]
       },
@@ -60467,7 +60467,7 @@
         "name": "serde_derive",
         "version": "1.0.229",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "serde 1.0.229",
           "serde_core 1.0.229"
         ]
@@ -60478,8 +60478,8 @@
         "name": "serde_json",
         "version": "1.0.151",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "synth-bench 0.1.3",
           "tinytemplate 1.2.1",
           "wickra-data 1.0.5",
@@ -60494,7 +60494,7 @@
         "name": "serde_spanned",
         "version": "1.1.1",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -60503,7 +60503,7 @@
         "name": "shlex",
         "version": "2.0.1",
         "requiredBy": [
-          "cc 1.2.67"
+          "cc 1.4.7"
         ]
       },
       {
@@ -60512,7 +60512,7 @@
         "name": "slab",
         "version": "0.4.12",
         "requiredBy": [
-          "futures-util 0.3.32"
+          "futures-util 0.3.34"
         ]
       },
       {
@@ -60521,7 +60521,7 @@
         "name": "statrs",
         "version": "0.18.0",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -60530,7 +60530,7 @@
         "name": "strsim",
         "version": "0.11.1",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -60539,34 +60539,34 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.4",
-          "napi-derive-backend 6.1.3",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "serde_derive 1.0.229",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54"
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
-        "version": "3.0.3",
+        "version": "3.0.6",
         "requiredBy": [
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.4",
-          "napi-derive-backend 6.1.3",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "serde_derive 1.0.229",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54"
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
@@ -60621,14 +60621,14 @@
         "name": "tinytemplate",
         "version": "1.2.1",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.5+spec-1.1.0",
+        "version": "1.1.6+spec-1.1.0",
         "requiredBy": [
           "wickra-synth-core 0.1.3"
         ]
@@ -60639,7 +60639,7 @@
         "name": "toml_datetime",
         "version": "1.1.1+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -60648,7 +60648,7 @@
         "name": "toml_parser",
         "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -60657,7 +60657,7 @@
         "name": "toml_writer",
         "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -60673,12 +60673,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "unicode-ident",
-        "version": "1.0.24",
+        "version": "1.0.26",
         "requiredBy": [
-          "proc-macro2 1.0.106",
+          "proc-macro2 1.0.107",
           "syn 2.0.119",
-          "syn 3.0.3",
-          "wasm-bindgen-shared 0.2.126"
+          "syn 3.0.6",
+          "wasm-bindgen-shared 0.2.128"
         ]
       },
       {
@@ -60715,7 +60715,7 @@
         "name": "walkdir",
         "version": "2.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -60731,11 +60731,11 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "js-sys 0.3.103",
+          "js-sys 0.3.105",
           "plotters 0.3.7",
-          "web-sys 0.3.103",
+          "web-sys 0.3.105",
           "wickra-synth-wasm 0.1.3"
         ]
       },
@@ -60743,35 +60743,35 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro-support",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen-macro 0.2.126"
+          "wasm-bindgen-macro 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-shared",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen 0.2.126",
-          "wasm-bindgen-macro-support 0.2.126"
+          "wasm-bindgen 0.2.128",
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "web-sys",
-        "version": "0.3.103",
+        "version": "0.3.105",
         "requiredBy": [
           "plotters 0.3.7"
         ]
@@ -60807,7 +60807,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.4",
+          "rustix 1.1.5",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -60818,7 +60818,7 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0",
+          "toml 1.1.6+spec-1.1.0",
           "toml_parser 1.1.3+spec-1.1.0"
         ]
       },
@@ -60835,7 +60835,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy",
-        "version": "0.8.54",
+        "version": "0.8.57",
         "requiredBy": [
           "half 2.7.1",
           "ppv-lite86 0.2.21"
@@ -60845,9 +60845,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy-derive",
-        "version": "0.8.54",
+        "version": "0.8.57",
         "requiredBy": [
-          "zerocopy 0.8.54"
+          "zerocopy 0.8.57"
         ]
       },
       {
@@ -66990,10 +66990,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "aho-corasick",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "requiredBy": [
           "regex 1.13.1",
-          "regex-automata 0.4.16"
+          "regex-automata 0.4.18"
         ]
       },
       {
@@ -67002,7 +67002,7 @@
         "name": "anes",
         "version": "0.1.6",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -67011,7 +67011,7 @@
         "name": "anstream",
         "version": "1.0.0",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -67022,7 +67022,7 @@
         "requiredBy": [
           "anstream 1.0.0",
           "anstyle-wincon 3.0.11",
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -67058,7 +67058,7 @@
         "name": "anyhow",
         "version": "1.0.104",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -67141,12 +67141,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bitflags",
-        "version": "2.13.1",
+        "version": "2.13.2",
         "requiredBy": [
-          "napi 3.12.2",
+          "napi 3.13.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -67162,7 +67162,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "borsh",
-        "version": "1.8.0",
+        "version": "1.8.1",
         "requiredBy": [
           "rust_decimal 1.43.0"
         ]
@@ -67171,9 +67171,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "borsh-derive",
-        "version": "1.8.0",
+        "version": "1.8.1",
         "requiredBy": [
-          "borsh 1.8.0"
+          "borsh 1.8.1"
         ]
       },
       {
@@ -67182,7 +67182,7 @@
         "name": "bumpalo",
         "version": "3.20.3",
         "requiredBy": [
-          "wasm-bindgen-macro-support 0.2.126"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -67191,7 +67191,7 @@
         "name": "bytes",
         "version": "1.12.1",
         "requiredBy": [
-          "borsh 1.8.0",
+          "borsh 1.8.1",
           "rust_decimal 1.43.0"
         ]
       },
@@ -67201,7 +67201,7 @@
         "name": "cast",
         "version": "0.3.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ]
       },
@@ -67209,26 +67209,26 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cc",
-        "version": "1.2.67",
+        "version": "1.4.7",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cfg-if",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "requiredBy": [
           "getrandom 0.2.17",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "half 2.7.1",
-          "js-sys 0.3.103",
+          "js-sys 0.3.105",
           "libloading 0.9.0",
           "nix 0.31.3",
           "sha2 0.11.0",
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -67237,7 +67237,7 @@
         "name": "cfg_aliases",
         "version": "0.2.2",
         "requiredBy": [
-          "borsh 1.8.0",
+          "borsh 1.8.1",
           "nix 0.31.3"
         ]
       },
@@ -67247,7 +67247,7 @@
         "name": "ciborium",
         "version": "0.2.2",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -67273,10 +67273,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap",
-        "version": "4.6.6",
+        "version": "4.6.7",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-timemachine 0.1.2"
         ]
       },
@@ -67284,27 +67284,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_builder",
-        "version": "4.6.6",
+        "version": "4.6.7",
         "requiredBy": [
-          "clap 4.6.6"
+          "clap 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_derive",
-        "version": "4.6.4",
+        "version": "4.6.7",
         "requiredBy": [
-          "clap 4.6.6"
+          "clap 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_lex",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -67320,17 +67320,17 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
           "timemachine-bench 0.1.2"
         ]
@@ -67339,9 +67339,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat-walltime",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1"
+          "codspeed-criterion-compat 5.0.2"
         ]
       },
       {
@@ -67359,8 +67359,8 @@
         "name": "colored",
         "version": "3.1.1",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat 5.0.1"
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat 5.0.2"
         ]
       },
       {
@@ -67369,7 +67369,7 @@
         "name": "const-oid",
         "version": "0.10.2",
         "requiredBy": [
-          "der 0.8.1",
+          "der 0.8.2",
           "digest 0.11.3"
         ]
       },
@@ -67377,10 +67377,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0",
+        "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2"
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4"
         ]
       },
       {
@@ -67396,7 +67396,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cpufeatures",
-        "version": "0.3.0",
+        "version": "0.3.1",
         "requiredBy": [
           "sha2 0.11.0"
         ]
@@ -67407,14 +67407,14 @@
         "name": "criterion-plot",
         "version": "0.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-deque",
-        "version": "0.8.7",
+        "version": "0.8.8",
         "requiredBy": [
           "rayon-core 1.13.0"
         ]
@@ -67423,19 +67423,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-epoch",
-        "version": "0.9.20",
+        "version": "0.9.21",
         "requiredBy": [
-          "crossbeam-deque 0.8.7"
+          "crossbeam-deque 0.8.8"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crossbeam-utils",
-        "version": "0.8.22",
+        "version": "0.8.23",
         "requiredBy": [
-          "crossbeam-deque 0.8.7",
-          "crossbeam-epoch 0.9.20",
+          "crossbeam-deque 0.8.8",
+          "crossbeam-epoch 0.9.21",
           "rayon-core 1.13.0"
         ]
       },
@@ -67474,10 +67474,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctor",
-        "version": "1.0.9",
+        "version": "1.0.13",
         "requiredBy": [
-          "napi 3.12.2",
-          "napi-derive 3.6.3"
+          "napi 3.13.0",
+          "napi-derive 3.6.9"
         ]
       },
       {
@@ -67495,7 +67495,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "der",
-        "version": "0.8.1",
+        "version": "0.8.2",
         "requiredBy": [
           "ecdsa 0.17.0",
           "pkcs8 0.11.0",
@@ -67538,7 +67538,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "either",
-        "version": "1.16.0",
+        "version": "1.18.0",
         "requiredBy": [
           "itertools 0.10.5",
           "rayon 1.12.0"
@@ -67561,7 +67561,7 @@
         "name": "equivalent",
         "version": "1.0.2",
         "requiredBy": [
-          "indexmap 2.14.0"
+          "indexmap 2.14.2"
         ]
       },
       {
@@ -67570,14 +67570,14 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "fastrand",
-        "version": "2.4.1",
+        "version": "2.5.0",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -67598,9 +67598,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "find-msvc-tools",
-        "version": "0.1.9",
+        "version": "0.1.13",
         "requiredBy": [
-          "cc 1.2.67"
+          "cc 1.4.7"
         ]
       },
       {
@@ -67616,92 +67616,92 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-channel",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-core",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-channel 0.3.32",
-          "futures-executor 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-channel 0.3.34",
+          "futures-executor 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-executor",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32"
+          "futures 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-io",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-macro",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures-util 0.3.32"
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-sink",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-channel 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-channel 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-task",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-executor 0.3.32",
-          "futures-util 0.3.32"
+          "futures 0.3.34",
+          "futures-executor 0.3.34",
+          "futures-util 0.3.34"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "futures-util",
-        "version": "0.3.32",
+        "version": "0.3.34",
         "requiredBy": [
-          "futures 0.3.32",
-          "futures-executor 0.3.32",
-          "js-sys 0.3.103"
+          "futures 0.3.34",
+          "futures-executor 0.3.34",
+          "js-sys 0.3.105"
         ]
       },
       {
@@ -67710,7 +67710,7 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "crypto-bigint 0.7.5",
           "crypto-common 0.2.2",
           "rand_core 0.6.4",
@@ -67725,7 +67725,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "crypto-bigint 0.7.5",
           "crypto-common 0.2.2",
           "rand_core 0.6.4",
@@ -67740,7 +67740,7 @@
         "name": "getrandom",
         "version": "0.4.3",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "crypto-bigint 0.7.5",
           "crypto-common 0.2.2",
           "rand_core 0.6.4",
@@ -67755,7 +67755,7 @@
         "name": "glob",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -67783,7 +67783,7 @@
         "name": "hashbrown",
         "version": "0.17.1",
         "requiredBy": [
-          "indexmap 2.14.0"
+          "indexmap 2.14.2"
         ]
       },
       {
@@ -67792,7 +67792,7 @@
         "name": "heck",
         "version": "0.5.0",
         "requiredBy": [
-          "clap_derive 4.6.4",
+          "clap_derive 4.6.7",
           "pyo3-macros-backend 0.29.2"
         ]
       },
@@ -67828,7 +67828,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "hybrid-array",
-        "version": "0.4.13",
+        "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
           "crypto-bigint 0.7.5",
@@ -67842,9 +67842,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "indexmap",
-        "version": "2.14.0",
+        "version": "2.14.2",
         "requiredBy": [
-          "toml_edit 0.25.13+spec-1.1.0"
+          "toml_edit 0.25.15+spec-1.1.0"
         ]
       },
       {
@@ -67853,7 +67853,7 @@
         "name": "is-terminal",
         "version": "0.4.17",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -67871,7 +67871,7 @@
         "name": "itertools",
         "version": "0.10.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ]
       },
@@ -67888,33 +67888,33 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "js-sys",
-        "version": "0.3.103",
+        "version": "0.3.105",
         "requiredBy": [
           "getrandom 0.2.17",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
-          "web-sys 0.3.103"
+          "web-sys 0.3.105"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "libc",
-        "version": "0.2.186",
+        "version": "0.2.189",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "cpufeatures 0.3.0",
+          "codspeed 5.0.2",
+          "cpufeatures 0.3.1",
           "errno 0.3.14",
           "getrandom 0.2.17",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.12.2",
+          "napi 3.13.0",
           "nix 0.31.3",
           "pyo3 0.29.2",
           "pyo3-ffi 0.29.2",
-          "rand 0.8.7",
-          "rustix 1.1.4",
+          "rand 0.8.8",
+          "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
       },
@@ -67924,7 +67924,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.0"
+          "napi-sys 3.3.2"
         ]
       },
       {
@@ -67933,7 +67933,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -67942,10 +67942,10 @@
         "name": "memchr",
         "version": "2.8.3",
         "requiredBy": [
-          "aho-corasick 1.1.4",
-          "futures-util 0.3.32",
+          "aho-corasick 1.1.5",
+          "futures-util 0.3.34",
           "regex 1.13.1",
-          "regex-automata 0.4.16",
+          "regex-automata 0.4.18",
           "serde_json 1.0.151",
           "winnow 1.0.4"
         ]
@@ -67954,7 +67954,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.2",
+        "version": "3.13.0",
         "requiredBy": [
           "wickra-timemachine-node 0.1.2"
         ]
@@ -67963,9 +67963,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.2",
+        "version": "2.5.0",
         "requiredBy": [
-          "napi 3.12.2",
+          "napi 3.13.0",
           "wickra-timemachine-node 0.1.2"
         ]
       },
@@ -67973,7 +67973,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.3",
+        "version": "3.6.9",
         "requiredBy": [
           "wickra-timemachine-node 0.1.2"
         ]
@@ -67982,18 +67982,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.2",
+        "version": "6.1.4",
         "requiredBy": [
-          "napi-derive 3.6.3"
+          "napi-derive 3.6.9"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0",
+        "version": "3.3.2",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
@@ -68002,7 +68002,7 @@
         "name": "nix",
         "version": "0.31.3",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -68011,7 +68011,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
@@ -68021,7 +68021,7 @@
         "version": "0.2.19",
         "requiredBy": [
           "approx 0.5.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "crypto-bigint 0.7.5",
           "plotters 0.3.7",
           "proptest 1.11.0",
@@ -68035,13 +68035,13 @@
         "name": "once_cell",
         "version": "1.21.4",
         "requiredBy": [
-          "borsh-derive 1.8.0",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "borsh-derive 1.8.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -68059,7 +68059,7 @@
         "name": "oorandom",
         "version": "11.1.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -68077,7 +68077,7 @@
         "name": "pem-rfc7468",
         "version": "1.0.0",
         "requiredBy": [
-          "der 0.8.1",
+          "der 0.8.2",
           "elliptic-curve 0.14.1"
         ]
       },
@@ -68087,7 +68087,7 @@
         "name": "pin-project-lite",
         "version": "0.2.17",
         "requiredBy": [
-          "futures-util 0.3.32",
+          "futures-util 0.3.34",
           "tracing 0.1.44"
         ]
       },
@@ -68106,7 +68106,7 @@
         "name": "plotters",
         "version": "0.3.7",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -68132,7 +68132,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "portable-atomic",
-        "version": "1.14.0",
+        "version": "1.15.0",
         "requiredBy": [
           "pyo3 0.29.2"
         ]
@@ -68173,32 +68173,32 @@
         "name": "proc-macro-crate",
         "version": "3.5.0",
         "requiredBy": [
-          "borsh-derive 1.8.0"
+          "borsh-derive 1.8.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "proc-macro2",
-        "version": "1.0.106",
+        "version": "1.0.107",
         "requiredBy": [
-          "borsh-derive 1.8.0",
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "borsh-derive 1.8.1",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "quote 1.0.46",
+          "quote 1.0.47",
           "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
           "syn 2.0.119",
-          "syn 3.0.3",
+          "syn 3.0.6",
           "thiserror-impl 2.0.20",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54",
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57",
           "zeroize_derive 1.5.0"
         ]
       },
@@ -68270,13 +68270,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "quote",
-        "version": "1.0.46",
+        "version": "1.0.47",
         "requiredBy": [
-          "borsh-derive 1.8.0",
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "borsh-derive 1.8.1",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "rust_decimal_macros 1.40.0",
@@ -68284,12 +68284,12 @@
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
           "syn 2.0.119",
-          "syn 3.0.3",
+          "syn 3.0.6",
           "thiserror-impl 2.0.20",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro 0.2.126",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54",
+          "wasm-bindgen-macro 0.2.128",
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57",
           "zeroize_derive 1.5.0"
         ]
       },
@@ -68317,7 +68317,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rand",
-        "version": "0.8.7",
+        "version": "0.8.8",
         "requiredBy": [
           "proptest 1.11.0",
           "rust_decimal 1.43.0"
@@ -68340,7 +68340,7 @@
         "version": "0.3.1",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.7",
+          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -68351,7 +68351,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.7",
+          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -68368,7 +68368,7 @@
           "getrandom 0.4.3",
           "group 0.14.0",
           "primefield 0.14.0",
-          "rand 0.8.7",
+          "rand 0.8.8",
           "rand 0.9.5",
           "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
@@ -68389,7 +68389,7 @@
           "getrandom 0.4.3",
           "group 0.14.0",
           "primefield 0.14.0",
-          "rand 0.8.7",
+          "rand 0.8.8",
           "rand 0.9.5",
           "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
@@ -68410,7 +68410,7 @@
           "getrandom 0.4.3",
           "group 0.14.0",
           "primefield 0.14.0",
-          "rand 0.8.7",
+          "rand 0.8.8",
           "rand 0.9.5",
           "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
@@ -68433,7 +68433,7 @@
         "name": "rayon",
         "version": "1.12.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-core 1.0.5",
           "wickra-timemachine-core 0.1.2"
         ]
@@ -68453,15 +68453,15 @@
         "name": "regex",
         "version": "1.13.1",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex-automata",
-        "version": "0.4.16",
+        "version": "0.4.18",
         "requiredBy": [
           "regex 1.13.1"
         ]
@@ -68474,7 +68474,7 @@
         "requiredBy": [
           "proptest 1.11.0",
           "regex 1.13.1",
-          "regex-automata 0.4.16"
+          "regex-automata 0.4.18"
         ]
       },
       {
@@ -68511,14 +68511,14 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -68529,7 +68529,7 @@
         "name": "rustversion",
         "version": "1.0.23",
         "requiredBy": [
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
@@ -68583,7 +68583,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.2"
+          "napi-derive-backend 6.1.4"
         ]
       },
       {
@@ -68593,14 +68593,14 @@
         "version": "1.0.229",
         "requiredBy": [
           "ciborium 0.2.2",
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "rust_decimal 1.43.0",
           "schemars 0.8.22",
           "serde_json 1.0.151",
           "serdect 0.4.3",
           "tinytemplate 1.2.1",
-          "wasm-bindgen 0.2.126",
+          "wasm-bindgen 0.2.128",
           "wickra-backtest-core 0.1.7",
           "wickra-exchange-core 0.1.6",
           "wickra-timemachine-core 0.1.2"
@@ -68623,7 +68623,7 @@
         "name": "serde_derive",
         "version": "1.0.229",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "serde 1.0.229",
           "serde_core 1.0.229"
         ]
@@ -68643,8 +68643,8 @@
         "name": "serde_json",
         "version": "1.0.151",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "rust_decimal 1.43.0",
           "schemars 0.8.22",
           "tinytemplate 1.2.1",
@@ -68682,7 +68682,7 @@
         "name": "shlex",
         "version": "2.0.1",
         "requiredBy": [
-          "cc 1.2.67"
+          "cc 1.4.7"
         ]
       },
       {
@@ -68700,7 +68700,7 @@
         "name": "slab",
         "version": "0.4.12",
         "requiredBy": [
-          "futures-util 0.3.32"
+          "futures-util 0.3.34"
         ]
       },
       {
@@ -68719,7 +68719,7 @@
         "name": "statrs",
         "version": "0.18.0",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -68728,7 +68728,7 @@
         "name": "strsim",
         "version": "0.11.1",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -68742,7 +68742,7 @@
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
-          "hybrid-array 0.4.13",
+          "hybrid-array 0.4.15",
           "primefield 0.14.0",
           "sec1 0.8.1"
         ]
@@ -68753,11 +68753,11 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.0",
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "borsh-derive 1.8.1",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "rust_decimal_macros 1.40.0",
@@ -68766,8 +68766,8 @@
           "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54",
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57",
           "zeroize_derive 1.5.0"
         ]
       },
@@ -68775,13 +68775,13 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
-        "version": "3.0.3",
+        "version": "3.0.6",
         "requiredBy": [
-          "borsh-derive 1.8.0",
-          "clap_derive 4.6.4",
-          "futures-macro 0.3.32",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "borsh-derive 1.8.1",
+          "clap_derive 4.6.7",
+          "futures-macro 0.3.34",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "rust_decimal_macros 1.40.0",
@@ -68790,8 +68790,8 @@
           "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.126",
-          "zerocopy-derive 0.8.54",
+          "wasm-bindgen-macro-support 0.2.128",
+          "zerocopy-derive 0.8.57",
           "zeroize_derive 1.5.0"
         ]
       },
@@ -68848,7 +68848,7 @@
         "name": "tinytemplate",
         "version": "1.2.1",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -68857,14 +68857,14 @@
         "name": "toml_datetime",
         "version": "1.1.1+spec-1.1.0",
         "requiredBy": [
-          "toml_edit 0.25.13+spec-1.1.0"
+          "toml_edit 0.25.15+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_edit",
-        "version": "0.25.13+spec-1.1.0",
+        "version": "0.25.15+spec-1.1.0",
         "requiredBy": [
           "proc-macro-crate 3.5.0"
         ]
@@ -68873,9 +68873,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml_edit 0.25.13+spec-1.1.0"
+          "toml_edit 0.25.15+spec-1.1.0"
         ]
       },
       {
@@ -68911,7 +68911,7 @@
         "name": "typenum",
         "version": "1.20.1",
         "requiredBy": [
-          "hybrid-array 0.4.13"
+          "hybrid-array 0.4.15"
         ]
       },
       {
@@ -68927,12 +68927,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "unicode-ident",
-        "version": "1.0.24",
+        "version": "1.0.26",
         "requiredBy": [
-          "proc-macro2 1.0.106",
+          "proc-macro2 1.0.107",
           "syn 2.0.119",
-          "syn 3.0.3",
-          "wasm-bindgen-shared 0.2.126"
+          "syn 3.0.6",
+          "wasm-bindgen-shared 0.2.128"
         ]
       },
       {
@@ -68941,7 +68941,7 @@
         "name": "unicode-segmentation",
         "version": "1.13.3",
         "requiredBy": [
-          "convert_case 0.11.0"
+          "convert_case 0.12.0"
         ]
       },
       {
@@ -68969,7 +68969,7 @@
         "name": "walkdir",
         "version": "2.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -68994,15 +68994,15 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
           "getrandom 0.2.17",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
-          "js-sys 0.3.103",
+          "js-sys 0.3.105",
           "plotters 0.3.7",
           "rust_decimal 1.43.0",
-          "web-sys 0.3.103",
+          "web-sys 0.3.105",
           "wickra-timemachine-wasm 0.1.2"
         ]
       },
@@ -69010,35 +69010,35 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen 0.2.126"
+          "wasm-bindgen 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro-support",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen-macro 0.2.126"
+          "wasm-bindgen-macro 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-shared",
-        "version": "0.2.126",
+        "version": "0.2.128",
         "requiredBy": [
-          "wasm-bindgen 0.2.126",
-          "wasm-bindgen-macro-support 0.2.126"
+          "wasm-bindgen 0.2.128",
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "web-sys",
-        "version": "0.3.103",
+        "version": "0.3.105",
         "requiredBy": [
           "plotters 0.3.7"
         ]
@@ -69074,7 +69074,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.4",
+          "rustix 1.1.5",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -69085,8 +69085,8 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml_edit 0.25.13+spec-1.1.0",
-          "toml_parser 1.1.2+spec-1.1.0"
+          "toml_edit 0.25.15+spec-1.1.0",
+          "toml_parser 1.1.3+spec-1.1.0"
         ]
       },
       {
@@ -69111,7 +69111,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy",
-        "version": "0.8.54",
+        "version": "0.8.57",
         "requiredBy": [
           "half 2.7.1",
           "ppv-lite86 0.2.21"
@@ -69121,9 +69121,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy-derive",
-        "version": "0.8.54",
+        "version": "0.8.57",
         "requiredBy": [
-          "zerocopy 0.8.54"
+          "zerocopy 0.8.57"
         ]
       },
       {
@@ -69133,10 +69133,10 @@
         "version": "1.9.0",
         "requiredBy": [
           "crypto-bigint 0.7.5",
-          "der 0.8.1",
+          "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
-          "hybrid-array 0.4.13",
+          "hybrid-array 0.4.15",
           "primefield 0.14.0",
           "sec1 0.8.1",
           "wickra-exchange-core 0.1.6"
@@ -69990,7 +69990,7 @@
         "name": "anes",
         "version": "0.1.6",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -69999,7 +69999,7 @@
         "name": "anstream",
         "version": "1.0.0",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -70010,7 +70010,7 @@
         "requiredBy": [
           "anstream 1.0.0",
           "anstyle-wincon 3.0.11",
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -70046,7 +70046,7 @@
         "name": "anyhow",
         "version": "1.0.104",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -70099,12 +70099,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bitflags",
-        "version": "2.13.1",
+        "version": "2.13.2",
         "requiredBy": [
-          "napi 3.12.2",
+          "napi 3.13.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -70131,7 +70131,7 @@
         "name": "cast",
         "version": "0.3.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ]
       },
@@ -70139,17 +70139,17 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cc",
-        "version": "1.4.5",
+        "version": "1.4.7",
         "requiredBy": [
           "blake3 1.8.7",
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cfg-if",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "requiredBy": [
           "blake3 1.8.7",
           "getrandom 0.3.4",
@@ -70176,7 +70176,7 @@
         "name": "ciborium",
         "version": "0.2.2",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -70202,10 +70202,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap",
-        "version": "4.6.6",
+        "version": "4.6.7",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-verify-cli 0.1.3"
         ]
       },
@@ -70213,44 +70213,44 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_builder",
-        "version": "4.6.6",
+        "version": "4.6.7",
         "requiredBy": [
-          "clap 4.6.6"
+          "clap 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_derive",
-        "version": "4.6.4",
+        "version": "4.6.7",
         "requiredBy": [
-          "clap 4.6.6"
+          "clap 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_lex",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
           "verify-bench 0.1.3"
         ]
@@ -70259,9 +70259,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat-walltime",
-        "version": "5.0.1",
+        "version": "5.0.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1"
+          "codspeed-criterion-compat 5.0.2"
         ]
       },
       {
@@ -70279,8 +70279,8 @@
         "name": "colored",
         "version": "3.1.1",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat 5.0.1"
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat 5.0.2"
         ]
       },
       {
@@ -70296,10 +70296,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "convert_case",
-        "version": "0.11.0",
+        "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2"
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4"
         ]
       },
       {
@@ -70317,7 +70317,7 @@
         "name": "criterion-plot",
         "version": "0.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -70364,8 +70364,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.12.2",
-          "napi-derive 3.6.3"
+          "napi 3.13.0",
+          "napi-derive 3.6.9"
         ]
       },
       {
@@ -70402,7 +70402,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -70418,9 +70418,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "find-msvc-tools",
-        "version": "0.1.12",
+        "version": "0.1.13",
         "requiredBy": [
-          "cc 1.4.5"
+          "cc 1.4.7"
         ]
       },
       {
@@ -70438,7 +70438,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
@@ -70530,7 +70530,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
@@ -70541,7 +70541,7 @@
         "name": "getrandom",
         "version": "0.4.3",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
@@ -70552,7 +70552,7 @@
         "name": "glob",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -70579,7 +70579,7 @@
         "name": "heck",
         "version": "0.5.0",
         "requiredBy": [
-          "clap_derive 4.6.4",
+          "clap_derive 4.6.7",
           "pyo3-macros-backend 0.29.2"
         ]
       },
@@ -70598,7 +70598,7 @@
         "name": "indexmap",
         "version": "2.14.2",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -70607,7 +70607,7 @@
         "name": "is-terminal",
         "version": "0.4.17",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -70625,7 +70625,7 @@
         "name": "itertools",
         "version": "0.10.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0"
         ]
       },
@@ -70653,17 +70653,17 @@
         "name": "libc",
         "version": "0.2.189",
         "requiredBy": [
-          "codspeed 5.0.1",
+          "codspeed 5.0.2",
           "cpufeatures 0.3.1",
           "errno 0.3.14",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.12.2",
+          "napi 3.13.0",
           "nix 0.31.3",
           "pyo3 0.29.2",
           "pyo3-ffi 0.29.2",
-          "rustix 1.1.4",
+          "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
       },
@@ -70673,7 +70673,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.0"
+          "napi-sys 3.3.2"
         ]
       },
       {
@@ -70682,7 +70682,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.4"
+          "rustix 1.1.5"
         ]
       },
       {
@@ -70702,7 +70702,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.12.2",
+        "version": "3.13.0",
         "requiredBy": [
           "wickra-verify-node 0.1.3"
         ]
@@ -70711,9 +70711,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.4.1",
+        "version": "2.5.0",
         "requiredBy": [
-          "napi 3.12.2",
+          "napi 3.13.0",
           "wickra-verify-node 0.1.3"
         ]
       },
@@ -70721,7 +70721,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.3",
+        "version": "3.6.9",
         "requiredBy": [
           "wickra-verify-node 0.1.3"
         ]
@@ -70730,18 +70730,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.2",
+        "version": "6.1.4",
         "requiredBy": [
-          "napi-derive 3.6.3"
+          "napi-derive 3.6.9"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.0",
+        "version": "3.3.2",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
@@ -70750,7 +70750,7 @@
         "name": "nix",
         "version": "0.31.3",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -70759,7 +70759,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
@@ -70769,7 +70769,7 @@
         "version": "0.2.19",
         "requiredBy": [
           "approx 0.5.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "statrs 0.18.0"
@@ -70781,7 +70781,7 @@
         "name": "once_cell",
         "version": "1.21.4",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "pyo3 0.29.2",
           "tempfile 3.27.0",
           "wasm-bindgen 0.2.128"
@@ -70802,7 +70802,7 @@
         "name": "oorandom",
         "version": "11.1.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -70820,7 +70820,7 @@
         "name": "plotters",
         "version": "0.3.7",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -70866,10 +70866,10 @@
         "name": "proc-macro2",
         "version": "1.0.107",
         "requiredBy": [
-          "clap_derive 4.6.4",
+          "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "quote 1.0.47",
@@ -70877,7 +70877,7 @@
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
           "syn 2.0.119",
-          "syn 3.0.5",
+          "syn 3.0.6",
           "thiserror-impl 2.0.20",
           "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
@@ -70953,17 +70953,17 @@
         "name": "quote",
         "version": "1.0.47",
         "requiredBy": [
-          "clap_derive 4.6.4",
+          "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
           "syn 2.0.119",
-          "syn 3.0.5",
+          "syn 3.0.6",
           "thiserror-impl 2.0.20",
           "wasm-bindgen-macro 0.2.128",
           "wasm-bindgen-macro-support 0.2.128",
@@ -71035,7 +71035,7 @@
         "name": "rayon",
         "version": "1.12.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-core 1.0.5"
         ]
       },
@@ -71054,8 +71054,8 @@
         "name": "regex",
         "version": "1.13.1",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -71084,14 +71084,14 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.12.2"
+          "napi 3.13.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -71147,7 +71147,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.2"
+          "napi-derive-backend 6.1.4"
         ]
       },
       {
@@ -71157,8 +71157,8 @@
         "version": "1.0.229",
         "requiredBy": [
           "ciborium 0.2.2",
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 0.8.22",
           "serde_json 1.0.151",
           "tinytemplate 1.2.1",
@@ -71175,7 +71175,7 @@
           "serde 1.0.229",
           "serde_json 1.0.151",
           "serde_spanned 1.1.1",
-          "toml 1.1.5+spec-1.1.0",
+          "toml 1.1.6+spec-1.1.0",
           "toml_datetime 1.1.1+spec-1.1.0"
         ]
       },
@@ -71185,7 +71185,7 @@
         "name": "serde_derive",
         "version": "1.0.229",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "serde 1.0.229",
           "serde_core 1.0.229"
         ]
@@ -71205,8 +71205,8 @@
         "name": "serde_json",
         "version": "1.0.151",
         "requiredBy": [
-          "codspeed 5.0.1",
-          "codspeed-criterion-compat-walltime 5.0.1",
+          "codspeed 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 0.8.22",
           "tinytemplate 1.2.1",
           "verify-bench 0.1.3",
@@ -71222,7 +71222,7 @@
         "name": "serde_spanned",
         "version": "1.1.1",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -71231,7 +71231,7 @@
         "name": "shlex",
         "version": "2.0.1",
         "requiredBy": [
-          "cc 1.4.5"
+          "cc 1.4.7"
         ]
       },
       {
@@ -71249,7 +71249,7 @@
         "name": "statrs",
         "version": "0.18.0",
         "requiredBy": [
-          "codspeed 5.0.1"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -71258,7 +71258,7 @@
         "name": "strsim",
         "version": "0.11.1",
         "requiredBy": [
-          "clap_builder 4.6.6"
+          "clap_builder 4.6.7"
         ]
       },
       {
@@ -71267,10 +71267,10 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.4",
+          "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
@@ -71285,12 +71285,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
-        "version": "3.0.5",
+        "version": "3.0.6",
         "requiredBy": [
-          "clap_derive 4.6.4",
+          "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.3",
-          "napi-derive-backend 6.1.2",
+          "napi-derive 3.6.9",
+          "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
@@ -71346,14 +71346,14 @@
         "name": "tinytemplate",
         "version": "1.2.1",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.5+spec-1.1.0",
+        "version": "1.1.6+spec-1.1.0",
         "requiredBy": [
           "wickra-verify-core 0.1.3"
         ]
@@ -71364,7 +71364,7 @@
         "name": "toml_datetime",
         "version": "1.1.1+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -71373,7 +71373,7 @@
         "name": "toml_parser",
         "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -71382,7 +71382,7 @@
         "name": "toml_writer",
         "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -71398,11 +71398,11 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "unicode-ident",
-        "version": "1.0.24",
+        "version": "1.0.26",
         "requiredBy": [
           "proc-macro2 1.0.107",
           "syn 2.0.119",
-          "syn 3.0.5",
+          "syn 3.0.6",
           "wasm-bindgen-shared 0.2.128"
         ]
       },
@@ -71412,7 +71412,7 @@
         "name": "unicode-segmentation",
         "version": "1.13.3",
         "requiredBy": [
-          "convert_case 0.11.0"
+          "convert_case 0.12.0"
         ]
       },
       {
@@ -71447,7 +71447,7 @@
         "name": "walkdir",
         "version": "2.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.1"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -71539,7 +71539,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.4",
+          "rustix 1.1.5",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -71550,7 +71550,7 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.5+spec-1.1.0",
+          "toml 1.1.6+spec-1.1.0",
           "toml_parser 1.1.3+spec-1.1.0"
         ]
       },
