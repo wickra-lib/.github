@@ -1,9 +1,9 @@
 {
- "scanned_at": "2026-09-23T06:46:42Z",
+ "scanned_at": "2026-09-23T15:21:02Z",
  "counts": {
   "defect": 0,
-  "drift": 6,
-  "info": 87
+  "drift": 5,
+  "info": 78
  },
  "keys": [
   "decl:cargo|getrandom|0.2=wickra-feature-store,wickra-gym,wickra-strategy-ci,wickra-terminal,wickra-timemachine|0.3=wickra-terminal,wickra-timemachine|0.4=wickra-exchange,wickra-terminal,wickra-timemachine",
@@ -11,7 +11,6 @@
   "decl:toolchain|CMAKE_CXX_STANDARD|11=wickra-embed|17=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:toolchain|rust-version (crate)|1.86=wickra-pico|1.88=wickra-terminal|1.90=wickra-zk",
   "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk",
-  "decl:toolchain|uv bootstrap|0.12.15=wickra-synth,wickra-zk|0.12.18=wickra,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray",
   "decl:own|wickra-backtest-core|=0.1.7=wickra-benchmark,wickra-copilot,wickra-feature-store,wickra-genome,wickra-proof,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-verify,wickra-xray|0.1.7",
   "decl:own|wickra-core|1.0=wickra-backtest,wickra-benchmark,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-timemachine|1.0.5",
   "decl:own|wickra-data|1.0=wickra-copilot,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-synth|1.0.5",
@@ -19,21 +18,21 @@
   "decl:own|wickra-exchange|=0.1.6=wickra-copilot,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray|0.1.6",
   "decl:own|wickra-exchange-core|=0.1.6=wickra-terminal,wickra-timemachine|0.1.6",
   "decl:own|wickra-proof-core|=0.1.3=wickra-zk|0.1.3",
-  "lock:cargo|base64|0.22.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray,wickra-zk|0.23.x=wickra-backtest,wickra-feature-store,wickra-zk@guest/builder",
+  "lock:cargo|base64|0.22.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray,wickra-zk|0.23.x=wickra-backtest,wickra-feature-store,wickra-zk,wickra-zk@guest/builder",
   "lock:cargo|bit-set|0.5.x=wickra-terminal|0.8.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "lock:cargo|bit-vec|0.6.x=wickra-terminal|0.8.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest",
   "lock:cargo|bitfield|0.13.x=wickra-embed@examples/embedded,wickra-pico@firmware/rp-pico|0.14.x=wickra-pico@firmware/rp-pico",
   "lock:cargo|bitflags|1.x=wickra-terminal,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest|2.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
   "lock:cargo|block-buffer|0.10.x=wickra-terminal,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest|0.12.x=wickra,wickra-compile,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
   "lock:cargo|const-oid|0.10.x=wickra,wickra-compile,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|0.9.x=wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
-  "lock:cargo|convert_case|0.10.x=wickra-terminal|0.11.x=wickra-genome,wickra-gym,wickra-impact|0.12.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
+  "lock:cargo|convert_case|0.10.x=wickra-terminal|0.12.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "lock:cargo|core-foundation|0.10.x=wickra|0.9.x=wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
   "lock:cargo|cpufeatures|0.2.x=wickra-terminal,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest|0.3.x=wickra,wickra-benchmark,wickra-compile,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest",
   "lock:cargo|criterion-plot|0.5.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|0.8.x=wickra",
   "lock:cargo|crypto-common|0.1.x=wickra-terminal,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest|0.2.x=wickra,wickra-compile,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
-  "lock:cargo|darling|0.20.x=wickra-zk,wickra-zk@guest/builder|0.23.x=wickra-terminal,wickra-zk|0.24.x=wickra-zk@guest/builder",
-  "lock:cargo|darling_core|0.20.x=wickra-zk,wickra-zk@guest/builder|0.23.x=wickra-terminal,wickra-zk|0.24.x=wickra-zk@guest/builder",
-  "lock:cargo|darling_macro|0.20.x=wickra-zk,wickra-zk@guest/builder|0.23.x=wickra-terminal,wickra-zk|0.24.x=wickra-zk@guest/builder",
+  "lock:cargo|darling|0.20.x=wickra-zk,wickra-zk@guest/builder|0.24.x=wickra-terminal,wickra-zk,wickra-zk@guest/builder",
+  "lock:cargo|darling_core|0.20.x=wickra-zk,wickra-zk@guest/builder|0.24.x=wickra-terminal,wickra-zk,wickra-zk@guest/builder",
+  "lock:cargo|darling_macro|0.20.x=wickra-zk,wickra-zk@guest/builder|0.24.x=wickra-terminal,wickra-zk,wickra-zk@guest/builder",
   "lock:cargo|der|0.7.x=wickra-zk,wickra-zk@guest/builder|0.8.x=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
   "lock:cargo|digest|0.10.x=wickra-terminal,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest|0.11.x=wickra,wickra-compile,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
   "lock:cargo|embedded-hal|0.2.x=wickra-embed@examples/embedded,wickra-pico@firmware/rp-pico|1.x=wickra-embed@examples/embedded,wickra-pico@firmware/rp-pico",
@@ -69,7 +68,7 @@
   "lock:cargo|strum|0.27.x=wickra-zk,wickra-zk@guest/builder|0.28.x=wickra-terminal",
   "lock:cargo|strum_macros|0.27.x=wickra-zk,wickra-zk@guest/builder|0.28.x=wickra-terminal",
   "lock:cargo|syn|1.x=wickra-pico@firmware/rp-pico,wickra-terminal,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest|2.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-embed@examples/embedded,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-pico@firmware/rp-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest|3.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
-  "lock:cargo|synstructure|0.13.x=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.14.x=wickra,wickra-backtest",
+  "lock:cargo|synstructure|0.13.x=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.14.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk",
   "lock:cargo|thiserror|1.x=wickra-terminal,wickra-zk|2.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
   "lock:cargo|thiserror-impl|1.x=wickra-terminal,wickra-zk|2.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
   "lock:cargo|toml|0.8.x=wickra-zk,wickra-zk@guest/builder|1.x=wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-feature-store,wickra-genome,wickra-gym,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest",
@@ -77,16 +76,7 @@
   "lock:cargo|toml_edit|0.22.x=wickra-zk,wickra-zk@guest/builder|0.25.x=wickra,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
   "lock:cargo|twox-hash|1.x=wickra-zk|2.x=wickra-backtest,wickra-feature-store",
   "lock:cargo|webpki-roots|0.26.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray|1.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk",
-  "lock:cargo|windows_aarch64_gnullvm|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
-  "lock:cargo|windows_aarch64_msvc|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
-  "lock:cargo|windows_i686_gnu|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
-  "lock:cargo|windows_i686_gnullvm|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
-  "lock:cargo|windows_i686_msvc|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
-  "lock:cargo|windows_x86_64_gnu|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
-  "lock:cargo|windows_x86_64_gnullvm|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
-  "lock:cargo|windows_x86_64_msvc|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
-  "lock:cargo|windows-sys|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.60.x=wickra-exchange,wickra-screener,wickra-xray|0.61.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@guest/builder",
-  "lock:cargo|windows-targets|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray",
+  "lock:cargo|windows-sys|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.61.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@guest/builder",
   "lock:cargo|winnow|0.7.x=wickra-zk,wickra-zk@guest/builder|1.x=wickra,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
   "lock:cargo|wit-bindgen|0.46.x=wickra-compile,wickra-copilot,wickra-shazam|0.57.x=wickra,wickra-backtest,wickra-benchmark,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest",
   "lock:npm|../../bindings/node|0.1.x=wickra-benchmark@examples/node,wickra-copilot@examples/node,wickra-gym@examples/node,wickra-proof@examples/node,wickra-screener@examples/node,wickra-shazam@examples/node,wickra-terminal@examples/node|1.x=wickra@examples/node",
@@ -224,35 +214,6 @@
    "key": "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk"
   },
   {
-   "severity": "drift",
-   "kind": "decl:toolchain",
-   "subject": "uv bootstrap",
-   "detail": "0.12.18: 18 [compile, copilot, darwin, exchange, feature-store, genome, gym, impact, proof, radar, screener, shazam, strategy-ci, terminal, timemachine, verify, wickra, xray] | 0.12.15: 2 [synth, zk]",
-   "repos": [
-    "wickra",
-    "wickra-compile",
-    "wickra-copilot",
-    "wickra-darwin",
-    "wickra-exchange",
-    "wickra-feature-store",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-proof",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-strategy-ci",
-    "wickra-synth",
-    "wickra-terminal",
-    "wickra-timemachine",
-    "wickra-verify",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "decl:toolchain|uv bootstrap|0.12.15=wickra-synth,wickra-zk|0.12.18=wickra,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray"
-  },
-  {
    "severity": "info",
    "kind": "decl:cargo",
    "subject": "wickra-backtest-core",
@@ -374,7 +335,7 @@
    "severity": "info",
    "kind": "lock:cargo",
    "subject": "base64",
-   "detail": "0.22.x: 14 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, wickra, xray, zk] | 0.23.x: 3 [backtest, feature-store, zk@guest/builder]",
+   "detail": "0.22.x: 14 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, wickra, xray, zk] | 0.23.x: 4 [backtest, feature-store, zk, zk@guest/builder]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -392,7 +353,7 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "lock:cargo|base64|0.22.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray,wickra-zk|0.23.x=wickra-backtest,wickra-feature-store,wickra-zk@guest/builder"
+   "key": "lock:cargo|base64|0.22.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray,wickra-zk|0.23.x=wickra-backtest,wickra-feature-store,wickra-zk,wickra-zk@guest/builder"
   },
   {
    "severity": "info",
@@ -554,7 +515,7 @@
    "severity": "info",
    "kind": "lock:cargo",
    "subject": "convert_case",
-   "detail": "0.12.x: 19 [backtest, benchmark, compile, copilot, darwin, exchange, feature-store, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, xray, zk] | 0.11.x: 3 [genome, gym, impact] | 0.10.x: 1 [terminal]",
+   "detail": "0.12.x: 22 [backtest, benchmark, compile, copilot, darwin, exchange, feature-store, genome, gym, impact, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, xray, zk] | 0.10.x: 1 [terminal]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -579,7 +540,7 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "lock:cargo|convert_case|0.10.x=wickra-terminal|0.11.x=wickra-genome,wickra-gym,wickra-impact|0.12.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk"
+   "key": "lock:cargo|convert_case|0.10.x=wickra-terminal|0.12.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk"
   },
   {
    "severity": "info",
@@ -678,34 +639,34 @@
    "severity": "info",
    "kind": "lock:cargo",
    "subject": "darling",
-   "detail": "0.23.x: 2 [terminal, zk] | 0.20.x: 2 [zk, zk@guest/builder] | 0.24.x: 1 [zk@guest/builder]",
+   "detail": "0.24.x: 3 [terminal, zk, zk@guest/builder] | 0.20.x: 2 [zk, zk@guest/builder]",
    "repos": [
     "wickra-terminal",
     "wickra-zk"
    ],
-   "key": "lock:cargo|darling|0.20.x=wickra-zk,wickra-zk@guest/builder|0.23.x=wickra-terminal,wickra-zk|0.24.x=wickra-zk@guest/builder"
+   "key": "lock:cargo|darling|0.20.x=wickra-zk,wickra-zk@guest/builder|0.24.x=wickra-terminal,wickra-zk,wickra-zk@guest/builder"
   },
   {
    "severity": "info",
    "kind": "lock:cargo",
    "subject": "darling_core",
-   "detail": "0.23.x: 2 [terminal, zk] | 0.20.x: 2 [zk, zk@guest/builder] | 0.24.x: 1 [zk@guest/builder]",
+   "detail": "0.24.x: 3 [terminal, zk, zk@guest/builder] | 0.20.x: 2 [zk, zk@guest/builder]",
    "repos": [
     "wickra-terminal",
     "wickra-zk"
    ],
-   "key": "lock:cargo|darling_core|0.20.x=wickra-zk,wickra-zk@guest/builder|0.23.x=wickra-terminal,wickra-zk|0.24.x=wickra-zk@guest/builder"
+   "key": "lock:cargo|darling_core|0.20.x=wickra-zk,wickra-zk@guest/builder|0.24.x=wickra-terminal,wickra-zk,wickra-zk@guest/builder"
   },
   {
    "severity": "info",
    "kind": "lock:cargo",
    "subject": "darling_macro",
-   "detail": "0.23.x: 2 [terminal, zk] | 0.20.x: 2 [zk, zk@guest/builder] | 0.24.x: 1 [zk@guest/builder]",
+   "detail": "0.24.x: 3 [terminal, zk, zk@guest/builder] | 0.20.x: 2 [zk, zk@guest/builder]",
    "repos": [
     "wickra-terminal",
     "wickra-zk"
    ],
-   "key": "lock:cargo|darling_macro|0.20.x=wickra-zk,wickra-zk@guest/builder|0.23.x=wickra-terminal,wickra-zk|0.24.x=wickra-zk@guest/builder"
+   "key": "lock:cargo|darling_macro|0.20.x=wickra-zk,wickra-zk@guest/builder|0.24.x=wickra-terminal,wickra-zk,wickra-zk@guest/builder"
   },
   {
    "severity": "info",
@@ -1449,7 +1410,7 @@
    "severity": "info",
    "kind": "lock:cargo",
    "subject": "synstructure",
-   "detail": "0.13.x: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.14.x: 2 [backtest, wickra]",
+   "detail": "0.14.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, shazam, terminal, wickra, xray, zk] | 0.13.x: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -1465,7 +1426,7 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "lock:cargo|synstructure|0.13.x=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.14.x=wickra,wickra-backtest"
+   "key": "lock:cargo|synstructure|0.13.x=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.14.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk"
   },
   {
    "severity": "info",
@@ -1643,176 +1604,8 @@
   {
    "severity": "info",
    "kind": "lock:cargo",
-   "subject": "windows_aarch64_gnullvm",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows_aarch64_gnullvm|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
-   "subject": "windows_aarch64_msvc",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows_aarch64_msvc|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
-   "subject": "windows_i686_gnu",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows_i686_gnu|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
-   "subject": "windows_i686_gnullvm",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows_i686_gnullvm|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
-   "subject": "windows_i686_msvc",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows_i686_msvc|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
-   "subject": "windows_x86_64_gnu",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows_x86_64_gnu|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
-   "subject": "windows_x86_64_gnullvm",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows_x86_64_gnullvm|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
-   "subject": "windows_x86_64_msvc",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows_x86_64_msvc|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
    "subject": "windows-sys",
-   "detail": "0.61.x: 25 [backtest, benchmark, compile, copilot, darwin, embed, exchange, feature-store, genome, gym, impact, pico, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, xray, zk, zk@guest/builder] | 0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.60.x: 3 [exchange, screener, xray]",
+   "detail": "0.61.x: 25 [backtest, benchmark, compile, copilot, darwin, embed, exchange, feature-store, genome, gym, impact, pico, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, xray, zk, zk@guest/builder] | 0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -1839,28 +1632,7 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "lock:cargo|windows-sys|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.60.x=wickra-exchange,wickra-screener,wickra-xray|0.61.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@guest/builder"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:cargo",
-   "subject": "windows-targets",
-   "detail": "0.52.x: 12 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, xray, zk] | 0.53.x: 3 [exchange, screener, xray]",
-   "repos": [
-    "wickra-backtest",
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:cargo|windows-targets|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.53.x=wickra-exchange,wickra-screener,wickra-xray"
+   "key": "lock:cargo|windows-sys|0.52.x=wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk|0.61.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@guest/builder"
   },
   {
    "severity": "info",
