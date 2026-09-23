@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-09-23T15:17:46Z",
+  "scanned_at": "2026-09-23T17:29:22Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 371,
-      "differing": 37
+      "differing": 35
     },
     "npm": {
       "total": 109,
@@ -1969,80 +1969,6 @@
       "held": [
         "strum 0.27.2"
       ]
-    },
-    {
-      "ecosystem": "cargo",
-      "name": "synstructure",
-      "byRepo": {
-        "wickra": "0.14.0",
-        "wickra-backtest": "0.14.0",
-        "wickra-copilot": "0.14.0",
-        "wickra-exchange": "0.14.0",
-        "wickra-genome": "0.14.0",
-        "wickra-gym": "0.14.0",
-        "wickra-impact": "0.14.0",
-        "wickra-radar": "0.14.0",
-        "wickra-screener": "0.13.2",
-        "wickra-shazam": "0.14.0",
-        "wickra-terminal": "0.14.0",
-        "wickra-xray": "0.14.0",
-        "wickra-zk": "0.14.0"
-      },
-      "requiredBy": {
-        "wickra": [
-          "yoke-derive 0.8.3",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-backtest": [
-          "yoke-derive 0.8.3",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-copilot": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-exchange": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-genome": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-gym": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-impact": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-radar": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-screener": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.7"
-        ],
-        "wickra-shazam": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-terminal": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-xray": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ],
-        "wickra-zk": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
-        ]
-      },
-      "held": null
     },
     {
       "ecosystem": "cargo",
@@ -49966,14 +49892,14 @@
           "serde_derive_internals 0.29.1",
           "syn 2.0.119",
           "syn 3.0.6",
-          "synstructure 0.13.2",
+          "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.2",
+          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.7",
+          "zerofrom-derive 0.1.8",
           "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
@@ -50088,15 +50014,15 @@
           "serde_derive_internals 0.29.1",
           "syn 2.0.119",
           "syn 3.0.6",
-          "synstructure 0.13.2",
+          "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
           "wasm-bindgen-macro 0.2.128",
           "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.2",
+          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.7",
+          "zerofrom-derive 0.1.8",
           "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
@@ -50745,14 +50671,14 @@
           "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "synstructure 0.13.2",
+          "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.2",
+          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.7",
+          "zerofrom-derive 0.1.8",
           "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
@@ -50774,14 +50700,14 @@
           "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "synstructure 0.13.2",
+          "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.2",
+          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.7",
+          "zerofrom-derive 0.1.8",
           "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
@@ -50800,10 +50726,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "synstructure",
-        "version": "0.13.2",
+        "version": "0.14.0",
         "requiredBy": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.7"
+          "yoke-derive 0.8.3",
+          "zerofrom-derive 0.1.8"
         ]
       },
       {
@@ -51484,7 +51410,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "yoke-derive",
-        "version": "0.8.2",
+        "version": "0.8.3",
         "requiredBy": [
           "yoke 0.8.3"
         ]
@@ -51525,7 +51451,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerofrom-derive",
-        "version": "0.1.7",
+        "version": "0.1.8",
         "requiredBy": [
           "zerofrom 0.1.8"
         ]
