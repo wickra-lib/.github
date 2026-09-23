@@ -1,0 +1,36 @@
+version: 2
+updates:
+  # The renderers this repository runs: sharp and resvg draw the banner, the
+  # star-history charts and the badge snapshots.
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: monthly
+      time: "06:00"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: "deps(npm)"
+    groups:
+      site:
+        patterns: ["*"]
+
+  # The 8 workflows here (banner, indicator-count, links, refresh-badges,
+  # refresh-inbox, refresh-social, refresh-versions, zizmor) pin their actions
+  # by full SHA, which only something watching them will ever move.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+      time: "06:00"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: "deps(actions)"
+    groups:
+      github-actions:
+        patterns: ["*"]
