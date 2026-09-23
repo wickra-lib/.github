@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-22T22:25:49Z",
+  "scanned_at": "2026-09-23T00:08:17Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -81,13 +81,7 @@
           "version": "1.0.5"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-linux-x64-gnu",
-          "ecosystem": "npm",
-          "present": true,
-          "version": "1.0.5"
-        },
-        {
-          "file": "bindings/node/package.json optionalDependencies.wickra-linux-arm64-gnu",
+          "file": "bindings/node/package.json optionalDependencies.wickra-darwin-arm64",
           "ecosystem": "npm",
           "present": true,
           "version": "1.0.5"
@@ -99,19 +93,25 @@
           "version": "1.0.5"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-darwin-arm64",
+          "file": "bindings/node/package.json optionalDependencies.wickra-linux-arm64-gnu",
           "ecosystem": "npm",
           "present": true,
           "version": "1.0.5"
         },
         {
-          "file": "bindings/node/package.json optionalDependencies.wickra-win32-x64-msvc",
+          "file": "bindings/node/package.json optionalDependencies.wickra-linux-x64-gnu",
           "ecosystem": "npm",
           "present": true,
           "version": "1.0.5"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-win32-arm64-msvc",
+          "ecosystem": "npm",
+          "present": true,
+          "version": "1.0.5"
+        },
+        {
+          "file": "bindings/node/package.json optionalDependencies.wickra-win32-x64-msvc",
           "ecosystem": "npm",
           "present": true,
           "version": "1.0.5"
@@ -360,12 +360,7 @@
         },
         {
           "registry": "npm",
-          "pkg": "wickra-linux-x64-gnu",
-          "version": "1.0.5"
-        },
-        {
-          "registry": "npm",
-          "pkg": "wickra-linux-arm64-gnu",
+          "pkg": "wickra-darwin-arm64",
           "version": "1.0.5"
         },
         {
@@ -375,17 +370,22 @@
         },
         {
           "registry": "npm",
-          "pkg": "wickra-darwin-arm64",
+          "pkg": "wickra-linux-arm64-gnu",
           "version": "1.0.5"
         },
         {
           "registry": "npm",
-          "pkg": "wickra-win32-x64-msvc",
+          "pkg": "wickra-linux-x64-gnu",
           "version": "1.0.5"
         },
         {
           "registry": "npm",
           "pkg": "wickra-win32-arm64-msvc",
+          "version": "1.0.5"
+        },
+        {
+          "registry": "npm",
+          "pkg": "wickra-win32-x64-msvc",
           "version": "1.0.5"
         },
         {
