@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-24T02:02:47Z",
+  "scanned_at": "2026-09-24T06:47:08Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -61587,7 +61587,7 @@
         "requiredBy": [
           "codspeed-criterion-compat 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-terminal 0.1.6"
+          "wickra-terminal 0.1.7"
         ]
       },
       {
@@ -61642,7 +61642,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.2",
         "requiredBy": [
-          "wickra-terminal-bench 0.1.6"
+          "wickra-terminal-bench 0.1.7"
         ]
       },
       {
@@ -61810,7 +61810,7 @@
         "version": "0.29.0",
         "requiredBy": [
           "ratatui-crossterm 0.1.2",
-          "wickra-terminal 0.1.6"
+          "wickra-terminal 0.1.7"
         ]
       },
       {
@@ -62332,7 +62332,7 @@
           "tempfile 3.27.0",
           "uuid 1.26.1",
           "wezterm-blob-leases 0.1.1",
-          "wickra-terminal-wasm 0.1.6"
+          "wickra-terminal-wasm 0.1.7"
         ]
       },
       {
@@ -62352,7 +62352,7 @@
           "tempfile 3.27.0",
           "uuid 1.26.1",
           "wezterm-blob-leases 0.1.1",
-          "wickra-terminal-wasm 0.1.6"
+          "wickra-terminal-wasm 0.1.7"
         ]
       },
       {
@@ -62372,7 +62372,7 @@
           "tempfile 3.27.0",
           "uuid 1.26.1",
           "wezterm-blob-leases 0.1.1",
-          "wickra-terminal-wasm 0.1.6"
+          "wickra-terminal-wasm 0.1.7"
         ]
       },
       {
@@ -63012,7 +63012,7 @@
         "name": "napi",
         "version": "3.13.0",
         "requiredBy": [
-          "wickra-terminal-node 0.1.6"
+          "wickra-terminal-node 0.1.7"
         ]
       },
       {
@@ -63022,7 +63022,7 @@
         "version": "2.5.0",
         "requiredBy": [
           "napi 3.13.0",
-          "wickra-terminal-node 0.1.6"
+          "wickra-terminal-node 0.1.7"
         ]
       },
       {
@@ -63031,7 +63031,7 @@
         "name": "napi-derive",
         "version": "3.6.9",
         "requiredBy": [
-          "wickra-terminal-node 0.1.6"
+          "wickra-terminal-node 0.1.7"
         ]
       },
       {
@@ -63519,7 +63519,7 @@
         "name": "proptest",
         "version": "1.11.0",
         "requiredBy": [
-          "wickra-terminal-core 0.1.6"
+          "wickra-terminal-core 0.1.7"
         ]
       },
       {
@@ -63528,7 +63528,7 @@
         "name": "pyo3",
         "version": "0.29.2",
         "requiredBy": [
-          "wickra-terminal-python 0.1.6"
+          "wickra-terminal-python 0.1.7"
         ]
       },
       {
@@ -63825,7 +63825,7 @@
         "name": "ratatui",
         "version": "0.30.2",
         "requiredBy": [
-          "wickra-terminal 0.1.6"
+          "wickra-terminal 0.1.7"
         ]
       },
       {
@@ -63983,8 +63983,8 @@
         "version": "1.43.0",
         "requiredBy": [
           "wickra-exchange-core 0.1.7",
-          "wickra-terminal-bench 0.1.6",
-          "wickra-terminal-core 0.1.6"
+          "wickra-terminal-bench 0.1.7",
+          "wickra-terminal-core 0.1.7"
         ]
       },
       {
@@ -63993,7 +63993,7 @@
         "name": "rust_decimal_macros",
         "version": "1.40.0",
         "requiredBy": [
-          "wickra-terminal-core 0.1.6"
+          "wickra-terminal-core 0.1.7"
         ]
       },
       {
@@ -64156,7 +64156,7 @@
           "wasm-bindgen 0.2.128",
           "wezterm-input-types 0.1.0",
           "wickra-exchange-core 0.1.7",
-          "wickra-terminal-core 0.1.6"
+          "wickra-terminal-core 0.1.7"
         ]
       },
       {
@@ -64196,7 +64196,7 @@
           "rust_decimal 1.43.0",
           "tinytemplate 1.2.1",
           "wickra-exchange-core 0.1.7",
-          "wickra-terminal-core 0.1.6"
+          "wickra-terminal-core 0.1.7"
         ]
       },
       {
@@ -64666,7 +64666,7 @@
           "wezterm-dynamic 0.2.1",
           "wickra-core 1.0.6",
           "wickra-exchange-core 0.1.7",
-          "wickra-terminal-core 0.1.6"
+          "wickra-terminal-core 0.1.7"
         ]
       },
       {
@@ -64686,7 +64686,7 @@
           "wezterm-dynamic 0.2.1",
           "wickra-core 1.0.6",
           "wickra-exchange-core 0.1.7",
-          "wickra-terminal-core 0.1.6"
+          "wickra-terminal-core 0.1.7"
         ]
       },
       {
@@ -64806,7 +64806,7 @@
         "name": "toml",
         "version": "1.1.6+spec-1.1.0",
         "requiredBy": [
-          "wickra-terminal-core 0.1.6"
+          "wickra-terminal-core 0.1.7"
         ]
       },
       {
@@ -65146,7 +65146,7 @@
           "wasm-bindgen-futures 0.4.78",
           "web-sys 0.3.105",
           "web-time 1.1.0",
-          "wickra-terminal-wasm 0.1.6"
+          "wickra-terminal-wasm 0.1.7"
         ]
       },
       {
