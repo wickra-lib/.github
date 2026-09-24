@@ -152,22 +152,28 @@ export function buildBannerSvg(indicatorCount) {
 
   const coreX = 64
   const coreY = 186
-  const coreW = 352
+  const coreW = 364
   const coreH = 330
 
-  const colX0 = 452
-  const colW = 194
+  const colX0 = 460
+  const colW = 192
   const colGap = 18
   const busY = 166
-  const labelSize = 12
-  const labelLs = 2
+  const labelSize = 13
+  const labelLs = 1
 
-  // Each connector drops from the middle of its column title. Letter-spacing is
-  // added after the last glyph too, so the visual centre of a label sits half a
+  // Each connector drops onto its column title: onto the centre of the '&' in a
+  // two-part title, so both halves hang from the line, else onto the middle of
+  // the title. Every glyph advances the same width plus the letter-spacing, so
+  // glyph k is centred at k advances plus half a glyph. Letter-spacing is added
+  // after the last glyph too, so a whole label's visual centre sits half a
   // space left of its measured middle.
   const tickXs = COLUMNS.map((col, i) => {
     const x = colX0 + i * (colW + colGap)
-    return x + (tw(col.label, labelSize, labelLs) - labelLs) / 2
+    const amp = col.label.indexOf('&')
+    return amp >= 0
+      ? x + tw(col.label.slice(0, amp), labelSize, labelLs) + (MONO * labelSize) / 2
+      : x + (tw(col.label, labelSize, labelLs) - labelLs) / 2
   })
 
   const columns = COLUMNS.map((col, i) => {
@@ -179,7 +185,7 @@ export function buildBannerSvg(indicatorCount) {
           t(
             x + 22,
             254 + r * 27,
-            13.5,
+            15.5,
             lib.shipped ? '#fbf7ef' : '#aab6c3',
             // The prefix is stated once, under the columns, instead of 23 times.
             lib.name.replace('wickra-', ''),
@@ -195,30 +201,30 @@ export function buildBannerSvg(indicatorCount) {
 
   const body =
     mark(56, 34, 92) +
-    wordmark(170, 104, 58, -2.4) +
+    wordmark(170, 104, 62, -2.4) +
     `<rect x="174" y="122" width="30" height="5" rx="2.5" fill="#f8cf63"/>` +
-    t(216, 132, 18, '#f8fbfe', 'the streaming-first trading stack') +
-    t(1224, 110, 19, '#ccd6e0', `${total} libraries · ten languages`, { anchor: 'end' }) +
+    t(216, 132, 20, '#f8fbfe', 'the streaming-first trading stack') +
+    t(1224, 110, 21, '#ccd6e0', `${total} libraries · ten languages`, { anchor: 'end' }) +
     connector +
     `<rect x="${coreX}" y="${coreY}" width="${coreW}" height="${coreH}" rx="16" fill="#141922" stroke="url(#goldFlat)" stroke-width="1.8"/>` +
     // Drawn after the card so the series runs across it instead of being
     // clipped by it; the card's own text is drawn after the candles.
     candles({ x0: 20, y0: 252, width: 1240, height: 388, count: 19, opacity: 0.075, seed: 21 }) +
     mark(coreX + 24, coreY + 40, 96) +
-    t(coreX + 140, coreY + 78, 30, '#f7f3ea', 'wickra', { weight: 700 }) +
-    t(coreX + 140, coreY + 106, 13.5, '#f8cf63', 'the core') +
-    t(coreX + 26, coreY + 172, 15, '#e7eef5', `${indicatorCount} streaming indicators`) +
-    t(coreX + 26, coreY + 198, 15, '#e7eef5', 'O(1) per tick') +
+    t(coreX + 140, coreY + 78, 32, '#f7f3ea', 'wickra', { weight: 700 }) +
+    t(coreX + 140, coreY + 106, 15, '#f8cf63', 'the core') +
+    t(coreX + 24, coreY + 172, 16, '#e7eef5', `${indicatorCount} streaming indicators`) +
+    t(coreX + 24, coreY + 198, 16, '#e7eef5', 'O(1) per tick') +
     // Scoped to the core on purpose: the other libraries depend on it, and on
     // serde and friends.
-    t(coreX + 26, coreY + 224, 15, '#e7eef5', 'zero dependencies') +
-    t(coreX + 26, coreY + 256, 14, '#bcc9d6', 'Rust · Python · Node.js · WASM') +
-    t(coreX + 26, coreY + 282, 14, '#bcc9d6', 'C ABI hub → C, C++, C#, Go, Java, R') +
+    t(coreX + 24, coreY + 224, 16, '#e7eef5', 'zero dependencies') +
+    t(coreX + 24, coreY + 256, 15, '#bcc9d6', 'Rust · Python · Node.js · WASM') +
+    t(coreX + 24, coreY + 282, 15, '#bcc9d6', 'C ABI hub → C, C++, C#, Go, Java, R') +
     columns +
-    t(colX0, 502, 13, '#93a0ae', 'all names prefixed wickra-') +
+    t(colX0, 502, 14.5, '#93a0ae', 'all names prefixed wickra-') +
     `<line x1="64" y1="546" x2="1216" y2="546" stroke="#2a3440" stroke-width="2"/>` +
-    t(64, 582, 17, '#b3bfcc', 'wickra.org · docs.wickra.org · live.wickra.org') +
-    t(1216, 582, 17, '#b3bfcc', `${shipped} shipped · ${inProgress} in progress`, {
+    t(64, 582, 18.5, '#b3bfcc', 'wickra.org · docs.wickra.org · live.wickra.org') +
+    t(1216, 582, 18.5, '#b3bfcc', `${shipped} shipped · ${inProgress} in progress`, {
       anchor: 'end',
     })
 
