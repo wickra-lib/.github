@@ -1,48 +1,23 @@
 {
- "scanned_at": "2026-09-23T23:17:22Z",
+ "scanned_at": "2026-09-24T02:05:11Z",
  "counts": {
-  "defect": 14,
-  "drift": 18,
-  "info": 76
+  "defect": 0,
+  "drift": 5,
+  "info": 78
  },
  "keys": [
-  "lock-stale|wickra-terminal Cargo.lock|wickra-exchange,wickra-terminal|wickra-exchange locked at 0.1.6; wickra-exchange main is 0.1.7",
-  "lock-stale|wickra-terminal Cargo.lock|wickra-exchange,wickra-terminal|wickra-exchange-core locked at 0.1.6; wickra-exchange main is 0.1.7",
-  "lock-stale|wickra-zk bindings/wasm/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8",
-  "lock-stale|wickra-zk bindings/wasm/Cargo.lock|wickra-proof,wickra-zk|wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4",
-  "lock-stale|wickra-zk Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8",
-  "lock-stale|wickra-zk Cargo.lock|wickra-proof,wickra-zk|wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4",
-  "lock-stale|wickra-zk guest/methods/guest/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8",
-  "lock-stale|wickra-zk guest/methods/guest/Cargo.lock|wickra-proof,wickra-zk|wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4",
-  "pin-behind|wickra-terminal Cargo.toml|wickra-exchange,wickra-terminal|wickra-exchange-core = =0.1.6 while wickra-exchange main is 0.1.7",
-  "pin-behind|wickra-terminal Cargo.toml|wickra-exchange,wickra-terminal|wickra-exchange = =0.1.6 while wickra-exchange main is 0.1.7",
-  "pin-behind|wickra-zk Cargo.toml|wickra-backtest,wickra-zk|wickra-backtest = =0.1.7 while wickra-backtest main is 0.1.8",
-  "pin-behind|wickra-zk Cargo.toml|wickra-proof,wickra-zk|wickra-proof-core = =0.1.3 while wickra-proof main is 0.1.4",
-  "pin-behind|wickra-zk guest/methods/guest/Cargo.toml|wickra-backtest,wickra-zk|wickra-backtest = =0.1.7 while wickra-backtest main is 0.1.8",
-  "pin-behind|wickra-zk guest/methods/guest/Cargo.toml|wickra-proof,wickra-zk|wickra-proof-core = =0.1.3 while wickra-proof main is 0.1.4",
   "decl:cargo|getrandom|0.2=wickra-feature-store,wickra-gym,wickra-strategy-ci,wickra-terminal,wickra-timemachine|0.3=wickra-terminal,wickra-timemachine|0.4=wickra-exchange,wickra-terminal,wickra-timemachine",
-  "decl:cargo|wickra-backtest|=0.1.7=wickra-zk|=0.1.8=wickra-compile,wickra-darwin,wickra-gym,wickra-impact,wickra-timemachine",
-  "decl:cargo|wickra-exchange|=0.1.6=wickra-terminal|=0.1.7=wickra-copilot,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-xray",
-  "decl:cargo|wickra-exchange-core|=0.1.6=wickra-terminal|=0.1.7=wickra-timemachine",
   "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:toolchain|CMAKE_CXX_STANDARD|11=wickra-embed|17=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:toolchain|rust-version (crate)|1.86=wickra-pico|1.88=wickra-terminal|1.90=wickra-zk",
   "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk",
-  "lock-behind|wickra-terminal Cargo.lock|wickra,wickra-terminal|wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra,wickra-zk|wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk Cargo.lock|wickra,wickra-zk|wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-  "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra,wickra-zk|wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)",
   "decl:own|wickra-backtest-core|=0.1.8=wickra-benchmark,wickra-copilot,wickra-feature-store,wickra-genome,wickra-proof,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-verify,wickra-xray|0.1.8",
   "decl:own|wickra-core|1.0=wickra-backtest,wickra-benchmark,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-timemachine|1.0.6",
   "decl:own|wickra-data|1.0=wickra-copilot,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-synth|1.0.6",
   "decl:own|wickra-embed-core|=0.1.2=wickra-pico|0.1.2",
-  "decl:own|wickra-proof-core|=0.1.3=wickra-zk|0.1.4",
+  "decl:own|wickra-exchange|=0.1.7=wickra-copilot,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray|0.1.7",
+  "decl:own|wickra-exchange-core|=0.1.7=wickra-terminal,wickra-timemachine|0.1.7",
+  "decl:own|wickra-proof-core|=0.1.4=wickra-zk|0.1.4",
   "lock:cargo|base64|0.22.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray,wickra-zk|0.23.x=wickra-backtest,wickra-feature-store,wickra-zk,wickra-zk@guest/builder",
   "lock:cargo|bit-set|0.5.x=wickra-terminal|0.8.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "lock:cargo|bit-vec|0.6.x=wickra-terminal|0.8.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest",
@@ -93,7 +68,7 @@
   "lock:cargo|strum|0.27.x=wickra-zk,wickra-zk@guest/builder|0.28.x=wickra-terminal",
   "lock:cargo|strum_macros|0.27.x=wickra-zk,wickra-zk@guest/builder|0.28.x=wickra-terminal",
   "lock:cargo|syn|1.x=wickra-pico@firmware/rp-pico,wickra-terminal,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest|2.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-embed@examples/embedded,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-pico@firmware/rp-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest|3.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
-  "lock:cargo|synstructure|0.13.x=wickra-copilot,wickra-exchange,wickra-shazam,wickra-terminal,wickra-zk|0.14.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk",
+  "lock:cargo|synstructure|0.13.x=wickra-copilot,wickra-exchange,wickra-shazam,wickra-terminal|0.14.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk",
   "lock:cargo|thiserror|1.x=wickra-terminal,wickra-zk|2.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
   "lock:cargo|thiserror-impl|1.x=wickra-terminal,wickra-zk|2.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/builder,wickra-zk@guest/methods/guest",
   "lock:cargo|toml|0.8.x=wickra-zk,wickra-zk@guest/builder|1.x=wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-feature-store,wickra-genome,wickra-gym,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-verify,wickra-xray,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest",
@@ -117,160 +92,6 @@
  ],
  "findings": [
   {
-   "severity": "defect",
-   "kind": "lock-stale",
-   "subject": "wickra-terminal Cargo.lock",
-   "detail": "wickra-exchange locked at 0.1.6; wickra-exchange main is 0.1.7",
-   "repos": [
-    "wickra-exchange",
-    "wickra-terminal"
-   ],
-   "key": "lock-stale|wickra-terminal Cargo.lock|wickra-exchange,wickra-terminal|wickra-exchange locked at 0.1.6; wickra-exchange main is 0.1.7"
-  },
-  {
-   "severity": "defect",
-   "kind": "lock-stale",
-   "subject": "wickra-terminal Cargo.lock",
-   "detail": "wickra-exchange-core locked at 0.1.6; wickra-exchange main is 0.1.7",
-   "repos": [
-    "wickra-exchange",
-    "wickra-terminal"
-   ],
-   "key": "lock-stale|wickra-terminal Cargo.lock|wickra-exchange,wickra-terminal|wickra-exchange-core locked at 0.1.6; wickra-exchange main is 0.1.7"
-  },
-  {
-   "severity": "defect",
-   "kind": "lock-stale",
-   "subject": "wickra-zk bindings/wasm/Cargo.lock",
-   "detail": "wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-stale|wickra-zk bindings/wasm/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8"
-  },
-  {
-   "severity": "defect",
-   "kind": "lock-stale",
-   "subject": "wickra-zk bindings/wasm/Cargo.lock",
-   "detail": "wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4",
-   "repos": [
-    "wickra-proof",
-    "wickra-zk"
-   ],
-   "key": "lock-stale|wickra-zk bindings/wasm/Cargo.lock|wickra-proof,wickra-zk|wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4"
-  },
-  {
-   "severity": "defect",
-   "kind": "lock-stale",
-   "subject": "wickra-zk Cargo.lock",
-   "detail": "wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-stale|wickra-zk Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8"
-  },
-  {
-   "severity": "defect",
-   "kind": "lock-stale",
-   "subject": "wickra-zk Cargo.lock",
-   "detail": "wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4",
-   "repos": [
-    "wickra-proof",
-    "wickra-zk"
-   ],
-   "key": "lock-stale|wickra-zk Cargo.lock|wickra-proof,wickra-zk|wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4"
-  },
-  {
-   "severity": "defect",
-   "kind": "lock-stale",
-   "subject": "wickra-zk guest/methods/guest/Cargo.lock",
-   "detail": "wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-stale|wickra-zk guest/methods/guest/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest locked at 0.1.7; wickra-backtest main is 0.1.8"
-  },
-  {
-   "severity": "defect",
-   "kind": "lock-stale",
-   "subject": "wickra-zk guest/methods/guest/Cargo.lock",
-   "detail": "wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4",
-   "repos": [
-    "wickra-proof",
-    "wickra-zk"
-   ],
-   "key": "lock-stale|wickra-zk guest/methods/guest/Cargo.lock|wickra-proof,wickra-zk|wickra-proof-core locked at 0.1.3; wickra-proof main is 0.1.4"
-  },
-  {
-   "severity": "defect",
-   "kind": "pin-behind",
-   "subject": "wickra-terminal Cargo.toml",
-   "detail": "wickra-exchange-core = =0.1.6 while wickra-exchange main is 0.1.7",
-   "repos": [
-    "wickra-exchange",
-    "wickra-terminal"
-   ],
-   "key": "pin-behind|wickra-terminal Cargo.toml|wickra-exchange,wickra-terminal|wickra-exchange-core = =0.1.6 while wickra-exchange main is 0.1.7"
-  },
-  {
-   "severity": "defect",
-   "kind": "pin-behind",
-   "subject": "wickra-terminal Cargo.toml",
-   "detail": "wickra-exchange = =0.1.6 while wickra-exchange main is 0.1.7",
-   "repos": [
-    "wickra-exchange",
-    "wickra-terminal"
-   ],
-   "key": "pin-behind|wickra-terminal Cargo.toml|wickra-exchange,wickra-terminal|wickra-exchange = =0.1.6 while wickra-exchange main is 0.1.7"
-  },
-  {
-   "severity": "defect",
-   "kind": "pin-behind",
-   "subject": "wickra-zk Cargo.toml",
-   "detail": "wickra-backtest = =0.1.7 while wickra-backtest main is 0.1.8",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "pin-behind|wickra-zk Cargo.toml|wickra-backtest,wickra-zk|wickra-backtest = =0.1.7 while wickra-backtest main is 0.1.8"
-  },
-  {
-   "severity": "defect",
-   "kind": "pin-behind",
-   "subject": "wickra-zk Cargo.toml",
-   "detail": "wickra-proof-core = =0.1.3 while wickra-proof main is 0.1.4",
-   "repos": [
-    "wickra-proof",
-    "wickra-zk"
-   ],
-   "key": "pin-behind|wickra-zk Cargo.toml|wickra-proof,wickra-zk|wickra-proof-core = =0.1.3 while wickra-proof main is 0.1.4"
-  },
-  {
-   "severity": "defect",
-   "kind": "pin-behind",
-   "subject": "wickra-zk guest/methods/guest/Cargo.toml",
-   "detail": "wickra-backtest = =0.1.7 while wickra-backtest main is 0.1.8",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "pin-behind|wickra-zk guest/methods/guest/Cargo.toml|wickra-backtest,wickra-zk|wickra-backtest = =0.1.7 while wickra-backtest main is 0.1.8"
-  },
-  {
-   "severity": "defect",
-   "kind": "pin-behind",
-   "subject": "wickra-zk guest/methods/guest/Cargo.toml",
-   "detail": "wickra-proof-core = =0.1.3 while wickra-proof main is 0.1.4",
-   "repos": [
-    "wickra-proof",
-    "wickra-zk"
-   ],
-   "key": "pin-behind|wickra-zk guest/methods/guest/Cargo.toml|wickra-proof,wickra-zk|wickra-proof-core = =0.1.3 while wickra-proof main is 0.1.4"
-  },
-  {
    "severity": "drift",
    "kind": "decl:cargo",
    "subject": "getrandom",
@@ -284,52 +105,6 @@
     "wickra-timemachine"
    ],
    "key": "decl:cargo|getrandom|0.2=wickra-feature-store,wickra-gym,wickra-strategy-ci,wickra-terminal,wickra-timemachine|0.3=wickra-terminal,wickra-timemachine|0.4=wickra-exchange,wickra-terminal,wickra-timemachine"
-  },
-  {
-   "severity": "drift",
-   "kind": "decl:cargo",
-   "subject": "wickra-backtest",
-   "detail": "=0.1.8: 5 [compile, darwin, gym, impact, timemachine] | =0.1.7: 1 [zk]",
-   "repos": [
-    "wickra-compile",
-    "wickra-darwin",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-timemachine",
-    "wickra-zk"
-   ],
-   "key": "decl:cargo|wickra-backtest|=0.1.7=wickra-zk|=0.1.8=wickra-compile,wickra-darwin,wickra-gym,wickra-impact,wickra-timemachine"
-  },
-  {
-   "severity": "drift",
-   "kind": "decl:cargo",
-   "subject": "wickra-exchange",
-   "detail": "=0.1.7: 8 [copilot, genome, gym, impact, radar, screener, shazam, xray] | =0.1.6: 1 [terminal]",
-   "repos": [
-    "wickra-copilot",
-    "wickra-exchange",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-terminal",
-    "wickra-xray"
-   ],
-   "key": "decl:cargo|wickra-exchange|=0.1.6=wickra-terminal|=0.1.7=wickra-copilot,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-xray"
-  },
-  {
-   "severity": "drift",
-   "kind": "decl:cargo",
-   "subject": "wickra-exchange-core",
-   "detail": "=0.1.6: 1 [terminal] | =0.1.7: 1 [timemachine]",
-   "repos": [
-    "wickra-exchange",
-    "wickra-terminal",
-    "wickra-timemachine"
-   ],
-   "key": "decl:cargo|wickra-exchange-core|=0.1.6=wickra-terminal|=0.1.7=wickra-timemachine"
   },
   {
    "severity": "drift",
@@ -439,116 +214,6 @@
    "key": "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk"
   },
   {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-terminal Cargo.lock",
-   "detail": "wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra",
-    "wickra-terminal"
-   ],
-   "key": "lock-behind|wickra-terminal Cargo.lock|wickra,wickra-terminal|wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk bindings/wasm/Cargo.lock",
-   "detail": "wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk bindings/wasm/Cargo.lock",
-   "detail": "wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk bindings/wasm/Cargo.lock",
-   "detail": "wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra,wickra-zk|wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk Cargo.lock",
-   "detail": "wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk Cargo.lock",
-   "detail": "wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk Cargo.lock",
-   "detail": "wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk Cargo.lock|wickra,wickra-zk|wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk guest/methods/guest/Cargo.lock",
-   "detail": "wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-core locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk guest/methods/guest/Cargo.lock",
-   "detail": "wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra-backtest",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra-backtest,wickra-zk|wickra-backtest-data locked at 0.1.7; wickra-backtest main is 0.1.8 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
-   "severity": "drift",
-   "kind": "lock-behind",
-   "subject": "wickra-zk guest/methods/guest/Cargo.lock",
-   "detail": "wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)",
-   "repos": [
-    "wickra",
-    "wickra-zk"
-   ],
-   "key": "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra,wickra-zk|wickra-core locked at 1.0.5; wickra main is 1.0.6 (caret pin; the lock refresh is Dependabot's)"
-  },
-  {
    "severity": "info",
    "kind": "decl:cargo",
    "subject": "wickra-backtest-core",
@@ -627,13 +292,44 @@
   {
    "severity": "info",
    "kind": "decl:cargo",
+   "subject": "wickra-exchange",
+   "detail": "9 consumer(s) pin =0.1.7; exchange declares its own crate as 0.1.7",
+   "repos": [
+    "wickra-copilot",
+    "wickra-exchange",
+    "wickra-genome",
+    "wickra-gym",
+    "wickra-impact",
+    "wickra-radar",
+    "wickra-screener",
+    "wickra-shazam",
+    "wickra-terminal",
+    "wickra-xray"
+   ],
+   "key": "decl:own|wickra-exchange|=0.1.7=wickra-copilot,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray|0.1.7"
+  },
+  {
+   "severity": "info",
+   "kind": "decl:cargo",
+   "subject": "wickra-exchange-core",
+   "detail": "2 consumer(s) pin =0.1.7; exchange declares its own crate as 0.1.7",
+   "repos": [
+    "wickra-exchange",
+    "wickra-terminal",
+    "wickra-timemachine"
+   ],
+   "key": "decl:own|wickra-exchange-core|=0.1.7=wickra-terminal,wickra-timemachine|0.1.7"
+  },
+  {
+   "severity": "info",
+   "kind": "decl:cargo",
    "subject": "wickra-proof-core",
-   "detail": "1 consumer(s) pin =0.1.3; proof declares its own crate as 0.1.4",
+   "detail": "1 consumer(s) pin =0.1.4; proof declares its own crate as 0.1.4",
    "repos": [
     "wickra-proof",
     "wickra-zk"
    ],
-   "key": "decl:own|wickra-proof-core|=0.1.3=wickra-zk|0.1.4"
+   "key": "decl:own|wickra-proof-core|=0.1.4=wickra-zk|0.1.4"
   },
   {
    "severity": "info",
@@ -1714,7 +1410,7 @@
    "severity": "info",
    "kind": "lock:cargo",
    "subject": "synstructure",
-   "detail": "0.14.x: 13 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, wickra, xray, zk] | 0.13.x: 5 [copilot, exchange, shazam, terminal, zk]",
+   "detail": "0.14.x: 13 [backtest, copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, wickra, xray, zk] | 0.13.x: 4 [copilot, exchange, shazam, terminal]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -1730,7 +1426,7 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "lock:cargo|synstructure|0.13.x=wickra-copilot,wickra-exchange,wickra-shazam,wickra-terminal,wickra-zk|0.14.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk"
+   "key": "lock:cargo|synstructure|0.13.x=wickra-copilot,wickra-exchange,wickra-shazam,wickra-terminal|0.14.x=wickra,wickra-backtest,wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray,wickra-zk"
   },
   {
    "severity": "info",
