@@ -1,19 +1,28 @@
 {
-  "scanned_at": "2026-09-21T10:45:09Z",
+  "scanned_at": "2026-09-24T10:02:33Z",
   "repos": 77,
-  "dependabot": [
-    {
-      "repo": "webpage",
-      "number": 79,
-      "title": "deps(npm): bump the site group with 2 updates",
-      "url": "https://github.com/wickra-lib/webpage/pull/79",
-      "created": "2026-09-20T21:52:44Z",
-      "failing": [],
-      "checks": 4
-    }
-  ],
+  "dependabot": [],
   "waiting": 0,
   "people": [],
-  "alerts": [],
+  "alerts": [
+    {
+      "repo": "wickra-playground",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 10,
+      "url": "https://github.com/wickra-lib/wickra-playground/security/code-scanning/10",
+      "created": "2026-09-23T14:55:55Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 9,
+      "url": "https://github.com/wickra-lib/wickra-playground/security/code-scanning/9",
+      "created": "2026-09-23T14:55:55Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    }
+  ],
   "unreadable": []
 }
