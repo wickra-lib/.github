@@ -9,7 +9,8 @@
  *
  * gen-banner.mjs passes in the indicator count (canonical source:
  * profile/README.md, kept current by indicator-count.yml) and renders the
- * result to profile/wickra-banner.webp.
+ * result to profile/wickra-banner.svg (glyphs as paths) and
+ * profile/wickra-banner.webp.
  *
  * Text is measured rather than laid out by the renderer: everything is set in
  * DejaVu Sans Mono, whose glyphs all advance 0.60205 em, so a string's width is

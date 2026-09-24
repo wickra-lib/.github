@@ -2,7 +2,7 @@
   "name": "wickra-org-profile",
   "private": true,
   "type": "module",
-  "description": "Regenerates the org-profile banner PNG from assets/wickra-banner.svg, keeping the indicator count in sync with profile/README.md.",
+  "description": "Regenerates the org-profile banner (a vector SVG and a WebP copy) from scripts/banner-svg.mjs, keeping the indicator count in sync with profile/README.md.",
   "scripts": {
     "gen:banner": "node scripts/gen-banner.mjs"
   },
