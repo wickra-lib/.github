@@ -73,7 +73,7 @@ jobs:
           sed -i -E "s/[0-9]+ (streaming-first )?indicators/${N} \1indicators/g" profile/README.md
           # Camo caches the raw banner by URL; a regenerated image at an unchanged
           # URL keeps serving the old picture.
-          sed -i -E "s/(wickra-banner\.webp\?v=)[0-9]+/\1${N}/g" profile/README.md
+          sed -i -E "s/(wickra-banner\.svg\?v=)[0-9]+/\1${N}/g" profile/README.md
 
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
