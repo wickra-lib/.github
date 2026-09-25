@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-24T21:50:55Z",
+  "scanned_at": "2026-09-25T00:54:11Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -7605,7 +7605,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrascreener",
-          "version": "0.1.8"
+          "version": "0.1.9"
         }
       ],
       "go": {
@@ -13446,12 +13446,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-screener",
-      "kind": "registry differs",
-      "subject": "r-universe wickrascreener",
-      "detail": "0.1.8 against the declared 0.1.9"
     },
     {
       "repo": "wickra-shazam",
