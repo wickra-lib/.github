@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-27T14:19:06Z",
+  "scanned_at": "2026-09-27T19:01:08Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -64,8 +64,7 @@
           "ureq 2.12.1"
         ],
         "wickra-backtest": [
-          "parquet 59.3.0",
-          "ureq 2.12.1"
+          "parquet 59.3.0"
         ],
         "wickra-copilot": [
           "hyper-util 0.1.20",
@@ -126,12 +125,14 @@
           "wickra-exchange-core 0.1.8"
         ],
         "wickra-zk": [
-          "hyper-util 0.1.20",
-          "reqwest 0.12.28",
           "serde_with 3.23.0"
         ]
       },
-      "held": null
+      "held": [
+        "arrow-cast 59.3.0",
+        "parquet 59.3.0",
+        "serde_with 3.23.0"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -184,7 +185,6 @@
           "digest 0.11.3"
         ],
         "wickra-terminal": [
-          "digest 0.10.7",
           "digest 0.11.3"
         ],
         "wickra-timemachine": [
@@ -197,7 +197,9 @@
           "digest 0.10.7"
         ]
       },
-      "held": null
+      "held": [
+        "digest 0.10.7"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -275,7 +277,11 @@
           "rsa 0.9.10"
         ]
       },
-      "held": null
+      "held": [
+        "der 0.7.10",
+        "digest 0.10.7",
+        "rsa 0.9.10"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -327,7 +333,6 @@
       },
       "requiredBy": {
         "wickra": [
-          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion 0.8.2"
         ],
         "wickra-backtest": [
@@ -400,7 +405,9 @@
           "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
-      "held": null
+      "held": [
+        "criterion 0.8.2"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -469,7 +476,6 @@
           "primefield 0.14.0"
         ],
         "wickra-terminal": [
-          "digest 0.10.7",
           "digest 0.11.3",
           "elliptic-curve 0.14.1",
           "primefield 0.14.0"
@@ -488,7 +494,9 @@
           "digest 0.10.7"
         ]
       },
-      "held": null
+      "held": [
+        "digest 0.10.7"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -681,7 +689,6 @@
           "elliptic-curve 0.14.1",
           "hmac 0.13.0",
           "sha1 0.11.0",
-          "sha2 0.10.9",
           "sha2 0.11.0",
           "signature 3.0.0"
         ],
@@ -712,7 +719,17 @@
           "signature 2.2.0"
         ]
       },
-      "held": null
+      "held": [
+        "ark-crypto-primitives 0.5.0",
+        "ark-ff 0.5.0",
+        "ark-serialize 0.5.0",
+        "blake2 0.10.6",
+        "downloader 0.2.8",
+        "risc0-zkp 3.0.5",
+        "rsa 0.9.10",
+        "sha2 0.10.9",
+        "signature 2.2.0"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -895,9 +912,7 @@
       },
       "requiredBy": {
         "wickra": [
-          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion 0.8.2",
-          "criterion-plot 0.5.0",
           "criterion-plot 0.8.2"
         ],
         "wickra-backtest": [
@@ -973,8 +988,6 @@
           "criterion-plot 0.5.0"
         ],
         "wickra-terminal": [
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion-plot 0.5.0",
           "ratatui-core 0.1.2",
           "ratatui-widgets 0.3.2",
           "unicode-truncate 2.0.1"
@@ -992,19 +1005,17 @@
           "criterion-plot 0.5.0"
         ],
         "wickra-zk": [
-          "ark-ec 0.5.0",
-          "ark-ff 0.5.0",
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion-plot 0.5.0",
-          "malachite-base 0.4.22",
-          "malachite-float 0.4.22",
-          "malachite-nz 0.4.22",
-          "malachite-q 0.4.22",
-          "prost-derive 0.13.5",
-          "puffin 0.19.1"
+          "prost-derive 0.13.5"
         ]
       },
-      "held": null
+      "held": [
+        "criterion 0.8.2",
+        "criterion-plot 0.8.2",
+        "prost-derive 0.13.5",
+        "ratatui-core 0.1.2",
+        "ratatui-widgets 0.3.2",
+        "unicode-truncate 2.0.1"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -1024,25 +1035,21 @@
           "parquet 59.3.0"
         ],
         "wickra-zk": [
-          "addchain 0.2.1",
           "ark-ec 0.5.0",
           "ark-ff 0.5.0",
           "ark-ff-macros 0.5.0",
           "ark-r1cs-std 0.5.0",
           "ark-serialize 0.5.0",
-          "ff_derive 0.13.1",
           "risc0-groth16 3.0.5",
           "risc0-zkvm 3.0.6"
         ]
       },
       "held": [
-        "addchain 0.2.1",
         "ark-ec 0.5.0",
         "ark-ff 0.5.0",
         "ark-ff-macros 0.5.0",
         "ark-r1cs-std 0.5.0",
         "ark-serialize 0.5.0",
-        "ff_derive 0.13.1",
         "risc0-groth16 3.0.5",
         "risc0-zkvm 3.0.6"
       ]
@@ -1209,7 +1216,6 @@
       },
       "requiredBy": {
         "wickra": [
-          "proptest 1.11.0",
           "tungstenite 0.30.0"
         ],
         "wickra-backtest": [
@@ -1222,9 +1228,7 @@
           "proptest 1.11.0"
         ],
         "wickra-copilot": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-darwin": [
@@ -1234,31 +1238,23 @@
           "proptest 1.11.0"
         ],
         "wickra-exchange": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-feature-store": [
           "proptest 1.11.0"
         ],
         "wickra-genome": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-gym": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0",
           "wickra-gym-core 0.1.5"
         ],
         "wickra-impact": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-pico": [
@@ -1268,35 +1264,25 @@
           "proptest 1.11.0"
         ],
         "wickra-radar": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-screener": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-shazam": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-strategy-ci": [
-          "proptest 1.11.0",
           "wickra-strategy-ci-core 0.1.5"
         ],
         "wickra-synth": [
           "proptest 1.11.0"
         ],
         "wickra-terminal": [
-          "phf_generator 0.11.3",
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-timemachine": [
@@ -1307,26 +1293,17 @@
           "proptest 1.11.0"
         ],
         "wickra-xray": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ],
         "wickra-zk": [
-          "ark-std 0.5.0",
-          "downloader 0.2.8",
-          "num-bigint-dig 0.8.6",
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "risc0-binfmt 3.0.5",
-          "risc0-circuit-recursion 4.0.5",
-          "risc0-circuit-rv32im 4.0.5",
-          "risc0-zkp 3.0.5",
-          "risc0-zkvm 3.0.6",
-          "ruint 1.20.1"
+          "quinn-proto 0.11.18"
         ]
       },
-      "held": null
+      "held": [
+        "proptest 1.11.0",
+        "rust_decimal 1.43.0"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -1361,10 +1338,7 @@
         "wickra": [
           "chacha20 0.10.2",
           "getrandom 0.4.3",
-          "rand 0.10.3",
-          "rand 0.9.5",
-          "rand_chacha 0.9.0",
-          "rand_xorshift 0.4.0"
+          "rand 0.10.3"
         ],
         "wickra-backtest": [
           "rand 0.9.5",
@@ -1391,12 +1365,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-darwin": [
@@ -1419,12 +1388,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-feature-store": [
@@ -1442,12 +1406,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-gym": [
@@ -1460,12 +1419,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-impact": [
@@ -1478,12 +1432,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-pico": [
@@ -1506,12 +1455,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-screener": [
@@ -1524,12 +1468,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-shazam": [
@@ -1542,20 +1481,12 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-strategy-ci": [
           "rand 0.10.3",
-          "rand 0.9.5",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0"
+          "rand_pcg 0.10.2"
         ],
         "wickra-synth": [
           "rand 0.9.5",
@@ -1572,12 +1503,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-timemachine": [
@@ -1588,11 +1514,6 @@
           "getrandom 0.4.3",
           "group 0.14.0",
           "primefield 0.14.0",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-verify": [
@@ -1610,33 +1531,21 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ],
         "wickra-zk": [
           "chacha20 0.10.2",
-          "ff 0.13.1",
           "getrandom 0.4.3",
-          "merlin 3.0.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "risc0-core 3.0.2",
-          "risc0-zkp 3.0.5",
-          "rsa 0.9.10",
-          "signature 2.2.0"
+          "rand_pcg 0.10.2"
         ]
       },
-      "held": null
+      "held": [
+        "rand 0.9.5",
+        "rand_chacha 0.9.0",
+        "rand_xorshift 0.4.0"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -1706,8 +1615,7 @@
           "wickra-backtest-core 0.1.8"
         ],
         "wickra-zk": [
-          "serde_with 3.23.0",
-          "wickra-backtest-core 0.1.8"
+          "serde_with 3.23.0"
         ]
       },
       "held": null
@@ -1783,7 +1691,9 @@
           "schemars 0.8.22"
         ]
       },
-      "held": null
+      "held": [
+        "schemars 1.2.2"
+      ]
     },
     {
       "ecosystem": "cargo",
@@ -1916,8 +1826,6 @@
         ],
         "wickra-terminal": [
           "p256 0.14.0",
-          "termwiz 0.23.3",
-          "wezterm-blob-leases 0.1.1",
           "wickra-exchange-core 0.1.8"
         ],
         "wickra-timemachine": [
@@ -2732,8 +2640,7 @@
         "name": "criterion-plot",
         "version": "0.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion 0.8.2"
+          "codspeed-criterion-compat-walltime 5.0.2"
         ]
       },
       {
@@ -2742,7 +2649,6 @@
         "name": "criterion-plot",
         "version": "0.8.2",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion 0.8.2"
         ]
       },
@@ -3035,10 +2941,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand 0.10.3",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -3049,7 +2952,6 @@
         "requiredBy": [
           "codspeed 5.0.2",
           "rand 0.10.3",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -3236,9 +3138,7 @@
         "version": "0.10.5",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion 0.8.2",
-          "criterion-plot 0.5.0",
-          "criterion-plot 0.8.2"
+          "criterion-plot 0.5.0"
         ]
       },
       {
@@ -3247,9 +3147,7 @@
         "name": "itertools",
         "version": "0.13.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2",
           "criterion 0.8.2",
-          "criterion-plot 0.5.0",
           "criterion-plot 0.8.2"
         ]
       },
@@ -3821,8 +3719,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -3831,7 +3728,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -3841,8 +3737,7 @@
         "name": "rand",
         "version": "0.9.5",
         "requiredBy": [
-          "proptest 1.11.0",
-          "tungstenite 0.30.0"
+          "proptest 1.11.0"
         ]
       },
       {
@@ -3851,7 +3746,6 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -3871,9 +3765,6 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "getrandom 0.4.3",
-          "rand 0.10.3",
           "rand 0.9.5",
           "rand_chacha 0.9.0",
           "rand_xorshift 0.4.0"
@@ -3887,10 +3778,7 @@
         "requiredBy": [
           "chacha20 0.10.2",
           "getrandom 0.4.3",
-          "rand 0.10.3",
-          "rand 0.9.5",
-          "rand_chacha 0.9.0",
-          "rand_xorshift 0.4.0"
+          "rand 0.10.3"
         ]
       },
       {
@@ -4182,25 +4070,13 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "async-trait 0.1.92",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "num_enum_derive 0.7.6",
           "openssl-macros 0.1.1",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "serde_derive 1.0.229",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
-          "wasm-bindgen-macro-support 0.2.128",
-          "wasm-bindgen-test-macro 0.3.78",
-          "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zerovec-derive 0.11.6"
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
@@ -4212,12 +4088,6 @@
           "async-trait 0.1.92",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "num_enum_derive 0.7.6",
-          "openssl-macros 0.1.1",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "serde_derive 1.0.229",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
@@ -4225,7 +4095,6 @@
           "wasm-bindgen-macro-support 0.2.128",
           "wasm-bindgen-test-macro 0.3.78",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
           "zerovec-derive 0.11.6"
         ]
@@ -5932,7 +5801,6 @@
         "name": "base64",
         "version": "0.22.1",
         "requiredBy": [
-          "parquet 59.3.0",
           "ureq 2.12.1"
         ]
       },
@@ -5942,8 +5810,7 @@
         "name": "base64",
         "version": "0.23.1",
         "requiredBy": [
-          "parquet 59.3.0",
-          "ureq 2.12.1"
+          "parquet 59.3.0"
         ]
       },
       {
@@ -6486,13 +6353,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "ahash 0.8.12",
-          "codspeed 5.0.2",
           "const-random-macro 0.1.16",
-          "jobserver 0.1.35",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "ring 0.17.14"
         ]
       },
       {
@@ -6502,12 +6364,7 @@
         "version": "0.3.4",
         "requiredBy": [
           "ahash 0.8.12",
-          "codspeed 5.0.2",
-          "const-random-macro 0.1.16",
-          "jobserver 0.1.35",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -6516,12 +6373,8 @@
         "name": "getrandom",
         "version": "0.4.3",
         "requiredBy": [
-          "ahash 0.8.12",
           "codspeed 5.0.2",
-          "const-random-macro 0.1.16",
           "jobserver 0.1.35",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0"
         ]
       },
@@ -7184,8 +7037,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -7194,7 +7046,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -7598,26 +7449,13 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "ref-cast-impl 1.0.27",
-          "schemars_derive 1.2.2",
-          "serde_derive 1.0.229",
-          "serde_derive_internals 0.30.0",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
-          "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zerovec-derive 0.11.6"
+          "zerocopy-derive 0.8.57"
         ]
       },
       {
@@ -7629,10 +7467,6 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -7640,10 +7474,7 @@
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "wasm-bindgen-macro-support 0.2.128",
-          "windows-implement 0.60.2",
-          "windows-interface 0.59.3",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
           "zerovec-derive 0.11.6"
         ]
@@ -7901,8 +7732,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "ureq 2.12.1",
-          "webpki-roots 0.26.11"
+          "ureq 2.12.1"
         ]
       },
       {
@@ -7911,7 +7741,6 @@
         "name": "webpki-roots",
         "version": "1.0.9",
         "requiredBy": [
-          "ureq 2.12.1",
           "webpki-roots 0.26.11"
         ]
       },
@@ -7990,15 +7819,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "tempfile 3.27.0",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -8012,7 +7833,6 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
@@ -9687,9 +9507,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -9699,7 +9517,6 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -10095,8 +9912,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -10105,7 +9921,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -10385,17 +10200,12 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -10407,16 +10217,9 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -12075,9 +11878,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -12087,7 +11888,6 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -12532,8 +12332,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -12542,7 +12341,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -12834,17 +12632,12 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -12856,16 +12649,9 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -14838,15 +14624,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "ring 0.17.14"
         ]
       },
       {
@@ -14855,15 +14634,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -14877,9 +14648,6 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0"
         ]
       },
@@ -15737,8 +15505,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -15747,7 +15514,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -15757,10 +15523,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -15770,9 +15533,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -15781,9 +15542,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -15793,9 +15552,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -15805,7 +15562,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -15815,22 +15571,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -15839,22 +15581,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -15872,12 +15601,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -16368,28 +16092,17 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
           "synstructure 0.13.2",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.2",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -16402,23 +16115,12 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
-          "synstructure 0.13.2",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.2",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -16438,8 +16140,7 @@
         "name": "synstructure",
         "version": "0.13.2",
         "requiredBy": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
+          "yoke-derive 0.8.2"
         ]
       },
       {
@@ -16448,7 +16149,6 @@
         "name": "synstructure",
         "version": "0.14.0",
         "requiredBy": [
-          "yoke-derive 0.8.2",
           "zerofrom-derive 0.1.8"
         ]
       },
@@ -16915,10 +16615,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -16929,7 +16626,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -16959,19 +16655,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -16987,7 +16671,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -18595,9 +18278,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -18607,7 +18288,6 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -19040,8 +18720,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -19050,7 +18729,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -19333,17 +19011,12 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -19355,16 +19028,9 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -20827,9 +20493,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -20839,7 +20503,6 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -21095,8 +20758,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -21105,7 +20767,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -21311,9 +20972,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "serde_derive 1.0.229",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -21325,8 +20983,7 @@
         "requiredBy": [
           "serde_derive 1.0.229",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -22317,16 +21974,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0",
-          "wickra-exchange-wasm 0.1.8"
+          "ring 0.17.14"
         ]
       },
       {
@@ -22335,16 +21984,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0",
-          "wickra-exchange-wasm 0.1.8"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -22358,9 +21998,6 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0",
           "wickra-exchange-wasm 0.1.8"
         ]
@@ -23194,8 +22831,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -23204,7 +22840,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -23214,10 +22849,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -23227,9 +22859,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -23238,9 +22868,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -23250,9 +22878,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -23262,7 +22888,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -23272,22 +22897,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -23296,22 +22907,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -23329,12 +22927,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -23789,26 +23382,16 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "rust_decimal_macros 1.40.0",
-          "serde_derive 1.0.229",
           "synstructure 0.13.2",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.2",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -23820,22 +23403,12 @@
           "borsh-derive 1.8.1",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "rust_decimal_macros 1.40.0",
           "serde_derive 1.0.229",
-          "synstructure 0.13.2",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.2",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -23855,8 +23428,7 @@
         "name": "synstructure",
         "version": "0.13.2",
         "requiredBy": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
+          "yoke-derive 0.8.2"
         ]
       },
       {
@@ -23865,7 +23437,6 @@
         "name": "synstructure",
         "version": "0.14.0",
         "requiredBy": [
-          "yoke-derive 0.8.2",
           "zerofrom-derive 0.1.8"
         ]
       },
@@ -24300,10 +23871,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -24314,7 +23882,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -24344,17 +23911,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -24368,7 +23925,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -26327,12 +25883,7 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "ahash 0.8.12",
-          "codspeed 5.0.2",
           "const-random-macro 0.1.16",
-          "jobserver 0.1.35",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0",
           "wickra-feature-store-wasm 0.1.3"
         ]
       },
@@ -26343,12 +25894,7 @@
         "version": "0.3.4",
         "requiredBy": [
           "ahash 0.8.12",
-          "codspeed 5.0.2",
-          "const-random-macro 0.1.16",
-          "jobserver 0.1.35",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0",
-          "wickra-feature-store-wasm 0.1.3"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -26357,13 +25903,9 @@
         "name": "getrandom",
         "version": "0.4.3",
         "requiredBy": [
-          "ahash 0.8.12",
           "codspeed 5.0.2",
-          "const-random-macro 0.1.16",
           "jobserver 0.1.35",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0",
-          "wickra-feature-store-wasm 0.1.3"
+          "tempfile 3.27.0"
         ]
       },
       {
@@ -27001,8 +26543,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -27011,7 +26552,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -27348,17 +26888,12 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
           "zerocopy-derive 0.8.57"
@@ -27372,18 +26907,9 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "windows-implement 0.60.2",
-          "windows-interface 0.59.3",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -29472,15 +28998,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "ring 0.17.14"
         ]
       },
       {
@@ -29489,15 +29008,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -29511,9 +29022,6 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0"
         ]
       },
@@ -30369,8 +29877,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -30379,7 +29886,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -30389,10 +29895,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -30402,9 +29905,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -30413,9 +29914,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -30425,9 +29924,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -30437,7 +29934,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -30447,22 +29943,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -30471,22 +29953,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -30504,12 +29973,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -30996,27 +30460,15 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -31029,22 +30481,13 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -31530,10 +30973,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -31544,7 +30984,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -31574,19 +31013,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -31602,7 +31029,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -33542,15 +32968,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
           "ring 0.17.14",
-          "tempfile 3.27.0",
           "wickra-gym-wasm 0.1.5"
         ]
       },
@@ -33560,16 +32979,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0",
-          "wickra-gym-wasm 0.1.5"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -33583,11 +32993,7 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0",
-          "wickra-gym-wasm 0.1.5"
+          "tempfile 3.27.0"
         ]
       },
       {
@@ -34449,8 +33855,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -34459,7 +33864,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -34469,11 +33873,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0",
-          "wickra-gym-core 0.1.5"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -34483,10 +33883,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0",
-          "wickra-gym-core 0.1.5"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -34495,9 +33892,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0",
           "wickra-gym-core 0.1.5"
         ]
@@ -34508,9 +33903,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -34520,7 +33913,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -34530,22 +33922,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -34554,22 +33932,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -34587,12 +33952,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -35082,27 +34442,15 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -35115,22 +34463,13 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -35616,10 +34955,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -35630,7 +34966,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -35660,19 +34995,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -35688,7 +35011,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -37631,15 +36953,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "ring 0.17.14"
         ]
       },
       {
@@ -37648,15 +36963,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -37670,9 +36977,6 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0"
         ]
       },
@@ -38532,8 +37836,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -38542,7 +37845,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -38552,10 +37854,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -38565,9 +37864,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -38576,9 +37873,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -38588,9 +37883,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -38600,7 +37893,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -38610,22 +37902,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -38634,22 +37912,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -38667,12 +37932,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -39147,27 +38407,15 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -39180,22 +38428,13 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -39660,10 +38899,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -39674,7 +38910,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -39704,19 +38939,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -39732,7 +38955,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -41236,9 +40458,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -41248,7 +40468,6 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -41532,8 +40751,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -41542,7 +40760,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -41756,9 +40973,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "serde_derive 1.0.229",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -41770,8 +40984,7 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "serde_derive 1.0.229",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -42530,9 +41743,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -42542,7 +41753,6 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -42983,8 +42193,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -42993,7 +42202,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -43274,17 +42482,12 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -43296,16 +42499,9 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -45235,15 +44431,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "ring 0.17.14"
         ]
       },
       {
@@ -45252,15 +44441,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -45274,9 +44455,6 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0"
         ]
       },
@@ -46126,8 +45304,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -46136,7 +45313,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -46153,10 +45329,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -46166,9 +45339,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -46177,9 +45348,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -46189,9 +45358,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -46201,7 +45368,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -46211,22 +45377,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -46235,22 +45387,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -46268,12 +45407,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -46724,25 +45858,13 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "serde_derive 1.0.229",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -46755,20 +45877,13 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "serde_derive 1.0.229",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -47252,10 +46367,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -47266,7 +46378,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -47296,19 +46407,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -47324,7 +46423,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -49271,15 +48369,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "ring 0.17.14"
         ]
       },
       {
@@ -49288,15 +48379,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -49310,9 +48393,6 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0"
         ]
       },
@@ -50168,8 +49248,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -50178,7 +49257,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -50188,10 +49266,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -50201,9 +49276,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -50212,9 +49285,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -50224,9 +49295,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -50236,7 +49305,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -50246,22 +49314,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -50270,22 +49324,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -50303,12 +49344,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -50795,27 +49831,15 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -50828,22 +49852,13 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -51329,10 +50344,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -51343,7 +50355,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -51373,19 +50384,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -51401,7 +50400,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -53341,15 +52339,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "ring 0.17.14"
         ]
       },
       {
@@ -53358,15 +52349,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -53380,9 +52363,6 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0"
         ]
       },
@@ -54240,8 +53220,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -54250,7 +53229,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -54260,10 +53238,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -54273,9 +53248,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -54284,9 +53257,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -54296,9 +53267,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -54308,7 +53277,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -54318,22 +53286,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -54342,22 +53296,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -54375,12 +53316,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -54874,28 +53810,17 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
           "synstructure 0.13.2",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.2",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -54908,23 +53833,12 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
-          "synstructure 0.13.2",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.2",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -54944,8 +53858,7 @@
         "name": "synstructure",
         "version": "0.13.2",
         "requiredBy": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
+          "yoke-derive 0.8.2"
         ]
       },
       {
@@ -54954,7 +53867,6 @@
         "name": "synstructure",
         "version": "0.14.0",
         "requiredBy": [
-          "yoke-derive 0.8.2",
           "zerofrom-derive 0.1.8"
         ]
       },
@@ -55420,10 +54332,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -55434,7 +54343,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -55464,19 +54372,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -55492,7 +54388,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -57085,10 +55980,6 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand 0.10.3",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0",
           "wickra-strategy-ci-wasm 0.1.5"
         ]
       },
@@ -57098,11 +55989,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand 0.10.3",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0",
-          "wickra-strategy-ci-wasm 0.1.5"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -57113,9 +56000,7 @@
         "requiredBy": [
           "codspeed 5.0.2",
           "rand 0.10.3",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0",
-          "wickra-strategy-ci-wasm 0.1.5"
+          "tempfile 3.27.0"
         ]
       },
       {
@@ -57531,8 +56416,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -57541,7 +56425,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -57551,8 +56434,7 @@
         "name": "rand",
         "version": "0.9.5",
         "requiredBy": [
-          "proptest 1.11.0",
-          "wickra-strategy-ci-core 0.1.5"
+          "proptest 1.11.0"
         ]
       },
       {
@@ -57561,7 +56443,6 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "wickra-strategy-ci-core 0.1.5"
         ]
       },
@@ -57581,10 +56462,8 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "rand 0.10.3",
           "rand 0.9.5",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
           "rand_xorshift 0.4.0"
         ]
       },
@@ -57595,10 +56474,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "rand 0.10.3",
-          "rand 0.9.5",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0"
+          "rand_pcg 0.10.2"
         ]
       },
       {
@@ -57854,17 +56730,12 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -57876,16 +56747,9 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -59476,9 +58340,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -59488,7 +58350,6 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -59919,8 +58780,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -59929,7 +58789,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -60191,15 +59050,10 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "serde_derive 1.0.229",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -60211,14 +59065,9 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "serde_derive 1.0.229",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -61506,8 +60355,7 @@
         "name": "bit-set",
         "version": "0.5.3",
         "requiredBy": [
-          "fancy-regex 0.11.0",
-          "proptest 1.11.0"
+          "fancy-regex 0.11.0"
         ]
       },
       {
@@ -61516,7 +60364,6 @@
         "name": "bit-set",
         "version": "0.8.0",
         "requiredBy": [
-          "fancy-regex 0.11.0",
           "proptest 1.11.0"
         ]
       },
@@ -61526,9 +60373,7 @@
         "name": "bit-vec",
         "version": "0.6.3",
         "requiredBy": [
-          "bit-set 0.5.3",
-          "bit-set 0.8.0",
-          "proptest 1.11.0"
+          "bit-set 0.5.3"
         ]
       },
       {
@@ -61537,7 +60382,6 @@
         "name": "bit-vec",
         "version": "0.8.0",
         "requiredBy": [
-          "bit-set 0.5.3",
           "bit-set 0.8.0",
           "proptest 1.11.0"
         ]
@@ -61548,19 +60392,6 @@
         "name": "bitflags",
         "version": "1.3.2",
         "requiredBy": [
-          "crossterm 0.29.0",
-          "line-clipping 0.3.8",
-          "napi 3.13.0",
-          "nix 0.29.0",
-          "nix 0.31.3",
-          "proptest 1.11.0",
-          "ratatui-core 0.1.2",
-          "ratatui-widgets 0.3.2",
-          "redox_syscall 0.5.18",
-          "rustix 1.1.5",
-          "termina 0.3.3",
-          "termwiz 0.23.3",
-          "tower-http 0.6.11",
           "wezterm-input-types 0.1.0"
         ]
       },
@@ -61582,8 +60413,7 @@
           "rustix 1.1.5",
           "termina 0.3.3",
           "termwiz 0.23.3",
-          "tower-http 0.6.11",
-          "wezterm-input-types 0.1.0"
+          "tower-http 0.6.11"
         ]
       },
       {
@@ -61592,8 +60422,7 @@
         "name": "block-buffer",
         "version": "0.10.4",
         "requiredBy": [
-          "digest 0.10.7",
-          "digest 0.11.3"
+          "digest 0.10.7"
         ]
       },
       {
@@ -61602,7 +60431,6 @@
         "name": "block-buffer",
         "version": "0.12.1",
         "requiredBy": [
-          "digest 0.10.7",
           "digest 0.11.3"
         ]
       },
@@ -61896,9 +60724,7 @@
         "name": "convert_case",
         "version": "0.10.0",
         "requiredBy": [
-          "derive_more-impl 2.1.1",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "derive_more-impl 2.1.1"
         ]
       },
       {
@@ -61907,7 +60733,6 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "derive_more-impl 2.1.1",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4"
         ]
@@ -61927,10 +60752,7 @@
         "name": "cpufeatures",
         "version": "0.2.17",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "sha1 0.11.0",
-          "sha2 0.10.9",
-          "sha2 0.11.0"
+          "sha2 0.10.9"
         ]
       },
       {
@@ -61941,7 +60763,6 @@
         "requiredBy": [
           "chacha20 0.10.2",
           "sha1 0.11.0",
-          "sha2 0.10.9",
           "sha2 0.11.0"
         ]
       },
@@ -62046,10 +60867,7 @@
         "name": "crypto-common",
         "version": "0.1.7",
         "requiredBy": [
-          "digest 0.10.7",
-          "digest 0.11.3",
-          "elliptic-curve 0.14.1",
-          "primefield 0.14.0"
+          "digest 0.10.7"
         ]
       },
       {
@@ -62058,7 +60876,6 @@
         "name": "crypto-common",
         "version": "0.2.2",
         "requiredBy": [
-          "digest 0.10.7",
           "digest 0.11.3",
           "elliptic-curve 0.14.1",
           "primefield 0.14.0"
@@ -62185,13 +61002,7 @@
         "name": "digest",
         "version": "0.10.7",
         "requiredBy": [
-          "ecdsa 0.17.0",
-          "elliptic-curve 0.14.1",
-          "hmac 0.13.0",
-          "sha1 0.11.0",
-          "sha2 0.10.9",
-          "sha2 0.11.0",
-          "signature 3.0.0"
+          "sha2 0.10.9"
         ]
       },
       {
@@ -62204,7 +61015,6 @@
           "elliptic-curve 0.14.1",
           "hmac 0.13.0",
           "sha1 0.11.0",
-          "sha2 0.10.9",
           "sha2 0.11.0",
           "signature 3.0.0"
         ]
@@ -62519,17 +61329,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
           "ring 0.17.14",
-          "tempfile 3.27.0",
-          "uuid 1.26.1",
-          "wezterm-blob-leases 0.1.1",
           "wickra-terminal-wasm 0.1.8"
         ]
       },
@@ -62539,16 +61340,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
           "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0",
-          "uuid 1.26.1",
           "wezterm-blob-leases 0.1.1",
           "wickra-terminal-wasm 0.1.8"
         ]
@@ -62564,12 +61356,8 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0",
           "uuid 1.26.1",
-          "wezterm-blob-leases 0.1.1",
           "wickra-terminal-wasm 0.1.8"
         ]
       },
@@ -62607,11 +61395,7 @@
         "name": "hashbrown",
         "version": "0.16.1",
         "requiredBy": [
-          "indexmap 2.14.2",
-          "kasuari 0.4.12",
-          "lru 0.18.4",
-          "ratatui-core 0.1.2",
-          "ratatui-widgets 0.3.2"
+          "kasuari 0.4.12"
         ]
       },
       {
@@ -62621,7 +61405,6 @@
         "version": "0.17.1",
         "requiredBy": [
           "indexmap 2.14.2",
-          "kasuari 0.4.12",
           "lru 0.18.4",
           "ratatui-core 0.1.2",
           "ratatui-widgets 0.3.2"
@@ -62919,10 +61702,7 @@
         "version": "0.10.5",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion-plot 0.5.0",
-          "ratatui-core 0.1.2",
-          "ratatui-widgets 0.3.2",
-          "unicode-truncate 2.0.1"
+          "criterion-plot 0.5.0"
         ]
       },
       {
@@ -62931,8 +61711,6 @@
         "name": "itertools",
         "version": "0.14.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion-plot 0.5.0",
           "ratatui-core 0.1.2",
           "ratatui-widgets 0.3.2",
           "unicode-truncate 2.0.1"
@@ -63256,7 +62034,6 @@
         "name": "nix",
         "version": "0.29.0",
         "requiredBy": [
-          "codspeed 5.0.2",
           "mac_address 1.1.8",
           "termwiz 0.23.3"
         ]
@@ -63267,9 +62044,7 @@
         "name": "nix",
         "version": "0.31.3",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "mac_address 1.1.8",
-          "termwiz 0.23.3"
+          "codspeed 5.0.2"
         ]
       },
       {
@@ -63852,8 +62627,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -63862,7 +62636,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -63873,10 +62646,7 @@
         "version": "0.8.8",
         "requiredBy": [
           "phf_generator 0.11.3",
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -63885,11 +62655,8 @@
         "name": "rand",
         "version": "0.9.5",
         "requiredBy": [
-          "phf_generator 0.11.3",
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -63898,10 +62665,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "phf_generator 0.11.3",
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -63911,9 +62675,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -63923,7 +62685,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -63933,22 +62694,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -63957,22 +62704,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -63990,12 +62724,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -64439,10 +63168,8 @@
         "name": "sha2",
         "version": "0.10.9",
         "requiredBy": [
-          "p256 0.14.0",
           "termwiz 0.23.3",
-          "wezterm-blob-leases 0.1.1",
-          "wickra-exchange-core 0.1.8"
+          "wezterm-blob-leases 0.1.1"
         ]
       },
       {
@@ -64452,8 +63179,6 @@
         "version": "0.11.0",
         "requiredBy": [
           "p256 0.14.0",
-          "termwiz 0.23.3",
-          "wezterm-blob-leases 0.1.1",
           "wickra-exchange-core 0.1.8"
         ]
       },
@@ -64648,38 +63373,7 @@
         "name": "syn",
         "version": "1.0.109",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "darling_core 0.24.1",
-          "darling_macro 0.24.1",
-          "derive_more-impl 2.1.1",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
-          "instability 0.3.14",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "num-derive 0.4.2",
-          "palette_derive 0.7.7",
-          "pest_generator 2.9.2",
-          "phf_macros 0.11.3",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "rust_decimal_macros 1.40.0",
-          "serde_derive 1.0.229",
-          "strum_macros 0.28.0",
-          "synstructure 0.13.2",
-          "synstructure 0.14.0",
-          "thiserror-impl 1.0.69",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "wezterm-dynamic-derive 0.1.1",
-          "yoke-derive 0.8.2",
-          "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "wezterm-dynamic-derive 0.1.1"
         ]
       },
       {
@@ -64688,14 +63382,7 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "darling_core 0.24.1",
-          "darling_macro 0.24.1",
           "derive_more-impl 2.1.1",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
-          "instability 0.3.14",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "num-derive 0.4.2",
@@ -64705,21 +63392,13 @@
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "rust_decimal_macros 1.40.0",
-          "serde_derive 1.0.229",
           "strum_macros 0.28.0",
           "synstructure 0.13.2",
-          "synstructure 0.14.0",
           "thiserror-impl 1.0.69",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "wezterm-dynamic-derive 0.1.1",
           "yoke-derive 0.8.2",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -64732,33 +63411,15 @@
           "clap_derive 4.6.7",
           "darling_core 0.24.1",
           "darling_macro 0.24.1",
-          "derive_more-impl 2.1.1",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
           "instability 0.3.14",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "num-derive 0.4.2",
-          "palette_derive 0.7.7",
-          "pest_generator 2.9.2",
-          "phf_macros 0.11.3",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "rust_decimal_macros 1.40.0",
           "serde_derive 1.0.229",
-          "strum_macros 0.28.0",
-          "synstructure 0.13.2",
           "synstructure 0.14.0",
-          "thiserror-impl 1.0.69",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
-          "wezterm-dynamic-derive 0.1.1",
-          "yoke-derive 0.8.2",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -64778,8 +63439,7 @@
         "name": "synstructure",
         "version": "0.13.2",
         "requiredBy": [
-          "yoke-derive 0.8.2",
-          "zerofrom-derive 0.1.8"
+          "yoke-derive 0.8.2"
         ]
       },
       {
@@ -64788,7 +63448,6 @@
         "name": "synstructure",
         "version": "0.14.0",
         "requiredBy": [
-          "yoke-derive 0.8.2",
           "zerofrom-derive 0.1.8"
         ]
       },
@@ -64854,17 +63513,9 @@
         "version": "1.0.69",
         "requiredBy": [
           "filedescriptor 0.8.3",
-          "kasuari 0.4.12",
-          "quinn 0.11.12",
-          "quinn-proto 0.11.18",
-          "ratatui-core 0.1.2",
           "termwiz 0.23.3",
-          "tungstenite 0.30.0",
           "wezterm-blob-leases 0.1.1",
-          "wezterm-dynamic 0.2.1",
-          "wickra-core 1.0.6",
-          "wickra-exchange-core 0.1.8",
-          "wickra-terminal-core 0.1.8"
+          "wezterm-dynamic 0.2.1"
         ]
       },
       {
@@ -64873,15 +63524,11 @@
         "name": "thiserror",
         "version": "2.0.20",
         "requiredBy": [
-          "filedescriptor 0.8.3",
           "kasuari 0.4.12",
           "quinn 0.11.12",
           "quinn-proto 0.11.18",
           "ratatui-core 0.1.2",
-          "termwiz 0.23.3",
           "tungstenite 0.30.0",
-          "wezterm-blob-leases 0.1.1",
-          "wezterm-dynamic 0.2.1",
           "wickra-core 1.0.6",
           "wickra-exchange-core 0.1.8",
           "wickra-terminal-core 0.1.8"
@@ -64893,8 +63540,7 @@
         "name": "thiserror-impl",
         "version": "1.0.69",
         "requiredBy": [
-          "thiserror 1.0.69",
-          "thiserror 2.0.20"
+          "thiserror 1.0.69"
         ]
       },
       {
@@ -64903,7 +63549,6 @@
         "name": "thiserror-impl",
         "version": "2.0.20",
         "requiredBy": [
-          "thiserror 1.0.69",
           "thiserror 2.0.20"
         ]
       },
@@ -65411,10 +64056,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -65425,7 +64067,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -65544,20 +64185,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "termina 0.3.3",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -65573,7 +64201,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -67381,12 +66008,7 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0",
           "wickra-timemachine-wasm 0.1.4"
         ]
       },
@@ -67396,12 +66018,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "rand_core 0.6.4",
           "rand_core 0.9.5",
-          "tempfile 3.27.0",
           "wickra-timemachine-wasm 0.1.4"
         ]
       },
@@ -67414,8 +66031,6 @@
           "codspeed 5.0.2",
           "crypto-bigint 0.7.5",
           "crypto-common 0.2.2",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
           "tempfile 3.27.0",
           "wickra-timemachine-wasm 0.1.4"
         ]
@@ -67970,8 +66585,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -67980,7 +66594,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -67990,7 +66603,6 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
           "rust_decimal 1.43.0"
         ]
       },
@@ -68010,9 +66622,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -68022,7 +66632,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -68032,19 +66641,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -68053,19 +66651,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -68081,11 +66669,6 @@
           "getrandom 0.4.3",
           "group 0.14.0",
           "primefield 0.14.0",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -68424,20 +67007,14 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "rust_decimal_macros 1.40.0",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "thiserror-impl 2.0.20",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57",
           "zeroize_derive 1.5.0"
         ]
@@ -68451,19 +67028,9 @@
           "borsh-derive 1.8.1",
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "rust_decimal_macros 1.40.0",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57",
-          "zeroize_derive 1.5.0"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -70201,9 +68768,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -70213,7 +68778,6 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "rand_core 0.9.5",
           "tempfile 3.27.0"
         ]
       },
@@ -70647,8 +69211,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -70657,7 +69220,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -70938,17 +69500,12 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "clap_derive 4.6.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -70960,16 +69517,9 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "thiserror-impl 2.0.20",
-          "wasm-bindgen-macro-support 0.2.128",
-          "zerocopy-derive 0.8.57"
+          "wasm-bindgen-macro-support 0.2.128"
         ]
       },
       {
@@ -72906,15 +71456,8 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "ring 0.17.14"
         ]
       },
       {
@@ -72923,15 +71466,7 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -72945,9 +71480,6 @@
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
           "tempfile 3.27.0"
         ]
       },
@@ -73797,8 +72329,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -73807,7 +72338,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -73817,10 +72347,7 @@
         "name": "rand",
         "version": "0.8.8",
         "requiredBy": [
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -73830,9 +72357,7 @@
         "version": "0.9.5",
         "requiredBy": [
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
-          "tungstenite 0.30.0"
+          "rust_decimal 1.43.0"
         ]
       },
       {
@@ -73841,9 +72366,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "proptest 1.11.0",
           "quinn-proto 0.11.18",
-          "rust_decimal 1.43.0",
           "tungstenite 0.30.0"
         ]
       },
@@ -73853,9 +72376,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -73865,7 +72386,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -73875,22 +72395,8 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_chacha 0.3.1"
         ]
       },
       {
@@ -73899,22 +72405,9 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
-          "crypto-common 0.2.2",
-          "elliptic-curve 0.14.1",
-          "ff 0.14.0",
-          "getrandom 0.4.3",
-          "group 0.14.0",
-          "primefield 0.14.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "signature 3.0.0"
+          "rand_xorshift 0.4.0"
         ]
       },
       {
@@ -73932,12 +72425,7 @@
           "group 0.14.0",
           "primefield 0.14.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
           "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
           "signature 3.0.0"
         ]
       },
@@ -74388,25 +72876,13 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "borsh-derive 1.8.1",
-          "clap_derive 4.6.7",
-          "displaydoc 0.2.7",
-          "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "serde_derive 1.0.229",
-          "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
-          "tokio-macros 2.7.2",
           "tracing-attributes 0.1.31",
-          "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -74419,20 +72895,13 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "serde_derive 1.0.229",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
-          "tracing-attributes 0.1.31",
           "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -74916,10 +73385,7 @@
         "name": "webpki-roots",
         "version": "0.26.11",
         "requiredBy": [
-          "hyper-rustls 0.27.10",
-          "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
-          "webpki-roots 0.26.11"
+          "tokio-tungstenite 0.30.0"
         ]
       },
       {
@@ -74930,7 +73396,6 @@
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
-          "tokio-tungstenite 0.30.0",
           "webpki-roots 0.26.11"
         ]
       },
@@ -74960,19 +73425,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -74988,7 +73441,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -76455,8 +74907,7 @@
         "version": "0.22.1",
         "requiredBy": [
           "hyper-util 0.1.20",
-          "reqwest 0.12.28",
-          "serde_with 3.23.0"
+          "reqwest 0.12.28"
         ]
       },
       {
@@ -76465,8 +74916,6 @@
         "name": "base64",
         "version": "0.23.1",
         "requiredBy": [
-          "hyper-util 0.1.20",
-          "reqwest 0.12.28",
           "serde_with 3.23.0"
         ]
       },
@@ -76516,15 +74965,7 @@
         "version": "1.3.2",
         "requiredBy": [
           "core-graphics-types 0.1.3",
-          "defmt 1.1.1",
-          "gdbstub 0.7.10",
-          "metal 0.29.0",
-          "napi 3.13.0",
-          "nix 0.31.3",
-          "proptest 1.11.0",
-          "redox_syscall 0.5.18",
-          "rustix 1.1.5",
-          "tower-http 0.6.11"
+          "defmt 1.1.1"
         ]
       },
       {
@@ -76533,8 +74974,6 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "core-graphics-types 0.1.3",
-          "defmt 1.1.1",
           "gdbstub 0.7.10",
           "metal 0.29.0",
           "napi 3.13.0",
@@ -77024,8 +75463,6 @@
         "name": "cpufeatures",
         "version": "0.2.17",
         "requiredBy": [
-          "blake3 1.8.7",
-          "chacha20 0.10.2",
           "keccak 0.1.6",
           "sha2 0.10.9"
         ]
@@ -77037,9 +75474,7 @@
         "version": "0.3.1",
         "requiredBy": [
           "blake3 1.8.7",
-          "chacha20 0.10.2",
-          "keccak 0.1.6",
-          "sha2 0.10.9"
+          "chacha20 0.10.2"
         ]
       },
       {
@@ -77135,8 +75570,7 @@
         "name": "darling",
         "version": "0.20.11",
         "requiredBy": [
-          "derive_builder_core 0.20.2",
-          "serde_with_macros 3.23.0"
+          "derive_builder_core 0.20.2"
         ]
       },
       {
@@ -77145,7 +75579,6 @@
         "name": "darling",
         "version": "0.24.1",
         "requiredBy": [
-          "derive_builder_core 0.20.2",
           "serde_with_macros 3.23.0"
         ]
       },
@@ -77156,9 +75589,7 @@
         "version": "0.20.11",
         "requiredBy": [
           "darling 0.20.11",
-          "darling 0.24.1",
-          "darling_macro 0.20.11",
-          "darling_macro 0.24.1"
+          "darling_macro 0.20.11"
         ]
       },
       {
@@ -77167,9 +75598,7 @@
         "name": "darling_core",
         "version": "0.24.1",
         "requiredBy": [
-          "darling 0.20.11",
           "darling 0.24.1",
-          "darling_macro 0.20.11",
           "darling_macro 0.24.1"
         ]
       },
@@ -77179,8 +75608,7 @@
         "name": "darling_macro",
         "version": "0.20.11",
         "requiredBy": [
-          "darling 0.20.11",
-          "darling 0.24.1"
+          "darling 0.20.11"
         ]
       },
       {
@@ -77189,7 +75617,6 @@
         "name": "darling_macro",
         "version": "0.24.1",
         "requiredBy": [
-          "darling 0.20.11",
           "darling 0.24.1"
         ]
       },
@@ -77810,15 +76237,9 @@
         "name": "getrandom",
         "version": "0.2.17",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "jobserver 0.1.35",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
           "rand_core 0.6.4",
-          "rand_core 0.9.5",
           "ring 0.17.14",
-          "risc0-zkvm-platform 2.2.3",
-          "tempfile 3.27.0"
+          "risc0-zkvm-platform 2.2.3"
         ]
       },
       {
@@ -77827,15 +76248,8 @@
         "name": "getrandom",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "jobserver 0.1.35",
-          "quinn-proto 0.11.18",
-          "rand 0.10.3",
-          "rand_core 0.6.4",
           "rand_core 0.9.5",
-          "ring 0.17.14",
-          "risc0-zkvm-platform 2.2.3",
-          "tempfile 3.27.0"
+          "risc0-zkvm-platform 2.2.3"
         ]
       },
       {
@@ -77848,10 +76262,6 @@
           "jobserver 0.1.35",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
-          "rand_core 0.6.4",
-          "rand_core 0.9.5",
-          "ring 0.17.14",
-          "risc0-zkvm-platform 2.2.3",
           "tempfile 3.27.0"
         ]
       },
@@ -77901,12 +76311,7 @@
         "name": "hashbrown",
         "version": "0.12.3",
         "requiredBy": [
-          "ark-ec 0.5.0",
-          "ark-poly 0.5.0",
-          "hashlink 0.10.0",
-          "indexmap 1.9.3",
-          "indexmap 2.14.2",
-          "malachite-base 0.4.22"
+          "indexmap 1.9.3"
         ]
       },
       {
@@ -77915,11 +76320,6 @@
         "name": "hashbrown",
         "version": "0.14.5",
         "requiredBy": [
-          "ark-ec 0.5.0",
-          "ark-poly 0.5.0",
-          "hashlink 0.10.0",
-          "indexmap 1.9.3",
-          "indexmap 2.14.2",
           "malachite-base 0.4.22"
         ]
       },
@@ -77931,10 +76331,7 @@
         "requiredBy": [
           "ark-ec 0.5.0",
           "ark-poly 0.5.0",
-          "hashlink 0.10.0",
-          "indexmap 1.9.3",
-          "indexmap 2.14.2",
-          "malachite-base 0.4.22"
+          "hashlink 0.10.0"
         ]
       },
       {
@@ -77943,12 +76340,7 @@
         "name": "hashbrown",
         "version": "0.17.1",
         "requiredBy": [
-          "ark-ec 0.5.0",
-          "ark-poly 0.5.0",
-          "hashlink 0.10.0",
-          "indexmap 1.9.3",
-          "indexmap 2.14.2",
-          "malachite-base 0.4.22"
+          "indexmap 2.14.2"
         ]
       },
       {
@@ -78219,12 +76611,7 @@
         "name": "indexmap",
         "version": "1.9.3",
         "requiredBy": [
-          "gimli 0.31.1",
-          "serde_with 3.23.0",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.22.27",
-          "toml_edit 0.25.15+spec-1.1.0",
-          "zip 2.4.2"
+          "serde_with 3.23.0"
         ]
       },
       {
@@ -78283,15 +76670,8 @@
         "name": "itertools",
         "version": "0.10.5",
         "requiredBy": [
-          "ark-ec 0.5.0",
-          "ark-ff 0.5.0",
           "codspeed-criterion-compat-walltime 5.0.2",
           "criterion-plot 0.5.0",
-          "malachite-base 0.4.22",
-          "malachite-float 0.4.22",
-          "malachite-nz 0.4.22",
-          "malachite-q 0.4.22",
-          "prost-derive 0.13.5",
           "puffin 0.19.1"
         ]
       },
@@ -78301,16 +76681,10 @@
         "name": "itertools",
         "version": "0.11.0",
         "requiredBy": [
-          "ark-ec 0.5.0",
-          "ark-ff 0.5.0",
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion-plot 0.5.0",
           "malachite-base 0.4.22",
           "malachite-float 0.4.22",
           "malachite-nz 0.4.22",
-          "malachite-q 0.4.22",
-          "prost-derive 0.13.5",
-          "puffin 0.19.1"
+          "malachite-q 0.4.22"
         ]
       },
       {
@@ -78320,15 +76694,7 @@
         "version": "0.13.0",
         "requiredBy": [
           "ark-ec 0.5.0",
-          "ark-ff 0.5.0",
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion-plot 0.5.0",
-          "malachite-base 0.4.22",
-          "malachite-float 0.4.22",
-          "malachite-nz 0.4.22",
-          "malachite-q 0.4.22",
-          "prost-derive 0.13.5",
-          "puffin 0.19.1"
+          "ark-ff 0.5.0"
         ]
       },
       {
@@ -78337,16 +76703,7 @@
         "name": "itertools",
         "version": "0.14.0",
         "requiredBy": [
-          "ark-ec 0.5.0",
-          "ark-ff 0.5.0",
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "criterion-plot 0.5.0",
-          "malachite-base 0.4.22",
-          "malachite-float 0.4.22",
-          "malachite-nz 0.4.22",
-          "malachite-q 0.4.22",
-          "prost-derive 0.13.5",
-          "puffin 0.19.1"
+          "prost-derive 0.13.5"
         ]
       },
       {
@@ -78880,14 +77237,7 @@
         "version": "0.3.3",
         "requiredBy": [
           "addchain 0.2.1",
-          "ark-ec 0.5.0",
-          "ark-ff 0.5.0",
-          "ark-ff-macros 0.5.0",
-          "ark-r1cs-std 0.5.0",
-          "ark-serialize 0.5.0",
-          "ff_derive 0.13.1",
-          "risc0-groth16 3.0.5",
-          "risc0-zkvm 3.0.6"
+          "ff_derive 0.13.1"
         ]
       },
       {
@@ -78896,13 +77246,11 @@
         "name": "num-bigint",
         "version": "0.4.8",
         "requiredBy": [
-          "addchain 0.2.1",
           "ark-ec 0.5.0",
           "ark-ff 0.5.0",
           "ark-ff-macros 0.5.0",
           "ark-r1cs-std 0.5.0",
           "ark-serialize 0.5.0",
-          "ff_derive 0.13.1",
           "risc0-groth16 3.0.5",
           "risc0-zkvm 3.0.6"
         ]
@@ -79571,8 +77919,7 @@
         "name": "r-efi",
         "version": "5.3.0",
         "requiredBy": [
-          "getrandom 0.3.4",
-          "getrandom 0.4.3"
+          "getrandom 0.3.4"
         ]
       },
       {
@@ -79581,7 +77928,6 @@
         "name": "r-efi",
         "version": "6.0.0",
         "requiredBy": [
-          "getrandom 0.3.4",
           "getrandom 0.4.3"
         ]
       },
@@ -79603,13 +77949,6 @@
           "ark-std 0.5.0",
           "downloader 0.2.8",
           "num-bigint-dig 0.8.6",
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "risc0-binfmt 3.0.5",
-          "risc0-circuit-recursion 4.0.5",
-          "risc0-circuit-rv32im 4.0.5",
-          "risc0-zkp 3.0.5",
-          "risc0-zkvm 3.0.6",
           "ruint 1.20.1"
         ]
       },
@@ -79619,11 +77958,7 @@
         "name": "rand",
         "version": "0.9.5",
         "requiredBy": [
-          "ark-std 0.5.0",
-          "downloader 0.2.8",
-          "num-bigint-dig 0.8.6",
           "proptest 1.11.0",
-          "quinn-proto 0.11.18",
           "risc0-binfmt 3.0.5",
           "risc0-circuit-recursion 4.0.5",
           "risc0-circuit-rv32im 4.0.5",
@@ -79638,17 +77973,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
-          "ark-std 0.5.0",
-          "downloader 0.2.8",
-          "num-bigint-dig 0.8.6",
-          "proptest 1.11.0",
-          "quinn-proto 0.11.18",
-          "risc0-binfmt 3.0.5",
-          "risc0-circuit-recursion 4.0.5",
-          "risc0-circuit-rv32im 4.0.5",
-          "risc0-zkp 3.0.5",
-          "risc0-zkvm 3.0.6",
-          "ruint 1.20.1"
+          "quinn-proto 0.11.18"
         ]
       },
       {
@@ -79657,9 +77982,7 @@
         "name": "rand_chacha",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0",
-          "rand 0.8.8",
-          "rand 0.9.5"
+          "rand 0.8.8"
         ]
       },
       {
@@ -79669,7 +77992,6 @@
         "version": "0.9.0",
         "requiredBy": [
           "proptest 1.11.0",
-          "rand 0.8.8",
           "rand 0.9.5"
         ]
       },
@@ -79679,19 +78001,10 @@
         "name": "rand_core",
         "version": "0.6.4",
         "requiredBy": [
-          "chacha20 0.10.2",
           "ff 0.13.1",
-          "getrandom 0.4.3",
           "merlin 3.0.0",
-          "rand 0.10.3",
           "rand 0.8.8",
-          "rand 0.9.5",
           "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "risc0-core 3.0.2",
-          "risc0-zkp 3.0.5",
           "rsa 0.9.10",
           "signature 2.2.0"
         ]
@@ -79702,21 +78015,11 @@
         "name": "rand_core",
         "version": "0.9.5",
         "requiredBy": [
-          "chacha20 0.10.2",
-          "ff 0.13.1",
-          "getrandom 0.4.3",
-          "merlin 3.0.0",
-          "rand 0.10.3",
-          "rand 0.8.8",
           "rand 0.9.5",
-          "rand_chacha 0.3.1",
           "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
           "rand_xorshift 0.4.0",
           "risc0-core 3.0.2",
-          "risc0-zkp 3.0.5",
-          "rsa 0.9.10",
-          "signature 2.2.0"
+          "risc0-zkp 3.0.5"
         ]
       },
       {
@@ -79726,20 +78029,9 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "ff 0.13.1",
           "getrandom 0.4.3",
-          "merlin 3.0.0",
           "rand 0.10.3",
-          "rand 0.8.8",
-          "rand 0.9.5",
-          "rand_chacha 0.3.1",
-          "rand_chacha 0.9.0",
-          "rand_pcg 0.10.2",
-          "rand_xorshift 0.4.0",
-          "risc0-core 3.0.2",
-          "risc0-zkp 3.0.5",
-          "rsa 0.9.10",
-          "signature 2.2.0"
+          "rand_pcg 0.10.2"
         ]
       },
       {
@@ -80259,7 +78551,6 @@
         "name": "schemars",
         "version": "0.8.22",
         "requiredBy": [
-          "serde_with 3.23.0",
           "wickra-backtest-core 0.1.8"
         ]
       },
@@ -80269,8 +78560,7 @@
         "name": "schemars",
         "version": "0.9.0",
         "requiredBy": [
-          "serde_with 3.23.0",
-          "wickra-backtest-core 0.1.8"
+          "serde_with 3.23.0"
         ]
       },
       {
@@ -80279,8 +78569,7 @@
         "name": "schemars",
         "version": "1.2.2",
         "requiredBy": [
-          "serde_with 3.23.0",
-          "wickra-backtest-core 0.1.8"
+          "serde_with 3.23.0"
         ]
       },
       {
@@ -80439,7 +78728,6 @@
         "version": "0.6.9",
         "requiredBy": [
           "toml 0.8.23",
-          "toml 1.1.6+spec-1.1.0",
           "toml_edit 0.22.27"
         ]
       },
@@ -80449,9 +78737,7 @@
         "name": "serde_spanned",
         "version": "1.1.1",
         "requiredBy": [
-          "toml 0.8.23",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.22.27"
+          "toml 1.1.6+spec-1.1.0"
         ]
       },
       {
@@ -80678,62 +78964,8 @@
         "name": "syn",
         "version": "1.0.109",
         "requiredBy": [
-          "ark-crypto-primitives-macros 0.5.0",
-          "ark-ff-asm 0.5.0",
-          "ark-ff-macros 0.5.0",
-          "ark-serialize-derive 0.5.0",
-          "borsh-derive 1.8.1",
-          "bytemuck_derive 1.12.1",
-          "clap_derive 4.6.7",
-          "darling_core 0.20.11",
-          "darling_core 0.24.1",
-          "darling_macro 0.20.11",
-          "darling_macro 0.24.1",
-          "defmt-macros 1.1.1",
           "derivative 2.2.0",
-          "derive_arbitrary 1.4.2",
-          "derive_builder_core 0.20.2",
-          "derive_builder_macro 0.20.2",
-          "derive_more-impl 2.1.1",
-          "displaydoc 0.2.7",
-          "educe 0.6.0",
-          "enum-map-derive 0.17.0",
-          "enum-ordinalize-derive 4.4.2",
-          "ff_derive 0.13.1",
-          "foreign-types-macros 0.2.4",
-          "futures-macro 0.3.34",
-          "jiff-static 0.2.37",
-          "lazy-regex-proc_macros 3.6.1",
-          "maybe-async 0.2.11",
-          "multiversion-macros 0.9.0",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "num-derive 0.4.2",
-          "num_enum_derive 0.7.6",
-          "proc-macro2-diagnostics 0.10.1",
-          "prost-derive 0.13.5",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
-          "ref-cast-impl 1.0.27",
-          "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
-          "serde_with_macros 3.23.0",
-          "stability 0.2.1",
-          "strum_macros 0.27.2",
-          "synstructure 0.14.0",
-          "thiserror-impl 1.0.69",
-          "thiserror-impl 2.0.20",
-          "tracing-attributes 0.1.31",
-          "typetag-impl 0.2.23",
-          "wasm-bindgen-macro-support 0.2.128",
-          "windows-implement 0.60.2",
-          "windows-interface 0.59.3",
-          "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "ff_derive 0.13.1"
         ]
       },
       {
@@ -80746,30 +78978,18 @@
           "ark-ff-asm 0.5.0",
           "ark-ff-macros 0.5.0",
           "ark-serialize-derive 0.5.0",
-          "borsh-derive 1.8.1",
-          "bytemuck_derive 1.12.1",
-          "clap_derive 4.6.7",
           "darling_core 0.20.11",
-          "darling_core 0.24.1",
           "darling_macro 0.20.11",
-          "darling_macro 0.24.1",
           "defmt-macros 1.1.1",
-          "derivative 2.2.0",
           "derive_arbitrary 1.4.2",
           "derive_builder_core 0.20.2",
           "derive_builder_macro 0.20.2",
           "derive_more-impl 2.1.1",
-          "displaydoc 0.2.7",
           "educe 0.6.0",
           "enum-map-derive 0.17.0",
-          "enum-ordinalize-derive 4.4.2",
-          "ff_derive 0.13.1",
-          "foreign-types-macros 0.2.4",
-          "futures-macro 0.3.34",
           "jiff-static 0.2.37",
           "lazy-regex-proc_macros 3.6.1",
           "maybe-async 0.2.11",
-          "multiversion-macros 0.9.0",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
           "num-derive 0.4.2",
@@ -80778,26 +78998,16 @@
           "prost-derive 0.13.5",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "ref-cast-impl 1.0.27",
           "schemars_derive 0.8.22",
-          "serde_derive 1.0.229",
           "serde_derive_internals 0.29.1",
-          "serde_with_macros 3.23.0",
           "stability 0.2.1",
           "strum_macros 0.27.2",
-          "synstructure 0.14.0",
           "thiserror-impl 1.0.69",
-          "thiserror-impl 2.0.20",
           "tracing-attributes 0.1.31",
-          "typetag-impl 0.2.23",
-          "wasm-bindgen-macro-support 0.2.128",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
-          "yoke-derive 0.8.3",
           "zerocopy-derive 0.8.57",
-          "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zeroize_derive 1.5.0"
         ]
       },
       {
@@ -80806,61 +79016,25 @@
         "name": "syn",
         "version": "3.0.6",
         "requiredBy": [
-          "ark-crypto-primitives-macros 0.5.0",
-          "ark-ff-asm 0.5.0",
-          "ark-ff-macros 0.5.0",
-          "ark-serialize-derive 0.5.0",
           "borsh-derive 1.8.1",
           "bytemuck_derive 1.12.1",
           "clap_derive 4.6.7",
-          "darling_core 0.20.11",
           "darling_core 0.24.1",
-          "darling_macro 0.20.11",
           "darling_macro 0.24.1",
-          "defmt-macros 1.1.1",
-          "derivative 2.2.0",
-          "derive_arbitrary 1.4.2",
-          "derive_builder_core 0.20.2",
-          "derive_builder_macro 0.20.2",
-          "derive_more-impl 2.1.1",
           "displaydoc 0.2.7",
-          "educe 0.6.0",
-          "enum-map-derive 0.17.0",
           "enum-ordinalize-derive 4.4.2",
-          "ff_derive 0.13.1",
           "foreign-types-macros 0.2.4",
           "futures-macro 0.3.34",
-          "jiff-static 0.2.37",
-          "lazy-regex-proc_macros 3.6.1",
-          "maybe-async 0.2.11",
           "multiversion-macros 0.9.0",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "num-derive 0.4.2",
-          "num_enum_derive 0.7.6",
-          "proc-macro2-diagnostics 0.10.1",
-          "prost-derive 0.13.5",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "ref-cast-impl 1.0.27",
-          "schemars_derive 0.8.22",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
           "serde_with_macros 3.23.0",
-          "stability 0.2.1",
-          "strum_macros 0.27.2",
           "synstructure 0.14.0",
-          "thiserror-impl 1.0.69",
           "thiserror-impl 2.0.20",
-          "tracing-attributes 0.1.31",
           "typetag-impl 0.2.23",
           "wasm-bindgen-macro-support 0.2.128",
-          "windows-implement 0.60.2",
-          "windows-interface 0.59.3",
           "yoke-derive 0.8.3",
-          "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
-          "zeroize_derive 1.5.0",
           "zerovec-derive 0.11.6"
         ]
       },
@@ -80924,20 +79098,7 @@
         "name": "thiserror",
         "version": "1.0.69",
         "requiredBy": [
-          "bonsai-sdk 1.4.3",
-          "cargo_metadata 0.19.2",
-          "cobs 0.3.0",
-          "defmt-parser 1.0.0",
-          "downloader 0.2.8",
-          "quinn 0.11.12",
-          "quinn-proto 0.11.18",
-          "redox_users 0.5.3",
-          "rzup 0.5.2",
-          "wickra-backtest-core 0.1.8",
-          "wickra-core 1.0.6",
-          "wickra-proof-core 0.1.4",
-          "wickra-zk-host 0.1.3",
-          "zip 2.4.2"
+          "downloader 0.2.8"
         ]
       },
       {
@@ -80950,7 +79111,6 @@
           "cargo_metadata 0.19.2",
           "cobs 0.3.0",
           "defmt-parser 1.0.0",
-          "downloader 0.2.8",
           "quinn 0.11.12",
           "quinn-proto 0.11.18",
           "redox_users 0.5.3",
@@ -80968,8 +79128,7 @@
         "name": "thiserror-impl",
         "version": "1.0.69",
         "requiredBy": [
-          "thiserror 1.0.69",
-          "thiserror 2.0.20"
+          "thiserror 1.0.69"
         ]
       },
       {
@@ -80978,7 +79137,6 @@
         "name": "thiserror-impl",
         "version": "2.0.20",
         "requiredBy": [
-          "thiserror 1.0.69",
           "thiserror 2.0.20"
         ]
       },
@@ -81080,8 +79238,7 @@
         "name": "toml",
         "version": "0.8.23",
         "requiredBy": [
-          "rzup 0.5.2",
-          "wickra-proof-core 0.1.4"
+          "rzup 0.5.2"
         ]
       },
       {
@@ -81090,7 +79247,6 @@
         "name": "toml",
         "version": "1.1.6+spec-1.1.0",
         "requiredBy": [
-          "rzup 0.5.2",
           "wickra-proof-core 0.1.4"
         ]
       },
@@ -81101,9 +79257,7 @@
         "version": "0.6.11",
         "requiredBy": [
           "toml 0.8.23",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.22.27",
-          "toml_edit 0.25.15+spec-1.1.0"
+          "toml_edit 0.22.27"
         ]
       },
       {
@@ -81112,9 +79266,7 @@
         "name": "toml_datetime",
         "version": "1.1.1+spec-1.1.0",
         "requiredBy": [
-          "toml 0.8.23",
           "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.22.27",
           "toml_edit 0.25.15+spec-1.1.0"
         ]
       },
@@ -81124,7 +79276,6 @@
         "name": "toml_edit",
         "version": "0.22.27",
         "requiredBy": [
-          "proc-macro-crate 3.5.0",
           "toml 0.8.23"
         ]
       },
@@ -81134,8 +79285,7 @@
         "name": "toml_edit",
         "version": "0.25.15+spec-1.1.0",
         "requiredBy": [
-          "proc-macro-crate 3.5.0",
-          "toml 0.8.23"
+          "proc-macro-crate 3.5.0"
         ]
       },
       {
@@ -81651,20 +79801,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "anstyle-query 1.1.5",
-          "anstyle-wincon 3.0.11",
-          "colored 3.1.1",
-          "dirs-sys 0.5.0",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "ring 0.17.14",
-          "rustix 1.1.5",
-          "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.1",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -81681,7 +79818,6 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "quinn-udp 0.5.15",
-          "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -81776,10 +79912,7 @@
         "name": "winnow",
         "version": "0.7.15",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.22.27",
-          "toml_edit 0.25.15+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml_edit 0.22.27"
         ]
       },
       {
@@ -81789,7 +79922,6 @@
         "version": "1.0.4",
         "requiredBy": [
           "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.22.27",
           "toml_edit 0.25.15+spec-1.1.0",
           "toml_parser 1.1.3+spec-1.1.0"
         ]
