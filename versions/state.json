@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-27T08:35:27Z",
+  "scanned_at": "2026-09-27T14:19:06Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -928,7 +928,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrabacktest",
-          "version": "0.1.8"
+          "version": "0.1.9"
         }
       ],
       "go": {
@@ -12039,12 +12039,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "registry differs",
-      "subject": "r-universe wickrabacktest",
-      "detail": "0.1.8 against the declared 0.1.9"
     },
     {
       "repo": "wickra-benchmark",
