@@ -350,20 +350,40 @@ const pomArtifactId = (xml) => pomBody(xml).match(/<artifactId>([^<]+)<\/artifac
 // answers the sibling question; this answers the third-party one.
 function cargoLockThirdParty(lock) {
   const blocks = lock.split('\n[[package]]\n').slice(1)
+  // Which versions of each name the lock carries. A dependency list names a
+  // package bare when the lock has one version of it and as `name version` when
+  // it has several, so the bare form resolves through this.
+  const versionsOf = new Map()
+  for (const block of blocks) {
+    const name = block.match(/^name = "([^"]+)"/m)?.[1]
+    const version = block.match(/^version = "([^"]+)"/m)?.[1]
+    if (!name || !version) continue
+    if (!versionsOf.has(name)) versionsOf.set(name, [])
+    versionsOf.get(name).push(version)
+  }
   // Who requires what, from the lock's own dependency lists. A divergent
   // version is only worth a decision if something in this family chose it;
   // when a third-party package requires it, that package is the answer.
+  // Keyed by name AND version of the required package: a repository that
+  // builds base64 0.22 for reqwest and 0.23 for parquet must answer "parquet"
+  // for 0.23, not both. Keyed by name alone, the parents of every version were
+  // pooled, a parent the other repositories also build turned up for the odd
+  // version, and rows a third-party package holds were reported as decisions.
   const requiredBy = new Map()
   for (const block of blocks) {
     const name = block.match(/^name = "([^"]+)"/m)?.[1]
     const version = block.match(/^version = "([^"]+)"/m)?.[1]
     if (!name || !version) continue
     const list = block.match(/^dependencies = \[([\s\S]*?)^\]/m)?.[1] ?? ''
-    for (const dep of list.matchAll(/"([^" ]+)/g)) {
-      if (!requiredBy.has(dep[1])) requiredBy.set(dep[1], new Set())
-      // Name and version together: hmac 0.12 requires digest 0.10 where hmac
-      // 0.13 requires digest 0.11, and the name alone cannot tell those apart.
-      requiredBy.get(dep[1]).add(`${name} ${version}`)
+    for (const dep of list.matchAll(/"([^" ]+)(?: ([^" ]+))?/g)) {
+      const known = versionsOf.get(dep[1]) ?? []
+      const depVersion = dep[2] ?? (known.length === 1 ? known[0] : null)
+      if (!depVersion) continue
+      const key = `${dep[1]} ${depVersion}`
+      if (!requiredBy.has(key)) requiredBy.set(key, new Set())
+      // Name and version together on the parent side as well: hmac 0.12
+      // requires digest 0.10 where hmac 0.13 requires digest 0.11.
+      requiredBy.get(key).add(`${name} ${version}`)
     }
   }
   const out = []
@@ -371,7 +391,7 @@ function cargoLockThirdParty(lock) {
     const name = block.match(/^name = "([^"]+)"/m)?.[1]
     const version = block.match(/^version = "([^"]+)"/m)?.[1]
     if (!name || !version || name.startsWith('wickra')) continue
-    out.push({ name, version, requiredBy: [...(requiredBy.get(name) ?? [])].sort() })
+    out.push({ name, version, requiredBy: [...(requiredBy.get(`${name} ${version}`) ?? [])].sort() })
   }
   return out
 }
@@ -1386,8 +1406,13 @@ function dependencyIndex(snapshot) {
     for (const dep of repo.deps) {
       const key = `${dep.ecosystem} ${dep.name}`
       if (!index.has(key)) index.set(key, { ecosystem: dep.ecosystem, name: dep.name, byRepo: {}, requiredBy: {} })
+      // The version and its parents move together: a repository with two
+      // versions of one package reports its last (the lock sorts the highest
+      // last), and the parents have to be that version's, not a leftover of
+      // the other one's.
       index.get(key).byRepo[repo.repo] = dep.version
       if (dep.requiredBy) index.get(key).requiredBy[repo.repo] = dep.requiredBy
+      else delete index.get(key).requiredBy[repo.repo]
     }
   }
   return index
@@ -1398,13 +1423,24 @@ function dependencyIndex(snapshot) {
 // own rather than a choice the family could align.
 function packageSets(snapshot) {
   const sets = new Map()
+  // Which repositories record "parent requires name" in their lock. The same
+  // parent at the same version can require a package in one repository and not
+  // in another (digest 0.10 pulls const-oid only with its `oid` feature), so
+  // building the parent is not the same as building that edge.
+  const edges = new Map()
   for (const repo of snapshot.repos) {
     for (const dep of repo.deps) {
       const key = `${dep.ecosystem} ${dep.name} ${dep.version}`
       if (!sets.has(key)) sets.set(key, new Set())
       sets.get(key).add(repo.repo)
+      for (const parent of dep.requiredBy ?? []) {
+        const edge = `${dep.ecosystem} ${parent} > ${dep.name}`
+        if (!edges.has(edge)) edges.set(edge, new Set())
+        edges.get(edge).add(repo.repo)
+      }
     }
   }
+  sets.edges = edges
   return sets
 }
 
@@ -1423,7 +1459,14 @@ function heldBy(entry, sets) {
   const ranked = [...byVersion].sort((a, b) => b[1].length - a[1].length)
   const majority = new Set(ranked[0][1])
   const holders = new Set()
-  for (const [, repos] of ranked.slice(1)) {
+  for (const [version, repos] of ranked.slice(1)) {
+    // A row shows one version per repository, the highest; a repository on the
+    // majority's version can build the minority's as well (terminal builds
+    // digest 0.11 and, for sha2 0.10, digest 0.10). Such a repository is on
+    // both sides, so a parent it builds says nothing about why the two sides
+    // differ -- only the majority repositories without the minority version do.
+    const alsoMinority = sets.get(`${entry.ecosystem} ${entry.name} ${version}`) ?? new Set()
+    const majorityOnly = [...majority].filter((r) => !alsoMinority.has(r))
     for (const repo of repos) {
       const parents = entry.requiredBy[repo]
       // No recorded parent means the repository declares it itself: a decision,
@@ -1433,8 +1476,12 @@ function heldBy(entry, sets) {
         const where = sets.get(`${entry.ecosystem} ${parent}`)
         // No entry means the parent is one of our own crates: this repository
         // chose the version itself, which is a decision, not a constraint.
-        // A parent the majority also builds cannot be the reason the two differ.
-        if (!where || [...majority].some((r) => where.has(r))) return null
+        if (!where) return null
+        // A parent that requires this package on the majority side as well
+        // cannot be the reason the two differ: the same requirement resolved
+        // two ways, which a lock refresh can align.
+        const requires = sets.edges.get(`${entry.ecosystem} ${parent} > ${entry.name}`) ?? new Set()
+        if (majorityOnly.some((r) => requires.has(r))) return null
         holders.add(parent)
       }
     }
