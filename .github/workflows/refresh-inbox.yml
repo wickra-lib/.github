@@ -53,12 +53,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # The timestamp and the ages move on every run; only a differing list
-          # is worth a commit. Untracked files are checked separately because
-          # git diff does not see them, which would make the first run a no-op.
+          # Every daily run is committed, the scan timestamp and the ages
+          # included. Skipping a run whose lists had not changed left the page
+          # stating a scan three days old and calling a three-day-old alert
+          # "today": a page that says when it looked has to be rewritten each
+          # time it looks. Untracked files are checked separately because git
+          # diff does not see them, which would make the first run a no-op.
           new=$(git ls-files --others --exclude-standard inbox)
-          if [ -z "$new" ] && git diff --quiet -I '"scanned_at"' -I '^Last scan:' -I ' (today|[0-9]+ days?) ' -- inbox; then
-            echo "inbox unchanged apart from the scan timestamp; nothing to commit"
+          if [ -z "$new" ] && git diff --quiet -- inbox; then
+            echo "inbox unchanged; nothing to commit"
             exit 0
           fi
           git config user.name "wickra-bot"
