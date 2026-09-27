@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-25T00:54:11Z",
+  "scanned_at": "2026-09-27T08:35:27Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -518,9 +518,9 @@
     },
     {
       "repo": "wickra-backtest",
-      "declared": "0.1.8",
-      "tag": "v0.1.8",
-      "release": "v0.1.8",
+      "declared": "0.1.9",
+      "tag": "v0.1.9",
+      "release": "v0.1.9",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -528,7 +528,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/python/pyproject.toml",
@@ -536,7 +536,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/package.json",
@@ -544,7 +544,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/java/pom.xml",
@@ -552,7 +552,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/r/DESCRIPTION",
@@ -560,7 +560,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/package-lock.json",
@@ -568,7 +568,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/index.js",
@@ -576,7 +576,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "CITATION.cff",
@@ -584,7 +584,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "SECURITY.md",
@@ -592,57 +592,57 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-backtest-darwin-arm64",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-backtest-darwin-x64",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-backtest-linux-arm64-gnu",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-backtest-linux-x64-gnu",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-backtest-win32-arm64-msvc",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-backtest-win32-x64-msvc",
           "ecosystem": "npm",
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "Cargo.toml [workspace.dependencies] wickra-backtest-core",
           "ecosystem": "cargo",
           "present": true,
           "range": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "Cargo.toml [workspace.dependencies] wickra-backtest-data",
           "ecosystem": "cargo",
           "present": true,
           "range": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/npm/darwin-arm64/package.json",
@@ -650,7 +650,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/npm/darwin-x64/package.json",
@@ -658,7 +658,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/npm/linux-arm64-gnu/package.json",
@@ -666,7 +666,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/npm/linux-x64-gnu/package.json",
@@ -674,7 +674,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/npm/win32-arm64-msvc/package.json",
@@ -682,7 +682,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/node/npm/win32-x64-msvc/package.json",
@@ -690,7 +690,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "crates/wickra-backtest-bench/Cargo.toml",
@@ -778,7 +778,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/csharp/benchmarks/Benchmarks.csproj",
@@ -826,7 +826,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "examples/java/pom.xml",
@@ -834,7 +834,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "bindings/java/README.md",
@@ -842,7 +842,7 @@
           "required": false,
           "range": false,
           "present": true,
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "file": "README.md",
@@ -857,73 +857,73 @@
         {
           "registry": "crates.io",
           "pkg": "wickra-backtest",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-backtest-cli",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-backtest-core",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "crates.io",
           "pkg": "wickra-backtest-data",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "PyPI",
           "pkg": "wickra-backtest",
-          "version": "0.1.8",
+          "version": "0.1.9",
           "note": "9 files"
         },
         {
           "registry": "npm",
           "pkg": "wickra-backtest",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "npm",
           "pkg": "wickra-backtest-darwin-arm64",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "npm",
           "pkg": "wickra-backtest-darwin-x64",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "npm",
           "pkg": "wickra-backtest-linux-arm64-gnu",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "npm",
           "pkg": "wickra-backtest-linux-x64-gnu",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "npm",
           "pkg": "wickra-backtest-win32-arm64-msvc",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "npm",
           "pkg": "wickra-backtest-win32-x64-msvc",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "NuGet",
           "pkg": "Wickra.Backtest",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "Maven",
           "pkg": "org.wickra:wickra-backtest",
-          "version": "0.1.8"
+          "version": "0.1.9"
         },
         {
           "registry": "r-universe",
@@ -935,18 +935,18 @@
         "repo": "wickra-backtest-go",
         "module": "github.com/wickra-lib/wickra-backtest-go",
         "declaredInRepo": "github.com/wickra-lib/wickra-backtest-go",
-        "tag": "v0.1.8"
+        "tag": "v0.1.9"
       },
       "pins": {
         "wickra-core": "1.0",
-        "wickra-backtest-core": "0.1.8",
-        "wickra-backtest-data": "0.1.8"
+        "wickra-backtest-core": "0.1.9",
+        "wickra-backtest-data": "0.1.9"
       },
       "lock": [
         {
           "name": "wickra-backtest",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -957,7 +957,7 @@
         {
           "name": "wickra-backtest-bench",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -966,7 +966,7 @@
         {
           "name": "wickra-backtest-c",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -975,7 +975,7 @@
         {
           "name": "wickra-backtest-cli",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -984,7 +984,7 @@
         {
           "name": "wickra-backtest-core",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -1002,7 +1002,7 @@
         {
           "name": "wickra-backtest-data",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -1015,7 +1015,7 @@
         {
           "name": "wickra-backtest-examples",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -1024,7 +1024,7 @@
         {
           "name": "wickra-backtest-node",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -1033,7 +1033,7 @@
         {
           "name": "wickra-backtest-python",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -1042,7 +1042,7 @@
         {
           "name": "wickra-backtest-wasm",
           "versions": [
-            "0.1.8"
+            "0.1.9"
           ],
           "origin": "path",
           "git": null,
@@ -11755,13 +11755,13 @@
   ],
   "crates": {
     "wickra-backtest": {
-      "version": "0.1.8"
+      "version": "0.1.9"
     },
     "wickra-backtest-core": {
-      "version": "0.1.8"
+      "version": "0.1.9"
     },
     "wickra-backtest-data": {
-      "version": "0.1.8"
+      "version": "0.1.9"
     },
     "wickra-benchmark-core": {
       "version": "0.1.4"
@@ -12041,6 +12041,12 @@
       "informational": true
     },
     {
+      "repo": "wickra-backtest",
+      "kind": "registry differs",
+      "subject": "r-universe wickrabacktest",
+      "detail": "0.1.8 against the declared 0.1.9"
+    },
+    {
       "repo": "wickra-benchmark",
       "kind": "no version reference",
       "subject": "crates/benchmark-cli/Cargo.toml",
@@ -12123,6 +12129,12 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-benchmark",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
     },
     {
       "repo": "wickra-compile",
@@ -12230,6 +12242,26 @@
       "informational": true
     },
     {
+      "repo": "wickra-compile",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest",
+      "detail": "locked at 0.1.8 while wickra-backtest publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-core",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-core) closes it"
+    },
+    {
+      "repo": "wickra-compile",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-data",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-data publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-data) closes it"
+    },
+    {
       "repo": "wickra-copilot",
       "kind": "no version reference",
       "subject": "crates/copilot-cli/Cargo.toml",
@@ -12321,6 +12353,12 @@
       "informational": true
     },
     {
+      "repo": "wickra-copilot",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
       "repo": "wickra-darwin",
       "kind": "no version reference",
       "subject": "crates/darwin-cli/Cargo.toml",
@@ -12403,6 +12441,26 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest",
+      "detail": "locked at 0.1.8 while wickra-backtest publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-core",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-core) closes it"
+    },
+    {
+      "repo": "wickra-darwin",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-data",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-data publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-data) closes it"
     },
     {
       "repo": "wickra-embed",
@@ -12720,6 +12778,12 @@
       "informational": true
     },
     {
+      "repo": "wickra-feature-store",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
       "repo": "wickra-genome",
       "kind": "no version reference",
       "subject": "crates/genome-cli/Cargo.toml",
@@ -12804,6 +12868,12 @@
       "informational": true
     },
     {
+      "repo": "wickra-genome",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
       "repo": "wickra-gym",
       "kind": "no version reference",
       "subject": "crates/gym-cli/Cargo.toml",
@@ -12879,6 +12949,26 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest",
+      "detail": "locked at 0.1.8 while wickra-backtest publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-core",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-core) closes it"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-data",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-data publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-data) closes it"
     },
     {
       "repo": "wickra-impact",
@@ -12963,6 +13053,26 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest",
+      "detail": "locked at 0.1.8 while wickra-backtest publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-core",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-core) closes it"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-data",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-data publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-data) closes it"
     },
     {
       "repo": "wickra-pico",
@@ -13273,6 +13383,12 @@
       "informational": true
     },
     {
+      "repo": "wickra-proof",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
       "repo": "wickra-radar",
       "kind": "no version reference",
       "subject": "crates/radar-cli/Cargo.toml",
@@ -13448,6 +13564,12 @@
       "informational": true
     },
     {
+      "repo": "wickra-screener",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
       "repo": "wickra-shazam",
       "kind": "no version reference",
       "subject": "crates/shazam-cli/Cargo.toml",
@@ -13530,6 +13652,12 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -13628,6 +13756,12 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
     },
     {
       "repo": "wickra-synth",
@@ -13896,6 +14030,26 @@
       "informational": true
     },
     {
+      "repo": "wickra-timemachine",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest",
+      "detail": "locked at 0.1.8 while wickra-backtest publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-core",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-core) closes it"
+    },
+    {
+      "repo": "wickra-timemachine",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-data",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-data publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-data) closes it"
+    },
+    {
       "repo": "wickra-verify",
       "kind": "no version reference",
       "subject": "crates/verify-bench/Cargo.toml",
@@ -13992,6 +14146,12 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-verify",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest-core",
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
     },
     {
       "repo": "wickra-xray",
@@ -14125,6 +14285,26 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "stale family pin",
+      "subject": "wickra-backtest",
+      "detail": "locked at 0.1.8 while wickra-backtest publishes 0.1.9; the exact pin `=0.1.8` holds it there, and nothing moves an exact pin but the consumer round after the owner's release"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-core",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-core publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-core) closes it"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "lock behind",
+      "subject": "wickra-backtest-data",
+      "maintenance": true,
+      "detail": "locked at 0.1.8 while wickra-backtest-data publishes 0.1.9; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-backtest-data) closes it"
     }
   ]
 }
