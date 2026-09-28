@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-27T10:34:54Z",
+  "scanned_at": "2026-09-28T11:43:20Z",
   "repos": 77,
   "dependabot": [
     {
@@ -31,7 +31,17 @@
     }
   ],
   "waiting": 0,
-  "people": [],
+  "people": [
+    {
+      "kind": "issue",
+      "repo": "wickra",
+      "number": 469,
+      "title": "[Question] confirmation of benchmarking",
+      "url": "https://github.com/wickra-lib/wickra/issues/469",
+      "author": "mihakralj",
+      "created": "2026-09-28T01:55:14Z"
+    }
+  ],
   "alerts": [],
   "unreadable": []
 }
