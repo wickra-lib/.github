@@ -1,16 +1,16 @@
 {
-  "scanned_at": "2026-09-27T23:59:48Z",
+  "scanned_at": "2026-09-28T05:55:50Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 373,
-      "differing": 36
+      "differing": 34
     },
     "npm": {
       "total": 109,
       "shared": 109,
-      "differing": 64
+      "differing": 0
     },
     "maven": {
       "total": 2,
@@ -1549,156 +1549,6 @@
     },
     {
       "ecosystem": "cargo",
-      "name": "schemars_derive",
-      "byRepo": {
-        "wickra-backtest": "1.2.2",
-        "wickra-benchmark": "1.2.2",
-        "wickra-compile": "1.2.2",
-        "wickra-copilot": "1.2.2",
-        "wickra-darwin": "1.2.2",
-        "wickra-feature-store": "1.2.2",
-        "wickra-genome": "1.2.2",
-        "wickra-gym": "1.2.2",
-        "wickra-impact": "1.2.2",
-        "wickra-proof": "1.2.2",
-        "wickra-screener": "1.2.2",
-        "wickra-shazam": "1.2.2",
-        "wickra-strategy-ci": "1.2.2",
-        "wickra-timemachine": "1.2.2",
-        "wickra-verify": "1.2.2",
-        "wickra-zk": "0.8.22"
-      },
-      "requiredBy": {
-        "wickra-backtest": [
-          "schemars 1.2.2"
-        ],
-        "wickra-benchmark": [
-          "schemars 1.2.2"
-        ],
-        "wickra-compile": [
-          "schemars 1.2.2"
-        ],
-        "wickra-copilot": [
-          "schemars 1.2.2"
-        ],
-        "wickra-darwin": [
-          "schemars 1.2.2"
-        ],
-        "wickra-feature-store": [
-          "schemars 1.2.2"
-        ],
-        "wickra-genome": [
-          "schemars 1.2.2"
-        ],
-        "wickra-gym": [
-          "schemars 1.2.2"
-        ],
-        "wickra-impact": [
-          "schemars 1.2.2"
-        ],
-        "wickra-proof": [
-          "schemars 1.2.2"
-        ],
-        "wickra-screener": [
-          "schemars 1.2.2"
-        ],
-        "wickra-shazam": [
-          "schemars 1.2.2"
-        ],
-        "wickra-strategy-ci": [
-          "schemars 1.2.2"
-        ],
-        "wickra-timemachine": [
-          "schemars 1.2.2"
-        ],
-        "wickra-verify": [
-          "schemars 1.2.2"
-        ],
-        "wickra-zk": [
-          "schemars 0.8.22"
-        ]
-      },
-      "held": [
-        "schemars 0.8.22"
-      ]
-    },
-    {
-      "ecosystem": "cargo",
-      "name": "serde_derive_internals",
-      "byRepo": {
-        "wickra-backtest": "0.30.0",
-        "wickra-benchmark": "0.30.0",
-        "wickra-compile": "0.30.0",
-        "wickra-copilot": "0.30.0",
-        "wickra-darwin": "0.30.0",
-        "wickra-feature-store": "0.30.0",
-        "wickra-genome": "0.30.0",
-        "wickra-gym": "0.30.0",
-        "wickra-impact": "0.30.0",
-        "wickra-proof": "0.30.0",
-        "wickra-screener": "0.30.0",
-        "wickra-shazam": "0.30.0",
-        "wickra-strategy-ci": "0.30.0",
-        "wickra-timemachine": "0.30.0",
-        "wickra-verify": "0.30.0",
-        "wickra-zk": "0.29.1"
-      },
-      "requiredBy": {
-        "wickra-backtest": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-benchmark": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-compile": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-copilot": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-darwin": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-feature-store": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-genome": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-gym": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-impact": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-proof": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-screener": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-shazam": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-strategy-ci": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-timemachine": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-verify": [
-          "schemars_derive 1.2.2"
-        ],
-        "wickra-zk": [
-          "schemars_derive 0.8.22"
-        ]
-      },
-      "held": [
-        "schemars_derive 0.8.22"
-      ]
-    },
-    {
-      "ecosystem": "cargo",
       "name": "sha2",
       "byRepo": {
         "wickra-compile": "0.11.0",
@@ -2084,96 +1934,6 @@
       "held": [
         "wasip2 1.0.4+wasi-0.2.12"
       ]
-    },
-    {
-      "ecosystem": "npm",
-      "name": "@inquirer/core",
-      "byRepo": {
-        "wickra": "11.2.1",
-        "wickra-backtest": "12.0.3",
-        "wickra-benchmark": "12.0.3",
-        "wickra-compile": "12.0.3",
-        "wickra-copilot": "12.0.3",
-        "wickra-darwin": "12.0.3",
-        "wickra-exchange": "11.2.1",
-        "wickra-feature-store": "12.0.3",
-        "wickra-genome": "12.0.3",
-        "wickra-gym": "12.0.3",
-        "wickra-impact": "12.0.3",
-        "wickra-proof": "12.0.3",
-        "wickra-radar": "11.2.1",
-        "wickra-screener": "12.0.3",
-        "wickra-shazam": "12.0.3",
-        "wickra-strategy-ci": "12.0.3",
-        "wickra-synth": "11.2.1",
-        "wickra-terminal": "11.2.1",
-        "wickra-timemachine": "12.0.3",
-        "wickra-verify": "12.0.3",
-        "wickra-xray": "12.0.3",
-        "wickra-zk": "12.0.3"
-      },
-      "requiredBy": {},
-      "held": null
-    },
-    {
-      "ecosystem": "npm",
-      "name": "@octokit/types",
-      "byRepo": {
-        "wickra": "16.0.0",
-        "wickra-backtest": "18.0.0",
-        "wickra-benchmark": "18.0.0",
-        "wickra-compile": "18.0.0",
-        "wickra-copilot": "18.0.0",
-        "wickra-darwin": "18.0.0",
-        "wickra-exchange": "16.0.0",
-        "wickra-feature-store": "18.0.0",
-        "wickra-genome": "18.0.0",
-        "wickra-gym": "18.0.0",
-        "wickra-impact": "18.0.0",
-        "wickra-proof": "18.0.0",
-        "wickra-radar": "16.0.0",
-        "wickra-screener": "18.0.0",
-        "wickra-shazam": "18.0.0",
-        "wickra-strategy-ci": "18.0.0",
-        "wickra-synth": "16.0.0",
-        "wickra-terminal": "16.0.0",
-        "wickra-timemachine": "18.0.0",
-        "wickra-verify": "18.0.0",
-        "wickra-xray": "18.0.0",
-        "wickra-zk": "18.0.0"
-      },
-      "requiredBy": {},
-      "held": null
-    },
-    {
-      "ecosystem": "npm",
-      "name": "content-type",
-      "byRepo": {
-        "wickra": "2.0.0",
-        "wickra-backtest": "3.1.1",
-        "wickra-benchmark": "3.1.1",
-        "wickra-compile": "3.1.1",
-        "wickra-copilot": "3.1.1",
-        "wickra-darwin": "3.1.1",
-        "wickra-exchange": "2.0.0",
-        "wickra-feature-store": "3.1.1",
-        "wickra-genome": "3.1.1",
-        "wickra-gym": "3.1.1",
-        "wickra-impact": "3.1.1",
-        "wickra-proof": "3.1.1",
-        "wickra-radar": "2.0.0",
-        "wickra-screener": "3.1.1",
-        "wickra-shazam": "3.1.1",
-        "wickra-strategy-ci": "3.1.1",
-        "wickra-synth": "2.0.0",
-        "wickra-terminal": "2.0.0",
-        "wickra-timemachine": "3.1.1",
-        "wickra-verify": "3.1.1",
-        "wickra-xray": "3.1.1",
-        "wickra-zk": "3.0.0"
-      },
-      "requiredBy": {},
-      "held": null
     }
   ],
   "repos": {
@@ -4601,14 +4361,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/core",
-        "version": "1.11.1",
+        "version": "1.11.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/runtime",
-        "version": "1.11.1",
+        "version": "1.11.2",
         "requiredBy": null
       },
       {
@@ -4622,112 +4382,112 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/ansi",
-        "version": "2.0.7",
+        "version": "2.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/checkbox",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/confirm",
-        "version": "6.1.1",
+        "version": "6.3.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/core",
-        "version": "11.2.1",
+        "version": "12.0.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/editor",
-        "version": "5.2.2",
+        "version": "5.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/expand",
-        "version": "5.1.1",
+        "version": "5.1.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/external-editor",
-        "version": "3.0.3",
+        "version": "3.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/figures",
-        "version": "2.0.7",
+        "version": "2.0.9",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/input",
-        "version": "5.1.2",
+        "version": "5.1.6",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/number",
-        "version": "4.1.1",
+        "version": "4.2.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/password",
-        "version": "5.1.1",
+        "version": "5.2.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/prompts",
-        "version": "8.5.2",
+        "version": "8.7.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/rawlist",
-        "version": "5.3.1",
+        "version": "5.3.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/search",
-        "version": "4.2.1",
+        "version": "4.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/select",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/type",
-        "version": "4.0.7",
+        "version": "4.1.1",
         "requiredBy": null
       },
       {
@@ -4748,252 +4508,252 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm-eabi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-freebsd-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm-gnueabihf",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-ppc64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-riscv64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-s390x-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-wasm32-wasi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-arm64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-ia32-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-x64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-android-arm-eabi",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-android-arm64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-darwin-arm64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-darwin-x64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-freebsd-x64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm-gnueabihf",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm64-musl",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-ppc64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-s390x-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-x64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-x64-musl",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-wasm32-wasi",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-arm64-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-ia32-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-x64-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-runtime",
-        "version": "1.1.6",
+        "version": "1.2.4",
         "requiredBy": null
       },
       {
@@ -5126,21 +4886,35 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/core",
-        "version": "7.0.6",
+        "version": "7.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/endpoint",
-        "version": "11.0.3",
+        "version": "11.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/graphql",
-        "version": "9.0.3",
+        "version": "9.0.5",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "29.0.1",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/plugin-paginate-rest",
+        "version": "14.0.0",
         "requiredBy": null
       },
       {
@@ -5153,8 +4927,8 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
-        "name": "@octokit/plugin-paginate-rest",
-        "version": "14.0.0",
+        "name": "@octokit/types",
+        "version": "16.0.0",
         "requiredBy": null
       },
       {
@@ -5174,15 +4948,29 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "27.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/types",
+        "version": "16.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "@octokit/request",
-        "version": "10.0.10",
+        "version": "10.0.16",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/request-error",
-        "version": "7.1.0",
+        "version": "7.1.2",
         "requiredBy": null
       },
       {
@@ -5196,14 +4984,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/types",
-        "version": "16.0.0",
+        "version": "18.0.0",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@tybys/wasm-util",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "requiredBy": null
       },
       {
@@ -5252,7 +5040,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "content-type",
-        "version": "2.0.0",
+        "version": "3.1.1",
         "requiredBy": null
       },
       {
@@ -5266,7 +5054,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "es-toolkit",
-        "version": "1.49.0",
+        "version": "1.52.0",
         "requiredBy": null
       },
       {
@@ -5294,7 +5082,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "iconv-lite",
-        "version": "0.7.2",
+        "version": "0.7.3",
         "requiredBy": null
       },
       {
@@ -5308,7 +5096,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "json-with-bigint",
-        "version": "3.5.8",
+        "version": "3.5.12",
         "requiredBy": null
       },
       {
@@ -24319,14 +24107,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/core",
-        "version": "1.11.1",
+        "version": "1.11.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/runtime",
-        "version": "1.11.1",
+        "version": "1.11.2",
         "requiredBy": null
       },
       {
@@ -24340,112 +24128,112 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/ansi",
-        "version": "2.0.7",
+        "version": "2.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/checkbox",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/confirm",
-        "version": "6.1.1",
+        "version": "6.3.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/core",
-        "version": "11.2.1",
+        "version": "12.0.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/editor",
-        "version": "5.2.2",
+        "version": "5.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/expand",
-        "version": "5.1.1",
+        "version": "5.1.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/external-editor",
-        "version": "3.0.3",
+        "version": "3.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/figures",
-        "version": "2.0.7",
+        "version": "2.0.9",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/input",
-        "version": "5.1.2",
+        "version": "5.1.6",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/number",
-        "version": "4.1.1",
+        "version": "4.2.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/password",
-        "version": "5.1.1",
+        "version": "5.2.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/prompts",
-        "version": "8.5.2",
+        "version": "8.7.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/rawlist",
-        "version": "5.3.1",
+        "version": "5.3.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/search",
-        "version": "4.2.1",
+        "version": "4.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/select",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/type",
-        "version": "4.0.7",
+        "version": "4.1.1",
         "requiredBy": null
       },
       {
@@ -24466,252 +24254,252 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm-eabi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-freebsd-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm-gnueabihf",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-ppc64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-riscv64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-s390x-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-wasm32-wasi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-arm64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-ia32-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-x64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-android-arm-eabi",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-android-arm64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-darwin-arm64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-darwin-x64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-freebsd-x64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm-gnueabihf",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm64-musl",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-ppc64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-s390x-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-x64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-x64-musl",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-wasm32-wasi",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-arm64-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-ia32-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-x64-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-runtime",
-        "version": "1.1.6",
+        "version": "1.2.4",
         "requiredBy": null
       },
       {
@@ -24844,21 +24632,35 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/core",
-        "version": "7.0.6",
+        "version": "7.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/endpoint",
-        "version": "11.0.3",
+        "version": "11.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/graphql",
-        "version": "9.0.3",
+        "version": "9.0.5",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "29.0.1",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/plugin-paginate-rest",
+        "version": "14.0.0",
         "requiredBy": null
       },
       {
@@ -24871,8 +24673,8 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
-        "name": "@octokit/plugin-paginate-rest",
-        "version": "14.0.0",
+        "name": "@octokit/types",
+        "version": "16.0.0",
         "requiredBy": null
       },
       {
@@ -24892,15 +24694,29 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "27.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/types",
+        "version": "16.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "@octokit/request",
-        "version": "10.0.11",
+        "version": "10.0.16",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/request-error",
-        "version": "7.1.0",
+        "version": "7.1.2",
         "requiredBy": null
       },
       {
@@ -24914,14 +24730,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/types",
-        "version": "16.0.0",
+        "version": "18.0.0",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@tybys/wasm-util",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "requiredBy": null
       },
       {
@@ -24970,7 +24786,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "content-type",
-        "version": "2.0.0",
+        "version": "3.1.1",
         "requiredBy": null
       },
       {
@@ -24984,7 +24800,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "es-toolkit",
-        "version": "1.49.0",
+        "version": "1.52.0",
         "requiredBy": null
       },
       {
@@ -25012,7 +24828,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "iconv-lite",
-        "version": "0.7.2",
+        "version": "0.7.3",
         "requiredBy": null
       },
       {
@@ -25026,7 +24842,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "json-with-bigint",
-        "version": "3.5.8",
+        "version": "3.5.12",
         "requiredBy": null
       },
       {
@@ -47084,112 +46900,112 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/ansi",
-        "version": "2.0.7",
+        "version": "2.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/checkbox",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/confirm",
-        "version": "6.1.1",
+        "version": "6.3.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/core",
-        "version": "11.2.1",
+        "version": "12.0.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/editor",
-        "version": "5.2.2",
+        "version": "5.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/expand",
-        "version": "5.1.1",
+        "version": "5.1.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/external-editor",
-        "version": "3.0.3",
+        "version": "3.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/figures",
-        "version": "2.0.7",
+        "version": "2.0.9",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/input",
-        "version": "5.1.2",
+        "version": "5.1.6",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/number",
-        "version": "4.1.1",
+        "version": "4.2.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/password",
-        "version": "5.1.1",
+        "version": "5.2.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/prompts",
-        "version": "8.5.2",
+        "version": "8.7.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/rawlist",
-        "version": "5.3.1",
+        "version": "5.3.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/search",
-        "version": "4.2.1",
+        "version": "4.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/select",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/type",
-        "version": "4.0.7",
+        "version": "4.1.1",
         "requiredBy": null
       },
       {
@@ -47210,252 +47026,252 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm-eabi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-freebsd-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm-gnueabihf",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-ppc64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-riscv64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-s390x-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-wasm32-wasi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-arm64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-ia32-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-x64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-android-arm-eabi",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-android-arm64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-darwin-arm64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-darwin-x64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-freebsd-x64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm-gnueabihf",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm64-musl",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-ppc64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-s390x-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-x64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-x64-musl",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-wasm32-wasi",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-arm64-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-ia32-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-x64-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-runtime",
-        "version": "1.1.6",
+        "version": "1.2.4",
         "requiredBy": null
       },
       {
@@ -47588,21 +47404,35 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/core",
-        "version": "7.0.6",
+        "version": "7.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/endpoint",
-        "version": "11.0.3",
+        "version": "11.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/graphql",
-        "version": "9.0.3",
+        "version": "9.0.5",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "29.0.1",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/plugin-paginate-rest",
+        "version": "14.0.0",
         "requiredBy": null
       },
       {
@@ -47615,8 +47445,8 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
-        "name": "@octokit/plugin-paginate-rest",
-        "version": "14.0.0",
+        "name": "@octokit/types",
+        "version": "16.0.0",
         "requiredBy": null
       },
       {
@@ -47636,15 +47466,29 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "27.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/types",
+        "version": "16.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "@octokit/request",
-        "version": "10.0.11",
+        "version": "10.0.16",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/request-error",
-        "version": "7.1.0",
+        "version": "7.1.2",
         "requiredBy": null
       },
       {
@@ -47658,14 +47502,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/types",
-        "version": "16.0.0",
+        "version": "18.0.0",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@tybys/wasm-util",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "requiredBy": null
       },
       {
@@ -47714,7 +47558,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "content-type",
-        "version": "2.0.0",
+        "version": "3.1.1",
         "requiredBy": null
       },
       {
@@ -47728,7 +47572,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "es-toolkit",
-        "version": "1.49.0",
+        "version": "1.52.0",
         "requiredBy": null
       },
       {
@@ -47770,7 +47614,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "json-with-bigint",
-        "version": "3.5.8",
+        "version": "3.5.12",
         "requiredBy": null
       },
       {
@@ -59900,112 +59744,112 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/ansi",
-        "version": "2.0.7",
+        "version": "2.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/checkbox",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/confirm",
-        "version": "6.1.1",
+        "version": "6.3.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/core",
-        "version": "11.2.1",
+        "version": "12.0.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/editor",
-        "version": "5.2.2",
+        "version": "5.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/expand",
-        "version": "5.1.1",
+        "version": "5.1.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/external-editor",
-        "version": "3.0.3",
+        "version": "3.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/figures",
-        "version": "2.0.7",
+        "version": "2.0.9",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/input",
-        "version": "5.1.2",
+        "version": "5.1.6",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/number",
-        "version": "4.1.1",
+        "version": "4.2.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/password",
-        "version": "5.1.1",
+        "version": "5.2.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/prompts",
-        "version": "8.5.2",
+        "version": "8.7.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/rawlist",
-        "version": "5.3.1",
+        "version": "5.3.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/search",
-        "version": "4.2.1",
+        "version": "4.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/select",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/type",
-        "version": "4.0.7",
+        "version": "4.1.1",
         "requiredBy": null
       },
       {
@@ -60271,7 +60115,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-runtime",
-        "version": "1.1.6",
+        "version": "1.2.4",
         "requiredBy": null
       },
       {
@@ -60404,21 +60248,35 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/core",
-        "version": "7.0.6",
+        "version": "7.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/endpoint",
-        "version": "11.0.3",
+        "version": "11.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/graphql",
-        "version": "9.0.3",
+        "version": "9.0.5",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "29.0.1",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/plugin-paginate-rest",
+        "version": "14.0.0",
         "requiredBy": null
       },
       {
@@ -60431,8 +60289,8 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
-        "name": "@octokit/plugin-paginate-rest",
-        "version": "14.0.0",
+        "name": "@octokit/types",
+        "version": "16.0.0",
         "requiredBy": null
       },
       {
@@ -60452,15 +60310,29 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "27.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/types",
+        "version": "16.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "@octokit/request",
-        "version": "10.0.11",
+        "version": "10.0.16",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/request-error",
-        "version": "7.1.0",
+        "version": "7.1.2",
         "requiredBy": null
       },
       {
@@ -60474,14 +60346,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/types",
-        "version": "16.0.0",
+        "version": "18.0.0",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@tybys/wasm-util",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "requiredBy": null
       },
       {
@@ -60530,7 +60402,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "content-type",
-        "version": "2.0.0",
+        "version": "3.1.1",
         "requiredBy": null
       },
       {
@@ -60544,7 +60416,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "es-toolkit",
-        "version": "1.49.0",
+        "version": "1.52.0",
         "requiredBy": null
       },
       {
@@ -60586,7 +60458,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "json-with-bigint",
-        "version": "3.5.10",
+        "version": "3.5.12",
         "requiredBy": null
       },
       {
@@ -64989,14 +64861,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/core",
-        "version": "1.11.1",
+        "version": "1.11.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/runtime",
-        "version": "1.11.1",
+        "version": "1.11.2",
         "requiredBy": null
       },
       {
@@ -65010,112 +64882,112 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/ansi",
-        "version": "2.0.7",
+        "version": "2.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/checkbox",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/confirm",
-        "version": "6.1.1",
+        "version": "6.3.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/core",
-        "version": "11.2.1",
+        "version": "12.0.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/editor",
-        "version": "5.2.2",
+        "version": "5.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/expand",
-        "version": "5.1.1",
+        "version": "5.1.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/external-editor",
-        "version": "3.0.3",
+        "version": "3.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/figures",
-        "version": "2.0.7",
+        "version": "2.0.9",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/input",
-        "version": "5.1.2",
+        "version": "5.1.6",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/number",
-        "version": "4.1.1",
+        "version": "4.2.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/password",
-        "version": "5.1.1",
+        "version": "5.2.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/prompts",
-        "version": "8.5.2",
+        "version": "8.7.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/rawlist",
-        "version": "5.3.1",
+        "version": "5.3.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/search",
-        "version": "4.2.1",
+        "version": "4.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/select",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/type",
-        "version": "4.0.7",
+        "version": "4.1.1",
         "requiredBy": null
       },
       {
@@ -65136,252 +65008,252 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm-eabi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-freebsd-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm-gnueabihf",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-ppc64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-riscv64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-s390x-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-wasm32-wasi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-arm64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-ia32-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-x64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-android-arm-eabi",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-android-arm64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-darwin-arm64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-darwin-x64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-freebsd-x64",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm-gnueabihf",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-arm64-musl",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-ppc64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-s390x-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-x64-gnu",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-linux-x64-musl",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-wasm32-wasi",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-arm64-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-ia32-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-win32-x64-msvc",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-runtime",
-        "version": "1.1.6",
+        "version": "1.2.4",
         "requiredBy": null
       },
       {
@@ -65514,21 +65386,35 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/core",
-        "version": "7.0.6",
+        "version": "7.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/endpoint",
-        "version": "11.0.3",
+        "version": "11.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/graphql",
-        "version": "9.0.3",
+        "version": "9.0.5",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "29.0.1",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/plugin-paginate-rest",
+        "version": "14.0.0",
         "requiredBy": null
       },
       {
@@ -65541,8 +65427,8 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
-        "name": "@octokit/plugin-paginate-rest",
-        "version": "14.0.0",
+        "name": "@octokit/types",
+        "version": "16.0.0",
         "requiredBy": null
       },
       {
@@ -65562,15 +65448,29 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "27.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/types",
+        "version": "16.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "@octokit/request",
-        "version": "10.0.11",
+        "version": "10.0.16",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/request-error",
-        "version": "7.1.0",
+        "version": "7.1.2",
         "requiredBy": null
       },
       {
@@ -65584,14 +65484,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/types",
-        "version": "16.0.0",
+        "version": "18.0.0",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@tybys/wasm-util",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "requiredBy": null
       },
       {
@@ -65640,7 +65540,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "content-type",
-        "version": "2.0.0",
+        "version": "3.1.1",
         "requiredBy": null
       },
       {
@@ -65654,7 +65554,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "es-toolkit",
-        "version": "1.49.0",
+        "version": "1.52.0",
         "requiredBy": null
       },
       {
@@ -65682,7 +65582,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "iconv-lite",
-        "version": "0.7.2",
+        "version": "0.7.3",
         "requiredBy": null
       },
       {
@@ -65696,7 +65596,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "json-with-bigint",
-        "version": "3.5.8",
+        "version": "3.5.12",
         "requiredBy": null
       },
       {
@@ -75650,7 +75550,7 @@
         "name": "blake3",
         "version": "1.8.7",
         "requiredBy": [
-          "wickra-proof-core 0.1.4"
+          "wickra-proof-core 0.1.5"
         ]
       },
       {
@@ -75936,7 +75836,7 @@
         "requiredBy": [
           "codspeed-criterion-compat 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-zk 0.1.3"
+          "wickra-zk 0.1.4"
         ]
       },
       {
@@ -75991,7 +75891,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.2",
         "requiredBy": [
-          "wickra-zk-bench 0.1.3"
+          "wickra-zk-bench 0.1.4"
         ]
       },
       {
@@ -76478,7 +76378,6 @@
         "name": "dyn-clone",
         "version": "1.0.20",
         "requiredBy": [
-          "schemars 0.8.22",
           "schemars 0.9.0",
           "schemars 1.2.2"
         ]
@@ -77795,7 +77694,7 @@
         "name": "napi",
         "version": "3.13.0",
         "requiredBy": [
-          "wickra-zk-node 0.1.3"
+          "wickra-zk-node 0.1.4"
         ]
       },
       {
@@ -77805,7 +77704,7 @@
         "version": "2.5.0",
         "requiredBy": [
           "napi 3.13.0",
-          "wickra-zk-node 0.1.3"
+          "wickra-zk-node 0.1.4"
         ]
       },
       {
@@ -77814,7 +77713,7 @@
         "name": "napi-derive",
         "version": "3.6.9",
         "requiredBy": [
-          "wickra-zk-node 0.1.3"
+          "wickra-zk-node 0.1.4"
         ]
       },
       {
@@ -78336,9 +78235,9 @@
           "pyo3-macros-backend 0.29.2",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
-          "schemars_derive 0.8.22",
+          "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
+          "serde_derive_internals 0.30.0",
           "serde_with_macros 3.23.0",
           "strum_macros 0.27.2",
           "syn 1.0.109",
@@ -78375,7 +78274,7 @@
         "version": "1.11.0",
         "requiredBy": [
           "ruint 1.20.1",
-          "wickra-zk-host 0.1.3"
+          "wickra-zk-host 0.1.4"
         ]
       },
       {
@@ -78411,7 +78310,7 @@
         "name": "pyo3",
         "version": "0.29.2",
         "requiredBy": [
-          "wickra-zk-python 0.1.3"
+          "wickra-zk-python 0.1.4"
         ]
       },
       {
@@ -78529,9 +78428,9 @@
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "ref-cast-impl 1.0.27",
-          "schemars_derive 0.8.22",
+          "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
+          "serde_derive_internals 0.30.0",
           "serde_with_macros 3.23.0",
           "stability 0.2.1",
           "strum_macros 0.27.2",
@@ -78989,7 +78888,7 @@
         "name": "risc0-zkvm",
         "version": "3.0.6",
         "requiredBy": [
-          "wickra-zk-host 0.1.3"
+          "wickra-zk-host 0.1.4"
         ]
       },
       {
@@ -79190,15 +79089,6 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "schemars",
-        "version": "0.8.22",
-        "requiredBy": [
-          "wickra-backtest-core 0.1.8"
-        ]
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "schemars",
         "version": "0.9.0",
         "requiredBy": [
           "serde_with 3.23.0"
@@ -79210,16 +79100,17 @@
         "name": "schemars",
         "version": "1.2.2",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "serde_with 3.23.0",
+          "wickra-backtest-core 0.1.9"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "schemars_derive",
-        "version": "0.8.22",
+        "version": "1.2.2",
         "requiredBy": [
-          "schemars 0.8.22"
+          "schemars 1.2.2"
         ]
       },
       {
@@ -79276,7 +79167,6 @@
           "risc0-zkp 3.0.5",
           "risc0-zkvm 3.0.6",
           "rzup 0.5.2",
-          "schemars 0.8.22",
           "schemars 0.9.0",
           "schemars 1.2.2",
           "semver 1.0.28",
@@ -79289,9 +79179,9 @@
           "toml_edit 0.22.27",
           "typetag 0.2.23",
           "url 2.5.8",
-          "wickra-backtest-core 0.1.8",
-          "wickra-proof-core 0.1.4",
-          "wickra-zk-host 0.1.3"
+          "wickra-backtest-core 0.1.9",
+          "wickra-proof-core 0.1.5",
+          "wickra-zk-host 0.1.4"
         ]
       },
       {
@@ -79331,9 +79221,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_derive_internals",
-        "version": "0.29.1",
+        "version": "0.30.0",
         "requiredBy": [
-          "schemars_derive 0.8.22"
+          "schemars_derive 1.2.2"
         ]
       },
       {
@@ -79348,18 +79238,17 @@
           "reqwest 0.12.28",
           "risc0-build 3.0.6",
           "risc0-groth16 3.0.5",
-          "schemars 0.8.22",
           "schemars 0.9.0",
           "schemars 1.2.2",
           "serde_with 3.23.0",
           "tinytemplate 1.2.1",
-          "wickra-backtest-core 0.1.8",
-          "wickra-backtest-data 0.1.8",
-          "wickra-proof-core 0.1.4",
-          "wickra-zk 0.1.3",
-          "wickra-zk-bench 0.1.3",
-          "wickra-zk-example 0.1.3",
-          "wickra-zk-host 0.1.3"
+          "wickra-backtest-core 0.1.9",
+          "wickra-backtest-data 0.1.9",
+          "wickra-proof-core 0.1.5",
+          "wickra-zk 0.1.4",
+          "wickra-zk-bench 0.1.4",
+          "wickra-zk-example 0.1.4",
+          "wickra-zk-host 0.1.4"
         ]
       },
       {
@@ -79639,8 +79528,6 @@
           "prost-derive 0.13.5",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
-          "serde_derive_internals 0.29.1",
           "stability 0.2.1",
           "strum_macros 0.27.2",
           "thiserror-impl 1.0.69",
@@ -79668,7 +79555,9 @@
           "futures-macro 0.3.34",
           "multiversion-macros 0.9.0",
           "ref-cast-impl 1.0.27",
+          "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
+          "serde_derive_internals 0.30.0",
           "serde_with_macros 3.23.0",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
@@ -79756,10 +79645,10 @@
           "quinn-proto 0.11.18",
           "redox_users 0.5.3",
           "rzup 0.5.2",
-          "wickra-backtest-core 0.1.8",
+          "wickra-backtest-core 0.1.9",
           "wickra-core 1.0.6",
-          "wickra-proof-core 0.1.4",
-          "wickra-zk-host 0.1.3",
+          "wickra-proof-core 0.1.5",
+          "wickra-zk-host 0.1.4",
           "zip 2.4.2"
         ]
       },
@@ -79888,7 +79777,7 @@
         "name": "toml",
         "version": "1.1.6+spec-1.1.0",
         "requiredBy": [
-          "wickra-proof-core 0.1.4"
+          "wickra-proof-core 0.1.5"
         ]
       },
       {
@@ -80767,21 +80656,21 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/core",
-        "version": "1.11.3",
+        "version": "1.11.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/runtime",
-        "version": "1.11.3",
+        "version": "1.11.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@emnapi/wasi-threads",
-        "version": "1.2.3",
+        "version": "1.2.2",
         "requiredBy": null
       },
       {
@@ -80914,126 +80803,126 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm-eabi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-android-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-arm64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-darwin-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-freebsd-x64",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm-gnueabihf",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-arm64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-ppc64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-riscv64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-s390x-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-gnu",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-linux-x64-musl",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-wasm32-wasi",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-arm64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-ia32-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/lzma-win32-x64-msvc",
-        "version": "1.4.5",
+        "version": "1.5.1",
         "requiredBy": null
       },
       {
@@ -81132,27 +81021,6 @@
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/tar-wasm32-wasi",
         "version": "1.1.1",
-        "requiredBy": null
-      },
-      {
-        "ecosystem": "npm",
-        "source": "bindings/node/package-lock.json",
-        "name": "@emnapi/core",
-        "version": "1.11.2",
-        "requiredBy": null
-      },
-      {
-        "ecosystem": "npm",
-        "source": "bindings/node/package-lock.json",
-        "name": "@emnapi/runtime",
-        "version": "1.11.2",
-        "requiredBy": null
-      },
-      {
-        "ecosystem": "npm",
-        "source": "bindings/node/package-lock.json",
-        "name": "@emnapi/wasi-threads",
-        "version": "1.2.2",
         "requiredBy": null
       },
       {
@@ -81418,7 +81286,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@tybys/wasm-util",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "requiredBy": null
       },
       {
@@ -81467,7 +81335,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "content-type",
-        "version": "3.0.0",
+        "version": "3.1.1",
         "requiredBy": null
       },
       {
@@ -81516,7 +81384,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "js-yaml",
-        "version": "5.4.1",
+        "version": "5.4.2",
         "requiredBy": null
       },
       {
