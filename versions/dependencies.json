@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-09-27T21:39:28Z",
+  "scanned_at": "2026-09-27T23:59:48Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 373,
-      "differing": 37
+      "differing": 36
     },
     "npm": {
       "total": 109,
@@ -1549,79 +1549,6 @@
     },
     {
       "ecosystem": "cargo",
-      "name": "schemars",
-      "byRepo": {
-        "wickra-backtest": "1.2.2",
-        "wickra-benchmark": "1.2.2",
-        "wickra-compile": "1.2.2",
-        "wickra-copilot": "1.2.2",
-        "wickra-darwin": "1.2.2",
-        "wickra-feature-store": "1.2.2",
-        "wickra-genome": "0.8.22",
-        "wickra-gym": "1.2.2",
-        "wickra-impact": "1.2.2",
-        "wickra-proof": "1.2.2",
-        "wickra-screener": "1.2.2",
-        "wickra-shazam": "1.2.2",
-        "wickra-strategy-ci": "1.2.2",
-        "wickra-timemachine": "1.2.2",
-        "wickra-verify": "1.2.2",
-        "wickra-zk": "1.2.2"
-      },
-      "requiredBy": {
-        "wickra-backtest": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-benchmark": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-compile": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-copilot": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-darwin": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-feature-store": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-genome": [
-          "wickra-backtest-core 0.1.8"
-        ],
-        "wickra-gym": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-impact": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-proof": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-screener": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-shazam": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-strategy-ci": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-timemachine": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-verify": [
-          "wickra-backtest-core 0.1.9"
-        ],
-        "wickra-zk": [
-          "serde_with 3.23.0"
-        ]
-      },
-      "held": null
-    },
-    {
-      "ecosystem": "cargo",
       "name": "schemars_derive",
       "byRepo": {
         "wickra-backtest": "1.2.2",
@@ -1630,7 +1557,7 @@
         "wickra-copilot": "1.2.2",
         "wickra-darwin": "1.2.2",
         "wickra-feature-store": "1.2.2",
-        "wickra-genome": "0.8.22",
+        "wickra-genome": "1.2.2",
         "wickra-gym": "1.2.2",
         "wickra-impact": "1.2.2",
         "wickra-proof": "1.2.2",
@@ -1661,7 +1588,7 @@
           "schemars 1.2.2"
         ],
         "wickra-genome": [
-          "schemars 0.8.22"
+          "schemars 1.2.2"
         ],
         "wickra-gym": [
           "schemars 1.2.2"
@@ -1705,7 +1632,7 @@
         "wickra-copilot": "0.30.0",
         "wickra-darwin": "0.30.0",
         "wickra-feature-store": "0.30.0",
-        "wickra-genome": "0.29.1",
+        "wickra-genome": "0.30.0",
         "wickra-gym": "0.30.0",
         "wickra-impact": "0.30.0",
         "wickra-proof": "0.30.0",
@@ -1736,7 +1663,7 @@
           "schemars_derive 1.2.2"
         ],
         "wickra-genome": [
-          "schemars_derive 0.8.22"
+          "schemars_derive 1.2.2"
         ],
         "wickra-gym": [
           "schemars_derive 1.2.2"
@@ -2170,7 +2097,7 @@
         "wickra-darwin": "12.0.3",
         "wickra-exchange": "11.2.1",
         "wickra-feature-store": "12.0.3",
-        "wickra-genome": "11.2.1",
+        "wickra-genome": "12.0.3",
         "wickra-gym": "12.0.3",
         "wickra-impact": "12.0.3",
         "wickra-proof": "12.0.3",
@@ -2200,7 +2127,7 @@
         "wickra-darwin": "18.0.0",
         "wickra-exchange": "16.0.0",
         "wickra-feature-store": "18.0.0",
-        "wickra-genome": "16.0.0",
+        "wickra-genome": "18.0.0",
         "wickra-gym": "18.0.0",
         "wickra-impact": "18.0.0",
         "wickra-proof": "18.0.0",
@@ -2230,7 +2157,7 @@
         "wickra-darwin": "3.1.1",
         "wickra-exchange": "2.0.0",
         "wickra-feature-store": "3.1.1",
-        "wickra-genome": "2.0.0",
+        "wickra-genome": "3.1.1",
         "wickra-gym": "3.1.1",
         "wickra-impact": "3.1.1",
         "wickra-proof": "3.1.1",
@@ -28718,7 +28645,7 @@
         "requiredBy": [
           "codspeed-criterion-compat 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-genome 0.1.4"
+          "wickra-genome 0.1.5"
         ]
       },
       {
@@ -28773,7 +28700,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.2",
         "requiredBy": [
-          "genome-bench 0.1.4"
+          "genome-bench 0.1.5"
         ]
       },
       {
@@ -29015,7 +28942,7 @@
         "name": "dyn-clone",
         "version": "1.0.20",
         "requiredBy": [
-          "schemars 0.8.22"
+          "schemars 1.2.2"
         ]
       },
       {
@@ -29234,7 +29161,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "genome-bench",
-        "version": "0.1.4",
+        "version": "0.1.5",
         "requiredBy": []
       },
       {
@@ -29710,7 +29637,7 @@
         "name": "napi",
         "version": "3.13.0",
         "requiredBy": [
-          "wickra-genome-node 0.1.4"
+          "wickra-genome-node 0.1.5"
         ]
       },
       {
@@ -29720,7 +29647,7 @@
         "version": "2.5.0",
         "requiredBy": [
           "napi 3.13.0",
-          "wickra-genome-node 0.1.4"
+          "wickra-genome-node 0.1.5"
         ]
       },
       {
@@ -29729,7 +29656,7 @@
         "name": "napi-derive",
         "version": "3.6.9",
         "requiredBy": [
-          "wickra-genome-node 0.1.4"
+          "wickra-genome-node 0.1.5"
         ]
       },
       {
@@ -29976,9 +29903,10 @@
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
           "quote 1.0.47",
-          "schemars_derive 0.8.22",
+          "ref-cast-impl 1.0.27",
+          "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
+          "serde_derive_internals 0.30.0",
           "syn 2.0.119",
           "syn 3.0.6",
           "synstructure 0.14.0",
@@ -29999,7 +29927,7 @@
         "name": "proptest",
         "version": "1.11.0",
         "requiredBy": [
-          "wickra-genome-core 0.1.4"
+          "wickra-genome-core 0.1.5"
         ]
       },
       {
@@ -30008,7 +29936,7 @@
         "name": "pyo3",
         "version": "0.29.2",
         "requiredBy": [
-          "wickra-genome-python 0.1.4"
+          "wickra-genome-python 0.1.5"
         ]
       },
       {
@@ -30098,9 +30026,10 @@
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
+          "ref-cast-impl 1.0.27",
+          "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
-          "serde_derive_internals 0.29.1",
+          "serde_derive_internals 0.30.0",
           "syn 2.0.119",
           "syn 3.0.6",
           "synstructure 0.14.0",
@@ -30248,7 +30177,7 @@
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-core 1.0.6",
-          "wickra-genome-core 0.1.4"
+          "wickra-genome-core 0.1.5"
         ]
       },
       {
@@ -30258,6 +30187,24 @@
         "version": "1.13.0",
         "requiredBy": [
           "rayon 1.12.0"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "ref-cast",
+        "version": "1.0.27",
+        "requiredBy": [
+          "schemars 1.2.2"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "ref-cast-impl",
+        "version": "1.0.27",
+        "requiredBy": [
+          "ref-cast 1.0.27"
         ]
       },
       {
@@ -30428,18 +30375,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "schemars",
-        "version": "0.8.22",
+        "version": "1.2.2",
         "requiredBy": [
-          "wickra-backtest-core 0.1.8"
+          "wickra-backtest-core 0.1.9"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "schemars_derive",
-        "version": "0.8.22",
+        "version": "1.2.2",
         "requiredBy": [
-          "schemars 0.8.22"
+          "schemars 1.2.2"
         ]
       },
       {
@@ -30471,17 +30418,17 @@
           "codspeed-criterion-compat-walltime 5.0.2",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "schemars 0.8.22",
+          "schemars 1.2.2",
           "serde_json 1.0.151",
           "serde_urlencoded 0.7.1",
           "serdect 0.4.3",
           "tinytemplate 1.2.1",
           "url 2.5.8",
           "wasm-bindgen 0.2.128",
-          "wickra-backtest-core 0.1.8",
+          "wickra-backtest-core 0.1.9",
           "wickra-data 1.0.6",
           "wickra-exchange-core 0.1.8",
-          "wickra-genome-core 0.1.4"
+          "wickra-genome-core 0.1.5"
         ]
       },
       {
@@ -30513,9 +30460,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_derive_internals",
-        "version": "0.29.1",
+        "version": "0.30.0",
         "requiredBy": [
-          "schemars_derive 0.8.22"
+          "schemars_derive 1.2.2"
         ]
       },
       {
@@ -30526,17 +30473,17 @@
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "genome-bench 0.1.4",
+          "genome-bench 0.1.5",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "schemars 0.8.22",
+          "schemars 1.2.2",
           "tinytemplate 1.2.1",
-          "wickra-backtest-core 0.1.8",
+          "wickra-backtest-core 0.1.9",
           "wickra-data 1.0.6",
           "wickra-exchange-core 0.1.8",
-          "wickra-genome 0.1.4",
-          "wickra-genome-core 0.1.4",
-          "wickra-genome-example 0.1.4"
+          "wickra-genome 0.1.5",
+          "wickra-genome-core 0.1.5",
+          "wickra-genome-example 0.1.5"
         ]
       },
       {
@@ -30709,8 +30656,6 @@
           "napi-derive-backend 6.1.4",
           "pyo3-macros 0.29.2",
           "pyo3-macros-backend 0.29.2",
-          "schemars_derive 0.8.22",
-          "serde_derive_internals 0.29.1",
           "tracing-attributes 0.1.31",
           "zerocopy-derive 0.8.57",
           "zeroize_derive 1.5.0"
@@ -30726,7 +30671,10 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
+          "ref-cast-impl 1.0.27",
+          "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
+          "serde_derive_internals 0.30.0",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "tokio-macros 2.7.2",
@@ -30784,11 +30732,11 @@
           "quinn 0.11.12",
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
-          "wickra-backtest-core 0.1.8",
+          "wickra-backtest-core 0.1.9",
           "wickra-core 1.0.6",
           "wickra-data 1.0.6",
           "wickra-exchange-core 0.1.8",
-          "wickra-genome-core 0.1.4"
+          "wickra-genome-core 0.1.5"
         ]
       },
       {
@@ -30879,7 +30827,7 @@
         "name": "toml",
         "version": "1.1.6+spec-1.1.0",
         "requiredBy": [
-          "wickra-genome-core 0.1.4"
+          "wickra-genome-core 0.1.5"
         ]
       },
       {
@@ -31151,7 +31099,7 @@
           "wasm-bindgen-futures 0.4.78",
           "web-sys 0.3.105",
           "web-time 1.1.0",
-          "wickra-genome-wasm 0.1.4"
+          "wickra-genome-wasm 0.1.5"
         ]
       },
       {
@@ -31567,112 +31515,112 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/ansi",
-        "version": "2.0.7",
+        "version": "2.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/checkbox",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/confirm",
-        "version": "6.1.1",
+        "version": "6.3.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/core",
-        "version": "11.2.1",
+        "version": "12.0.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/editor",
-        "version": "5.2.2",
+        "version": "5.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/expand",
-        "version": "5.1.1",
+        "version": "5.1.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/external-editor",
-        "version": "3.0.3",
+        "version": "3.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/figures",
-        "version": "2.0.7",
+        "version": "2.0.9",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/input",
-        "version": "5.1.2",
+        "version": "5.1.6",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/number",
-        "version": "4.1.1",
+        "version": "4.2.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/password",
-        "version": "5.1.1",
+        "version": "5.2.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/prompts",
-        "version": "8.5.2",
+        "version": "8.7.2",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/rawlist",
-        "version": "5.3.1",
+        "version": "5.3.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/search",
-        "version": "4.2.1",
+        "version": "4.3.3",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/select",
-        "version": "5.2.1",
+        "version": "5.2.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@inquirer/type",
-        "version": "4.0.7",
+        "version": "4.1.1",
         "requiredBy": null
       },
       {
@@ -31938,7 +31886,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/wasm-runtime",
-        "version": "1.1.6",
+        "version": "1.2.4",
         "requiredBy": null
       },
       {
@@ -32071,21 +32019,35 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/core",
-        "version": "7.0.6",
+        "version": "7.0.8",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/endpoint",
-        "version": "11.0.3",
+        "version": "11.0.5",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/graphql",
-        "version": "9.0.3",
+        "version": "9.0.5",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "29.0.1",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/plugin-paginate-rest",
+        "version": "14.0.0",
         "requiredBy": null
       },
       {
@@ -32098,8 +32060,8 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
-        "name": "@octokit/plugin-paginate-rest",
-        "version": "14.0.0",
+        "name": "@octokit/types",
+        "version": "16.0.0",
         "requiredBy": null
       },
       {
@@ -32119,15 +32081,29 @@
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
+        "name": "@octokit/openapi-types",
+        "version": "27.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
+        "name": "@octokit/types",
+        "version": "16.0.0",
+        "requiredBy": null
+      },
+      {
+        "ecosystem": "npm",
+        "source": "bindings/node/package-lock.json",
         "name": "@octokit/request",
-        "version": "10.0.11",
+        "version": "10.0.16",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/request-error",
-        "version": "7.1.0",
+        "version": "7.1.2",
         "requiredBy": null
       },
       {
@@ -32141,14 +32117,14 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@octokit/types",
-        "version": "16.0.0",
+        "version": "18.0.0",
         "requiredBy": null
       },
       {
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@tybys/wasm-util",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "requiredBy": null
       },
       {
@@ -32197,7 +32173,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "content-type",
-        "version": "2.0.0",
+        "version": "3.1.1",
         "requiredBy": null
       },
       {
@@ -32211,7 +32187,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "es-toolkit",
-        "version": "1.49.0",
+        "version": "1.52.0",
         "requiredBy": null
       },
       {
@@ -32253,7 +32229,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "json-with-bigint",
-        "version": "3.5.10",
+        "version": "3.5.12",
         "requiredBy": null
       },
       {
