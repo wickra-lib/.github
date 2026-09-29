@@ -24,8 +24,8 @@
  *
  * Every repository the org exposes is scanned, sites and mirrors included,
  * because Dependabot runs in all of them. Output: inbox/README.md and
- * inbox/state.json; the workflow runs hourly and commits every run, so "Last
- * scan" and the ages are at most about an hour old.
+ * inbox/state.json; the workflow runs every 12 hours and commits every run,
+ * so "Last scan" and the ages are at most about half a day old.
  */
 import { mkdir, writeFile } from 'node:fs/promises'
 
