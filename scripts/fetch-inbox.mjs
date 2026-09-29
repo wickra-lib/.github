@@ -5,7 +5,7 @@
  * open right now (a merged or closed item simply disappears):
  *
  *   1. Dependabot pull requests whose checks have finished -- with the verdict
- *      (green, or which checks are red), so the daily look is "merge or fix",
+ *      (green, or which checks are red), so a look at the list is "merge or fix",
  *      not "wait". PRs still running their checks are counted, not listed.
  *   2. Issues and pull requests opened by people outside the org -- anyone who
  *      is neither a bot, nor an automation account, nor an owner, member or
@@ -24,8 +24,8 @@
  *
  * Every repository the org exposes is scanned, sites and mirrors included,
  * because Dependabot runs in all of them. Output: inbox/README.md and
- * inbox/state.json; the workflow commits every daily run, so "Last scan" and
- * the ages are always today's.
+ * inbox/state.json; the workflow runs every 12 hours and commits every run,
+ * so "Last scan" and the ages are at most about half a day old.
  */
 import { mkdir, writeFile } from 'node:fs/promises'
 

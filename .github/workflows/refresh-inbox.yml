@@ -1,6 +1,6 @@
 name: Refresh inbox
 
-# Once a day, what is waiting for a person across every repository of the org:
+# Twice a day, what is waiting for a person across every repository of the org:
 # Dependabot pull requests whose checks have finished (with the verdict),
 # issues or pull requests opened by people outside the org, and the open
 # security alerts (code scanning, Dependabot, secret scanning). The lists are
@@ -13,7 +13,11 @@ name: Refresh inbox
 # set, the inbox names the repositories it could not read.
 on:
   schedule:
-    - cron: '13 5 * * *' # daily 05:13 UTC, clear of the hourly refreshes
+    # Every 12 hours, 05:07 and 17:07 UTC, clear of refresh-badges :17,
+    # refresh-social :37, indicator-count :43 and refresh-versions :47. A
+    # daily run left the page up to a day old, and GitHub starts scheduled
+    # runs hours late under load (05:13 routinely ran after 10:00).
+    - cron: '7 5,17 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -53,7 +57,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Every daily run is committed, the scan timestamp and the ages
+          # Every run is committed, the scan timestamp and the ages
           # included. Skipping a run whose lists had not changed left the page
           # stating a scan three days old and calling a three-day-old alert
           # "today": a page that says when it looked has to be rewritten each
