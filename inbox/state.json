@@ -1,35 +1,7 @@
 {
-  "scanned_at": "2026-09-28T11:43:20Z",
+  "scanned_at": "2026-09-29T11:23:45Z",
   "repos": 77,
-  "dependabot": [
-    {
-      "repo": "wickra-backtest",
-      "number": 145,
-      "title": "deps(actions): bump the github-actions group with 5 updates",
-      "url": "https://github.com/wickra-lib/wickra-backtest/pull/145",
-      "created": "2026-09-27T05:03:23Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-backtest",
-      "number": 144,
-      "title": "deps(nuget): Bump the nuget group with 1 update",
-      "url": "https://github.com/wickra-lib/wickra-backtest/pull/144",
-      "created": "2026-09-27T04:58:45Z",
-      "failing": [],
-      "checks": 63
-    },
-    {
-      "repo": "wickra-backtest",
-      "number": 143,
-      "title": "deps(maven): bump the maven group across 2 directories with 1 update",
-      "url": "https://github.com/wickra-lib/wickra-backtest/pull/143",
-      "created": "2026-09-27T04:58:34Z",
-      "failing": [],
-      "checks": 63
-    }
-  ],
+  "dependabot": [],
   "waiting": 0,
   "people": [
     {
