@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-01T12:00:33Z",
+  "scanned_at": "2026-10-01T21:46:53Z",
   "repos": 77,
   "dependabot": [
     {
@@ -416,6 +416,15 @@
     },
     {
       "repo": "wickra-impact",
+      "number": 85,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/85",
+      "created": "2026-10-01T06:54:28Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-impact",
       "number": 84,
       "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
       "url": "https://github.com/wickra-lib/wickra-impact/pull/84",
@@ -755,6 +764,15 @@
     },
     {
       "repo": "wickra-timemachine",
+      "number": 82,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/82",
+      "created": "2026-10-01T06:56:28Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-timemachine",
       "number": 81,
       "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
       "url": "https://github.com/wickra-lib/wickra-timemachine/pull/81",
@@ -854,6 +872,28 @@
     },
     {
       "repo": "wickra-zk",
+      "number": 76,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in /bindings/wasm in the wasm-deps group",
+      "url": "https://github.com/wickra-lib/wickra-zk/pull/76",
+      "created": "2026-10-01T12:00:03Z",
+      "failing": [
+        "cargo-deny"
+      ],
+      "checks": 59
+    },
+    {
+      "repo": "wickra-zk",
+      "number": 75,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-zk/pull/75",
+      "created": "2026-10-01T11:59:54Z",
+      "failing": [
+        "cargo-deny"
+      ],
+      "checks": 59
+    },
+    {
+      "repo": "wickra-zk",
       "number": 74,
       "title": "deps(actions): bump the github-actions group with 6 updates",
       "url": "https://github.com/wickra-lib/wickra-zk/pull/74",
@@ -885,7 +925,7 @@
       "checks": 4
     }
   ],
-  "waiting": 4,
+  "waiting": 0,
   "people": [
     {
       "kind": "issue",
