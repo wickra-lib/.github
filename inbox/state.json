@@ -1,8 +1,891 @@
 {
-  "scanned_at": "2026-09-30T21:23:55Z",
+  "scanned_at": "2026-10-01T12:00:33Z",
   "repos": 77,
-  "dependabot": [],
-  "waiting": 0,
+  "dependabot": [
+    {
+      "repo": "webpage",
+      "number": 82,
+      "title": "deps(npm): bump vue from 3.5.35 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/webpage/pull/82",
+      "created": "2026-10-01T07:29:55Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra",
+      "number": 475,
+      "title": "deps(actions): bump the github-actions group with 7 updates",
+      "url": "https://github.com/wickra-lib/wickra/pull/475",
+      "created": "2026-10-01T06:21:04Z",
+      "failing": [
+        "Supply-chain (cargo-deny + osv-scanner)"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra",
+      "number": 474,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra/pull/474",
+      "created": "2026-10-01T06:15:37Z",
+      "failing": [
+        "Supply-chain (cargo-deny + osv-scanner)"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra",
+      "number": 473,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra/pull/473",
+      "created": "2026-10-01T06:15:16Z",
+      "failing": [
+        "Supply-chain (cargo-deny + osv-scanner)"
+      ],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-backtest",
+      "number": 148,
+      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/148",
+      "created": "2026-10-01T06:20:27Z",
+      "failing": [
+        "cargo-deny + osv-scanner"
+      ],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-backtest",
+      "number": 147,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/147",
+      "created": "2026-10-01T06:16:12Z",
+      "failing": [
+        "cargo-deny + osv-scanner"
+      ],
+      "checks": 63
+    },
+    {
+      "repo": "wickra-backtest",
+      "number": 146,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/146",
+      "created": "2026-10-01T06:16:05Z",
+      "failing": [
+        "cargo-deny + osv-scanner"
+      ],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-backtest-live",
+      "number": 18,
+      "title": "deps(npm): bump the site group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-backtest-live/pull/18",
+      "created": "2026-10-01T07:27:47Z",
+      "failing": [],
+      "checks": 3
+    },
+    {
+      "repo": "wickra-backtest-site",
+      "number": 25,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-backtest-site/pull/25",
+      "created": "2026-10-01T07:22:09Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-benchmark",
+      "number": 83,
+      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/pull/83",
+      "created": "2026-10-01T06:45:44Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-benchmark",
+      "number": 82,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/pull/82",
+      "created": "2026-10-01T06:39:52Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-benchmark",
+      "number": 81,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/pull/81",
+      "created": "2026-10-01T06:28:56Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-benchmark-site",
+      "number": 8,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-benchmark-site/pull/8",
+      "created": "2026-10-01T07:22:28Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-compile",
+      "number": 72,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-compile/pull/72",
+      "created": "2026-10-01T06:54:25Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-compile",
+      "number": 71,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-compile/pull/71",
+      "created": "2026-10-01T06:47:35Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-compile",
+      "number": 70,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-compile/pull/70",
+      "created": "2026-10-01T06:42:48Z",
+      "failing": [],
+      "checks": 64
+    },
+    {
+      "repo": "wickra-compile-site",
+      "number": 10,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-compile-site/pull/10",
+      "created": "2026-10-01T07:22:45Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-copilot",
+      "number": 136,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/136",
+      "created": "2026-10-01T06:41:08Z",
+      "failing": [],
+      "checks": 64
+    },
+    {
+      "repo": "wickra-copilot",
+      "number": 135,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/135",
+      "created": "2026-10-01T06:22:13Z",
+      "failing": [
+        "Examples"
+      ],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-copilot",
+      "number": 134,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/134",
+      "created": "2026-10-01T06:18:06Z",
+      "failing": [
+        "CodSpeed Performance Analysis"
+      ],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-copilot-site",
+      "number": 21,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-copilot-site/pull/21",
+      "created": "2026-10-01T07:23:20Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-darwin",
+      "number": 85,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-darwin/pull/85",
+      "created": "2026-10-01T06:42:42Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-darwin",
+      "number": 84,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-darwin/pull/84",
+      "created": "2026-10-01T06:36:57Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-darwin",
+      "number": 83,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-darwin/pull/83",
+      "created": "2026-10-01T06:36:00Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-darwin-site",
+      "number": 9,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-darwin-site/pull/9",
+      "created": "2026-10-01T07:23:19Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-docs",
+      "number": 114,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-docs/pull/114",
+      "created": "2026-10-01T07:26:37Z",
+      "failing": [],
+      "checks": 8
+    },
+    {
+      "repo": "wickra-embed",
+      "number": 38,
+      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-embed/pull/38",
+      "created": "2026-10-01T06:42:20Z",
+      "failing": [],
+      "checks": 30
+    },
+    {
+      "repo": "wickra-embed-site",
+      "number": 10,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-embed-site/pull/10",
+      "created": "2026-10-01T07:23:03Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 254,
+      "title": "deps(actions): bump the github-actions group with 7 updates",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/254",
+      "created": "2026-10-01T06:21:48Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 253,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/253",
+      "created": "2026-10-01T06:16:18Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 252,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/252",
+      "created": "2026-10-01T06:16:06Z",
+      "failing": [],
+      "checks": 64
+    },
+    {
+      "repo": "wickra-exchange-site",
+      "number": 23,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-exchange-site/pull/23",
+      "created": "2026-10-01T07:22:59Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-feature-store",
+      "number": 88,
+      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-feature-store/pull/88",
+      "created": "2026-10-01T06:50:31Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-feature-store",
+      "number": 87,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-feature-store/pull/87",
+      "created": "2026-10-01T06:46:11Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-feature-store",
+      "number": 86,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-feature-store/pull/86",
+      "created": "2026-10-01T06:41:09Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-feature-store-site",
+      "number": 9,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-feature-store-site/pull/9",
+      "created": "2026-10-01T07:27:09Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 80,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/80",
+      "created": "2026-10-01T06:52:12Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 79,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/79",
+      "created": "2026-10-01T06:41:19Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 78,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/78",
+      "created": "2026-10-01T06:41:11Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-genome-site",
+      "number": 9,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-genome-site/pull/9",
+      "created": "2026-10-01T07:28:54Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 77,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/77",
+      "created": "2026-10-01T06:41:58Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 76,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/76",
+      "created": "2026-10-01T06:36:30Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 75,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/75",
+      "created": "2026-10-01T06:25:53Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-gym-site",
+      "number": 8,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-gym-site/pull/8",
+      "created": "2026-10-01T07:26:40Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 84,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/84",
+      "created": "2026-10-01T06:44:13Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 83,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/83",
+      "created": "2026-10-01T06:40:50Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-impact-site",
+      "number": 9,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-impact-site/pull/9",
+      "created": "2026-10-01T07:23:44Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-live",
+      "number": 21,
+      "title": "deps(npm): bump the site group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-live/pull/21",
+      "created": "2026-10-01T07:28:36Z",
+      "failing": [],
+      "checks": 3
+    },
+    {
+      "repo": "wickra-pico",
+      "number": 37,
+      "title": "chore(deps): bump the actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-pico/pull/37",
+      "created": "2026-10-01T06:53:28Z",
+      "failing": [],
+      "checks": 24
+    },
+    {
+      "repo": "wickra-pico-site",
+      "number": 10,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-pico-site/pull/10",
+      "created": "2026-10-01T07:24:32Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-playground",
+      "number": 21,
+      "title": "deps(actions): bump the github-actions group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/21",
+      "created": "2026-10-01T06:33:56Z",
+      "failing": [],
+      "checks": 9
+    },
+    {
+      "repo": "wickra-playground",
+      "number": 20,
+      "title": "deps(npm): bump the npm group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/20",
+      "created": "2026-10-01T06:30:21Z",
+      "failing": [],
+      "checks": 9
+    },
+    {
+      "repo": "wickra-playground-site",
+      "number": 8,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-playground-site/pull/8",
+      "created": "2026-10-01T07:24:54Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-proof",
+      "number": 113,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/113",
+      "created": "2026-10-01T06:27:54Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-proof",
+      "number": 112,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/112",
+      "created": "2026-10-01T06:27:36Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-proof",
+      "number": 111,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/111",
+      "created": "2026-10-01T06:21:11Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-proof-site",
+      "number": 8,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-proof-site/pull/8",
+      "created": "2026-10-01T07:23:39Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 128,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/128",
+      "created": "2026-10-01T06:35:56Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 127,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/127",
+      "created": "2026-10-01T06:26:14Z",
+      "failing": [],
+      "checks": 64
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 126,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/126",
+      "created": "2026-10-01T06:17:55Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-radar-site",
+      "number": 23,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-radar-site/pull/23",
+      "created": "2026-10-01T07:29:28Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 201,
+      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/201",
+      "created": "2026-10-01T06:32:46Z",
+      "failing": [
+        "cargo-deny"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 200,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/200",
+      "created": "2026-10-01T06:20:33Z",
+      "failing": [
+        "cargo-deny"
+      ],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 199,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/199",
+      "created": "2026-10-01T06:20:32Z",
+      "failing": [
+        "cargo-deny"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-screener-site",
+      "number": 23,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-screener-site/pull/23",
+      "created": "2026-10-01T07:26:18Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 134,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/134",
+      "created": "2026-10-01T06:30:13Z",
+      "failing": [],
+      "checks": 64
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 133,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/133",
+      "created": "2026-10-01T06:24:40Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 132,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/132",
+      "created": "2026-10-01T06:23:40Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-shazam-site",
+      "number": 22,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-shazam-site/pull/22",
+      "created": "2026-10-01T07:24:52Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "number": 86,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/86",
+      "created": "2026-10-01T06:37:25Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "number": 85,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/85",
+      "created": "2026-10-01T06:36:27Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "number": 84,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/84",
+      "created": "2026-10-01T06:20:17Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-strategy-ci-site",
+      "number": 8,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci-site/pull/8",
+      "created": "2026-10-01T07:24:46Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-synth",
+      "number": 82,
+      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/82",
+      "created": "2026-10-01T06:49:43Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-synth",
+      "number": 81,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/81",
+      "created": "2026-10-01T06:49:36Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-synth",
+      "number": 80,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/80",
+      "created": "2026-10-01T06:49:29Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-synth-site",
+      "number": 10,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-synth-site/pull/10",
+      "created": "2026-10-01T07:27:55Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 135,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/135",
+      "created": "2026-10-01T06:29:28Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 134,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/134",
+      "created": "2026-10-01T06:28:05Z",
+      "failing": [],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 133,
+      "title": "deps(actions): bump the github-actions group with 7 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/133",
+      "created": "2026-10-01T06:23:17Z",
+      "failing": [],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-terminal-site",
+      "number": 28,
+      "title": "deps(npm): bump vue from 3.5.39 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-terminal-site/pull/28",
+      "created": "2026-10-01T07:13:02Z",
+      "failing": [],
+      "checks": 5
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 81,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/81",
+      "created": "2026-10-01T06:39:29Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 80,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/80",
+      "created": "2026-10-01T06:37:52Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-timemachine-site",
+      "number": 9,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-timemachine-site/pull/9",
+      "created": "2026-10-01T07:24:14Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-verify",
+      "number": 115,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/115",
+      "created": "2026-10-01T06:37:15Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-verify",
+      "number": 114,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/114",
+      "created": "2026-10-01T06:26:20Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-verify",
+      "number": 113,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/113",
+      "created": "2026-10-01T06:23:42Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-verify-site",
+      "number": 8,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-verify-site/pull/8",
+      "created": "2026-10-01T07:25:35Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 161,
+      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/161",
+      "created": "2026-10-01T06:31:58Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 160,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/160",
+      "created": "2026-10-01T06:25:33Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 159,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/159",
+      "created": "2026-10-01T06:16:20Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-xray-site",
+      "number": 23,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-xray-site/pull/23",
+      "created": "2026-10-01T07:27:01Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-zk",
+      "number": 74,
+      "title": "deps(actions): bump the github-actions group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-zk/pull/74",
+      "created": "2026-10-01T06:33:55Z",
+      "failing": [
+        "Python wheel (aarch64 2_28 smoke)",
+        "cargo-deny"
+      ],
+      "checks": 59
+    },
+    {
+      "repo": "wickra-zk",
+      "number": 73,
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-zk/pull/73",
+      "created": "2026-10-01T06:23:47Z",
+      "failing": [
+        "cargo-deny"
+      ],
+      "checks": 59
+    },
+    {
+      "repo": "wickra-zk-site",
+      "number": 8,
+      "title": "deps(npm): bump vue from 3.5.42 to 3.5.43 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-zk-site/pull/8",
+      "created": "2026-10-01T07:26:03Z",
+      "failing": [],
+      "checks": 4
+    }
+  ],
+  "waiting": 4,
   "people": [
     {
       "kind": "issue",
