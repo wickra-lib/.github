@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-03T10:22:02Z",
+  "scanned_at": "2026-10-03T19:48:01Z",
   "repos": 77,
   "dependabot": [
     {
@@ -12,69 +12,39 @@
       "checks": 4
     },
     {
-      "repo": "wickra",
-      "number": 475,
-      "title": "deps(actions): bump the github-actions group with 7 updates",
-      "url": "https://github.com/wickra-lib/wickra/pull/475",
-      "created": "2026-10-01T06:21:04Z",
-      "failing": [
-        "Supply-chain (cargo-deny + osv-scanner)"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra",
-      "number": 474,
-      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
-      "url": "https://github.com/wickra-lib/wickra/pull/474",
-      "created": "2026-10-01T06:15:37Z",
-      "failing": [
-        "Supply-chain (cargo-deny + osv-scanner)"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra",
-      "number": 473,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra/pull/473",
-      "created": "2026-10-01T06:15:16Z",
-      "failing": [
-        "Supply-chain (cargo-deny + osv-scanner)"
-      ],
-      "checks": 65
+      "repo": "wickra-backtest",
+      "number": 150,
+      "title": "deps(ci-pip): bump urllib3 from 2.7.0 to 2.8.0 in /.github/requirements",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/150",
+      "created": "2026-10-03T15:46:25Z",
+      "failing": [],
+      "checks": 63
     },
     {
       "repo": "wickra-backtest",
       "number": 148,
-      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "title": "deps(actions): bump the github-actions group across 1 directory with 5 updates",
       "url": "https://github.com/wickra-lib/wickra-backtest/pull/148",
       "created": "2026-10-01T06:20:27Z",
-      "failing": [
-        "cargo-deny + osv-scanner"
-      ],
+      "failing": [],
       "checks": 65
     },
     {
       "repo": "wickra-backtest",
       "number": 147,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group",
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.4 to 3.10.5 in /bindings/node in the node-binding group across 1 directory",
       "url": "https://github.com/wickra-lib/wickra-backtest/pull/147",
       "created": "2026-10-01T06:16:12Z",
-      "failing": [
-        "cargo-deny + osv-scanner"
-      ],
+      "failing": [],
       "checks": 63
     },
     {
       "repo": "wickra-backtest",
       "number": 146,
-      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group",
+      "title": "deps(cargo): bump thiserror from 2.0.20 to 2.0.21 in the cargo group across 1 directory",
       "url": "https://github.com/wickra-lib/wickra-backtest/pull/146",
       "created": "2026-10-01T06:16:05Z",
-      "failing": [
-        "cargo-deny + osv-scanner"
-      ],
+      "failing": [],
       "checks": 65
     },
     {
@@ -452,10 +422,10 @@
     },
     {
       "repo": "wickra-live",
-      "number": 21,
-      "title": "deps(npm): bump the site group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-live/pull/21",
-      "created": "2026-10-01T07:28:36Z",
+      "number": 22,
+      "title": "deps(npm): bump the site group across 1 directory with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-live/pull/22",
+      "created": "2026-10-03T12:45:12Z",
       "failing": [],
       "checks": 3
     },
@@ -479,19 +449,19 @@
     },
     {
       "repo": "wickra-playground",
-      "number": 21,
-      "title": "deps(actions): bump the github-actions group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-playground/pull/21",
-      "created": "2026-10-01T06:33:56Z",
+      "number": 22,
+      "title": "deps(npm): bump the npm group across 1 directory with 7 updates",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/22",
+      "created": "2026-10-03T12:48:27Z",
       "failing": [],
       "checks": 9
     },
     {
       "repo": "wickra-playground",
-      "number": 20,
-      "title": "deps(npm): bump the npm group with 5 updates",
-      "url": "https://github.com/wickra-lib/wickra-playground/pull/20",
-      "created": "2026-10-01T06:30:21Z",
+      "number": 21,
+      "title": "deps(actions): bump the github-actions group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/21",
+      "created": "2026-10-01T06:33:56Z",
       "failing": [],
       "checks": 9
     },
@@ -937,6 +907,70 @@
       "created": "2026-09-28T01:55:14Z"
     }
   ],
-  "alerts": [],
+  "alerts": [
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 7,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/7",
+      "created": "2026-10-03T15:44:04Z",
+      "title": "urllib3 in .github/requirements/bench.txt: urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 6,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/6",
+      "created": "2026-10-03T15:44:04Z",
+      "title": "urllib3 in .github/requirements/bench.txt: urllib3: HTTPS proxy TLS configuration may be ignored or overridden"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 4,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/4",
+      "created": "2026-10-03T15:44:03Z",
+      "title": "urllib3 in .github/requirements/bench.in: urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 3,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/3",
+      "created": "2026-10-03T15:44:03Z",
+      "title": "urllib3 in .github/requirements/bench.in: urllib3: HTTPS proxy TLS configuration may be ignored or overridden"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 8,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/8",
+      "created": "2026-10-03T15:44:04Z",
+      "title": "urllib3 in .github/requirements/bench.txt: urllib3: Chunked Deflate streaming can enter an infinite loop"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 5,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/5",
+      "created": "2026-10-03T15:44:03Z",
+      "title": "urllib3 in .github/requirements/bench.in: urllib3: Chunked Deflate streaming can enter an infinite loop"
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 3,
+      "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/3",
+      "created": "2026-10-03T12:50:36Z",
+      "title": "brace-expansion in package-lock.json: brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service"
+    }
+  ],
   "unreadable": []
 }
