@@ -1,16 +1,16 @@
 {
-  "scanned_at": "2026-10-03T12:45:25Z",
+  "scanned_at": "2026-10-03T16:47:07Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 373,
-      "differing": 34
+      "differing": 36
     },
     "npm": {
       "total": 109,
       "shared": 109,
-      "differing": 0
+      "differing": 1
     },
     "maven": {
       "total": 2,
@@ -3295,7 +3295,7 @@
           "syn 2.0.119",
           "syn 3.0.6",
           "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "tokio-macros 2.7.2",
           "wasm-bindgen-macro-support 0.2.128",
           "wasm-bindgen-test-macro 0.3.78",
@@ -3389,7 +3389,7 @@
           "syn 2.0.119",
           "syn 3.0.6",
           "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "tokio-macros 2.7.2",
           "wasm-bindgen-macro 0.2.128",
           "wasm-bindgen-macro-support 0.2.128",
@@ -3777,7 +3777,7 @@
           "futures-macro 0.3.34",
           "serde_derive 1.0.229",
           "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "tokio-macros 2.7.2",
           "wasm-bindgen-macro-support 0.2.128",
           "wasm-bindgen-test-macro 0.3.78",
@@ -3830,7 +3830,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror",
-        "version": "2.0.20",
+        "version": "2.0.21",
         "requiredBy": [
           "kand 0.2.2",
           "tungstenite 0.30.0",
@@ -3842,9 +3842,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror-impl",
-        "version": "2.0.20",
+        "version": "2.0.21",
         "requiredBy": [
-          "thiserror 2.0.20"
+          "thiserror 2.0.21"
         ]
       },
       {
@@ -4494,7 +4494,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.4",
+        "version": "3.10.5",
         "requiredBy": null
       },
       {
@@ -6644,7 +6644,7 @@
           "wasm-bindgen-macro-support 0.2.128",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
-          "yoke-derive 0.8.3",
+          "yoke-derive 0.8.4",
           "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
           "zerovec-derive 0.11.6"
@@ -6740,7 +6740,7 @@
           "wasm-bindgen-macro-support 0.2.128",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
-          "yoke-derive 0.8.3",
+          "yoke-derive 0.8.4",
           "zerocopy-derive 0.8.57",
           "zerofrom-derive 0.1.8",
           "zerovec-derive 0.11.6"
@@ -7189,7 +7189,7 @@
           "synstructure 0.14.0",
           "thiserror-impl 2.0.20",
           "wasm-bindgen-macro-support 0.2.128",
-          "yoke-derive 0.8.3",
+          "yoke-derive 0.8.4",
           "zerofrom-derive 0.1.8",
           "zerovec-derive 0.11.6"
         ]
@@ -7200,7 +7200,7 @@
         "name": "synstructure",
         "version": "0.14.0",
         "requiredBy": [
-          "yoke-derive 0.8.3",
+          "yoke-derive 0.8.4",
           "zerofrom-derive 0.1.8"
         ]
       },
@@ -7669,7 +7669,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "yoke-derive",
-        "version": "0.8.3",
+        "version": "0.8.4",
         "requiredBy": [
           "yoke 0.8.3"
         ]
