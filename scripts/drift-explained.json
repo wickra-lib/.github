@@ -18,5 +18,13 @@
   {
     "key": "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk",
     "reason": "wickra-zk's floor is 1.90 because risc0 needs it: risc0-binfmt 3.0.5 requires ruint 1.20.1, which declares rust-version 1.90. Every other workspace is on the family's 1.86."
+  },
+  {
+    "key": "decl:ci-matrix|dotnet-version in ci.yml|10.0=wickra|8.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
+    "reason": "wickra's one setup-dotnet step installs .NET 10 for the cross-library benchmark harness (bindings/csharp/cross-library), because QuanTAlib 0.8.12 ships for .NET 10 only; its binding tests run on the runner's preinstalled SDK as before. Every other repository installs 8.0."
+  },
+  {
+    "key": "decl:toolchain|TargetFramework|net10.0=wickra|net8.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
+    "reason": "wickra's binding, tests and examples target net8.0 like the family; only the cross-library benchmark harness targets net10.0, because QuanTAlib 0.8.12 ships for .NET 10 only."
   }
 ]
