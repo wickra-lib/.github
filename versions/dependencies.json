@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-03T20:13:35Z",
+  "scanned_at": "2026-10-04T15:33:03Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -6640,7 +6640,7 @@
           "syn 2.0.119",
           "syn 3.0.6",
           "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro-support 0.2.128",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
@@ -6735,7 +6735,7 @@
           "syn 2.0.119",
           "syn 3.0.6",
           "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro 0.2.128",
           "wasm-bindgen-macro-support 0.2.128",
           "windows-implement 0.60.2",
@@ -7187,7 +7187,7 @@
           "serde_derive 1.0.229",
           "serde_derive_internals 0.30.0",
           "synstructure 0.14.0",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro-support 0.2.128",
           "yoke-derive 0.8.4",
           "zerofrom-derive 0.1.8",
@@ -7227,7 +7227,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror",
-        "version": "2.0.20",
+        "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.1.9",
           "wickra-core 1.0.6"
@@ -7237,9 +7237,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror-impl",
-        "version": "2.0.20",
+        "version": "2.0.21",
         "requiredBy": [
-          "thiserror 2.0.20"
+          "thiserror 2.0.21"
         ]
       },
       {
@@ -7942,7 +7942,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.4",
+        "version": "3.10.5",
         "requiredBy": null
       },
       {
@@ -9530,7 +9530,7 @@
           "serde_derive_internals 0.30.0",
           "syn 2.0.119",
           "syn 3.0.6",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
@@ -9617,7 +9617,7 @@
           "serde_derive_internals 0.30.0",
           "syn 2.0.119",
           "syn 3.0.6",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro 0.2.128",
           "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
@@ -9954,7 +9954,7 @@
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.30.0",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro-support 0.2.128"
         ]
       },
@@ -9981,7 +9981,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror",
-        "version": "2.0.20",
+        "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.1.9",
           "wickra-benchmark-core 0.1.5",
@@ -9992,9 +9992,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror-impl",
-        "version": "2.0.20",
+        "version": "2.0.21",
         "requiredBy": [
-          "thiserror 2.0.20"
+          "thiserror 2.0.21"
         ]
       },
       {
@@ -10366,7 +10366,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.4",
+        "version": "3.10.5",
         "requiredBy": null
       },
       {
@@ -11999,7 +11999,7 @@
           "serde_derive_internals 0.30.0",
           "syn 2.0.119",
           "syn 3.0.6",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
         ]
@@ -12086,7 +12086,7 @@
           "serde_derive_internals 0.30.0",
           "syn 2.0.119",
           "syn 3.0.6",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro 0.2.128",
           "wasm-bindgen-macro-support 0.2.128",
           "zerocopy-derive 0.8.57"
@@ -12435,7 +12435,7 @@
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.30.0",
-          "thiserror-impl 2.0.20",
+          "thiserror-impl 2.0.21",
           "wasm-bindgen-macro-support 0.2.128"
         ]
       },
@@ -12462,7 +12462,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror",
-        "version": "2.0.20",
+        "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.1.9",
           "wickra-compile-core 0.1.4",
@@ -12473,9 +12473,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "thiserror-impl",
-        "version": "2.0.20",
+        "version": "2.0.21",
         "requiredBy": [
-          "thiserror 2.0.20"
+          "thiserror 2.0.21"
         ]
       },
       {
@@ -12868,7 +12868,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.4",
+        "version": "3.10.5",
         "requiredBy": null
       },
       {
