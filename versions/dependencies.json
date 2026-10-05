@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-05T00:08:59Z",
+  "scanned_at": "2026-10-05T16:25:30Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -78616,7 +78616,7 @@
           "risc0-circuit-rv32im 4.0.5",
           "risc0-zkp 3.0.5",
           "risc0-zkvm 3.0.6",
-          "wickra-core 1.0.6"
+          "wickra-core 1.0.7"
         ]
       },
       {
@@ -79646,7 +79646,7 @@
           "redox_users 0.5.3",
           "rzup 0.5.2",
           "wickra-backtest-core 0.1.9",
-          "wickra-core 1.0.6",
+          "wickra-core 1.0.7",
           "wickra-proof-core 0.1.5",
           "wickra-zk-host 0.1.4",
           "zip 2.4.2"
