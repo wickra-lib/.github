@@ -2,10 +2,11 @@ name: Regenerate profile banner
 
 # Keeps profile/wickra-banner.svg (shown at the top of the org profile) and its
 # raster copy profile/wickra-banner.webp in sync with the indicator count. The
-# count is written into profile/README.md by the wickra repo's sync-about.yml
-# (via a PAT push, which DOES trigger this run); this job re-renders the banner
-# from the SVG and commits it back. The commit uses GITHUB_TOKEN, whose pushes
-# do NOT trigger workflows, so there is no loop.
+# count in profile/README.md is kept by indicator-count.yml, which renders the
+# banner in the same commit; this job re-renders it when the template, the
+# scripts or the README change in a push, and commits it back through
+# actions/signed-commit with GITHUB_TOKEN: signed, and like every GITHUB_TOKEN
+# write it triggers no workflow, so there is no loop.
 on:
   push:
     branches: [main]
@@ -25,6 +26,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # The commit goes through the API; nothing here pushes (zizmor: artipacked).
+          persist-credentials: false
 
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -36,13 +40,19 @@ jobs:
       - run: npm run gen:banner
 
       - name: Commit the refreshed banner if it changed
+        id: commitcheck
         run: |
           if git diff --quiet -- profile/wickra-banner.svg profile/wickra-banner.webp assets/wickra-banner.svg; then
             echo "Banner already up to date — nothing to commit."
+            echo "commit=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git config user.name "wickra-bot"
-          git config user.email "wickra-bot@users.noreply.github.com"
-          git add profile/wickra-banner.svg profile/wickra-banner.webp assets/wickra-banner.svg
-          git commit -m "chore: regenerate profile banner from current indicator count"
-          git push
+          echo "commit=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit (signed)
+        if: steps.commitcheck.outputs.commit == 'true'
+        uses: ./actions/signed-commit
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          message: "chore: regenerate profile banner from current indicator count"
+          paths: profile/wickra-banner.svg profile/wickra-banner.webp assets/wickra-banner.svg
