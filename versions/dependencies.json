@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-05T16:25:30Z",
+  "scanned_at": "2026-10-05T22:58:48Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -1992,9 +1992,9 @@
         "version": "0.5.1",
         "requiredBy": [
           "statrs 0.18.0",
-          "wickra 1.0.7",
-          "wickra-core 1.0.7",
-          "wickra-data 1.0.7"
+          "wickra 2.0.0",
+          "wickra-core 2.0.0",
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -2081,7 +2081,7 @@
         "name": "bytemuck",
         "version": "1.25.2",
         "requiredBy": [
-          "wickra-python 1.0.7"
+          "wickra-python 2.0.0"
         ]
       },
       {
@@ -2232,7 +2232,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.2",
         "requiredBy": [
-          "wickra 1.0.7"
+          "wickra 2.0.0"
         ]
       },
       {
@@ -2260,7 +2260,7 @@
         "name": "console_error_panic_hook",
         "version": "0.1.7",
         "requiredBy": [
-          "wickra-wasm 1.0.7"
+          "wickra-wasm 2.0.0"
         ]
       },
       {
@@ -2318,7 +2318,7 @@
         "name": "criterion",
         "version": "0.8.2",
         "requiredBy": [
-          "wickra-bench 1.0.7"
+          "wickra-bench 2.0.0"
         ]
       },
       {
@@ -2392,7 +2392,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 1.0.7"
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -2619,7 +2619,7 @@
           "futures-executor 0.3.34",
           "js-sys 0.3.105",
           "tokio-tungstenite 0.30.0",
-          "wickra-data 1.0.7"
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -2859,7 +2859,7 @@
           "wasm-bindgen-futures 0.4.78",
           "wasm-bindgen-test 0.3.78",
           "web-sys 0.3.105",
-          "wickra-wasm 1.0.7"
+          "wickra-wasm 2.0.0"
         ]
       },
       {
@@ -2868,7 +2868,7 @@
         "name": "kand",
         "version": "0.2.2",
         "requiredBy": [
-          "wickra-bench 1.0.7"
+          "wickra-bench 2.0.0"
         ]
       },
       {
@@ -2989,7 +2989,7 @@
         "name": "napi",
         "version": "3.13.0",
         "requiredBy": [
-          "wickra-node 1.0.7"
+          "wickra-node 2.0.0"
         ]
       },
       {
@@ -2999,7 +2999,7 @@
         "version": "2.5.0",
         "requiredBy": [
           "napi 3.13.0",
-          "wickra-node 1.0.7"
+          "wickra-node 2.0.0"
         ]
       },
       {
@@ -3008,7 +3008,7 @@
         "name": "napi-derive",
         "version": "3.6.9",
         "requiredBy": [
-          "wickra-node 1.0.7"
+          "wickra-node 2.0.0"
         ]
       },
       {
@@ -3039,7 +3039,7 @@
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
           "ureq 2.12.1",
-          "wickra-data 1.0.7"
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -3311,8 +3311,8 @@
         "name": "proptest",
         "version": "1.11.0",
         "requiredBy": [
-          "wickra 1.0.7",
-          "wickra-core 1.0.7"
+          "wickra 2.0.0",
+          "wickra-core 2.0.0"
         ]
       },
       {
@@ -3321,7 +3321,7 @@
         "name": "pyo3",
         "version": "0.29.2",
         "requiredBy": [
-          "wickra-python 1.0.7"
+          "wickra-python 2.0.0"
         ]
       },
       {
@@ -3485,7 +3485,7 @@
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
           "criterion 0.8.2",
-          "wickra-core 1.0.7"
+          "wickra-core 2.0.0"
         ]
       },
       {
@@ -3635,8 +3635,8 @@
           "tinytemplate 1.2.1",
           "url 2.5.8",
           "wasm-bindgen-test 0.3.78",
-          "wickra-data 1.0.7",
-          "wickra-wasm 1.0.7",
+          "wickra-data 2.0.0",
+          "wickra-wasm 2.0.0",
           "yata 0.7.0"
         ]
       },
@@ -3646,7 +3646,7 @@
         "name": "serde-wasm-bindgen",
         "version": "0.6.5",
         "requiredBy": [
-          "wickra-wasm 1.0.7"
+          "wickra-wasm 2.0.0"
         ]
       },
       {
@@ -3683,8 +3683,8 @@
           "criterion 0.8.2",
           "tinytemplate 1.2.1",
           "wasm-bindgen-test 0.3.78",
-          "wickra-data 1.0.7",
-          "wickra-examples 1.0.7"
+          "wickra-data 2.0.0",
+          "wickra-examples 2.0.0"
         ]
       },
       {
@@ -3802,7 +3802,7 @@
         "name": "ta",
         "version": "0.5.0",
         "requiredBy": [
-          "wickra-bench 1.0.7"
+          "wickra-bench 2.0.0"
         ]
       },
       {
@@ -3823,7 +3823,7 @@
           "native-tls 0.2.18",
           "proptest 1.11.0",
           "rusty-fork 0.3.1",
-          "wickra-data 1.0.7"
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -3834,8 +3834,8 @@
         "requiredBy": [
           "kand 0.2.2",
           "tungstenite 0.30.0",
-          "wickra-core 1.0.7",
-          "wickra-data 1.0.7"
+          "wickra-core 2.0.0",
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -3874,11 +3874,11 @@
         "requiredBy": [
           "tokio-native-tls 0.3.1",
           "tokio-tungstenite 0.30.0",
-          "wickra-c 1.0.7",
-          "wickra-data 1.0.7",
-          "wickra-examples 1.0.7",
-          "wickra-node 1.0.7",
-          "wickra-python 1.0.7"
+          "wickra-c 2.0.0",
+          "wickra-data 2.0.0",
+          "wickra-examples 2.0.0",
+          "wickra-node 2.0.0",
+          "wickra-python 2.0.0"
         ]
       },
       {
@@ -3905,7 +3905,7 @@
         "name": "tokio-tungstenite",
         "version": "0.30.0",
         "requiredBy": [
-          "wickra-data 1.0.7"
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -3989,7 +3989,7 @@
         "name": "ureq",
         "version": "2.12.1",
         "requiredBy": [
-          "wickra-data 1.0.7"
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -3999,7 +3999,7 @@
         "version": "2.5.8",
         "requiredBy": [
           "ureq 2.12.1",
-          "wickra-data 1.0.7"
+          "wickra-data 2.0.0"
         ]
       },
       {
@@ -4072,7 +4072,7 @@
           "wasm-bindgen-futures 0.4.78",
           "wasm-bindgen-test 0.3.78",
           "web-sys 0.3.105",
-          "wickra-wasm 1.0.7"
+          "wickra-wasm 2.0.0"
         ]
       },
       {
@@ -4118,7 +4118,7 @@
         "name": "wasm-bindgen-test",
         "version": "0.3.78",
         "requiredBy": [
-          "wickra-wasm 1.0.7"
+          "wickra-wasm 2.0.0"
         ]
       },
       {
@@ -4249,7 +4249,7 @@
         "name": "yata",
         "version": "0.7.0",
         "requiredBy": [
-          "wickra-bench 1.0.7"
+          "wickra-bench 2.0.0"
         ]
       },
       {
