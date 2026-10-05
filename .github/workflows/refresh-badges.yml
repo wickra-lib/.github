@@ -32,8 +32,8 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          # Don't persist the token in .git/config (zizmor: artipacked); the push
-          # step below authenticates explicitly with an ephemeral token URL.
+          # Don't persist the token in .git/config (zizmor: artipacked); the
+          # commit goes through actions/signed-commit, not a git push.
           persist-credentials: false
 
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
@@ -46,18 +46,19 @@ jobs:
         run: node scripts/fetch-badges.mjs
 
       - name: Commit if changed
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: commitcheck
         run: |
           if [ -z "$(git status --porcelain profile/badges)" ]; then
             echo "badges unchanged; nothing to commit"
+            echo "commit=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git config user.name "wickra-bot"
-          git config user.email "wickra-bot@users.noreply.github.com"
-          git add profile/badges
-          git commit -m "chore: refresh status badge snapshots"
-          # refresh-social.yml writes the same directory; rebase onto anything it
-          # pushed in the meantime so the two badge workflows never clash on push.
-          git pull --rebase "https://github.com/${GITHUB_REPOSITORY}.git" main
-          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
+          echo "commit=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit (signed)
+        if: steps.commitcheck.outputs.commit == 'true'
+        uses: ./actions/signed-commit
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          message: "chore: refresh status badge snapshots"
+          paths: profile/badges

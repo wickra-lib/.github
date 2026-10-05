@@ -1,0 +1,39 @@
+name: Follow the family
+description: >
+  Move every wickra-* crate the repository depends on to the newest release it
+  may take (caret: newest compatible; exact 0.x pin: newest patch of the same
+  minor), and propose that as a signed pull request that merges itself once
+  the required checks pass. See follow_family.py.
+
+inputs:
+  token:
+    description: >
+      Installation token of the wickra-lib-bot app. Its commit is signed and,
+      unlike a GITHUB_TOKEN write, starts the pull request's CI; it also
+      enables auto-merge, so the merge to main starts main's workflows.
+    required: true
+  locks:
+    description: Space-separated directories holding a tracked Cargo.lock to move.
+    required: false
+    default: "."
+  automerge:
+    description: >
+      `true` sets the pull request to squash-merge itself once the required
+      checks pass; `false` labels it `manual` instead.
+    required: false
+    default: "true"
+  dry-run:
+    description: "`true` changes the working tree and reports, but pushes nothing."
+    required: false
+    default: "false"
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      env:
+        FF_TOKEN: ${{ inputs.token }}
+        FF_LOCKS: ${{ inputs.locks }}
+        FF_AUTOMERGE: ${{ inputs.automerge }}
+        FF_DRY_RUN: ${{ inputs.dry-run }}
+      run: python3 "$GITHUB_ACTION_PATH/follow_family.py"
