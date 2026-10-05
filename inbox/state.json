@@ -1,8 +1,8 @@
 {
-  "scanned_at": "2026-10-04T21:09:23Z",
+  "scanned_at": "2026-10-05T01:43:34Z",
   "repos": 77,
   "dependabot": [],
-  "waiting": 5,
+  "waiting": 0,
   "people": [
     {
       "kind": "issue",
@@ -25,58 +25,94 @@
       "title": "Scorecard: Vulnerabilities"
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 7,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/7",
-      "created": "2026-10-03T15:44:04Z",
-      "title": "urllib3 in .github/requirements/bench.txt: urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory"
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 21,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/21",
+      "created": "2026-10-05T01:39:57Z",
+      "title": "zizmor: zizmor/self-repository"
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 6,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/6",
-      "created": "2026-10-03T15:44:04Z",
-      "title": "urllib3 in .github/requirements/bench.txt: urllib3: HTTPS proxy TLS configuration may be ignored or overridden"
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 20,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/20",
+      "created": "2026-10-05T01:39:57Z",
+      "title": "zizmor: zizmor/self-repository"
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 4,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/4",
-      "created": "2026-10-03T15:44:03Z",
-      "title": "urllib3 in .github/requirements/bench.in: urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory"
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 19,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/19",
+      "created": "2026-10-05T01:39:57Z",
+      "title": "zizmor: zizmor/self-repository"
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 3,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/3",
-      "created": "2026-10-03T15:44:03Z",
-      "title": "urllib3 in .github/requirements/bench.in: urllib3: HTTPS proxy TLS configuration may be ignored or overridden"
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 18,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/18",
+      "created": "2026-10-05T01:39:57Z",
+      "title": "zizmor: zizmor/self-repository"
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 8,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/8",
-      "created": "2026-10-03T15:44:04Z",
-      "title": "urllib3 in .github/requirements/bench.txt: urllib3: Chunked Deflate streaming can enter an infinite loop"
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 17,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/17",
+      "created": "2026-10-05T01:39:57Z",
+      "title": "zizmor: zizmor/self-repository"
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 5,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/5",
-      "created": "2026-10-03T15:44:03Z",
-      "title": "urllib3 in .github/requirements/bench.in: urllib3: Chunked Deflate streaming can enter an infinite loop"
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 16,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/16",
+      "created": "2026-10-05T01:39:57Z",
+      "title": "zizmor: zizmor/self-repository"
+    },
+    {
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 15,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/15",
+      "created": "2026-10-05T01:34:23Z",
+      "title": "zizmor: zizmor/self-repository"
+    },
+    {
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 14,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/14",
+      "created": "2026-10-05T01:34:23Z",
+      "title": "zizmor: zizmor/self-repository"
+    },
+    {
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 13,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/13",
+      "created": "2026-10-05T01:34:23Z",
+      "title": "zizmor: zizmor/self-repository"
+    },
+    {
+      "repo": ".github",
+      "kind": "code scanning",
+      "severity": "note",
+      "number": 12,
+      "url": "https://github.com/wickra-lib/.github/security/code-scanning/12",
+      "created": "2026-10-05T01:34:23Z",
+      "title": "zizmor: zizmor/self-repository"
     }
   ],
   "unreadable": []
