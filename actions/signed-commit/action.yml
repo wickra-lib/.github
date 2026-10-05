@@ -1,0 +1,68 @@
+name: Signed commit
+description: >
+  Commit through the GitHub API so that GitHub signs the commit (Verified).
+  Replaces `git commit` + `git push` in bot workflows, which produce unsigned
+  commits because a runner has no signing key. See signed_commit.py.
+
+inputs:
+  token:
+    description: >
+      Token that writes the commit. The workflow's GITHUB_TOKEN for its own
+      repository (the commit is signed as github-actions and, like any
+      GITHUB_TOKEN write, starts no further workflow), or an installation
+      token of the wickra-lib-bot app for another repository or when the
+      commit must trigger CI.
+    required: true
+  message:
+    description: Commit message.
+    required: true
+  mode:
+    description: >
+      `changes` commits what the working tree changed under `paths`;
+      `tree` replaces the branch's whole tree with the contents of `source`.
+    required: false
+    default: changes
+  paths:
+    description: Space-separated paths whose changes are committed (mode changes).
+    required: false
+    default: "."
+  source:
+    description: Directory whose contents become the tree (mode tree).
+    required: false
+    default: ""
+  repository:
+    description: owner/name of the repository to commit to.
+    required: false
+    default: ${{ github.repository }}
+  branch:
+    description: Branch to commit to; created if it does not exist.
+    required: false
+    default: main
+  tag:
+    description: Optional lightweight tag to create on the resulting commit.
+    required: false
+    default: ""
+
+outputs:
+  sha:
+    description: The branch head after the step (new commit, or unchanged head).
+    value: ${{ steps.commit.outputs.sha }}
+  changed:
+    description: "`true` when a commit was created."
+    value: ${{ steps.commit.outputs.changed }}
+
+runs:
+  using: composite
+  steps:
+    - id: commit
+      shell: bash
+      env:
+        SC_TOKEN: ${{ inputs.token }}
+        SC_MESSAGE: ${{ inputs.message }}
+        SC_MODE: ${{ inputs.mode }}
+        SC_PATHS: ${{ inputs.paths }}
+        SC_SOURCE: ${{ inputs.source }}
+        SC_REPOSITORY: ${{ inputs.repository }}
+        SC_BRANCH: ${{ inputs.branch }}
+        SC_TAG: ${{ inputs.tag }}
+      run: python3 "$GITHUB_ACTION_PATH/signed_commit.py"
