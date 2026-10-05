@@ -1,7 +1,7 @@
 name: Signed commit self-test
 
 # Proves actions/signed-commit end to end before any bot relies on it, and
-# that the wickra-lib-bot app's secrets mint a working token. Every commit is
+# that the wickra-lib-bot app's secrets mint a working, narrowly scoped token. Every commit is
 # made on a throwaway branch that the job deletes again; the action itself
 # fails a step whose commit GitHub does not report as verified.
 on:
@@ -55,9 +55,10 @@ jobs:
       - name: Check the commit's contents
         env:
           SHA: ${{ steps.changes.outputs.sha }}
+          CHANGED: ${{ steps.changes.outputs.changed }}
         run: |
           set -euo pipefail
-          test "${{ steps.changes.outputs.changed }}" = true
+          test "${CHANGED}" = true
           gh api "repos/${GITHUB_REPOSITORY}/contents/selftest/blob.bin?ref=${SHA}" -q .size | grep -qx 4096
           test "$(gh api "repos/${GITHUB_REPOSITORY}/git/trees/${SHA}?recursive=1" -q '.tree[] | select(.path=="selftest/run.sh") | .mode')" = 100755
           ! gh api "repos/${GITHUB_REPOSITORY}/contents/SUPPORT.md?ref=${SHA}" > /dev/null 2>&1
@@ -69,7 +70,9 @@ jobs:
           branch: ${{ env.BRANCH }}
           message: "selftest: should not appear"
           paths: profile
-      - run: test "${{ steps.again.outputs.changed }}" = false
+      - env:
+          CHANGED: ${{ steps.again.outputs.changed }}
+        run: test "${CHANGED}" = false
       - name: Replace the whole tree and tag it (mirror mode)
         id: tree
         uses: ./actions/signed-commit
@@ -105,22 +108,19 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+      # Scoped to this repository and to contents only: the token can write
+      # here and nowhere else, whatever the installation itself may reach.
       - name: Mint an installation token
         id: app
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         with:
           app-id: ${{ secrets.WICKRA_BOT_APP_ID }}
           private-key: ${{ secrets.WICKRA_BOT_PRIVATE_KEY }}
-          owner: ${{ github.repository_owner }}
-      - name: The installation reaches every repository
+          permission-contents: write
+      - name: Create the throwaway branch with the app token
         env:
           GH_TOKEN: ${{ steps.app.outputs.token }}
-        run: |
-          set -euo pipefail
-          count=$(gh api /installation/repositories --paginate -q '.repositories[].full_name' | wc -l)
-          echo "the app can reach ${count} repositories"
-          test "${count}" -ge 70
-          gh api "repos/${GITHUB_REPOSITORY}/git/refs" -f ref="refs/heads/${BRANCH}" -f sha="${GITHUB_SHA}" > /dev/null
+        run: gh api "repos/${GITHUB_REPOSITORY}/git/refs" -f ref="refs/heads/${BRANCH}" -f sha="${GITHUB_SHA}" > /dev/null
       - run: |
           mkdir -p selftest && date -u > selftest/app.txt
       - name: Commit as the app (signed)
