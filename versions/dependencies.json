@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-06T03:28:07Z",
+  "scanned_at": "2026-10-06T11:42:44Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -75550,7 +75550,7 @@
         "name": "blake3",
         "version": "1.8.7",
         "requiredBy": [
-          "wickra-proof-core 0.1.5"
+          "wickra-proof-core 0.2.0"
         ]
       },
       {
@@ -75836,7 +75836,7 @@
         "requiredBy": [
           "codspeed-criterion-compat 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-zk 0.1.4"
+          "wickra-zk 0.2.0"
         ]
       },
       {
@@ -75891,7 +75891,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.2",
         "requiredBy": [
-          "wickra-zk-bench 0.1.4"
+          "wickra-zk-bench 0.2.0"
         ]
       },
       {
@@ -77694,7 +77694,7 @@
         "name": "napi",
         "version": "3.13.0",
         "requiredBy": [
-          "wickra-zk-node 0.1.4"
+          "wickra-zk-node 0.2.0"
         ]
       },
       {
@@ -77704,7 +77704,7 @@
         "version": "2.5.0",
         "requiredBy": [
           "napi 3.13.0",
-          "wickra-zk-node 0.1.4"
+          "wickra-zk-node 0.2.0"
         ]
       },
       {
@@ -77713,7 +77713,7 @@
         "name": "napi-derive",
         "version": "3.6.9",
         "requiredBy": [
-          "wickra-zk-node 0.1.4"
+          "wickra-zk-node 0.2.0"
         ]
       },
       {
@@ -78274,7 +78274,7 @@
         "version": "1.11.0",
         "requiredBy": [
           "ruint 1.20.1",
-          "wickra-zk-host 0.1.4"
+          "wickra-zk-host 0.2.0"
         ]
       },
       {
@@ -78310,7 +78310,7 @@
         "name": "pyo3",
         "version": "0.29.2",
         "requiredBy": [
-          "wickra-zk-python 0.1.4"
+          "wickra-zk-python 0.2.0"
         ]
       },
       {
@@ -78616,7 +78616,7 @@
           "risc0-circuit-rv32im 4.0.5",
           "risc0-zkp 3.0.5",
           "risc0-zkvm 3.0.6",
-          "wickra-core 1.0.7"
+          "wickra-core 2.0.0"
         ]
       },
       {
@@ -78888,7 +78888,7 @@
         "name": "risc0-zkvm",
         "version": "3.0.6",
         "requiredBy": [
-          "wickra-zk-host 0.1.4"
+          "wickra-zk-host 0.2.0"
         ]
       },
       {
@@ -79101,7 +79101,7 @@
         "version": "1.2.2",
         "requiredBy": [
           "serde_with 3.23.0",
-          "wickra-backtest-core 0.1.9"
+          "wickra-backtest-core 0.2.0"
         ]
       },
       {
@@ -79179,9 +79179,9 @@
           "toml_edit 0.22.27",
           "typetag 0.2.23",
           "url 2.5.8",
-          "wickra-backtest-core 0.1.9",
-          "wickra-proof-core 0.1.5",
-          "wickra-zk-host 0.1.4"
+          "wickra-backtest-core 0.2.0",
+          "wickra-proof-core 0.2.0",
+          "wickra-zk-host 0.2.0"
         ]
       },
       {
@@ -79242,13 +79242,13 @@
           "schemars 1.2.2",
           "serde_with 3.23.0",
           "tinytemplate 1.2.1",
-          "wickra-backtest-core 0.1.9",
-          "wickra-backtest-data 0.1.9",
-          "wickra-proof-core 0.1.5",
-          "wickra-zk 0.1.4",
-          "wickra-zk-bench 0.1.4",
-          "wickra-zk-example 0.1.4",
-          "wickra-zk-host 0.1.4"
+          "wickra-backtest-core 0.2.0",
+          "wickra-backtest-data 0.2.0",
+          "wickra-proof-core 0.2.0",
+          "wickra-zk 0.2.0",
+          "wickra-zk-bench 0.2.0",
+          "wickra-zk-example 0.2.0",
+          "wickra-zk-host 0.2.0"
         ]
       },
       {
@@ -79645,10 +79645,10 @@
           "quinn-proto 0.11.18",
           "redox_users 0.5.3",
           "rzup 0.5.2",
-          "wickra-backtest-core 0.1.9",
-          "wickra-core 1.0.7",
-          "wickra-proof-core 0.1.5",
-          "wickra-zk-host 0.1.4",
+          "wickra-backtest-core 0.2.0",
+          "wickra-core 2.0.0",
+          "wickra-proof-core 0.2.0",
+          "wickra-zk-host 0.2.0",
           "zip 2.4.2"
         ]
       },
@@ -79777,7 +79777,7 @@
         "name": "toml",
         "version": "1.1.6+spec-1.1.0",
         "requiredBy": [
-          "wickra-proof-core 0.1.5"
+          "wickra-proof-core 0.2.0"
         ]
       },
       {
