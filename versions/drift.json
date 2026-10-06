@@ -1,13 +1,12 @@
 {
- "scanned_at": "2026-10-06T11:44:48Z",
+ "scanned_at": "2026-10-06T17:28:35Z",
  "counts": {
   "defect": 0,
-  "drift": 5,
+  "drift": 4,
   "explained": 6,
   "info": 75
  },
  "keys": [
-  "decl:actions|wickra-lib/.github/actions/signed-commit|782bf3d7a8ed v1.0.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|da1bd395c27f v1.1.0=wickra-playground",
   "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|pyodide-build.in=wickra-playground",
   "decl:npm|vite|^8.3.0=wickra-terminal,wickra-xray|^8.3.1=wickra-playground",
   "decl:npm|vitest|^5.0.1=wickra-terminal|^5.0.2=wickra-playground",
@@ -95,38 +94,6 @@
   "lock:npm|why-is-node-running|2.x=wickra-terminal@web|3.x=wickra-playground@package-lock.json"
  ],
  "findings": [
-  {
-   "severity": "drift",
-   "kind": "decl:actions",
-   "subject": "wickra-lib/.github/actions/signed-commit",
-   "detail": "782bf3d7a8ed v1.0.0: 22 [backtest, benchmark, compile, copilot, darwin, exchange, feature-store, genome, gym, impact, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, xray, zk] | da1bd395c27f v1.1.0: 1 [playground]",
-   "repos": [
-    "wickra",
-    "wickra-backtest",
-    "wickra-benchmark",
-    "wickra-compile",
-    "wickra-copilot",
-    "wickra-darwin",
-    "wickra-exchange",
-    "wickra-feature-store",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-playground",
-    "wickra-proof",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-strategy-ci",
-    "wickra-synth",
-    "wickra-terminal",
-    "wickra-timemachine",
-    "wickra-verify",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "decl:actions|wickra-lib/.github/actions/signed-commit|782bf3d7a8ed v1.0.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|da1bd395c27f v1.1.0=wickra-playground"
-  },
   {
    "severity": "drift",
    "kind": "decl:convention",
