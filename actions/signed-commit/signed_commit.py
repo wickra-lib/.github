@@ -24,11 +24,14 @@ Every commit this creates is read back and must be verified; anything else
 fails the step, so an unsigned commit can never pass silently.
 """
 import base64
+import hashlib
 import json
 import os
+import shutil
 import stat
 import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -91,6 +94,13 @@ def output(name, value):
 
 
 _blobs = {}
+# The blob API takes the content base64-encoded in one JSON request and refuses
+# a large one ("input too large" at ~95 MB raw: wickra-zk-go's native
+# libraries). Files from this size on are uploaded by `git push` instead (see
+# upload_large); a git blob id depends only on the content, so the tree entry
+# can name it before the push.
+LARGE = 30 * 1024 * 1024
+_large = {}
 
 
 def blob(path):
@@ -102,11 +112,49 @@ def blob(path):
         mode = "100755" if st.st_mode & stat.S_IXUSR else "100644"
         with open(path, "rb") as fh:
             content = fh.read()
+    if len(content) >= LARGE:
+        sha = hashlib.sha1(b"blob %d\0" % len(content) + content).hexdigest()
+        _large[sha] = path
+        return {"mode": mode, "type": "blob", "sha": sha}
     key = (mode, content)
     if key not in _blobs:
         _blobs[key] = api("POST", f"/repos/{REPO}/git/blobs",
                           {"content": base64.b64encode(content).decode(), "encoding": "base64"})["sha"]
     return {"mode": mode, "type": "blob", "sha": _blobs[key]}
+
+
+def upload_large():
+    """Push the large blobs to a temporary branch; return its name (or None).
+
+    The pushed commit only carries the blobs into the repository -- it is
+    unsigned and never reaches BRANCH: the signed commit is still created
+    through the API, from a tree that names these blobs by id. The branch is
+    deleted once that commit exists (drop_upload)."""
+    if not _large:
+        return None
+    ref = f"signed-commit-upload/{os.environ.get('GITHUB_RUN_ID', 'local')}-{int(time.time())}"
+    work = tempfile.mkdtemp()
+    git = ["git", "-C", work, "-c", "user.name=signed-commit", "-c", "user.email=signed-commit@users.noreply.github.com",
+           "-c", "commit.gpgsign=false"]
+    subprocess.run(git[:3] + ["init", "-q"], check=True)
+    for sha, path in _large.items():
+        shutil.copyfile(path, os.path.join(work, sha))
+        print(f"upload {path} ({os.path.getsize(path)} bytes) as {sha}")
+    subprocess.run(git + ["add", "-A"], check=True)
+    subprocess.run(git + ["commit", "-q", "-m", "signed-commit: blob upload"], check=True)
+    server = os.environ.get("GITHUB_SERVER_URL", "https://github.com").split("://", 1)[1]
+    url = f"https://x-access-token:{TOKEN}@{server}/{REPO}.git"
+    push = subprocess.run(git + ["push", "-q", url, f"HEAD:refs/heads/{ref}"],
+                          capture_output=True, text=True, env=dict(os.environ, GIT_TERMINAL_PROMPT="0"))
+    shutil.rmtree(work, ignore_errors=True)
+    if push.returncode:
+        sys.exit("pushing the large blobs failed: " + push.stderr.replace(TOKEN, "***").strip())
+    return ref
+
+
+def drop_upload(ref):
+    if ref:
+        api("DELETE", f"/repos/{REPO}/git/refs/heads/{ref}")
 
 
 def head_of(branch):
@@ -166,6 +214,14 @@ def commit_changes():
     for path in deleted:
         print("delete", path)
     entries = [dict(path=p, **blob(p)) for p in written]
+    upload = upload_large()
+    try:
+        return _commit_entries(entries, deleted)
+    finally:
+        drop_upload(upload)
+
+
+def _commit_entries(entries, deleted):
     for attempt in range(5):
         head = head_of(BRANCH)
         base = tree_of(head)
@@ -202,16 +258,20 @@ def commit_tree():
             entries.append(dict(path=rel, **blob(full)))
     if not entries:
         sys.exit(f"source directory {SOURCE!r} is empty")
-    tree = api("POST", f"/repos/{REPO}/git/trees", {"tree": entries})["sha"]
-    head = head_of(BRANCH)
-    if head is not None and tree_of(head) == tree:
-        print(f"{REPO}@{BRANCH} already holds this tree; no commit")
-        return head, False
-    parents = [head] if head else []
-    commit = api("POST", f"/repos/{REPO}/git/commits",
-                 {"message": MESSAGE, "tree": tree, "parents": parents})["sha"]
-    move_branch(head, commit)
-    return commit, True
+    upload = upload_large()
+    try:
+        tree = api("POST", f"/repos/{REPO}/git/trees", {"tree": entries})["sha"]
+        head = head_of(BRANCH)
+        if head is not None and tree_of(head) == tree:
+            print(f"{REPO}@{BRANCH} already holds this tree; no commit")
+            return head, False
+        parents = [head] if head else []
+        commit = api("POST", f"/repos/{REPO}/git/commits",
+                     {"message": MESSAGE, "tree": tree, "parents": parents})["sha"]
+        move_branch(head, commit)
+        return commit, True
+    finally:
+        drop_upload(upload)
 
 
 def tag(commit):

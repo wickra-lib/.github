@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   github-token:
-    name: GITHUB_TOKEN (changes, binary, delete, tree, tag)
+    name: GITHUB_TOKEN (changes, binary, large file, delete, tree, tag)
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -42,6 +42,9 @@ jobs:
           mkdir -p selftest
           date -u > selftest/text.txt
           head -c 4096 /dev/urandom > selftest/blob.bin
+          # Over the action's 30 MB LARGE threshold: uploaded by git push to a
+          # temporary branch instead of the blob API.
+          head -c 41943040 /dev/urandom > selftest/large.bin
           printf '#!/bin/sh\necho ok\n' > selftest/run.sh && chmod +x selftest/run.sh
           git rm -q SUPPORT.md
       - name: Commit the changes (signed)
@@ -60,6 +63,10 @@ jobs:
           set -euo pipefail
           test "${CHANGED}" = true
           gh api "repos/${GITHUB_REPOSITORY}/contents/selftest/blob.bin?ref=${SHA}" -q .size | grep -qx 4096
+          tree=$(gh api "repos/${GITHUB_REPOSITORY}/git/trees/${SHA}?recursive=1")
+          test "$(jq -r '.tree[] | select(.path=="selftest/large.bin") | .size' <<<"$tree")" = 41943040
+          test "$(jq -r '.tree[] | select(.path=="selftest/large.bin") | .sha' <<<"$tree")" = "$(git hash-object selftest/large.bin)"
+          test "$(gh api "repos/${GITHUB_REPOSITORY}/git/matching-refs/heads/signed-commit-upload/" -q length)" = 0
           test "$(gh api "repos/${GITHUB_REPOSITORY}/git/trees/${SHA}?recursive=1" -q '.tree[] | select(.path=="selftest/run.sh") | .mode')" = 100755
           ! gh api "repos/${GITHUB_REPOSITORY}/contents/SUPPORT.md?ref=${SHA}" > /dev/null 2>&1
       - name: A second run with nothing changed makes no commit
@@ -88,7 +95,8 @@ jobs:
           SHA: ${{ steps.tree.outputs.sha }}
         run: |
           set -euo pipefail
-          test "$(gh api "repos/${GITHUB_REPOSITORY}/git/trees/${SHA}" -q '[.tree[].path] | join(",")')" = "blob.bin,run.sh,text.txt"
+          test "$(gh api "repos/${GITHUB_REPOSITORY}/git/trees/${SHA}" -q '[.tree[].path] | join(",")')" = "blob.bin,large.bin,run.sh,text.txt"
+          test "$(gh api "repos/${GITHUB_REPOSITORY}/git/matching-refs/heads/signed-commit-upload/" -q length)" = 0
           test "$(gh api "repos/${GITHUB_REPOSITORY}/git/ref/tags/${TAG}" -q .object.sha)" = "${SHA}"
       - name: Delete the throwaway branch and tag
         if: always()
@@ -123,6 +131,8 @@ jobs:
         run: gh api "repos/${GITHUB_REPOSITORY}/git/refs" -f ref="refs/heads/${BRANCH}" -f sha="${GITHUB_SHA}" > /dev/null
       - run: |
           mkdir -p selftest && date -u > selftest/app.txt
+          # The installation token must carry a large file too (git push path).
+          head -c 33554432 /dev/urandom > selftest/large.bin
       - name: Commit as the app (signed)
         id: commit
         uses: ./actions/signed-commit
@@ -140,6 +150,9 @@ jobs:
           author=$(gh api "repos/${GITHUB_REPOSITORY}/commits/${SHA}" -q .author.login)
           echo "author: ${author}"
           test "${author}" = "wickra-lib-bot[bot]"
+          size=$(gh api "repos/${GITHUB_REPOSITORY}/git/trees/${SHA}?recursive=1" -q '.tree[] | select(.path=="selftest/large.bin") | .size')
+          test "${size}" = 33554432
+          test "$(gh api "repos/${GITHUB_REPOSITORY}/git/matching-refs/heads/signed-commit-upload/" -q length)" = 0
       - name: Delete the throwaway branch
         if: always()
         env:
