@@ -33,6 +33,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import uuid
 import urllib.error
 import urllib.request
 
@@ -132,7 +133,9 @@ def upload_large():
     deleted once that commit exists (drop_upload)."""
     if not _large:
         return None
-    ref = f"signed-commit-upload/{os.environ.get('GITHUB_RUN_ID', 'local')}-{int(time.time())}"
+    # Unique per call: parallel jobs of one run share GITHUB_RUN_ID and can
+    # reach this in the same second.
+    ref = f"signed-commit-upload/{os.environ.get('GITHUB_RUN_ID', 'local')}-{uuid.uuid4().hex}"
     work = tempfile.mkdtemp()
     git = ["git", "-C", work, "-c", "user.name=signed-commit", "-c", "user.email=signed-commit@users.noreply.github.com",
            "-c", "commit.gpgsign=false"]
@@ -144,21 +147,11 @@ def upload_large():
     subprocess.run(git + ["commit", "-q", "-m", "signed-commit: blob upload"], check=True)
     server = os.environ.get("GITHUB_SERVER_URL", "https://github.com").split("://", 1)[1]
     url = f"https://x-access-token:{TOKEN}@{server}/{REPO}.git"
-    env = dict(os.environ, GIT_TERMINAL_PROMPT="0")
-    local = subprocess.run(git + ["rev-parse", "HEAD"], capture_output=True, text=True, check=True).stdout.strip()
     push = subprocess.run(git + ["push", "-q", url, f"HEAD:refs/heads/{ref}"],
-                          capture_output=True, text=True, env=env)
-    if push.returncode:
-        # A large pack over HTTP can be sent twice: the first attempt creates
-        # the branch, the second is refused with "reference already exists".
-        # The upload succeeded when the branch already holds exactly this commit.
-        remote = subprocess.run(git + ["ls-remote", url, f"refs/heads/{ref}"],
-                                capture_output=True, text=True, env=env).stdout.split()
-        if not remote or remote[0] != local:
-            shutil.rmtree(work, ignore_errors=True)
-            sys.exit("pushing the large blobs failed: " + push.stderr.replace(TOKEN, "***").strip())
-        print(f"upload branch {ref} already holds {local}; the push was answered twice")
+                          capture_output=True, text=True, env=dict(os.environ, GIT_TERMINAL_PROMPT="0"))
     shutil.rmtree(work, ignore_errors=True)
+    if push.returncode:
+        sys.exit("pushing the large blobs failed: " + push.stderr.replace(TOKEN, "***").strip())
     return ref
 
 
