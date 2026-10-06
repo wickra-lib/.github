@@ -290,7 +290,7 @@ The core, in every language:
 | Browser / WASM | `npm install wickra-wasm` |
 | C / C++ (C ABI) | pre-built header + library from [releases](https://github.com/wickra-lib/wickra/releases) |
 | C# | `dotnet add package Wickra` |
-| Go (cgo) | `go get github.com/wickra-lib/wickra-go` |
+| Go (cgo) | `go get github.com/wickra-lib/wickra-go/v2` |
 | Java (FFM) | `org.wickra:wickra` on Maven Central |
 | R (`.Call`) | `install.packages("wickra", repos = "https://wickra-lib.r-universe.dev")` |
 
