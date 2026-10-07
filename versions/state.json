@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-06T17:25:39Z",
+  "scanned_at": "2026-10-07T22:17:08Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -429,7 +429,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickra",
-          "version": "1.0.7"
+          "version": "2.0.0"
         }
       ],
       "go": {
@@ -968,7 +968,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrabacktest",
-          "version": "0.1.9"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -1484,7 +1484,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrabenchmark",
-          "version": "0.1.5"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -1978,7 +1978,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickracompile",
-          "version": "0.1.4"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -2513,7 +2513,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickracopilot",
-          "version": "0.1.4"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -3069,7 +3069,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickradarwin",
-          "version": "0.1.5"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -3826,7 +3826,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraexchange",
-          "version": "0.1.8"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -4317,7 +4317,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrafeaturestore",
-          "version": "0.1.4"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -4810,7 +4810,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickragenome",
-          "version": "0.1.5"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -5340,7 +5340,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickragym",
-          "version": "0.1.6"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -5896,7 +5896,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraimpact",
-          "version": "0.1.6"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -6791,7 +6791,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraproof",
-          "version": "0.1.5"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -7282,7 +7282,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraradar",
-          "version": "0.1.4"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -7785,7 +7785,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrascreener",
-          "version": "0.2.0"
+          "version": "0.3.0"
         }
       ],
       "go": {
@@ -8324,7 +8324,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrashazam",
-          "version": "0.1.4"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -8854,7 +8854,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrastrategyci",
-          "version": "0.1.6"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -9345,7 +9345,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrasynth",
-          "version": "0.1.4"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -9846,7 +9846,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraterminal",
-          "version": "0.1.8"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -10362,7 +10362,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickratimemachine",
-          "version": "0.1.5"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -10892,7 +10892,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraverify",
-          "version": "0.1.5"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -11385,7 +11385,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickraxray",
-          "version": "0.1.8"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -11864,7 +11864,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrazk",
-          "version": "0.1.4"
+          "version": "0.2.0"
         }
       ],
       "go": {
@@ -12224,12 +12224,6 @@
       "informational": true
     },
     {
-      "repo": "wickra",
-      "kind": "registry differs",
-      "subject": "r-universe wickra",
-      "detail": "1.0.7 against the declared 2.0.0"
-    },
-    {
       "repo": "wickra-backtest",
       "kind": "no version reference",
       "subject": "crates/wickra-backtest-bench/Cargo.toml",
@@ -12342,12 +12336,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "registry differs",
-      "subject": "r-universe wickrabacktest",
-      "detail": "0.1.9 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-benchmark",
       "kind": "no version reference",
       "subject": "crates/benchmark-cli/Cargo.toml",
@@ -12430,12 +12418,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-benchmark",
-      "kind": "registry differs",
-      "subject": "r-universe wickrabenchmark",
-      "detail": "0.1.5 against the declared 0.2.0"
     },
     {
       "repo": "wickra-compile",
@@ -12543,12 +12525,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-compile",
-      "kind": "registry differs",
-      "subject": "r-universe wickracompile",
-      "detail": "0.1.4 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-copilot",
       "kind": "no version reference",
       "subject": "crates/copilot-cli/Cargo.toml",
@@ -12640,12 +12616,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-copilot",
-      "kind": "registry differs",
-      "subject": "r-universe wickracopilot",
-      "detail": "0.1.4 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-darwin",
       "kind": "no version reference",
       "subject": "crates/darwin-cli/Cargo.toml",
@@ -12728,12 +12698,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-darwin",
-      "kind": "registry differs",
-      "subject": "r-universe wickradarwin",
-      "detail": "0.1.5 against the declared 0.2.0"
     },
     {
       "repo": "wickra-embed",
@@ -12966,12 +12930,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-exchange",
-      "kind": "registry differs",
-      "subject": "r-universe wickraexchange",
-      "detail": "0.1.8 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-feature-store",
       "kind": "no version reference",
       "subject": "crates/feature-store-cli/Cargo.toml",
@@ -13063,12 +13021,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-feature-store",
-      "kind": "registry differs",
-      "subject": "r-universe wickrafeaturestore",
-      "detail": "0.1.4 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-genome",
       "kind": "no version reference",
       "subject": "crates/genome-cli/Cargo.toml",
@@ -13153,12 +13105,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-genome",
-      "kind": "registry differs",
-      "subject": "r-universe wickragenome",
-      "detail": "0.1.5 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-gym",
       "kind": "no version reference",
       "subject": "crates/gym-cli/Cargo.toml",
@@ -13234,12 +13180,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "registry differs",
-      "subject": "r-universe wickragym",
-      "detail": "0.1.6 against the declared 0.2.0"
     },
     {
       "repo": "wickra-impact",
@@ -13324,12 +13264,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "registry differs",
-      "subject": "r-universe wickraimpact",
-      "detail": "0.1.6 against the declared 0.2.0"
     },
     {
       "repo": "wickra-pico",
@@ -13640,12 +13574,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-proof",
-      "kind": "registry differs",
-      "subject": "r-universe wickraproof",
-      "detail": "0.1.5 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-radar",
       "kind": "no version reference",
       "subject": "crates/radar-cli/Cargo.toml",
@@ -13737,12 +13665,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-radar",
-      "kind": "registry differs",
-      "subject": "r-universe wickraradar",
-      "detail": "0.1.4 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-screener",
       "kind": "no version reference",
       "subject": "crates/screener-cli/Cargo.toml",
@@ -13827,12 +13749,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-screener",
-      "kind": "registry differs",
-      "subject": "r-universe wickrascreener",
-      "detail": "0.2.0 against the declared 0.3.0"
-    },
-    {
       "repo": "wickra-shazam",
       "kind": "no version reference",
       "subject": "crates/shazam-cli/Cargo.toml",
@@ -13915,12 +13831,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "registry differs",
-      "subject": "r-universe wickrashazam",
-      "detail": "0.1.4 against the declared 0.2.0"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -14021,12 +13931,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-strategy-ci",
-      "kind": "registry differs",
-      "subject": "r-universe wickrastrategyci",
-      "detail": "0.1.6 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-synth",
       "kind": "no version reference",
       "subject": "crates/synth-bench/Cargo.toml",
@@ -14125,12 +14029,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-synth",
-      "kind": "registry differs",
-      "subject": "r-universe wickrasynth",
-      "detail": "0.1.4 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-terminal",
       "kind": "no version reference",
       "subject": "crates/ui-tui/Cargo.toml",
@@ -14215,12 +14113,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-terminal",
-      "kind": "registry differs",
-      "subject": "r-universe wickraterminal",
-      "detail": "0.1.8 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-timemachine",
       "kind": "no version reference",
       "subject": "crates/timemachine-cli/Cargo.toml",
@@ -14303,12 +14195,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-timemachine",
-      "kind": "registry differs",
-      "subject": "r-universe wickratimemachine",
-      "detail": "0.1.5 against the declared 0.2.0"
     },
     {
       "repo": "wickra-verify",
@@ -14409,12 +14295,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-verify",
-      "kind": "registry differs",
-      "subject": "r-universe wickraverify",
-      "detail": "0.1.5 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-xray",
       "kind": "no version reference",
       "subject": "crates/wickra-xray-core/Cargo.toml",
@@ -14492,12 +14372,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-xray",
-      "kind": "registry differs",
-      "subject": "r-universe wickraxray",
-      "detail": "0.1.8 against the declared 0.2.0"
-    },
-    {
       "repo": "wickra-zk",
       "kind": "no version reference",
       "subject": "bindings/csharp/WickraZk.Tests/WickraZk.Tests.csproj",
@@ -14552,12 +14426,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "r-universe wickrazk",
-      "detail": "0.1.4 against the declared 0.2.0"
     }
   ]
 }
