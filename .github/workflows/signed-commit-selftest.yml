@@ -22,7 +22,7 @@ concurrency:
 jobs:
   github-token:
     name: GITHUB_TOKEN (changes, binary, large file, delete, tree, tag)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 10
     permissions:
       contents: write # throwaway branch, commits and tag on this repository
@@ -117,7 +117,7 @@ jobs:
 
   app-token:
     name: wickra-lib-bot app token
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 10
     permissions:
       contents: read
