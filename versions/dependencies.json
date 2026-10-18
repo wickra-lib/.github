@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-10-07T22:17:08Z",
+  "scanned_at": "2026-10-18T00:26:49Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 373,
-      "differing": 36
+      "differing": 37
     },
     "npm": {
       "total": 109,
@@ -6369,7 +6369,7 @@
         "version": "0.4.34",
         "requiredBy": [
           "iana-time-zone 0.1.65",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "ureq 2.12.1"
         ]
       },
@@ -6531,7 +6531,7 @@
           "codspeed-criterion-compat-walltime 5.0.2",
           "const-random-macro 0.1.16",
           "pyo3 0.29.2",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "ureq 2.12.1",
           "wasm-bindgen 0.2.128"
@@ -6875,7 +6875,7 @@
         "name": "ring",
         "version": "0.17.14",
         "requiredBy": [
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -6910,7 +6910,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "ureq 2.12.1"
         ]
@@ -6921,7 +6921,7 @@
         "name": "rustls-pki-types",
         "version": "1.15.1",
         "requiredBy": [
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "ureq 2.12.1",
           "webpki-roots 1.0.9"
@@ -6933,7 +6933,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -7155,7 +7155,7 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -7722,7 +7722,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1"
         ]
       },
@@ -14988,7 +14988,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -15532,7 +15532,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -15570,7 +15570,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -15589,7 +15589,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -15602,7 +15602,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -15915,7 +15915,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -16706,7 +16706,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -22426,7 +22426,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -22934,7 +22934,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -22988,7 +22988,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -23007,7 +23007,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -23020,7 +23020,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -23283,7 +23283,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -24036,7 +24036,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -29537,7 +29537,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -30078,7 +30078,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -30115,7 +30115,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -30134,7 +30134,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -30147,7 +30147,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -30458,7 +30458,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -31239,7 +31239,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -33564,7 +33564,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -34106,7 +34106,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -34144,7 +34144,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -34163,7 +34163,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -34176,7 +34176,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -34489,7 +34489,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -35270,7 +35270,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -37594,7 +37594,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -38135,7 +38135,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -38172,7 +38172,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -38191,7 +38191,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -38204,7 +38204,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -38503,7 +38503,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -39262,7 +39262,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -45164,7 +45164,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -45688,7 +45688,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -45725,7 +45725,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -45744,7 +45744,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -45757,7 +45757,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -46032,7 +46032,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -46808,7 +46808,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -49132,7 +49132,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -49673,7 +49673,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -49711,7 +49711,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -49730,7 +49730,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -49743,7 +49743,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -50053,7 +50053,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -50834,7 +50834,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -53151,7 +53151,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -53694,7 +53694,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -53732,7 +53732,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -53751,7 +53751,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -53764,7 +53764,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -54081,7 +54081,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -54871,7 +54871,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -62508,7 +62508,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -63286,7 +63286,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -63345,7 +63345,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -63364,7 +63364,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -63377,7 +63377,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -63750,7 +63750,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -64790,7 +64790,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
@@ -72518,7 +72518,7 @@
           "primeorder 0.14.0",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "wasm-bindgen 0.2.128"
@@ -73035,7 +73035,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -73072,7 +73072,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -73091,7 +73091,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
@@ -73104,7 +73104,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -73379,7 +73379,7 @@
           "group 0.14.0",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "sec1 0.8.1"
         ]
       },
@@ -74155,7 +74155,7 @@
           "elliptic-curve 0.14.1",
           "hybrid-array 0.4.15",
           "primefield 0.14.0",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1",
           "sec1 0.8.1",
           "wickra-exchange-core 0.2.0"
