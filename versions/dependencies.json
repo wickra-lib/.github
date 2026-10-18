@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-10-18T00:26:49Z",
+  "scanned_at": "2026-10-18T02:17:58Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 373,
-      "differing": 37
+      "differing": 36
     },
     "npm": {
       "total": 109,
@@ -77952,7 +77952,7 @@
           "puffin 0.19.1",
           "pyo3 0.29.2",
           "quinn-udp 0.5.15",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
           "typetag 0.2.23",
@@ -78714,7 +78714,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "quinn-proto 0.11.18",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15"
         ]
       },
@@ -78984,7 +78984,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls",
-        "version": "0.23.45",
+        "version": "0.23.46",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "quinn 0.11.12",
@@ -79001,7 +79001,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-webpki 0.103.15",
           "webpki-roots 1.0.9"
         ]
@@ -79012,7 +79012,7 @@
         "name": "rustls-webpki",
         "version": "0.103.15",
         "requiredBy": [
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -79485,7 +79485,7 @@
           "digest 0.10.7",
           "ff 0.13.1",
           "rsa 0.9.10",
-          "rustls 0.23.45"
+          "rustls 0.23.46"
         ]
       },
       {
@@ -80569,7 +80569,7 @@
           "num-bigint-dig 0.8.6",
           "rsa 0.9.10",
           "ruint 1.20.1",
-          "rustls 0.23.45",
+          "rustls 0.23.46",
           "rustls-pki-types 1.15.1"
         ]
       },
