@@ -1,9 +1,18 @@
 {
-  "scanned_at": "2026-10-19T10:41:02Z",
+  "scanned_at": "2026-10-19T21:25:54Z",
   "repos": 77,
   "dependabot": [],
   "waiting": 0,
   "people": [
+    {
+      "kind": "issue",
+      "repo": "wickra",
+      "number": 487,
+      "title": "Feature: since-inception (unbounded) streaming max drawdown",
+      "url": "https://github.com/wickra-lib/wickra/issues/487",
+      "author": "atarutin",
+      "created": "2026-10-19T12:50:05Z"
+    },
     {
       "kind": "issue",
       "repo": "wickra",
