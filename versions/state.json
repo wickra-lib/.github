@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-22T21:00:04Z",
+  "scanned_at": "2026-10-22T23:12:24Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -3524,7 +3524,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": null
+          "version": "0.2.0"
         },
         {
           "file": "bindings/node/package.json optionalDependencies.wickra-exchange-darwin-arm64",
@@ -12817,12 +12817,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "carries no version",
-      "subject": "SECURITY.md",
-      "detail": "the file is present and names no version, while the repo declares 0.2.0"
     },
     {
       "repo": "wickra-exchange",
