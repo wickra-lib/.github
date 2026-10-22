@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-10-18T02:17:58Z",
+  "scanned_at": "2026-10-22T21:00:04Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 373,
-      "differing": 36
+      "differing": 38
     },
     "npm": {
       "total": 109,
@@ -6079,7 +6079,8 @@
         "version": "0.3.4",
         "requiredBy": [
           "ahash 0.8.12",
-          "rand_core 0.9.5"
+          "rand_core 0.9.5",
+          "tempfile 3.27.0"
         ]
       },
       {
@@ -6089,8 +6090,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "jobserver 0.1.35",
-          "tempfile 3.27.0"
+          "jobserver 0.1.35"
         ]
       },
       {
@@ -6876,7 +6876,7 @@
         "version": "0.17.14",
         "requiredBy": [
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -6922,16 +6922,16 @@
         "version": "1.15.1",
         "requiredBy": [
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "ureq 2.12.1",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -7316,7 +7316,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -7454,7 +7454,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "webpki-roots 0.26.11"
         ]
@@ -15533,7 +15533,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -15590,17 +15590,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -16288,7 +16288,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -16456,7 +16456,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
@@ -30079,7 +30079,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -30135,17 +30135,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -30821,7 +30821,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -30989,7 +30989,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
@@ -34107,7 +34107,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -34164,17 +34164,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -34852,7 +34852,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -35020,7 +35020,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
@@ -38136,7 +38136,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -38192,17 +38192,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -38845,7 +38845,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -39013,7 +39013,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
@@ -45689,7 +45689,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -45745,17 +45745,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -46390,7 +46390,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -46558,7 +46558,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
@@ -49674,7 +49674,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -49731,17 +49731,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -50416,7 +50416,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -50584,7 +50584,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
@@ -53695,7 +53695,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -53752,17 +53752,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -54453,7 +54453,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -54621,7 +54621,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
@@ -63287,7 +63287,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -63365,17 +63365,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -64252,7 +64252,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -64450,7 +64450,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",
@@ -73036,7 +73036,7 @@
         "requiredBy": [
           "quinn-proto 0.11.18",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -73092,17 +73092,17 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.15",
+          "rustls-webpki 0.103.16",
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
-          "webpki-roots 1.0.9"
+          "webpki-roots 1.0.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.15",
+        "version": "0.103.16",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -73737,7 +73737,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.15"
+          "rustls-webpki 0.103.16"
         ]
       },
       {
@@ -73905,7 +73905,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28",

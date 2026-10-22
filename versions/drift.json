@@ -1,18 +1,16 @@
 {
- "scanned_at": "2026-10-18T02:20:01Z",
+ "scanned_at": "2026-10-22T21:03:26Z",
  "counts": {
   "defect": 0,
-  "drift": 4,
-  "explained": 6,
-  "info": 75
+  "drift": 1,
+  "explained": 7,
+  "info": 74
  },
  "keys": [
-  "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|pyodide-build.in=wickra-playground",
-  "decl:npm|vite|^8.3.0=wickra-terminal,wickra-xray|^8.3.1=wickra-playground",
-  "decl:npm|vitest|^5.0.1=wickra-terminal|^5.0.2=wickra-playground",
-  "decl:npm|vue|^3.5.0=wickra-terminal,wickra-xray|^3.5.43=wickra-playground",
+  "decl:npm|vitest|^5.0.2=wickra-terminal|^5.0.5=wickra-playground",
   "decl:cargo|getrandom|0.2=wickra-feature-store,wickra-gym,wickra-strategy-ci,wickra-terminal,wickra-timemachine|0.3=wickra-terminal,wickra-timemachine|0.4=wickra-exchange,wickra-terminal,wickra-timemachine",
   "decl:ci-matrix|dotnet-version in ci.yml|10.0=wickra|8.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
+  "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|pyodide-build.in=wickra-playground",
   "decl:toolchain|CMAKE_CXX_STANDARD|11=wickra-embed|17=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:toolchain|rust-version (crate)|1.86=wickra-pico|1.88=wickra-terminal|1.90=wickra-zk",
   "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk",
@@ -87,79 +85,22 @@
   "lock:cargo|wit-bindgen|0.46.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray|0.57.x=wickra-terminal,wickra-zk,wickra-zk@bindings/wasm,wickra-zk@guest/methods/guest",
   "lock:npm|@octokit/openapi-types|27.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|29.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "lock:npm|@octokit/types|16.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|18.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
+  "lock:npm|@oxc-project/types|0.154.x=wickra-playground@package-lock.json|0.155.x=wickra-terminal@web,wickra-xray@web",
   "lock:npm|estree-walker|2.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web|3.x=wickra-playground@package-lock.json,wickra-terminal@web",
   "lock:npm|magic-string|0.30.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web|1.x=wickra-playground@package-lock.json,wickra-terminal@web",
-  "lock:npm|obug|2.x=wickra-playground@package-lock.json,wickra-terminal@web|3.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
-  "lock:npm|picomatch|2.x=wickra-playground@package-lock.json|4.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web",
-  "lock:npm|why-is-node-running|2.x=wickra-terminal@web|3.x=wickra-playground@package-lock.json"
+  "lock:npm|picomatch|2.x=wickra-playground@package-lock.json|4.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web"
  ],
  "findings": [
   {
    "severity": "drift",
-   "kind": "decl:convention",
-   "subject": "requirements layout",
-   "detail": "ci-dev-py3.in ci-dev-py39.in: 17 [compile, copilot, darwin, exchange, feature-store, genome, impact, proof, radar, screener, shazam, strategy-ci, synth, timemachine, verify, xray, zk] | bench.in ci-dev-py3.in ci-dev-py39.in: 3 [backtest, terminal, wickra] | ci-dev-py3.in ci-dev-py39.in manifest.in: 1 [benchmark] | ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in: 1 [gym] | pyodide-build.in: 1 [playground]",
-   "repos": [
-    "wickra",
-    "wickra-backtest",
-    "wickra-benchmark",
-    "wickra-compile",
-    "wickra-copilot",
-    "wickra-darwin",
-    "wickra-exchange",
-    "wickra-feature-store",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-playground",
-    "wickra-proof",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-strategy-ci",
-    "wickra-synth",
-    "wickra-terminal",
-    "wickra-timemachine",
-    "wickra-verify",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|pyodide-build.in=wickra-playground"
-  },
-  {
-   "severity": "drift",
-   "kind": "decl:npm",
-   "subject": "vite",
-   "detail": "^8.3.0: 2 [terminal, xray] | ^8.3.1: 1 [playground]",
-   "repos": [
-    "wickra-playground",
-    "wickra-terminal",
-    "wickra-xray"
-   ],
-   "key": "decl:npm|vite|^8.3.0=wickra-terminal,wickra-xray|^8.3.1=wickra-playground"
-  },
-  {
-   "severity": "drift",
    "kind": "decl:npm",
    "subject": "vitest",
-   "detail": "^5.0.2: 1 [playground] | ^5.0.1: 1 [terminal]",
+   "detail": "^5.0.5: 1 [playground] | ^5.0.2: 1 [terminal]",
    "repos": [
     "wickra-playground",
     "wickra-terminal"
    ],
-   "key": "decl:npm|vitest|^5.0.1=wickra-terminal|^5.0.2=wickra-playground"
-  },
-  {
-   "severity": "drift",
-   "kind": "decl:npm",
-   "subject": "vue",
-   "detail": "^3.5.0: 2 [terminal, xray] | ^3.5.43: 1 [playground]",
-   "repos": [
-    "wickra-playground",
-    "wickra-terminal",
-    "wickra-xray"
-   ],
-   "key": "decl:npm|vue|^3.5.0=wickra-terminal,wickra-xray|^3.5.43=wickra-playground"
+   "key": "decl:npm|vitest|^5.0.2=wickra-terminal|^5.0.5=wickra-playground"
   },
   {
    "severity": "explained",
@@ -206,6 +147,38 @@
     "wickra-zk"
    ],
    "key": "decl:ci-matrix|dotnet-version in ci.yml|10.0=wickra|8.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk"
+  },
+  {
+   "severity": "explained",
+   "kind": "decl:convention",
+   "subject": "requirements layout",
+   "detail": "ci-dev-py3.in ci-dev-py39.in: 17 [compile, copilot, darwin, exchange, feature-store, genome, impact, proof, radar, screener, shazam, strategy-ci, synth, timemachine, verify, xray, zk] | bench.in ci-dev-py3.in ci-dev-py39.in: 3 [backtest, terminal, wickra] | ci-dev-py3.in ci-dev-py39.in manifest.in: 1 [benchmark] | ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in: 1 [gym] | pyodide-build.in: 1 [playground] -- Each extra file serves a job only that repository has: bench.in the cross-library Python benchmark (wickra, backtest, terminal), manifest.in the blake3 dataset-manifest job (benchmark), ci-gymnasium.in the with-Gymnasium test step kept apart from the without one (gym). The playground ships no Python package, so it has no ci-dev files; pyodide-build.in is the build tool of its Pyodide wheel workflow.",
+   "repos": [
+    "wickra",
+    "wickra-backtest",
+    "wickra-benchmark",
+    "wickra-compile",
+    "wickra-copilot",
+    "wickra-darwin",
+    "wickra-exchange",
+    "wickra-feature-store",
+    "wickra-genome",
+    "wickra-gym",
+    "wickra-impact",
+    "wickra-playground",
+    "wickra-proof",
+    "wickra-radar",
+    "wickra-screener",
+    "wickra-shazam",
+    "wickra-strategy-ci",
+    "wickra-synth",
+    "wickra-terminal",
+    "wickra-timemachine",
+    "wickra-verify",
+    "wickra-xray",
+    "wickra-zk"
+   ],
+   "key": "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|pyodide-build.in=wickra-playground"
   },
   {
    "severity": "explained",
@@ -1858,6 +1831,18 @@
   {
    "severity": "info",
    "kind": "lock:npm",
+   "subject": "@oxc-project/types",
+   "detail": "0.155.x: 2 [terminal@web, xray@web] | 0.154.x: 1 [playground@package-lock.json]",
+   "repos": [
+    "wickra-playground",
+    "wickra-terminal",
+    "wickra-xray"
+   ],
+   "key": "lock:npm|@oxc-project/types|0.154.x=wickra-playground@package-lock.json|0.155.x=wickra-terminal@web,wickra-xray@web"
+  },
+  {
+   "severity": "info",
+   "kind": "lock:npm",
    "subject": "estree-walker",
    "detail": "2.x: 3 [playground@package-lock.json, terminal@web, xray@web] | 3.x: 2 [playground@package-lock.json, terminal@web]",
    "repos": [
@@ -1882,38 +1867,6 @@
   {
    "severity": "info",
    "kind": "lock:npm",
-   "subject": "obug",
-   "detail": "3.x: 22 [backtest, benchmark, compile, copilot, darwin, exchange, feature-store, genome, gym, impact, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, xray, zk] | 2.x: 2 [playground@package-lock.json, terminal@web]",
-   "repos": [
-    "wickra",
-    "wickra-backtest",
-    "wickra-benchmark",
-    "wickra-compile",
-    "wickra-copilot",
-    "wickra-darwin",
-    "wickra-exchange",
-    "wickra-feature-store",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-playground",
-    "wickra-proof",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-strategy-ci",
-    "wickra-synth",
-    "wickra-terminal",
-    "wickra-timemachine",
-    "wickra-verify",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "lock:npm|obug|2.x=wickra-playground@package-lock.json,wickra-terminal@web|3.x=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:npm",
    "subject": "picomatch",
    "detail": "4.x: 3 [playground@package-lock.json, terminal@web, xray@web] | 2.x: 1 [playground@package-lock.json]",
    "repos": [
@@ -1922,17 +1875,6 @@
     "wickra-xray"
    ],
    "key": "lock:npm|picomatch|2.x=wickra-playground@package-lock.json|4.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web"
-  },
-  {
-   "severity": "info",
-   "kind": "lock:npm",
-   "subject": "why-is-node-running",
-   "detail": "3.x: 1 [playground@package-lock.json] | 2.x: 1 [terminal@web]",
-   "repos": [
-    "wickra-playground",
-    "wickra-terminal"
-   ],
-   "key": "lock:npm|why-is-node-running|2.x=wickra-terminal@web|3.x=wickra-playground@package-lock.json"
   }
  ]
 }
