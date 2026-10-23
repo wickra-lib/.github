@@ -1,7 +1,17 @@
 {
-  "scanned_at": "2026-10-23T09:55:30Z",
+  "scanned_at": "2026-10-23T20:18:42Z",
   "repos": 77,
-  "dependabot": [],
+  "dependabot": [
+    {
+      "repo": "wickra-backtest",
+      "number": 163,
+      "title": "deps(ci-pip): bump pillow from 12.3.0 to 13.0.0 in /.github/requirements",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/163",
+      "created": "2026-10-23T15:59:12Z",
+      "failing": [],
+      "checks": 64
+    }
+  ],
   "waiting": 0,
   "people": [
     {
@@ -25,6 +35,69 @@
   ],
   "alerts": [
     {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "critical",
+      "number": 10,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/10",
+      "created": "2026-10-23T15:57:38Z",
+      "title": "Pillow in .github/requirements/bench.txt: Pillow: Heap buffer overflow in ImagingJpegDecode"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 16,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/16",
+      "created": "2026-10-23T18:08:42Z",
+      "title": "pillow in .github/requirements/bench.txt: Pillow: Unbounded recursion parsing a PDF page tree or trailer chain (incomplete fix for CVE-2026-42310)"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 15,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/15",
+      "created": "2026-10-23T18:03:23Z",
+      "title": "Pillow in .github/requirements/bench.txt: Pillow: TiffDecode returns uninitialized memory as pixels for short JPEG strips"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 14,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/14",
+      "created": "2026-10-23T17:16:02Z",
+      "title": "Pillow in .github/requirements/bench.txt: Pillow: OOB read in TiffDecode.c tile and RGBA paths leaks heap memory into pixels"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 12,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/12",
+      "created": "2026-10-23T17:04:44Z",
+      "title": "Pillow in .github/requirements/bench.txt: Pillow: GIF seek keeps rejected size after DecompressionBombError, allowing DoS"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 11,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/11",
+      "created": "2026-10-23T16:41:39Z",
+      "title": "Pillow in .github/requirements/bench.txt: Pillow: TIFF encoder ColorMap plane-size mismatch causes a heap out-of-bounds read"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 9,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/9",
+      "created": "2026-10-23T15:57:27Z",
+      "title": "Pillow in .github/requirements/bench.txt: Pillow: Out-of-bounds access in _imagingmorph on a zero-width image"
+    },
+    {
       "repo": "wickra-xray",
       "kind": "Dependabot",
       "severity": "high",
@@ -32,6 +105,24 @@
       "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/12",
       "created": "2026-10-21T02:55:19Z",
       "title": "vite in web/package-lock.json: launch-editor: `fs.existsSync()` existence check can be bypassed on Windows"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 17,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/17",
+      "created": "2026-10-23T18:10:31Z",
+      "title": "Pillow in .github/requirements/bench.txt: Pillow: EPS load(scale) lets Ghostscript render past the decompression bomb limit"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 13,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/13",
+      "created": "2026-10-23T17:13:56Z",
+      "title": "pillow in .github/requirements/bench.txt: Pillow tiled-TIFF decoder reads past tile buffer in copy4 (Unpack.c:1290)"
     },
     {
       "repo": "wickra-xray",
