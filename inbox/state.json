@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-24T09:25:12Z",
+  "scanned_at": "2026-10-24T19:24:39Z",
   "repos": 77,
   "dependabot": [
     {
@@ -575,6 +575,24 @@
       "title": "vite in web/package-lock.json: launch-editor: `fs.existsSync()` existence check can be bypassed on Windows"
     },
     {
+      "repo": "wickra-xray",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 16,
+      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/16",
+      "created": "2026-10-24T18:30:33Z",
+      "title": "vite in web/package-lock.json: Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 14,
+      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/14",
+      "created": "2026-10-24T18:25:38Z",
+      "title": "vite in web/package-lock.json: Vite: First 4 bytes of files outside of `server.fs` setting is exposed by `?vite-wasm-instance`"
+    },
+    {
       "repo": "wickra-backtest",
       "kind": "Dependabot",
       "severity": "medium",
@@ -825,6 +843,15 @@
       "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/11",
       "created": "2026-10-20T21:33:51Z",
       "title": "vite in web/package-lock.json: launch-editor: escapeCmdArgs() omits % escaping on Windows"
+    },
+    {
+      "repo": "wickra-xray",
+      "kind": "Dependabot",
+      "severity": "low",
+      "number": 15,
+      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/15",
+      "created": "2026-10-24T18:28:31Z",
+      "title": "vite in web/package-lock.json: Vite: Cross origin script execution through Vite custom middleware"
     }
   ],
   "unreadable": []
