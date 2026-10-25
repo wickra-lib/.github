@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-25T09:43:29Z",
+  "scanned_at": "2026-10-25T19:31:33Z",
   "repos": 77,
   "dependabot": [
     {
@@ -23,6 +23,15 @@
   ],
   "waiting": 0,
   "people": [
+    {
+      "kind": "pull request",
+      "repo": "wickra",
+      "number": 489,
+      "title": "feat(core): add RunningDrawdown, a since-inception max drawdown",
+      "url": "https://github.com/wickra-lib/wickra/pull/489",
+      "author": "atarutin",
+      "created": "2026-10-25T17:52:25Z"
+    },
     {
       "kind": "issue",
       "repo": "wickra",
