@@ -57,9 +57,13 @@
  *
  * Usage:
  *   node scripts/sync-counts.mjs --repo <name> [--root <dir>] [--source latest|pinned]
- *        [--core N] [--live N] [--registry N] [--terminal N] [--check] [--json <file>]
+ *        [--core N] [--live N] [--registry N] [--terminal N] [--check] [--ref <commit>] [--json <file>]
  *   node scripts/sync-counts.mjs --repo <name> --stdin     (rewrite one text, e.g. a repo description)
  *   node scripts/sync-counts.mjs --repo <name> --print-counts   (the resolved counts as JSON)
+ *
+ * --ref reads the files at a commit instead of the working tree (e.g.
+ * origin/main after a fetch) and implies --check; a pinned product's
+ * Cargo.lock is read at the same commit.
  *
  * Without --check the counts are written and the rest is reported; the exit
  * code is 0 unless a count could not be resolved (2). --check writes nothing
@@ -391,7 +395,19 @@ const CORE_PATH = 'crates/wickra-core/src/lib.rs'
 const REGISTRY_PATH = 'crates/wickra-backtest-core/src/registry.rs'
 
 /** Resolve every count a repository needs; explicit values win. */
-export async function resolveCounts({ repo, root, source = 'latest', given = {} }) {
+export async function resolveCounts({ repo, root, source = 'latest', given = {}, ref }) {
+  // A file of the repository being synced: the working tree, or `ref`.
+  const local = (rel) => {
+    if (!root) return null
+    if (ref) {
+      try {
+        return execFileSync('git', ['-C', root, 'show', `${ref}:${rel}`], { encoding: 'utf8', maxBuffer: 1 << 28, stdio: ['ignore', 'pipe', 'ignore'] })
+      } catch {
+        return null
+      }
+    }
+    return existsSync(join(root, rel)) ? readFileSync(join(root, rel), 'utf8') : null
+  }
   const memo = new Map()
   const once = (key, fn) => {
     if (!memo.has(key)) memo.set(key, fn())
@@ -405,19 +421,16 @@ export async function resolveCounts({ repo, root, source = 'latest', given = {} 
   const counts = { ...given }
   counts.live ??= await latestCore()
 
+  const lock = source === 'pinned' ? local('Cargo.lock') : null
   if (counts.core == null) {
-    if (source === 'pinned' && repo === 'wickra' && root) counts.core = parseCoreCount(readFileSync(join(root, CORE_PATH), 'utf8'))
-    else if (source === 'pinned' && root && existsSync(join(root, 'Cargo.lock'))) {
-      const v = lockedVersion(readFileSync(join(root, 'Cargo.lock'), 'utf8'), ['wickra-core'])
-      counts.core = v ? await coreAt(`v${v}`) : await latestCore()
-    } else counts.core = await latestCore()
+    const own = source === 'pinned' && repo === 'wickra' ? local(CORE_PATH) : null
+    const v = lock && lockedVersion(lock, ['wickra-core'])
+    counts.core = own ? parseCoreCount(own) : v ? await coreAt(`v${v}`) : await latestCore()
   }
   if (counts.registry == null) {
-    if (source === 'pinned' && repo === 'wickra-backtest' && root) counts.registry = parseRegistryCount(readFileSync(join(root, REGISTRY_PATH), 'utf8'))
-    else if (source === 'pinned' && root && existsSync(join(root, 'Cargo.lock'))) {
-      const v = lockedVersion(readFileSync(join(root, 'Cargo.lock'), 'utf8'), ['wickra-backtest-core', 'wickra-backtest'])
-      counts.registry = v ? await registryAt(`v${v}`) : await latestRegistry()
-    } else counts.registry = await latestRegistry()
+    const own = source === 'pinned' && repo === 'wickra-backtest' ? local(REGISTRY_PATH) : null
+    const v = lock && lockedVersion(lock, ['wickra-backtest-core', 'wickra-backtest'])
+    counts.registry = own ? parseRegistryCount(own) : v ? await registryAt(`v${v}`) : await latestRegistry()
   }
   if (counts.terminal == null && REPOS[repo] === 'terminal') {
     const tag = await latestTag('wickra-terminal')
@@ -428,28 +441,59 @@ export async function resolveCounts({ repo, root, source = 'latest', given = {} 
 
 // --- Files -----------------------------------------------------------------------
 
-export function trackedFiles(root, repo) {
-  const out = execFileSync('git', ['-C', root, 'ls-files', '-z'], { encoding: 'utf8', maxBuffer: 1 << 28 })
+/** The files a rule may read: tracked in the working tree, or in `ref`. */
+export function trackedFiles(root, repo, ref) {
+  const args = ref ? ['ls-tree', '-r', '-z', '--name-only', ref] : ['ls-files', '-z']
+  const out = execFileSync('git', ['-C', root, ...args], { encoding: 'utf8', maxBuffer: 1 << 28 })
   const excluded = new Set(EXCLUDE[repo] ?? [])
   return out.split('\0').filter((p) => p && !SKIP.test(p) && !excluded.has(p))
 }
 
-function readText(path) {
-  const buf = readFileSync(path)
+const asText = (buf) => {
   if (buf.includes(0)) return null // binary
   const text = buf.toString('utf8')
   return text.includes('�') ? null : text
 }
 
-export function syncRepo(root, repo, counts, { write }) {
+/** The contents of `paths` at `ref`, through one `git cat-file --batch`. */
+function readAtRef(root, ref, paths) {
+  const out = execFileSync('git', ['-C', root, 'cat-file', '--batch'], {
+    input: paths.map((p) => `${ref}:${p}\n`).join(''),
+    maxBuffer: 1 << 30,
+  })
+  const files = new Map()
+  let at = 0
+  for (const path of paths) {
+    const nl = out.indexOf(10, at)
+    const header = out.subarray(at, nl).toString('utf8')
+    at = nl + 1
+    const m = header.match(/^\S+ (\w+) (\d+)$/)
+    if (!m) continue // "<ref>:<path> missing"
+    const size = Number(m[2])
+    if (m[1] === 'blob') files.set(path, out.subarray(at, at + size))
+    at += size + 1
+  }
+  return files
+}
+
+/**
+ * Sync every tracked file of a checkout. With `ref` the files are read from
+ * that commit (e.g. origin/main after a fetch) and nothing is written: a check
+ * of what is published, whatever the working tree holds.
+ */
+export function syncRepo(root, repo, counts, { write, ref }) {
   const report = { edits: [], reviews: [], contradictions: [], loose: [] }
-  for (const rel of trackedFiles(root, repo)) {
+  const paths = trackedFiles(root, repo, ref)
+  const atRef = ref ? readAtRef(root, ref, paths) : null
+  for (const rel of paths) {
     const path = join(root, rel)
-    const text = existsSync(path) ? readText(path) : null
+    let text
+    if (atRef) text = atRef.has(rel) ? asText(atRef.get(rel)) : null
+    else text = existsSync(path) ? asText(readFileSync(path)) : null
     if (text == null) continue
     const res = syncText(text, { repo, counts })
     for (const key of Object.keys(report)) for (const item of res[key]) report[key].push({ file: rel, ...item })
-    if (write && res.text !== text) writeFileSync(path, res.text)
+    if (write && !ref && res.text !== text) writeFileSync(path, res.text)
   }
   return report
 }
@@ -471,6 +515,7 @@ function parseArgs(argv) {
     else if (a === '--stdin') args.stdin = true
     else if (a === '--print-counts') args.printCounts = true
     else if (a === '--json') args.json = next()
+    else if (a === '--ref') args.ref = next()
     else if (['--core', '--live', '--registry', '--terminal'].includes(a)) {
       const n = Number(next())
       if (!Number.isInteger(n) || n < 100) throw new Error(`${a} needs a count, got ${argv[i]}`)
@@ -480,13 +525,14 @@ function parseArgs(argv) {
   if (!args.repo) throw new Error('--repo is required')
   if (!REPOS[args.repo]) throw new Error(`unknown repository ${args.repo}: add it to REPOS in sync-counts.mjs`)
   if (!['latest', 'pinned'].includes(args.source)) throw new Error('--source is latest or pinned')
+  if (args.ref) args.check = true // a commit is read, never written
   return args
 }
 
 async function main() {
   const args = parseArgs(process.argv.slice(2))
   const root = resolve(args.root ?? '.')
-  const counts = await resolveCounts({ repo: args.repo, root, source: args.source, given: args.given })
+  const counts = await resolveCounts({ repo: args.repo, root, source: args.source, given: args.given, ref: args.ref })
 
   if (args.printCounts) {
     process.stdout.write(JSON.stringify(counts) + '\n')
@@ -501,7 +547,7 @@ async function main() {
     process.exit(res.contradictions.length ? 1 : 0)
   }
 
-  const report = syncRepo(root, args.repo, counts, { write: !args.check })
+  const report = syncRepo(root, args.repo, counts, { write: !args.check, ref: args.ref })
   const shown = Object.entries(counts)
     .map(([k, v]) => `${k} ${v}`)
     .join(', ')
