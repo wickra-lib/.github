@@ -97,13 +97,13 @@ latest published version; the docs column is its own documentation site.
     </tr>
     <tr>
       <td><a href="https://github.com/wickra-lib/wickra-genome"><strong>wickra-genome</strong></a></td>
-      <td>a vector database of the whole market: every asset a 514-dim live vector, for similarity search, clustering and anomaly detection</td>
+      <td>a vector database of the whole market: every asset a 495-dim live vector, for similarity search, clustering and anomaly detection</td>
       <td><a href="https://github.com/wickra-lib/wickra-genome/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-genome/release.svg" alt="release"></a></td>
       <td><a href="https://genome.wickra.org">genome.wickra.org</a></td>
     </tr>
     <tr>
       <td><a href="https://github.com/wickra-lib/wickra-feature-store"><strong>wickra-feature-store</strong></a></td>
-      <td>OHLCV and microstructure streams into ML-ready feature matrices over 514 O(1) streaming indicators</td>
+      <td>OHLCV and microstructure streams into ML-ready feature matrices over 495 O(1) streaming indicators</td>
       <td><a href="https://github.com/wickra-lib/wickra-feature-store/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-feature-store/release.svg" alt="release"></a></td>
       <td><a href="https://feature-store.wickra.org">feature-store.wickra.org</a></td>
     </tr>
@@ -130,13 +130,13 @@ latest published version; the docs column is its own documentation site.
     </tr>
     <tr>
       <td><a href="https://github.com/wickra-lib/wickra-screener"><strong>wickra-screener</strong></a></td>
-      <td>parallel multi-symbol screening over 514 streaming indicators</td>
+      <td>parallel multi-symbol screening over 495 streaming indicators</td>
       <td><a href="https://github.com/wickra-lib/wickra-screener/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-screener/release.svg" alt="release"></a></td>
       <td><a href="https://screener.wickra.org">screener.wickra.org</a></td>
     </tr>
     <tr>
       <td><a href="https://github.com/wickra-lib/wickra-darwin"><strong>wickra-darwin</strong></a></td>
-      <td>evolutionary strategy search at millions of backtests per second, mutating and crossing JSON specs across the 514-indicator space</td>
+      <td>evolutionary strategy search at millions of backtests per second, mutating and crossing JSON specs across the 495-indicator space</td>
       <td><a href="https://github.com/wickra-lib/wickra-darwin/releases/latest"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra-darwin/release.svg" alt="release"></a></td>
       <td><a href="https://darwin.wickra.org">darwin.wickra.org</a></td>
     </tr>
