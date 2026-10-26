@@ -162,6 +162,7 @@ const SKIP = new RegExp(
 // Per repository: files whose counts are history or examples rather than
 // statements about the catalogue today.
 const EXCLUDE = {
+  '.github': ['scripts/sync-counts.mjs', 'scripts/sync-counts.test.mjs'], // the rules and their fixtures
   wickra: [
     '.github/workflows/check-indicator-count.yml', // "it said 214 indicators" -- the bug it fixed
     'scripts/gen_python_stubs.py', // "72 of the 520 exported names" -- the bug it fixed
@@ -187,6 +188,10 @@ const COUNT_RE = new RegExp(NUM + TAIL, 'g')
 const BANNER_RE = /(wickra-banner\.(?:svg|webp)\?v=)(\d+)/g
 // wickra-core's FAMILIES test pins the catalogue size it adds up to.
 const FAMILIES_RE = /(assert_eq!\(total,\s*)(\d+)/g
+// wickra's README comparison table: the Wickra row states the catalogue twice,
+// as "yes, all N" and as a bare bold cell, with no "indicators" next to either.
+const WICKRA_ROW_RE = /^\|\s*\*\*★&nbsp;Wickra\*\*.*$/gm
+const ROW_COUNT_RE = /(?<=\ball )\d{3,4}\b|(?<=\|\s*\*\*)\d{3,4}(?=\*\*\s*\|)/g
 
 // The live demo, the org banner and the published catalogue -- including the
 // "the indicator core" row an ecosystem table gives wickra itself: always the
@@ -265,10 +270,16 @@ function syncLf(text, { repo, counts }) {
       const s = m.index + m[1].length
       hits.push({ start: s, end: s + m[2].length, value: m[2], cls: 'core', kind: 'families' })
     }
+    for (const row of text.matchAll(WICKRA_ROW_RE)) {
+      for (const m of row[0].matchAll(ROW_COUNT_RE)) {
+        const s = row.index + m.index
+        hits.push({ start: s, end: s + m[0].length, value: m[0], cls: 'core', kind: 'table' })
+      }
+    }
   }
   for (const m of text.matchAll(COUNT_RE)) {
     const s = m.index
-    if (hits.some((h) => s >= h.start && s < h.end)) continue
+    if (hits.some((h) => h.start < s + m[1].length && s < h.end)) continue
     const cls = classify(text, s, s + m[0].length, repoClass)
     hits.push({ start: s, end: s + m[1].length, value: m[1], cls, kind: 'count', phrase: m[0] })
   }
@@ -307,14 +318,21 @@ function syncLf(text, { repo, counts }) {
       const n = Number(m[1])
       if (!seen.has(m[1]) && !targets.some((c) => Math.abs(c - n) <= LOOSE_WINDOW)) continue
       if (covered.some(([a, b]) => m.index >= a && m.index < b)) continue
-      // Either side of a subset claim ("461 of the 514").
-      if (SUBSET_BEFORE_RE.test(text.slice(Math.max(0, m.index - 40), m.index))) continue
+      // The part side of a subset claim ("461 of the 514") is not a count.
       if (/^(?:\*\*)?\s+of\s+(?:the\s+)?\d/.test(text.slice(m.index + m[1].length, m.index + m[1].length + 12))) continue
       const ls = text.lastIndexOf('\n', m.index) + 1
       const le = text.indexOf('\n', m.index)
       const lineText = text.slice(ls, le < 0 ? undefined : le)
-      if (!/indicator/i.test(lineText)) continue
+      const onTopic = /indicator/i.test(lineText)
       const item = { line: lineOf(text, m.index), value: m[1], text: lineText.trim() }
+      // The whole side of a subset claim is a measurement to recount -- also
+      // when the sentence names the indicators on another line, as long as the
+      // whole is exactly a count.
+      if (SUBSET_BEFORE_RE.test(text.slice(Math.max(0, m.index - 40), m.index)) && (onTopic || targets.includes(n))) {
+        reviews.push(item)
+        continue
+      }
+      if (!onTopic) continue
       // wickra's own arithmetic over the catalogue (the class count without the
       // bar builders, a test's breakdown) moves with every indicator and is
       // recounted by the wiring, not renumbered: it is reported for review.

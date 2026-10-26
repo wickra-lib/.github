@@ -121,6 +121,18 @@ test('a CRLF checkout matches across line breaks and keeps its endings', () => {
   )
 })
 
+test('wickra\'s comparison table row is a core count', () => {
+  const row = '| **★&nbsp;Wickra**| **clean**   | **yes, all 514** | **Rust · R** | **514** | **yes** |'
+  assert.equal(sync('wickra', row).text, '| **★&nbsp;Wickra**| **clean**   | **yes, all 515** | **Rust · R** | **515** | **yes** |')
+})
+
+test('a subset claim without "indicators" after it is still reviewed', () => {
+  const text = 'All 514 indicators replay. Every binding calls into the same Rust core, so 461 of the 514 are bit-identical.'
+  const res = sync('wickra-docs', text)
+  assert.equal(res.reviews.length, 1)
+  assert.equal(res.text, text.replace('All 514', 'All 515'))
+})
+
 test('wickra pins the FAMILIES total', () => {
   assert.equal(sync('wickra', 'assert_eq!(total, 514, "FAMILIES total drifted");').text, 'assert_eq!(total, 515, "FAMILIES total drifted");')
 })
