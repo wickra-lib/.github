@@ -190,12 +190,13 @@ if (staticsMissing.length || staticsExtra.length) {
 
 // The static rows of every repository, resolved to {slug, label, message,
 // color, logo}. The indicator count is the one indicator-count.yml keeps in
-// profile/README.md, read the way gen-banner.mjs reads it, so the badge and
-// the banner can never disagree.
+// profile/README.md -- the banner's ?v= cache-buster, the published core
+// count -- read the way gen-banner.mjs reads it, so the badge and the banner
+// can never disagree.
 function staticRows() {
   const readme = readFileSync(resolve(root, 'profile/README.md'), 'utf-8')
-  const count = readme.match(/(\d+)\s+indicators/i)
-  if (!count) throw new Error('fetch-badges: could not find the indicator count in profile/README.md')
+  const count = readme.match(/wickra-banner\.svg\?v=(\d+)/)
+  if (!count) throw new Error('fetch-badges: could not find the banner cache-buster (wickra-banner.svg?v=N) in profile/README.md')
   const resolveBadge = (b) => {
     if (typeof b !== 'string') return b
     if (b === 'indicators') return indicators(count[1])

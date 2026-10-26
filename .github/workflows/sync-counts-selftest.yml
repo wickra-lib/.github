@@ -1,0 +1,36 @@
+name: Sync counts self-test
+
+# scripts/sync-counts.mjs rewrites indicator counts across the org from the
+# hourly bots here, in wickra-docs, in webpage and in every site, and from
+# ScriptHelpers on each release bump. A rule that misreads one phrasing would be
+# copied into dozens of pages before anyone read one, so the phrasings the org
+# carries are pinned in scripts/sync-counts.test.mjs and run before the script
+# changes land.
+on:
+  pull_request:
+    paths:
+      - scripts/sync-counts*.mjs
+      - .github/workflows/sync-counts-selftest.yml
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync-counts*.mjs
+      - .github/workflows/sync-counts-selftest.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: node --test scripts/sync-counts.test.mjs
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+      - run: node --test scripts/sync-counts.test.mjs

@@ -6,7 +6,7 @@
  * indicator. This keeps it honest, driven by the SAME count that
  * indicator-count.yml writes into profile/README.md:
  *
- *   1. read the canonical count from profile/README.md,
+ *   1. read the canonical count from profile/README.md (the banner's ?v=),
  *   2. build assets/wickra-banner.svg from it (banner-svg.mjs owns the layout
  *      and the library table),
  *   3. write profile/wickra-banner.svg, the banner the profile shows: the same
@@ -57,12 +57,15 @@ const font = {
   fontDirs: process.env.BANNER_FONT_DIR ? [process.env.BANNER_FONT_DIR] : [],
 }
 
-// 1. Canonical indicator count from the profile README (kept in sync by
-//    indicator-count.yml, which reads it out of wickra-lib/wickra).
+// 1. Canonical indicator count from the profile README: the banner's own ?v=
+//    cache-buster, which indicator-count.yml (scripts/sync-counts.mjs) sets to
+//    the core count of the latest wickra release. Not the first "N indicators"
+//    in the README: the product table also states the backtest registry's
+//    count, which is a different number.
 const readme = readFileSync(readmePath, 'utf-8')
-const match = readme.match(/(\d+)\s+indicators/i)
+const match = readme.match(/wickra-banner\.svg\?v=(\d+)/)
 if (!match) {
-  console.error('error: could not find the indicator count in profile/README.md')
+  console.error('error: could not find the banner cache-buster (wickra-banner.svg?v=N) in profile/README.md')
   process.exit(1)
 }
 const count = match[1]
