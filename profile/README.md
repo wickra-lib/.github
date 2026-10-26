@@ -306,7 +306,8 @@ No C compiler, no headers, no Rust toolchain required to install the native
 packages — pre-built on every supported platform. The C ABIs ship the same way:
 a ready-to-link header + shared/static library per platform on every release.
 
-**Supported versions, family-wide:** Rust 1.86 · Python 3.9 · Node.js 22 · WASM
+**Supported versions, family-wide:** Rust 1.86 (1.87 for wickra-exchange and the
+products built on it) · Python 3.9 · Node.js 22 · WASM
 (any modern engine) · C99 · C++17 · .NET 8 · Go 1.23 · Java 22 · R ≥ 4.1 — the
 [Requirements page](https://docs.wickra.org/Requirements) has the per-language
 detail, and each product's README its own.
