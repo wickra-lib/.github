@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-10-23T01:02:17Z",
+  "scanned_at": "2026-10-26T03:54:43Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 373,
-      "differing": 36
+      "differing": 39
     },
     "npm": {
       "total": 109,
@@ -1357,7 +1357,7 @@
         ],
         "wickra-copilot": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1380,7 +1380,7 @@
         ],
         "wickra-exchange": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1398,7 +1398,7 @@
         ],
         "wickra-genome": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1411,7 +1411,7 @@
         ],
         "wickra-gym": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1424,7 +1424,7 @@
         ],
         "wickra-impact": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1447,7 +1447,7 @@
         ],
         "wickra-radar": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1460,7 +1460,7 @@
         ],
         "wickra-screener": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1473,7 +1473,7 @@
         ],
         "wickra-shazam": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1495,7 +1495,7 @@
         ],
         "wickra-terminal": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -1507,7 +1507,7 @@
           "signature 3.0.0"
         ],
         "wickra-timemachine": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -2091,7 +2091,7 @@
         "version": "1.12.1",
         "requiredBy": [
           "http 1.5.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tungstenite 0.30.0"
         ]
       },
@@ -2897,7 +2897,7 @@
           "security-framework 3.7.0",
           "security-framework-sys 2.17.0",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -2980,7 +2980,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -3198,7 +3198,7 @@
         "version": "0.2.17",
         "requiredBy": [
           "futures-util 0.3.34",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -3730,7 +3730,7 @@
         "name": "socket2",
         "version": "0.6.5",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -3870,7 +3870,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "tokio-native-tls 0.3.1",
           "tokio-tungstenite 0.30.0",
@@ -3887,7 +3887,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -4210,7 +4210,7 @@
           "schannel 0.1.29",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -13809,7 +13809,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -13948,7 +13948,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -14031,7 +14031,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -14105,7 +14105,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -14155,9 +14155,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -14457,7 +14457,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -14594,7 +14594,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -14814,7 +14814,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -14895,7 +14895,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -14970,7 +14970,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -15055,7 +15055,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -15408,7 +15408,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -15862,7 +15862,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -15908,8 +15908,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -16062,7 +16062,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -16081,7 +16081,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -16508,7 +16508,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -16700,7 +16700,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -21300,7 +21300,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -21430,7 +21430,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -21506,7 +21506,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -21580,7 +21580,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -21612,9 +21612,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -21905,7 +21905,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -22042,7 +22042,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -22253,7 +22253,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -22333,7 +22333,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -22408,7 +22408,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -22484,7 +22484,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -22830,7 +22830,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -23239,7 +23239,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -23276,8 +23276,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -23423,7 +23423,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -23442,7 +23442,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -23839,7 +23839,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -24030,7 +24030,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -28358,7 +28358,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -28497,7 +28497,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -28573,7 +28573,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -28647,7 +28647,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -28697,9 +28697,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -29006,7 +29006,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -29143,7 +29143,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -29363,7 +29363,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -29444,7 +29444,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -29519,7 +29519,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -29604,7 +29604,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -29955,7 +29955,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -30405,7 +30405,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -30451,8 +30451,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -30595,7 +30595,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -30614,7 +30614,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -31041,7 +31041,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -31233,7 +31233,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -32384,7 +32384,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -32523,7 +32523,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -32599,7 +32599,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -32673,7 +32673,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -32723,9 +32723,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -33026,7 +33026,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -33170,7 +33170,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -33390,7 +33390,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -33471,7 +33471,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -33546,7 +33546,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -33631,7 +33631,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -33983,7 +33983,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -34436,7 +34436,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -34482,8 +34482,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -34626,7 +34626,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -34645,7 +34645,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -35072,7 +35072,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -35264,7 +35264,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -36436,7 +36436,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -36575,7 +36575,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -36651,7 +36651,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -36725,7 +36725,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -36757,9 +36757,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -37059,7 +37059,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -37196,7 +37196,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -37421,7 +37421,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -37501,7 +37501,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -37576,7 +37576,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -37661,7 +37661,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -38012,7 +38012,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -38450,7 +38450,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -38496,8 +38496,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -38639,7 +38639,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -38658,7 +38658,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -39065,7 +39065,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -39256,7 +39256,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -44021,7 +44021,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -44160,7 +44160,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -44236,7 +44236,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -44310,7 +44310,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -44342,9 +44342,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -44635,7 +44635,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -44772,7 +44772,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -44991,7 +44991,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -45071,7 +45071,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -45146,7 +45146,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -45231,7 +45231,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -45583,7 +45583,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -45979,7 +45979,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -46025,8 +46025,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -46164,7 +46164,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -46183,7 +46183,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -46610,7 +46610,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -46802,7 +46802,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -47960,7 +47960,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -48099,7 +48099,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -48175,7 +48175,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -48249,7 +48249,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -48299,9 +48299,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -48601,7 +48601,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -48738,7 +48738,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -48958,7 +48958,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -49039,7 +49039,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -49114,7 +49114,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -49199,7 +49199,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -49550,7 +49550,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -50000,7 +50000,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -50046,8 +50046,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -50190,7 +50190,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -50209,7 +50209,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -50636,7 +50636,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -50828,7 +50828,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -51979,7 +51979,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -52118,7 +52118,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -52194,7 +52194,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -52268,7 +52268,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -52318,9 +52318,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -52620,7 +52620,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -52757,7 +52757,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -52977,7 +52977,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -53058,7 +53058,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -53133,7 +53133,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -53218,7 +53218,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -53571,7 +53571,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -54028,7 +54028,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -54074,8 +54074,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -54227,7 +54227,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -54246,7 +54246,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -54673,7 +54673,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -54865,7 +54865,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -60882,7 +60882,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -61036,7 +61036,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -61130,7 +61130,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -61241,7 +61241,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -61291,9 +61291,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -61739,7 +61739,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "quinn-proto 0.11.18",
           "rand 0.10.3",
@@ -61892,7 +61892,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -62196,7 +62196,7 @@
           "termios 0.3.3",
           "termwiz 0.23.3",
           "time 0.3.55",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -62366,7 +62366,7 @@
         "requiredBy": [
           "crossterm 0.29.0",
           "signal-hook-mio 0.2.5",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -62478,7 +62478,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "euclid 0.22.14",
           "ordered-float 4.6.0",
           "plotters 0.3.7",
@@ -62721,7 +62721,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -63103,7 +63103,7 @@
         "version": "0.10.1",
         "requiredBy": [
           "chacha20 0.10.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -63667,7 +63667,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -63743,8 +63743,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -63988,7 +63988,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -64007,7 +64007,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -64592,7 +64592,7 @@
           "socket2 0.6.5",
           "tempfile 3.27.0",
           "termina 0.3.3",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },
@@ -64784,7 +64784,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -66026,7 +66026,7 @@
         "name": "cmov",
         "version": "0.5.4",
         "requiredBy": [
-          "ctutils 0.4.2"
+          "ctutils 0.4.6"
         ]
       },
       {
@@ -66102,7 +66102,7 @@
         "name": "cpubits",
         "version": "0.1.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5"
+          "crypto-bigint 0.7.9"
         ]
       },
       {
@@ -66165,7 +66165,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crypto-bigint",
-        "version": "0.7.5",
+        "version": "0.7.9",
         "requiredBy": [
           "elliptic-curve 0.14.1",
           "primefield 0.14.0",
@@ -66197,9 +66197,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctutils",
-        "version": "0.4.2",
+        "version": "0.4.6",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "digest 0.11.3",
           "sec1 0.8.1"
         ]
@@ -66444,7 +66444,7 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "tempfile 3.27.0",
           "wickra-timemachine-wasm 0.2.0"
@@ -66532,7 +66532,7 @@
         "version": "0.4.15",
         "requiredBy": [
           "block-buffer 0.12.1",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "sec1 0.8.1",
@@ -66723,7 +66723,7 @@
         "requiredBy": [
           "approx 0.5.1",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "rust_decimal 1.43.0",
@@ -67079,7 +67079,7 @@
         "name": "rand_core",
         "version": "0.10.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "crypto-common 0.2.2",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
@@ -67426,8 +67426,8 @@
         "name": "subtle",
         "version": "2.6.1",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
-          "ctutils 0.4.2",
+          "crypto-bigint 0.7.9",
+          "ctutils 0.4.6",
           "elliptic-curve 0.14.1",
           "ff 0.14.0",
           "group 0.14.0",
@@ -67806,7 +67806,7 @@
         "name": "zeroize",
         "version": "1.9.0",
         "requiredBy": [
-          "crypto-bigint 0.7.5",
+          "crypto-bigint 0.7.9",
           "der 0.8.2",
           "ecdsa 0.17.0",
           "elliptic-curve 0.14.1",
@@ -75677,7 +75677,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "risc0-zkvm 3.0.6",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tokio-util 0.7.19",
           "tower-http 0.6.11"
         ]
@@ -77405,7 +77405,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "wait-timeout 0.2.1"
         ]
       },
@@ -77658,7 +77658,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -78062,7 +78062,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "tokio-util 0.7.19",
           "tower 0.5.3",
           "tower-http 0.6.11",
@@ -79382,7 +79382,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.1"
+          "tokio 1.53.3"
         ]
       },
       {
@@ -79730,7 +79730,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.1",
+        "version": "1.53.3",
         "requiredBy": [
           "downloader 0.2.8",
           "hyper 1.11.1",
@@ -80351,7 +80351,7 @@
           "rustix 1.1.5",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.1",
+          "tokio 1.53.3",
           "winapi-util 0.1.11"
         ]
       },

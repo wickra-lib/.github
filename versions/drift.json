@@ -1,18 +1,18 @@
 {
- "scanned_at": "2026-10-23T01:04:47Z",
+ "scanned_at": "2026-10-26T03:57:22Z",
  "counts": {
   "defect": 0,
-  "drift": 0,
-  "explained": 7,
+  "drift": 1,
+  "explained": 6,
   "info": 74
  },
  "keys": [
+  "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify|1.87=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|1.90=wickra-zk",
   "decl:cargo|getrandom|0.2=wickra-feature-store,wickra-gym,wickra-strategy-ci,wickra-terminal,wickra-timemachine|0.3=wickra-terminal,wickra-timemachine|0.4=wickra-exchange,wickra-terminal,wickra-timemachine",
   "decl:ci-matrix|dotnet-version in ci.yml|10.0=wickra|8.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|pyodide-build.in=wickra-playground",
   "decl:toolchain|CMAKE_CXX_STANDARD|11=wickra-embed|17=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:toolchain|rust-version (crate)|1.86=wickra-pico|1.88=wickra-terminal|1.90=wickra-zk",
-  "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk",
   "decl:toolchain|TargetFramework|net10.0=wickra|net8.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:own|wickra-backtest-core|=0.2.0=wickra-benchmark,wickra-copilot,wickra-feature-store,wickra-genome,wickra-proof,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-verify|0.2.0",
   "decl:own|wickra-core|2.0=wickra-backtest,wickra-benchmark,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-timemachine|2.0.0",
@@ -90,6 +90,39 @@
   "lock:npm|picomatch|2.x=wickra-playground@package-lock.json|4.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web"
  ],
  "findings": [
+  {
+   "severity": "drift",
+   "kind": "decl:toolchain",
+   "subject": "rust-version (workspace)",
+   "detail": "1.86: 12 [backtest, benchmark, compile, darwin, embed, feature-store, pico, proof, strategy-ci, synth, verify, wickra] | 1.87: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray] | 1.90: 1 [zk]",
+   "repos": [
+    "wickra",
+    "wickra-backtest",
+    "wickra-benchmark",
+    "wickra-compile",
+    "wickra-copilot",
+    "wickra-darwin",
+    "wickra-embed",
+    "wickra-exchange",
+    "wickra-feature-store",
+    "wickra-genome",
+    "wickra-gym",
+    "wickra-impact",
+    "wickra-pico",
+    "wickra-proof",
+    "wickra-radar",
+    "wickra-screener",
+    "wickra-shazam",
+    "wickra-strategy-ci",
+    "wickra-synth",
+    "wickra-terminal",
+    "wickra-timemachine",
+    "wickra-verify",
+    "wickra-xray",
+    "wickra-zk"
+   ],
+   "key": "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify|1.87=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|1.90=wickra-zk"
+  },
   {
    "severity": "explained",
    "kind": "decl:cargo",
@@ -210,39 +243,6 @@
     "wickra-zk"
    ],
    "key": "decl:toolchain|rust-version (crate)|1.86=wickra-pico|1.88=wickra-terminal|1.90=wickra-zk"
-  },
-  {
-   "severity": "explained",
-   "kind": "decl:toolchain",
-   "subject": "rust-version (workspace)",
-   "detail": "1.86: 23 [backtest, benchmark, compile, copilot, darwin, embed, exchange, feature-store, genome, gym, impact, pico, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, xray] | 1.90: 1 [zk] -- wickra-zk's floor is 1.90 because risc0 needs it: risc0-binfmt 3.0.5 requires ruint 1.20.1, which declares rust-version 1.90. Every other workspace is on the family's 1.86.",
-   "repos": [
-    "wickra",
-    "wickra-backtest",
-    "wickra-benchmark",
-    "wickra-compile",
-    "wickra-copilot",
-    "wickra-darwin",
-    "wickra-embed",
-    "wickra-exchange",
-    "wickra-feature-store",
-    "wickra-genome",
-    "wickra-gym",
-    "wickra-impact",
-    "wickra-pico",
-    "wickra-proof",
-    "wickra-radar",
-    "wickra-screener",
-    "wickra-shazam",
-    "wickra-strategy-ci",
-    "wickra-synth",
-    "wickra-terminal",
-    "wickra-timemachine",
-    "wickra-verify",
-    "wickra-xray",
-    "wickra-zk"
-   ],
-   "key": "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk"
   },
   {
    "severity": "explained",
