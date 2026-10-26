@@ -13,11 +13,11 @@
   },
   {
     "key": "decl:toolchain|rust-version (crate)|1.86=wickra-pico|1.88=wickra-terminal|1.90=wickra-zk",
-    "reason": "pico's RP2040 firmware sits outside its workspace (own target and linker script) and states the family floor itself; terminal's TUI binary needs 1.88 for ratatui while its library stays on 1.86; zk's wasm binding, guest and guest builder are workspaces of their own and state zk's 1.90 themselves."
+    "reason": "pico's RP2040 firmware sits outside its workspace (own target and linker script) and states the family floor itself; terminal's TUI binary needs 1.88 for ratatui while its library stays on the workspace 1.87; zk's wasm binding, guest and guest builder are workspaces of their own and state zk's 1.90 themselves."
   },
   {
-    "key": "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray|1.90=wickra-zk",
-    "reason": "wickra-zk's floor is 1.90 because risc0 needs it: risc0-binfmt 3.0.5 requires ruint 1.20.1, which declares rust-version 1.90. Every other workspace is on the family's 1.86."
+    "key": "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify|1.87=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|1.90=wickra-zk",
+    "reason": "wickra-zk's floor is 1.90 because risc0 needs it: risc0-binfmt 3.0.5 requires ruint 1.20.1, which declares rust-version 1.90. wickra-exchange and the products built on it are on 1.87: p256 reaches crypto-bigint and ctutils, whose fixes for RUSTSEC-2026-0387 and RUSTSEC-2026-0385 declare rust-version 1.87, and every earlier crypto-bigint 0.7 release is yanked. Every other workspace is on the family's 1.86."
   },
   {
     "key": "decl:ci-matrix|dotnet-version in ci.yml|10.0=wickra|8.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
