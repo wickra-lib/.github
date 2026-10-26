@@ -68,6 +68,11 @@ test('registry products take the registry count wherever they are described', ()
 
 test('the terminal site takes the terminal count; the terminal keeps its own', () => {
   assert.equal(sync('wickra-terminal-site', 'tape and 455 streaming indicators').text, 'tape and 498 streaming indicators')
+  // "its registry" on the terminal site is the terminal's own.
+  assert.equal(
+    sync('wickra-terminal-site', 'panels driven by the 497 indicators its registry resolves — price').text,
+    'panels driven by the 498 indicators its registry resolves — price',
+  )
   const own = 'Every one of the **514** indicators and bar builders. 1 of the 504 indicators is not reachable.'
   const res = sync('wickra-terminal', own)
   assert.equal(res.text, own)
@@ -85,6 +90,9 @@ test('a registry count called the core\'s is a contradiction', () => {
   const res = sync('wickra-impact-site', 'A strategy\'s signals draw on any of the 514 indicators of the Wickra core.')
   assert.equal(res.contradictions.length, 1)
   assert.equal(sync('wickra-impact-site', 'Signals draw on the 514 indicators the backtest registry resolves.').contradictions.length, 0)
+  // The claim may wrap onto the next line of a list item.
+  const wrapped = '- **The same indicators.** A strategy\'s signals draw on the 514 indicators of the\n  Wickra core, exactly as a backtest would.'
+  assert.equal(sync('wickra-impact-site', wrapped).contradictions.length, 1)
 })
 
 test('numbers that are not counts are left alone', () => {

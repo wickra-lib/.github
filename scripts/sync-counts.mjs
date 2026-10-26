@@ -199,13 +199,28 @@ const ROW_COUNT_RE = /(?<=\ball )\d{3,4}\b|(?<=\|\s*\*\*)\d{3,4}(?=\*\*\s*\|)/g
 const LIVE_RE = /Binance|live\.wickra\.org|Live demos?\b|in your browser|in-browser|The indicator core\b/i
 // The one-line descriptions of the products that resolve through the backtest
 // registry, as they appear in every ecosystem list, table and family.json.
+// Not "registry resolves": the terminal has a registry of its own, and the
+// registry products' repositories take the registry count by class anyway.
 const REGISTRY_ROW_RE =
-  /screening over|matrices over|live vector|indicator space|condition tree over|data-driven conditions over|registry (?:resolves|indicators)/i
+  /screening over|matrices over|live vector|indicator space|condition tree over|data-driven conditions over/i
 // A measurement over the catalogue rather than its size.
 const SUBSET_BEFORE_RE = /(?:\b\d[\d,]*(?:\*\*)?\s+of\s+(?:the\s+)?|\bremaining\s+)(?:\*\*)?$/i
 // A registry count may not be called the core's.
-const CORE_CLAIM_RE =
-  /of the Wickra core\b|Wickra core's|from the Wickra core|indicators of \[`?wickra(?:-core)?`?\]|library's own|of the core\b|core's \d/i
+// Prose wraps, so any space in the phrase may be a line break (with the prefix
+// a wrapped list item or quote carries).
+const W = String.raw`(?:\s|>)+`
+const CORE_CLAIM_RE = new RegExp(
+  [
+    `of${W}the${W}Wickra${W}core\\b`,
+    `Wickra${W}core's`,
+    `from${W}the${W}Wickra${W}core`,
+    `indicators${W}of${W}\\[\`?wickra(?:-core)?\`?\\]`,
+    `library's${W}own`,
+    `of${W}the${W}core\\b`,
+    `core's${W}\\d`,
+  ].join('|'),
+  'i',
+)
 
 /** The sentence around [start, end): bounded by blank lines and sentence ends. */
 function sentenceAround(text, start, end) {
