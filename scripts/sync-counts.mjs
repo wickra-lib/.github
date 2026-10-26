@@ -186,8 +186,10 @@ const QUAL = String.raw`(?:O\(1\)|streaming(?:-first)?|technical|backtestable|Wi
 const TAIL = String.raw`(?:\*\*|<\/b>|<\/strong>)?(?:-(?:indicator|dim(?:ensional)?)\b|${GAP}(?:${QUAL}${GAP}){0,3}(?:indicators?\b|exported${GAP}types\b))`
 const COUNT_RE = new RegExp(NUM + TAIL, 'g')
 const BANNER_RE = /(wickra-banner\.(?:svg|webp)\?v=)(\d+)/g
-// wickra-core's FAMILIES test pins the catalogue size it adds up to.
-const FAMILIES_RE = /(assert_eq!\(total,\s*)(\d+)/g
+// Tests that pin the whole catalogue: wickra-core's FAMILIES test adds up to
+// it, and the R golden replay counts every indicator it checked (an R integer,
+// so the literal ends in L).
+const CATALOGUE_RES = [/(assert_eq!\(total,\s*)(\d+)/g, /(expect_equal\(checked,\s*)(\d+)(?=L\))/g]
 // wickra's README comparison table: the Wickra row states the catalogue twice,
 // as "yes, all N" and as a bare bold cell, with no "indicators" next to either.
 const WICKRA_ROW_RE = /^\|\s*\*\*★&nbsp;Wickra\*\*.*$/gm
@@ -281,9 +283,11 @@ function syncLf(text, { repo, counts }) {
     hits.push({ start: s, end: s + m[2].length, value: m[2], cls: 'live', kind: 'banner' })
   }
   if (repo === 'wickra') {
-    for (const m of text.matchAll(FAMILIES_RE)) {
-      const s = m.index + m[1].length
-      hits.push({ start: s, end: s + m[2].length, value: m[2], cls: 'core', kind: 'families' })
+    for (const re of CATALOGUE_RES) {
+      for (const m of text.matchAll(re)) {
+        const s = m.index + m[1].length
+        hits.push({ start: s, end: s + m[2].length, value: m[2], cls: 'core', kind: 'catalogue' })
+      }
     }
     for (const row of text.matchAll(WICKRA_ROW_RE)) {
       for (const m of row[0].matchAll(ROW_COUNT_RE)) {

@@ -141,8 +141,9 @@ test('a subset claim without "indicators" after it is still reviewed', () => {
   assert.equal(res.text, text.replace('All 514', 'All 515'))
 })
 
-test('wickra pins the FAMILIES total', () => {
+test('wickra pins the catalogue totals its tests assert', () => {
   assert.equal(sync('wickra', 'assert_eq!(total, 514, "FAMILIES total drifted");').text, 'assert_eq!(total, 515, "FAMILIES total drifted");')
+  assert.equal(sync('wickra', '  expect_equal(checked, 514L)').text, '  expect_equal(checked, 515L)')
 })
 
 test('counts are read the way their owners write them', () => {
