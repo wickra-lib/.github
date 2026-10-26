@@ -1,24 +1,817 @@
 {
-  "scanned_at": "2026-10-25T19:31:33Z",
+  "scanned_at": "2026-10-26T10:59:29Z",
   "repos": 77,
   "dependabot": [
     {
-      "repo": "wickra-backtest",
-      "number": 164,
-      "title": "deps(ci-pip): bump certifi from 2026.7.22 to 2026.10.19 in /.github/requirements",
-      "url": "https://github.com/wickra-lib/wickra-backtest/pull/164",
-      "created": "2026-10-24T04:00:47Z",
+      "repo": "wickra-copilot",
+      "number": 156,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/156",
+      "created": "2026-10-26T01:51:59Z",
       "failing": [],
-      "checks": 64
+      "checks": 67
     },
     {
-      "repo": "wickra-backtest",
-      "number": 163,
-      "title": "deps(ci-pip): bump pillow from 12.3.0 to 13.0.0 in /.github/requirements",
-      "url": "https://github.com/wickra-lib/wickra-backtest/pull/163",
-      "created": "2026-10-23T15:59:12Z",
+      "repo": "wickra-copilot",
+      "number": 155,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/155",
+      "created": "2026-10-26T01:43:49Z",
       "failing": [],
-      "checks": 64
+      "checks": 65
+    },
+    {
+      "repo": "wickra-copilot",
+      "number": 154,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/154",
+      "created": "2026-10-26T01:43:29Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-copilot",
+      "number": 153,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/153",
+      "created": "2026-10-26T01:42:51Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-copilot",
+      "number": 152,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/152",
+      "created": "2026-10-26T01:42:17Z",
+      "failing": [
+        "ci-ok",
+        "Node 24 on ubuntu-latest",
+        "Node 24 on windows-latest",
+        "Node 24 on macos-latest",
+        "Node 22 on macos-latest",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Node 22 on windows-latest",
+        "Test (windows-latest, --no-default-features)",
+        "Examples",
+        "Node 22 on ubuntu-latest",
+        "Test (windows-latest, --all-features)",
+        "Test (macos-latest, --no-default-features)",
+        "Test (ubuntu-latest, --all-features)",
+        "Test (macos-latest, --all-features)",
+        "MSRV node (1.88)",
+        "Format & Clippy"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-copilot",
+      "number": 151,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/151",
+      "created": "2026-10-26T01:41:22Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 274,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/274",
+      "created": "2026-10-26T01:31:37Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 273,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/273",
+      "created": "2026-10-26T01:27:03Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 272,
+      "title": "deps(cargo): bump the cargo group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/272",
+      "created": "2026-10-26T01:26:17Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 271,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/271",
+      "created": "2026-10-26T01:25:49Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 270,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/270",
+      "created": "2026-10-26T01:25:41Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 269,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/269",
+      "created": "2026-10-26T01:25:31Z",
+      "failing": [
+        "ci-ok",
+        "Node 24 on windows-latest",
+        "Test (windows-latest)",
+        "Node 22 on macos-latest",
+        "Node 24 on ubuntu-latest",
+        "Node 24 on macos-latest",
+        "Test (macos-latest)",
+        "Node 22 on ubuntu-latest",
+        "Node 22 on windows-latest",
+        "Test (ubuntu-latest)",
+        "MSRV node binding (1.88)",
+        "Format & Clippy"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 100,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/100",
+      "created": "2026-10-26T01:42:30Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 99,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/99",
+      "created": "2026-10-26T01:36:55Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 98,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/98",
+      "created": "2026-10-26T01:33:42Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 97,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/97",
+      "created": "2026-10-26T01:32:25Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 96,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/96",
+      "created": "2026-10-26T01:32:22Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 95,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/95",
+      "created": "2026-10-26T01:31:51Z",
+      "failing": [
+        "ci-ok",
+        "Node 24 on ubuntu-latest",
+        "Examples",
+        "Test (macos-latest, --no-default-features)",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Test (ubuntu-latest, --all-features)",
+        "Test (windows-latest, --all-features)",
+        "Node 24 on macos-latest",
+        "Node 22 on windows-latest",
+        "Node 22 on ubuntu-latest",
+        "Test (macos-latest, --all-features)",
+        "Node 22 on macos-latest",
+        "Node 24 on windows-latest",
+        "Test (windows-latest, --no-default-features)",
+        "Format & Clippy",
+        "MSRV node (1.88)"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 97,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/97",
+      "created": "2026-10-26T01:21:24Z",
+      "failing": [
+        "ci-ok",
+        "C ABI on macos-latest"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 96,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/96",
+      "created": "2026-10-26T01:20:24Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 95,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/95",
+      "created": "2026-10-26T01:20:23Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 94,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/94",
+      "created": "2026-10-26T01:20:04Z",
+      "failing": [
+        "ci-ok",
+        "Examples",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Test (macos-latest, --all-features)",
+        "Node 24 on ubuntu-latest",
+        "Test (windows-latest, --all-features)",
+        "Node 22 on ubuntu-latest",
+        "Node 24 on macos-latest",
+        "MSRV node (1.88)",
+        "Node 22 on windows-latest",
+        "Test (windows-latest, --no-default-features)",
+        "Test (macos-latest, --no-default-features)",
+        "Node 22 on macos-latest",
+        "Node 24 on windows-latest",
+        "Test (ubuntu-latest, --all-features)",
+        "Format & Clippy"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 93,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/93",
+      "created": "2026-10-26T01:19:28Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 92,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/92",
+      "created": "2026-10-26T01:16:46Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 106,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/106",
+      "created": "2026-10-26T01:39:09Z",
+      "failing": [
+        "ci-ok",
+        "C ABI on macos-latest"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 105,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/105",
+      "created": "2026-10-26T01:34:58Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 104,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/104",
+      "created": "2026-10-26T01:34:57Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 103,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/103",
+      "created": "2026-10-26T01:33:40Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 102,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/102",
+      "created": "2026-10-26T01:33:17Z",
+      "failing": [
+        "ci-ok",
+        "Node 24 on ubuntu-latest",
+        "Examples",
+        "Node 24 on macos-latest",
+        "Node 22 on macos-latest",
+        "Node 22 on windows-latest",
+        "Test (windows-latest, --all-features)",
+        "Test (macos-latest, --no-default-features)",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Node 22 on ubuntu-latest",
+        "Test (windows-latest, --no-default-features)",
+        "Format & Clippy",
+        "MSRV node (1.88)",
+        "Test (ubuntu-latest, --all-features)",
+        "Test (macos-latest, --all-features)",
+        "Node 24 on windows-latest"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 101,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/101",
+      "created": "2026-10-26T01:32:52Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 149,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/149",
+      "created": "2026-10-26T01:19:52Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 148,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/148",
+      "created": "2026-10-26T01:16:19Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 147,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/147",
+      "created": "2026-10-26T01:13:24Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 146,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/146",
+      "created": "2026-10-26T01:12:57Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 145,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/145",
+      "created": "2026-10-26T01:11:13Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 144,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/144",
+      "created": "2026-10-26T01:10:50Z",
+      "failing": [
+        "ci-ok",
+        "Test (macos-latest, --no-default-features)",
+        "Test (windows-latest, --no-default-features)",
+        "Test (ubuntu-latest, --all-features)",
+        "Test (windows-latest, --all-features)",
+        "Node 22 on ubuntu-latest",
+        "Node 22 on windows-latest",
+        "Test (macos-latest, --all-features)",
+        "Node 24 on windows-latest",
+        "Node 22 on macos-latest",
+        "Node 24 on macos-latest",
+        "Node 24 on ubuntu-latest",
+        "MSRV node (1.88)",
+        "Examples",
+        "Format & Clippy",
+        "Test (ubuntu-latest, --no-default-features)"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 222,
+      "title": "deps(actions): bump the github-actions group with 13 updates",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/222",
+      "created": "2026-10-26T03:09:38Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 221,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/221",
+      "created": "2026-10-26T03:05:20Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 220,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/220",
+      "created": "2026-10-26T03:03:34Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 219,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/219",
+      "created": "2026-10-26T03:00:18Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 218,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/218",
+      "created": "2026-10-26T02:59:03Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 217,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/217",
+      "created": "2026-10-26T02:58:30Z",
+      "failing": [
+        "ci-ok",
+        "Examples",
+        "Test (macos-latest, --no-default-features)",
+        "Test (windows-latest, --all-features)",
+        "Node 24 on macos-latest",
+        "Test (ubuntu-latest, --all-features)",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Test (windows-latest, --no-default-features)",
+        "Node 24 on windows-latest",
+        "Test (macos-latest, --all-features)",
+        "Node 22 on macos-latest",
+        "Format & Clippy",
+        "Node 24 on ubuntu-latest",
+        "Node 22 on ubuntu-latest",
+        "Node 22 on windows-latest",
+        "MSRV node (1.88)"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 154,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/154",
+      "created": "2026-10-26T04:26:55Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 153,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/153",
+      "created": "2026-10-26T04:23:57Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 152,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/152",
+      "created": "2026-10-26T04:20:12Z",
+      "failing": [
+        "ci-ok",
+        "Examples"
+      ],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 151,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/151",
+      "created": "2026-10-26T04:19:56Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 150,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/150",
+      "created": "2026-10-26T04:18:03Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 149,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/149",
+      "created": "2026-10-26T04:16:56Z",
+      "failing": [
+        "ci-ok",
+        "Node 24 on ubuntu-latest",
+        "Node 22 on windows-latest",
+        "Node 24 on macos-latest",
+        "Node 24 on windows-latest",
+        "Node 22 on macos-latest",
+        "Test (macos-latest, --all-features)",
+        "Test (ubuntu-latest, --all-features)",
+        "Node 22 on ubuntu-latest",
+        "Test (macos-latest, --no-default-features)",
+        "Examples",
+        "Format & Clippy",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Test (windows-latest, --no-default-features)",
+        "Test (windows-latest, --all-features)",
+        "MSRV node (1.88)"
+      ],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 161,
+      "title": "deps(actions): bump the github-actions group with 13 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/161",
+      "created": "2026-10-26T04:17:38Z",
+      "failing": [],
+      "checks": 71
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 160,
+      "title": "deps(web): bump the web group in /web with 4 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/160",
+      "created": "2026-10-26T04:14:38Z",
+      "failing": [
+        "ci-ok",
+        "Web renderer"
+      ],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 159,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/159",
+      "created": "2026-10-26T04:13:39Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 158,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/158",
+      "created": "2026-10-26T04:12:41Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 157,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/157",
+      "created": "2026-10-26T04:05:12Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 156,
+      "title": "deps(cargo): bump the cargo group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/156",
+      "created": "2026-10-26T04:05:07Z",
+      "failing": [],
+      "checks": 71
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 155,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/155",
+      "created": "2026-10-26T04:04:24Z",
+      "failing": [
+        "ci-ok",
+        "Node 24 on ubuntu-latest",
+        "Node 24 on macos-latest",
+        "Node 22 on macos-latest",
+        "Node 24 on windows-latest",
+        "Node 22 on ubuntu-latest",
+        "Node 22 on windows-latest",
+        "Format & Clippy (macos-latest)",
+        "Format & Clippy (ubuntu-latest)",
+        "Format & Clippy (windows-latest)",
+        "Test (windows-latest)",
+        "Test (macos-latest)",
+        "Test (ubuntu-latest)",
+        "MSRV node + tui (1.88)"
+      ],
+      "checks": 71
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 100,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/100",
+      "created": "2026-10-26T04:37:01Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 99,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/99",
+      "created": "2026-10-26T04:34:19Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 98,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/98",
+      "created": "2026-10-26T04:30:57Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 97,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/97",
+      "created": "2026-10-26T04:28:12Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 96,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/96",
+      "created": "2026-10-26T04:27:40Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 95,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/95",
+      "created": "2026-10-26T04:27:11Z",
+      "failing": [
+        "ci-ok",
+        "Test (windows-latest, --no-default-features)",
+        "Examples",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Node 24 on macos-latest",
+        "Test (macos-latest, --all-features)",
+        "Test (ubuntu-latest, --all-features)",
+        "Node 22 on ubuntu-latest",
+        "Node 24 on ubuntu-latest",
+        "Node 22 on windows-latest",
+        "Node 24 on windows-latest",
+        "Test (windows-latest, --all-features)",
+        "Node 22 on macos-latest",
+        "Test (macos-latest, --no-default-features)",
+        "Format & Clippy",
+        "MSRV node (1.88)"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 187,
+      "title": "deps(actions): bump the github-actions group with 13 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/187",
+      "created": "2026-10-26T05:13:37Z",
+      "failing": [
+        "ci-ok",
+        "C ABI on macos-latest"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 186,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/186",
+      "created": "2026-10-26T05:09:09Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 185,
+      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/185",
+      "created": "2026-10-26T05:06:51Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 184,
+      "title": "deps(web): bump typescript from 6.0.3 to 7.0.2 in /web in the web group",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/184",
+      "created": "2026-10-26T05:03:54Z",
+      "failing": [
+        "ci-ok",
+        "Web renderer"
+      ],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 183,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/183",
+      "created": "2026-10-26T05:02:37Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 182,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/182",
+      "created": "2026-10-26T05:01:01Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 181,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/181",
+      "created": "2026-10-26T05:00:36Z",
+      "failing": [
+        "ci-ok",
+        "Node 22 on ubuntu-latest",
+        "Test (ubuntu-latest, --all-features)",
+        "Test (windows-latest, --all-features)",
+        "Node 24 on ubuntu-latest",
+        "Test (macos-latest, --no-default-features)",
+        "Test (windows-latest, --no-default-features)",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Node 22 on windows-latest",
+        "Format & Clippy",
+        "Examples",
+        "Node 24 on macos-latest",
+        "Test (macos-latest, --all-features)",
+        "Node 22 on macos-latest",
+        "Node 24 on windows-latest",
+        "MSRV node (1.88)"
+      ],
+      "checks": 68
     }
   ],
   "waiting": 0,
@@ -51,817 +844,6 @@
       "created": "2026-09-28T01:55:14Z"
     }
   ],
-  "alerts": [
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 92,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/92",
-      "created": "2026-10-24T03:59:27Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: Heap buffer overflow in FlashPix (FPX) JPEG decoding leads to code execution"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 83,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/83",
-      "created": "2026-10-24T03:59:24Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow multi-frame loaders can reuse stale native image storage after mode transitions"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 78,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/78",
-      "created": "2026-10-24T03:59:22Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Heap buffer overflow in _tiffWriteProc when saving TIFF to BytesIO"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 61,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/61",
-      "created": "2026-10-24T03:59:17Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Argument Injection in Ghostscript call, potentially leading into RCE"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 60,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/60",
-      "created": "2026-10-24T03:59:16Z",
-      "title": "certifi in .github/requirements/bench.txt: certifi bundles emSign root CAs with compromised intermediate CA keys"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 59,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/59",
-      "created": "2026-10-24T03:59:15Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: Heap buffer overflow in FlashPix (FPX) JPEG decoding leads to code execution"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 50,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/50",
-      "created": "2026-10-24T03:59:13Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow multi-frame loaders can reuse stale native image storage after mode transitions"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 45,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/45",
-      "created": "2026-10-24T03:59:11Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Heap buffer overflow in _tiffWriteProc when saving TIFF to BytesIO"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 28,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/28",
-      "created": "2026-10-24T03:59:05Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Argument Injection in Ghostscript call, potentially leading into RCE"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 19,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/19",
-      "created": "2026-10-24T03:59:01Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Heap buffer overflow in ImagingJpegDecode"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 18,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/18",
-      "created": "2026-10-24T03:59:01Z",
-      "title": "certifi in .github/requirements/bench.in: certifi bundles emSign root CAs with compromised intermediate CA keys"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "critical",
-      "number": 10,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/10",
-      "created": "2026-10-23T15:57:38Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Heap buffer overflow in ImagingJpegDecode"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 90,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/90",
-      "created": "2026-10-24T03:59:26Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: Bundled libopenjp2 2.5.4 in all wheels since 11.1.0 carries OSV-2025-219 heap-buffer-overflow write reachable from Image.open().load()"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 89,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/89",
-      "created": "2026-10-24T03:59:26Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Heap buffer overflow writing JPEG comment after ICC profile fills buffer"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 88,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/88",
-      "created": "2026-10-24T03:59:25Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Heap over-read in WMF/EMF rendering via 16-bit dimension truncation (Windows builds)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 87,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/87",
-      "created": "2026-10-24T03:59:25Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: PNG eXIf chunk makes EXIF parsing run in quadratic time"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 86,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/86",
-      "created": "2026-10-24T03:59:25Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: TarIO negative size field causes infinite CPU-spin loop"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 84,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/84",
-      "created": "2026-10-24T03:59:24Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow PDF append accepts malformed shared page-tree DAG causing resource exhaustion"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 81,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/81",
-      "created": "2026-10-24T03:59:23Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: Decompression bomb check bypass in SpiderImagePlugin.seek() leads to unbounded allocation DoS"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 79,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/79",
-      "created": "2026-10-24T03:59:22Z",
-      "title": "Pillow in .github/requirements/bench.txt:  Pillow: Memory disclosure and segfault in libtiff encoder via crafted TIFF tags"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 76,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/76",
-      "created": "2026-10-24T03:59:21Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Infinite loop in PdfParser.rewrite_pages on page tree Parent cycle"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 75,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/75",
-      "created": "2026-10-24T03:59:21Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: APNG background disposal allocates full canvas before decompression bomb check"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 74,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/74",
-      "created": "2026-10-24T03:59:21Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: MSP RLE decoder expands a tiny file into unbounded memory"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 73,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/73",
-      "created": "2026-10-24T03:59:20Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Quadratic-time DoS in PDF save_all (PdfParser.next_object_id)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 68,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/68",
-      "created": "2026-10-24T03:59:19Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Infinite loop in MIC n_frames when the embedded TIFF"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 66,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/66",
-      "created": "2026-10-24T03:59:18Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: NULL dereference in ImagingExpand via rank filters on zero-size images"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 65,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/65",
-      "created": "2026-10-24T03:59:18Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: NULL pointer dereference in Image.merge via an unvalidated band 0"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 64,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/64",
-      "created": "2026-10-24T03:59:18Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: Invalid free in FreeType glyph rendering when a stroker is active"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 63,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/63",
-      "created": "2026-10-24T03:59:17Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Double free in ImagingScaleAffine on calloc failure via Image.transform"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 57,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/57",
-      "created": "2026-10-24T03:59:15Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: Bundled libopenjp2 2.5.4 in all wheels since 11.1.0 carries OSV-2025-219 heap-buffer-overflow write reachable from Image.open().load()"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 56,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/56",
-      "created": "2026-10-24T03:59:14Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Heap buffer overflow writing JPEG comment after ICC profile fills buffer"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 55,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/55",
-      "created": "2026-10-24T03:59:14Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Heap over-read in WMF/EMF rendering via 16-bit dimension truncation (Windows builds)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 54,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/54",
-      "created": "2026-10-24T03:59:14Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: PNG eXIf chunk makes EXIF parsing run in quadratic time"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 53,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/53",
-      "created": "2026-10-24T03:59:13Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: TarIO negative size field causes infinite CPU-spin loop"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 51,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/51",
-      "created": "2026-10-24T03:59:13Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow PDF append accepts malformed shared page-tree DAG causing resource exhaustion"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 48,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/48",
-      "created": "2026-10-24T03:59:12Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: Decompression bomb check bypass in SpiderImagePlugin.seek() leads to unbounded allocation DoS"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 46,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/46",
-      "created": "2026-10-24T03:59:11Z",
-      "title": "Pillow in .github/requirements/bench.in:  Pillow: Memory disclosure and segfault in libtiff encoder via crafted TIFF tags"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 43,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/43",
-      "created": "2026-10-24T03:59:10Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Infinite loop in PdfParser.rewrite_pages on page tree Parent cycle"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 42,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/42",
-      "created": "2026-10-24T03:59:10Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: APNG background disposal allocates full canvas before decompression bomb check"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 41,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/41",
-      "created": "2026-10-24T03:59:09Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: MSP RLE decoder expands a tiny file into unbounded memory"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 40,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/40",
-      "created": "2026-10-24T03:59:09Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Quadratic-time DoS in PDF save_all (PdfParser.next_object_id)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 35,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/35",
-      "created": "2026-10-24T03:59:07Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Infinite loop in MIC n_frames when the embedded TIFF"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 33,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/33",
-      "created": "2026-10-24T03:59:07Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: NULL dereference in ImagingExpand via rank filters on zero-size images"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 32,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/32",
-      "created": "2026-10-24T03:59:06Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: NULL pointer dereference in Image.merge via an unvalidated band 0"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 31,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/31",
-      "created": "2026-10-24T03:59:06Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: Invalid free in FreeType glyph rendering when a stroker is active"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 30,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/30",
-      "created": "2026-10-24T03:59:05Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Double free in ImagingScaleAffine on calloc failure via Image.transform"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 27,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/27",
-      "created": "2026-10-24T03:59:04Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Out-of-bounds access in _imagingmorph on a zero-width image"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 26,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/26",
-      "created": "2026-10-24T03:59:04Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: GIF seek keeps rejected size after DecompressionBombError, allowing DoS"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 24,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/24",
-      "created": "2026-10-24T03:59:03Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: TiffDecode returns uninitialized memory as pixels for short JPEG strips"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 23,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/23",
-      "created": "2026-10-24T03:59:03Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: TIFF encoder ColorMap plane-size mismatch causes a heap out-of-bounds read"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 22,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/22",
-      "created": "2026-10-24T03:59:03Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: Unbounded recursion parsing a PDF page tree or trailer chain (incomplete fix for CVE-2026-42310)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 20,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/20",
-      "created": "2026-10-24T03:59:02Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: OOB read in TiffDecode.c tile and RGBA paths leaks heap memory into pixels"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 16,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/16",
-      "created": "2026-10-23T18:08:42Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: Unbounded recursion parsing a PDF page tree or trailer chain (incomplete fix for CVE-2026-42310)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 15,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/15",
-      "created": "2026-10-23T18:03:23Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: TiffDecode returns uninitialized memory as pixels for short JPEG strips"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 14,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/14",
-      "created": "2026-10-23T17:16:02Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: OOB read in TiffDecode.c tile and RGBA paths leaks heap memory into pixels"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 12,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/12",
-      "created": "2026-10-23T17:04:44Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: GIF seek keeps rejected size after DecompressionBombError, allowing DoS"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 11,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/11",
-      "created": "2026-10-23T16:41:39Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: TIFF encoder ColorMap plane-size mismatch causes a heap out-of-bounds read"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 9,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/9",
-      "created": "2026-10-23T15:57:27Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Out-of-bounds access in _imagingmorph on a zero-width image"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "Dependabot",
-      "severity": "high",
-      "number": 12,
-      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/12",
-      "created": "2026-10-21T02:55:19Z",
-      "title": "vite in web/package-lock.json: launch-editor: `fs.existsSync()` existence check can be bypassed on Windows"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 16,
-      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/16",
-      "created": "2026-10-24T18:30:33Z",
-      "title": "vite in web/package-lock.json: Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 14,
-      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/14",
-      "created": "2026-10-24T18:25:38Z",
-      "title": "vite in web/package-lock.json: Vite: First 4 bytes of files outside of `server.fs` setting is exposed by `?vite-wasm-instance`"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 91,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/91",
-      "created": "2026-10-24T03:59:26Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Arrow export leaks stale heap memory when PILLOW_ALIGNMENT > 1"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 85,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/85",
-      "created": "2026-10-24T03:59:24Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: Reachable undefined behavior in native integer operations, potentially leading to denial of service or logic integrity compromise"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 82,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/82",
-      "created": "2026-10-24T03:59:23Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: BMP RLE decoder memory-amplification DoS via unbounded delta escape / absolute mode"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 80,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/80",
-      "created": "2026-10-24T03:59:23Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Decompression-bomb protection bypass via multi-frame seek() in MPO and DCX (MpoImageFile.seek / DcxImageFile.seek)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 77,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/77",
-      "created": "2026-10-24T03:59:22Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: Heap use-after-free when encoding TIFF to an in-memory buffer"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 72,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/72",
-      "created": "2026-10-24T03:59:20Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: PdfParser can recurse without limit in get_value() and linearize_page_tree()"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 71,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/71",
-      "created": "2026-10-24T03:59:20Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: ReDoS in XbmImagePlugin: 512-byte file stalls Image.open() for minutes"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 70,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/70",
-      "created": "2026-10-24T03:59:19Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Image.quantize() with empty palette leaks uninitialized stack memory"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 69,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/69",
-      "created": "2026-10-24T03:59:19Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: Quadratic GIF comment concatenation allows DoS in Image.open()"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 67,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/67",
-      "created": "2026-10-24T03:59:18Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow: Quadratic GIF comment copying during save"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 62,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/62",
-      "created": "2026-10-24T03:59:17Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: P;2L and P;4L decoders may read 1 to 3 bytes past the passed buffer size"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 58,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/58",
-      "created": "2026-10-24T03:59:15Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Arrow export leaks stale heap memory when PILLOW_ALIGNMENT > 1"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 52,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/52",
-      "created": "2026-10-24T03:59:13Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: Reachable undefined behavior in native integer operations, potentially leading to denial of service or logic integrity compromise"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 49,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/49",
-      "created": "2026-10-24T03:59:12Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: BMP RLE decoder memory-amplification DoS via unbounded delta escape / absolute mode"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 47,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/47",
-      "created": "2026-10-24T03:59:12Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Decompression-bomb protection bypass via multi-frame seek() in MPO and DCX (MpoImageFile.seek / DcxImageFile.seek)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 44,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/44",
-      "created": "2026-10-24T03:59:10Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: Heap use-after-free when encoding TIFF to an in-memory buffer"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 39,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/39",
-      "created": "2026-10-24T03:59:09Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: PdfParser can recurse without limit in get_value() and linearize_page_tree()"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 38,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/38",
-      "created": "2026-10-24T03:59:08Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: ReDoS in XbmImagePlugin: 512-byte file stalls Image.open() for minutes"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 37,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/37",
-      "created": "2026-10-24T03:59:08Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Image.quantize() with empty palette leaks uninitialized stack memory"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 36,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/36",
-      "created": "2026-10-24T03:59:08Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: Quadratic GIF comment concatenation allows DoS in Image.open()"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 34,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/34",
-      "created": "2026-10-24T03:59:07Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow: Quadratic GIF comment copying during save"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 29,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/29",
-      "created": "2026-10-24T03:59:05Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: P;2L and P;4L decoders may read 1 to 3 bytes past the passed buffer size"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 25,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/25",
-      "created": "2026-10-24T03:59:04Z",
-      "title": "Pillow in .github/requirements/bench.in: Pillow: EPS load(scale) lets Ghostscript render past the decompression bomb limit"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 21,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/21",
-      "created": "2026-10-24T03:59:02Z",
-      "title": "pillow in .github/requirements/bench.in: Pillow tiled-TIFF decoder reads past tile buffer in copy4 (Unpack.c:1290)"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 17,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/17",
-      "created": "2026-10-23T18:10:31Z",
-      "title": "Pillow in .github/requirements/bench.txt: Pillow: EPS load(scale) lets Ghostscript render past the decompression bomb limit"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 13,
-      "url": "https://github.com/wickra-lib/wickra-backtest/security/dependabot/13",
-      "created": "2026-10-23T17:13:56Z",
-      "title": "pillow in .github/requirements/bench.txt: Pillow tiled-TIFF decoder reads past tile buffer in copy4 (Unpack.c:1290)"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 13,
-      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/13",
-      "created": "2026-10-21T03:05:01Z",
-      "title": "vite in web/package-lock.json: launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 11,
-      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/11",
-      "created": "2026-10-20T21:33:51Z",
-      "title": "vite in web/package-lock.json: launch-editor: escapeCmdArgs() omits % escaping on Windows"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "Dependabot",
-      "severity": "low",
-      "number": 15,
-      "url": "https://github.com/wickra-lib/wickra-xray/security/dependabot/15",
-      "created": "2026-10-24T18:28:31Z",
-      "title": "vite in web/package-lock.json: Vite: Cross origin script execution through Vite custom middleware"
-    }
-  ],
+  "alerts": [],
   "unreadable": []
 }
