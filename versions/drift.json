@@ -1,8 +1,8 @@
 {
- "scanned_at": "2026-10-27T00:27:40Z",
+ "scanned_at": "2026-10-27T06:28:25Z",
  "counts": {
   "defect": 0,
-  "drift": 18,
+  "drift": 21,
   "explained": 7,
   "info": 80
  },
@@ -25,6 +25,9 @@
   "decl:dotnet|Microsoft.NET.Test.Sdk|18.10.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|18.11.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
   "decl:dotnet|xunit.runner.visualstudio|4.0.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|4.0.1=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
   "decl:maven|plugin org.sonatype.central:central-publishing-maven-plugin|0.11.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|0.12.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:npm|@vitejs/plugin-vue|^6.0.10=wickra-terminal|^6.0.9=wickra-playground,wickra-xray",
+  "decl:npm|vue|^3.5.43=wickra-playground,wickra-xray|^3.5.44=wickra-terminal",
+  "decl:npm|vue-tsc|^3.3.11=wickra-playground,wickra-xray|^3.3.13=wickra-terminal",
   "decl:cargo|getrandom|0.2=wickra-feature-store,wickra-gym,wickra-strategy-ci,wickra-terminal,wickra-timemachine|0.3=wickra-terminal,wickra-timemachine|0.4=wickra-exchange,wickra-terminal,wickra-timemachine",
   "decl:ci-matrix|dotnet-version in ci.yml|10.0=wickra|8.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|pyodide-build.in=wickra-playground",
@@ -694,6 +697,42 @@
     "wickra-zk"
    ],
    "key": "decl:maven|plugin org.sonatype.central:central-publishing-maven-plugin|0.11.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|0.12.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
+  },
+  {
+   "severity": "drift",
+   "kind": "decl:npm",
+   "subject": "@vitejs/plugin-vue",
+   "detail": "^6.0.9: 2 [playground, xray] | ^6.0.10: 1 [terminal]",
+   "repos": [
+    "wickra-playground",
+    "wickra-terminal",
+    "wickra-xray"
+   ],
+   "key": "decl:npm|@vitejs/plugin-vue|^6.0.10=wickra-terminal|^6.0.9=wickra-playground,wickra-xray"
+  },
+  {
+   "severity": "drift",
+   "kind": "decl:npm",
+   "subject": "vue",
+   "detail": "^3.5.43: 2 [playground, xray] | ^3.5.44: 1 [terminal]",
+   "repos": [
+    "wickra-playground",
+    "wickra-terminal",
+    "wickra-xray"
+   ],
+   "key": "decl:npm|vue|^3.5.43=wickra-playground,wickra-xray|^3.5.44=wickra-terminal"
+  },
+  {
+   "severity": "drift",
+   "kind": "decl:npm",
+   "subject": "vue-tsc",
+   "detail": "^3.3.11: 2 [playground, xray] | ^3.3.13: 1 [terminal]",
+   "repos": [
+    "wickra-playground",
+    "wickra-terminal",
+    "wickra-xray"
+   ],
+   "key": "decl:npm|vue-tsc|^3.3.11=wickra-playground,wickra-xray|^3.3.13=wickra-terminal"
   },
   {
    "severity": "explained",
