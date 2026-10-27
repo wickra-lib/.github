@@ -1,26 +1,27 @@
 {
- "scanned_at": "2026-10-27T11:06:08Z",
+ "scanned_at": "2026-10-27T16:55:08Z",
  "counts": {
   "defect": 0,
-  "drift": 21,
+  "drift": 22,
   "explained": 7,
   "info": 80
  },
  "keys": [
-  "decl:actions|actions/create-github-app-token|64ab729a6294 v3.3.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine|bcd2ba492189 v3.2.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk",
-  "decl:actions|actions/download-artifact|3e5f45b2cfb9 v8.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|9000827ccba6 v8.0.2=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|actions/setup-java|b843ebf9b913 v6.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine|de7274f081f3 v6.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-impact,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk",
-  "decl:actions|actions/setup-node|820762786026 v7.0.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-impact,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|949feb2413d6 v7.0.0=wickra-genome,wickra-timemachine|949feb2413d6 v7.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-timemachine",
-  "decl:actions|actions/upload-artifact|043fb46d1a93 v7.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|cf430e030ddb v7.0.2=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|CodSpeedHQ/action|373d6868929f v5.2.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|821a40cd6c80 v5.5.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|github/codeql-action/analyze|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|github/codeql-action/init|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|github/codeql-action/upload-sarif|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|google/osv-scanner-action/osv-scanner-action|a345acffa64b v2.6.0=wickra,wickra-compile,wickra-darwin,wickra-embed,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-verify,wickra-zk|b1d267aea521 v2.7.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|ossf/scorecard-action|2d1146689b8c v2.4.4=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|fa7117db83c5 v2.5.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|taiki-e/install-action|8cca0918f847 v2.87.29=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine|9983c65e42da v2.87.20=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk",
-  "decl:actions|wickra-lib/.github/actions/follow-family|782bf3d7a8ed v1.0.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|da1bd395c27f v1.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine",
-  "decl:actions|zizmorcore/zizmor-action|85b2b9fb8e33 v0.7.1=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine|cc914d7f3750 v0.6.4=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk",
+  "decl:actions|actions/create-github-app-token|64ab729a6294 v3.3.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|bcd2ba492189 v3.2.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk",
+  "decl:actions|actions/download-artifact|3e5f45b2cfb9 v8.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|9000827ccba6 v8.0.2=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:actions|actions/setup-java|b843ebf9b913 v6.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|de7274f081f3 v6.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk",
+  "decl:actions|actions/setup-node|820762786026 v7.0.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|949feb2413d6 v7.0.0=wickra-genome,wickra-impact,wickra-timemachine|949feb2413d6 v7.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-timemachine,wickra-xray",
+  "decl:actions|actions/upload-artifact|043fb46d1a93 v7.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|cf430e030ddb v7.0.2=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:actions|CodSpeedHQ/action|373d6868929f v5.2.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|821a40cd6c80 v5.5.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:actions|github/codeql-action/analyze|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:actions|github/codeql-action/init|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:actions|github/codeql-action/upload-sarif|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:actions|google/osv-scanner-action/osv-scanner-action|a345acffa64b v2.6.0=wickra,wickra-compile,wickra-darwin,wickra-embed,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-verify,wickra-zk|b1d267aea521 v2.7.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-shazam,wickra-terminal,wickra-timemachine",
+  "decl:actions|ossf/scorecard-action|2d1146689b8c v2.4.4=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|fa7117db83c5 v2.5.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:actions|Swatinem/rust-cache|6323deb102c3 v2.9.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-zk|d1527c8f67ef v2.9.2=wickra-impact|d1527c8f67ef v2.9.3=wickra-impact,wickra-xray",
+  "decl:actions|taiki-e/install-action|8cca0918f847 v2.87.29=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|9983c65e42da v2.87.20=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk",
+  "decl:actions|wickra-lib/.github/actions/follow-family|782bf3d7a8ed v1.0.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|da1bd395c27f v1.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
+  "decl:actions|zizmorcore/zizmor-action|85b2b9fb8e33 v0.7.1=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|cc914d7f3750 v0.6.4=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk",
   "decl:cargo|pyo3|0.29=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|0.30=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
   "decl:dotnet|Microsoft.NET.Test.Sdk|18.10.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|18.11.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
   "decl:dotnet|xunit.runner.visualstudio|4.0.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|4.0.1=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray",
@@ -121,7 +122,7 @@
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "actions/create-github-app-token",
-   "detail": "bcd2ba492189 v3.2.0: 15 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, proof, strategy-ci, synth, verify, wickra, xray, zk] | 64ab729a6294 v3.3.0: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "bcd2ba492189 v3.2.0: 13 [backtest, benchmark, compile, darwin, embed, feature-store, pico, proof, strategy-ci, synth, verify, wickra, zk] | 64ab729a6294 v3.3.0: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -148,13 +149,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|actions/create-github-app-token|64ab729a6294 v3.3.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine|bcd2ba492189 v3.2.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk"
+   "key": "decl:actions|actions/create-github-app-token|64ab729a6294 v3.3.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|bcd2ba492189 v3.2.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "actions/download-artifact",
-   "detail": "3e5f45b2cfb9 v8.0.1: 15 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, proof, strategy-ci, synth, verify, wickra, xray, zk] | 9000827ccba6 v8.0.2: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "3e5f45b2cfb9 v8.0.1: 13 [backtest, benchmark, compile, darwin, embed, feature-store, pico, proof, strategy-ci, synth, verify, wickra, zk] | 9000827ccba6 v8.0.2: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -181,13 +182,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|actions/download-artifact|3e5f45b2cfb9 v8.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|9000827ccba6 v8.0.2=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|actions/download-artifact|3e5f45b2cfb9 v8.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|9000827ccba6 v8.0.2=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "actions/setup-java",
-   "detail": "de7274f081f3 v6.0.1: 13 [backtest, benchmark, compile, darwin, feature-store, impact, proof, strategy-ci, synth, verify, wickra, xray, zk] | b843ebf9b913 v6.1.0: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "de7274f081f3 v6.0.1: 11 [backtest, benchmark, compile, darwin, feature-store, proof, strategy-ci, synth, verify, wickra, zk] | b843ebf9b913 v6.1.0: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -212,13 +213,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|actions/setup-java|b843ebf9b913 v6.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine|de7274f081f3 v6.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-impact,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk"
+   "key": "decl:actions|actions/setup-java|b843ebf9b913 v6.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|de7274f081f3 v6.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "actions/setup-node",
-   "detail": "820762786026 v7.0.0: 14 [backtest, benchmark, compile, darwin, feature-store, impact, playground, proof, strategy-ci, synth, verify, wickra, xray, zk] | 949feb2413d6 v7.1.0: 8 [copilot, exchange, genome, gym, radar, screener, shazam, timemachine] | 949feb2413d6 v7.0.0: 2 [genome, timemachine] || two values in one repo: genome=949feb2413d6 v7.0.0/949feb2413d6 v7.1.0; timemachine=949feb2413d6 v7.0.0/949feb2413d6 v7.1.0",
+   "detail": "820762786026 v7.0.0: 12 [backtest, benchmark, compile, darwin, feature-store, playground, proof, strategy-ci, synth, verify, wickra, zk] | 949feb2413d6 v7.1.0: 10 [copilot, exchange, genome, gym, impact, radar, screener, shazam, timemachine, xray] | 949feb2413d6 v7.0.0: 3 [genome, impact, timemachine] || two values in one repo: genome=949feb2413d6 v7.0.0/949feb2413d6 v7.1.0; impact=949feb2413d6 v7.0.0/949feb2413d6 v7.1.0; timemachine=949feb2413d6 v7.0.0/949feb2413d6 v7.1.0",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -243,13 +244,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|actions/setup-node|820762786026 v7.0.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-impact,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|949feb2413d6 v7.0.0=wickra-genome,wickra-timemachine|949feb2413d6 v7.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-timemachine"
+   "key": "decl:actions|actions/setup-node|820762786026 v7.0.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-feature-store,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|949feb2413d6 v7.0.0=wickra-genome,wickra-impact,wickra-timemachine|949feb2413d6 v7.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-timemachine,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "actions/upload-artifact",
-   "detail": "043fb46d1a93 v7.0.1: 16 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, playground, proof, strategy-ci, synth, verify, wickra, xray, zk] | cf430e030ddb v7.0.2: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "043fb46d1a93 v7.0.1: 14 [backtest, benchmark, compile, darwin, embed, feature-store, pico, playground, proof, strategy-ci, synth, verify, wickra, zk] | cf430e030ddb v7.0.2: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -277,13 +278,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|actions/upload-artifact|043fb46d1a93 v7.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|cf430e030ddb v7.0.2=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|actions/upload-artifact|043fb46d1a93 v7.0.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|cf430e030ddb v7.0.2=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "CodSpeedHQ/action",
-   "detail": "373d6868929f v5.2.1: 15 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, proof, strategy-ci, synth, verify, wickra, xray, zk] | 821a40cd6c80 v5.5.0: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "373d6868929f v5.2.1: 13 [backtest, benchmark, compile, darwin, embed, feature-store, pico, proof, strategy-ci, synth, verify, wickra, zk] | 821a40cd6c80 v5.5.0: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -310,13 +311,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|CodSpeedHQ/action|373d6868929f v5.2.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|821a40cd6c80 v5.5.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|CodSpeedHQ/action|373d6868929f v5.2.1=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|821a40cd6c80 v5.5.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "github/codeql-action/analyze",
-   "detail": "2892aa5e19bb v4.38.2: 16 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, playground, proof, strategy-ci, synth, verify, wickra, xray, zk] | 6f2ac81f5cd8 v4.39.0: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "2892aa5e19bb v4.38.2: 14 [backtest, benchmark, compile, darwin, embed, feature-store, pico, playground, proof, strategy-ci, synth, verify, wickra, zk] | 6f2ac81f5cd8 v4.39.0: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -344,13 +345,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|github/codeql-action/analyze|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|github/codeql-action/analyze|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "github/codeql-action/init",
-   "detail": "2892aa5e19bb v4.38.2: 16 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, playground, proof, strategy-ci, synth, verify, wickra, xray, zk] | 6f2ac81f5cd8 v4.39.0: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "2892aa5e19bb v4.38.2: 14 [backtest, benchmark, compile, darwin, embed, feature-store, pico, playground, proof, strategy-ci, synth, verify, wickra, zk] | 6f2ac81f5cd8 v4.39.0: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -378,13 +379,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|github/codeql-action/init|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|github/codeql-action/init|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "github/codeql-action/upload-sarif",
-   "detail": "2892aa5e19bb v4.38.2: 16 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, playground, proof, strategy-ci, synth, verify, wickra, xray, zk] | 6f2ac81f5cd8 v4.39.0: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "2892aa5e19bb v4.38.2: 14 [backtest, benchmark, compile, darwin, embed, feature-store, pico, playground, proof, strategy-ci, synth, verify, wickra, zk] | 6f2ac81f5cd8 v4.39.0: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -412,13 +413,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|github/codeql-action/upload-sarif|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|github/codeql-action/upload-sarif|2892aa5e19bb v4.38.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|6f2ac81f5cd8 v4.39.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "google/osv-scanner-action/osv-scanner-action",
-   "detail": "a345acffa64b v2.6.0: 10 [compile, darwin, embed, impact, pico, proof, strategy-ci, verify, wickra, zk] | b1d267aea521 v2.7.0: 8 [copilot, exchange, genome, gym, radar, shazam, terminal, timemachine]",
+   "detail": "a345acffa64b v2.6.0: 9 [compile, darwin, embed, pico, proof, strategy-ci, verify, wickra, zk] | b1d267aea521 v2.7.0: 9 [copilot, exchange, genome, gym, impact, radar, shazam, terminal, timemachine]",
    "repos": [
     "wickra",
     "wickra-compile",
@@ -439,13 +440,13 @@
     "wickra-verify",
     "wickra-zk"
    ],
-   "key": "decl:actions|google/osv-scanner-action/osv-scanner-action|a345acffa64b v2.6.0=wickra,wickra-compile,wickra-darwin,wickra-embed,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-verify,wickra-zk|b1d267aea521 v2.7.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|google/osv-scanner-action/osv-scanner-action|a345acffa64b v2.6.0=wickra,wickra-compile,wickra-darwin,wickra-embed,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-verify,wickra-zk|b1d267aea521 v2.7.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-shazam,wickra-terminal,wickra-timemachine"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "ossf/scorecard-action",
-   "detail": "2d1146689b8c v2.4.4: 16 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, playground, proof, strategy-ci, synth, verify, wickra, xray, zk] | fa7117db83c5 v2.5.0: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "2d1146689b8c v2.4.4: 14 [backtest, benchmark, compile, darwin, embed, feature-store, pico, playground, proof, strategy-ci, synth, verify, wickra, zk] | fa7117db83c5 v2.5.0: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -473,13 +474,46 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|ossf/scorecard-action|2d1146689b8c v2.4.4=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|fa7117db83c5 v2.5.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|ossf/scorecard-action|2d1146689b8c v2.4.4=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|fa7117db83c5 v2.5.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
+  },
+  {
+   "severity": "drift",
+   "kind": "decl:actions",
+   "subject": "Swatinem/rust-cache",
+   "detail": "6323deb102c3 v2.9.2: 22 [backtest, benchmark, compile, copilot, darwin, embed, exchange, feature-store, genome, gym, pico, proof, radar, screener, shazam, strategy-ci, synth, terminal, timemachine, verify, wickra, zk] | d1527c8f67ef v2.9.3: 2 [impact, xray] | d1527c8f67ef v2.9.2: 1 [impact] || two values in one repo: impact=d1527c8f67ef v2.9.2/d1527c8f67ef v2.9.3",
+   "repos": [
+    "wickra",
+    "wickra-backtest",
+    "wickra-benchmark",
+    "wickra-compile",
+    "wickra-copilot",
+    "wickra-darwin",
+    "wickra-embed",
+    "wickra-exchange",
+    "wickra-feature-store",
+    "wickra-genome",
+    "wickra-gym",
+    "wickra-impact",
+    "wickra-pico",
+    "wickra-proof",
+    "wickra-radar",
+    "wickra-screener",
+    "wickra-shazam",
+    "wickra-strategy-ci",
+    "wickra-synth",
+    "wickra-terminal",
+    "wickra-timemachine",
+    "wickra-verify",
+    "wickra-xray",
+    "wickra-zk"
+   ],
+   "key": "decl:actions|Swatinem/rust-cache|6323deb102c3 v2.9.2=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-pico,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-zk|d1527c8f67ef v2.9.2=wickra-impact|d1527c8f67ef v2.9.3=wickra-impact,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "taiki-e/install-action",
-   "detail": "9983c65e42da v2.87.20: 15 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, proof, strategy-ci, synth, verify, wickra, xray, zk] | 8cca0918f847 v2.87.29: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "9983c65e42da v2.87.20: 13 [backtest, benchmark, compile, darwin, embed, feature-store, pico, proof, strategy-ci, synth, verify, wickra, zk] | 8cca0918f847 v2.87.29: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -506,13 +540,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|taiki-e/install-action|8cca0918f847 v2.87.29=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine|9983c65e42da v2.87.20=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk"
+   "key": "decl:actions|taiki-e/install-action|8cca0918f847 v2.87.29=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|9983c65e42da v2.87.20=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "wickra-lib/.github/actions/follow-family",
-   "detail": "782bf3d7a8ed v1.0.0: 14 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, proof, strategy-ci, synth, verify, xray, zk] | da1bd395c27f v1.1.0: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "782bf3d7a8ed v1.0.0: 12 [backtest, benchmark, compile, darwin, embed, feature-store, pico, proof, strategy-ci, synth, verify, zk] | da1bd395c27f v1.1.0: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra-backtest",
     "wickra-benchmark",
@@ -538,13 +572,13 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|wickra-lib/.github/actions/follow-family|782bf3d7a8ed v1.0.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk|da1bd395c27f v1.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine"
+   "key": "decl:actions|wickra-lib/.github/actions/follow-family|782bf3d7a8ed v1.0.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk|da1bd395c27f v1.1.0=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray"
   },
   {
    "severity": "drift",
    "kind": "decl:actions",
    "subject": "zizmorcore/zizmor-action",
-   "detail": "cc914d7f3750 v0.6.4: 16 [backtest, benchmark, compile, darwin, embed, feature-store, impact, pico, playground, proof, strategy-ci, synth, verify, wickra, xray, zk] | 85b2b9fb8e33 v0.7.1: 9 [copilot, exchange, genome, gym, radar, screener, shazam, terminal, timemachine]",
+   "detail": "cc914d7f3750 v0.6.4: 14 [backtest, benchmark, compile, darwin, embed, feature-store, pico, playground, proof, strategy-ci, synth, verify, wickra, zk] | 85b2b9fb8e33 v0.7.1: 11 [copilot, exchange, genome, gym, impact, radar, screener, shazam, terminal, timemachine, xray]",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -572,7 +606,7 @@
     "wickra-xray",
     "wickra-zk"
    ],
-   "key": "decl:actions|zizmorcore/zizmor-action|85b2b9fb8e33 v0.7.1=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine|cc914d7f3750 v0.6.4=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-impact,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-xray,wickra-zk"
+   "key": "decl:actions|zizmorcore/zizmor-action|85b2b9fb8e33 v0.7.1=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|cc914d7f3750 v0.6.4=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-playground,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify,wickra-zk"
   },
   {
    "severity": "drift",
