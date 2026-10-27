@@ -1,815 +1,24 @@
 {
-  "scanned_at": "2026-10-26T22:01:11Z",
+  "scanned_at": "2026-10-27T10:22:10Z",
   "repos": 77,
   "dependabot": [
     {
-      "repo": "wickra-copilot",
-      "number": 156,
-      "title": "deps(actions): bump the github-actions group with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-copilot/pull/156",
-      "created": "2026-10-26T01:51:59Z",
-      "failing": [],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-copilot",
-      "number": 155,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-copilot/pull/155",
-      "created": "2026-10-26T01:43:49Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-copilot",
-      "number": 154,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-copilot/pull/154",
-      "created": "2026-10-26T01:43:29Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-copilot",
-      "number": 153,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-copilot/pull/153",
-      "created": "2026-10-26T01:42:51Z",
-      "failing": [],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-copilot",
-      "number": 152,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-copilot/pull/152",
-      "created": "2026-10-26T01:42:17Z",
-      "failing": [
-        "ci-ok",
-        "Node 24 on ubuntu-latest",
-        "Node 24 on windows-latest",
-        "Node 24 on macos-latest",
-        "Node 22 on macos-latest",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Node 22 on windows-latest",
-        "Test (windows-latest, --no-default-features)",
-        "Examples",
-        "Node 22 on ubuntu-latest",
-        "Test (windows-latest, --all-features)",
-        "Test (macos-latest, --no-default-features)",
-        "Test (ubuntu-latest, --all-features)",
-        "Test (macos-latest, --all-features)",
-        "MSRV node (1.88)",
-        "Format & Clippy"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-copilot",
-      "number": 151,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-copilot/pull/151",
-      "created": "2026-10-26T01:41:22Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-exchange",
-      "number": 274,
-      "title": "deps(actions): bump the github-actions group with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-exchange/pull/274",
-      "created": "2026-10-26T01:31:37Z",
-      "failing": [],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-exchange",
-      "number": 273,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-exchange/pull/273",
-      "created": "2026-10-26T01:27:03Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-exchange",
-      "number": 272,
-      "title": "deps(cargo): bump the cargo group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-exchange/pull/272",
-      "created": "2026-10-26T01:26:17Z",
-      "failing": [],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-exchange",
-      "number": 271,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-exchange/pull/271",
-      "created": "2026-10-26T01:25:49Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-exchange",
-      "number": 270,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-exchange/pull/270",
-      "created": "2026-10-26T01:25:41Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-exchange",
-      "number": 269,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-exchange/pull/269",
-      "created": "2026-10-26T01:25:31Z",
-      "failing": [
-        "ci-ok",
-        "Node 24 on windows-latest",
-        "Test (windows-latest)",
-        "Node 22 on macos-latest",
-        "Node 24 on ubuntu-latest",
-        "Node 24 on macos-latest",
-        "Test (macos-latest)",
-        "Node 22 on ubuntu-latest",
-        "Node 22 on windows-latest",
-        "Test (ubuntu-latest)",
-        "MSRV node binding (1.88)",
-        "Format & Clippy"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-genome",
-      "number": 100,
-      "title": "deps(actions): bump the github-actions group with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-genome/pull/100",
-      "created": "2026-10-26T01:42:30Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-genome",
-      "number": 99,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-genome/pull/99",
-      "created": "2026-10-26T01:36:55Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-genome",
-      "number": 98,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-genome/pull/98",
-      "created": "2026-10-26T01:33:42Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-genome",
-      "number": 97,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-genome/pull/97",
-      "created": "2026-10-26T01:32:25Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-genome",
-      "number": 96,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-genome/pull/96",
-      "created": "2026-10-26T01:32:22Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-genome",
-      "number": 95,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-genome/pull/95",
-      "created": "2026-10-26T01:31:51Z",
-      "failing": [
-        "ci-ok",
-        "Node 24 on ubuntu-latest",
-        "Examples",
-        "Test (macos-latest, --no-default-features)",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Test (ubuntu-latest, --all-features)",
-        "Test (windows-latest, --all-features)",
-        "Node 24 on macos-latest",
-        "Node 22 on windows-latest",
-        "Node 22 on ubuntu-latest",
-        "Test (macos-latest, --all-features)",
-        "Node 22 on macos-latest",
-        "Node 24 on windows-latest",
-        "Test (windows-latest, --no-default-features)",
-        "Format & Clippy",
-        "MSRV node (1.88)"
-      ],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-gym",
-      "number": 97,
-      "title": "deps(actions): bump the github-actions group with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-gym/pull/97",
-      "created": "2026-10-26T01:21:24Z",
-      "failing": [
-        "ci-ok",
-        "C ABI on macos-latest"
-      ],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-gym",
-      "number": 96,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-gym/pull/96",
-      "created": "2026-10-26T01:20:24Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-gym",
-      "number": 95,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-gym/pull/95",
-      "created": "2026-10-26T01:20:23Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-gym",
-      "number": 94,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-gym/pull/94",
-      "created": "2026-10-26T01:20:04Z",
-      "failing": [
-        "ci-ok",
-        "Examples",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Test (macos-latest, --all-features)",
-        "Node 24 on ubuntu-latest",
-        "Test (windows-latest, --all-features)",
-        "Node 22 on ubuntu-latest",
-        "Node 24 on macos-latest",
-        "MSRV node (1.88)",
-        "Node 22 on windows-latest",
-        "Test (windows-latest, --no-default-features)",
-        "Test (macos-latest, --no-default-features)",
-        "Node 22 on macos-latest",
-        "Node 24 on windows-latest",
-        "Test (ubuntu-latest, --all-features)",
-        "Format & Clippy"
-      ],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-gym",
-      "number": 93,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-gym/pull/93",
-      "created": "2026-10-26T01:19:28Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-gym",
-      "number": 92,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-gym/pull/92",
-      "created": "2026-10-26T01:16:46Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
       "repo": "wickra-impact",
-      "number": 106,
-      "title": "deps(actions): bump the github-actions group with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-impact/pull/106",
-      "created": "2026-10-26T01:39:09Z",
-      "failing": [
-        "ci-ok",
-        "C ABI on macos-latest"
-      ],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-impact",
-      "number": 105,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-impact/pull/105",
-      "created": "2026-10-26T01:34:58Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-impact",
-      "number": 104,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-impact/pull/104",
-      "created": "2026-10-26T01:34:57Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-impact",
-      "number": 103,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-impact/pull/103",
-      "created": "2026-10-26T01:33:40Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-impact",
-      "number": 102,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-impact/pull/102",
-      "created": "2026-10-26T01:33:17Z",
-      "failing": [
-        "ci-ok",
-        "Node 24 on ubuntu-latest",
-        "Examples",
-        "Node 24 on macos-latest",
-        "Node 22 on macos-latest",
-        "Node 22 on windows-latest",
-        "Test (windows-latest, --all-features)",
-        "Test (macos-latest, --no-default-features)",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Node 22 on ubuntu-latest",
-        "Test (windows-latest, --no-default-features)",
-        "Format & Clippy",
-        "MSRV node (1.88)",
-        "Test (ubuntu-latest, --all-features)",
-        "Test (macos-latest, --all-features)",
-        "Node 24 on windows-latest"
-      ],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-impact",
-      "number": 101,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-impact/pull/101",
-      "created": "2026-10-26T01:32:52Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-radar",
-      "number": 149,
-      "title": "deps(actions): bump the github-actions group with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-radar/pull/149",
-      "created": "2026-10-26T01:19:52Z",
-      "failing": [],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-radar",
-      "number": 148,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-radar/pull/148",
-      "created": "2026-10-26T01:16:19Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-radar",
-      "number": 147,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-radar/pull/147",
-      "created": "2026-10-26T01:13:24Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-radar",
-      "number": 146,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-radar/pull/146",
-      "created": "2026-10-26T01:12:57Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-radar",
-      "number": 145,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-radar/pull/145",
-      "created": "2026-10-26T01:11:13Z",
-      "failing": [],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-radar",
-      "number": 144,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-radar/pull/144",
-      "created": "2026-10-26T01:10:50Z",
-      "failing": [
-        "ci-ok",
-        "Test (macos-latest, --no-default-features)",
-        "Test (windows-latest, --no-default-features)",
-        "Test (ubuntu-latest, --all-features)",
-        "Test (windows-latest, --all-features)",
-        "Node 22 on ubuntu-latest",
-        "Node 22 on windows-latest",
-        "Test (macos-latest, --all-features)",
-        "Node 24 on windows-latest",
-        "Node 22 on macos-latest",
-        "Node 24 on macos-latest",
-        "Node 24 on ubuntu-latest",
-        "MSRV node (1.88)",
-        "Examples",
-        "Format & Clippy",
-        "Test (ubuntu-latest, --no-default-features)"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 222,
-      "title": "deps(actions): bump the github-actions group with 13 updates",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/222",
-      "created": "2026-10-26T03:09:38Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 221,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/221",
-      "created": "2026-10-26T03:05:20Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 220,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/220",
-      "created": "2026-10-26T03:03:34Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 219,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/219",
-      "created": "2026-10-26T03:00:18Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 218,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/218",
-      "created": "2026-10-26T02:59:03Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-screener",
-      "number": 217,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-screener/pull/217",
-      "created": "2026-10-26T02:58:30Z",
-      "failing": [
-        "ci-ok",
-        "Examples",
-        "Test (macos-latest, --no-default-features)",
-        "Test (windows-latest, --all-features)",
-        "Node 24 on macos-latest",
-        "Test (ubuntu-latest, --all-features)",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Test (windows-latest, --no-default-features)",
-        "Node 24 on windows-latest",
-        "Test (macos-latest, --all-features)",
-        "Node 22 on macos-latest",
-        "Format & Clippy",
-        "Node 24 on ubuntu-latest",
-        "Node 22 on ubuntu-latest",
-        "Node 22 on windows-latest",
-        "MSRV node (1.88)"
-      ],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-shazam",
-      "number": 154,
-      "title": "deps(actions): bump the github-actions group with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-shazam/pull/154",
-      "created": "2026-10-26T04:26:55Z",
-      "failing": [],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-shazam",
-      "number": 153,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-shazam/pull/153",
-      "created": "2026-10-26T04:23:57Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-shazam",
-      "number": 152,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-shazam/pull/152",
-      "created": "2026-10-26T04:20:12Z",
-      "failing": [
-        "ci-ok",
-        "Examples"
-      ],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-shazam",
-      "number": 151,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-shazam/pull/151",
-      "created": "2026-10-26T04:19:56Z",
-      "failing": [],
-      "checks": 65
-    },
-    {
-      "repo": "wickra-shazam",
-      "number": 150,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-shazam/pull/150",
-      "created": "2026-10-26T04:18:03Z",
-      "failing": [],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-shazam",
-      "number": 149,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-shazam/pull/149",
-      "created": "2026-10-26T04:16:56Z",
-      "failing": [
-        "ci-ok",
-        "Node 24 on ubuntu-latest",
-        "Node 22 on windows-latest",
-        "Node 24 on macos-latest",
-        "Node 24 on windows-latest",
-        "Node 22 on macos-latest",
-        "Test (macos-latest, --all-features)",
-        "Test (ubuntu-latest, --all-features)",
-        "Node 22 on ubuntu-latest",
-        "Test (macos-latest, --no-default-features)",
-        "Examples",
-        "Format & Clippy",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Test (windows-latest, --no-default-features)",
-        "Test (windows-latest, --all-features)",
-        "MSRV node (1.88)"
-      ],
-      "checks": 67
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 161,
-      "title": "deps(actions): bump the github-actions group with 13 updates",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/161",
-      "created": "2026-10-26T04:17:38Z",
-      "failing": [],
-      "checks": 71
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 160,
-      "title": "deps(web): bump the web group in /web with 4 updates",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/160",
-      "created": "2026-10-26T04:14:38Z",
-      "failing": [
-        "ci-ok",
-        "Web renderer"
-      ],
-      "checks": 69
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 159,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/159",
-      "created": "2026-10-26T04:13:39Z",
-      "failing": [],
-      "checks": 69
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 158,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/158",
-      "created": "2026-10-26T04:12:41Z",
-      "failing": [],
-      "checks": 69
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 157,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/157",
-      "created": "2026-10-26T04:05:12Z",
-      "failing": [],
-      "checks": 69
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 156,
-      "title": "deps(cargo): bump the cargo group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/156",
-      "created": "2026-10-26T04:05:07Z",
-      "failing": [],
-      "checks": 71
-    },
-    {
-      "repo": "wickra-terminal",
-      "number": 155,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-terminal/pull/155",
-      "created": "2026-10-26T04:04:24Z",
-      "failing": [
-        "ci-ok",
-        "Node 24 on ubuntu-latest",
-        "Node 24 on macos-latest",
-        "Node 22 on macos-latest",
-        "Node 24 on windows-latest",
-        "Node 22 on ubuntu-latest",
-        "Node 22 on windows-latest",
-        "Format & Clippy (macos-latest)",
-        "Format & Clippy (ubuntu-latest)",
-        "Format & Clippy (windows-latest)",
-        "Test (windows-latest)",
-        "Test (macos-latest)",
-        "Test (ubuntu-latest)",
-        "MSRV node + tui (1.88)"
-      ],
-      "checks": 71
-    },
-    {
-      "repo": "wickra-timemachine",
-      "number": 100,
-      "title": "deps(actions): bump the github-actions group with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/100",
-      "created": "2026-10-26T04:37:01Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-timemachine",
-      "number": 99,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/99",
-      "created": "2026-10-26T04:34:19Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-timemachine",
-      "number": 98,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/98",
-      "created": "2026-10-26T04:30:57Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-timemachine",
-      "number": 97,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/97",
-      "created": "2026-10-26T04:28:12Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-timemachine",
-      "number": 96,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/96",
-      "created": "2026-10-26T04:27:40Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-timemachine",
-      "number": 95,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/95",
-      "created": "2026-10-26T04:27:11Z",
-      "failing": [
-        "ci-ok",
-        "Test (windows-latest, --no-default-features)",
-        "Examples",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Node 24 on macos-latest",
-        "Test (macos-latest, --all-features)",
-        "Test (ubuntu-latest, --all-features)",
-        "Node 22 on ubuntu-latest",
-        "Node 24 on ubuntu-latest",
-        "Node 22 on windows-latest",
-        "Node 24 on windows-latest",
-        "Test (windows-latest, --all-features)",
-        "Node 22 on macos-latest",
-        "Test (macos-latest, --no-default-features)",
-        "Format & Clippy",
-        "MSRV node (1.88)"
-      ],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 187,
-      "title": "deps(actions): bump the github-actions group with 13 updates",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/187",
-      "created": "2026-10-26T05:13:37Z",
-      "failing": [
-        "ci-ok",
-        "C ABI on macos-latest"
-      ],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 186,
-      "title": "deps(nuget): Bump the nuget group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/186",
-      "created": "2026-10-26T05:09:09Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 185,
-      "title": "deps(maven): bump org.sonatype.central:central-publishing-maven-plugin from 0.11.0 to 0.12.0 in /bindings/java in the maven group",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/185",
-      "created": "2026-10-26T05:06:51Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 184,
-      "title": "deps(web): bump typescript from 6.0.3 to 7.0.2 in /web in the web group",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/184",
-      "created": "2026-10-26T05:03:54Z",
-      "failing": [
-        "ci-ok",
-        "Web renderer"
-      ],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 183,
-      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.8 in /bindings/node in the node-binding group",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/183",
-      "created": "2026-10-26T05:02:37Z",
-      "failing": [],
-      "checks": 66
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 182,
-      "title": "deps(cargo): bump the cargo group with 2 updates",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/182",
-      "created": "2026-10-26T05:01:01Z",
+      "number": 110,
+      "title": "deps(actions): bump the github-actions group across 1 directory with 15 updates",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/110",
+      "created": "2026-10-27T06:36:57Z",
       "failing": [],
       "checks": 68
     },
     {
       "repo": "wickra-xray",
-      "number": 181,
-      "title": "deps(cargo): bump the napi group with 3 updates",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/181",
-      "created": "2026-10-26T05:00:36Z",
+      "number": 191,
+      "title": "deps(actions): bump the github-actions group across 1 directory with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/191",
+      "created": "2026-10-27T06:34:19Z",
       "failing": [
-        "ci-ok",
-        "Node 22 on ubuntu-latest",
-        "Test (ubuntu-latest, --all-features)",
-        "Test (windows-latest, --all-features)",
-        "Node 24 on ubuntu-latest",
-        "Test (macos-latest, --no-default-features)",
-        "Test (windows-latest, --no-default-features)",
-        "Test (ubuntu-latest, --no-default-features)",
-        "Node 22 on windows-latest",
-        "Format & Clippy",
-        "Examples",
-        "Node 24 on macos-latest",
-        "Test (macos-latest, --all-features)",
-        "Node 22 on macos-latest",
-        "Node 24 on windows-latest",
-        "MSRV node (1.88)"
+        "CodSpeed Performance Analysis"
       ],
       "checks": 68
     }
@@ -844,6 +53,79 @@
       "created": "2026-09-28T01:55:14Z"
     }
   ],
-  "alerts": [],
+  "alerts": [
+    {
+      "repo": "wickra-timemachine",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 82,
+      "url": "https://github.com/wickra-lib/wickra-timemachine/security/code-scanning/82",
+      "created": "2026-10-27T00:58:32Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-shazam",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 74,
+      "url": "https://github.com/wickra-lib/wickra-shazam/security/code-scanning/74",
+      "created": "2026-10-27T00:49:55Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-screener",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 105,
+      "url": "https://github.com/wickra-lib/wickra-screener/security/code-scanning/105",
+      "created": "2026-10-27T00:46:48Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-radar",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 81,
+      "url": "https://github.com/wickra-lib/wickra-radar/security/code-scanning/81",
+      "created": "2026-10-27T00:46:38Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-gym",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 111,
+      "url": "https://github.com/wickra-lib/wickra-gym/security/code-scanning/111",
+      "created": "2026-10-27T00:13:45Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-genome",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 93,
+      "url": "https://github.com/wickra-lib/wickra-genome/security/code-scanning/93",
+      "created": "2026-10-27T00:09:01Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-copilot",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 87,
+      "url": "https://github.com/wickra-lib/wickra-copilot/security/code-scanning/87",
+      "created": "2026-10-27T00:07:42Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 112,
+      "url": "https://github.com/wickra-lib/wickra-exchange/security/code-scanning/112",
+      "created": "2026-10-26T23:56:31Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    }
+  ],
   "unreadable": []
 }
