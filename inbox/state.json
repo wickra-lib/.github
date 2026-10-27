@@ -1,39 +1,9 @@
 {
-  "scanned_at": "2026-10-27T10:22:10Z",
+  "scanned_at": "2026-10-27T21:13:37Z",
   "repos": 77,
-  "dependabot": [
-    {
-      "repo": "wickra-impact",
-      "number": 110,
-      "title": "deps(actions): bump the github-actions group across 1 directory with 15 updates",
-      "url": "https://github.com/wickra-lib/wickra-impact/pull/110",
-      "created": "2026-10-27T06:36:57Z",
-      "failing": [],
-      "checks": 68
-    },
-    {
-      "repo": "wickra-xray",
-      "number": 191,
-      "title": "deps(actions): bump the github-actions group across 1 directory with 14 updates",
-      "url": "https://github.com/wickra-lib/wickra-xray/pull/191",
-      "created": "2026-10-27T06:34:19Z",
-      "failing": [
-        "CodSpeed Performance Analysis"
-      ],
-      "checks": 68
-    }
-  ],
+  "dependabot": [],
   "waiting": 0,
   "people": [
-    {
-      "kind": "pull request",
-      "repo": "wickra",
-      "number": 489,
-      "title": "feat(core): add RunningDrawdown, a since-inception max drawdown",
-      "url": "https://github.com/wickra-lib/wickra/pull/489",
-      "author": "atarutin",
-      "created": "2026-10-25T17:52:25Z"
-    },
     {
       "kind": "issue",
       "repo": "wickra",
@@ -54,6 +24,24 @@
     }
   ],
   "alerts": [
+    {
+      "repo": "wickra-xray",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 108,
+      "url": "https://github.com/wickra-lib/wickra-xray/security/code-scanning/108",
+      "created": "2026-10-27T12:41:10Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-impact",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 91,
+      "url": "https://github.com/wickra-lib/wickra-impact/security/code-scanning/91",
+      "created": "2026-10-27T12:40:26Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
     {
       "repo": "wickra-timemachine",
       "kind": "code scanning",
