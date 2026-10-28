@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-28T19:08:12Z",
+  "scanned_at": "2026-10-28T23:36:51Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -11863,7 +11863,7 @@
         {
           "registry": "r-universe",
           "pkg": "wickrazk",
-          "version": "0.2.0"
+          "version": "0.2.1"
         }
       ],
       "go": {
@@ -11915,7 +11915,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.0"
+            "2.1.1"
           ],
           "origin": "registry",
           "git": null,
@@ -11938,7 +11938,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.0"
+            "2.1.1"
           ],
           "origin": "registry",
           "git": null,
@@ -14419,26 +14419,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "registry differs",
-      "subject": "r-universe wickrazk",
-      "detail": "0.2.0 against the declared 0.2.1"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.0 while wickra-core publishes 2.1.1; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.0 while wickra-simd publishes 2.1.1; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
     }
   ]
 }
