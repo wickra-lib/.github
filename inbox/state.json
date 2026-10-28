@@ -1,7 +1,26 @@
 {
-  "scanned_at": "2026-10-27T21:13:37Z",
+  "scanned_at": "2026-10-28T11:17:37Z",
   "repos": 77,
-  "dependabot": [],
+  "dependabot": [
+    {
+      "repo": "wickra-playground",
+      "number": 40,
+      "title": "deps(pip): bump filelock from 4.0.12 to 4.2.1 in /.github/requirements",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/40",
+      "created": "2026-10-28T09:07:17Z",
+      "failing": [],
+      "checks": 10
+    },
+    {
+      "repo": "wickra-playground",
+      "number": 39,
+      "title": "deps(pip): bump virtualenv from 21.14.12 to 21.14.13 in /.github/requirements",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/39",
+      "created": "2026-10-28T09:07:06Z",
+      "failing": [],
+      "checks": 10
+    }
+  ],
   "waiting": 0,
   "people": [
     {
@@ -24,6 +43,24 @@
     }
   ],
   "alerts": [
+    {
+      "repo": "wickra-playground",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 18,
+      "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/18",
+      "created": "2026-10-28T09:05:59Z",
+      "title": "filelock in .github/requirements/pyodide-build.txt: filelock ReadWriteLock: SQLite reopens the lock database by name, so a planted symlink or journal file makes the lock user's process overwrite or unlink its own files"
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 17,
+      "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/17",
+      "created": "2026-10-28T09:05:59Z",
+      "title": "virtualenv in .github/requirements/pyodide-build.txt: virtualenv: Bash activator leaves the --prompt value unescaped in PS1 when promptvars is off, so prompt expansion later executes it (regression in 21.14.9)"
+    },
     {
       "repo": "wickra-xray",
       "kind": "code scanning",
@@ -113,6 +150,24 @@
       "url": "https://github.com/wickra-lib/wickra-exchange/security/code-scanning/112",
       "created": "2026-10-26T23:56:31Z",
       "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "Dependabot",
+      "severity": "low",
+      "number": 20,
+      "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/20",
+      "created": "2026-10-28T09:06:00Z",
+      "title": "filelock in .github/requirements/pyodide-build.txt: filelock: ReadWriteLock on Windows acts on SQLite side files another local user places beside its database"
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "Dependabot",
+      "severity": "low",
+      "number": 19,
+      "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/19",
+      "created": "2026-10-28T09:06:00Z",
+      "title": "filelock in .github/requirements/pyodide-build.txt: filelock: On Windows an oplock on a soft lock's marker holds SoftFileLock.acquire() past its timeout and blocks the stale break"
     }
   ],
   "unreadable": []
