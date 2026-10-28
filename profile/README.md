@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://wickra.org"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/wickra-banner.svg?v=514-8" alt="Wickra — the streaming-first trading stack: one indicator core, twenty-three products, ten languages" width="100%"></a>
+  <a href="https://wickra.org"><img src="https://raw.githubusercontent.com/wickra-lib/.github/main/profile/wickra-banner.svg?v=515-8" alt="Wickra — the streaming-first trading stack: one indicator core, twenty-three products, ten languages" width="100%"></a>
 </p>
 
 [![License: MIT OR Apache-2.0](https://raw.githubusercontent.com/wickra-lib/.github/main/profile/badges/wickra/license.svg)](https://github.com/wickra-lib/wickra#license)
@@ -19,7 +19,7 @@ to crates.io, PyPI, npm, NuGet, Maven Central, the Go module proxy and R-univers
 from one pipeline, and checked byte-for-byte across all ten languages by a golden
 corpus in every repository.
 
-> **▶ Live demos:** all 514 indicators over real Binance market data, in your
+> **▶ Live demos:** all 515 indicators over real Binance market data, in your
 > browser — **[live.wickra.org](https://live.wickra.org)**; a backtest whose
 > equity curve builds bar by bar — **[backtest-live.wickra.org](https://backtest-live.wickra.org)**;
 > one strategy spec running side by side in Python, Rust, JS and Go —
@@ -314,7 +314,7 @@ detail, and each product's README its own.
 
 ## What the family shares
 
-- **One core, 514 indicators** across twenty-four families, every one a state
+- **One core, 515 indicators** across twenty-four families, every one a state
   machine that updates in O(1) per new data point — the same code for the
   backtest and the live tick, and the same numbers in every product above.
 - **Data, not code.** A strategy, a scan, a fingerprint, a proof — each is a
