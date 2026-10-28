@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-28T13:34:17Z",
+  "scanned_at": "2026-10-28T19:08:12Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -7262,7 +7262,7 @@
         "name": "rayon",
         "version": "1.12.0",
         "requiredBy": [
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -7683,7 +7683,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -10140,7 +10140,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "wickra-benchmark-core 0.2.1",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -10438,7 +10438,7 @@
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
           "wickra-benchmark-core 0.2.1",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -12609,7 +12609,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -12919,7 +12919,7 @@
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
           "wickra-compile-core 0.2.1",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -14582,7 +14582,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 2.1.0"
+          "wickra-data 2.1.1"
         ]
       },
       {
@@ -15899,7 +15899,7 @@
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
           "wickra-copilot-core 0.2.1",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -16152,7 +16152,7 @@
           "wickra-backtest-core 0.2.1",
           "wickra-copilot-core 0.2.1",
           "wickra-copilot-llm 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1"
         ]
       },
@@ -16208,7 +16208,7 @@
           "wickra-copilot-core 0.2.1",
           "wickra-copilot-example 0.2.1",
           "wickra-copilot-llm 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1"
         ]
       },
@@ -16470,8 +16470,8 @@
           "wickra-backtest-core 0.2.1",
           "wickra-copilot-core 0.2.1",
           "wickra-copilot-llm 0.2.1",
-          "wickra-core 2.1.0",
-          "wickra-data 2.1.0",
+          "wickra-core 2.1.1",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1"
         ]
       },
@@ -19095,7 +19095,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-darwin-core 0.2.1"
         ]
       },
@@ -19395,7 +19395,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-darwin-core 0.2.1"
         ]
       },
@@ -21180,7 +21180,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -21366,7 +21366,7 @@
         "name": "thiserror",
         "version": "2.0.20",
         "requiredBy": [
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -23320,7 +23320,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -23832,7 +23832,7 @@
           "quinn 0.11.12",
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-exchange-core 0.2.1"
         ]
       },
@@ -26995,7 +26995,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-feature-store-core 0.2.1"
         ]
       },
@@ -27351,7 +27351,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-feature-store-core 0.2.1"
         ]
       },
@@ -29124,7 +29124,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 2.1.0"
+          "wickra-data 2.1.1"
         ]
       },
       {
@@ -30445,7 +30445,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-genome-core 0.2.1"
         ]
       },
@@ -30695,7 +30695,7 @@
           "url 2.5.8",
           "wasm-bindgen 0.2.128",
           "wickra-backtest-core 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-genome-core 0.2.1"
         ]
@@ -30748,7 +30748,7 @@
           "schemars 1.2.2",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-genome 0.2.1",
           "wickra-genome-core 0.2.1",
@@ -31002,8 +31002,8 @@
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
-          "wickra-data 2.1.0",
+          "wickra-core 2.1.1",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-genome-core 0.2.1"
         ]
@@ -33150,7 +33150,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 2.1.0"
+          "wickra-data 2.1.1"
         ]
       },
       {
@@ -34473,7 +34473,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-gym-core 0.2.1"
         ]
       },
@@ -34724,7 +34724,7 @@
           "url 2.5.8",
           "wasm-bindgen 0.2.128",
           "wickra-backtest-core 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-gym 0.2.1",
           "wickra-gym-core 0.2.1"
@@ -34779,7 +34779,7 @@
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
           "wickra-backtest-data 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-gym 0.2.1",
           "wickra-gym-core 0.2.1",
@@ -35033,8 +35033,8 @@
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
-          "wickra-data 2.1.0",
+          "wickra-core 2.1.1",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-gym-core 0.2.1"
         ]
@@ -38502,7 +38502,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-impact-core 0.2.1"
         ]
       },
@@ -39047,7 +39047,7 @@
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-impact-core 0.2.1"
         ]
@@ -42841,7 +42841,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -43139,7 +43139,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-proof-core 0.2.1"
         ]
       },
@@ -46073,7 +46073,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-radar-core 0.2.1"
         ]
       },
@@ -46572,7 +46572,7 @@
           "quinn 0.11.12",
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-radar-core 0.2.1"
         ]
@@ -48726,7 +48726,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 2.1.0"
+          "wickra-data 2.1.1"
         ]
       },
       {
@@ -50040,7 +50040,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-screener-core 0.3.1"
         ]
       },
@@ -50291,7 +50291,7 @@
           "url 2.5.8",
           "wasm-bindgen 0.2.128",
           "wickra-backtest-core 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-screener-core 0.3.1"
         ]
@@ -50343,7 +50343,7 @@
           "schemars 1.2.2",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-screener 0.3.1",
           "wickra-screener-core 0.3.1",
@@ -50597,8 +50597,8 @@
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
-          "wickra-data 2.1.0",
+          "wickra-core 2.1.1",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-screener-core 0.3.1"
         ]
@@ -52745,7 +52745,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 2.1.0"
+          "wickra-data 2.1.1"
         ]
       },
       {
@@ -54061,7 +54061,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-shazam-core 0.2.1"
         ]
       },
@@ -54312,7 +54312,7 @@
           "url 2.5.8",
           "wasm-bindgen 0.2.128",
           "wickra-backtest-core 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-shazam-core 0.2.1"
         ]
@@ -54364,7 +54364,7 @@
           "schemars 1.2.2",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-shazam 0.2.1",
           "wickra-shazam-core 0.2.1",
@@ -54634,8 +54634,8 @@
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
-          "wickra-data 2.1.0",
+          "wickra-core 2.1.1",
+          "wickra-data 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-shazam-core 0.2.1"
         ]
@@ -57267,7 +57267,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-strategy-ci-core 0.2.1"
         ]
       },
@@ -57562,7 +57562,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-strategy-ci-core 0.2.1"
         ]
       },
@@ -58977,7 +58977,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 2.1.0"
+          "wickra-data 2.1.1"
         ]
       },
       {
@@ -59650,7 +59650,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -59766,7 +59766,7 @@
           "codspeed-criterion-compat-walltime 5.0.2",
           "serde_json 1.0.151",
           "tinytemplate 1.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-synth-core 0.2.1"
         ]
       },
@@ -59805,7 +59805,7 @@
           "codspeed-criterion-compat-walltime 5.0.2",
           "synth-bench 0.2.1",
           "tinytemplate 1.2.1",
-          "wickra-data 2.1.0",
+          "wickra-data 2.1.1",
           "wickra-synth 0.2.1",
           "wickra-synth-core 0.2.1",
           "wickra-synth-example 0.2.1"
@@ -59914,8 +59914,8 @@
         "name": "thiserror",
         "version": "2.0.21",
         "requiredBy": [
-          "wickra-core 2.1.0",
-          "wickra-data 2.1.0",
+          "wickra-core 2.1.1",
+          "wickra-data 2.1.1",
           "wickra-synth-core 0.2.1"
         ]
       },
@@ -63672,7 +63672,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -64380,7 +64380,7 @@
           "quinn-proto 0.11.18",
           "ratatui-core 0.1.2",
           "tungstenite 0.30.0",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-terminal-core 0.2.1"
         ]
@@ -67569,7 +67569,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-timemachine-core 0.2.1"
         ]
       },
@@ -67959,7 +67959,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-timemachine-core 0.2.1"
         ]
@@ -70199,7 +70199,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0"
+          "wickra-core 2.1.1"
         ]
       },
       {
@@ -70497,7 +70497,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-verify-core 0.2.1"
         ]
       },
@@ -73431,7 +73431,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-xray-core 0.2.1"
         ]
       },
@@ -73930,7 +73930,7 @@
           "quinn 0.11.12",
           "quinn-proto 0.11.18",
           "tungstenite 0.30.0",
-          "wickra-core 2.1.0",
+          "wickra-core 2.1.1",
           "wickra-exchange-core 0.2.1",
           "wickra-xray-core 0.2.1"
         ]
