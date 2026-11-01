@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-11-01T02:38:51Z",
+  "scanned_at": "2026-11-01T18:54:47Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 374,
-      "differing": 52
+      "differing": 61
     },
     "npm": {
       "total": 109,
@@ -64,7 +64,7 @@
           "ureq 2.12.1"
         ],
         "wickra-backtest": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ],
         "wickra-copilot": [
           "hyper-util 0.1.20",
@@ -131,6 +131,7 @@
       "held": [
         "arrow-cast 59.3.0",
         "parquet 59.3.0",
+        "parquet 59.3.2",
         "serde_with 3.23.0"
       ]
     },
@@ -161,7 +162,7 @@
         "wickra-timemachine": "0.8.0",
         "wickra-verify": "0.8.0",
         "wickra-xray": "0.8.0",
-        "wickra-zk": "0.8.0"
+        "wickra-zk": "0.11.1"
       },
       "requiredBy": {
         "wickra": [
@@ -234,7 +235,7 @@
           "proptest 1.11.0"
         ],
         "wickra-zk": [
-          "proptest 1.11.0"
+          "proptest 1.12.0"
         ]
       },
       "held": [
@@ -268,7 +269,7 @@
         "wickra-timemachine": "0.8.0",
         "wickra-verify": "0.8.0",
         "wickra-xray": "0.8.0",
-        "wickra-zk": "0.8.0"
+        "wickra-zk": "0.10.1"
       },
       "requiredBy": {
         "wickra": [
@@ -364,9 +365,8 @@
           "proptest 1.11.0"
         ],
         "wickra-zk": [
-          "bit-set 0.8.0",
-          "proptest 1.11.0",
-          "risc0-circuit-rv32im 4.0.5"
+          "bit-set 0.11.1",
+          "proptest 1.12.0"
         ]
       },
       "held": [
@@ -1067,10 +1067,14 @@
       "ecosystem": "cargo",
       "name": "foldhash",
       "byRepo": {
+        "wickra-compile": "0.2.0",
         "wickra-terminal": "0.2.0",
         "wickra-zk": "0.1.5"
       },
       "requiredBy": {
+        "wickra-compile": [
+          "serde_json 1.0.154"
+        ],
         "wickra-terminal": [
           "hashbrown 0.16.1",
           "hashbrown 0.17.1"
@@ -1267,8 +1271,8 @@
       },
       "requiredBy": {
         "wickra-backtest": [
-          "arrow-buffer 59.3.0",
-          "parquet 59.3.0"
+          "arrow-buffer 59.3.2",
+          "parquet 59.3.2"
         ],
         "wickra-feature-store": [
           "arrow-buffer 59.3.0",
@@ -1427,110 +1431,6 @@
     },
     {
       "ecosystem": "cargo",
-      "name": "pyo3*",
-      "byRepo": {
-        "wickra": "0.29.2",
-        "wickra-backtest": "0.29.2",
-        "wickra-benchmark": "0.29.2",
-        "wickra-compile": "0.29.2",
-        "wickra-copilot": "0.30.1",
-        "wickra-darwin": "0.29.2",
-        "wickra-exchange": "0.30.1",
-        "wickra-feature-store": "0.29.2",
-        "wickra-genome": "0.30.1",
-        "wickra-gym": "0.30.1",
-        "wickra-impact": "0.30.1",
-        "wickra-proof": "0.29.2",
-        "wickra-radar": "0.30.1",
-        "wickra-screener": "0.30.1",
-        "wickra-shazam": "0.30.1",
-        "wickra-strategy-ci": "0.29.2",
-        "wickra-synth": "0.29.2",
-        "wickra-terminal": "0.30.1",
-        "wickra-timemachine": "0.30.1",
-        "wickra-verify": "0.29.2",
-        "wickra-xray": "0.30.1",
-        "wickra-zk": "0.29.2"
-      },
-      "requiredBy": {
-        "wickra": [
-          "wickra-python 2.1.1"
-        ],
-        "wickra-backtest": [
-          "wickra-backtest-python 0.2.1"
-        ],
-        "wickra-benchmark": [
-          "wickra-benchmark-python 0.2.1"
-        ],
-        "wickra-compile": [
-          "wickra-compile-python 0.2.1"
-        ],
-        "wickra-copilot": [
-          "wickra-copilot-python 0.2.1"
-        ],
-        "wickra-darwin": [
-          "wickra-darwin-python 0.2.1"
-        ],
-        "wickra-exchange": [
-          "wickra-exchange-python 0.2.1"
-        ],
-        "wickra-feature-store": [
-          "wickra-feature-store-python 0.2.1"
-        ],
-        "wickra-genome": [
-          "wickra-genome-python 0.2.1"
-        ],
-        "wickra-gym": [
-          "wickra-gym-python 0.2.1"
-        ],
-        "wickra-impact": [
-          "wickra-impact-python 0.2.1"
-        ],
-        "wickra-proof": [
-          "wickra-proof-python 0.2.1"
-        ],
-        "wickra-radar": [
-          "wickra-radar-python 0.2.1"
-        ],
-        "wickra-screener": [
-          "wickra-screener-python 0.3.1"
-        ],
-        "wickra-shazam": [
-          "wickra-shazam-python 0.2.1"
-        ],
-        "wickra-strategy-ci": [
-          "wickra-strategy-ci-python 0.2.1"
-        ],
-        "wickra-synth": [
-          "wickra-synth-python 0.2.1"
-        ],
-        "wickra-terminal": [
-          "wickra-terminal-python 0.2.1"
-        ],
-        "wickra-timemachine": [
-          "wickra-timemachine-python 0.2.1"
-        ],
-        "wickra-verify": [
-          "wickra-verify-python 0.2.1"
-        ],
-        "wickra-xray": [
-          "wickra-xray-python 0.2.1"
-        ],
-        "wickra-zk": [
-          "wickra-zk-python 0.2.1"
-        ]
-      },
-      "held": null,
-      "family": [
-        "pyo3",
-        "pyo3-build-config",
-        "pyo3-ffi",
-        "pyo3-macros",
-        "pyo3-macros-backend"
-      ]
-    },
-    {
-      "ecosystem": "cargo",
       "name": "rand",
       "byRepo": {
         "wickra": "0.10.3",
@@ -1642,6 +1542,7 @@
           "tungstenite 0.30.0"
         ],
         "wickra-zk": [
+          "proptest 1.12.0",
           "quinn-proto 0.11.18"
         ]
       },
@@ -1884,7 +1785,8 @@
           "chacha20 0.10.2",
           "getrandom 0.4.3",
           "rand 0.10.3",
-          "rand_pcg 0.10.2"
+          "rand_pcg 0.10.2",
+          "rand_xorshift 0.5.0"
         ]
       },
       "held": [
@@ -1920,7 +1822,7 @@
         "wickra-timemachine": "0.4.0",
         "wickra-verify": "0.4.0",
         "wickra-xray": "0.4.0",
-        "wickra-zk": "0.4.0"
+        "wickra-zk": "0.5.0"
       },
       "requiredBy": {
         "wickra": [
@@ -1993,7 +1895,7 @@
           "proptest 1.11.0"
         ],
         "wickra-zk": [
-          "proptest 1.11.0"
+          "proptest 1.12.0"
         ]
       },
       "held": [
@@ -2267,7 +2169,7 @@
       "requiredBy": {
         "wickra-backtest": [
           "lz4_flex 0.14.0",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ],
         "wickra-feature-store": [
           "lz4_flex 0.14.0",
@@ -2502,7 +2404,7 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "openssl 0.10.81",
           "proptest 1.11.0",
@@ -2544,7 +2446,7 @@
         "version": "1.12.1",
         "requiredBy": [
           "http 1.5.0",
-          "tokio 1.53.3",
+          "tokio 1.54.1",
           "tungstenite 0.30.0"
         ]
       },
@@ -2731,8 +2633,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -2863,8 +2765,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -2987,7 +2889,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -3128,7 +3030,7 @@
         "name": "heck",
         "version": "0.5.0",
         "requiredBy": [
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -3299,7 +3201,7 @@
         "requiredBy": [
           "csv 1.4.0",
           "http 1.5.0",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -3338,19 +3240,19 @@
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
           "mio 1.2.3",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "native-tls 0.2.18",
           "nix 0.31.3",
           "openssl 0.10.81",
           "openssl-sys 0.9.117",
           "page_size 0.6.0",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "security-framework 3.7.0",
           "security-framework-sys 2.17.0",
           "socket2 0.6.5",
-          "tokio 1.53.3",
+          "tokio 1.54.1",
           "wait-timeout 0.2.1"
         ]
       },
@@ -3360,7 +3262,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -3414,7 +3316,7 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "winnow 1.0.4"
         ]
       },
@@ -3433,14 +3335,14 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.3"
+          "tokio 1.54.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-node 2.1.1"
         ]
@@ -3449,9 +3351,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-node 2.1.1"
         ]
       },
@@ -3459,7 +3361,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-node 2.1.1"
         ]
@@ -3468,18 +3370,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -3510,7 +3412,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -3562,7 +3464,7 @@
         "version": "1.21.4",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
           "ureq 2.12.1",
           "wasm-bindgen 0.2.128"
@@ -3651,7 +3553,7 @@
         "version": "0.2.17",
         "requiredBy": [
           "futures-util 0.3.34",
-          "tokio 1.53.3"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -3698,7 +3600,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -3737,12 +3639,12 @@
           "async-trait 0.1.92",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
           "num_enum_derive 0.7.6",
           "openssl-macros 0.1.1",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "serde_derive 1.0.229",
           "syn 2.0.119",
@@ -3772,7 +3674,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-python 2.1.1"
         ]
@@ -3781,37 +3683,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -3832,12 +3734,12 @@
           "async-trait 0.1.92",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
           "num_enum_derive 0.7.6",
           "openssl-macros 0.1.1",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "serde_derive 1.0.229",
           "syn 2.0.119",
           "syn 3.0.6",
@@ -3987,7 +3889,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -4070,7 +3972,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4"
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -4084,7 +3986,7 @@
           "codspeed-criterion-compat-walltime 5.0.2",
           "criterion 0.8.2",
           "serde-wasm-bindgen 0.6.5",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "url 2.5.8",
           "wasm-bindgen-test 0.3.78",
@@ -4110,7 +4012,7 @@
         "requiredBy": [
           "csv 1.4.0",
           "serde 1.0.229",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "toml_datetime 1.1.1+spec-1.1.0"
         ]
       },
@@ -4129,7 +4031,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -4183,7 +4085,7 @@
         "name": "socket2",
         "version": "0.6.5",
         "requiredBy": [
-          "tokio 1.53.3"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -4210,12 +4112,8 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
           "num_enum_derive 0.7.6",
           "openssl-macros 0.1.1",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -4228,6 +4126,10 @@
           "async-trait 0.1.92",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "serde_derive 1.0.229",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.21",
@@ -4264,7 +4166,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -4323,7 +4225,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.3",
+        "version": "1.54.1",
         "requiredBy": [
           "tokio-native-tls 0.3.1",
           "tokio-tungstenite 0.30.0",
@@ -4340,7 +4242,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.3"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -4663,7 +4565,7 @@
           "schannel 0.1.29",
           "socket2 0.6.5",
           "tempfile 3.27.0",
-          "tokio 1.53.3",
+          "tokio 1.54.1",
           "winapi-util 0.1.11"
         ]
       },
@@ -4807,7 +4709,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -4947,7 +4849,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -5765,9 +5667,9 @@
         "name": "ahash",
         "version": "0.8.12",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-select 59.3.0",
-          "parquet 59.3.0"
+          "arrow-array 59.3.2",
+          "arrow-select 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -5888,11 +5790,11 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-array",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow-ipc 59.3.0",
-          "arrow-select 59.3.0",
-          "parquet 59.3.0",
+          "arrow-ipc 59.3.2",
+          "arrow-select 59.3.2",
+          "parquet 59.3.2",
           "wickra-backtest-data 0.2.1"
         ]
       },
@@ -5900,47 +5802,47 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-buffer",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-data 59.3.0",
-          "arrow-ipc 59.3.0",
-          "arrow-select 59.3.0",
-          "parquet 59.3.0"
+          "arrow-array 59.3.2",
+          "arrow-data 59.3.2",
+          "arrow-ipc 59.3.2",
+          "arrow-select 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-data",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-ipc 59.3.0",
-          "arrow-select 59.3.0",
-          "parquet 59.3.0"
+          "arrow-array 59.3.2",
+          "arrow-ipc 59.3.2",
+          "arrow-select 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-ipc",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-schema",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-data 59.3.0",
-          "arrow-ipc 59.3.0",
-          "arrow-select 59.3.0",
-          "parquet 59.3.0",
+          "arrow-array 59.3.2",
+          "arrow-data 59.3.2",
+          "arrow-ipc 59.3.2",
+          "arrow-select 59.3.2",
+          "parquet 59.3.2",
           "wickra-backtest-data 0.2.1"
         ]
       },
@@ -5948,10 +5850,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-select",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow-ipc 59.3.0",
-          "parquet 59.3.0"
+          "arrow-ipc 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -5978,7 +5880,7 @@
         "name": "base64",
         "version": "0.23.1",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6007,7 +5909,7 @@
         "version": "2.13.2",
         "requiredBy": [
           "flatbuffers 25.12.19",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -6019,7 +5921,7 @@
         "name": "brotli",
         "version": "8.0.4",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6046,8 +5948,8 @@
         "name": "bytes",
         "version": "1.12.1",
         "requiredBy": [
-          "arrow-buffer 59.3.0",
-          "parquet 59.3.0"
+          "arrow-buffer 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6106,8 +6008,8 @@
         "name": "chrono",
         "version": "0.4.45",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "parquet 59.3.0"
+          "arrow-array 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6323,7 +6225,7 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "napi-derive 3.6.9"
         ]
       },
@@ -6392,7 +6294,7 @@
         "name": "flatbuffers",
         "version": "25.12.19",
         "requiredBy": [
-          "arrow-ipc 59.3.0"
+          "arrow-ipc 59.3.2"
         ]
       },
       {
@@ -6401,7 +6303,7 @@
         "name": "flate2",
         "version": "1.1.10",
         "requiredBy": [
-          "parquet 59.3.0",
+          "parquet 59.3.2",
           "ureq 2.12.1"
         ]
       },
@@ -6429,7 +6331,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -6532,8 +6434,7 @@
         "version": "0.3.4",
         "requiredBy": [
           "ahash 0.8.12",
-          "rand_core 0.9.5",
-          "tempfile 3.27.0"
+          "rand_core 0.9.5"
         ]
       },
       {
@@ -6543,7 +6444,8 @@
         "version": "0.4.3",
         "requiredBy": [
           "codspeed 5.0.2",
-          "jobserver 0.1.35"
+          "jobserver 0.1.35",
+          "tempfile 3.27.0"
         ]
       },
       {
@@ -6561,11 +6463,11 @@
         "name": "half",
         "version": "2.7.1",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-buffer 59.3.0",
-          "arrow-data 59.3.0",
+          "arrow-array 59.3.2",
+          "arrow-buffer 59.3.2",
+          "arrow-data 59.3.2",
           "ciborium-ll 0.2.2",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6574,8 +6476,8 @@
         "name": "hashbrown",
         "version": "0.17.1",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "parquet 59.3.0"
+          "arrow-array 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6585,7 +6487,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -6734,7 +6636,7 @@
         "name": "itoa",
         "version": "1.0.18",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -6770,10 +6672,10 @@
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
           "jobserver 0.1.35",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "ring 0.17.14",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
@@ -6785,7 +6687,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -6832,7 +6734,7 @@
         "name": "lz4_flex",
         "version": "0.14.0",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6845,7 +6747,7 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -6861,7 +6763,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-backtest-node 0.2.1"
         ]
@@ -6870,9 +6772,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-backtest-node 0.2.1"
         ]
       },
@@ -6898,9 +6800,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -6918,7 +6820,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -6927,8 +6829,8 @@
         "name": "num-bigint",
         "version": "0.5.1",
         "requiredBy": [
-          "arrow-buffer 59.3.0",
-          "parquet 59.3.0"
+          "arrow-buffer 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6937,7 +6839,7 @@
         "name": "num-complex",
         "version": "0.4.6",
         "requiredBy": [
-          "arrow-array 59.3.0"
+          "arrow-array 59.3.2"
         ]
       },
       {
@@ -6946,10 +6848,10 @@
         "name": "num-integer",
         "version": "0.1.47",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-data 59.3.0",
+          "arrow-array 59.3.2",
+          "arrow-data 59.3.2",
           "num-bigint 0.5.1",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -6959,17 +6861,17 @@
         "version": "0.2.19",
         "requiredBy": [
           "approx 0.5.1",
-          "arrow-array 59.3.0",
-          "arrow-buffer 59.3.0",
-          "arrow-data 59.3.0",
-          "arrow-select 59.3.0",
+          "arrow-array 59.3.2",
+          "arrow-buffer 59.3.2",
+          "arrow-data 59.3.2",
+          "arrow-select 59.3.2",
           "chrono 0.4.45",
           "codspeed-criterion-compat-walltime 5.0.2",
           "half 2.7.1",
           "num-bigint 0.5.1",
           "num-complex 0.4.6",
           "num-integer 0.1.47",
-          "parquet 59.3.0",
+          "parquet 59.3.2",
           "proptest 1.11.0",
           "statrs 0.18.0"
         ]
@@ -6983,7 +6885,7 @@
           "ahash 0.8.12",
           "codspeed-criterion-compat-walltime 5.0.2",
           "const-random-macro 0.1.16",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "rustls 0.23.46",
           "tempfile 3.27.0",
           "ureq 2.12.1",
@@ -7012,7 +6914,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "parquet",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
           "wickra-backtest-data 0.2.1"
         ]
@@ -7051,7 +6953,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -7083,8 +6985,8 @@
           "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -7117,7 +7019,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-backtest-python 0.2.1"
         ]
@@ -7126,37 +7028,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -7179,8 +7081,8 @@
           "futures-macro 0.3.34",
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -7338,7 +7240,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -7450,7 +7352,7 @@
         "name": "seq-macro",
         "version": "0.3.6",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -7463,7 +7365,7 @@
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "url 2.5.8",
           "wickra-backtest-cli 0.2.1",
@@ -7477,7 +7379,7 @@
         "version": "1.0.229",
         "requiredBy": [
           "serde 1.0.229",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -7504,7 +7406,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -7544,7 +7446,7 @@
         "name": "simdutf8",
         "version": "0.1.5",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -7572,7 +7474,7 @@
         "name": "snap",
         "version": "1.1.2",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -7619,8 +7521,6 @@
         "requiredBy": [
           "napi-derive 3.6.9",
           "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
           "zerocopy-derive 0.8.57"
@@ -7635,6 +7535,8 @@
           "clap_derive 4.6.7",
           "displaydoc 0.2.7",
           "futures-macro 0.3.34",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -7663,7 +7565,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -7729,7 +7631,7 @@
         "version": "2.1.4",
         "requiredBy": [
           "lz4_flex 0.14.0",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -8228,7 +8130,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -8237,7 +8139,7 @@
         "name": "zstd",
         "version": "0.13.3",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -8395,7 +8297,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -9248,7 +9150,7 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -9269,7 +9171,7 @@
         "name": "bumpalo",
         "version": "3.20.3",
         "requiredBy": [
-          "wasm-bindgen-macro-support 0.2.128"
+          "wasm-bindgen-macro-support 0.2.129"
         ]
       },
       {
@@ -9304,7 +9206,7 @@
           "half 2.7.1",
           "libloading 0.9.0",
           "nix 0.31.3",
-          "wasm-bindgen 0.2.128"
+          "wasm-bindgen 0.2.129"
         ]
       },
       {
@@ -9444,8 +9346,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -9510,8 +9412,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -9584,7 +9486,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -9722,7 +9624,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -9740,7 +9642,7 @@
         "name": "indexmap",
         "version": "2.14.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -9777,7 +9679,7 @@
         "name": "itoa",
         "version": "1.0.18",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -9792,10 +9694,10 @@
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
@@ -9806,7 +9708,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -9828,14 +9730,14 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-benchmark-node 0.2.1"
         ]
@@ -9844,9 +9746,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-benchmark-node 0.2.1"
         ]
       },
@@ -9854,7 +9756,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-benchmark-node 0.2.1"
         ]
@@ -9863,18 +9765,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -9892,7 +9794,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -9914,9 +9816,9 @@
         "version": "1.21.4",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
-          "wasm-bindgen 0.2.128"
+          "wasm-bindgen 0.2.129"
         ]
       },
       {
@@ -9952,7 +9854,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -9972,10 +9874,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -9984,7 +9886,7 @@
           "syn 2.0.119",
           "syn 3.0.6",
           "thiserror-impl 2.0.21",
-          "wasm-bindgen-macro-support 0.2.128",
+          "wasm-bindgen-macro-support 0.2.129",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -10001,7 +9903,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-benchmark-python 0.2.1"
         ]
@@ -10010,37 +9912,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -10060,10 +9962,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -10071,8 +9973,8 @@
           "syn 2.0.119",
           "syn 3.0.6",
           "thiserror-impl 2.0.21",
-          "wasm-bindgen-macro 0.2.128",
-          "wasm-bindgen-macro-support 0.2.128",
+          "wasm-bindgen-macro 0.2.129",
+          "wasm-bindgen-macro-support 0.2.129",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -10206,7 +10108,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -10224,7 +10126,7 @@
         "name": "rustversion",
         "version": "1.0.23",
         "requiredBy": [
-          "wasm-bindgen 0.2.128"
+          "wasm-bindgen 0.2.129"
         ]
       },
       {
@@ -10269,7 +10171,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4"
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -10282,7 +10184,7 @@
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
           "wickra-benchmark-core 0.2.1"
@@ -10295,10 +10197,10 @@
         "version": "1.0.229",
         "requiredBy": [
           "serde 1.0.229",
-          "serde_json 1.0.151",
-          "serde_spanned 1.1.1",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_datetime 1.1.1+spec-1.1.0"
+          "serde_json 1.0.154",
+          "serde_spanned 1.1.2",
+          "toml 1.1.8+spec-1.1.0",
+          "toml_datetime 1.1.2+spec-1.1.0"
         ]
       },
       {
@@ -10325,7 +10227,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "benchmark-bench 0.2.1",
           "codspeed 5.0.2",
@@ -10341,9 +10243,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_spanned",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -10388,10 +10290,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -10403,12 +10301,16 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.30.0",
           "thiserror-impl 2.0.21",
-          "wasm-bindgen-macro-support 0.2.128"
+          "wasm-bindgen-macro-support 0.2.129"
         ]
       },
       {
@@ -10417,7 +10319,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -10463,7 +10365,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.6+spec-1.1.0",
+        "version": "1.1.8+spec-1.1.0",
         "requiredBy": [
           "wickra-benchmark-core 0.2.1"
         ]
@@ -10472,27 +10374,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_datetime",
-        "version": "1.1.1+spec-1.1.0",
+        "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.3+spec-1.1.0",
+        "version": "1.1.5+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_writer",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -10513,7 +10415,7 @@
           "proc-macro2 1.0.107",
           "syn 2.0.119",
           "syn 3.0.6",
-          "wasm-bindgen-shared 0.2.128"
+          "wasm-bindgen-shared 0.2.129"
         ]
       },
       {
@@ -10566,7 +10468,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen",
-        "version": "0.2.128",
+        "version": "0.2.129",
         "requiredBy": [
           "wickra-benchmark-wasm 0.2.1"
         ]
@@ -10575,28 +10477,28 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro",
-        "version": "0.2.128",
+        "version": "0.2.129",
         "requiredBy": [
-          "wasm-bindgen 0.2.128"
+          "wasm-bindgen 0.2.129"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro-support",
-        "version": "0.2.128",
+        "version": "0.2.129",
         "requiredBy": [
-          "wasm-bindgen-macro 0.2.128"
+          "wasm-bindgen-macro 0.2.129"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-shared",
-        "version": "0.2.128",
+        "version": "0.2.129",
         "requiredBy": [
-          "wasm-bindgen 0.2.128",
-          "wasm-bindgen-macro-support 0.2.128"
+          "wasm-bindgen 0.2.129",
+          "wasm-bindgen-macro-support 0.2.129"
         ]
       },
       {
@@ -10641,8 +10543,8 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0",
+          "toml_parser 1.1.5+spec-1.1.0"
         ]
       },
       {
@@ -10679,7 +10581,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -10819,7 +10721,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -11642,7 +11544,7 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -11845,8 +11747,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -11920,8 +11822,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -12000,10 +11902,19 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "foldhash",
+        "version": "0.2.0",
+        "requiredBy": [
+          "serde_json 1.0.154"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -12142,7 +12053,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -12170,8 +12081,8 @@
         "name": "indexmap",
         "version": "2.14.2",
         "requiredBy": [
-          "serde_json 1.0.151",
-          "toml 1.1.6+spec-1.1.0"
+          "serde_json 1.0.154",
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -12208,7 +12119,7 @@
         "name": "itoa",
         "version": "1.0.18",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -12232,10 +12143,10 @@
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
@@ -12246,7 +12157,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -12268,14 +12179,14 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-compile-node 0.2.1"
         ]
@@ -12284,9 +12195,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-compile-node 0.2.1"
         ]
       },
@@ -12294,7 +12205,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-compile-node 0.2.1"
         ]
@@ -12303,18 +12214,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -12332,7 +12243,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -12355,7 +12266,7 @@
         "version": "1.21.4",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
           "wasm-bindgen 0.2.128"
         ]
@@ -12421,7 +12332,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -12441,10 +12352,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -12470,7 +12381,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-compile-python 0.2.1"
         ]
@@ -12479,37 +12390,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -12529,10 +12440,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -12675,7 +12586,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -12738,7 +12649,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4"
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -12751,7 +12662,7 @@
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
           "wickra-compile-core 0.2.1"
@@ -12764,10 +12675,10 @@
         "version": "1.0.229",
         "requiredBy": [
           "serde 1.0.229",
-          "serde_json 1.0.151",
-          "serde_spanned 1.1.1",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_datetime 1.1.1+spec-1.1.0"
+          "serde_json 1.0.154",
+          "serde_spanned 1.1.2",
+          "toml 1.1.8+spec-1.1.0",
+          "toml_datetime 1.1.2+spec-1.1.0"
         ]
       },
       {
@@ -12794,7 +12705,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -12813,9 +12724,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_spanned",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -12869,10 +12780,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -12884,6 +12791,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -12898,7 +12809,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -12944,7 +12855,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.6+spec-1.1.0",
+        "version": "1.1.8+spec-1.1.0",
         "requiredBy": [
           "wickra-compile-core 0.2.1"
         ]
@@ -12953,27 +12864,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_datetime",
-        "version": "1.1.1+spec-1.1.0",
+        "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.3+spec-1.1.0",
+        "version": "1.1.5+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_writer",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -13143,8 +13054,8 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0",
+          "toml_parser 1.1.5+spec-1.1.0"
         ]
       },
       {
@@ -13181,7 +13092,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -13321,7 +13232,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -17363,7 +17274,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -18186,7 +18097,7 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -18363,8 +18274,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -18420,8 +18331,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -18501,7 +18412,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -18640,7 +18551,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -18658,7 +18569,7 @@
         "name": "indexmap",
         "version": "2.14.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -18695,7 +18606,7 @@
         "name": "itoa",
         "version": "1.0.18",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -18718,10 +18629,10 @@
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
@@ -18732,7 +18643,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -18754,14 +18665,14 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-darwin-node 0.2.1"
         ]
@@ -18770,9 +18681,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-darwin-node 0.2.1"
         ]
       },
@@ -18780,7 +18691,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-darwin-node 0.2.1"
         ]
@@ -18789,18 +18700,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -18818,7 +18729,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -18841,7 +18752,7 @@
         "version": "1.21.4",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
           "wasm-bindgen 0.2.128"
         ]
@@ -18907,7 +18818,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -18927,10 +18838,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -18956,7 +18867,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-darwin-python 0.2.1"
         ]
@@ -18965,37 +18876,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -19015,10 +18926,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -19162,7 +19073,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -19225,7 +19136,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4"
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -19238,7 +19149,7 @@
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
           "wickra-darwin-core 0.2.1"
@@ -19251,10 +19162,10 @@
         "version": "1.0.229",
         "requiredBy": [
           "serde 1.0.229",
-          "serde_json 1.0.151",
-          "serde_spanned 1.1.1",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_datetime 1.1.1+spec-1.1.0"
+          "serde_json 1.0.154",
+          "serde_spanned 1.1.2",
+          "toml 1.1.8+spec-1.1.0",
+          "toml_datetime 1.1.2+spec-1.1.0"
         ]
       },
       {
@@ -19281,7 +19192,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -19299,9 +19210,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_spanned",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -19346,10 +19257,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -19361,6 +19268,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -19375,7 +19286,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -19421,7 +19332,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.6+spec-1.1.0",
+        "version": "1.1.8+spec-1.1.0",
         "requiredBy": [
           "wickra-darwin-core 0.2.1"
         ]
@@ -19430,27 +19341,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_datetime",
-        "version": "1.1.1+spec-1.1.0",
+        "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.3+spec-1.1.0",
+        "version": "1.1.5+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_writer",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -19611,8 +19522,8 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0",
+          "toml_parser 1.1.5+spec-1.1.0"
         ]
       },
       {
@@ -19649,7 +19560,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -19789,7 +19700,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -21753,7 +21664,7 @@
           "quinn-proto 0.11.18",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
-          "tokio 1.53.3",
+          "tokio 1.54.1",
           "tower-http 0.6.11",
           "tungstenite 0.30.0"
         ]
@@ -22706,7 +22617,7 @@
           "ring 0.17.14",
           "rustix 1.1.5",
           "socket2 0.6.5",
-          "tokio 1.53.3",
+          "tokio 1.54.1",
           "wait-timeout 0.2.1"
         ]
       },
@@ -22786,7 +22697,7 @@
         "name": "mio",
         "version": "1.2.3",
         "requiredBy": [
-          "tokio 1.53.3"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -22937,7 +22848,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.3",
+          "tokio 1.54.1",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -23692,7 +23603,7 @@
           "hyper-util 0.1.20",
           "quinn 0.11.12",
           "quinn-udp 0.5.15",
-          "tokio 1.53.3"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -23876,7 +23787,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.3",
+        "version": "1.54.1",
         "requiredBy": [
           "hyper 1.11.1",
           "hyper-rustls 0.27.10",
@@ -23895,7 +23806,7 @@
         "name": "tokio-macros",
         "version": "2.7.2",
         "requiredBy": [
-          "tokio 1.53.3"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -24275,7 +24186,14 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "ring 0.17.14"
+          "colored 3.1.1",
+          "errno 0.3.14",
+          "is-terminal 0.4.17",
+          "quinn-udp 0.5.15",
+          "ring 0.17.14",
+          "rustix 1.1.5",
+          "tempfile 3.27.0",
+          "winapi-util 0.1.11"
         ]
       },
       {
@@ -24284,16 +24202,9 @@
         "name": "windows-sys",
         "version": "0.61.2",
         "requiredBy": [
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
           "mio 1.2.3",
-          "quinn-udp 0.5.15",
-          "rustix 1.1.5",
           "socket2 0.6.5",
-          "tempfile 3.27.0",
-          "tokio 1.53.3",
-          "winapi-util 0.1.11"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -24693,7 +24604,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -25757,7 +25668,7 @@
         "version": "2.13.2",
         "requiredBy": [
           "flatbuffers 25.12.19",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -25998,8 +25909,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -26084,8 +25995,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -26183,7 +26094,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -26343,7 +26254,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -26380,7 +26291,7 @@
         "version": "2.14.2",
         "requiredBy": [
           "arrow-json 59.3.0",
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -26419,7 +26330,7 @@
         "requiredBy": [
           "arrow-json 59.3.0",
           "csv 1.4.0",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -26518,10 +26429,10 @@
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
           "jobserver 0.1.35",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
@@ -26532,7 +26443,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -26584,14 +26495,14 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-feature-store-node 0.2.1"
         ]
@@ -26600,9 +26511,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-feature-store-node 0.2.1"
         ]
       },
@@ -26610,7 +26521,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-feature-store-node 0.2.1"
         ]
@@ -26619,18 +26530,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -26648,7 +26559,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -26719,7 +26630,7 @@
           "ahash 0.8.12",
           "codspeed-criterion-compat-walltime 5.0.2",
           "const-random-macro 0.1.16",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
           "wasm-bindgen 0.2.128"
         ]
@@ -26803,7 +26714,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -26823,10 +26734,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -26854,7 +26765,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-feature-store-python 0.2.1"
         ]
@@ -26863,37 +26774,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -26913,10 +26824,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -27065,7 +26976,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -27148,7 +27059,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4",
+          "napi-derive-backend 6.1.6",
           "rustc_version 0.4.1"
         ]
       },
@@ -27171,7 +27082,7 @@
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
           "wickra-feature-store 0.2.1",
@@ -27187,10 +27098,10 @@
           "arrow-json 59.3.0",
           "csv 1.4.0",
           "serde 1.0.229",
-          "serde_json 1.0.151",
-          "serde_spanned 1.1.1",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_datetime 1.1.1+spec-1.1.0"
+          "serde_json 1.0.154",
+          "serde_spanned 1.1.2",
+          "toml 1.1.8+spec-1.1.0",
+          "toml_datetime 1.1.2+spec-1.1.0"
         ]
       },
       {
@@ -27217,7 +27128,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "arrow-json 59.3.0",
           "codspeed 5.0.2",
@@ -27234,9 +27145,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_spanned",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -27300,10 +27211,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
           "zerocopy-derive 0.8.57"
@@ -27317,6 +27224,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -27331,7 +27242,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -27386,7 +27297,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.6+spec-1.1.0",
+        "version": "1.1.8+spec-1.1.0",
         "requiredBy": [
           "wickra-feature-store-core 0.2.1"
         ]
@@ -27395,27 +27306,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_datetime",
-        "version": "1.1.1+spec-1.1.0",
+        "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.3+spec-1.1.0",
+        "version": "1.1.5+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_writer",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -27655,8 +27566,8 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0",
+          "toml_parser 1.1.5+spec-1.1.0"
         ]
       },
       {
@@ -27703,7 +27614,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -27870,7 +27781,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -31896,7 +31807,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -35927,7 +35838,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -39919,7 +39830,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -41902,7 +41813,7 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -42099,8 +42010,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -42165,8 +42076,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -42239,7 +42150,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -42378,7 +42289,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -42396,7 +42307,7 @@
         "name": "indexmap",
         "version": "2.14.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -42433,7 +42344,7 @@
         "name": "itoa",
         "version": "1.0.18",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -42457,10 +42368,10 @@
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
@@ -42471,7 +42382,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -42493,14 +42404,14 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-proof-node 0.2.1"
         ]
@@ -42509,9 +42420,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-proof-node 0.2.1"
         ]
       },
@@ -42519,7 +42430,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-proof-node 0.2.1"
         ]
@@ -42528,18 +42439,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -42557,7 +42468,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -42580,7 +42491,7 @@
         "version": "1.21.4",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
           "wasm-bindgen 0.2.128"
         ]
@@ -42646,7 +42557,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -42666,10 +42577,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -42702,7 +42613,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-proof-python 0.2.1"
         ]
@@ -42711,37 +42622,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -42761,10 +42672,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -42907,7 +42818,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -42970,7 +42881,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4"
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -42983,7 +42894,7 @@
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
           "wickra-proof-core 0.2.1"
@@ -42996,10 +42907,10 @@
         "version": "1.0.229",
         "requiredBy": [
           "serde 1.0.229",
-          "serde_json 1.0.151",
-          "serde_spanned 1.1.1",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_datetime 1.1.1+spec-1.1.0"
+          "serde_json 1.0.154",
+          "serde_spanned 1.1.2",
+          "toml 1.1.8+spec-1.1.0",
+          "toml_datetime 1.1.2+spec-1.1.0"
         ]
       },
       {
@@ -43026,7 +42937,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -43043,9 +42954,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_spanned",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -43090,10 +43001,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -43105,6 +43012,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -43119,7 +43030,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -43165,7 +43076,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.6+spec-1.1.0",
+        "version": "1.1.8+spec-1.1.0",
         "requiredBy": [
           "wickra-proof-core 0.2.1"
         ]
@@ -43174,27 +43085,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_datetime",
-        "version": "1.1.1+spec-1.1.0",
+        "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.3+spec-1.1.0",
+        "version": "1.1.5+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_writer",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -43355,8 +43266,8 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0",
+          "toml_parser 1.1.5+spec-1.1.0"
         ]
       },
       {
@@ -43393,7 +43304,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -43533,7 +43444,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -47465,7 +47376,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -51491,7 +51402,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -55528,7 +55439,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -56351,7 +56262,7 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -56529,8 +56440,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -56586,8 +56497,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -56651,7 +56562,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -56791,7 +56702,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -56837,7 +56748,7 @@
         "name": "itoa",
         "version": "1.0.18",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -56862,10 +56773,10 @@
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
@@ -56876,7 +56787,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -56898,14 +56809,14 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-strategy-ci-node 0.2.1"
         ]
@@ -56914,9 +56825,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-strategy-ci-node 0.2.1"
         ]
       },
@@ -56924,7 +56835,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-strategy-ci-node 0.2.1"
         ]
@@ -56933,18 +56844,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -56962,7 +56873,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -56985,7 +56896,7 @@
         "version": "1.21.4",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
           "wasm-bindgen 0.2.128"
         ]
@@ -57051,7 +56962,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -57071,10 +56982,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -57100,7 +57011,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-strategy-ci-python 0.2.1"
         ]
@@ -57109,37 +57020,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -57159,10 +57070,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -57334,7 +57245,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -57397,7 +57308,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4"
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -57410,7 +57321,7 @@
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
           "wickra-strategy-ci-core 0.2.1"
@@ -57423,7 +57334,7 @@
         "version": "1.0.229",
         "requiredBy": [
           "serde 1.0.229",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -57450,7 +57361,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -57513,10 +57424,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -57528,6 +57435,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -57542,7 +57453,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -57780,7 +57691,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -57920,7 +57831,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -58743,7 +58654,7 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -58920,8 +58831,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -58995,8 +58906,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -59060,7 +58971,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -59199,7 +59110,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -59217,7 +59128,7 @@
         "name": "indexmap",
         "version": "2.14.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -59255,7 +59166,7 @@
         "version": "1.0.18",
         "requiredBy": [
           "csv 1.4.0",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -59278,10 +59189,10 @@
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
@@ -59292,7 +59203,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -59315,14 +59226,14 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-synth-node 0.2.1"
         ]
@@ -59331,9 +59242,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-synth-node 0.2.1"
         ]
       },
@@ -59341,7 +59252,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-synth-node 0.2.1"
         ]
@@ -59350,18 +59261,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -59379,7 +59290,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -59402,7 +59313,7 @@
         "version": "1.21.4",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
           "wasm-bindgen 0.2.128"
         ]
@@ -59468,7 +59379,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -59488,10 +59399,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "serde_derive 1.0.229",
           "syn 2.0.119",
@@ -59514,7 +59425,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-synth-python 0.2.1"
         ]
@@ -59523,37 +59434,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -59573,10 +59484,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "serde_derive 1.0.229",
           "syn 2.0.119",
           "syn 3.0.6",
@@ -59698,7 +59609,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -59752,7 +59663,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4"
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -59764,7 +59675,7 @@
           "ciborium 0.2.2",
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "wickra-data 2.1.1",
           "wickra-synth-core 0.2.1"
@@ -59778,10 +59689,10 @@
         "requiredBy": [
           "csv 1.4.0",
           "serde 1.0.229",
-          "serde_json 1.0.151",
-          "serde_spanned 1.1.1",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_datetime 1.1.1+spec-1.1.0"
+          "serde_json 1.0.154",
+          "serde_spanned 1.1.2",
+          "toml 1.1.8+spec-1.1.0",
+          "toml_datetime 1.1.2+spec-1.1.0"
         ]
       },
       {
@@ -59799,7 +59710,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -59815,9 +59726,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_spanned",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -59862,10 +59773,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -59877,6 +59784,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "serde_derive 1.0.229",
           "thiserror-impl 2.0.21",
           "wasm-bindgen-macro-support 0.2.128"
@@ -59895,7 +59806,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -59941,7 +59852,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.6+spec-1.1.0",
+        "version": "1.1.8+spec-1.1.0",
         "requiredBy": [
           "wickra-synth-core 0.2.1"
         ]
@@ -59950,27 +59861,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_datetime",
-        "version": "1.1.1+spec-1.1.0",
+        "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.3+spec-1.1.0",
+        "version": "1.1.5+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_writer",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -60131,8 +60042,8 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0",
+          "toml_parser 1.1.5+spec-1.1.0"
         ]
       },
       {
@@ -60169,7 +60080,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -60309,7 +60220,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -65458,7 +65369,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -68435,7 +68346,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -69267,7 +69178,7 @@
         "name": "bitflags",
         "version": "2.13.2",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
           "rustix 1.1.5"
@@ -69464,8 +69375,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -69530,8 +69441,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -69604,7 +69515,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -69743,7 +69654,7 @@
         "version": "0.5.0",
         "requiredBy": [
           "clap_derive 4.6.7",
-          "pyo3-macros-backend 0.29.2"
+          "pyo3-macros-backend 0.30.1"
         ]
       },
       {
@@ -69761,7 +69672,7 @@
         "name": "indexmap",
         "version": "2.14.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -69798,7 +69709,7 @@
         "name": "itoa",
         "version": "1.0.18",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -69822,10 +69733,10 @@
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "is-terminal 0.4.17",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "rustix 1.1.5",
           "wait-timeout 0.2.1"
         ]
@@ -69836,7 +69747,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -69858,14 +69769,14 @@
           "futures-util 0.3.34",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-verify-node 0.2.1"
         ]
@@ -69874,9 +69785,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-verify-node 0.2.1"
         ]
       },
@@ -69884,7 +69795,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-verify-node 0.2.1"
         ]
@@ -69893,18 +69804,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -69922,7 +69833,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -69945,7 +69856,7 @@
         "version": "1.21.4",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "tempfile 3.27.0",
           "wasm-bindgen 0.2.128"
         ]
@@ -70011,7 +69922,7 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -70031,10 +69942,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -70060,7 +69971,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-verify-python 0.2.1"
         ]
@@ -70069,37 +69980,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -70119,10 +70030,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -70265,7 +70176,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -70328,7 +70239,7 @@
         "name": "semver",
         "version": "1.0.28",
         "requiredBy": [
-          "napi-derive-backend 6.1.4"
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -70341,7 +70252,7 @@
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "wickra-backtest-core 0.2.1",
           "wickra-verify-core 0.2.1"
@@ -70354,10 +70265,10 @@
         "version": "1.0.229",
         "requiredBy": [
           "serde 1.0.229",
-          "serde_json 1.0.151",
-          "serde_spanned 1.1.1",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_datetime 1.1.1+spec-1.1.0"
+          "serde_json 1.0.154",
+          "serde_spanned 1.1.2",
+          "toml 1.1.8+spec-1.1.0",
+          "toml_datetime 1.1.2+spec-1.1.0"
         ]
       },
       {
@@ -70384,7 +70295,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -70401,9 +70312,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_spanned",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -70448,10 +70359,6 @@
         "name": "syn",
         "version": "2.0.119",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "zerocopy-derive 0.8.57"
         ]
       },
@@ -70463,6 +70370,10 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "futures-macro 0.3.34",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -70477,7 +70388,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -70523,7 +70434,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.6+spec-1.1.0",
+        "version": "1.1.8+spec-1.1.0",
         "requiredBy": [
           "wickra-verify-core 0.2.1"
         ]
@@ -70532,27 +70443,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_datetime",
-        "version": "1.1.1+spec-1.1.0",
+        "version": "1.1.2+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.3+spec-1.1.0",
+        "version": "1.1.5+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_writer",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0"
         ]
       },
       {
@@ -70720,8 +70631,8 @@
         "name": "winnow",
         "version": "1.0.4",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml 1.1.8+spec-1.1.0",
+          "toml_parser 1.1.5+spec-1.1.0"
         ]
       },
       {
@@ -70758,7 +70669,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
@@ -70898,7 +70809,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -74823,7 +74734,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.8",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
@@ -75947,9 +75858,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bit-set",
-        "version": "0.8.0",
+        "version": "0.11.1",
         "requiredBy": [
-          "proptest 1.11.0"
+          "proptest 1.12.0"
         ]
       },
       {
@@ -75958,9 +75869,17 @@
         "name": "bit-vec",
         "version": "0.8.0",
         "requiredBy": [
-          "bit-set 0.8.0",
-          "proptest 1.11.0",
           "risc0-circuit-rv32im 4.0.5"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "bit-vec",
+        "version": "0.10.1",
+        "requiredBy": [
+          "bit-set 0.11.1",
+          "proptest 1.12.0"
         ]
       },
       {
@@ -75981,9 +75900,9 @@
         "requiredBy": [
           "gdbstub 0.7.10",
           "metal 0.29.0",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
-          "proptest 1.11.0",
+          "proptest 1.12.0",
           "redox_syscall 0.5.18",
           "rustix 1.1.5",
           "tower-http 0.6.11"
@@ -76050,6 +75969,7 @@
         "name": "borsh",
         "version": "1.8.1",
         "requiredBy": [
+          "bit-vec 0.10.1",
           "risc0-binfmt 3.0.5",
           "risc0-zkp 3.0.5",
           "risc0-zkvm 3.0.6",
@@ -76131,6 +76051,7 @@
         "name": "bytes",
         "version": "1.12.1",
         "requiredBy": [
+          "borsh 1.8.1",
           "http 1.5.0",
           "http-body 1.1.0",
           "http-body-util 0.1.5",
@@ -76252,6 +76173,7 @@
         "name": "chacha20",
         "version": "0.10.2",
         "requiredBy": [
+          "proptest 1.12.0",
           "rand 0.10.3"
         ]
       },
@@ -76412,8 +76334,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4"
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6"
         ]
       },
       {
@@ -76450,7 +76372,8 @@
         "name": "core_detect",
         "version": "1.0.0",
         "requiredBy": [
-          "encoding_rs 0.8.41"
+          "encoding_rs 0.8.41",
+          "proptest 1.12.0"
         ]
       },
       {
@@ -76565,8 +76488,8 @@
         "name": "ctor",
         "version": "1.0.13",
         "requiredBy": [
-          "napi 3.13.0",
-          "napi-derive 3.6.9"
+          "napi 3.15.0",
+          "napi-derive 3.6.13"
         ]
       },
       {
@@ -77103,7 +77026,7 @@
         "version": "0.3.34",
         "requiredBy": [
           "downloader 0.2.8",
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -77373,7 +77296,7 @@
         "requiredBy": [
           "clap_derive 4.6.7",
           "duplicate 2.0.1",
-          "pyo3-macros-backend 0.29.2",
+          "pyo3-macros-backend 0.30.1",
           "strum_macros 0.27.2"
         ]
       },
@@ -77718,7 +77641,7 @@
         "requiredBy": [
           "http 1.5.0",
           "hyper 1.11.1",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "serde_urlencoded 0.7.1"
         ]
       },
@@ -77859,11 +77782,11 @@
           "malloc_buf 0.0.6",
           "memmap2 0.9.11",
           "mio 1.2.3",
-          "napi 3.13.0",
+          "napi 3.15.0",
           "nix 0.31.3",
           "parking_lot_core 0.9.12",
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2",
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1",
           "quinn-udp 0.5.15",
           "rand 0.8.8",
           "ring 0.17.14",
@@ -77879,7 +77802,7 @@
         "name": "libloading",
         "version": "0.9.0",
         "requiredBy": [
-          "napi-sys 3.3.2"
+          "napi-sys 3.4.1"
         ]
       },
       {
@@ -78073,7 +77996,7 @@
           "object 0.36.7",
           "regex 1.13.1",
           "regex-automata 0.4.18",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "winnow 0.7.15",
           "winnow 1.0.4",
           "zip 2.4.2"
@@ -78156,7 +78079,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.13.0",
+        "version": "3.15.0",
         "requiredBy": [
           "wickra-zk-node 0.2.1"
         ]
@@ -78165,9 +78088,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "wickra-zk-node 0.2.1"
         ]
       },
@@ -78175,7 +78098,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.9",
+        "version": "3.6.13",
         "requiredBy": [
           "wickra-zk-node 0.2.1"
         ]
@@ -78184,18 +78107,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.4",
+        "version": "6.1.6",
         "requiredBy": [
-          "napi-derive 3.6.9"
+          "napi-derive 3.6.13"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-sys",
-        "version": "3.3.2",
+        "version": "3.4.1",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -78231,7 +78154,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.13.0"
+          "napi 3.15.0"
         ]
       },
       {
@@ -78349,7 +78272,7 @@
           "num-integer 0.1.47",
           "num-iter 0.1.46",
           "plotters 0.3.7",
-          "proptest 1.11.0",
+          "proptest 1.12.0",
           "risc0-circuit-rv32im 4.0.5",
           "risc0-groth16 3.0.5",
           "risc0-zkvm 3.0.6",
@@ -78414,7 +78337,7 @@
           "codspeed-criterion-compat-walltime 5.0.2",
           "lazy-regex 3.6.1",
           "puffin 0.19.1",
-          "pyo3 0.29.2",
+          "pyo3 0.30.1",
           "quinn-udp 0.5.15",
           "rustls 0.23.46",
           "tempfile 3.27.0",
@@ -78598,7 +78521,7 @@
           "jiff 0.2.37",
           "ndarray 0.16.1",
           "portable-atomic-util 0.2.8",
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
@@ -78689,14 +78612,14 @@
           "lazy-regex-proc_macros 3.6.1",
           "maybe-async 0.2.11",
           "multiversion-macros 0.9.0",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
           "num-derive 0.4.2",
           "num_enum_derive 0.7.6",
           "proc-macro2-diagnostics 0.10.1",
           "prost-derive 0.13.5",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
@@ -78735,7 +78658,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "proptest",
-        "version": "1.11.0",
+        "version": "1.12.0",
         "requiredBy": [
           "ruint 1.20.1",
           "wickra-zk-host 0.2.1"
@@ -78772,7 +78695,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
           "wickra-zk-python 0.2.1"
         ]
@@ -78781,37 +78704,37 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-build-config",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2",
-          "pyo3-ffi 0.29.2"
+          "pyo3 0.30.1",
+          "pyo3-ffi 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-ffi",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3 0.29.2"
+          "pyo3 0.30.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pyo3-macros-backend",
-        "version": "0.29.2",
+        "version": "0.30.1",
         "requiredBy": [
-          "pyo3-macros 0.29.2"
+          "pyo3-macros 0.30.1"
         ]
       },
       {
@@ -78883,14 +78806,14 @@
           "lazy-regex-proc_macros 3.6.1",
           "maybe-async 0.2.11",
           "multiversion-macros 0.9.0",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
           "num-derive 0.4.2",
           "num_enum_derive 0.7.6",
           "proc-macro2-diagnostics 0.10.1",
           "prost-derive 0.13.5",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -78962,7 +78885,6 @@
         "name": "rand",
         "version": "0.9.5",
         "requiredBy": [
-          "proptest 1.11.0",
           "risc0-binfmt 3.0.5",
           "risc0-circuit-recursion 4.0.5",
           "risc0-circuit-rv32im 4.0.5",
@@ -78977,6 +78899,7 @@
         "name": "rand",
         "version": "0.10.3",
         "requiredBy": [
+          "proptest 1.12.0",
           "quinn-proto 0.11.18"
         ]
       },
@@ -78995,7 +78918,6 @@
         "name": "rand_chacha",
         "version": "0.9.0",
         "requiredBy": [
-          "proptest 1.11.0",
           "rand 0.9.5"
         ]
       },
@@ -79021,7 +78943,6 @@
         "requiredBy": [
           "rand 0.9.5",
           "rand_chacha 0.9.0",
-          "rand_xorshift 0.4.0",
           "risc0-core 3.0.2",
           "risc0-zkp 3.0.5"
         ]
@@ -79035,7 +78956,8 @@
           "chacha20 0.10.2",
           "getrandom 0.4.3",
           "rand 0.10.3",
-          "rand_pcg 0.10.2"
+          "rand_pcg 0.10.2",
+          "rand_xorshift 0.5.0"
         ]
       },
       {
@@ -79051,9 +78973,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rand_xorshift",
-        "version": "0.4.0",
+        "version": "0.5.0",
         "requiredBy": [
-          "proptest 1.11.0"
+          "proptest 1.12.0"
         ]
       },
       {
@@ -79156,7 +79078,7 @@
         "name": "regex-syntax",
         "version": "0.8.11",
         "requiredBy": [
-          "proptest 1.11.0",
+          "proptest 1.12.0",
           "regex 1.13.1",
           "regex-automata 0.4.18"
         ]
@@ -79420,7 +79342,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.13.0",
+          "napi 3.15.0",
           "quinn 0.11.12",
           "quinn-proto 0.11.18"
         ]
@@ -79498,7 +79420,7 @@
         "name": "rusty-fork",
         "version": "0.3.1",
         "requiredBy": [
-          "proptest 1.11.0"
+          "proptest 1.12.0"
         ]
       },
       {
@@ -79594,7 +79516,7 @@
         "version": "1.0.28",
         "requiredBy": [
           "cargo_metadata 0.19.2",
-          "napi-derive-backend 6.1.4",
+          "napi-derive-backend 6.1.6",
           "risc0-binfmt 3.0.5",
           "risc0-build 3.0.6",
           "risc0-zkvm 3.0.6",
@@ -79609,6 +79531,7 @@
         "version": "1.0.229",
         "requiredBy": [
           "bincode 1.3.3",
+          "bit-vec 0.10.1",
           "bonsai-sdk 1.4.3",
           "bytes 1.12.1",
           "cargo-platform 0.1.9",
@@ -79634,7 +79557,7 @@
           "schemars 0.9.0",
           "schemars 1.2.2",
           "semver 1.0.28",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "serde_spanned 0.6.9",
           "serde_urlencoded 0.7.1",
           "tinytemplate 1.2.1",
@@ -79662,7 +79585,7 @@
           "ruint 1.20.1",
           "semver 1.0.28",
           "serde 1.0.229",
-          "serde_json 1.0.151",
+          "serde_json 1.0.154",
           "serde_spanned 1.1.1",
           "serde_with 3.23.0",
           "time 0.3.55",
@@ -79694,7 +79617,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_json",
-        "version": "1.0.151",
+        "version": "1.0.154",
         "requiredBy": [
           "cargo_metadata 0.19.2",
           "codspeed 5.0.2",
@@ -79984,14 +79907,10 @@
           "jiff-static 0.2.37",
           "lazy-regex-proc_macros 3.6.1",
           "maybe-async 0.2.11",
-          "napi-derive 3.6.9",
-          "napi-derive-backend 6.1.4",
           "num-derive 0.4.2",
           "num_enum_derive 0.7.6",
           "proc-macro2-diagnostics 0.10.1",
           "prost-derive 0.13.5",
-          "pyo3-macros 0.29.2",
-          "pyo3-macros-backend 0.29.2",
           "stability 0.2.1",
           "strum_macros 0.27.2",
           "thiserror-impl 1.0.69",
@@ -80018,6 +79937,10 @@
           "foreign-types-macros 0.2.4",
           "futures-macro 0.3.34",
           "multiversion-macros 0.9.0",
+          "napi-derive 3.6.13",
+          "napi-derive-backend 6.1.6",
+          "pyo3-macros 0.30.1",
+          "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
           "schemars_derive 1.2.2",
           "serde_derive 1.0.229",
@@ -80068,7 +79991,7 @@
         "name": "target-lexicon",
         "version": "0.13.5",
         "requiredBy": [
-          "pyo3-build-config 0.29.2"
+          "pyo3-build-config 0.30.1"
         ]
       },
       {
@@ -80077,7 +80000,7 @@
         "name": "tempfile",
         "version": "3.27.0",
         "requiredBy": [
-          "proptest 1.11.0",
+          "proptest 1.12.0",
           "risc0-build 3.0.6",
           "risc0-build-kernel 2.0.1",
           "risc0-groth16 3.0.5",
@@ -80471,7 +80394,7 @@
         "name": "unarray",
         "version": "0.1.4",
         "requiredBy": [
-          "proptest 1.11.0"
+          "proptest 1.12.0"
         ]
       },
       {
@@ -81104,7 +81027,7 @@
         "name": "zmij",
         "version": "1.0.23",
         "requiredBy": [
-          "serde_json 1.0.151"
+          "serde_json 1.0.154"
         ]
       },
       {
