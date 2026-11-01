@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-28T23:36:51Z",
+  "scanned_at": "2026-11-01T02:38:51Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -6267,8 +6267,8 @@
     {
       "repo": "wickra-playground",
       "declared": "0.1.0",
-      "tag": null,
-      "release": null,
+      "tag": "pyodide-wheel-0.2.1-75216edc9df1",
+      "release": "pyodide-wheel-0.2.1-75216edc9df1",
       "manifests": [
         {
           "file": "Cargo.toml",
@@ -6329,7 +6329,7 @@
         {
           "file": "CITATION.cff",
           "ecosystem": "citation",
-          "required": false,
+          "required": true,
           "range": false,
           "present": false,
           "version": null
