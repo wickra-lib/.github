@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-11-01T18:52:30Z",
+  "scanned_at": "2026-11-01T22:03:52Z",
   "repos": 77,
   "dependabot": [],
   "waiting": 4,
@@ -32,6 +32,15 @@
       "url": "https://github.com/wickra-lib/wickra-zk/security/dependabot/9",
       "created": "2026-11-01T04:27:51Z",
       "title": "zip in Cargo.lock: zip: Unbounded Symlink-Target Handling Can Abort Or Exhaust Memory During Extraction"
+    },
+    {
+      "repo": "wickra-synth",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 104,
+      "url": "https://github.com/wickra-lib/wickra-synth/security/code-scanning/104",
+      "created": "2026-11-01T19:09:28Z",
+      "title": "Scorecard: Pinned-Dependencies"
     },
     {
       "repo": "wickra-zk",
