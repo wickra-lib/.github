@@ -1,8 +1,1163 @@
 {
-  "scanned_at": "2026-10-31T20:26:54Z",
+  "scanned_at": "2026-11-01T13:37:47Z",
   "repos": 77,
-  "dependabot": [],
-  "waiting": 0,
+  "dependabot": [
+    {
+      "repo": ".github",
+      "number": 98,
+      "title": "deps(actions): bump the github-actions group with 3 updates",
+      "url": "https://github.com/wickra-lib/.github/pull/98",
+      "created": "2026-11-01T09:11:15Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "webpage",
+      "number": 94,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/webpage/pull/94",
+      "created": "2026-11-01T09:11:11Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "webpage",
+      "number": 93,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/webpage/pull/93",
+      "created": "2026-11-01T09:10:46Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra",
+      "number": 504,
+      "title": "deps(actions): bump the github-actions group with 15 updates",
+      "url": "https://github.com/wickra-lib/wickra/pull/504",
+      "created": "2026-11-01T06:15:40Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra",
+      "number": 503,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra/pull/503",
+      "created": "2026-11-01T06:09:20Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra",
+      "number": 501,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group across 1 directory",
+      "url": "https://github.com/wickra-lib/wickra/pull/501",
+      "created": "2026-11-01T06:08:32Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra",
+      "number": 500,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra/pull/500",
+      "created": "2026-11-01T06:08:19Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-backtest",
+      "number": 177,
+      "title": "deps(actions): bump the github-actions group with 15 updates",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/177",
+      "created": "2026-11-01T06:15:22Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-backtest",
+      "number": 176,
+      "title": "deps(nuget): Bump the nuget group with 1 update",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/176",
+      "created": "2026-11-01T06:09:23Z",
+      "failing": [],
+      "checks": 64
+    },
+    {
+      "repo": "wickra-backtest",
+      "number": 174,
+      "title": "deps(npm): bump @napi-rs/cli from 3.10.5 to 3.10.9 in /bindings/node in the node-binding group",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/174",
+      "created": "2026-11-01T06:08:53Z",
+      "failing": [],
+      "checks": 64
+    },
+    {
+      "repo": "wickra-backtest",
+      "number": 173,
+      "title": "deps(cargo): bump the napi group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-backtest/pull/173",
+      "created": "2026-11-01T06:08:50Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-backtest-live",
+      "number": 27,
+      "title": "deps(actions): bump actions/setup-node from 7.0.0 to 7.1.0 in the github-actions group",
+      "url": "https://github.com/wickra-lib/wickra-backtest-live/pull/27",
+      "created": "2026-11-01T09:12:11Z",
+      "failing": [],
+      "checks": 3
+    },
+    {
+      "repo": "wickra-backtest-live",
+      "number": 26,
+      "title": "deps(npm): bump the site group with 4 updates",
+      "url": "https://github.com/wickra-lib/wickra-backtest-live/pull/26",
+      "created": "2026-11-01T09:09:52Z",
+      "failing": [],
+      "checks": 3
+    },
+    {
+      "repo": "wickra-backtest-site",
+      "number": 33,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-backtest-site/pull/33",
+      "created": "2026-11-01T09:07:55Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-backtest-site",
+      "number": 32,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-backtest-site/pull/32",
+      "created": "2026-11-01T09:07:36Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-benchmark",
+      "number": 103,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/pull/103",
+      "created": "2026-11-01T06:26:09Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-benchmark",
+      "number": 102,
+      "title": "deps(cargo): bump the cargo group with 4 updates",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/pull/102",
+      "created": "2026-11-01T06:20:44Z",
+      "failing": [],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-benchmark",
+      "number": 101,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/pull/101",
+      "created": "2026-11-01T06:20:19Z",
+      "failing": [],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-benchmark",
+      "number": 99,
+      "title": "deps(actions): bump the github-actions group with 15 updates",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/pull/99",
+      "created": "2026-11-01T06:17:22Z",
+      "failing": [],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-benchmark-site",
+      "number": 15,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-benchmark-site/pull/15",
+      "created": "2026-11-01T09:08:25Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-benchmark-site",
+      "number": 14,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-benchmark-site/pull/14",
+      "created": "2026-11-01T09:07:45Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-compile",
+      "number": 92,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-compile/pull/92",
+      "created": "2026-11-01T06:35:37Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-compile",
+      "number": 91,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-compile/pull/91",
+      "created": "2026-11-01T06:33:27Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-compile",
+      "number": 90,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-compile/pull/90",
+      "created": "2026-11-01T06:32:03Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-compile-site",
+      "number": 18,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-compile-site/pull/18",
+      "created": "2026-11-01T09:11:07Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-compile-site",
+      "number": 17,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-compile-site/pull/17",
+      "created": "2026-11-01T09:08:57Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-copilot",
+      "number": 164,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-copilot/pull/164",
+      "created": "2026-11-01T06:09:58Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-copilot-site",
+      "number": 29,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-copilot-site/pull/29",
+      "created": "2026-11-01T09:15:33Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-copilot-site",
+      "number": 28,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-copilot-site/pull/28",
+      "created": "2026-11-01T09:15:26Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-darwin",
+      "number": 109,
+      "title": "deps(actions): bump the github-actions group with 16 updates",
+      "url": "https://github.com/wickra-lib/wickra-darwin/pull/109",
+      "created": "2026-11-01T06:37:03Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-darwin",
+      "number": 108,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-darwin/pull/108",
+      "created": "2026-11-01T06:36:30Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-darwin",
+      "number": 106,
+      "title": "deps(cargo): bump the cargo group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-darwin/pull/106",
+      "created": "2026-11-01T06:19:20Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-darwin",
+      "number": 105,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-darwin/pull/105",
+      "created": "2026-11-01T06:18:58Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-darwin-site",
+      "number": 17,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-darwin-site/pull/17",
+      "created": "2026-11-01T09:08:27Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-darwin-site",
+      "number": 16,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-darwin-site/pull/16",
+      "created": "2026-11-01T09:07:07Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-docs",
+      "number": 129,
+      "title": "deps(actions): bump the github-actions group with 5 updates",
+      "url": "https://github.com/wickra-lib/wickra-docs/pull/129",
+      "created": "2026-11-01T09:13:29Z",
+      "failing": [],
+      "checks": 8
+    },
+    {
+      "repo": "wickra-docs",
+      "number": 128,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-docs/pull/128",
+      "created": "2026-11-01T09:13:15Z",
+      "failing": [],
+      "checks": 8
+    },
+    {
+      "repo": "wickra-embed",
+      "number": 52,
+      "title": "deps(actions): bump the github-actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-embed/pull/52",
+      "created": "2026-11-01T06:19:14Z",
+      "failing": [],
+      "checks": 31
+    },
+    {
+      "repo": "wickra-embed-site",
+      "number": 18,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-embed-site/pull/18",
+      "created": "2026-11-01T09:08:56Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-embed-site",
+      "number": 17,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-embed-site/pull/17",
+      "created": "2026-11-01T09:07:28Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 285,
+      "title": "deps(actions): bump the github-actions group with 8 updates",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/285",
+      "created": "2026-11-01T06:15:30Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 284,
+      "title": "deps(cargo): bump tokio from 1.53.3 to 1.54.1 in the cargo group",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/284",
+      "created": "2026-11-01T06:09:18Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-exchange",
+      "number": 282,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-exchange/pull/282",
+      "created": "2026-11-01T06:08:45Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-exchange-site",
+      "number": 31,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-exchange-site/pull/31",
+      "created": "2026-11-01T09:14:05Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-exchange-site",
+      "number": 30,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-exchange-site/pull/30",
+      "created": "2026-11-01T09:10:44Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-feature-store",
+      "number": 112,
+      "title": "deps(cargo): bump the cargo group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-feature-store/pull/112",
+      "created": "2026-11-01T06:32:56Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-feature-store",
+      "number": 111,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-feature-store/pull/111",
+      "created": "2026-11-01T06:32:30Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-feature-store",
+      "number": 110,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-feature-store/pull/110",
+      "created": "2026-11-01T06:30:01Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-feature-store",
+      "number": 109,
+      "title": "deps(actions): bump the github-actions group with 15 updates",
+      "url": "https://github.com/wickra-lib/wickra-feature-store/pull/109",
+      "created": "2026-11-01T06:29:04Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-feature-store-site",
+      "number": 17,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-feature-store-site/pull/17",
+      "created": "2026-11-01T09:10:04Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-feature-store-site",
+      "number": 16,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-feature-store-site/pull/16",
+      "created": "2026-11-01T09:08:37Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 112,
+      "title": "deps(actions): bump the github-actions group with 8 updates",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/112",
+      "created": "2026-11-01T06:40:01Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-genome",
+      "number": 111,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-genome/pull/111",
+      "created": "2026-11-01T06:37:10Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-genome-site",
+      "number": 17,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-genome-site/pull/17",
+      "created": "2026-11-01T09:12:24Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-genome-site",
+      "number": 16,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-genome-site/pull/16",
+      "created": "2026-11-01T09:10:05Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 108,
+      "title": "deps(actions): bump the github-actions group with 8 updates",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/108",
+      "created": "2026-11-01T06:35:48Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-gym",
+      "number": 107,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-gym/pull/107",
+      "created": "2026-11-01T06:30:25Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-gym-site",
+      "number": 15,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-gym-site/pull/15",
+      "created": "2026-11-01T09:13:55Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-gym-site",
+      "number": 14,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-gym-site/pull/14",
+      "created": "2026-11-01T09:12:55Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-impact",
+      "number": 118,
+      "title": "deps(actions): bump the github-actions group with 7 updates",
+      "url": "https://github.com/wickra-lib/wickra-impact/pull/118",
+      "created": "2026-11-01T06:26:25Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-impact-site",
+      "number": 17,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-impact-site/pull/17",
+      "created": "2026-11-01T09:08:27Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-impact-site",
+      "number": 16,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-impact-site/pull/16",
+      "created": "2026-11-01T09:07:43Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-live",
+      "number": 32,
+      "title": "deps(npm): bump the site group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-live/pull/32",
+      "created": "2026-11-01T09:15:28Z",
+      "failing": [],
+      "checks": 3
+    },
+    {
+      "repo": "wickra-live",
+      "number": 31,
+      "title": "deps(actions): bump actions/setup-node from 7.0.0 to 7.1.0 in the github-actions group",
+      "url": "https://github.com/wickra-lib/wickra-live/pull/31",
+      "created": "2026-11-01T09:15:07Z",
+      "failing": [],
+      "checks": 3
+    },
+    {
+      "repo": "wickra-pico",
+      "number": 47,
+      "title": "chore(deps): bump the firmware-rp-pico group in /firmware/rp-pico with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-pico/pull/47",
+      "created": "2026-11-01T06:28:38Z",
+      "failing": [],
+      "checks": 23
+    },
+    {
+      "repo": "wickra-pico",
+      "number": 46,
+      "title": "chore(deps): bump the actions group with 14 updates",
+      "url": "https://github.com/wickra-lib/wickra-pico/pull/46",
+      "created": "2026-11-01T06:21:38Z",
+      "failing": [],
+      "checks": 25
+    },
+    {
+      "repo": "wickra-pico-site",
+      "number": 18,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-pico-site/pull/18",
+      "created": "2026-11-01T09:07:39Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-pico-site",
+      "number": 17,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-pico-site/pull/17",
+      "created": "2026-11-01T09:07:12Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-playground",
+      "number": 45,
+      "title": "deps(pip): bump pyodide-build from 0.39.1 to 0.39.2 in /.github/requirements in the pyodide-build group",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/45",
+      "created": "2026-11-01T09:20:35Z",
+      "failing": [],
+      "checks": 10
+    },
+    {
+      "repo": "wickra-playground",
+      "number": 44,
+      "title": "deps(actions): bump the github-actions group with 8 updates",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/44",
+      "created": "2026-11-01T06:13:22Z",
+      "failing": [],
+      "checks": 10
+    },
+    {
+      "repo": "wickra-playground",
+      "number": 43,
+      "title": "deps(npm): bump the npm group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/43",
+      "created": "2026-11-01T06:10:43Z",
+      "failing": [],
+      "checks": 9
+    },
+    {
+      "repo": "wickra-playground-site",
+      "number": 15,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-playground-site/pull/15",
+      "created": "2026-11-01T09:09:42Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-playground-site",
+      "number": 14,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-playground-site/pull/14",
+      "created": "2026-11-01T09:08:58Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-proof",
+      "number": 136,
+      "title": "deps(actions): bump the github-actions group with 16 updates",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/136",
+      "created": "2026-11-01T06:26:54Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-proof",
+      "number": 135,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/135",
+      "created": "2026-11-01T06:26:49Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-proof",
+      "number": 133,
+      "title": "deps(cargo): bump the cargo group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/133",
+      "created": "2026-11-01T06:14:43Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-proof",
+      "number": 132,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/132",
+      "created": "2026-11-01T06:14:20Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-proof",
+      "number": 131,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-proof/pull/131",
+      "created": "2026-11-01T06:12:12Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-proof-site",
+      "number": 15,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-proof-site/pull/15",
+      "created": "2026-11-01T09:11:52Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-proof-site",
+      "number": 14,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-proof-site/pull/14",
+      "created": "2026-11-01T09:09:12Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 160,
+      "title": "deps(actions): bump the github-actions group with 8 updates",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/160",
+      "created": "2026-11-01T06:29:25Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-radar",
+      "number": 159,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-radar/pull/159",
+      "created": "2026-11-01T06:24:56Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-radar-site",
+      "number": 31,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-radar-site/pull/31",
+      "created": "2026-11-01T09:15:34Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-radar-site",
+      "number": 30,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-radar-site/pull/30",
+      "created": "2026-11-01T09:12:23Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 233,
+      "title": "deps(actions): bump the github-actions group with 8 updates",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/233",
+      "created": "2026-11-01T06:23:08Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-screener",
+      "number": 232,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-screener/pull/232",
+      "created": "2026-11-01T06:12:23Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-screener-site",
+      "number": 31,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-screener-site/pull/31",
+      "created": "2026-11-01T09:11:37Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-screener-site",
+      "number": 30,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-screener-site/pull/30",
+      "created": "2026-11-01T09:08:11Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 164,
+      "title": "deps(actions): bump the github-actions group with 8 updates",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/164",
+      "created": "2026-11-01T06:16:17Z",
+      "failing": [],
+      "checks": 67
+    },
+    {
+      "repo": "wickra-shazam",
+      "number": 163,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-shazam/pull/163",
+      "created": "2026-11-01T06:15:37Z",
+      "failing": [],
+      "checks": 65
+    },
+    {
+      "repo": "wickra-shazam-site",
+      "number": 30,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-shazam-site/pull/30",
+      "created": "2026-11-01T09:12:31Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-shazam-site",
+      "number": 29,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-shazam-site/pull/29",
+      "created": "2026-11-01T09:08:51Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "number": 107,
+      "title": "deps(actions): bump the github-actions group with 16 updates",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/107",
+      "created": "2026-11-01T06:23:40Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "number": 105,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/105",
+      "created": "2026-11-01T06:16:06Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "number": 104,
+      "title": "deps(cargo): bump the cargo group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/104",
+      "created": "2026-11-01T06:13:33Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-strategy-ci",
+      "number": 103,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci/pull/103",
+      "created": "2026-11-01T06:13:12Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-strategy-ci-site",
+      "number": 15,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci-site/pull/15",
+      "created": "2026-11-01T09:10:50Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-strategy-ci-site",
+      "number": 14,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-strategy-ci-site/pull/14",
+      "created": "2026-11-01T09:09:31Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-synth",
+      "number": 103,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/103",
+      "created": "2026-11-01T06:29:47Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-synth",
+      "number": 102,
+      "title": "deps(actions): bump the github-actions group with 15 updates",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/102",
+      "created": "2026-11-01T06:26:20Z",
+      "failing": [],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-synth",
+      "number": 101,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/101",
+      "created": "2026-11-01T06:17:17Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-synth",
+      "number": 100,
+      "title": "deps(cargo): bump the cargo group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/100",
+      "created": "2026-11-01T06:16:34Z",
+      "failing": [],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-synth",
+      "number": 99,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-synth/pull/99",
+      "created": "2026-11-01T06:16:09Z",
+      "failing": [],
+      "checks": 70
+    },
+    {
+      "repo": "wickra-synth-site",
+      "number": 18,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-synth-site/pull/18",
+      "created": "2026-11-01T09:10:14Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-synth-site",
+      "number": 17,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-synth-site/pull/17",
+      "created": "2026-11-01T09:08:00Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 174,
+      "title": "deps(actions): bump the github-actions group with 7 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/174",
+      "created": "2026-11-01T06:18:06Z",
+      "failing": [],
+      "checks": 71
+    },
+    {
+      "repo": "wickra-terminal",
+      "number": 173,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-terminal/pull/173",
+      "created": "2026-11-01T06:10:12Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-terminal-site",
+      "number": 37,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-terminal-site/pull/37",
+      "created": "2026-11-01T09:00:11Z",
+      "failing": [],
+      "checks": 5
+    },
+    {
+      "repo": "wickra-terminal-site",
+      "number": 36,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-terminal-site/pull/36",
+      "created": "2026-11-01T09:00:06Z",
+      "failing": [],
+      "checks": 5
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 111,
+      "title": "deps(actions): bump the github-actions group with 8 updates",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/111",
+      "created": "2026-11-01T06:39:06Z",
+      "failing": [],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-timemachine",
+      "number": 110,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-timemachine/pull/110",
+      "created": "2026-11-01T06:38:12Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-timemachine-site",
+      "number": 17,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-timemachine-site/pull/17",
+      "created": "2026-11-01T09:13:11Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-timemachine-site",
+      "number": 16,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-timemachine-site/pull/16",
+      "created": "2026-11-01T09:12:23Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-verify",
+      "number": 138,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/138",
+      "created": "2026-11-01T06:31:39Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-verify",
+      "number": 137,
+      "title": "deps(nuget): Bump the nuget group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/137",
+      "created": "2026-11-01T06:29:28Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-verify",
+      "number": 136,
+      "title": "deps(actions): bump the github-actions group with 16 updates",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/136",
+      "created": "2026-11-01T06:22:31Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-verify",
+      "number": 134,
+      "title": "deps(cargo): bump the cargo group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/134",
+      "created": "2026-11-01T06:09:57Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-verify",
+      "number": 133,
+      "title": "deps(cargo): bump the napi group with 3 updates",
+      "url": "https://github.com/wickra-lib/wickra-verify/pull/133",
+      "created": "2026-11-01T06:09:41Z",
+      "failing": [],
+      "checks": 69
+    },
+    {
+      "repo": "wickra-verify-site",
+      "number": 15,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-verify-site/pull/15",
+      "created": "2026-11-01T09:12:37Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-verify-site",
+      "number": 14,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-verify-site/pull/14",
+      "created": "2026-11-01T09:11:32Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 198,
+      "title": "deps(actions): bump the github-actions group with 7 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/198",
+      "created": "2026-11-01T06:17:35Z",
+      "failing": [
+        "CodSpeed Performance Analysis"
+      ],
+      "checks": 68
+    },
+    {
+      "repo": "wickra-xray",
+      "number": 197,
+      "title": "deps(maven): bump org.apache.maven.plugins:maven-surefire-plugin from 3.6.0 to 3.6.1 in /bindings/java in the maven group",
+      "url": "https://github.com/wickra-lib/wickra-xray/pull/197",
+      "created": "2026-11-01T06:12:57Z",
+      "failing": [],
+      "checks": 66
+    },
+    {
+      "repo": "wickra-xray-site",
+      "number": 33,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-xray-site/pull/33",
+      "created": "2026-11-01T09:10:22Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-xray-site",
+      "number": 32,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-xray-site/pull/32",
+      "created": "2026-11-01T09:10:20Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-zk",
+      "number": 104,
+      "title": "deps(actions): bump the github-actions group with 16 updates",
+      "url": "https://github.com/wickra-lib/wickra-zk/pull/104",
+      "created": "2026-11-01T06:22:28Z",
+      "failing": [],
+      "checks": 60
+    },
+    {
+      "repo": "wickra-zk",
+      "number": 103,
+      "title": "deps(cargo): bump the cargo group with 6 updates",
+      "url": "https://github.com/wickra-lib/wickra-zk/pull/103",
+      "created": "2026-11-01T06:13:16Z",
+      "failing": [],
+      "checks": 60
+    },
+    {
+      "repo": "wickra-zk-site",
+      "number": 16,
+      "title": "deps(actions): bump the github-actions group with 2 updates",
+      "url": "https://github.com/wickra-lib/wickra-zk-site/pull/16",
+      "created": "2026-11-01T09:09:47Z",
+      "failing": [],
+      "checks": 4
+    },
+    {
+      "repo": "wickra-zk-site",
+      "number": 15,
+      "title": "deps(npm): bump vue from 3.5.43 to 3.5.44 in the site group",
+      "url": "https://github.com/wickra-lib/wickra-zk-site/pull/15",
+      "created": "2026-11-01T09:09:47Z",
+      "failing": [],
+      "checks": 4
+    }
+  ],
+  "waiting": 31,
   "people": [
     {
       "kind": "issue",
@@ -15,6 +1170,42 @@
     }
   ],
   "alerts": [
+    {
+      "repo": "wickra-zk",
+      "kind": "Dependabot",
+      "severity": "critical",
+      "number": 8,
+      "url": "https://github.com/wickra-lib/wickra-zk/security/dependabot/8",
+      "created": "2026-11-01T04:27:50Z",
+      "title": "zip in Cargo.lock: zip: Critical Parser Differential & Security Control Bypass via Dual-Header Inconsistencies (Zip Cloaking) Leading to Arbitrary File Overwrite & RCE"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "Dependabot",
+      "severity": "high",
+      "number": 9,
+      "url": "https://github.com/wickra-lib/wickra-zk/security/dependabot/9",
+      "created": "2026-11-01T04:27:51Z",
+      "title": "zip in Cargo.lock: zip: Unbounded Symlink-Target Handling Can Abort Or Exhaust Memory During Extraction"
+    },
+    {
+      "repo": "wickra-zk",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 10,
+      "url": "https://github.com/wickra-lib/wickra-zk/security/dependabot/10",
+      "created": "2026-11-01T04:27:51Z",
+      "title": "zip in Cargo.lock: zip: AES Entry HMAC Authentication Bypass on Premature EOF"
+    },
+    {
+      "repo": "wickra-playground",
+      "kind": "Dependabot",
+      "severity": "medium",
+      "number": 21,
+      "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/21",
+      "created": "2026-11-01T04:12:12Z",
+      "title": "minimatch in package-lock.json: minimatch has potential denial of service via globparts amplification"
+    },
     {
       "repo": "wickra-xray",
       "kind": "code scanning",
