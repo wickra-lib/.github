@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-11-01T22:15:22Z",
+  "scanned_at": "2026-11-02T01:03:11Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
@@ -10,7 +10,7 @@
     "npm": {
       "total": 109,
       "shared": 109,
-      "differing": 1
+      "differing": 0
     },
     "maven": {
       "total": 2,
@@ -81176,7 +81176,7 @@
         "ecosystem": "npm",
         "source": "bindings/node/package-lock.json",
         "name": "@napi-rs/cli",
-        "version": "3.10.5",
+        "version": "3.10.9",
         "requiredBy": null
       },
       {
