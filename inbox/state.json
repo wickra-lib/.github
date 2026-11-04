@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-11-04T12:54:09Z",
+  "scanned_at": "2026-11-04T22:32:39Z",
   "repos": 77,
   "dependabot": [],
   "waiting": 0,
@@ -14,16 +14,6 @@
       "created": "2026-09-28T01:55:14Z"
     }
   ],
-  "alerts": [
-    {
-      "repo": "wickra-playground",
-      "kind": "Dependabot",
-      "severity": "medium",
-      "number": 21,
-      "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/21",
-      "created": "2026-11-01T04:12:12Z",
-      "title": "minimatch in package-lock.json: minimatch has potential denial of service via globparts amplification"
-    }
-  ],
+  "alerts": [],
   "unreadable": []
 }
