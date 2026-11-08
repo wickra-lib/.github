@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-11-03T10:07:21Z",
+  "scanned_at": "2026-11-08T23:41:17Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 374,
-      "differing": 61
+      "differing": 54
     },
     "npm": {
       "total": 109,
@@ -77,8 +77,8 @@
           "wickra-exchange-core 0.2.1"
         ],
         "wickra-feature-store": [
-          "arrow-cast 59.3.0",
-          "parquet 59.3.0"
+          "arrow-cast 59.3.2",
+          "parquet 59.3.2"
         ],
         "wickra-genome": [
           "hyper-util 0.1.20",
@@ -129,8 +129,7 @@
         ]
       },
       "held": [
-        "arrow-cast 59.3.0",
-        "parquet 59.3.0",
+        "arrow-cast 59.3.2",
         "parquet 59.3.2",
         "serde_with 3.23.0"
       ]
@@ -1275,8 +1274,8 @@
           "parquet 59.3.2"
         ],
         "wickra-feature-store": [
-          "arrow-buffer 59.3.0",
-          "parquet 59.3.0"
+          "arrow-buffer 59.3.2",
+          "parquet 59.3.2"
         ],
         "wickra-zk": [
           "ark-ec 0.5.0",
@@ -2173,7 +2172,7 @@
         ],
         "wickra-feature-store": [
           "lz4_flex 0.14.0",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ],
         "wickra-zk": [
           "ruzstd 0.7.3"
@@ -25315,9 +25314,9 @@
         "name": "ahash",
         "version": "0.8.12",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-select 59.3.0",
-          "parquet 59.3.0"
+          "arrow-array 59.3.2",
+          "arrow-select 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -25438,7 +25437,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
           "wickra-feature-store 0.2.1",
           "wickra-feature-store-core 0.2.1"
@@ -25448,170 +25447,170 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-arith",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0"
+          "arrow 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-array",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0",
-          "arrow-arith 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-csv 59.3.0",
-          "arrow-ipc 59.3.0",
-          "arrow-json 59.3.0",
-          "arrow-ord 59.3.0",
-          "arrow-row 59.3.0",
-          "arrow-select 59.3.0",
-          "arrow-string 59.3.0",
-          "parquet 59.3.0"
+          "arrow 59.3.2",
+          "arrow-arith 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-csv 59.3.2",
+          "arrow-ipc 59.3.2",
+          "arrow-json 59.3.2",
+          "arrow-ord 59.3.2",
+          "arrow-row 59.3.2",
+          "arrow-select 59.3.2",
+          "arrow-string 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-buffer",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0",
-          "arrow-arith 59.3.0",
-          "arrow-array 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-data 59.3.0",
-          "arrow-ipc 59.3.0",
-          "arrow-json 59.3.0",
-          "arrow-ord 59.3.0",
-          "arrow-row 59.3.0",
-          "arrow-select 59.3.0",
-          "arrow-string 59.3.0",
-          "parquet 59.3.0"
+          "arrow 59.3.2",
+          "arrow-arith 59.3.2",
+          "arrow-array 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-data 59.3.2",
+          "arrow-ipc 59.3.2",
+          "arrow-json 59.3.2",
+          "arrow-ord 59.3.2",
+          "arrow-row 59.3.2",
+          "arrow-select 59.3.2",
+          "arrow-string 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-cast",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0",
-          "arrow-csv 59.3.0",
-          "arrow-json 59.3.0"
+          "arrow 59.3.2",
+          "arrow-csv 59.3.2",
+          "arrow-json 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-csv",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0"
+          "arrow 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-data",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0",
-          "arrow-arith 59.3.0",
-          "arrow-array 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-ipc 59.3.0",
-          "arrow-ord 59.3.0",
-          "arrow-row 59.3.0",
-          "arrow-select 59.3.0",
-          "arrow-string 59.3.0",
-          "parquet 59.3.0"
+          "arrow 59.3.2",
+          "arrow-arith 59.3.2",
+          "arrow-array 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-ipc 59.3.2",
+          "arrow-ord 59.3.2",
+          "arrow-row 59.3.2",
+          "arrow-select 59.3.2",
+          "arrow-string 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-ipc",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0",
-          "parquet 59.3.0"
+          "arrow 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-json",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0"
+          "arrow 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-ord",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-json 59.3.0"
+          "arrow 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-json 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-row",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0"
+          "arrow 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-schema",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0",
-          "arrow-arith 59.3.0",
-          "arrow-array 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-csv 59.3.0",
-          "arrow-data 59.3.0",
-          "arrow-ipc 59.3.0",
-          "arrow-json 59.3.0",
-          "arrow-ord 59.3.0",
-          "arrow-row 59.3.0",
-          "arrow-select 59.3.0",
-          "arrow-string 59.3.0",
-          "parquet 59.3.0"
+          "arrow 59.3.2",
+          "arrow-arith 59.3.2",
+          "arrow-array 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-csv 59.3.2",
+          "arrow-data 59.3.2",
+          "arrow-ipc 59.3.2",
+          "arrow-json 59.3.2",
+          "arrow-ord 59.3.2",
+          "arrow-row 59.3.2",
+          "arrow-select 59.3.2",
+          "arrow-string 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-select",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-ipc 59.3.0",
-          "arrow-json 59.3.0",
-          "arrow-ord 59.3.0",
-          "arrow-string 59.3.0",
-          "parquet 59.3.0"
+          "arrow 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-ipc 59.3.2",
+          "arrow-json 59.3.2",
+          "arrow-ord 59.3.2",
+          "arrow-string 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "arrow-string",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
-          "arrow 59.3.0"
+          "arrow 59.3.2"
         ]
       },
       {
@@ -25620,7 +25619,7 @@
         "name": "atoi",
         "version": "2.0.0",
         "requiredBy": [
-          "arrow-cast 59.3.0"
+          "arrow-cast 59.3.2"
         ]
       },
       {
@@ -25638,8 +25637,8 @@
         "name": "base64",
         "version": "0.23.1",
         "requiredBy": [
-          "arrow-cast 59.3.0",
-          "parquet 59.3.0"
+          "arrow-cast 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -25680,7 +25679,7 @@
         "name": "brotli",
         "version": "8.0.4",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -25707,8 +25706,8 @@
         "name": "bytes",
         "version": "1.12.1",
         "requiredBy": [
-          "arrow-buffer 59.3.0",
-          "parquet 59.3.0"
+          "arrow-buffer 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -25764,12 +25763,12 @@
         "name": "chrono",
         "version": "0.4.45",
         "requiredBy": [
-          "arrow-arith 59.3.0",
-          "arrow-array 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-csv 59.3.0",
-          "arrow-json 59.3.0",
-          "parquet 59.3.0"
+          "arrow-arith 59.3.2",
+          "arrow-array 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-csv 59.3.2",
+          "arrow-json 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -25976,7 +25975,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "arrow-csv 59.3.0"
+          "arrow-csv 59.3.2"
         ]
       },
       {
@@ -25985,7 +25984,7 @@
         "name": "csv-core",
         "version": "0.1.13",
         "requiredBy": [
-          "arrow-csv 59.3.0",
+          "arrow-csv 59.3.2",
           "csv 1.4.0"
         ]
       },
@@ -26067,7 +26066,7 @@
         "name": "flatbuffers",
         "version": "25.12.19",
         "requiredBy": [
-          "arrow-ipc 59.3.0"
+          "arrow-ipc 59.3.2"
         ]
       },
       {
@@ -26076,7 +26075,7 @@
         "name": "flate2",
         "version": "1.1.10",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -26226,14 +26225,14 @@
         "name": "half",
         "version": "2.7.1",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-buffer 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-data 59.3.0",
-          "arrow-json 59.3.0",
-          "arrow-row 59.3.0",
+          "arrow-array 59.3.2",
+          "arrow-buffer 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-data 59.3.2",
+          "arrow-json 59.3.2",
+          "arrow-row 59.3.2",
           "ciborium-ll 0.2.2",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -26242,9 +26241,9 @@
         "name": "hashbrown",
         "version": "0.17.1",
         "requiredBy": [
-          "arrow-array 59.3.0",
+          "arrow-array 59.3.2",
           "indexmap 2.14.2",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -26290,7 +26289,7 @@
         "name": "indexmap",
         "version": "2.14.2",
         "requiredBy": [
-          "arrow-json 59.3.0",
+          "arrow-json 59.3.2",
           "toml 1.1.8+spec-1.1.0"
         ]
       },
@@ -26328,7 +26327,7 @@
         "name": "itoa",
         "version": "1.0.18",
         "requiredBy": [
-          "arrow-json 59.3.0",
+          "arrow-json 59.3.2",
           "csv 1.4.0",
           "serde_json 1.0.154"
         ]
@@ -26359,8 +26358,8 @@
         "name": "lexical-core",
         "version": "1.0.6",
         "requiredBy": [
-          "arrow-cast 59.3.0",
-          "arrow-json 59.3.0"
+          "arrow-cast 59.3.2",
+          "arrow-json 59.3.2"
         ]
       },
       {
@@ -26479,7 +26478,7 @@
         "name": "lz4_flex",
         "version": "0.14.0",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -26489,8 +26488,8 @@
         "version": "2.8.3",
         "requiredBy": [
           "aho-corasick 1.1.5",
-          "arrow-json 59.3.0",
-          "arrow-string 59.3.0",
+          "arrow-json 59.3.2",
+          "arrow-string 59.3.2",
           "csv-core 0.1.13",
           "futures-util 0.3.34",
           "regex 1.13.1",
@@ -26568,8 +26567,8 @@
         "name": "num-bigint",
         "version": "0.5.1",
         "requiredBy": [
-          "arrow-buffer 59.3.0",
-          "parquet 59.3.0"
+          "arrow-buffer 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -26578,7 +26577,7 @@
         "name": "num-complex",
         "version": "0.4.6",
         "requiredBy": [
-          "arrow-array 59.3.0"
+          "arrow-array 59.3.2"
         ]
       },
       {
@@ -26587,10 +26586,10 @@
         "name": "num-integer",
         "version": "0.1.47",
         "requiredBy": [
-          "arrow-array 59.3.0",
-          "arrow-data 59.3.0",
+          "arrow-array 59.3.2",
+          "arrow-data 59.3.2",
           "num-bigint 0.5.1",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -26600,14 +26599,14 @@
         "version": "0.2.19",
         "requiredBy": [
           "approx 0.5.1",
-          "arrow-arith 59.3.0",
-          "arrow-array 59.3.0",
-          "arrow-buffer 59.3.0",
-          "arrow-cast 59.3.0",
-          "arrow-data 59.3.0",
-          "arrow-json 59.3.0",
-          "arrow-select 59.3.0",
-          "arrow-string 59.3.0",
+          "arrow-arith 59.3.2",
+          "arrow-array 59.3.2",
+          "arrow-buffer 59.3.2",
+          "arrow-cast 59.3.2",
+          "arrow-data 59.3.2",
+          "arrow-json 59.3.2",
+          "arrow-select 59.3.2",
+          "arrow-string 59.3.2",
           "atoi 2.0.0",
           "chrono 0.4.45",
           "codspeed-criterion-compat-walltime 5.0.2",
@@ -26615,7 +26614,7 @@
           "num-bigint 0.5.1",
           "num-complex 0.4.6",
           "num-integer 0.1.47",
-          "parquet 59.3.0",
+          "parquet 59.3.2",
           "plotters 0.3.7",
           "proptest 1.11.0",
           "statrs 0.18.0"
@@ -26657,7 +26656,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "parquet",
-        "version": "59.3.0",
+        "version": "59.3.2",
         "requiredBy": [
           "wickra-feature-store-core 0.2.1"
         ]
@@ -26943,8 +26942,8 @@
         "name": "regex",
         "version": "1.13.1",
         "requiredBy": [
-          "arrow-csv 59.3.0",
-          "arrow-string 59.3.0",
+          "arrow-csv 59.3.2",
+          "arrow-string 59.3.2",
           "codspeed-criterion-compat 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2"
         ]
@@ -26964,7 +26963,7 @@
         "name": "regex-syntax",
         "version": "0.8.11",
         "requiredBy": [
-          "arrow-string 59.3.0",
+          "arrow-string 59.3.2",
           "proptest 1.11.0",
           "regex 1.13.1",
           "regex-automata 0.4.18"
@@ -27021,8 +27020,8 @@
         "name": "ryu",
         "version": "1.0.23",
         "requiredBy": [
-          "arrow-cast 59.3.0",
-          "arrow-json 59.3.0",
+          "arrow-cast 59.3.2",
+          "arrow-json 59.3.2",
           "csv 1.4.0"
         ]
       },
@@ -27069,7 +27068,7 @@
         "name": "seq-macro",
         "version": "0.3.6",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -27095,7 +27094,7 @@
         "name": "serde_core",
         "version": "1.0.229",
         "requiredBy": [
-          "arrow-json 59.3.0",
+          "arrow-json 59.3.2",
           "csv 1.4.0",
           "serde 1.0.229",
           "serde_json 1.0.154",
@@ -27130,7 +27129,7 @@
         "name": "serde_json",
         "version": "1.0.154",
         "requiredBy": [
-          "arrow-json 59.3.0",
+          "arrow-json 59.3.2",
           "codspeed 5.0.2",
           "codspeed-criterion-compat-walltime 5.0.2",
           "schemars 1.2.2",
@@ -27165,8 +27164,8 @@
         "name": "simdutf8",
         "version": "0.1.5",
         "requiredBy": [
-          "arrow-json 59.3.0",
-          "parquet 59.3.0"
+          "arrow-json 59.3.2",
+          "parquet 59.3.2"
         ]
       },
       {
@@ -27184,7 +27183,7 @@
         "name": "snap",
         "version": "1.1.2",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -27336,7 +27335,7 @@
         "version": "2.1.4",
         "requiredBy": [
           "lz4_flex 0.14.0",
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
@@ -27623,7 +27622,7 @@
         "name": "zstd",
         "version": "0.13.3",
         "requiredBy": [
-          "parquet 59.3.0"
+          "parquet 59.3.2"
         ]
       },
       {
