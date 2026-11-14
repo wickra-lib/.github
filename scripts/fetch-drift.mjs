@@ -48,7 +48,21 @@ async function request(url, init = {}) {
       continue
     }
     if (res.status === 404) return null
-    if (res.ok) return res
+    if (res.ok) {
+      // A 2xx status line does not mean the body arrived: a stream cut mid-read
+      // rejects here, and a body that ends early parses as broken JSON (run
+      // #409, 2026-11-13, died on a GraphQL batch that way). Both are network
+      // faults, so the body is read, and JSON checked, inside the retry loop.
+      try {
+        const buf = await res.arrayBuffer()
+        if (/json/.test(res.headers.get('content-type') || '')) JSON.parse(new TextDecoder().decode(buf))
+        return new Response([204, 205].includes(res.status) ? null : buf, { status: res.status, statusText: res.statusText, headers: res.headers })
+      } catch (err) {
+        reason = `incomplete body: ${err.message}`
+        if (attempt < ATTEMPTS) await sleep(attempt * 500)
+        continue
+      }
+    }
     if (res.status < 500 && res.status !== 429) throw new Error(`${url} -> HTTP ${res.status}`)
     reason = `HTTP ${res.status}`
     if (attempt < ATTEMPTS) await sleep(attempt * 500)
