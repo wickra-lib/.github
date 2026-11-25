@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-11-24T15:43:06Z",
+  "scanned_at": "2026-11-25T01:20:57Z",
   "repos": 77,
   "dependabot": [],
   "waiting": 0,
@@ -51,15 +51,6 @@
     }
   ],
   "alerts": [
-    {
-      "repo": "wickra-playground",
-      "kind": "code scanning",
-      "severity": "high",
-      "number": 11,
-      "url": "https://github.com/wickra-lib/wickra-playground/security/code-scanning/11",
-      "created": "2026-10-04T18:07:12Z",
-      "title": "Scorecard: Vulnerabilities"
-    },
     {
       "repo": "wickra-screener",
       "kind": "code scanning",
