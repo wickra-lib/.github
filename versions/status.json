@@ -1,16 +1,25 @@
 {
-  "scanned_at": "2026-11-26T22:29:33Z",
+  "scanned_at": "2026-11-26T23:48:23Z",
   "org": "wickra-lib",
   "token": "GITHUB_TOKEN",
   "skipped": [],
   "logs_readable": true,
   "summary": {
     "repositories": 77,
-    "green": 73,
+    "green": 64,
     "running": 1,
     "red": [
       "wickra-benchmark",
       "wickra-compile",
+      "wickra-copilot",
+      "wickra-feature-store",
+      "wickra-genome",
+      "wickra-gym",
+      "wickra-radar",
+      "wickra-screener",
+      "wickra-shazam",
+      "wickra-timemachine",
+      "wickra-xray",
       "wickra-zk"
     ]
   },
@@ -18,14 +27,15 @@
     {
       "repo": ".github",
       "branch": "main",
-      "sha": "052f80fa",
-      "full_sha": "052f80fad91085336f948baeefd37b3124b69482",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T19:56:49Z",
+      "sha": "01a3c93a",
+      "full_sha": "01a3c93ae9714e0bbfa3f53730c77677cf2d2d0c",
+      "subject": "status: keep the stranded runs out of status.md (#103)",
+      "committed_at": "2026-11-26T23:47:08Z",
       "passed": [],
       "failed": [],
       "running": [
-        "refresh"
+        "refresh",
+        "Audit workflows"
       ],
       "skipped": [],
       "links": []
@@ -38,6 +48,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T05:28:21Z",
       "passed": [
+        "Pull the counts and the released version",
         "refresh",
         "Pull the counts and the released version",
         "Cloudflare Pages"
@@ -302,103 +313,12 @@
     {
       "repo": "wickra-backtest-live",
       "branch": "main",
-      "sha": "d3c22219",
-      "full_sha": "d3c222191ab6426bdb3f3e1f8cc5acf998f8a2b6",
-      "subject": "deps(actions): bump actions/setup-node from 7.0.0 to 7.1.0 in the github",
-      "committed_at": "2026-11-01T16:57:28Z",
+      "sha": "a0a94c5b",
+      "full_sha": "a0a94c5ba7a2fff15e9b8c78487a6e4b56b709e8",
+      "subject": "chore: follow the released engine versions",
+      "committed_at": "2026-11-26T22:33:28Z",
       "passed": [
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "External links (lychee)",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "External links (lychee)",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "External links (lychee)",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "External links (lychee)",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Pull the released engine versions",
-        "Cloudflare Pages",
-        "External links (non-blocking)",
-        "Build"
+        "Cloudflare Pages"
       ],
       "failed": [],
       "running": [],
@@ -408,10 +328,10 @@
     {
       "repo": "wickra-backtest-site",
       "branch": "main",
-      "sha": "416a589d",
-      "full_sha": "416a589dff60c986c7c0d177a1cd68630e6a6e18",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T20:04:38Z",
+      "sha": "f1180205",
+      "full_sha": "f1180205d8b7a14c3cdf53aa888be4752cdc8295",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:34:54Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -428,35 +348,42 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#110)",
       "committed_at": "2026-11-26T18:36:13Z",
       "passed": [
+        "Publish wickra-benchmark-wasm to npm",
+        "Publish to PyPI",
+        "Mirror the Go module to wickra-benchmark-go",
+        "Publish to NuGet",
+        "Publish to npm",
+        "Publish to crates.io",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "C ABI library (aarch64-apple-darwin)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Node build (x86_64-apple-darwin)",
+        "CLI binary (aarch64-apple-darwin)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "Node build (aarch64-apple-darwin)",
+        "CLI binary (x86_64-apple-darwin)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "Build Python sdist",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "Build wheels (x64/auto on windows-latest)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "C ABI library (x86_64-apple-darwin)",
+        "Gate the irreversible publish",
+        "CLI binary (x86_64-unknown-linux-gnu)",
         "ci-ok",
         "CodSpeed Performance Analysis",
-        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
-        "Build wheels (x86_64/auto on macos-latest)",
-        "Build wheels (aarch64/auto on macos-latest)",
-        "Node build (aarch64-unknown-linux-gnu)",
-        "CLI binary (aarch64-pc-windows-msvc)",
-        "CLI binary (x86_64-pc-windows-msvc)",
-        "CLI binary (aarch64-apple-darwin)",
-        "C ABI library (aarch64-apple-darwin)",
-        "Build wheels (aarch64/auto on windows-11-arm)",
-        "CLI binary (x86_64-unknown-linux-gnu)",
-        "Node build (aarch64-pc-windows-msvc)",
-        "CLI binary (aarch64-unknown-linux-gnu)",
-        "C ABI library (x86_64-unknown-linux-gnu)",
-        "Node build (x86_64-pc-windows-msvc)",
-        "Node build (aarch64-apple-darwin)",
-        "C ABI library (x86_64-apple-darwin)",
-        "Build wheels (aarch64/auto on ubuntu-latest)",
-        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
-        "Build wheels (x86_64/auto on ubuntu-latest)",
-        "Node build (x86_64-unknown-linux-gnu)",
-        "C ABI library (aarch64-unknown-linux-gnu)",
-        "C ABI library (aarch64-pc-windows-msvc)",
-        "Build wheels (x64/auto on windows-latest)",
-        "Node build (x86_64-apple-darwin)",
-        "CLI binary (x86_64-apple-darwin)",
-        "C ABI library (x86_64-pc-windows-msvc)",
-        "Build Python sdist",
         "update-pip-graph",
         "Semver compatibility",
         "Python 3.11 on windows-latest",
@@ -528,15 +455,14 @@
       ],
       "failed": [
         {
-          "name": "Gate the irreversible publish",
+          "name": "Publish to Maven Central",
           "conclusion": "failure",
-          "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45877484336/job/140143800862",
+          "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45877484336/job/140209737010",
           "errors": [
             "Process completed with exit code 1.",
-            "ci.yml on 3d52951811dfc10b2657db156198e5dc5375586e did not finish within 45 minutes; refusing to publish",
-            "\u001b[36;1m# jobs. Refusing there turns \"tagged a minute early\" into a failed\u001b[0m",
-            "\u001b[36;1m # on the SHA without a single job of ours having failed.\u001b[0m",
-            "##[error]ci.yml on 3d52951811dfc10b2657db156198e5dc5375586e did not finish within 45 minutes; refusing to publish",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment 479c1c10-f832-4ff5-af68-4c92ecea0d79 failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-benchmark: Execution injected-central-publishing of goal org.sonatype.central:central-publish",
             "##[error]Process completed with exit code 1."
           ]
         }
@@ -545,14 +471,7 @@
       "skipped": [
         "Publish the GitHub Release",
         "Attest build provenance",
-        "Attach assets to the draft GitHub Release",
-        "Publish to NuGet",
-        "Publish to crates.io",
-        "Publish to PyPI",
-        "Publish wickra-benchmark-wasm to npm",
-        "Publish to npm",
-        "Mirror the Go module to wickra-benchmark-go",
-        "Publish to Maven Central"
+        "Attach assets to the draft GitHub Release"
       ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Error (cached)",
@@ -562,10 +481,10 @@
     {
       "repo": "wickra-benchmark-go",
       "branch": "main",
-      "sha": "1a926d02",
-      "full_sha": "1a926d0208f075fc007605e5b82a85dd48aac400",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T08:57:01Z",
+      "sha": "f2857a7e",
+      "full_sha": "f2857a7e3765141236cee2ee2b5e4755f0db2a30",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:05:45Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -580,6 +499,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T19:20:31Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -595,42 +515,43 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#101)",
       "committed_at": "2026-11-26T19:45:06Z",
       "passed": [
-        "Publish to crates.io",
-        "Publish wickra-compile-wasm to npm",
-        "Mirror the Go module to wickra-compile-go",
-        "Publish to NuGet",
-        "Publish to npm",
-        "Publish to PyPI",
-        "ci-ok",
-        "Nothing publishes before this",
-        "C ABI library (aarch64-unknown-linux-gnu)",
-        "CLI binary (x86_64-pc-windows-msvc)",
-        "Node build (aarch64-apple-darwin)",
-        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
-        "Node build (aarch64-pc-windows-msvc)",
-        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
-        "Build wheels (x86_64/auto on macos-latest)",
-        "CLI binary (aarch64-unknown-linux-gnu)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
         "CLI binary (x86_64-apple-darwin)",
-        "Build wheels (aarch64/auto on windows-11-arm)",
         "Build wheels (aarch64/auto on macos-latest)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "Node build (aarch64-unknown-linux-gnu)",
         "CLI binary (x86_64-unknown-linux-gnu)",
+        "Build wickra-compile-wasm",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "C ABI library (x86_64-apple-darwin)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "Build Python sdist",
         "CLI binary (aarch64-apple-darwin)",
         "Node build (x86_64-pc-windows-msvc)",
-        "C ABI library (x86_64-unknown-linux-gnu)",
-        "C ABI library (x86_64-apple-darwin)",
-        "C ABI library (aarch64-pc-windows-msvc)",
-        "Node build (x86_64-unknown-linux-gnu)",
-        "C ABI library (x86_64-pc-windows-msvc)",
+        "Refuse to publish from anything but a tag",
+        "Publish to PyPI",
+        "Publish wickra-compile-wasm to npm",
+        "Nothing publishes before this",
+        "Publish to NuGet",
+        "Publish to crates.io",
+        "Mirror the Go module to wickra-compile-go",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Publish to npm",
         "Build wheels (x64/auto on windows-latest)",
-        "Build wheels (aarch64/auto on ubuntu-latest)",
-        "Node build (aarch64-unknown-linux-gnu)",
-        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "C ABI library (aarch64-pc-windows-msvc)",
         "Node build (x86_64-apple-darwin)",
+        "Node build (aarch64-apple-darwin)",
+        "Node build (aarch64-pc-windows-msvc)",
         "CLI binary (aarch64-pc-windows-msvc)",
         "C ABI library (aarch64-apple-darwin)",
-        "Build wickra-compile-wasm",
-        "Build Python sdist",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "ci-ok",
         "Python 3.12 on ubuntu-latest",
         "Python 3.9 on macos-latest",
         "Node 24 on macos-latest",
@@ -685,7 +606,6 @@
         "Examples",
         "MSRV node (1.88)",
         "CodSpeed Performance Analysis",
-        "Refuse to publish from anything but a tag",
         "update-pip-graph",
         "Lint workflows",
         "Analyze (csharp)",
@@ -703,20 +623,19 @@
         {
           "name": "Publish to Maven Central",
           "conclusion": "failure",
-          "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45886206156/job/140178934126",
+          "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45886206156/job/140209356004",
           "errors": [
-            "Process completed with exit code 1.",
-            "curl: (22) The requested URL returned error: 404",
-            "Deployment 6a7c646c-880d-459d-b2d5-1bd46dde24ba failed",
-            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-compile: Execution injected-central-publishing of goal org.sonatype.central:central-publishin",
-            "##[error]Process completed with exit code 1."
+            "Final attempt failed. Child_process exited with error code 1",
+            "Attempt 1 failed. Reason: Child_process exited with error code 1",
+            "##[warning]Attempt 1 failed. Reason: Child_process exited with error code 1",
+            "##[error]Final attempt failed. Child_process exited with error code 1"
           ]
         }
       ],
       "running": [],
       "skipped": [
-        "Publish the GitHub Release",
         "Attest build provenance",
+        "Publish the GitHub Release",
         "Attach assets to the draft GitHub Release"
       ],
       "links": [
@@ -745,6 +664,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T09:38:17Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "refresh",
         "Pull the released version and the indicator counts",
         "Cloudflare Pages"
@@ -762,6 +682,42 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#172)",
       "committed_at": "2026-11-26T20:00:22Z",
       "passed": [
+        "Publish to npm",
+        "Publish wickra-copilot-wasm to npm",
+        "Publish to crates.io",
+        "Publish to NuGet",
+        "Publish to PyPI",
+        "Mirror the Go module to wickra-copilot-go",
+        "Nothing publishes before this",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "Build wheels (x64/auto on windows-latest)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "CLI binary (aarch64-apple-darwin)",
+        "CLI binary (x86_64-apple-darwin)",
+        "C ABI library (x86_64-apple-darwin)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "C ABI library (aarch64-apple-darwin)",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "Node build (x86_64-apple-darwin)",
+        "Node build (aarch64-apple-darwin)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "Build Python sdist",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "Build wickra-copilot-wasm",
+        "Refuse to publish from anything but a tag",
         "ci-ok",
         "CodSpeed Performance Analysis",
         "update-pip-graph",
@@ -830,9 +786,26 @@
         "Audit workflows",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-copilot/actions/runs/45907875436/job/140216669751",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment 317bde33-e906-4d98-b0a8-d830a09c1dfe failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-copilot: Execution injected-central-publishing of goal org.sonatype.central:central-publishin",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Attest build provenance",
+        "Publish the GitHub Release",
+        "Attach assets to the draft GitHub Release"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Error (cached)",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Rejected status code: 403 Forbidden"
@@ -841,10 +814,10 @@
     {
       "repo": "wickra-copilot-go",
       "branch": "main",
-      "sha": "59582b0b",
-      "full_sha": "59582b0b0ac7ff8a21cfc4eda5f5feec271861af",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T09:19:24Z",
+      "sha": "c0c7fc4c",
+      "full_sha": "c0c7fc4c41ab38c61990304f571e3184ea771423",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:21:46Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -859,6 +832,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T09:37:11Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "refresh",
         "Pull the released version and the indicator counts",
         "Cloudflare Pages"
@@ -983,7 +957,8 @@
         "Analyze (javascript-typescript)",
         "Scorecard analysis",
         "metadata audit",
-        "status: codecov/patch"
+        "status: codecov/patch",
+        "status: r-universe/wickra-lib/wickradarwin/deploy"
       ],
       "failed": [],
       "running": [],
@@ -1009,10 +984,10 @@
     {
       "repo": "wickra-darwin-site",
       "branch": "main",
-      "sha": "0fcf0b09",
-      "full_sha": "0fcf0b09e49e16d0b77d170cb41856bad4effdfd",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T20:04:15Z",
+      "sha": "9ce9cf83",
+      "full_sha": "9ce9cf83e2e89e27fe55a07c5fe0bdd19879ea93",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:33:44Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -1029,6 +1004,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T13:30:07Z",
       "passed": [
+        "Pull the counts and the released version",
         "refresh",
         "Cloudflare Pages"
       ],
@@ -1095,14 +1071,11 @@
     {
       "repo": "wickra-embed-site",
       "branch": "main",
-      "sha": "4632d412",
-      "full_sha": "4632d412f2e05ce3d61574d02817521fb452b6c1",
-      "subject": "chore: sync the released version to 0.1.3 and the indicator counts",
-      "committed_at": "2026-11-26T03:26:52Z",
+      "sha": "594ffdcb",
+      "full_sha": "594ffdcb3b30fa4d553f084af1bc1c784dd7e2e5",
+      "subject": "chore: sync the released version to 0.1.4 and the indicator counts",
+      "committed_at": "2026-11-26T22:33:23Z",
       "passed": [
-        "refresh",
-        "Pull the released version and the indicator counts",
-        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1245,10 +1218,10 @@
     {
       "repo": "wickra-exchange-site",
       "branch": "main",
-      "sha": "7cd7081a",
-      "full_sha": "7cd7081abc9f184af07f2b92d666b8c328ca776b",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T22:19:07Z",
+      "sha": "533583c5",
+      "full_sha": "533583c5f81ec8a1d9bd81a497ce89f56569a6dc",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:36:39Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -1265,6 +1238,42 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#121)",
       "committed_at": "2026-11-26T19:51:15Z",
       "passed": [
+        "Publish to crates.io",
+        "Publish to NuGet",
+        "Publish to PyPI",
+        "Publish wickra-feature-store-wasm to npm",
+        "Mirror the Go module to wickra-feature-store-go",
+        "Publish to npm",
+        "Nothing publishes before this",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "Build wheels (x64/auto on windows-latest)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "C ABI library (aarch64-apple-darwin)",
+        "C ABI library (x86_64-apple-darwin)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "Node build (x86_64-apple-darwin)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "CLI binary (aarch64-apple-darwin)",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "Node build (aarch64-apple-darwin)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "CLI binary (x86_64-apple-darwin)",
+        "Build Python sdist",
+        "Build wickra-feature-store-wasm",
+        "Refuse to publish from anything but a tag",
         "ci-ok",
         "CodSpeed Performance Analysis",
         "update-pip-graph",
@@ -1334,9 +1343,26 @@
         "Scorecard analysis",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-feature-store/actions/runs/45907867043/job/140212770874",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment 7abe0b30-0e02-44e0-95b8-aca8a1775077 failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-feature-store: Execution injected-central-publishing of goal org.sonatype.central:central-pub",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Publish the GitHub Release",
+        "Attest build provenance",
+        "Attach assets to the draft GitHub Release"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)"
@@ -1345,10 +1371,10 @@
     {
       "repo": "wickra-feature-store-go",
       "branch": "main",
-      "sha": "f31a7647",
-      "full_sha": "f31a76474232a54abc45665120bdb6d555442830",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T09:06:06Z",
+      "sha": "3739f433",
+      "full_sha": "3739f4331f63fa3997dd58d0f7fb637a811958e5",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:13:10Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -1363,6 +1389,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T19:21:14Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1378,6 +1405,42 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#119)",
       "committed_at": "2026-11-26T20:00:23Z",
       "passed": [
+        "Publish to PyPI",
+        "Publish to crates.io",
+        "Publish to npm",
+        "Mirror the Go module to wickra-genome-go",
+        "Publish wickra-genome-wasm to npm",
+        "Publish to NuGet",
+        "Nothing publishes before this",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "Build wheels (x64/auto on windows-latest)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "Node build (aarch64-apple-darwin)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "Node build (x86_64-apple-darwin)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "CLI binary (aarch64-apple-darwin)",
+        "C ABI library (x86_64-apple-darwin)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "CLI binary (x86_64-apple-darwin)",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "C ABI library (aarch64-apple-darwin)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "Build Python sdist",
+        "Build wickra-genome-wasm",
+        "Refuse to publish from anything but a tag",
         "ci-ok",
         "CodSpeed Performance Analysis",
         "update-pip-graph",
@@ -1447,9 +1510,26 @@
         "metadata audit",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-genome/actions/runs/45907881207/job/140215644082",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment 4b9bdd0a-4bc9-4989-bd0c-42e4e32560b4 failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-genome: Execution injected-central-publishing of goal org.sonatype.central:central-publishing",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Publish the GitHub Release",
+        "Attest build provenance",
+        "Attach assets to the draft GitHub Release"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)"
@@ -1458,10 +1538,10 @@
     {
       "repo": "wickra-genome-go",
       "branch": "main",
-      "sha": "565b7efe",
-      "full_sha": "565b7efe01aedf6a3ae1ff79ddb5f4cb3d67abd9",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T09:15:50Z",
+      "sha": "44f03740",
+      "full_sha": "44f037409660e8250fc694e60d9f1157952c74c0",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:19:42Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -1476,6 +1556,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T09:38:39Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "refresh",
         "Pull the released version and the indicator counts",
         "Cloudflare Pages"
@@ -1503,83 +1584,136 @@
     {
       "repo": "wickra-gym",
       "branch": "main",
-      "sha": "456f2307",
-      "full_sha": "456f23077f2033adea96d3836510542798f2428e",
-      "subject": "deps: refresh every lockfile (#113)",
-      "committed_at": "2026-11-26T12:22:33Z",
+      "sha": "e66e26b0",
+      "full_sha": "e66e26b05a01538a7aaacc6f5e697421e4830744",
+      "subject": "release: bump 0.2.1 -> 0.2.2 (#114)",
+      "committed_at": "2026-11-26T23:06:21Z",
       "passed": [
-        "Follow family releases",
+        "Publish to npm",
+        "Publish to PyPI",
+        "Publish to NuGet",
+        "Publish wickra-gym-wasm to npm",
+        "Mirror the Go module to wickra-gym-go",
+        "Publish to crates.io",
+        "Nothing publishes before this",
         "ci-ok",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Node build (aarch64-apple-darwin)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "CLI binary (aarch64-apple-darwin)",
+        "Build wheels (x64/auto on windows-latest)",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "CLI binary (x86_64-apple-darwin)",
+        "Node build (x86_64-apple-darwin)",
+        "C ABI library (aarch64-apple-darwin)",
+        "Build wickra-gym-wasm",
+        "Build Python sdist",
+        "C ABI library (x86_64-apple-darwin)",
         "CodSpeed Performance Analysis",
-        "Node 22 on ubuntu-latest",
-        "Test (windows-latest, --no-default-features)",
-        "R on windows-latest",
-        "Node 24 on ubuntu-latest",
-        "Python wheel (musllinux_1_2 smoke)",
-        "Test (ubuntu-latest, --all-features)",
-        "R on ubuntu-latest",
-        "Test (ubuntu-latest, --no-default-features)",
-        "C# on macos-latest",
-        "WASM",
+        "Refuse to publish from anything but a tag",
+        "update-pip-graph",
+        "Python 3.9 on windows-latest",
+        "Python 3.12 on windows-latest",
+        "Java on macos-latest",
+        "Python 3.13 on windows-latest",
+        "Python 3.13 on ubuntu-latest",
+        "Go on macos-latest",
+        "Python 3.11 on ubuntu-latest",
+        "Java on windows-latest",
         "Links (advisory)",
-        "Test (macos-latest, --no-default-features)",
+        "Python wheel (musllinux_1_2 smoke)",
+        "Go on windows-latest",
+        "Python 3.12 on ubuntu-latest",
+        "Python 3.9 on macos-latest",
         "Examples",
-        "R on macos-latest",
-        "C# on ubuntu-latest",
+        "C ABI on windows-latest",
+        "Public API (cargo-semver-checks)",
+        "Java on ubuntu-latest",
+        "Go on ubuntu-latest",
+        "Node 24 on ubuntu-latest",
+        "Test (ubuntu-latest, --all-features)",
+        "Node 24 on windows-latest",
         "Python wheel (auto smoke)",
+        "Node 22 on ubuntu-latest",
+        "WASM",
+        "CLI smoke (rollout, both formats)",
+        "Test (windows-latest, --all-features)",
         "C# on windows-latest",
-        "C ABI on macos-latest",
-        "Python 3.9 on ubuntu-24.04",
-        "cargo-deny",
-        "Python 3.12 on macos-latest",
-        "Python 3.11 on macos-latest",
+        "Node 22 on macos-latest",
+        "Test (macos-latest, --all-features)",
+        "Coverage",
         "Node 22 on windows-latest",
         "Node 24 on macos-latest",
-        "Node 22 on macos-latest",
-        "Python 3.12 on ubuntu-latest",
-        "C ABI on ubuntu-latest",
-        "Python 3.9 on windows-latest",
-        "Go on macos-latest",
-        "Node 24 on windows-latest",
-        "Python 3.11 on ubuntu-latest",
-        "Python 3.13 on windows-latest",
-        "CLI smoke (rollout, both formats)",
-        "Go on windows-latest",
-        "Java on macos-latest",
-        "C ABI on windows-latest",
-        "MSRV workspace (1.87)",
-        "Format & Clippy",
-        "Coverage",
-        "Test (macos-latest, --all-features)",
-        "Python 3.13 on macos-latest",
-        "MSRV node (1.88)",
-        "Go on ubuntu-latest",
-        "Public API (cargo-semver-checks)",
-        "Binding surface parity",
-        "Python 3.9 on macos-latest",
-        "Java on windows-latest",
-        "Java on ubuntu-latest",
-        "Python 3.12 on windows-latest",
-        "Test (windows-latest, --all-features)",
-        "Python 3.13 on ubuntu-latest",
-        "Python 3.11 on windows-latest",
-        "osv-scanner",
         "Fuzz (smoke)",
-        "Analyze (java-kotlin)",
-        "Analyze (csharp)",
-        "Analyze (javascript-typescript)",
-        "Analyze (rust)",
-        "Analyze (python)",
-        "Scorecard analysis",
+        "C# on macos-latest",
+        "R on windows-latest",
+        "Test (windows-latest, --no-default-features)",
+        "Test (macos-latest, --no-default-features)",
+        "C ABI on ubuntu-latest",
+        "Python 3.11 on windows-latest",
+        "R on ubuntu-latest",
+        "osv-scanner",
+        "R on macos-latest",
+        "MSRV node (1.88)",
+        "C ABI on macos-latest",
+        "Python 3.13 on macos-latest",
+        "Python 3.9 on ubuntu-24.04",
+        "C# on ubuntu-latest",
+        "Python 3.12 on macos-latest",
+        "Python 3.11 on macos-latest",
+        "Test (ubuntu-latest, --no-default-features)",
+        "Format & Clippy",
+        "Binding surface parity",
+        "cargo-deny",
         "Audit workflows",
-        "metadata audit",
+        "MSRV workspace (1.87)",
+        "Analyze (javascript-typescript)",
+        "Analyze (python)",
+        "Analyze (csharp)",
+        "Analyze (java-kotlin)",
+        "Analyze (rust)",
         "Lint workflows",
+        "metadata audit",
+        "Scorecard analysis",
         "Instruction counts",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45909105274/job/140221850654",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment aae42198-32d4-4a10-82f7-fcbc19bbc78c failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-gym: Execution injected-central-publishing of goal org.sonatype.central:central-publishing-ma",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Publish the GitHub Release",
+        "Attest build provenance",
+        "Attach assets to the draft GitHub Release"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)"
@@ -1588,10 +1722,10 @@
     {
       "repo": "wickra-gym-go",
       "branch": "main",
-      "sha": "90b20b5b",
-      "full_sha": "90b20b5b6190f190dbc07b7448fdd9f85b578358",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T09:05:15Z",
+      "sha": "35cb9bda",
+      "full_sha": "35cb9bdaf593e3ed4f296f45841ab88738659981",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:36:31Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -1606,6 +1740,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T15:39:23Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1728,7 +1863,8 @@
         "metadata audit",
         "Lint workflows",
         "Instruction counts",
-        "status: codecov/patch"
+        "status: codecov/patch",
+        "status: r-universe/wickra-lib/wickraimpact/deploy"
       ],
       "failed": [],
       "running": [],
@@ -1754,10 +1890,10 @@
     {
       "repo": "wickra-impact-site",
       "branch": "main",
-      "sha": "ae642154",
-      "full_sha": "ae64215417bc98d0cb29149de9bbd8a808164cde",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T22:22:29Z",
+      "sha": "9eda444c",
+      "full_sha": "9eda444c8174fc28a715800cf7b5cc7acebba239",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:33:16Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -1789,6 +1925,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T09:38:32Z",
       "passed": [
+        "Pull the released engine versions and the indicator count",
         "refresh",
         "Pull the released engine versions and the indicator count",
         "Cloudflare Pages"
@@ -1846,10 +1983,10 @@
     {
       "repo": "wickra-pico-site",
       "branch": "main",
-      "sha": "82666991",
-      "full_sha": "826669912b88e319be93e15d0567068881be4510",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T22:18:14Z",
+      "sha": "b0b6a594",
+      "full_sha": "b0b6a594bc5e8decfb222725199209a05d50cc29",
+      "subject": "chore: sync the released version to 0.1.4 and the indicator counts",
+      "committed_at": "2026-11-26T22:33:39Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -1883,6 +2020,7 @@
       "subject": "deps(actions): bump the github-actions group with 2 updates (#15)",
       "committed_at": "2026-11-01T17:00:43Z",
       "passed": [
+        "Pull the indicator counts",
         "refresh",
         "Pull the indicator counts",
         "refresh",
@@ -2185,7 +2323,8 @@
         "Analyze (rust)",
         "metadata audit",
         "Instruction counts",
-        "status: codecov/patch"
+        "status: codecov/patch",
+        "status: r-universe/wickra-lib/wickraproof/deploy"
       ],
       "failed": [],
       "running": [],
@@ -2211,10 +2350,10 @@
     {
       "repo": "wickra-proof-site",
       "branch": "main",
-      "sha": "c06c985e",
-      "full_sha": "c06c985e46b66e859ec782aac69c3980b77ce9d1",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T15:39:12Z",
+      "sha": "0a3024f4",
+      "full_sha": "0a3024f4257187a69f9d8d379c3b9be943be88fb",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:34:48Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -2231,6 +2370,42 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#166)",
       "committed_at": "2026-11-26T20:01:11Z",
       "passed": [
+        "Publish to npm",
+        "Publish to NuGet",
+        "Mirror the Go module to wickra-radar-go",
+        "Publish to crates.io",
+        "Publish wickra-radar-wasm to npm",
+        "Publish to PyPI",
+        "Nothing publishes before this",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "Build wheels (x64/auto on windows-latest)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "Node build (x86_64-apple-darwin)",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "Node build (aarch64-apple-darwin)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "C ABI library (aarch64-apple-darwin)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "CLI binary (x86_64-apple-darwin)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "C ABI library (x86_64-apple-darwin)",
+        "CLI binary (aarch64-apple-darwin)",
+        "Build Python sdist",
+        "Build wickra-radar-wasm",
+        "Refuse to publish from anything but a tag",
         "ci-ok",
         "Node 24 on windows-latest",
         "Python 3.11 on macos-latest",
@@ -2299,9 +2474,26 @@
         "Audit workflows",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-radar/actions/runs/45907887719/job/140216907101",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment e34c4099-3aaa-4175-a7c6-437a934a2c20 failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-radar: Execution injected-central-publishing of goal org.sonatype.central:central-publishing-",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Publish the GitHub Release",
+        "Attest build provenance",
+        "Attach assets to the draft GitHub Release"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)"
@@ -2310,10 +2502,10 @@
     {
       "repo": "wickra-radar-go",
       "branch": "main",
-      "sha": "aa911d25",
-      "full_sha": "aa911d2537546758cb9ffcdd55911233cadb04a4",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T09:02:54Z",
+      "sha": "94efa7b4",
+      "full_sha": "94efa7b47733fe37ee49be98a5ae190ab1ed4527",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:21:08Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -2328,6 +2520,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T12:49:48Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "refresh",
         "Pull the released version and the indicator counts",
         "Cloudflare Pages"
@@ -2345,6 +2538,42 @@
       "subject": "release: bump 0.3.1 -> 0.3.2 (#239)",
       "committed_at": "2026-11-26T20:04:46Z",
       "passed": [
+        "Publish to NuGet",
+        "Publish to PyPI",
+        "Publish wickra-screener-wasm to npm",
+        "Publish to crates.io",
+        "Mirror the Go module to wickra-screener-go",
+        "Publish to npm",
+        "Nothing publishes before this",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Build wheels (x64/auto on windows-latest)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "Node build (aarch64-apple-darwin)",
+        "Node build (x86_64-apple-darwin)",
+        "C ABI library (x86_64-apple-darwin)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "CLI binary (aarch64-apple-darwin)",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "CLI binary (x86_64-apple-darwin)",
+        "C ABI library (aarch64-apple-darwin)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "Build Python sdist",
+        "Build wickra-screener-wasm",
+        "Refuse to publish from anything but a tag",
         "ci-ok",
         "CodSpeed Performance Analysis",
         "update-pip-graph",
@@ -2414,9 +2643,26 @@
         "Analyze (csharp)",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-screener/actions/runs/45907893853/job/140214614370",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment 000bd740-af82-4191-b238-6b737278dc68 failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-screener: Execution injected-central-publishing of goal org.sonatype.central:central-publishi",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Attest build provenance",
+        "Publish the GitHub Release",
+        "Attach assets to the draft GitHub Release"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 16:1) | Rejected status code: 403 Forbidden",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)"
@@ -2425,10 +2671,10 @@
     {
       "repo": "wickra-screener-go",
       "branch": "main",
-      "sha": "42377e79",
-      "full_sha": "42377e793ce733c253a0f34c90da8d2503dcec7c",
-      "subject": "Release v0.3.1",
-      "committed_at": "2026-10-28T09:30:38Z",
+      "sha": "d46f87db",
+      "full_sha": "d46f87dbdd0e9c5459182f91b21f5df62a6455a6",
+      "subject": "Release v0.3.2",
+      "committed_at": "2026-11-26T23:16:11Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -2443,6 +2689,7 @@
       "subject": "chore: sync the released version to 0.3.1 and the indicator counts",
       "committed_at": "2026-11-26T03:25:54Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "refresh",
         "Pull the released version and the indicator counts",
         "refresh",
@@ -2461,6 +2708,42 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#170)",
       "committed_at": "2026-11-26T20:04:08Z",
       "passed": [
+        "Mirror the Go module to wickra-shazam-go",
+        "Publish to PyPI",
+        "Publish to npm",
+        "Publish to NuGet",
+        "Publish wickra-shazam-wasm to npm",
+        "Publish to crates.io",
+        "Nothing publishes before this",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Node build (aarch64-apple-darwin)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "Build wheels (x64/auto on windows-latest)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "Node build (x86_64-apple-darwin)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "CLI binary (aarch64-apple-darwin)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "CLI binary (x86_64-apple-darwin)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "C ABI library (aarch64-apple-darwin)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "Build wickra-shazam-wasm",
+        "Build Python sdist",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "C ABI library (x86_64-apple-darwin)",
+        "Refuse to publish from anything but a tag",
         "ci-ok",
         "CodSpeed Performance Analysis",
         "update-pip-graph",
@@ -2529,9 +2812,26 @@
         "Lint workflows",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-shazam/actions/runs/45907900128/job/140217467496",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment 3149d757-4969-42b7-a5f1-bf8c79111ea0 failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-shazam: Execution injected-central-publishing of goal org.sonatype.central:central-publishing",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Attest build provenance",
+        "Publish the GitHub Release",
+        "Attach assets to the draft GitHub Release"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)"
@@ -2540,10 +2840,10 @@
     {
       "repo": "wickra-shazam-go",
       "branch": "main",
-      "sha": "8e7bc69f",
-      "full_sha": "8e7bc69f76cc6b4087491951607d0bea6e577be5",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T09:05:54Z",
+      "sha": "44d10458",
+      "full_sha": "44d104584ea20a466ffb4fd43e3d358066791579",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:23:07Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -2558,6 +2858,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T15:39:25Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -2679,7 +2980,8 @@
         "Analyze (python)",
         "metadata audit",
         "action passes on the golden corpus",
-        "status: codecov/patch"
+        "status: codecov/patch",
+        "status: r-universe/wickra-lib/wickrastrategyci/deploy"
       ],
       "failed": [],
       "running": [],
@@ -2705,10 +3007,10 @@
     {
       "repo": "wickra-strategy-ci-site",
       "branch": "main",
-      "sha": "71d0c074",
-      "full_sha": "71d0c0746e5c97bea15381d4d6d005adb16bdfde",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T15:14:14Z",
+      "sha": "de2b562d",
+      "full_sha": "de2b562de50995535b93cbf7ed36d190bcfbbcf8",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:33:23Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -2861,10 +3163,10 @@
     {
       "repo": "wickra-synth-site",
       "branch": "main",
-      "sha": "0f72d7ac",
-      "full_sha": "0f72d7ac8420053b0c2d6aedf73fdc6912aa97e4",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T20:14:52Z",
+      "sha": "f30df1d6",
+      "full_sha": "f30df1d6f3d1149dfa5a82da90fddc64c2903f06",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:34:31Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -2991,7 +3293,8 @@
         "Build + deploy the web renderer",
         "Lint workflows",
         "metadata audit",
-        "status: codecov/patch"
+        "status: codecov/patch",
+        "status: r-universe/wickra-lib/wickraterminal/deploy"
       ],
       "failed": [],
       "running": [],
@@ -3017,10 +3320,10 @@
     {
       "repo": "wickra-terminal-site",
       "branch": "main",
-      "sha": "2ae906c5",
-      "full_sha": "2ae906c5337efbfe3c9538e222785251a7a50651",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T22:17:44Z",
+      "sha": "da946e1a",
+      "full_sha": "da946e1a86d650a60425f13f584de5949052cac3",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:36:08Z",
       "passed": [
         "Cloudflare Pages"
       ],
@@ -3037,6 +3340,42 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#119)",
       "committed_at": "2026-11-26T20:05:25Z",
       "passed": [
+        "Publish to npm",
+        "Publish wickra-timemachine-wasm to npm",
+        "Publish to crates.io",
+        "Publish to PyPI",
+        "Mirror the Go module to wickra-timemachine-go",
+        "Publish to NuGet",
+        "Nothing publishes before this",
+        "CLI binary (x86_64-apple-darwin)",
+        "Build wheels (x64/auto on windows-latest)",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "Node build (x86_64-apple-darwin)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "Node build (aarch64-apple-darwin)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "CLI binary (aarch64-apple-darwin)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "Build Python sdist",
+        "C ABI library (x86_64-apple-darwin)",
+        "C ABI library (aarch64-apple-darwin)",
+        "Build wickra-timemachine-wasm",
+        "Refuse to publish from anything but a tag",
         "ci-ok",
         "CodSpeed Performance Analysis",
         "Java on windows-latest",
@@ -3106,9 +3445,26 @@
         "metadata audit",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-timemachine/actions/runs/45907907586/job/140214661536",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment d2ca0b55-7dbd-456e-8778-d4a48621727e failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-timemachine: Execution injected-central-publishing of goal org.sonatype.central:central-publi",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Attach assets to the draft GitHub Release",
+        "Publish the GitHub Release",
+        "Attest build provenance"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)"
@@ -3117,10 +3473,10 @@
     {
       "repo": "wickra-timemachine-go",
       "branch": "main",
-      "sha": "e9eb7115",
-      "full_sha": "e9eb7115c49f6d225e1533c484841e668c775bd2",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T09:04:32Z",
+      "sha": "da239810",
+      "full_sha": "da239810d31dfc8d9b86c3403c2d6aa2272ab88c",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:16:18Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -3135,6 +3491,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T19:39:07Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -3258,7 +3615,8 @@
         "Audit workflows",
         "metadata audit",
         "Scorecard analysis",
-        "status: codecov/patch"
+        "status: codecov/patch",
+        "status: r-universe/wickra-lib/wickraverify/deploy"
       ],
       "failed": [],
       "running": [],
@@ -3284,13 +3642,11 @@
     {
       "repo": "wickra-verify-site",
       "branch": "main",
-      "sha": "1accc247",
-      "full_sha": "1accc247ab1da14f4ea7c7a36749ddbd4d14d36b",
-      "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-26T09:37:03Z",
+      "sha": "0486b459",
+      "full_sha": "0486b459b3b530b8e73be7bdbcc2b7a2665196ea",
+      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
+      "committed_at": "2026-11-26T22:34:01Z",
       "passed": [
-        "refresh",
-        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -3306,6 +3662,42 @@
       "subject": "release: bump 0.2.1 -> 0.2.2 (#205)",
       "committed_at": "2026-11-26T20:32:04Z",
       "passed": [
+        "Mirror the Go module to wickra-xray-go",
+        "Publish wickra-xray-wasm to npm",
+        "Publish to PyPI",
+        "Publish to npm",
+        "Publish to NuGet",
+        "Publish to crates.io",
+        "Nothing publishes before this",
+        "Build wheels (x86_64/auto on ubuntu-latest)",
+        "Build wheels (aarch64/auto on ubuntu-latest)",
+        "Build wheels (aarch64/auto on windows-11-arm)",
+        "C ABI library (aarch64-apple-darwin)",
+        "Node build (aarch64-apple-darwin)",
+        "C ABI library (x86_64-unknown-linux-gnu)",
+        "Build wheels (aarch64/musllinux_1_2 on ubuntu-latest)",
+        "Build wheels (aarch64/auto on macos-latest)",
+        "Build wheels (x86_64/musllinux_1_2 on ubuntu-latest)",
+        "C ABI library (aarch64-unknown-linux-gnu)",
+        "C ABI library (x86_64-pc-windows-msvc)",
+        "C ABI library (x86_64-apple-darwin)",
+        "CLI binary (x86_64-pc-windows-msvc)",
+        "CLI binary (aarch64-pc-windows-msvc)",
+        "Build wheels (x86_64/auto on macos-latest)",
+        "C ABI library (aarch64-pc-windows-msvc)",
+        "CLI binary (aarch64-apple-darwin)",
+        "CLI binary (x86_64-apple-darwin)",
+        "Build wheels (x64/auto on windows-latest)",
+        "CLI binary (aarch64-unknown-linux-gnu)",
+        "CLI binary (x86_64-unknown-linux-gnu)",
+        "Node build (x86_64-pc-windows-msvc)",
+        "Node build (aarch64-unknown-linux-gnu)",
+        "Node build (aarch64-pc-windows-msvc)",
+        "Node build (x86_64-apple-darwin)",
+        "Node build (x86_64-unknown-linux-gnu)",
+        "Build Python sdist",
+        "Build wickra-xray-wasm",
+        "Refuse to publish from anything but a tag",
         "ci-ok",
         "CodSpeed Performance Analysis",
         "update-pip-graph",
@@ -3376,9 +3768,26 @@
         "metadata audit",
         "status: codecov/patch"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "name": "Publish to Maven Central",
+          "conclusion": "failure",
+          "url": "https://github.com/wickra-lib/wickra-xray/actions/runs/45907914659/job/140216875453",
+          "errors": [
+            "Process completed with exit code 1.",
+            "curl: (22) The requested URL returned error: 404",
+            "Deployment 669349da-8d9d-40f5-8d33-4580a989d1e5 failed",
+            "[ERROR] Failed to execute goal org.sonatype.central:central-publishing-maven-plugin:0.12.0:publish (injected-central-publishing) on project wickra-xray: Execution injected-central-publishing of goal org.sonatype.central:central-publishing-m",
+            "##[error]Process completed with exit code 1."
+          ]
+        }
+      ],
       "running": [],
-      "skipped": [],
+      "skipped": [
+        "Publish the GitHub Release",
+        "Attest build provenance",
+        "Attach assets to the draft GitHub Release"
+      ],
       "links": [
         "[403] <https://wickra-lib.r-universe.dev/> (at 16:1) | Rejected status code: 403 Forbidden",
         "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)"
@@ -3387,10 +3796,10 @@
     {
       "repo": "wickra-xray-go",
       "branch": "main",
-      "sha": "c3dd5c81",
-      "full_sha": "c3dd5c81a92fd2b3754896a8dccfd5af760d0719",
-      "subject": "Release v0.2.1",
-      "committed_at": "2026-10-28T09:18:53Z",
+      "sha": "4e026a77",
+      "full_sha": "4e026a77bbae73e1400ffa9676ec691c5ca3b298",
+      "subject": "Release v0.2.2",
+      "committed_at": "2026-11-26T23:20:49Z",
       "passed": [],
       "failed": [],
       "running": [],
@@ -3525,6 +3934,7 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-26T20:05:14Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -3552,16 +3962,31 @@
     {
       "kind": "actions",
       "repo": ".github",
-      "id": 45904996863,
+      "id": 45912959504,
       "attempt": 1,
       "name": "Refresh main status",
-      "title": "Refresh main status",
-      "event": "schedule",
+      "title": "status: keep the stranded runs out of status.md (#103)",
+      "event": "push",
       "branch": "main",
-      "sha": "052f80fa",
+      "sha": "01a3c93a",
       "status": "in_progress",
-      "started_at": "2026-11-26T22:28:21Z",
-      "url": "https://github.com/wickra-lib/.github/actions/runs/45904996863",
+      "started_at": "2026-11-26T23:47:11Z",
+      "url": "https://github.com/wickra-lib/.github/actions/runs/45912959504",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": ".github",
+      "id": 45912959502,
+      "attempt": 1,
+      "name": "zizmor",
+      "title": "status: keep the stranded runs out of status.md (#103)",
+      "event": "push",
+      "branch": "main",
+      "sha": "01a3c93a",
+      "status": "in_progress",
+      "started_at": "2026-11-26T23:47:11Z",
+      "url": "https://github.com/wickra-lib/.github/actions/runs/45912959502",
       "stranded": false
     },
     {
@@ -3578,6 +4003,81 @@
       "started_at": "2026-10-07T16:54:15Z",
       "url": "https://github.com/wickra-lib/webpage/actions/runs/37655513974",
       "stranded": true
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-backtest",
+      "id": 45912989507,
+      "attempt": 1,
+      "name": "CI",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "c7bb931e",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:29Z",
+      "url": "https://github.com/wickra-lib/wickra-backtest/actions/runs/45912989507",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-backtest",
+      "id": 45912989517,
+      "attempt": 1,
+      "name": "zizmor",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "c7bb931e",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:29Z",
+      "url": "https://github.com/wickra-lib/wickra-backtest/actions/runs/45912989517",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-backtest",
+      "id": 45912989569,
+      "attempt": 1,
+      "name": "sync-metadata",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "c7bb931e",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:29Z",
+      "url": "https://github.com/wickra-lib/wickra-backtest/actions/runs/45912989569",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-backtest",
+      "id": 45912989505,
+      "attempt": 1,
+      "name": "CodeQL",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "c7bb931e",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:29Z",
+      "url": "https://github.com/wickra-lib/wickra-backtest/actions/runs/45912989505",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-backtest",
+      "id": 45912989493,
+      "attempt": 1,
+      "name": "actionlint",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "c7bb931e",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:29Z",
+      "url": "https://github.com/wickra-lib/wickra-backtest/actions/runs/45912989493",
+      "stranded": false
     },
     {
       "kind": "actions",
@@ -3608,6 +4108,81 @@
       "started_at": "2026-10-07T16:53:39Z",
       "url": "https://github.com/wickra-lib/wickra-backtest-site/actions/runs/37655508427",
       "stranded": true
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-benchmark",
+      "id": 45913002175,
+      "attempt": 1,
+      "name": "actionlint",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "cca39bf2",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:37Z",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45913002175",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-benchmark",
+      "id": 45913002292,
+      "attempt": 1,
+      "name": "sync-metadata",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "cca39bf2",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:37Z",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45913002292",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-benchmark",
+      "id": 45913002202,
+      "attempt": 1,
+      "name": "CodeQL",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "cca39bf2",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:37Z",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45913002202",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-benchmark",
+      "id": 45913002256,
+      "attempt": 1,
+      "name": "zizmor",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "cca39bf2",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:37Z",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45913002256",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-benchmark",
+      "id": 45913002298,
+      "attempt": 1,
+      "name": "CI",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "cca39bf2",
+      "status": "queued",
+      "started_at": "2026-11-26T23:47:37Z",
+      "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45913002298",
+      "stranded": false
     },
     {
       "kind": "actions",
@@ -3743,6 +4318,36 @@
       "started_at": "2026-10-07T16:54:08Z",
       "url": "https://github.com/wickra-lib/wickra-gym-site/actions/runs/37655512998",
       "stranded": true
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-impact",
+      "id": 45912938358,
+      "attempt": 1,
+      "name": "CI",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "719942f4",
+      "status": "queued",
+      "started_at": "2026-11-26T23:46:57Z",
+      "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45912938358",
+      "stranded": false
+    },
+    {
+      "kind": "actions",
+      "repo": "wickra-impact",
+      "id": 45912938354,
+      "attempt": 1,
+      "name": "CodeQL",
+      "title": "build: keep natives out of the sources jar, retry Maven Central throttli",
+      "event": "pull_request",
+      "branch": "build/central-usage-and-retries",
+      "sha": "719942f4",
+      "status": "in_progress",
+      "started_at": "2026-11-26T23:46:57Z",
+      "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45912938354",
+      "stranded": false
     },
     {
       "kind": "actions",
@@ -3912,16 +4517,16 @@
     {
       "kind": "actions",
       "repo": "wickra-zk",
-      "id": 45886401810,
+      "id": 45911665286,
       "attempt": 1,
       "name": "CI",
       "title": "release: bump 0.2.1 -> 0.2.2",
       "event": "pull_request",
       "branch": "release/0.2.2",
-      "sha": "776b61bf",
+      "sha": "8a88722c",
       "status": "in_progress",
-      "started_at": "2026-11-26T19:48:44Z",
-      "url": "https://github.com/wickra-lib/wickra-zk/actions/runs/45886401810",
+      "started_at": "2026-11-26T23:33:45Z",
+      "url": "https://github.com/wickra-lib/wickra-zk/actions/runs/45911665286",
       "stranded": false
     },
     {
@@ -4006,30 +4611,12 @@
           "path": null
         },
         {
-          "repo": "wickra-benchmark",
-          "source": "pr#110",
-          "ref": "f5b5e628",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45869615927/job/140081325970",
-          "path": null
-        },
-        {
           "repo": "wickra-compile",
           "source": "main",
           "ref": "316dd7b6",
           "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
           "job": "External links (non-blocking)",
           "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45885961264/job/140145112796",
-          "path": null
-        },
-        {
-          "repo": "wickra-compile",
-          "source": "pr#101",
-          "ref": "5441bca7",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45869659559/job/140081473456",
           "path": null
         },
         {
@@ -4042,30 +4629,12 @@
           "path": null
         },
         {
-          "repo": "wickra-copilot",
-          "source": "pr#172",
-          "ref": "75e1cb8a",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-copilot/actions/runs/45873153700/job/140093438789",
-          "path": null
-        },
-        {
           "repo": "wickra-darwin",
           "source": "main",
           "ref": "fd9807bf",
           "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
           "job": "Links (advisory)",
           "url": "https://github.com/wickra-lib/wickra-darwin/actions/runs/45880490960/job/140118284316",
-          "path": null
-        },
-        {
-          "repo": "wickra-darwin",
-          "source": "pr#117",
-          "ref": "0c17de99",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-darwin/actions/runs/45869703857/job/140081618661",
           "path": null
         },
         {
@@ -4125,19 +4694,10 @@
         {
           "repo": "wickra-gym",
           "source": "main",
-          "ref": "456f2307",
+          "ref": "e66e26b0",
           "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
           "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45819068174/job/139906279807",
-          "path": null
-        },
-        {
-          "repo": "wickra-gym",
-          "source": "pr#114",
-          "ref": "43d292a7",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45873236208/job/140093719596",
+          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45908915503/job/140212255891",
           "path": null
         },
         {
@@ -4147,15 +4707,6 @@
           "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
           "job": "Links (advisory)",
           "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45885074470/job/140133642497",
-          "path": null
-        },
-        {
-          "repo": "wickra-impact",
-          "source": "pr#126",
-          "ref": "8ac6b9eb",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45873271689/job/140093843311",
           "path": null
         },
         {
@@ -4350,10 +4901,10 @@
         {
           "repo": "wickra-zk",
           "source": "pr#116",
-          "ref": "776b61bf",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Error (cached)",
+          "ref": "8a88722c",
+          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Error (cached)",
           "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-zk/actions/runs/45886401810/job/140153175089",
+          "url": "https://github.com/wickra-lib/wickra-zk/actions/runs/45911665286/job/140221378425",
           "path": null
         }
       ]
@@ -4422,30 +4973,12 @@
           "path": null
         },
         {
-          "repo": "wickra-benchmark",
-          "source": "pr#110",
-          "ref": "f5b5e628",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45869615927/job/140081325970",
-          "path": null
-        },
-        {
           "repo": "wickra-compile",
           "source": "main",
           "ref": "316dd7b6",
           "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
           "job": "External links (non-blocking)",
           "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45885961264/job/140145112796",
-          "path": null
-        },
-        {
-          "repo": "wickra-compile",
-          "source": "pr#101",
-          "ref": "5441bca7",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45869659559/job/140081473456",
           "path": null
         },
         {
@@ -4458,30 +4991,12 @@
           "path": null
         },
         {
-          "repo": "wickra-copilot",
-          "source": "pr#172",
-          "ref": "75e1cb8a",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-copilot/actions/runs/45873153700/job/140093438789",
-          "path": null
-        },
-        {
           "repo": "wickra-darwin",
           "source": "main",
           "ref": "fd9807bf",
           "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
           "job": "Links (advisory)",
           "url": "https://github.com/wickra-lib/wickra-darwin/actions/runs/45880490960/job/140118284316",
-          "path": null
-        },
-        {
-          "repo": "wickra-darwin",
-          "source": "pr#117",
-          "ref": "0c17de99",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-darwin/actions/runs/45869703857/job/140081618661",
           "path": null
         },
         {
@@ -4541,19 +5056,10 @@
         {
           "repo": "wickra-gym",
           "source": "main",
-          "ref": "456f2307",
+          "ref": "e66e26b0",
           "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
           "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45819068174/job/139906279807",
-          "path": null
-        },
-        {
-          "repo": "wickra-gym",
-          "source": "pr#114",
-          "ref": "43d292a7",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45873236208/job/140093719596",
+          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45908915503/job/140212255891",
           "path": null
         },
         {
@@ -4563,15 +5069,6 @@
           "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
           "job": "Links (advisory)",
           "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45885074470/job/140133642497",
-          "path": null
-        },
-        {
-          "repo": "wickra-impact",
-          "source": "pr#126",
-          "ref": "8ac6b9eb",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45873271689/job/140093843311",
           "path": null
         },
         {
@@ -4766,10 +5263,10 @@
         {
           "repo": "wickra-zk",
           "source": "pr#116",
-          "ref": "776b61bf",
-          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 17:1) | Rejected status code: 403 Forbidden",
+          "ref": "8a88722c",
+          "message": "[403] <https://wickra-lib.r-universe.dev/> (at 7:1) | Rejected status code: 403 Forbidden",
           "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-zk/actions/runs/45886401810/job/140153175089",
+          "url": "https://github.com/wickra-lib/wickra-zk/actions/runs/45911665286/job/140221378425",
           "path": null
         }
       ]
@@ -4838,30 +5335,12 @@
           "path": null
         },
         {
-          "repo": "wickra-benchmark",
-          "source": "pr#110",
-          "ref": "f5b5e628",
-          "message": "lychee did not pass; the job summary lists every finding",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45869615927/job/140081325970",
-          "path": null
-        },
-        {
           "repo": "wickra-compile",
           "source": "main",
           "ref": "316dd7b6",
           "message": "lychee did not pass; the job summary lists every finding",
           "job": "External links (non-blocking)",
           "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45885961264/job/140145112796",
-          "path": null
-        },
-        {
-          "repo": "wickra-compile",
-          "source": "pr#101",
-          "ref": "5441bca7",
-          "message": "lychee did not pass; the job summary lists every finding",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45869659559/job/140081473456",
           "path": null
         },
         {
@@ -4874,30 +5353,12 @@
           "path": null
         },
         {
-          "repo": "wickra-copilot",
-          "source": "pr#172",
-          "ref": "75e1cb8a",
-          "message": "lychee did not pass; the job summary lists every finding",
-          "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-copilot/actions/runs/45873153700/job/140093438789",
-          "path": null
-        },
-        {
           "repo": "wickra-darwin",
           "source": "main",
           "ref": "fd9807bf",
           "message": "lychee did not pass; the job summary lists every finding",
           "job": "Links (advisory)",
           "url": "https://github.com/wickra-lib/wickra-darwin/actions/runs/45880490960/job/140118284316",
-          "path": null
-        },
-        {
-          "repo": "wickra-darwin",
-          "source": "pr#117",
-          "ref": "0c17de99",
-          "message": "lychee did not pass; the job summary lists every finding",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-darwin/actions/runs/45869703857/job/140081618661",
           "path": null
         },
         {
@@ -4957,19 +5418,10 @@
         {
           "repo": "wickra-gym",
           "source": "main",
-          "ref": "456f2307",
+          "ref": "e66e26b0",
           "message": "lychee did not pass; the job summary lists every finding",
           "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45819068174/job/139906279807",
-          "path": null
-        },
-        {
-          "repo": "wickra-gym",
-          "source": "pr#114",
-          "ref": "43d292a7",
-          "message": "lychee did not pass; the job summary lists every finding",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45873236208/job/140093719596",
+          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45908915503/job/140212255891",
           "path": null
         },
         {
@@ -4979,15 +5431,6 @@
           "message": "lychee did not pass; the job summary lists every finding",
           "job": "Links (advisory)",
           "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45885074470/job/140133642497",
-          "path": null
-        },
-        {
-          "repo": "wickra-impact",
-          "source": "pr#126",
-          "ref": "8ac6b9eb",
-          "message": "lychee did not pass; the job summary lists every finding",
-          "job": "Links (advisory)",
-          "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45873271689/job/140093843311",
           "path": null
         },
         {
@@ -5182,10 +5625,10 @@
         {
           "repo": "wickra-zk",
           "source": "pr#116",
-          "ref": "776b61bf",
+          "ref": "8a88722c",
           "message": "lychee did not pass; the job summary lists every finding",
           "job": "External links (non-blocking)",
-          "url": "https://github.com/wickra-lib/wickra-zk/actions/runs/45886401810/job/140153175089",
+          "url": "https://github.com/wickra-lib/wickra-zk/actions/runs/45911665286/job/140221378425",
           "path": null
         }
       ]
@@ -5194,15 +5637,24 @@
       "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
       "repos": [
         "wickra-backtest",
-        "wickra-compile",
+        "wickra-benchmark",
+        "wickra-copilot",
         "wickra-darwin",
         "wickra-exchange",
+        "wickra-feature-store",
+        "wickra-genome",
+        "wickra-gym",
         "wickra-impact",
         "wickra-proof",
+        "wickra-radar",
+        "wickra-screener",
+        "wickra-shazam",
         "wickra-strategy-ci",
         "wickra-synth",
         "wickra-terminal",
-        "wickra-verify"
+        "wickra-timemachine",
+        "wickra-verify",
+        "wickra-xray"
       ],
       "hits": [
         {
@@ -5215,12 +5667,21 @@
           "path": null
         },
         {
-          "repo": "wickra-compile",
+          "repo": "wickra-benchmark",
           "source": "main",
-          "ref": "316dd7b6",
+          "ref": "3d529518",
           "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
           "job": "Publish to PyPI",
-          "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45886206156/job/140178934033",
+          "url": "https://github.com/wickra-lib/wickra-benchmark/actions/runs/45877484336/job/140209737110",
+          "path": null
+        },
+        {
+          "repo": "wickra-copilot",
+          "source": "main",
+          "ref": "7c686b21",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-copilot/actions/runs/45907875436/job/140216669681",
           "path": null
         },
         {
@@ -5242,6 +5703,33 @@
           "path": null
         },
         {
+          "repo": "wickra-feature-store",
+          "source": "main",
+          "ref": "0ed734aa",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-feature-store/actions/runs/45907867043/job/140212770969",
+          "path": null
+        },
+        {
+          "repo": "wickra-genome",
+          "source": "main",
+          "ref": "c82d37ae",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-genome/actions/runs/45907881207/job/140215644435",
+          "path": null
+        },
+        {
+          "repo": "wickra-gym",
+          "source": "main",
+          "ref": "e66e26b0",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45909105274/job/140221850692",
+          "path": null
+        },
+        {
           "repo": "wickra-impact",
           "source": "main",
           "ref": "f8b1d0f3",
@@ -5257,6 +5745,33 @@
           "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
           "job": "Publish to PyPI",
           "url": "https://github.com/wickra-lib/wickra-proof/actions/runs/45886216044/job/140177461189",
+          "path": null
+        },
+        {
+          "repo": "wickra-radar",
+          "source": "main",
+          "ref": "23d23625",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-radar/actions/runs/45907887719/job/140216907045",
+          "path": null
+        },
+        {
+          "repo": "wickra-screener",
+          "source": "main",
+          "ref": "2cd5ed5e",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-screener/actions/runs/45907893853/job/140214614360",
+          "path": null
+        },
+        {
+          "repo": "wickra-shazam",
+          "source": "main",
+          "ref": "55eeeeb5",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-shazam/actions/runs/45907900128/job/140217467542",
           "path": null
         },
         {
@@ -5287,6 +5802,15 @@
           "path": null
         },
         {
+          "repo": "wickra-timemachine",
+          "source": "main",
+          "ref": "07cb0b2e",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-timemachine/actions/runs/45907907586/job/140214661619",
+          "path": null
+        },
+        {
           "repo": "wickra-verify",
           "source": "main",
           "ref": "87c4122e",
@@ -5294,42 +5818,14 @@
           "job": "Publish to PyPI",
           "url": "https://github.com/wickra-lib/wickra-verify/actions/runs/45881823617/job/140176379448",
           "path": null
-        }
-      ]
-    },
-    {
-      "message": "Back off 18.447 seconds before retry.",
-      "repos": [
-        "wickra-gym",
-        "wickra-impact",
-        "wickra-pico"
-      ],
-      "hits": [
-        {
-          "repo": "wickra-gym",
-          "source": "pr#114",
-          "ref": "43d292a7",
-          "message": "Back off 18.447 seconds before retry.",
-          "job": "Go on ubuntu-latest",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45873236208/job/140093719652",
-          "path": null
         },
         {
-          "repo": "wickra-impact",
-          "source": "pr#126",
-          "ref": "8ac6b9eb",
-          "message": "Back off 10.047 seconds before retry.",
-          "job": "Node 24 on macos-latest",
-          "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45873271689/job/140093843783",
-          "path": null
-        },
-        {
-          "repo": "wickra-pico",
+          "repo": "wickra-xray",
           "source": "main",
-          "ref": "b190b994",
-          "message": "Back off 16.208 seconds before retry.",
-          "job": "rp2040 (thumbv6m)",
-          "url": "https://github.com/wickra-lib/wickra-pico/actions/runs/45861448150/job/140053234748",
+          "ref": "193d2b8a",
+          "message": "⚠️ Warning: The maturin upload and publish commands are deprecated and will be removed in the future. For more information see: https://github.com/PyO3/maturin/issues/2334",
+          "job": "Publish to PyPI",
+          "url": "https://github.com/wickra-lib/wickra-xray/actions/runs/45907914659/job/140216875480",
           "path": null
         }
       ]
@@ -5354,50 +5850,33 @@
     {
       "message": "Attempt 1 failed. Reason: Child_process exited with error code 1",
       "repos": [
-        "wickra-gym"
+        "wickra-compile"
       ],
       "hits": [
         {
-          "repo": "wickra-gym",
-          "source": "pr#114",
-          "ref": "43d292a7",
+          "repo": "wickra-compile",
+          "source": "main",
+          "ref": "316dd7b6",
           "message": "Attempt 1 failed. Reason: Child_process exited with error code 1",
-          "job": "Examples",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45873236208/job/140093719167",
+          "job": "Publish to Maven Central",
+          "url": "https://github.com/wickra-lib/wickra-compile/actions/runs/45886206156/job/140209356004",
           "path": null
         }
       ]
     },
     {
-      "message": "Failed to download action 'https://codeload.github.com/dtolnay/rust-toolchain/tar.gz/29eef336d9b2848a0b548edc03f92a220660cdb8'. Error: Response status code does not indicate success: 503 (Service Unavailable). EA47:20A978:CEEB:2029A:6B08866D",
+      "message": "Back off 16.208 seconds before retry.",
       "repos": [
-        "wickra-gym"
+        "wickra-pico"
       ],
       "hits": [
         {
-          "repo": "wickra-gym",
-          "source": "pr#114",
-          "ref": "43d292a7",
-          "message": "Failed to download action 'https://codeload.github.com/dtolnay/rust-toolchain/tar.gz/29eef336d9b2848a0b548edc03f92a220660cdb8'. Error: Response status code does not indicate success: 503 (Service Unavailable). EA47:20A978:CEEB:2029A:6B08866D",
-          "job": "Go on ubuntu-latest",
-          "url": "https://github.com/wickra-lib/wickra-gym/actions/runs/45873236208/job/140093719652",
-          "path": null
-        }
-      ]
-    },
-    {
-      "message": "Failed to download action 'https://codeload.github.com/Swatinem/rust-cache/tar.gz/d1527c8f67ef9af357290475d4af4b0fab8f12e0'. Error: Response status code does not indicate success: 503 (Service Unavailable). A453:2D8F7E:121B8:273F3:6B088668",
-      "repos": [
-        "wickra-impact"
-      ],
-      "hits": [
-        {
-          "repo": "wickra-impact",
-          "source": "pr#126",
-          "ref": "8ac6b9eb",
-          "message": "Failed to download action 'https://codeload.github.com/Swatinem/rust-cache/tar.gz/d1527c8f67ef9af357290475d4af4b0fab8f12e0'. Error: Response status code does not indicate success: 503 (Service Unavailable). A453:2D8F7E:121B8:273F3:6B088668",
-          "job": "Node 24 on macos-latest",
-          "url": "https://github.com/wickra-lib/wickra-impact/actions/runs/45873271689/job/140093843783",
+          "repo": "wickra-pico",
+          "source": "main",
+          "ref": "b190b994",
+          "message": "Back off 16.208 seconds before retry.",
+          "job": "rp2040 (thumbv6m)",
+          "url": "https://github.com/wickra-lib/wickra-pico/actions/runs/45861448150/job/140053234748",
           "path": null
         }
       ]
