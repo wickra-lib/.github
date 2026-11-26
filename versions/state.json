@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-11-26T03:46:03Z",
+  "scanned_at": "2026-11-26T15:21:06Z",
   "owner": "wickra-lib",
   "repos": [
     {
@@ -1091,7 +1091,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -1103,7 +1103,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -2639,7 +2639,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -2653,7 +2653,7 @@
         {
           "name": "wickra-data",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -2688,7 +2688,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -3218,8 +3218,8 @@
     },
     {
       "repo": "wickra-embed",
-      "declared": "0.1.3",
-      "tag": "v0.1.3",
+      "declared": "0.1.4",
+      "tag": "v0.1.4",
       "release": "v0.1.3",
       "manifests": [
         {
@@ -3228,7 +3228,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "file": "bindings/python/pyproject.toml",
@@ -3284,7 +3284,7 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "file": "SECURITY.md",
@@ -3292,14 +3292,14 @@
           "required": true,
           "range": false,
           "present": true,
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "file": "Cargo.toml [workspace.dependencies] wickra-embed-core",
           "ecosystem": "cargo",
           "present": true,
           "range": true,
-          "version": "0.1.3"
+          "version": "0.1.4"
         },
         {
           "file": "crates/embed-bench/Cargo.toml",
@@ -3399,14 +3399,14 @@
       ],
       "go": null,
       "pins": {
-        "wickra-embed-core": "0.1.3",
+        "wickra-embed-core": "0.1.4",
         "wickra-core": "2.0"
       },
       "lock": [
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -3417,7 +3417,7 @@
         {
           "name": "wickra-embed-c",
           "versions": [
-            "0.1.3"
+            "0.1.4"
           ],
           "origin": "path",
           "git": null,
@@ -3426,7 +3426,7 @@
         {
           "name": "wickra-embed-core",
           "versions": [
-            "0.1.3"
+            "0.1.4"
           ],
           "origin": "path",
           "git": null,
@@ -3438,7 +3438,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -3844,7 +3844,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -3936,7 +3936,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -4346,7 +4346,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -4429,7 +4429,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -4841,7 +4841,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -4855,7 +4855,7 @@
         {
           "name": "wickra-data",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -4959,7 +4959,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -5394,7 +5394,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -5409,7 +5409,7 @@
         {
           "name": "wickra-data",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -5515,7 +5515,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -5950,7 +5950,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -6056,7 +6056,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -7299,7 +7299,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -7403,7 +7403,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -7815,7 +7815,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -7829,7 +7829,7 @@
         {
           "name": "wickra-data",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -7942,7 +7942,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -8354,7 +8354,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -8368,7 +8368,7 @@
         {
           "name": "wickra-data",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -8472,7 +8472,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -8881,7 +8881,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -8892,7 +8892,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -9864,7 +9864,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -9900,7 +9900,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -11401,7 +11401,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -11434,7 +11434,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -11915,7 +11915,7 @@
         {
           "name": "wickra-core",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -11938,7 +11938,7 @@
         {
           "name": "wickra-simd",
           "versions": [
-            "2.1.1"
+            "2.2.0"
           ],
           "origin": "registry",
           "git": null,
@@ -12335,20 +12335,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-backtest",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-backtest",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
-    },
-    {
       "repo": "wickra-benchmark",
       "kind": "no version reference",
       "subject": "crates/benchmark-cli/Cargo.toml",
@@ -12629,27 +12615,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-copilot",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-copilot",
-      "kind": "lock behind",
-      "subject": "wickra-data",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-data publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
-    },
-    {
-      "repo": "wickra-copilot",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
-    },
-    {
       "repo": "wickra-darwin",
       "kind": "no version reference",
       "subject": "crates/darwin-cli/Cargo.toml",
@@ -12854,17 +12819,15 @@
     },
     {
       "repo": "wickra-embed",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
+      "kind": "registry differs",
+      "subject": "crates.io wickra-embed-core",
+      "detail": "0.1.3 against the declared 0.1.4"
     },
     {
       "repo": "wickra-embed",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
+      "kind": "no release for the newest tag",
+      "subject": "v0.1.4",
+      "detail": "the newest release is v0.1.3; attaching assets depends on every publish job, so one failing leaves the tag without one"
     },
     {
       "repo": "wickra-exchange",
@@ -12972,20 +12935,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-exchange",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-exchange",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
-    },
-    {
       "repo": "wickra-feature-store",
       "kind": "no version reference",
       "subject": "crates/feature-store-cli/Cargo.toml",
@@ -13077,20 +13026,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-feature-store",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-feature-store",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
-    },
-    {
       "repo": "wickra-genome",
       "kind": "no version reference",
       "subject": "crates/genome-cli/Cargo.toml",
@@ -13175,27 +13110,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-genome",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "lock behind",
-      "subject": "wickra-data",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-data publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
-    },
-    {
-      "repo": "wickra-genome",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
-    },
-    {
       "repo": "wickra-gym",
       "kind": "no version reference",
       "subject": "crates/gym-cli/Cargo.toml",
@@ -13271,27 +13185,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "lock behind",
-      "subject": "wickra-data",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-data publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
-    },
-    {
-      "repo": "wickra-gym",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
     },
     {
       "repo": "wickra-impact",
@@ -13376,20 +13269,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-impact",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
     },
     {
       "repo": "wickra-pico",
@@ -13791,20 +13670,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-radar",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-radar",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
-    },
-    {
       "repo": "wickra-screener",
       "kind": "no version reference",
       "subject": "crates/screener-cli/Cargo.toml",
@@ -13889,27 +13754,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-screener",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-screener",
-      "kind": "lock behind",
-      "subject": "wickra-data",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-data publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
-    },
-    {
-      "repo": "wickra-screener",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
-    },
-    {
       "repo": "wickra-shazam",
       "kind": "no version reference",
       "subject": "crates/shazam-cli/Cargo.toml",
@@ -13992,27 +13836,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "lock behind",
-      "subject": "wickra-data",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-data publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-data) closes it"
-    },
-    {
-      "repo": "wickra-shazam",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
     },
     {
       "repo": "wickra-strategy-ci",
@@ -14111,20 +13934,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-strategy-ci",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
     },
     {
       "repo": "wickra-synth",
@@ -14307,20 +14116,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the pin `2.0` already allows it; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-terminal",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
     },
     {
       "repo": "wickra-timemachine",
@@ -14582,20 +14377,6 @@
       "informational": true
     },
     {
-      "repo": "wickra-xray",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-xray",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
-    },
-    {
       "repo": "wickra-zk",
       "kind": "no version reference",
       "subject": "bindings/csharp/WickraZk.Tests/WickraZk.Tests.csproj",
@@ -14650,20 +14431,6 @@
       "subject": "README.md",
       "detail": "present, and names no version -- legitimate for a file that only may reference one",
       "informational": true
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "lock behind",
-      "subject": "wickra-core",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-core publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-core) closes it"
-    },
-    {
-      "repo": "wickra-zk",
-      "kind": "lock behind",
-      "subject": "wickra-simd",
-      "maintenance": true,
-      "detail": "locked at 2.1.1 while wickra-simd publishes 2.2.0; the crate is not declared here and follows a sibling's range; Dependabot's weekly cargo refresh (or cargo update -p wickra-simd) closes it"
     }
   ]
 }
