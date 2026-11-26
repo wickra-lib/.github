@@ -478,7 +478,10 @@ if (linked.length) {
   L.push('None.', '')
 }
 
-L.push(`## Open runs (${actionsOpen.length} workflow runs, ${checksOpen.length - ghosts.length} checks of other apps${ghosts.length ? `, +${ghosts.length} superseded` : ''}${stranded.length ? `, +${stranded.length} stranded` : ''})`, '')
+// The stranded runs (2026-10-07 outage) stay out of the Markdown entirely --
+// no count in the heading, no line below: nothing can end them and they never
+// change, so they are only noise here. status.json still lists every one.
+L.push(`## Open runs (${actionsOpen.length} workflow runs, ${checksOpen.length - ghosts.length} checks of other apps${ghosts.length ? `, +${ghosts.length} superseded` : ''})`, '')
 if (skipped.includes('open runs')) {
   L.push('Not collected this run.', '')
 } else {
@@ -500,7 +503,6 @@ if (skipped.includes('open runs')) {
   } else {
     L.push('None.', '')
   }
-  if (stranded.length) L.push(`Stranded: ${stranded.length} runs GitHub left queued that no API call can end (${new Set(stranded.map((r) => r.repo)).size} repositories); listed in status.json, not here.`, '')
 }
 
 const occurrences = warnGroups.reduce((n, g) => n + g.hits.length, 0)
