@@ -51,12 +51,28 @@ jobs:
       # the stargazers API on 2026-06-30. Reading it here keeps the chart working
       # without handing a token to a third party or carrying one in a README.
       # The repo-scoped GITHUB_TOKEN answers 403 for a sibling repo's stargazers
-      # (measured, run 33247797105), so STAR_HISTORY_TOKEN must carry a token
-      # that can read them for the charts to refresh. Until it is set, each repo
-      # keeps its previous committed chart and the job still succeeds.
+      # (measured, run 33247797105), and since July 2026 GitHub lists stargazers
+      # only to collaborators: a fine-grained token with metadata read is refused
+      # ("accepted permissions: metadata=read; contents=write", run 45910034995).
+      # The org bot app already holds contents write on every repository, so it
+      # mints a short-lived token for this one step instead of a personal token
+      # carrying write access to the whole org. If minting fails, each repo keeps
+      # its previous committed chart and the job still succeeds.
+      - name: Mint a token that can list stargazers
+        id: app
+        continue-on-error: true
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ vars.WICKRA_BOT_CLIENT_ID }}
+          private-key: ${{ secrets.WICKRA_BOT_PRIVATE_KEY }}
+          # Every repository on purpose: the chart covers the whole org. The
+          # token lives for this job only and is used for GET requests alone.
+          owner: ${{ github.repository_owner }} # zizmor: ignore[github-app]
+          permission-contents: write
+
       - name: Render star-history charts
         env:
-          STAR_HISTORY_TOKEN: ${{ secrets.STAR_HISTORY_TOKEN }}
+          STAR_HISTORY_TOKEN: ${{ steps.app.outputs.token }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/render-star-history.mjs
 
