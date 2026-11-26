@@ -1194,7 +1194,7 @@ function render(snapshot) {
     '',
   ]
 
-  lines.push(`Scanning ${snapshot.repos.length} product repositories. What the repositories declare against each other -- family pins, locks, toolchain floors, CI matrices, Dependabot coverage -- is in [drift.md](drift.md); the resolved third-party dependencies side by side in [dependencies.md](dependencies.md).`, '')
+  lines.push(`Scanning ${snapshot.repos.length} product repositories. What the repositories declare against each other -- family pins, locks, toolchain floors, CI matrices, Dependabot coverage -- is in [drift.md](drift.md); the resolved third-party dependencies side by side in [dependencies.md](dependencies.md); whether each main is green, what failed, what still runs and which warnings the CI prints in [status.md](status.md).`, '')
 
   if (snapshot.findings.length === 0) {
     lines.push(

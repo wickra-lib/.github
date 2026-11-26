@@ -1,0 +1,92 @@
+name: Refresh main status
+
+# Is every repository's main green, and if not, what failed? Plus every run in
+# the org that has not finished and every warning the Actions runs print.
+# scripts/fetch-status.mjs is the hourly port of the workspace tools
+# main_status.py, open_runs.py and action_warnings.py; it writes
+# versions/status.md and versions/status.json next to the version snapshot,
+# drift and dependency reports. Commits only when something moved.
+#
+# It reads with an installation token of the read-only wickra-lib-status app,
+# minted for the whole org (its own rate budget, about 7900 requests an hour
+# for this org, apart from any person's token and from wickra-lib-bot, which
+# writes). Until that app exists, or when it cannot mint, it falls back to
+# GITHUB_TOKEN (1000 an hour) and the script skips what the budget does not
+# cover, saying so in the report.
+on:
+  schedule:
+    - cron: '27 * * * *' # hourly at :27 (offset from refresh-badges :17, refresh-social :37, links :43, refresh-versions :47)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-status.mjs
+      - .github/workflows/refresh-status.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-status
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Don't persist the token in .git/config (zizmor: artipacked); the
+          # commit goes through actions/signed-commit, not a git push.
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+
+      # Read-only scopes for every repository of the installation; the token
+      # writes nothing (the commit below uses GITHUB_TOKEN). Skipped while the
+      # app's client id is not set, so the fallback is quiet, not a red step.
+      - name: Mint a read token for the org
+        id: app
+        if: vars.WICKRA_STATUS_CLIENT_ID != ''
+        continue-on-error: true
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ vars.WICKRA_STATUS_CLIENT_ID }}
+          private-key: ${{ secrets.WICKRA_STATUS_PRIVATE_KEY }}
+          # Every repository on purpose: the status covers the whole org, and the
+          # app and this token can only read (no write permission is requested
+          # or granted).
+          owner: ${{ github.repository_owner }} # zizmor: ignore[github-app]
+          permission-actions: read
+          permission-checks: read
+          permission-statuses: read
+          permission-pull-requests: read
+          permission-metadata: read
+
+      - name: Collect the status of every main
+        env:
+          STATUS_TOKEN: ${{ steps.app.outputs.token }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-status.mjs
+
+      - name: Commit if changed
+        id: commitcheck
+        run: |
+          # The scan time moves on every run; only a differing body is worth a commit.
+          new=$(git ls-files --others --exclude-standard versions/status.md versions/status.json)
+          if [ -z "$new" ] && git diff --quiet -I '"scanned_at"' -I '^Last scan:' -- versions/status.md versions/status.json; then
+            echo "status unchanged apart from the scan time; nothing to commit"
+            echo "commit=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "commit=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit (signed)
+        if: steps.commitcheck.outputs.commit == 'true'
+        uses: ./actions/signed-commit
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          message: "chore: refresh main status"
+          paths: versions/status.md versions/status.json
