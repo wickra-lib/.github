@@ -1,12 +1,51 @@
 {
- "scanned_at": "2026-11-09T03:03:32Z",
+ "scanned_at": "2026-11-26T03:48:44Z",
  "counts": {
   "defect": 0,
-  "drift": 0,
+  "drift": 39,
   "explained": 7,
   "info": 75
  },
  "keys": [
+  "lock-behind|wickra-backtest Cargo.lock|wickra,wickra-backtest|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-backtest Cargo.lock|wickra,wickra-backtest|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-copilot Cargo.lock|wickra,wickra-copilot|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-copilot Cargo.lock|wickra,wickra-copilot|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-copilot Cargo.lock|wickra,wickra-copilot|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-embed Cargo.lock|wickra,wickra-embed|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-embed Cargo.lock|wickra,wickra-embed|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-exchange Cargo.lock|wickra,wickra-exchange|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-exchange Cargo.lock|wickra,wickra-exchange|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-feature-store Cargo.lock|wickra,wickra-feature-store|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-feature-store Cargo.lock|wickra,wickra-feature-store|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-genome Cargo.lock|wickra,wickra-genome|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-genome Cargo.lock|wickra,wickra-genome|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-genome Cargo.lock|wickra,wickra-genome|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-gym Cargo.lock|wickra,wickra-gym|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-gym Cargo.lock|wickra,wickra-gym|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-gym Cargo.lock|wickra,wickra-gym|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-impact Cargo.lock|wickra,wickra-impact|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-impact Cargo.lock|wickra,wickra-impact|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-radar Cargo.lock|wickra,wickra-radar|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-radar Cargo.lock|wickra,wickra-radar|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-screener Cargo.lock|wickra,wickra-screener|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-screener Cargo.lock|wickra,wickra-screener|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-screener Cargo.lock|wickra,wickra-screener|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-shazam Cargo.lock|wickra,wickra-shazam|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-shazam Cargo.lock|wickra,wickra-shazam|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-shazam Cargo.lock|wickra,wickra-shazam|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-strategy-ci Cargo.lock|wickra,wickra-strategy-ci|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-strategy-ci Cargo.lock|wickra,wickra-strategy-ci|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-terminal Cargo.lock|wickra,wickra-terminal|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-terminal Cargo.lock|wickra,wickra-terminal|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-xray Cargo.lock|wickra,wickra-xray|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-xray Cargo.lock|wickra,wickra-xray|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra,wickra-zk|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra,wickra-zk|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-zk Cargo.lock|wickra,wickra-zk|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-zk Cargo.lock|wickra,wickra-zk|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra,wickra-zk|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+  "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra,wickra-zk|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
   "decl:cargo|getrandom|0.2=wickra-feature-store,wickra-gym,wickra-strategy-ci,wickra-terminal,wickra-timemachine|0.3=wickra-terminal,wickra-timemachine|0.4=wickra-exchange,wickra-terminal,wickra-timemachine",
   "decl:ci-matrix|dotnet-version in ci.yml|10.0=wickra|8.0=wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:convention|requirements layout|bench.in ci-dev-py3.in ci-dev-py39.in=wickra,wickra-backtest,wickra-terminal|ci-dev-py3.in ci-dev-py39.in=wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk|ci-dev-py3.in ci-dev-py39.in ci-gymnasium.in=wickra-gym|ci-dev-py3.in ci-dev-py39.in manifest.in=wickra-benchmark|pyodide-build.in=wickra-playground",
@@ -15,8 +54,8 @@
   "decl:toolchain|rust-version (workspace)|1.86=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-darwin,wickra-embed,wickra-feature-store,wickra-pico,wickra-proof,wickra-strategy-ci,wickra-synth,wickra-verify|1.87=wickra-copilot,wickra-exchange,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-timemachine,wickra-xray|1.90=wickra-zk",
   "decl:toolchain|TargetFramework|net10.0=wickra|net8.0=wickra,wickra-backtest,wickra-benchmark,wickra-compile,wickra-copilot,wickra-darwin,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-proof,wickra-radar,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-synth,wickra-terminal,wickra-timemachine,wickra-verify,wickra-xray,wickra-zk",
   "decl:own|wickra-backtest-core|=0.2.1=wickra-benchmark,wickra-copilot,wickra-feature-store,wickra-genome,wickra-proof,wickra-screener,wickra-shazam,wickra-strategy-ci,wickra-verify|0.2.1",
-  "decl:own|wickra-core|2.0=wickra-backtest,wickra-benchmark,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-timemachine|2.1.1",
-  "decl:own|wickra-data|2.0=wickra-copilot,wickra-genome,wickra-gym,wickra-screener,wickra-shazam,wickra-synth|2.1.1",
+  "decl:own|wickra-core|2.0=wickra-backtest,wickra-benchmark,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-timemachine|2.2.0",
+  "decl:own|wickra-data|2.0=wickra-copilot,wickra-genome,wickra-gym,wickra-screener,wickra-shazam,wickra-synth|2.2.0",
   "decl:own|wickra-embed-core|=0.1.3=wickra-pico|0.1.3",
   "decl:own|wickra-exchange|=0.2.1=wickra-copilot,wickra-genome,wickra-gym,wickra-impact,wickra-radar,wickra-screener,wickra-shazam,wickra-terminal,wickra-xray|0.2.1",
   "decl:own|wickra-exchange-core|=0.2.1=wickra-terminal,wickra-timemachine|0.2.1",
@@ -91,6 +130,435 @@
   "lock:npm|picomatch|2.x=wickra-playground@package-lock.json|4.x=wickra-playground@package-lock.json,wickra-terminal@web,wickra-xray@web"
  ],
  "findings": [
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-backtest Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-backtest"
+   ],
+   "key": "lock-behind|wickra-backtest Cargo.lock|wickra,wickra-backtest|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-backtest Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-backtest"
+   ],
+   "key": "lock-behind|wickra-backtest Cargo.lock|wickra,wickra-backtest|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-copilot Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-copilot"
+   ],
+   "key": "lock-behind|wickra-copilot Cargo.lock|wickra,wickra-copilot|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-copilot Cargo.lock",
+   "detail": "wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-copilot"
+   ],
+   "key": "lock-behind|wickra-copilot Cargo.lock|wickra,wickra-copilot|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-copilot Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-copilot"
+   ],
+   "key": "lock-behind|wickra-copilot Cargo.lock|wickra,wickra-copilot|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-embed Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-embed"
+   ],
+   "key": "lock-behind|wickra-embed Cargo.lock|wickra,wickra-embed|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-embed Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-embed"
+   ],
+   "key": "lock-behind|wickra-embed Cargo.lock|wickra,wickra-embed|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-exchange Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-exchange"
+   ],
+   "key": "lock-behind|wickra-exchange Cargo.lock|wickra,wickra-exchange|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-exchange Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-exchange"
+   ],
+   "key": "lock-behind|wickra-exchange Cargo.lock|wickra,wickra-exchange|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-feature-store Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-feature-store"
+   ],
+   "key": "lock-behind|wickra-feature-store Cargo.lock|wickra,wickra-feature-store|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-feature-store Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-feature-store"
+   ],
+   "key": "lock-behind|wickra-feature-store Cargo.lock|wickra,wickra-feature-store|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-genome Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-genome"
+   ],
+   "key": "lock-behind|wickra-genome Cargo.lock|wickra,wickra-genome|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-genome Cargo.lock",
+   "detail": "wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-genome"
+   ],
+   "key": "lock-behind|wickra-genome Cargo.lock|wickra,wickra-genome|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-genome Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-genome"
+   ],
+   "key": "lock-behind|wickra-genome Cargo.lock|wickra,wickra-genome|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-gym Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-gym"
+   ],
+   "key": "lock-behind|wickra-gym Cargo.lock|wickra,wickra-gym|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-gym Cargo.lock",
+   "detail": "wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-gym"
+   ],
+   "key": "lock-behind|wickra-gym Cargo.lock|wickra,wickra-gym|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-gym Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-gym"
+   ],
+   "key": "lock-behind|wickra-gym Cargo.lock|wickra,wickra-gym|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-impact Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-impact"
+   ],
+   "key": "lock-behind|wickra-impact Cargo.lock|wickra,wickra-impact|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-impact Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-impact"
+   ],
+   "key": "lock-behind|wickra-impact Cargo.lock|wickra,wickra-impact|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-radar Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-radar"
+   ],
+   "key": "lock-behind|wickra-radar Cargo.lock|wickra,wickra-radar|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-radar Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-radar"
+   ],
+   "key": "lock-behind|wickra-radar Cargo.lock|wickra,wickra-radar|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-screener Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-screener"
+   ],
+   "key": "lock-behind|wickra-screener Cargo.lock|wickra,wickra-screener|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-screener Cargo.lock",
+   "detail": "wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-screener"
+   ],
+   "key": "lock-behind|wickra-screener Cargo.lock|wickra,wickra-screener|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-screener Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-screener"
+   ],
+   "key": "lock-behind|wickra-screener Cargo.lock|wickra,wickra-screener|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-shazam Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-shazam"
+   ],
+   "key": "lock-behind|wickra-shazam Cargo.lock|wickra,wickra-shazam|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-shazam Cargo.lock",
+   "detail": "wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-shazam"
+   ],
+   "key": "lock-behind|wickra-shazam Cargo.lock|wickra,wickra-shazam|wickra-data locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-shazam Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-shazam"
+   ],
+   "key": "lock-behind|wickra-shazam Cargo.lock|wickra,wickra-shazam|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-strategy-ci Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-strategy-ci"
+   ],
+   "key": "lock-behind|wickra-strategy-ci Cargo.lock|wickra,wickra-strategy-ci|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-strategy-ci Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-strategy-ci"
+   ],
+   "key": "lock-behind|wickra-strategy-ci Cargo.lock|wickra,wickra-strategy-ci|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-terminal Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-terminal"
+   ],
+   "key": "lock-behind|wickra-terminal Cargo.lock|wickra,wickra-terminal|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-terminal Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-terminal"
+   ],
+   "key": "lock-behind|wickra-terminal Cargo.lock|wickra,wickra-terminal|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-xray Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-xray"
+   ],
+   "key": "lock-behind|wickra-xray Cargo.lock|wickra,wickra-xray|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-xray Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-xray"
+   ],
+   "key": "lock-behind|wickra-xray Cargo.lock|wickra,wickra-xray|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-zk bindings/wasm/Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-zk"
+   ],
+   "key": "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra,wickra-zk|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-zk bindings/wasm/Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-zk"
+   ],
+   "key": "lock-behind|wickra-zk bindings/wasm/Cargo.lock|wickra,wickra-zk|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-zk Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-zk"
+   ],
+   "key": "lock-behind|wickra-zk Cargo.lock|wickra,wickra-zk|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-zk Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-zk"
+   ],
+   "key": "lock-behind|wickra-zk Cargo.lock|wickra,wickra-zk|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-zk guest/methods/guest/Cargo.lock",
+   "detail": "wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-zk"
+   ],
+   "key": "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra,wickra-zk|wickra-core locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
+  {
+   "severity": "drift",
+   "kind": "lock-behind",
+   "subject": "wickra-zk guest/methods/guest/Cargo.lock",
+   "detail": "wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)",
+   "repos": [
+    "wickra",
+    "wickra-zk"
+   ],
+   "key": "lock-behind|wickra-zk guest/methods/guest/Cargo.lock|wickra,wickra-zk|wickra-simd locked at 2.1.1; wickra main is 2.2.0 (caret pin; the lock refresh is Dependabot's)"
+  },
   {
    "severity": "explained",
    "kind": "decl:cargo",
@@ -299,7 +767,7 @@
    "severity": "info",
    "kind": "decl:cargo",
    "subject": "wickra-core",
-   "detail": "15 consumer(s) pin 2.0; wickra declares its own crate as 2.1.1",
+   "detail": "15 consumer(s) pin 2.0; wickra declares its own crate as 2.2.0",
    "repos": [
     "wickra",
     "wickra-backtest",
@@ -318,13 +786,13 @@
     "wickra-terminal",
     "wickra-timemachine"
    ],
-   "key": "decl:own|wickra-core|2.0=wickra-backtest,wickra-benchmark,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-timemachine|2.1.1"
+   "key": "decl:own|wickra-core|2.0=wickra-backtest,wickra-benchmark,wickra-copilot,wickra-darwin,wickra-embed,wickra-exchange,wickra-feature-store,wickra-genome,wickra-gym,wickra-impact,wickra-screener,wickra-shazam,wickra-synth,wickra-terminal,wickra-timemachine|2.2.0"
   },
   {
    "severity": "info",
    "kind": "decl:cargo",
    "subject": "wickra-data",
-   "detail": "6 consumer(s) pin 2.0; wickra declares its own crate as 2.1.1",
+   "detail": "6 consumer(s) pin 2.0; wickra declares its own crate as 2.2.0",
    "repos": [
     "wickra",
     "wickra-copilot",
@@ -334,7 +802,7 @@
     "wickra-shazam",
     "wickra-synth"
    ],
-   "key": "decl:own|wickra-data|2.0=wickra-copilot,wickra-genome,wickra-gym,wickra-screener,wickra-shazam,wickra-synth|2.1.1"
+   "key": "decl:own|wickra-data|2.0=wickra-copilot,wickra-genome,wickra-gym,wickra-screener,wickra-shazam,wickra-synth|2.2.0"
   },
   {
    "severity": "info",

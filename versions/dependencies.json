@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-11-09T03:01:12Z",
+  "scanned_at": "2026-11-26T03:46:03Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
       "total": 658,
       "shared": 374,
-      "differing": 54
+      "differing": 57
     },
     "npm": {
       "total": 109,
@@ -2346,9 +2346,9 @@
         "version": "0.5.1",
         "requiredBy": [
           "statrs 0.18.0",
-          "wickra 2.1.1",
-          "wickra-core 2.1.1",
-          "wickra-data 2.1.1"
+          "wickra 2.2.0",
+          "wickra-core 2.2.0",
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -2407,7 +2407,7 @@
           "nix 0.31.3",
           "openssl 0.10.81",
           "proptest 1.11.0",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "security-framework 3.7.0"
         ]
       },
@@ -2435,7 +2435,7 @@
         "name": "bytemuck",
         "version": "1.25.2",
         "requiredBy": [
-          "wickra-python 2.1.1"
+          "wickra-python 2.2.0"
         ]
       },
       {
@@ -2586,7 +2586,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.2",
         "requiredBy": [
-          "wickra 2.1.1"
+          "wickra 2.2.0"
         ]
       },
       {
@@ -2614,7 +2614,7 @@
         "name": "console_error_panic_hook",
         "version": "0.1.7",
         "requiredBy": [
-          "wickra-wasm 2.1.1"
+          "wickra-wasm 2.2.0"
         ]
       },
       {
@@ -2672,7 +2672,7 @@
         "name": "criterion",
         "version": "0.8.2",
         "requiredBy": [
-          "wickra-bench 2.1.1"
+          "wickra-bench 2.2.0"
         ]
       },
       {
@@ -2746,7 +2746,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 2.1.1"
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -2825,7 +2825,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -2877,9 +2877,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "form_urlencoded",
-        "version": "1.2.2",
+        "version": "1.2.3",
         "requiredBy": [
-          "url 2.5.8"
+          "url 2.5.9"
         ]
       },
       {
@@ -2973,7 +2973,7 @@
           "futures-executor 0.3.34",
           "js-sys 0.3.105",
           "tokio-tungstenite 0.30.0",
-          "wickra-data 2.1.1"
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -3142,7 +3142,7 @@
         "name": "idna",
         "version": "1.1.0",
         "requiredBy": [
-          "url 2.5.8"
+          "url 2.5.9"
         ]
       },
       {
@@ -3213,7 +3213,7 @@
           "wasm-bindgen-futures 0.4.78",
           "wasm-bindgen-test 0.3.78",
           "web-sys 0.3.105",
-          "wickra-wasm 2.1.1"
+          "wickra-wasm 2.2.0"
         ]
       },
       {
@@ -3222,7 +3222,7 @@
         "name": "kand",
         "version": "0.2.2",
         "requiredBy": [
-          "wickra-bench 2.1.1"
+          "wickra-bench 2.2.0"
         ]
       },
       {
@@ -3247,7 +3247,7 @@
           "page_size 0.6.0",
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "security-framework 3.7.0",
           "security-framework-sys 2.17.0",
           "socket2 0.6.5",
@@ -3280,7 +3280,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -3343,7 +3343,7 @@
         "name": "napi",
         "version": "3.15.0",
         "requiredBy": [
-          "wickra-node 2.1.1"
+          "wickra-node 2.2.0"
         ]
       },
       {
@@ -3353,7 +3353,7 @@
         "version": "2.6.0",
         "requiredBy": [
           "napi 3.15.0",
-          "wickra-node 2.1.1"
+          "wickra-node 2.2.0"
         ]
       },
       {
@@ -3362,7 +3362,7 @@
         "name": "napi-derive",
         "version": "3.6.13",
         "requiredBy": [
-          "wickra-node 2.1.1"
+          "wickra-node 2.2.0"
         ]
       },
       {
@@ -3393,7 +3393,7 @@
           "tokio-tungstenite 0.30.0",
           "tungstenite 0.30.0",
           "ureq 2.12.1",
-          "wickra-data 2.1.1"
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -3541,8 +3541,8 @@
         "name": "percent-encoding",
         "version": "2.3.2",
         "requiredBy": [
-          "form_urlencoded 1.2.2",
-          "url 2.5.8"
+          "form_urlencoded 1.2.3",
+          "url 2.5.9"
         ]
       },
       {
@@ -3665,8 +3665,8 @@
         "name": "proptest",
         "version": "1.11.0",
         "requiredBy": [
-          "wickra 2.1.1",
-          "wickra-core 2.1.1"
+          "wickra 2.2.0",
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -3675,7 +3675,7 @@
         "name": "pyo3",
         "version": "0.30.1",
         "requiredBy": [
-          "wickra-python 2.1.1"
+          "wickra-python 2.2.0"
         ]
       },
       {
@@ -3839,7 +3839,7 @@
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
           "criterion 0.8.2",
-          "wickra-core 2.1.1"
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -3895,7 +3895,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.5",
+        "version": "1.1.6",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -3987,10 +3987,10 @@
           "serde-wasm-bindgen 0.6.5",
           "serde_json 1.0.154",
           "tinytemplate 1.2.1",
-          "url 2.5.8",
+          "url 2.5.9",
           "wasm-bindgen-test 0.3.78",
-          "wickra-data 2.1.1",
-          "wickra-wasm 2.1.1",
+          "wickra-data 2.2.0",
+          "wickra-wasm 2.2.0",
           "yata 0.7.0"
         ]
       },
@@ -4000,7 +4000,7 @@
         "name": "serde-wasm-bindgen",
         "version": "0.6.5",
         "requiredBy": [
-          "wickra-wasm 2.1.1"
+          "wickra-wasm 2.2.0"
         ]
       },
       {
@@ -4037,8 +4037,8 @@
           "criterion 0.8.2",
           "tinytemplate 1.2.1",
           "wasm-bindgen-test 0.3.78",
-          "wickra-data 2.1.1",
-          "wickra-examples 2.1.1"
+          "wickra-data 2.2.0",
+          "wickra-examples 2.2.0"
         ]
       },
       {
@@ -4156,7 +4156,7 @@
         "name": "ta",
         "version": "0.5.0",
         "requiredBy": [
-          "wickra-bench 2.1.1"
+          "wickra-bench 2.2.0"
         ]
       },
       {
@@ -4177,7 +4177,7 @@
           "native-tls 0.2.18",
           "proptest 1.11.0",
           "rusty-fork 0.3.1",
-          "wickra-data 2.1.1"
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -4188,8 +4188,8 @@
         "requiredBy": [
           "kand 0.2.2",
           "tungstenite 0.30.0",
-          "wickra-core 2.1.1",
-          "wickra-data 2.1.1"
+          "wickra-core 2.2.0",
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -4228,11 +4228,11 @@
         "requiredBy": [
           "tokio-native-tls 0.3.1",
           "tokio-tungstenite 0.30.0",
-          "wickra-c 2.1.1",
-          "wickra-data 2.1.1",
-          "wickra-examples 2.1.1",
-          "wickra-node 2.1.1",
-          "wickra-python 2.1.1"
+          "wickra-c 2.2.0",
+          "wickra-data 2.2.0",
+          "wickra-examples 2.2.0",
+          "wickra-node 2.2.0",
+          "wickra-python 2.2.0"
         ]
       },
       {
@@ -4259,7 +4259,7 @@
         "name": "tokio-tungstenite",
         "version": "0.30.0",
         "requiredBy": [
-          "wickra-data 2.1.1"
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -4343,17 +4343,17 @@
         "name": "ureq",
         "version": "2.12.1",
         "requiredBy": [
-          "wickra-data 2.1.1"
+          "wickra-data 2.2.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "url",
-        "version": "2.5.8",
+        "version": "2.5.9",
         "requiredBy": [
           "ureq 2.12.1",
-          "wickra-data 2.1.1"
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -4426,7 +4426,7 @@
           "wasm-bindgen-futures 0.4.78",
           "wasm-bindgen-test 0.3.78",
           "web-sys 0.3.105",
-          "wickra-wasm 2.1.1"
+          "wickra-wasm 2.2.0"
         ]
       },
       {
@@ -4472,7 +4472,7 @@
         "name": "wasm-bindgen-test",
         "version": "0.3.78",
         "requiredBy": [
-          "wickra-wasm 2.1.1"
+          "wickra-wasm 2.2.0"
         ]
       },
       {
@@ -4560,7 +4560,7 @@
           "is-terminal 0.4.17",
           "mio 1.2.3",
           "nu-ansi-term 0.50.3",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "schannel 0.1.29",
           "socket2 0.6.5",
           "tempfile 3.27.0",
@@ -4603,7 +4603,7 @@
         "name": "yata",
         "version": "0.7.0",
         "requiredBy": [
-          "wickra-bench 2.1.1"
+          "wickra-bench 2.2.0"
         ]
       },
       {
@@ -9152,7 +9152,7 @@
           "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -9449,7 +9449,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -9697,7 +9697,7 @@
           "nix 0.31.3",
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "wait-timeout 0.2.1"
         ]
       },
@@ -9716,7 +9716,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -10041,7 +10041,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "wickra-benchmark-core 0.2.1",
-          "wickra-core 2.1.1"
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -10114,7 +10114,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.5",
+        "version": "1.1.6",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -10339,7 +10339,7 @@
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
           "wickra-benchmark-core 0.2.1",
-          "wickra-core 2.1.1"
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -10531,7 +10531,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -11546,7 +11546,7 @@
           "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -11868,7 +11868,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -12146,7 +12146,7 @@
           "nix 0.31.3",
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "wait-timeout 0.2.1"
         ]
       },
@@ -12165,7 +12165,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -12519,7 +12519,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.1"
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -12592,7 +12592,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.5",
+        "version": "1.1.6",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -12829,7 +12829,7 @@
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
           "wickra-compile-core 0.2.1",
-          "wickra-core 2.1.1"
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -13042,7 +13042,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -18099,7 +18099,7 @@
           "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -18375,7 +18375,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -18632,7 +18632,7 @@
           "nix 0.31.3",
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "wait-timeout 0.2.1"
         ]
       },
@@ -18651,7 +18651,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -19005,7 +19005,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.1",
+          "wickra-core 2.2.0",
           "wickra-darwin-core 0.2.1"
         ]
       },
@@ -19079,7 +19079,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.5",
+        "version": "1.1.6",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -19305,7 +19305,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.1",
+          "wickra-core 2.2.0",
           "wickra-darwin-core 0.2.1"
         ]
       },
@@ -19510,7 +19510,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -41815,7 +41815,7 @@
           "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -42113,7 +42113,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -42371,7 +42371,7 @@
           "nix 0.31.3",
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "wait-timeout 0.2.1"
         ]
       },
@@ -42390,7 +42390,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -42751,7 +42751,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.1"
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -42824,7 +42824,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.5",
+        "version": "1.1.6",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -43049,7 +43049,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.1",
+          "wickra-core 2.2.0",
           "wickra-proof-core 0.2.1"
         ]
       },
@@ -43254,7 +43254,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -58656,7 +58656,7 @@
           "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -58887,7 +58887,7 @@
         "name": "csv",
         "version": "1.4.0",
         "requiredBy": [
-          "wickra-data 2.1.1"
+          "wickra-data 2.2.0"
         ]
       },
       {
@@ -58934,7 +58934,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -59192,7 +59192,7 @@
           "nix 0.31.3",
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "wait-timeout 0.2.1"
         ]
       },
@@ -59211,7 +59211,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -59560,7 +59560,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.1"
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -59615,7 +59615,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.5",
+        "version": "1.1.6",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -59676,7 +59676,7 @@
           "codspeed-criterion-compat-walltime 5.0.2",
           "serde_json 1.0.154",
           "tinytemplate 1.2.1",
-          "wickra-data 2.1.1",
+          "wickra-data 2.2.0",
           "wickra-synth-core 0.2.1"
         ]
       },
@@ -59715,7 +59715,7 @@
           "codspeed-criterion-compat-walltime 5.0.2",
           "synth-bench 0.2.1",
           "tinytemplate 1.2.1",
-          "wickra-data 2.1.1",
+          "wickra-data 2.2.0",
           "wickra-synth 0.2.1",
           "wickra-synth-core 0.2.1",
           "wickra-synth-example 0.2.1"
@@ -59824,8 +59824,8 @@
         "name": "thiserror",
         "version": "2.0.21",
         "requiredBy": [
-          "wickra-core 2.1.1",
-          "wickra-data 2.1.1",
+          "wickra-core 2.2.0",
+          "wickra-data 2.2.0",
           "wickra-synth-core 0.2.1"
         ]
       },
@@ -60030,7 +60030,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -66233,7 +66233,7 @@
           "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -66657,7 +66657,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -66989,7 +66989,7 @@
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
           "rand 0.8.8",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "wait-timeout 0.2.1"
         ]
       },
@@ -67008,7 +67008,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -67479,7 +67479,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.1",
+          "wickra-core 2.2.0",
           "wickra-timemachine-core 0.2.1"
         ]
       },
@@ -67581,7 +67581,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.5",
+        "version": "1.1.6",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -67869,7 +67869,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.1",
+          "wickra-core 2.2.0",
           "wickra-exchange-core 0.2.1",
           "wickra-timemachine-core 0.2.1"
         ]
@@ -68122,7 +68122,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
@@ -69180,7 +69180,7 @@
           "napi 3.15.0",
           "nix 0.31.3",
           "proptest 1.11.0",
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -69478,7 +69478,7 @@
         "name": "errno",
         "version": "0.3.14",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -69736,7 +69736,7 @@
           "nix 0.31.3",
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "wait-timeout 0.2.1"
         ]
       },
@@ -69755,7 +69755,7 @@
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
-          "rustix 1.1.5"
+          "rustix 1.1.6"
         ]
       },
       {
@@ -70109,7 +70109,7 @@
         "version": "1.12.0",
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-core 2.1.1"
+          "wickra-core 2.2.0"
         ]
       },
       {
@@ -70182,7 +70182,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustix",
-        "version": "1.1.5",
+        "version": "1.1.6",
         "requiredBy": [
           "tempfile 3.27.0"
         ]
@@ -70407,7 +70407,7 @@
         "version": "2.0.21",
         "requiredBy": [
           "wickra-backtest-core 0.2.1",
-          "wickra-core 2.1.1",
+          "wickra-core 2.2.0",
           "wickra-verify-core 0.2.1"
         ]
       },
@@ -70619,7 +70619,7 @@
           "colored 3.1.1",
           "errno 0.3.14",
           "is-terminal 0.4.17",
-          "rustix 1.1.5",
+          "rustix 1.1.6",
           "tempfile 3.27.0",
           "winapi-util 0.1.11"
         ]
