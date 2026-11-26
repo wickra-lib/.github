@@ -1,55 +1,9 @@
 {
-  "scanned_at": "2026-11-25T15:27:05Z",
+  "scanned_at": "2026-11-26T00:55:47Z",
   "repos": 77,
   "dependabot": [],
   "waiting": 0,
-  "people": [
-    {
-      "kind": "issue",
-      "repo": "wickra",
-      "number": 511,
-      "title": "LogReturn inline comment contradicts its code",
-      "url": "https://github.com/wickra-lib/wickra/issues/511",
-      "author": "atarutin",
-      "created": "2026-11-23T04:48:05Z"
-    },
-    {
-      "kind": "issue",
-      "repo": "wickra",
-      "number": 510,
-      "title": "Ichimoku docs say the spans are shifted by `displacement`, the output is shifted by `displacement - 1`",
-      "url": "https://github.com/wickra-lib/wickra/issues/510",
-      "author": "atarutin",
-      "created": "2026-11-23T04:48:05Z"
-    },
-    {
-      "kind": "issue",
-      "repo": "wickra",
-      "number": 509,
-      "title": "`rsi_from_avgs` is not exact at 100, defeating StochRsi's flat-window check",
-      "url": "https://github.com/wickra-lib/wickra/issues/509",
-      "author": "atarutin",
-      "created": "2026-11-23T04:48:04Z"
-    },
-    {
-      "kind": "issue",
-      "repo": "wickra",
-      "number": 508,
-      "title": "TtmSqueeze momentum detrends the whole window with the current bar's baseline",
-      "url": "https://github.com/wickra-lib/wickra/issues/508",
-      "author": "atarutin",
-      "created": "2026-11-23T04:48:03Z"
-    },
-    {
-      "kind": "issue",
-      "repo": "wickra",
-      "number": 469,
-      "title": "[Question] confirmation of benchmarking",
-      "url": "https://github.com/wickra-lib/wickra/issues/469",
-      "author": "mihakralj",
-      "created": "2026-09-28T01:55:14Z"
-    }
-  ],
+  "people": [],
   "alerts": [
     {
       "repo": "wickra-screener",
@@ -85,15 +39,6 @@
       "number": 100,
       "url": "https://github.com/wickra-lib/wickra-backtest/security/code-scanning/100",
       "created": "2026-06-28T04:00:26Z",
-      "title": "Scorecard: Vulnerabilities"
-    },
-    {
-      "repo": "wickra",
-      "kind": "code scanning",
-      "severity": "high",
-      "number": 92,
-      "url": "https://github.com/wickra-lib/wickra/security/code-scanning/92",
-      "created": "2026-06-10T01:47:18Z",
       "title": "Scorecard: Vulnerabilities"
     }
   ],
