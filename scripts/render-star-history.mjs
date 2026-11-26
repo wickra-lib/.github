@@ -61,7 +61,20 @@ async function stargazerDates(repo) {
         'user-agent': 'wickra-lib-badges',
       },
     })
-    if (!res.ok) throw new Error(`HTTP ${res.status} reading stargazers`)
+    if (!res.ok) {
+      // GitHub's error body is {message, documentation_url} and a fine-grained
+      // token's 403 names the permission it wanted in this header; neither
+      // carries the token, so both are logged to say what access is missing.
+      const wanted = res.headers.get('x-accepted-github-permissions')
+      let message = ''
+      try {
+        message = (await res.json()).message || ''
+      } catch {
+        message = ''
+      }
+      const detail = [message, wanted && `accepted permissions: ${wanted}`].filter(Boolean).join('; ')
+      throw new Error(`HTTP ${res.status} reading stargazers${detail ? ` (${detail})` : ''}`)
+    }
     const batch = await res.json()
     if (!Array.isArray(batch)) throw new Error('unexpected stargazers payload')
     for (const entry of batch) {
@@ -258,3 +271,8 @@ if (failures === 0 && everyStar.length) {
 }
 
 console.log(`render-star-history: ${covered} ok, ${failures} failure(s)`)
+// The job stays green so the other badges still commit, but a chart that kept
+// its old snapshot is stale, and that should show on the run, not only in its log.
+if (failures) {
+  console.log(`::warning title=Star history stale::${failures} of ${targets.length} repositories unreadable; their charts and the org total kept the previous snapshot`)
+}
