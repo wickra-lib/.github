@@ -13,18 +13,18 @@
   <line x1="62" y1="46.0" x2="772" y2="46.0" stroke="#333a48" stroke-width="1"/>
   <line x1="62" y1="46" x2="62" y2="356" stroke="#8a93a6" stroke-width="1"/>
   <line x1="62" y1="356" x2="772" y2="356" stroke="#8a93a6" stroke-width="1"/>
-  <path d="M 62.0 356.0 C 71.1 343.1, 80.2 335.5, 89.3 317.3 C 94.3 307.2, 99.3 286.5, 104.3 278.5 C 125.4 244.9, 146.4 251.4, 167.4 239.8 C 193.7 225.2, 219.9 211.4, 246.1 201.0 C 289.6 183.8, 333.0 179.6, 376.5 162.3 C 402.2 152.0, 427.9 134.6, 453.6 123.5 C 489.4 108.0, 525.2 84.8, 561.1 84.8 C 631.4 84.8, 701.7 84.8, 772.0 84.8 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
-  <path d="M 62.0 356.0 C 71.1 343.1, 80.2 335.5, 89.3 317.3 C 94.3 307.2, 99.3 286.5, 104.3 278.5 C 125.4 244.9, 146.4 251.4, 167.4 239.8 C 193.7 225.2, 219.9 211.4, 246.1 201.0 C 289.6 183.8, 333.0 179.6, 376.5 162.3 C 402.2 152.0, 427.9 134.6, 453.6 123.5 C 489.4 108.0, 525.2 84.8, 561.1 84.8 C 631.4 84.8, 701.7 84.8, 772.0 84.8" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 62.0 356.0 C 71.1 343.1, 80.2 335.5, 89.3 317.3 C 94.3 307.2, 99.3 286.5, 104.3 278.5 C 125.3 244.9, 146.3 251.4, 167.3 239.8 C 193.5 225.2, 219.7 211.4, 245.9 201.0 C 289.3 183.8, 332.7 179.6, 376.1 162.3 C 401.7 152.0, 427.4 134.6, 453.1 123.5 C 488.8 108.0, 524.6 84.8, 560.4 84.8 C 630.9 84.8, 701.5 84.8, 772.0 84.8 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
+  <path d="M 62.0 356.0 C 71.1 343.1, 80.2 335.5, 89.3 317.3 C 94.3 307.2, 99.3 286.5, 104.3 278.5 C 125.3 244.9, 146.3 251.4, 167.3 239.8 C 193.5 225.2, 219.7 211.4, 245.9 201.0 C 289.3 183.8, 332.7 179.6, 376.1 162.3 C 401.7 152.0, 427.4 134.6, 453.1 123.5 C 488.8 108.0, 524.6 84.8, 560.4 84.8 C 630.9 84.8, 701.5 84.8, 772.0 84.8" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
   <text x="50" y="362.0" fill="#8a93a6" font-size="17" text-anchor="end">0</text>
   <text x="50" y="284.5" fill="#8a93a6" font-size="17" text-anchor="end">2</text>
   <text x="50" y="207.0" fill="#8a93a6" font-size="17" text-anchor="end">4</text>
   <text x="50" y="129.5" fill="#8a93a6" font-size="17" text-anchor="end">6</text>
   <text x="50" y="52.0" fill="#8a93a6" font-size="17" text-anchor="end">8</text>
   <text x="94.2" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Jul 2026</text>
-  <text x="235.3" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
-  <text x="376.3" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Sep 2026</text>
-  <text x="512.8" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Oct 2026</text>
-  <text x="653.8" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Nov 2026</text>
+  <text x="235.1" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
+  <text x="375.9" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Sep 2026</text>
+  <text x="512.2" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Oct 2026</text>
+  <text x="653.0" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Nov 2026</text>
   </g>
   </g>
 </svg>
