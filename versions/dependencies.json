@@ -1,11 +1,11 @@
 {
-  "scanned_at": "2026-11-26T22:37:46Z",
+  "scanned_at": "2026-11-27T04:37:38Z",
   "owner": "wickra-lib",
   "stats": {
     "cargo": {
-      "total": 664,
+      "total": 658,
       "shared": 382,
-      "differing": 119
+      "differing": 96
     },
     "npm": {
       "total": 109,
@@ -106,7 +106,8 @@
           "hyper-util 0.1.21"
         ],
         "wickra-zk": [
-          "serde_with 3.23.0"
+          "hyper-util 0.1.21",
+          "serde_with 3.25.0"
         ]
       },
       "held": null
@@ -245,7 +246,7 @@
         "wickra-timemachine": "0.8.0",
         "wickra-verify": "0.8.0",
         "wickra-xray": "0.8.0",
-        "wickra-zk": "0.10.1"
+        "wickra-zk": "0.10.2"
       },
       "requiredBy": {
         "wickra": [
@@ -614,7 +615,7 @@
           "codspeed-criterion-compat-walltime 5.0.3"
         ],
         "wickra-zk": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       "held": [
@@ -1255,7 +1256,7 @@
         "wickra-timemachine": "8.0.0",
         "wickra-verify": "8.0.0",
         "wickra-xray": "8.0.0",
-        "wickra-zk": "6.1.6"
+        "wickra-zk": "8.0.0"
       },
       "requiredBy": {
         "wickra": [
@@ -1322,7 +1323,7 @@
           "napi-derive 3.7.2"
         ],
         "wickra-zk": [
-          "napi-derive 3.6.13"
+          "napi-derive 3.7.2"
         ]
       },
       "held": [
@@ -1576,7 +1577,7 @@
         "wickra-timemachine": "0.9.5",
         "wickra-verify": "0.9.5",
         "wickra-xray": "0.10.4",
-        "wickra-zk": "0.10.3"
+        "wickra-zk": "0.10.4"
       },
       "requiredBy": {
         "wickra": [
@@ -1615,7 +1616,7 @@
         "wickra-gym": [
           "quinn-proto 0.11.19",
           "tungstenite 0.30.0",
-          "wickra-gym-core 0.2.1"
+          "wickra-gym-core 0.2.2"
         ],
         "wickra-impact": [
           "quinn-proto 0.11.19",
@@ -1663,7 +1664,8 @@
         ],
         "wickra-zk": [
           "proptest 1.12.0",
-          "quinn-proto 0.11.19"
+          "quinn-proto 0.11.19",
+          "ruint 1.21.1"
         ]
       },
       "held": null
@@ -1901,8 +1903,8 @@
         "wickra-zk": [
           "chacha20 0.10.2",
           "getrandom 0.4.3",
-          "rand 0.10.3",
-          "rand_pcg 0.10.2",
+          "rand 0.10.4",
+          "rand_pcg 0.10.3",
           "rand_xorshift 0.5.0"
         ]
       },
@@ -2047,7 +2049,7 @@
         ],
         "wickra-exchange": [
           "p256 0.14.0",
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ],
         "wickra-genome": [
           "p256 0.14.0",
@@ -2055,7 +2057,7 @@
         ],
         "wickra-gym": [
           "p256 0.14.0",
-          "wickra-exchange-core 0.2.1"
+          "wickra-exchange-core 0.2.2"
         ],
         "wickra-impact": [
           "p256 0.14.0",
@@ -5912,7 +5914,7 @@
           "arrow-ipc 59.3.3",
           "arrow-select 59.3.3",
           "parquet 59.3.3",
-          "wickra-backtest-data 0.2.2"
+          "wickra-backtest-data 0.2.3"
         ]
       },
       {
@@ -5960,7 +5962,7 @@
           "arrow-ipc 59.3.3",
           "arrow-select 59.3.3",
           "parquet 59.3.3",
-          "wickra-backtest-data 0.2.2"
+          "wickra-backtest-data 0.2.3"
         ]
       },
       {
@@ -6165,7 +6167,7 @@
         "requiredBy": [
           "codspeed-criterion-compat 5.0.3",
           "codspeed-criterion-compat-walltime 5.0.3",
-          "wickra-backtest-cli 0.2.2"
+          "wickra-backtest-cli 0.2.3"
         ]
       },
       {
@@ -6211,7 +6213,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.3",
         "requiredBy": [
-          "wickra-backtest-bench 0.2.2"
+          "wickra-backtest-bench 0.2.3"
         ]
       },
       {
@@ -6891,7 +6893,7 @@
         "name": "napi",
         "version": "3.16.3",
         "requiredBy": [
-          "wickra-backtest-node 0.2.2"
+          "wickra-backtest-node 0.2.3"
         ]
       },
       {
@@ -6901,7 +6903,7 @@
         "version": "2.7.0",
         "requiredBy": [
           "napi 3.16.3",
-          "wickra-backtest-node 0.2.2"
+          "wickra-backtest-node 0.2.3"
         ]
       },
       {
@@ -6910,7 +6912,7 @@
         "name": "napi-derive",
         "version": "3.7.2",
         "requiredBy": [
-          "wickra-backtest-node 0.2.2"
+          "wickra-backtest-node 0.2.3"
         ]
       },
       {
@@ -7040,7 +7042,7 @@
         "name": "parquet",
         "version": "59.3.3",
         "requiredBy": [
-          "wickra-backtest-data 0.2.2"
+          "wickra-backtest-data 0.2.3"
         ]
       },
       {
@@ -7135,8 +7137,8 @@
         "name": "proptest",
         "version": "1.11.0",
         "requiredBy": [
-          "wickra-backtest-core 0.2.2",
-          "wickra-backtest-data 0.2.2"
+          "wickra-backtest-core 0.2.3",
+          "wickra-backtest-data 0.2.3"
         ]
       },
       {
@@ -7145,7 +7147,7 @@
         "name": "pyo3",
         "version": "0.30.1",
         "requiredBy": [
-          "wickra-backtest-python 0.2.2"
+          "wickra-backtest-python 0.2.3"
         ]
       },
       {
@@ -7448,7 +7450,7 @@
         "name": "schemars",
         "version": "1.2.3",
         "requiredBy": [
-          "wickra-backtest-core 0.2.2"
+          "wickra-backtest-core 0.2.3"
         ]
       },
       {
@@ -7492,8 +7494,8 @@
           "serde_json 1.0.154",
           "tinytemplate 1.2.1",
           "url 2.5.9",
-          "wickra-backtest-cli 0.2.2",
-          "wickra-backtest-core 0.2.2"
+          "wickra-backtest-cli 0.2.3",
+          "wickra-backtest-core 0.2.3"
         ]
       },
       {
@@ -7536,14 +7538,14 @@
           "codspeed-criterion-compat-walltime 5.0.3",
           "schemars 1.2.3",
           "tinytemplate 1.2.1",
-          "wickra-backtest-c 0.2.2",
-          "wickra-backtest-cli 0.2.2",
-          "wickra-backtest-core 0.2.2",
-          "wickra-backtest-data 0.2.2",
-          "wickra-backtest-examples 0.2.2",
-          "wickra-backtest-node 0.2.2",
-          "wickra-backtest-python 0.2.2",
-          "wickra-backtest-wasm 0.2.2"
+          "wickra-backtest-c 0.2.3",
+          "wickra-backtest-cli 0.2.3",
+          "wickra-backtest-core 0.2.3",
+          "wickra-backtest-data 0.2.3",
+          "wickra-backtest-examples 0.2.3",
+          "wickra-backtest-node 0.2.3",
+          "wickra-backtest-python 0.2.3",
+          "wickra-backtest-wasm 0.2.3"
         ]
       },
       {
@@ -7708,7 +7710,7 @@
         "name": "thiserror",
         "version": "2.0.21",
         "requiredBy": [
-          "wickra-backtest-core 0.2.2",
+          "wickra-backtest-core 0.2.3",
           "wickra-core 2.2.0"
         ]
       },
@@ -7805,7 +7807,7 @@
         "name": "ureq",
         "version": "2.12.1",
         "requiredBy": [
-          "wickra-backtest-data 0.2.2"
+          "wickra-backtest-data 0.2.3"
         ]
       },
       {
@@ -7900,7 +7902,7 @@
           "getrandom 0.4.3",
           "iana-time-zone 0.1.65",
           "js-sys 0.3.107",
-          "wickra-backtest-wasm 0.2.2"
+          "wickra-backtest-wasm 0.2.3"
         ]
       },
       {
@@ -21739,7 +21741,7 @@
         "version": "0.22.1",
         "requiredBy": [
           "reqwest 0.12.28",
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -21994,7 +21996,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.3",
         "requiredBy": [
-          "wickra-exchange-bench 0.2.2"
+          "wickra-exchange-bench 0.2.3"
         ]
       },
       {
@@ -22022,7 +22024,7 @@
         "name": "console_error_panic_hook",
         "version": "0.1.7",
         "requiredBy": [
-          "wickra-exchange-wasm 0.2.2"
+          "wickra-exchange-wasm 0.2.3"
         ]
       },
       {
@@ -22295,7 +22297,7 @@
         "name": "flate2",
         "version": "1.1.11",
         "requiredBy": [
-          "wickra-exchange 0.2.2"
+          "wickra-exchange 0.2.3"
         ]
       },
       {
@@ -22419,7 +22421,7 @@
           "tokio-tungstenite 0.30.0",
           "tower 0.5.3",
           "tower-http 0.6.11",
-          "wickra-exchange 0.2.2"
+          "wickra-exchange 0.2.3"
         ]
       },
       {
@@ -22453,7 +22455,7 @@
           "quinn-proto 0.11.19",
           "rand 0.10.4",
           "tempfile 3.27.0",
-          "wickra-exchange-wasm 0.2.2"
+          "wickra-exchange-wasm 0.2.3"
         ]
       },
       {
@@ -22517,7 +22519,7 @@
         "name": "hex",
         "version": "0.4.3",
         "requiredBy": [
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -22527,7 +22529,7 @@
         "version": "0.13.0",
         "requiredBy": [
           "rfc6979 0.6.0",
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -22770,7 +22772,7 @@
           "wasm-bindgen-futures 0.4.80",
           "web-sys 0.3.107",
           "web-time 1.1.0",
-          "wickra-exchange-wasm 0.2.2"
+          "wickra-exchange-wasm 0.2.3"
         ]
       },
       {
@@ -22895,7 +22897,7 @@
         "name": "napi",
         "version": "3.16.3",
         "requiredBy": [
-          "wickra-exchange-node 0.2.2"
+          "wickra-exchange-node 0.2.3"
         ]
       },
       {
@@ -22905,7 +22907,7 @@
         "version": "2.7.0",
         "requiredBy": [
           "napi 3.16.3",
-          "wickra-exchange-node 0.2.2"
+          "wickra-exchange-node 0.2.3"
         ]
       },
       {
@@ -22914,7 +22916,7 @@
         "name": "napi-derive",
         "version": "3.7.2",
         "requiredBy": [
-          "wickra-exchange-node 0.2.2"
+          "wickra-exchange-node 0.2.3"
         ]
       },
       {
@@ -22999,7 +23001,7 @@
         "name": "p256",
         "version": "0.14.0",
         "requiredBy": [
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -23171,7 +23173,7 @@
         "name": "proptest",
         "version": "1.11.0",
         "requiredBy": [
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -23180,7 +23182,7 @@
         "name": "pyo3",
         "version": "0.30.1",
         "requiredBy": [
-          "wickra-exchange-python 0.2.2"
+          "wickra-exchange-python 0.2.3"
         ]
       },
       {
@@ -23465,7 +23467,7 @@
         "name": "reqwest",
         "version": "0.12.28",
         "requiredBy": [
-          "wickra-exchange 0.2.2"
+          "wickra-exchange 0.2.3"
         ]
       },
       {
@@ -23494,13 +23496,13 @@
         "name": "rust_decimal",
         "version": "1.43.0",
         "requiredBy": [
-          "wickra-exchange-bench 0.2.2",
-          "wickra-exchange-c 0.2.2",
-          "wickra-exchange-core 0.2.2",
-          "wickra-exchange-examples 0.2.2",
-          "wickra-exchange-node 0.2.2",
-          "wickra-exchange-python 0.2.2",
-          "wickra-exchange-wasm 0.2.2"
+          "wickra-exchange-bench 0.2.3",
+          "wickra-exchange-c 0.2.3",
+          "wickra-exchange-core 0.2.3",
+          "wickra-exchange-examples 0.2.3",
+          "wickra-exchange-node 0.2.3",
+          "wickra-exchange-python 0.2.3",
+          "wickra-exchange-wasm 0.2.3"
         ]
       },
       {
@@ -23509,9 +23511,9 @@
         "name": "rust_decimal_macros",
         "version": "1.40.0",
         "requiredBy": [
-          "wickra-exchange-bench 0.2.2",
-          "wickra-exchange-core 0.2.2",
-          "wickra-exchange-examples 0.2.2"
+          "wickra-exchange-bench 0.2.3",
+          "wickra-exchange-core 0.2.3",
+          "wickra-exchange-examples 0.2.3"
         ]
       },
       {
@@ -23645,8 +23647,8 @@
           "tinytemplate 1.2.1",
           "url 2.5.9",
           "wasm-bindgen 0.2.130",
-          "wickra-exchange-core 0.2.2",
-          "wickra-exchange-wasm 0.2.2"
+          "wickra-exchange-core 0.2.3",
+          "wickra-exchange-wasm 0.2.3"
         ]
       },
       {
@@ -23655,7 +23657,7 @@
         "name": "serde-wasm-bindgen",
         "version": "0.6.5",
         "requiredBy": [
-          "wickra-exchange-wasm 0.2.2"
+          "wickra-exchange-wasm 0.2.3"
         ]
       },
       {
@@ -23691,8 +23693,8 @@
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
           "tinytemplate 1.2.1",
-          "wickra-exchange-bench 0.2.2",
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-bench 0.2.3",
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -23729,7 +23731,7 @@
         "version": "0.11.0",
         "requiredBy": [
           "p256 0.14.0",
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -23921,7 +23923,7 @@
           "quinn-proto 0.11.19",
           "tungstenite 0.30.0",
           "wickra-core 2.2.0",
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -23975,7 +23977,7 @@
           "tokio-tungstenite 0.30.0",
           "tower 0.5.3",
           "wasm-bindgen-futures 0.4.80",
-          "wickra-exchange 0.2.2"
+          "wickra-exchange 0.2.3"
         ]
       },
       {
@@ -24004,7 +24006,7 @@
         "name": "tokio-tungstenite",
         "version": "0.30.0",
         "requiredBy": [
-          "wickra-exchange 0.2.2"
+          "wickra-exchange 0.2.3"
         ]
       },
       {
@@ -24086,7 +24088,7 @@
           "quinn 0.11.12",
           "quinn-proto 0.11.19",
           "quinn-udp 0.5.16",
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -24267,7 +24269,7 @@
           "wasm-bindgen-futures 0.4.80",
           "web-sys 0.3.107",
           "web-time 1.1.0",
-          "wickra-exchange-wasm 0.2.2"
+          "wickra-exchange-wasm 0.2.3"
         ]
       },
       {
@@ -24591,7 +24593,7 @@
           "rustls 0.23.46",
           "rustls-pki-types 1.16.0",
           "sec1 0.8.1",
-          "wickra-exchange-core 0.2.2"
+          "wickra-exchange-core 0.2.3"
         ]
       },
       {
@@ -32873,7 +32875,7 @@
         "version": "0.22.1",
         "requiredBy": [
           "reqwest 0.12.28",
-          "wickra-exchange-core 0.2.1"
+          "wickra-exchange-core 0.2.2"
         ]
       },
       {
@@ -33082,7 +33084,7 @@
         "requiredBy": [
           "codspeed-criterion-compat 5.0.3",
           "codspeed-criterion-compat-walltime 5.0.3",
-          "wickra-gym 0.2.1"
+          "wickra-gym 0.2.2"
         ]
       },
       {
@@ -33137,7 +33139,7 @@
         "name": "codspeed-criterion-compat",
         "version": "5.0.3",
         "requiredBy": [
-          "gym-bench 0.2.1"
+          "gym-bench 0.2.2"
         ]
       },
       {
@@ -33465,7 +33467,7 @@
         "name": "flate2",
         "version": "1.1.11",
         "requiredBy": [
-          "wickra-exchange 0.2.1"
+          "wickra-exchange 0.2.2"
         ]
       },
       {
@@ -33589,7 +33591,7 @@
           "tokio-tungstenite 0.30.0",
           "tower 0.5.3",
           "tower-http 0.6.11",
-          "wickra-exchange 0.2.1"
+          "wickra-exchange 0.2.2"
         ]
       },
       {
@@ -33600,7 +33602,7 @@
         "requiredBy": [
           "rand_core 0.6.4",
           "ring 0.17.14",
-          "wickra-gym-wasm 0.2.1"
+          "wickra-gym-wasm 0.2.2"
         ]
       },
       {
@@ -33649,7 +33651,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "gym-bench",
-        "version": "0.2.1",
+        "version": "0.2.2",
         "requiredBy": []
       },
       {
@@ -33695,7 +33697,7 @@
         "name": "hex",
         "version": "0.4.3",
         "requiredBy": [
-          "wickra-exchange-core 0.2.1"
+          "wickra-exchange-core 0.2.2"
         ]
       },
       {
@@ -33705,7 +33707,7 @@
         "version": "0.13.0",
         "requiredBy": [
           "rfc6979 0.6.0",
-          "wickra-exchange-core 0.2.1"
+          "wickra-exchange-core 0.2.2"
         ]
       },
       {
@@ -34083,7 +34085,7 @@
         "name": "napi",
         "version": "3.16.3",
         "requiredBy": [
-          "wickra-gym-node 0.2.1"
+          "wickra-gym-node 0.2.2"
         ]
       },
       {
@@ -34093,7 +34095,7 @@
         "version": "2.7.0",
         "requiredBy": [
           "napi 3.16.3",
-          "wickra-gym-node 0.2.1"
+          "wickra-gym-node 0.2.2"
         ]
       },
       {
@@ -34102,7 +34104,7 @@
         "name": "napi-derive",
         "version": "3.7.2",
         "requiredBy": [
-          "wickra-gym-node 0.2.1"
+          "wickra-gym-node 0.2.2"
         ]
       },
       {
@@ -34196,7 +34198,7 @@
         "name": "p256",
         "version": "0.14.0",
         "requiredBy": [
-          "wickra-exchange-core 0.2.1"
+          "wickra-exchange-core 0.2.2"
         ]
       },
       {
@@ -34372,7 +34374,7 @@
         "name": "proptest",
         "version": "1.11.0",
         "requiredBy": [
-          "wickra-gym-core 0.2.1"
+          "wickra-gym-core 0.2.2"
         ]
       },
       {
@@ -34381,7 +34383,7 @@
         "name": "pyo3",
         "version": "0.30.1",
         "requiredBy": [
-          "wickra-gym-python 0.2.1"
+          "wickra-gym-python 0.2.2"
         ]
       },
       {
@@ -34535,7 +34537,7 @@
         "requiredBy": [
           "quinn-proto 0.11.19",
           "tungstenite 0.30.0",
-          "wickra-gym-core 0.2.1"
+          "wickra-gym-core 0.2.2"
         ]
       },
       {
@@ -34623,7 +34625,7 @@
         "requiredBy": [
           "codspeed-criterion-compat-walltime 5.0.3",
           "wickra-core 2.2.0",
-          "wickra-gym-core 0.2.1"
+          "wickra-gym-core 0.2.2"
         ]
       },
       {
@@ -34689,7 +34691,7 @@
         "name": "reqwest",
         "version": "0.12.28",
         "requiredBy": [
-          "wickra-exchange 0.2.1"
+          "wickra-exchange 0.2.2"
         ]
       },
       {
@@ -34718,8 +34720,8 @@
         "name": "rust_decimal",
         "version": "1.43.0",
         "requiredBy": [
-          "wickra-exchange-core 0.2.1",
-          "wickra-gym-core 0.2.1"
+          "wickra-exchange-core 0.2.2",
+          "wickra-gym-core 0.2.2"
         ]
       },
       {
@@ -34824,7 +34826,7 @@
         "name": "schemars",
         "version": "1.2.3",
         "requiredBy": [
-          "wickra-backtest-core 0.2.1"
+          "wickra-backtest-core 0.2.2"
         ]
       },
       {
@@ -34872,11 +34874,11 @@
           "tinytemplate 1.2.1",
           "url 2.5.9",
           "wasm-bindgen 0.2.130",
-          "wickra-backtest-core 0.2.1",
+          "wickra-backtest-core 0.2.2",
           "wickra-data 2.2.0",
-          "wickra-exchange-core 0.2.1",
-          "wickra-gym 0.2.1",
-          "wickra-gym-core 0.2.1"
+          "wickra-exchange-core 0.2.2",
+          "wickra-gym 0.2.2",
+          "wickra-gym-core 0.2.2"
         ]
       },
       {
@@ -34921,18 +34923,18 @@
         "requiredBy": [
           "codspeed 5.0.3",
           "codspeed-criterion-compat-walltime 5.0.3",
-          "gym-bench 0.2.1",
+          "gym-bench 0.2.2",
           "reqwest 0.12.28",
           "rust_decimal 1.43.0",
           "schemars 1.2.3",
           "tinytemplate 1.2.1",
-          "wickra-backtest-core 0.2.1",
-          "wickra-backtest-data 0.2.1",
+          "wickra-backtest-core 0.2.2",
+          "wickra-backtest-data 0.2.2",
           "wickra-data 2.2.0",
-          "wickra-exchange-core 0.2.1",
-          "wickra-gym 0.2.1",
-          "wickra-gym-core 0.2.1",
-          "wickra-gym-example 0.2.1"
+          "wickra-exchange-core 0.2.2",
+          "wickra-gym 0.2.2",
+          "wickra-gym-core 0.2.2",
+          "wickra-gym-example 0.2.2"
         ]
       },
       {
@@ -34978,7 +34980,7 @@
         "version": "0.11.0",
         "requiredBy": [
           "p256 0.14.0",
-          "wickra-exchange-core 0.2.1"
+          "wickra-exchange-core 0.2.2"
         ]
       },
       {
@@ -35181,11 +35183,11 @@
           "quinn 0.11.12",
           "quinn-proto 0.11.19",
           "tungstenite 0.30.0",
-          "wickra-backtest-core 0.2.1",
+          "wickra-backtest-core 0.2.2",
           "wickra-core 2.2.0",
           "wickra-data 2.2.0",
-          "wickra-exchange-core 0.2.1",
-          "wickra-gym-core 0.2.1"
+          "wickra-exchange-core 0.2.2",
+          "wickra-gym-core 0.2.2"
         ]
       },
       {
@@ -35239,7 +35241,7 @@
           "tokio-tungstenite 0.30.0",
           "tower 0.5.3",
           "wasm-bindgen-futures 0.4.80",
-          "wickra-exchange 0.2.1"
+          "wickra-exchange 0.2.2"
         ]
       },
       {
@@ -35268,7 +35270,7 @@
         "name": "tokio-tungstenite",
         "version": "0.30.0",
         "requiredBy": [
-          "wickra-exchange 0.2.1"
+          "wickra-exchange 0.2.2"
         ]
       },
       {
@@ -35277,7 +35279,7 @@
         "name": "toml",
         "version": "1.2.3+spec-1.1.0",
         "requiredBy": [
-          "wickra-gym-core 0.2.1"
+          "wickra-gym-core 0.2.2"
         ]
       },
       {
@@ -35370,7 +35372,7 @@
           "quinn 0.11.12",
           "quinn-proto 0.11.19",
           "quinn-udp 0.5.16",
-          "wickra-exchange-core 0.2.1"
+          "wickra-exchange-core 0.2.2"
         ]
       },
       {
@@ -35559,7 +35561,7 @@
           "wasm-bindgen-futures 0.4.80",
           "web-sys 0.3.107",
           "web-time 1.1.0",
-          "wickra-gym-wasm 0.2.1"
+          "wickra-gym-wasm 0.2.2"
         ]
       },
       {
@@ -35886,7 +35888,7 @@
           "rustls 0.23.46",
           "rustls-pki-types 1.16.0",
           "sec1 0.8.1",
-          "wickra-exchange-core 0.2.1"
+          "wickra-exchange-core 0.2.2"
         ]
       },
       {
@@ -75879,7 +75881,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "addchain",
-        "version": "0.2.1",
+        "version": "0.2.2",
         "requiredBy": [
           "ff_derive 0.13.1"
         ]
@@ -75906,7 +75908,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ahash",
-        "version": "0.8.12",
+        "version": "0.8.14",
         "requiredBy": [
           "ark-crypto-primitives 0.5.0",
           "ark-ec 0.5.0",
@@ -75920,15 +75922,15 @@
         "name": "aho-corasick",
         "version": "1.1.5",
         "requiredBy": [
-          "regex 1.13.1",
-          "regex-automata 0.4.18"
+          "regex 1.13.2",
+          "regex-automata 0.4.19"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "allocator-api2",
-        "version": "0.2.21",
+        "version": "0.2.22",
         "requiredBy": [
           "hashbrown 0.15.5"
         ]
@@ -75948,7 +75950,7 @@
         "name": "anes",
         "version": "0.1.6",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
@@ -75957,7 +75959,7 @@
         "name": "anstream",
         "version": "1.0.0",
         "requiredBy": [
-          "clap_builder 4.6.7"
+          "clap_builder 4.6.10"
         ]
       },
       {
@@ -75968,7 +75970,7 @@
         "requiredBy": [
           "anstream 1.0.0",
           "anstyle-wincon 3.0.11",
-          "clap_builder 4.6.7"
+          "clap_builder 4.6.10"
         ]
       },
       {
@@ -76002,9 +76004,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "anyhow",
-        "version": "1.0.104",
+        "version": "1.0.105",
         "requiredBy": [
-          "codspeed 5.0.2",
+          "codspeed 5.0.3",
           "prost-derive 0.13.5",
           "puffin 0.19.1",
           "risc0-binfmt 3.0.6",
@@ -76228,7 +76230,7 @@
         "name": "atomic-waker",
         "version": "1.1.2",
         "requiredBy": [
-          "hyper 1.11.1"
+          "hyper 1.13.0"
         ]
       },
       {
@@ -76249,7 +76251,6 @@
         "name": "base64",
         "version": "0.22.1",
         "requiredBy": [
-          "hyper-util 0.1.20",
           "reqwest 0.12.28"
         ]
       },
@@ -76259,7 +76260,8 @@
         "name": "base64",
         "version": "0.23.1",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "hyper-util 0.1.21",
+          "serde_with 3.25.0"
         ]
       },
       {
@@ -76303,7 +76305,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bit-vec",
-        "version": "0.10.1",
+        "version": "0.10.2",
         "requiredBy": [
           "bit-set 0.11.1",
           "proptest 1.12.0"
@@ -76315,8 +76317,7 @@
         "name": "bitflags",
         "version": "1.3.2",
         "requiredBy": [
-          "core-graphics-types 0.1.3",
-          "defmt 1.1.1"
+          "core-graphics-types 0.1.3"
         ]
       },
       {
@@ -76327,8 +76328,8 @@
         "requiredBy": [
           "gdbstub 0.7.10",
           "metal 0.29.0",
-          "napi 3.15.0",
-          "nix 0.31.3",
+          "napi 3.16.3",
+          "nix 0.31.4",
           "proptest 1.12.0",
           "redox_syscall 0.5.18",
           "rustix 1.1.6",
@@ -76360,7 +76361,7 @@
         "name": "blake3",
         "version": "1.8.7",
         "requiredBy": [
-          "wickra-proof-core 0.2.1"
+          "wickra-proof-core 0.2.2"
         ]
       },
       {
@@ -76396,11 +76397,11 @@
         "name": "borsh",
         "version": "1.8.1",
         "requiredBy": [
-          "bit-vec 0.10.1",
+          "bit-vec 0.10.2",
           "risc0-binfmt 3.0.6",
           "risc0-zkp 3.0.6",
           "risc0-zkvm 3.1.0",
-          "ruint 1.20.1"
+          "ruint 1.21.1"
         ]
       },
       {
@@ -76418,16 +76419,16 @@
         "name": "bs58",
         "version": "0.5.1",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "serde_with 3.25.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bumpalo",
-        "version": "3.20.3",
+        "version": "3.20.4",
         "requiredBy": [
-          "wasm-bindgen-macro-support 0.2.128"
+          "wasm-bindgen-macro-support 0.2.130"
         ]
       },
       {
@@ -76475,21 +76476,21 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "bytes",
-        "version": "1.12.1",
+        "version": "1.12.2",
         "requiredBy": [
           "borsh 1.8.1",
           "http 1.5.0",
           "http-body 1.1.0",
           "http-body-util 0.1.5",
-          "hyper 1.11.1",
-          "hyper-util 0.1.20",
+          "hyper 1.13.0",
+          "hyper-util 0.1.21",
           "prost 0.13.5",
           "quinn 0.11.12",
           "quinn-proto 0.11.19",
           "reqwest 0.12.28",
           "risc0-zkvm 3.1.0",
-          "tokio 1.53.3",
-          "tokio-util 0.7.19",
+          "tokio 1.54.1",
+          "tokio-util 0.7.20",
           "tower-http 0.6.11"
         ]
       },
@@ -76526,7 +76527,7 @@
         "name": "cast",
         "version": "0.3.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.3",
           "criterion-plot 0.5.0"
         ]
       },
@@ -76534,10 +76535,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "cc",
-        "version": "1.4.7",
+        "version": "1.11.3",
         "requiredBy": [
           "blake3 1.8.7",
-          "codspeed 5.0.2",
+          "codspeed 5.0.3",
           "iana-time-zone-haiku 0.1.2",
           "liblzma-sys 0.4.9",
           "nvtx 1.3.0",
@@ -76553,21 +76554,21 @@
         "name": "cfg-if",
         "version": "1.0.5",
         "requiredBy": [
-          "ahash 0.8.12",
+          "ahash 0.8.14",
           "blake3 1.8.7",
           "chacha20 0.10.2",
           "cpp_demangle 0.4.5",
-          "crc32fast 1.5.2",
-          "encoding_rs 0.8.41",
+          "crc32fast 1.5.6",
+          "encoding_rs 0.8.44",
           "filetime 0.2.30",
           "gdbstub 0.7.10",
           "getrandom 0.2.17",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
           "half 2.7.1",
-          "js-sys 0.3.105",
-          "libloading 0.9.0",
-          "nix 0.31.3",
+          "js-sys 0.3.107",
+          "libloading 0.9.1",
+          "nix 0.31.4",
           "parking_lot_core 0.9.12",
           "puffin 0.19.1",
           "ring 0.17.14",
@@ -76579,7 +76580,7 @@
           "risc0-zkvm-platform 2.2.3",
           "sha2 0.10.9",
           "twox-hash 1.6.3",
-          "wasm-bindgen 0.2.128"
+          "wasm-bindgen 0.2.130"
         ]
       },
       {
@@ -76589,7 +76590,7 @@
         "version": "0.2.2",
         "requiredBy": [
           "borsh 1.8.1",
-          "nix 0.31.3",
+          "nix 0.31.4",
           "quinn 0.11.12",
           "quinn-udp 0.5.16"
         ]
@@ -76601,7 +76602,7 @@
         "version": "0.10.2",
         "requiredBy": [
           "proptest 1.12.0",
-          "rand 0.10.3"
+          "rand 0.10.4"
         ]
       },
       {
@@ -76610,7 +76611,7 @@
         "name": "chrono",
         "version": "0.4.45",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "serde_with 3.25.0"
         ]
       },
       {
@@ -76619,7 +76620,7 @@
         "name": "ciborium",
         "version": "0.2.2",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
@@ -76645,38 +76646,38 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap",
-        "version": "4.6.7",
+        "version": "4.6.10",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.2",
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "wickra-zk 0.2.1"
+          "codspeed-criterion-compat 5.0.3",
+          "codspeed-criterion-compat-walltime 5.0.3",
+          "wickra-zk 0.2.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_builder",
-        "version": "4.6.7",
+        "version": "4.6.10",
         "requiredBy": [
-          "clap 4.6.7"
+          "clap 4.6.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_derive",
-        "version": "4.6.7",
+        "version": "4.6.9",
         "requiredBy": [
-          "clap 4.6.7"
+          "clap 4.6.10"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "clap_lex",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "requiredBy": [
-          "clap_builder 4.6.7"
+          "clap_builder 4.6.10"
         ]
       },
       {
@@ -76685,35 +76686,35 @@
         "name": "cobs",
         "version": "0.3.0",
         "requiredBy": [
-          "postcard 1.1.3"
+          "postcard 1.2.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed",
-        "version": "5.0.2",
+        "version": "5.0.3",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.2",
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat 5.0.3",
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat",
-        "version": "5.0.2",
+        "version": "5.0.3",
         "requiredBy": [
-          "wickra-zk-bench 0.2.1"
+          "wickra-zk-bench 0.2.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "codspeed-criterion-compat-walltime",
-        "version": "5.0.2",
+        "version": "5.0.3",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.2"
+          "codspeed-criterion-compat 5.0.3"
         ]
       },
       {
@@ -76731,8 +76732,8 @@
         "name": "colored",
         "version": "3.1.1",
         "requiredBy": [
-          "codspeed 5.0.2",
-          "codspeed-criterion-compat 5.0.2"
+          "codspeed 5.0.3",
+          "codspeed-criterion-compat 5.0.3"
         ]
       },
       {
@@ -76761,8 +76762,8 @@
         "name": "convert_case",
         "version": "0.12.0",
         "requiredBy": [
-          "napi-derive 3.6.13",
-          "napi-derive-backend 6.1.6"
+          "napi-derive 3.7.2",
+          "napi-derive-backend 8.0.0"
         ]
       },
       {
@@ -76799,7 +76800,7 @@
         "name": "core_detect",
         "version": "1.0.0",
         "requiredBy": [
-          "encoding_rs 0.8.41",
+          "encoding_rs 0.8.44",
           "proptest 1.12.0"
         ]
       },
@@ -76836,9 +76837,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "crc32fast",
-        "version": "1.5.2",
+        "version": "1.5.6",
         "requiredBy": [
-          "flate2 1.1.10"
+          "flate2 1.1.11"
         ]
       },
       {
@@ -76847,7 +76848,7 @@
         "name": "criterion-plot",
         "version": "0.5.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
@@ -76910,10 +76911,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ctor",
-        "version": "1.0.13",
+        "version": "1.0.14",
         "requiredBy": [
-          "napi 3.15.0",
-          "napi-derive 3.6.13"
+          "napi 3.16.3"
         ]
       },
       {
@@ -76931,7 +76931,7 @@
         "name": "darling",
         "version": "0.24.1",
         "requiredBy": [
-          "serde_with_macros 3.23.0"
+          "serde_with_macros 3.25.0"
         ]
       },
       {
@@ -76975,34 +76975,6 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
-        "name": "defmt",
-        "version": "1.1.1",
-        "requiredBy": [
-          "jiff 0.2.37",
-          "jiff-core 0.1.1"
-        ]
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "defmt-macros",
-        "version": "1.1.1",
-        "requiredBy": [
-          "defmt 1.1.1"
-        ]
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "defmt-parser",
-        "version": "1.0.0",
-        "requiredBy": [
-          "defmt-macros 1.1.1"
-        ]
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
         "name": "der",
         "version": "0.7.10",
         "requiredBy": [
@@ -77015,7 +76987,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "deranged",
-        "version": "0.5.8",
+        "version": "0.5.9",
         "requiredBy": [
           "time 0.3.55"
         ]
@@ -77128,11 +77100,11 @@
         "name": "displaydoc",
         "version": "0.2.7",
         "requiredBy": [
-          "icu_collections 2.3.0",
-          "icu_locale_core 2.3.0",
-          "icu_properties 2.3.0",
-          "icu_provider 2.3.1",
-          "tinystr 0.8.4",
+          "icu_collections 2.4.0",
+          "icu_locale_core 2.4.0",
+          "icu_properties 2.4.0",
+          "icu_provider 2.4.0",
+          "tinystr 0.8.5",
           "zerotrie 0.2.5"
         ]
       },
@@ -77170,7 +77142,7 @@
         "version": "1.0.20",
         "requiredBy": [
           "schemars 0.9.0",
-          "schemars 1.2.2"
+          "schemars 1.2.3"
         ]
       },
       {
@@ -77189,7 +77161,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "either",
-        "version": "1.18.0",
+        "version": "1.19.0",
         "requiredBy": [
           "itertools 0.10.5",
           "itertools 0.11.0",
@@ -77214,7 +77186,7 @@
         "name": "embedded-io",
         "version": "0.4.0",
         "requiredBy": [
-          "postcard 1.1.3"
+          "postcard 1.2.0"
         ]
       },
       {
@@ -77223,14 +77195,14 @@
         "name": "embedded-io",
         "version": "0.6.1",
         "requiredBy": [
-          "postcard 1.1.3"
+          "postcard 1.2.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "encoding_rs",
-        "version": "0.8.41",
+        "version": "0.8.44",
         "requiredBy": [
           "yaml-rust2 0.10.4"
         ]
@@ -77276,7 +77248,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "equivalent",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "requiredBy": [
           "indexmap 2.14.2"
         ]
@@ -77285,7 +77257,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "erased-serde",
-        "version": "0.4.10",
+        "version": "0.4.11",
         "requiredBy": [
           "typetag 0.2.23"
         ]
@@ -77294,7 +77266,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "errno",
-        "version": "0.3.14",
+        "version": "0.3.15",
         "requiredBy": [
           "rustix 1.1.6"
         ]
@@ -77350,16 +77322,16 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "find-msvc-tools",
-        "version": "0.1.13",
+        "version": "0.1.15",
         "requiredBy": [
-          "cc 1.4.7"
+          "cc 1.11.3"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "flate2",
-        "version": "1.1.10",
+        "version": "1.1.11",
         "requiredBy": [
           "object 0.36.7"
         ]
@@ -77438,7 +77410,7 @@
         "name": "futures",
         "version": "0.3.34",
         "requiredBy": [
-          "napi 3.15.0"
+          "napi 3.16.3"
         ]
       },
       {
@@ -77449,8 +77421,7 @@
         "requiredBy": [
           "futures 0.3.34",
           "futures-util 0.3.34",
-          "hyper 1.11.1",
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "reqwest 0.12.28"
         ]
       },
@@ -77465,10 +77436,10 @@
           "futures-executor 0.3.34",
           "futures-util 0.3.34",
           "http-body-util 0.1.5",
-          "hyper 1.11.1",
+          "hyper 1.13.0",
           "reqwest 0.12.28",
           "sync_wrapper 1.0.2",
-          "tokio-util 0.7.19",
+          "tokio-util 0.7.20",
           "tower 0.5.3"
         ]
       },
@@ -77509,7 +77480,7 @@
           "futures 0.3.34",
           "futures-channel 0.3.34",
           "futures-util 0.3.34",
-          "tokio-util 0.7.19"
+          "tokio-util 0.7.20"
         ]
       },
       {
@@ -77531,8 +77502,8 @@
         "requiredBy": [
           "futures 0.3.34",
           "futures-executor 0.3.34",
-          "hyper-util 0.1.20",
-          "js-sys 0.3.105",
+          "hyper-util 0.1.21",
+          "js-sys 0.3.107",
           "reqwest 0.12.28",
           "tower 0.5.3",
           "tower-http 0.6.11",
@@ -77588,8 +77559,7 @@
         "version": "0.3.4",
         "requiredBy": [
           "rand_core 0.9.5",
-          "risc0-zkvm-platform 2.2.3",
-          "tempfile 3.27.0"
+          "risc0-zkvm-platform 2.2.3"
         ]
       },
       {
@@ -77598,10 +77568,12 @@
         "name": "getrandom",
         "version": "0.4.3",
         "requiredBy": [
-          "codspeed 5.0.2",
+          "ahash 0.8.14",
+          "codspeed 5.0.3",
           "jobserver 0.1.35",
           "quinn-proto 0.11.19",
-          "rand 0.10.3"
+          "rand 0.10.4",
+          "tempfile 3.27.0"
         ]
       },
       {
@@ -77620,7 +77592,7 @@
         "name": "glob",
         "version": "0.3.4",
         "requiredBy": [
-          "codspeed 5.0.2",
+          "codspeed 5.0.3",
           "risc0-circuit-keccak-sys 4.1.0",
           "risc0-circuit-recursion-sys 4.1.0",
           "risc0-circuit-rv32im-sys 4.1.0"
@@ -77677,7 +77649,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "hashbrown",
-        "version": "0.17.1",
+        "version": "0.17.2",
         "requiredBy": [
           "indexmap 2.14.2"
         ]
@@ -77697,7 +77669,7 @@
         "name": "heapless",
         "version": "0.7.17",
         "requiredBy": [
-          "postcard 1.1.3"
+          "postcard 1.2.0"
         ]
       },
       {
@@ -77706,7 +77678,7 @@
         "name": "heck",
         "version": "0.5.0",
         "requiredBy": [
-          "clap_derive 4.6.7",
+          "clap_derive 4.6.9",
           "duplicate 2.0.1",
           "pyo3-macros-backend 0.30.1",
           "strum_macros 0.27.2"
@@ -77718,8 +77690,7 @@
         "name": "hermit-abi",
         "version": "0.5.3",
         "requiredBy": [
-          "is-terminal 0.4.17",
-          "num_cpus 1.17.0"
+          "is-terminal 0.4.17"
         ]
       },
       {
@@ -77734,7 +77705,7 @@
           "risc0-zkp 3.0.6",
           "risc0-zkvm 3.1.0",
           "rzup 0.5.2",
-          "serde_with 3.23.0"
+          "serde_with 3.25.0"
         ]
       },
       {
@@ -77754,9 +77725,9 @@
         "requiredBy": [
           "http-body 1.1.0",
           "http-body-util 0.1.5",
-          "hyper 1.11.1",
+          "hyper 1.13.0",
           "hyper-rustls 0.27.10",
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "reqwest 0.12.28",
           "tower-http 0.6.11"
         ]
@@ -77768,8 +77739,8 @@
         "version": "1.1.0",
         "requiredBy": [
           "http-body-util 0.1.5",
-          "hyper 1.11.1",
-          "hyper-util 0.1.20",
+          "hyper 1.13.0",
+          "hyper-util 0.1.21",
           "reqwest 0.12.28",
           "tower-http 0.6.11"
         ]
@@ -77789,17 +77760,18 @@
         "name": "httparse",
         "version": "1.10.1",
         "requiredBy": [
-          "hyper 1.11.1"
+          "hyper 1.13.0",
+          "hyper-util 0.1.21"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "hyper",
-        "version": "1.11.1",
+        "version": "1.13.0",
         "requiredBy": [
           "hyper-rustls 0.27.10",
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "reqwest 0.12.28"
         ]
       },
@@ -77816,7 +77788,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "hyper-util",
-        "version": "0.1.20",
+        "version": "0.1.21",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28"
@@ -77844,27 +77816,27 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_collections",
-        "version": "2.3.0",
+        "version": "2.4.0",
         "requiredBy": [
-          "icu_normalizer 2.3.0",
-          "icu_properties 2.3.0"
+          "icu_normalizer 2.4.0",
+          "icu_properties 2.4.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_locale_core",
-        "version": "2.3.0",
+        "version": "2.4.0",
         "requiredBy": [
-          "icu_properties 2.3.0",
-          "icu_provider 2.3.1"
+          "icu_properties 2.4.0",
+          "icu_provider 2.4.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_normalizer",
-        "version": "2.3.0",
+        "version": "2.4.0",
         "requiredBy": [
           "idna_adapter 1.2.2"
         ]
@@ -77873,18 +77845,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_normalizer_data",
-        "version": "2.3.0",
+        "version": "2.4.0",
         "requiredBy": [
-          "icu_normalizer 2.3.0"
+          "icu_normalizer 2.4.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_properties",
-        "version": "2.3.0",
+        "version": "2.4.0",
         "requiredBy": [
-          "icu_normalizer 2.3.0",
+          "icu_normalizer 2.4.0",
           "idna_adapter 1.2.2"
         ]
       },
@@ -77892,19 +77864,19 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_properties_data",
-        "version": "2.3.0",
+        "version": "2.4.0",
         "requiredBy": [
-          "icu_properties 2.3.0"
+          "icu_properties 2.4.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "icu_provider",
-        "version": "2.3.1",
+        "version": "2.4.0",
         "requiredBy": [
-          "icu_normalizer 2.3.0",
-          "icu_properties 2.3.0"
+          "icu_normalizer 2.4.0",
+          "icu_properties 2.4.0"
         ]
       },
       {
@@ -77950,7 +77922,7 @@
         "name": "indexmap",
         "version": "1.9.3",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "serde_with 3.25.0"
         ]
       },
       {
@@ -77960,17 +77932,17 @@
         "version": "2.14.2",
         "requiredBy": [
           "gimli 0.31.1",
-          "serde_with 3.23.0",
-          "toml 1.1.6+spec-1.1.0",
+          "serde_with 3.25.0",
+          "toml 1.2.3+spec-1.1.0",
           "toml_edit 0.22.27",
-          "toml_edit 0.25.15+spec-1.1.0"
+          "toml_edit 0.25.21+spec-1.1.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "inventory",
-        "version": "0.3.24",
+        "version": "0.3.25",
         "requiredBy": [
           "typetag 0.2.23"
         ]
@@ -77981,7 +77953,7 @@
         "name": "ipnet",
         "version": "2.12.2",
         "requiredBy": [
-          "hyper-util 0.1.20"
+          "hyper-util 0.1.21"
         ]
       },
       {
@@ -77990,7 +77962,7 @@
         "name": "is-terminal",
         "version": "0.4.17",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
@@ -78008,7 +77980,7 @@
         "name": "itertools",
         "version": "0.10.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.3",
           "criterion-plot 0.5.0",
           "puffin 0.19.1"
         ]
@@ -78048,10 +78020,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "itoa",
-        "version": "1.0.18",
+        "version": "1.0.19",
         "requiredBy": [
           "http 1.5.0",
-          "hyper 1.11.1",
+          "hyper 1.13.0",
           "serde_json 1.0.154",
           "serde_urlencoded 0.7.1"
         ]
@@ -78060,37 +78032,74 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "jiff",
-        "version": "0.2.37",
+        "version": "0.2.46",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "serde_with 3.25.0"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "jiff",
+        "version": "1.0.3",
+        "requiredBy": [
+          "serde_with 3.25.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "jiff-core",
-        "version": "0.1.1",
+        "version": "0.1.8",
         "requiredBy": [
-          "jiff 0.2.37",
-          "jiff-static 0.2.37"
+          "jiff 0.2.46",
+          "jiff-static 0.2.46"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "jiff-core",
+        "version": "1.0.2",
+        "requiredBy": [
+          "jiff 1.0.3",
+          "jiff-static 1.0.3"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "jiff-static",
-        "version": "0.2.37",
+        "version": "0.2.46",
         "requiredBy": [
-          "jiff 0.2.37"
+          "jiff 0.2.46"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "jiff-static",
+        "version": "1.0.3",
+        "requiredBy": [
+          "jiff 1.0.3"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "jiff-tzdb",
-        "version": "0.1.8",
+        "version": "0.1.10",
         "requiredBy": [
           "jiff-tzdb-platform 0.1.3"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "jiff-tzdb",
+        "version": "1.0.0",
+        "requiredBy": [
+          "jiff-tzdb-platform 1.0.0"
         ]
       },
       {
@@ -78099,7 +78108,16 @@
         "name": "jiff-tzdb-platform",
         "version": "0.1.3",
         "requiredBy": [
-          "jiff 0.2.37"
+          "jiff 0.2.46"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
+        "name": "jiff-tzdb-platform",
+        "version": "1.0.0",
+        "requiredBy": [
+          "jiff 1.0.3"
         ]
       },
       {
@@ -78108,22 +78126,22 @@
         "name": "jobserver",
         "version": "0.1.35",
         "requiredBy": [
-          "cc 1.4.7"
+          "cc 1.11.3"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "js-sys",
-        "version": "0.3.105",
+        "version": "0.3.107",
         "requiredBy": [
           "getrandom 0.2.17",
           "getrandom 0.4.3",
           "iana-time-zone 0.1.65",
           "reqwest 0.12.28",
-          "wasm-bindgen-futures 0.4.78",
+          "wasm-bindgen-futures 0.4.80",
           "wasm-streams 0.4.2",
-          "web-sys 0.3.105",
+          "web-sys 0.3.107",
           "web-time 1.1.0"
         ]
       },
@@ -78142,7 +78160,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "lazy-regex",
-        "version": "3.6.1",
+        "version": "3.6.2",
         "requiredBy": [
           "risc0-circuit-recursion 4.1.0",
           "risc0-zkvm 3.1.0"
@@ -78152,16 +78170,16 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "lazy-regex-proc_macros",
-        "version": "3.6.1",
+        "version": "3.6.2",
         "requiredBy": [
-          "lazy-regex 3.6.1"
+          "lazy-regex 3.6.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "lazy_static",
-        "version": "1.5.0",
+        "version": "1.5.1",
         "requiredBy": [
           "num-bigint-dig 0.8.6",
           "risc0-binfmt 3.0.6"
@@ -78171,32 +78189,31 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "libc",
-        "version": "0.2.189",
+        "version": "0.2.191",
         "requiredBy": [
           "android_system_properties 0.1.6",
-          "cc 1.4.7",
-          "codspeed 5.0.2",
+          "cc 1.11.3",
+          "codspeed 5.0.3",
           "core-foundation 0.9.4",
           "core-graphics-types 0.1.3",
           "cpufeatures 0.2.17",
           "cpufeatures 0.3.1",
           "dirs-sys 0.5.0",
-          "errno 0.3.14",
+          "errno 0.3.15",
           "filetime 0.2.30",
           "getrandom 0.2.17",
           "getrandom 0.3.4",
           "getrandom 0.4.3",
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "is-terminal 0.4.17",
           "jobserver 0.1.35",
           "liblzma-sys 0.4.9",
           "libredox 0.1.25",
           "malloc_buf 0.0.6",
-          "memmap2 0.9.11",
-          "mio 1.2.3",
-          "napi 3.15.0",
-          "nix 0.31.3",
-          "num_cpus 1.17.0",
+          "memmap2 0.9.12",
+          "mio 1.2.5",
+          "napi 3.16.3",
+          "nix 0.31.4",
           "parking_lot_core 0.9.12",
           "pyo3 0.30.1",
           "pyo3-ffi 0.30.1",
@@ -78205,7 +78222,7 @@
           "rustix 1.1.6",
           "socket2 0.6.5",
           "tar 0.4.46",
-          "tokio 1.53.3",
+          "tokio 1.54.1",
           "wait-timeout 0.2.1",
           "xattr 1.7.0"
         ]
@@ -78214,7 +78231,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "libloading",
-        "version": "0.9.0",
+        "version": "0.9.1",
         "requiredBy": [
           "napi-sys 3.4.1"
         ]
@@ -78223,7 +78240,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "liblzma",
-        "version": "0.4.8",
+        "version": "0.4.9",
         "requiredBy": [
           "risc0-circuit-keccak 4.1.0",
           "risc0-circuit-recursion 4.1.0",
@@ -78237,7 +78254,7 @@
         "name": "liblzma-sys",
         "version": "0.4.9",
         "requiredBy": [
-          "liblzma 0.4.8"
+          "liblzma 0.4.9"
         ]
       },
       {
@@ -78265,6 +78282,15 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "link-section",
+        "version": "0.19.4",
+        "requiredBy": [
+          "ctor 1.0.14"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "linux-raw-sys",
         "version": "0.12.1",
         "requiredBy": [
@@ -78277,7 +78303,7 @@
         "name": "litemap",
         "version": "0.8.3",
         "requiredBy": [
-          "icu_locale_core 2.3.0"
+          "icu_locale_core 2.4.0"
         ]
       },
       {
@@ -78294,12 +78320,14 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "log",
-        "version": "0.4.34",
+        "version": "0.4.35",
         "requiredBy": [
           "gdbstub 0.7.10",
           "iana-time-zone 0.1.65",
-          "jiff 0.2.37",
-          "jiff-core 0.1.1",
+          "jiff 0.2.46",
+          "jiff 1.0.3",
+          "jiff-core 0.1.8",
+          "jiff-core 1.0.2",
           "metal 0.29.0",
           "reqwest 0.12.28",
           "tracing 0.1.44"
@@ -78410,18 +78438,18 @@
           "aho-corasick 1.1.5",
           "futures-util 0.3.34",
           "object 0.36.7",
-          "regex 1.13.1",
-          "regex-automata 0.4.18",
+          "regex 1.13.2",
+          "regex-automata 0.4.19",
           "serde_json 1.0.154",
           "winnow 0.7.15",
-          "winnow 1.0.4"
+          "winnow 1.0.5"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "memmap2",
-        "version": "0.9.11",
+        "version": "0.9.12",
         "requiredBy": [
           "addr2line 0.24.2"
         ]
@@ -78451,34 +78479,16 @@
         "name": "miniz_oxide",
         "version": "0.9.1",
         "requiredBy": [
-          "flate2 1.1.10"
+          "flate2 1.1.11"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "mio",
-        "version": "1.2.3",
+        "version": "1.2.5",
         "requiredBy": [
-          "tokio 1.53.3"
-        ]
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "multiversion",
-        "version": "0.9.0",
-        "requiredBy": [
-          "encoding_rs 0.8.41"
-        ]
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "multiversion-macros",
-        "version": "0.9.0",
-        "requiredBy": [
-          "multiversion 0.9.0"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -78487,44 +78497,44 @@
         "name": "multiversion_no_op",
         "version": "1.0.0",
         "requiredBy": [
-          "encoding_rs 0.8.41"
+          "encoding_rs 0.8.44"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi",
-        "version": "3.15.0",
+        "version": "3.16.3",
         "requiredBy": [
-          "wickra-zk-node 0.2.1"
+          "wickra-zk-node 0.2.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-build",
-        "version": "2.6.0",
+        "version": "2.7.0",
         "requiredBy": [
-          "napi 3.15.0",
-          "wickra-zk-node 0.2.1"
+          "napi 3.16.3",
+          "wickra-zk-node 0.2.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive",
-        "version": "3.6.13",
+        "version": "3.7.2",
         "requiredBy": [
-          "wickra-zk-node 0.2.1"
+          "wickra-zk-node 0.2.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "napi-derive-backend",
-        "version": "6.1.6",
+        "version": "8.0.0",
         "requiredBy": [
-          "napi-derive 3.6.13"
+          "napi-derive 3.7.2"
         ]
       },
       {
@@ -78533,7 +78543,7 @@
         "name": "napi-sys",
         "version": "3.4.1",
         "requiredBy": [
-          "napi 3.15.0"
+          "napi 3.16.3"
         ]
       },
       {
@@ -78549,9 +78559,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "nix",
-        "version": "0.31.3",
+        "version": "0.31.4",
         "requiredBy": [
-          "codspeed 5.0.2"
+          "codspeed 5.0.3"
         ]
       },
       {
@@ -78569,7 +78579,7 @@
         "name": "nohash-hasher",
         "version": "0.2.0",
         "requiredBy": [
-          "napi 3.15.0"
+          "napi 3.16.3"
         ]
       },
       {
@@ -78578,7 +78588,7 @@
         "name": "num-bigint",
         "version": "0.3.3",
         "requiredBy": [
-          "addchain 0.2.1",
+          "addchain 0.2.2",
           "ff_derive 0.13.1"
         ]
       },
@@ -78640,7 +78650,7 @@
         "name": "num-integer",
         "version": "0.1.47",
         "requiredBy": [
-          "addchain 0.2.1",
+          "addchain 0.2.2",
           "ark-ec 0.5.0",
           "ark-r1cs-std 0.5.0",
           "ff_derive 0.13.1",
@@ -78667,7 +78677,7 @@
         "name": "num-traits",
         "version": "0.2.19",
         "requiredBy": [
-          "addchain 0.2.1",
+          "addchain 0.2.2",
           "approx 0.5.1",
           "ark-ec 0.5.0",
           "ark-ff 0.5.0",
@@ -78675,7 +78685,7 @@
           "ark-r1cs-std 0.5.0",
           "ark-std 0.5.0",
           "chrono 0.4.45",
-          "codspeed-criterion-compat-walltime 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.3",
           "ff_derive 0.13.1",
           "gdbstub 0.7.10",
           "gdbstub_arch 0.3.3",
@@ -78693,15 +78703,6 @@
           "risc0-zkvm 3.1.0",
           "rsa 0.9.10",
           "statrs 0.18.0"
-        ]
-      },
-      {
-        "ecosystem": "cargo",
-        "source": "Cargo.lock",
-        "name": "num_cpus",
-        "version": "1.17.0",
-        "requiredBy": [
-          "liblzma 0.4.8"
         ]
       },
       {
@@ -78756,18 +78757,17 @@
         "name": "once_cell",
         "version": "1.21.4",
         "requiredBy": [
-          "ahash 0.8.12",
+          "ahash 0.8.14",
           "borsh-derive 1.8.1",
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "lazy-regex 3.6.1",
+          "codspeed-criterion-compat-walltime 5.0.3",
+          "lazy-regex 3.6.2",
           "puffin 0.19.1",
           "pyo3 0.30.1",
           "quinn-udp 0.5.16",
           "rustls 0.23.46",
           "tempfile 3.27.0",
           "tracing-core 0.1.36",
-          "typetag 0.2.23",
-          "wasm-bindgen 0.2.128"
+          "typetag 0.2.23"
         ]
       },
       {
@@ -78785,7 +78785,7 @@
         "name": "oorandom",
         "version": "11.1.5",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
@@ -78856,7 +78856,7 @@
         "version": "2.3.2",
         "requiredBy": [
           "form_urlencoded 1.2.3",
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "reqwest 0.12.28",
           "url 2.5.9"
         ]
@@ -78905,16 +78905,16 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "pin-project-lite",
-        "version": "0.2.17",
+        "version": "0.2.18",
         "requiredBy": [
           "futures-util 0.3.34",
           "http-body-util 0.1.5",
-          "hyper 1.11.1",
-          "hyper-util 0.1.20",
+          "hyper 1.13.0",
+          "hyper-util 0.1.21",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio 1.53.3",
-          "tokio-util 0.7.19",
+          "tokio 1.54.1",
+          "tokio-util 0.7.20",
           "tower 0.5.3",
           "tower-http 0.6.11",
           "tracing 0.1.44"
@@ -78954,7 +78954,7 @@
         "name": "plotters",
         "version": "0.3.7",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
@@ -78982,7 +78982,8 @@
         "name": "portable-atomic",
         "version": "1.15.0",
         "requiredBy": [
-          "jiff 0.2.37",
+          "jiff 0.2.46",
+          "jiff 1.0.3",
           "ndarray 0.16.1",
           "portable-atomic-util 0.2.8",
           "pyo3 0.30.1"
@@ -78994,7 +78995,8 @@
         "name": "portable-atomic-util",
         "version": "0.2.8",
         "requiredBy": [
-          "jiff 0.2.37",
+          "jiff 0.2.46",
+          "jiff 1.0.3",
           "ndarray 0.16.1"
         ]
       },
@@ -79002,7 +79004,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "postcard",
-        "version": "1.1.3",
+        "version": "1.2.0",
         "requiredBy": [
           "risc0-binfmt 3.0.6",
           "risc0-circuit-rv32im 4.1.0"
@@ -79014,14 +79016,14 @@
         "name": "potential_utf",
         "version": "0.1.6",
         "requiredBy": [
-          "icu_collections 2.3.0"
+          "icu_collections 2.4.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "powerfmt",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "requiredBy": [
           "time 0.3.55"
         ]
@@ -79056,10 +79058,9 @@
           "ark-serialize-derive 0.5.0",
           "borsh-derive 1.8.1",
           "bytemuck_derive 1.12.1",
-          "clap_derive 4.6.7",
+          "clap_derive 4.6.9",
           "darling_core 0.20.11",
           "darling_core 0.24.1",
-          "defmt-macros 1.1.1",
           "derivative 2.2.0",
           "derive_builder_core 0.20.2",
           "derive_more-impl 2.1.1",
@@ -79071,12 +79072,12 @@
           "ff_derive 0.13.1",
           "foreign-types-macros 0.2.4",
           "futures-macro 0.3.34",
-          "jiff-static 0.2.37",
-          "lazy-regex-proc_macros 3.6.1",
+          "jiff-static 0.2.46",
+          "jiff-static 1.0.3",
+          "lazy-regex-proc_macros 3.6.2",
           "maybe-async 0.2.11",
-          "multiversion-macros 0.9.0",
-          "napi-derive 3.6.13",
-          "napi-derive-backend 6.1.6",
+          "napi-derive 3.7.2",
+          "napi-derive-backend 8.0.0",
           "num-derive 0.4.2",
           "num_enum_derive 0.7.6",
           "phf_macros 0.13.1",
@@ -79086,26 +79087,26 @@
           "pyo3-macros-backend 0.30.1",
           "quote 1.0.47",
           "ref-cast-impl 1.0.27",
-          "schemars_derive 1.2.2",
+          "schemars_derive 1.2.3",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.30.0",
-          "serde_with_macros 3.23.0",
+          "serde_with_macros 3.25.0",
           "strum_macros 0.27.2",
           "syn 1.0.109",
           "syn 2.0.119",
-          "syn 3.0.6",
+          "syn 3.0.10",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.21",
           "tracing-attributes 0.1.31",
           "typetag-impl 0.2.23",
-          "wasm-bindgen-macro-support 0.2.128",
+          "wasm-bindgen-macro-support 0.2.130",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
           "yoke-derive 0.8.4",
-          "zerocopy-derive 0.8.57",
+          "zerocopy-derive 0.8.66",
           "zerofrom-derive 0.1.8",
           "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zerovec-derive 0.11.7"
         ]
       },
       {
@@ -79123,8 +79124,8 @@
         "name": "proptest",
         "version": "1.12.0",
         "requiredBy": [
-          "ruint 1.20.1",
-          "wickra-zk-host 0.2.1"
+          "ruint 1.21.1",
+          "wickra-zk-host 0.2.2"
         ]
       },
       {
@@ -79160,7 +79161,7 @@
         "name": "pyo3",
         "version": "0.30.1",
         "requiredBy": [
-          "wickra-zk-python 0.2.1"
+          "wickra-zk-python 0.2.2"
         ]
       },
       {
@@ -79248,12 +79249,11 @@
           "ark-serialize-derive 0.5.0",
           "borsh-derive 1.8.1",
           "bytemuck_derive 1.12.1",
-          "clap_derive 4.6.7",
+          "clap_derive 4.6.9",
           "darling_core 0.20.11",
           "darling_core 0.24.1",
           "darling_macro 0.20.11",
           "darling_macro 0.24.1",
-          "defmt-macros 1.1.1",
           "derivative 2.2.0",
           "derive_builder_core 0.20.2",
           "derive_more-impl 2.1.1",
@@ -79264,12 +79264,12 @@
           "ff_derive 0.13.1",
           "foreign-types-macros 0.2.4",
           "futures-macro 0.3.34",
-          "jiff-static 0.2.37",
-          "lazy-regex-proc_macros 3.6.1",
+          "jiff-static 0.2.46",
+          "jiff-static 1.0.3",
+          "lazy-regex-proc_macros 3.6.2",
           "maybe-async 0.2.11",
-          "multiversion-macros 0.9.0",
-          "napi-derive 3.6.13",
-          "napi-derive-backend 6.1.6",
+          "napi-derive 3.7.2",
+          "napi-derive-backend 8.0.0",
           "num-derive 0.4.2",
           "num_enum_derive 0.7.6",
           "phf_macros 0.13.1",
@@ -79278,28 +79278,28 @@
           "pyo3-macros 0.30.1",
           "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
-          "schemars_derive 1.2.2",
+          "schemars_derive 1.2.3",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.30.0",
-          "serde_with_macros 3.23.0",
+          "serde_with_macros 3.25.0",
           "stability 0.2.1",
           "strum_macros 0.27.2",
           "syn 1.0.109",
           "syn 2.0.119",
-          "syn 3.0.6",
+          "syn 3.0.10",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.21",
           "tracing-attributes 0.1.31",
           "typetag-impl 0.2.23",
-          "wasm-bindgen-macro 0.2.128",
-          "wasm-bindgen-macro-support 0.2.128",
+          "wasm-bindgen-macro 0.2.130",
+          "wasm-bindgen-macro-support 0.2.130",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
           "yoke-derive 0.8.4",
-          "zerocopy-derive 0.8.57",
+          "zerocopy-derive 0.8.66",
           "zerofrom-derive 0.1.8",
           "zeroize_derive 1.5.0",
-          "zerovec-derive 0.11.6"
+          "zerovec-derive 0.11.7"
         ]
       },
       {
@@ -79337,7 +79337,7 @@
         "requiredBy": [
           "ark-std 0.5.0",
           "num-bigint-dig 0.8.6",
-          "ruint 1.20.1"
+          "ruint 1.21.1"
         ]
       },
       {
@@ -79351,17 +79351,18 @@
           "risc0-circuit-rv32im 4.1.0",
           "risc0-zkp 3.0.6",
           "risc0-zkvm 3.1.0",
-          "ruint 1.20.1"
+          "ruint 1.21.1"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rand",
-        "version": "0.10.3",
+        "version": "0.10.4",
         "requiredBy": [
           "proptest 1.12.0",
-          "quinn-proto 0.11.19"
+          "quinn-proto 0.11.19",
+          "ruint 1.21.1"
         ]
       },
       {
@@ -79416,8 +79417,8 @@
         "requiredBy": [
           "chacha20 0.10.2",
           "getrandom 0.4.3",
-          "rand 0.10.3",
-          "rand_pcg 0.10.2",
+          "rand 0.10.4",
+          "rand_pcg 0.10.3",
           "rand_xorshift 0.5.0"
         ]
       },
@@ -79425,7 +79426,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rand_pcg",
-        "version": "0.10.2",
+        "version": "0.10.3",
         "requiredBy": [
           "quinn-proto 0.11.19"
         ]
@@ -79455,7 +79456,7 @@
         "name": "rayon",
         "version": "1.12.0",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.3",
           "ndarray 0.16.1",
           "risc0-build-kernel 2.0.1",
           "risc0-circuit-keccak 4.1.0",
@@ -79500,7 +79501,7 @@
         "version": "1.0.27",
         "requiredBy": [
           "schemars 0.9.0",
-          "schemars 1.2.2"
+          "schemars 1.2.3"
         ]
       },
       {
@@ -79516,32 +79517,32 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex",
-        "version": "1.13.1",
+        "version": "1.13.2",
         "requiredBy": [
-          "codspeed-criterion-compat 5.0.2",
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "lazy-regex 3.6.1",
-          "lazy-regex-proc_macros 3.6.1"
+          "codspeed-criterion-compat 5.0.3",
+          "codspeed-criterion-compat-walltime 5.0.3",
+          "lazy-regex 3.6.2",
+          "lazy-regex-proc_macros 3.6.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex-automata",
-        "version": "0.4.18",
+        "version": "0.4.19",
         "requiredBy": [
-          "regex 1.13.1"
+          "regex 1.13.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "regex-syntax",
-        "version": "0.8.11",
+        "version": "0.8.12",
         "requiredBy": [
           "proptest 1.12.0",
-          "regex 1.13.1",
-          "regex-automata 0.4.18"
+          "regex 1.13.2",
+          "regex-automata 0.4.19"
         ]
       },
       {
@@ -79561,7 +79562,7 @@
         "requiredBy": [
           "quinn-proto 0.11.19",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.16"
+          "rustls-webpki 0.103.17"
         ]
       },
       {
@@ -79752,7 +79753,7 @@
         "name": "risc0-zkvm",
         "version": "3.1.0",
         "requiredBy": [
-          "wickra-zk-host 0.2.1"
+          "wickra-zk-host 0.2.2"
         ]
       },
       {
@@ -79790,7 +79791,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "ruint",
-        "version": "1.20.1",
+        "version": "1.21.1",
         "requiredBy": [
           "risc0-binfmt 3.0.6"
         ]
@@ -79801,7 +79802,7 @@
         "name": "ruint-macro",
         "version": "1.2.1",
         "requiredBy": [
-          "ruint 1.20.1"
+          "ruint 1.21.1"
         ]
       },
       {
@@ -79820,7 +79821,7 @@
         "name": "rustc-hash",
         "version": "2.1.3",
         "requiredBy": [
-          "napi 3.15.0",
+          "napi 3.16.3",
           "quinn 0.11.12",
           "quinn-proto 0.11.19"
         ]
@@ -79855,27 +79856,27 @@
           "quinn 0.11.12",
           "quinn-proto 0.11.19",
           "reqwest 0.12.28",
-          "tokio-rustls 0.26.5"
+          "tokio-rustls 0.26.6"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-pki-types",
-        "version": "1.15.1",
+        "version": "1.16.0",
         "requiredBy": [
           "quinn-proto 0.11.19",
           "reqwest 0.12.28",
           "rustls 0.23.46",
-          "rustls-webpki 0.103.16",
-          "webpki-roots 1.0.10"
+          "rustls-webpki 0.103.17",
+          "webpki-roots 1.0.12"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "rustls-webpki",
-        "version": "0.103.16",
+        "version": "0.103.17",
         "requiredBy": [
           "rustls 0.23.46"
         ]
@@ -79886,11 +79887,10 @@
         "name": "rustversion",
         "version": "1.0.23",
         "requiredBy": [
-          "encoding_rs 0.8.41",
-          "inventory 0.3.24",
-          "multiversion-macros 0.9.0",
+          "encoding_rs 0.8.44",
+          "inventory 0.3.25",
           "num_enum 0.7.6",
-          "wasm-bindgen 0.2.128"
+          "wasm-bindgen 0.2.130"
         ]
       },
       {
@@ -79947,7 +79947,7 @@
         "name": "same-file",
         "version": "1.0.6",
         "requiredBy": [
-          "walkdir 2.5.0"
+          "walkdir 2.5.1"
         ]
       },
       {
@@ -79956,26 +79956,26 @@
         "name": "schemars",
         "version": "0.9.0",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "serde_with 3.25.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "schemars",
-        "version": "1.2.2",
+        "version": "1.2.3",
         "requiredBy": [
-          "serde_with 3.23.0",
-          "wickra-backtest-core 0.2.1"
+          "serde_with 3.25.0",
+          "wickra-backtest-core 0.2.2"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "schemars_derive",
-        "version": "1.2.2",
+        "version": "1.2.3",
         "requiredBy": [
-          "schemars 1.2.2"
+          "schemars 1.2.3"
         ]
       },
       {
@@ -79984,7 +79984,7 @@
         "name": "scopeguard",
         "version": "1.2.0",
         "requiredBy": [
-          "encoding_rs 0.8.41",
+          "encoding_rs 0.8.44",
           "lock_api 0.4.14"
         ]
       },
@@ -79995,7 +79995,7 @@
         "version": "1.0.28",
         "requiredBy": [
           "cargo_metadata 0.19.2",
-          "napi-derive-backend 6.1.6",
+          "napi-derive-backend 8.0.0",
           "risc0-binfmt 3.0.6",
           "risc0-build 3.0.7",
           "risc0-zkvm 3.1.0",
@@ -80010,21 +80010,21 @@
         "version": "1.0.229",
         "requiredBy": [
           "bincode 1.3.3",
-          "bit-vec 0.10.1",
+          "bit-vec 0.10.2",
           "bonsai-sdk 1.4.3",
-          "bytes 1.12.1",
+          "bytes 1.12.2",
           "cargo-platform 0.1.9",
           "cargo_metadata 0.19.2",
           "chrono 0.4.45",
           "ciborium 0.2.2",
-          "codspeed 5.0.2",
-          "codspeed-criterion-compat-walltime 5.0.2",
-          "erased-serde 0.4.10",
+          "codspeed 5.0.3",
+          "codspeed-criterion-compat-walltime 5.0.3",
+          "erased-serde 0.4.11",
           "heapless 0.7.17",
           "indexmap 1.9.3",
           "indexmap 2.14.2",
           "phf 0.13.1",
-          "postcard 1.1.3",
+          "postcard 1.2.0",
           "reqwest 0.12.28",
           "risc0-binfmt 3.0.6",
           "risc0-build 3.0.7",
@@ -80035,7 +80035,7 @@
           "risc0-zkvm 3.1.0",
           "rzup 0.5.2",
           "schemars 0.9.0",
-          "schemars 1.2.2",
+          "schemars 1.2.3",
           "semver 1.0.28",
           "serde_json 1.0.154",
           "serde_spanned 0.6.9",
@@ -80046,9 +80046,9 @@
           "toml_edit 0.22.27",
           "typetag 0.2.23",
           "url 2.5.9",
-          "wickra-backtest-core 0.2.1",
-          "wickra-proof-core 0.2.1",
-          "wickra-zk-host 0.2.1"
+          "wickra-backtest-core 0.2.2",
+          "wickra-proof-core 0.2.2",
+          "wickra-zk-host 0.2.2"
         ]
       },
       {
@@ -80058,19 +80058,20 @@
         "version": "1.0.229",
         "requiredBy": [
           "camino 1.2.6",
-          "deranged 0.5.8",
-          "erased-serde 0.4.10",
+          "deranged 0.5.9",
+          "erased-serde 0.4.11",
           "indexmap 2.14.2",
-          "jiff 0.2.37",
-          "ruint 1.20.1",
+          "jiff 0.2.46",
+          "jiff 1.0.3",
+          "ruint 1.21.1",
           "semver 1.0.28",
           "serde 1.0.229",
           "serde_json 1.0.154",
-          "serde_spanned 1.1.1",
-          "serde_with 3.23.0",
+          "serde_spanned 1.1.3",
+          "serde_with 3.25.0",
           "time 0.3.55",
-          "toml 1.1.6+spec-1.1.0",
-          "toml_datetime 1.1.1+spec-1.1.0"
+          "toml 1.2.3+spec-1.1.0",
+          "toml_datetime 1.1.3+spec-1.1.0"
         ]
       },
       {
@@ -80079,7 +80080,7 @@
         "name": "serde_derive",
         "version": "1.0.229",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2",
+          "codspeed-criterion-compat-walltime 5.0.3",
           "serde 1.0.229",
           "serde_core 1.0.229"
         ]
@@ -80090,7 +80091,7 @@
         "name": "serde_derive_internals",
         "version": "0.30.0",
         "requiredBy": [
-          "schemars_derive 1.2.2"
+          "schemars_derive 1.2.3"
         ]
       },
       {
@@ -80100,22 +80101,22 @@
         "version": "1.0.154",
         "requiredBy": [
           "cargo_metadata 0.19.2",
-          "codspeed 5.0.2",
-          "codspeed-criterion-compat-walltime 5.0.2",
+          "codspeed 5.0.3",
+          "codspeed-criterion-compat-walltime 5.0.3",
           "reqwest 0.12.28",
           "risc0-build 3.0.7",
           "risc0-groth16 3.0.6",
           "schemars 0.9.0",
-          "schemars 1.2.2",
-          "serde_with 3.23.0",
+          "schemars 1.2.3",
+          "serde_with 3.25.0",
           "tinytemplate 1.2.1",
-          "wickra-backtest-core 0.2.1",
-          "wickra-backtest-data 0.2.1",
-          "wickra-proof-core 0.2.1",
-          "wickra-zk 0.2.1",
-          "wickra-zk-bench 0.2.1",
-          "wickra-zk-example 0.2.1",
-          "wickra-zk-host 0.2.1"
+          "wickra-backtest-core 0.2.2",
+          "wickra-backtest-data 0.2.2",
+          "wickra-proof-core 0.2.2",
+          "wickra-zk 0.2.2",
+          "wickra-zk-bench 0.2.2",
+          "wickra-zk-example 0.2.2",
+          "wickra-zk-host 0.2.2"
         ]
       },
       {
@@ -80132,9 +80133,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_spanned",
-        "version": "1.1.1",
+        "version": "1.1.3",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.2.3+spec-1.1.0"
         ]
       },
       {
@@ -80150,7 +80151,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_with",
-        "version": "3.23.0",
+        "version": "3.25.0",
         "requiredBy": [
           "rzup 0.5.2"
         ]
@@ -80159,9 +80160,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "serde_with_macros",
-        "version": "3.23.0",
+        "version": "3.25.0",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "serde_with 3.25.0"
         ]
       },
       {
@@ -80184,7 +80185,7 @@
         "name": "shlex",
         "version": "2.0.1",
         "requiredBy": [
-          "cc 1.4.7"
+          "cc 1.11.3"
         ]
       },
       {
@@ -80211,7 +80212,7 @@
         "name": "simdutf8",
         "version": "0.1.5",
         "requiredBy": [
-          "encoding_rs 0.8.41"
+          "encoding_rs 0.8.44"
         ]
       },
       {
@@ -80237,11 +80238,11 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "smallvec",
-        "version": "1.16.1",
+        "version": "1.16.6",
         "requiredBy": [
           "addr2line 0.24.2",
-          "hyper 1.11.1",
-          "icu_normalizer 2.3.0",
+          "hyper 1.13.0",
+          "icu_normalizer 2.4.0",
           "idna 1.1.0",
           "num-bigint-dig 0.8.6",
           "parking_lot_core 0.9.12",
@@ -80254,10 +80255,10 @@
         "name": "socket2",
         "version": "0.6.5",
         "requiredBy": [
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "quinn 0.11.12",
           "quinn-udp 0.5.16",
-          "tokio 1.53.3"
+          "tokio 1.54.1"
         ]
       },
       {
@@ -80267,7 +80268,7 @@
         "version": "0.9.9",
         "requiredBy": [
           "heapless 0.7.17",
-          "lazy_static 1.5.0"
+          "lazy_static 1.5.1"
         ]
       },
       {
@@ -80301,7 +80302,7 @@
         "requiredBy": [
           "gimli 0.31.1",
           "heapless 0.7.17",
-          "yoke 0.8.3"
+          "yoke 0.8.4"
         ]
       },
       {
@@ -80319,7 +80320,7 @@
         "name": "statrs",
         "version": "0.18.0",
         "requiredBy": [
-          "codspeed 5.0.2"
+          "codspeed 5.0.3"
         ]
       },
       {
@@ -80328,7 +80329,7 @@
         "name": "strsim",
         "version": "0.11.1",
         "requiredBy": [
-          "clap_builder 4.6.7",
+          "clap_builder 4.6.10",
           "darling_core 0.20.11",
           "darling_core 0.24.1"
         ]
@@ -80385,14 +80386,12 @@
           "ark-serialize-derive 0.5.0",
           "darling_core 0.20.11",
           "darling_macro 0.20.11",
-          "defmt-macros 1.1.1",
           "derive_builder_core 0.20.2",
           "derive_builder_macro 0.20.2",
           "derive_more-impl 2.1.1",
           "educe 0.6.0",
           "enum-map-derive 0.17.0",
-          "jiff-static 0.2.37",
-          "lazy-regex-proc_macros 3.6.1",
+          "jiff-static 0.2.46",
           "maybe-async 0.2.11",
           "num-derive 0.4.2",
           "num_enum_derive 0.7.6",
@@ -80404,7 +80403,7 @@
           "tracing-attributes 0.1.31",
           "windows-implement 0.60.2",
           "windows-interface 0.59.3",
-          "zerocopy-derive 0.8.57",
+          "zerocopy-derive 0.8.66",
           "zeroize_derive 1.5.0"
         ]
       },
@@ -80412,34 +80411,35 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "syn",
-        "version": "3.0.6",
+        "version": "3.0.10",
         "requiredBy": [
           "borsh-derive 1.8.1",
           "bytemuck_derive 1.12.1",
-          "clap_derive 4.6.7",
+          "clap_derive 4.6.9",
           "darling_core 0.24.1",
           "darling_macro 0.24.1",
           "displaydoc 0.2.7",
           "enum-ordinalize-derive 4.4.2",
           "foreign-types-macros 0.2.4",
           "futures-macro 0.3.34",
-          "multiversion-macros 0.9.0",
-          "napi-derive 3.6.13",
-          "napi-derive-backend 6.1.6",
+          "jiff-static 1.0.3",
+          "lazy-regex-proc_macros 3.6.2",
+          "napi-derive 3.7.2",
+          "napi-derive-backend 8.0.0",
           "pyo3-macros 0.30.1",
           "pyo3-macros-backend 0.30.1",
           "ref-cast-impl 1.0.27",
-          "schemars_derive 1.2.2",
+          "schemars_derive 1.2.3",
           "serde_derive 1.0.229",
           "serde_derive_internals 0.30.0",
-          "serde_with_macros 3.23.0",
+          "serde_with_macros 3.25.0",
           "synstructure 0.14.0",
           "thiserror-impl 2.0.21",
           "typetag-impl 0.2.23",
-          "wasm-bindgen-macro-support 0.2.128",
+          "wasm-bindgen-macro-support 0.2.130",
           "yoke-derive 0.8.4",
           "zerofrom-derive 0.1.8",
-          "zerovec-derive 0.11.6"
+          "zerovec-derive 0.11.7"
         ]
       },
       {
@@ -80486,7 +80486,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "target-lexicon",
-        "version": "0.13.5",
+        "version": "0.13.6",
         "requiredBy": [
           "pyo3-build-config 0.30.1"
         ]
@@ -80515,15 +80515,14 @@
           "bonsai-sdk 1.4.3",
           "cargo_metadata 0.19.2",
           "cobs 0.3.0",
-          "defmt-parser 1.0.0",
           "quinn 0.11.12",
           "quinn-proto 0.11.19",
           "redox_users 0.5.3",
           "rzup 0.5.2",
-          "wickra-backtest-core 0.2.1",
+          "wickra-backtest-core 0.2.2",
           "wickra-core 2.2.0",
-          "wickra-proof-core 0.2.1",
-          "wickra-zk-host 0.2.1"
+          "wickra-proof-core 0.2.2",
+          "wickra-zk-host 0.2.2"
         ]
       },
       {
@@ -80541,7 +80540,7 @@
         "name": "time",
         "version": "0.3.55",
         "requiredBy": [
-          "serde_with 3.23.0"
+          "serde_with 3.25.0"
         ]
       },
       {
@@ -80567,9 +80566,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tinystr",
-        "version": "0.8.4",
+        "version": "0.8.5",
         "requiredBy": [
-          "icu_locale_core 2.3.0"
+          "icu_locale_core 2.4.0"
         ]
       },
       {
@@ -80578,7 +80577,7 @@
         "name": "tinytemplate",
         "version": "1.2.1",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
@@ -80595,23 +80594,24 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio",
-        "version": "1.53.3",
+        "version": "1.54.1",
         "requiredBy": [
-          "hyper 1.11.1",
+          "hyper 1.13.0",
           "hyper-rustls 0.27.10",
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "quinn 0.11.12",
           "reqwest 0.12.28",
-          "tokio-rustls 0.26.5",
-          "tokio-util 0.7.19",
-          "tower 0.5.3"
+          "tokio-rustls 0.26.6",
+          "tokio-util 0.7.20",
+          "tower 0.5.3",
+          "wasm-bindgen-futures 0.4.80"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio-rustls",
-        "version": "0.26.5",
+        "version": "0.26.6",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28"
@@ -80621,7 +80621,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "tokio-util",
-        "version": "0.7.19",
+        "version": "0.7.20",
         "requiredBy": [
           "reqwest 0.12.28"
         ]
@@ -80639,9 +80639,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml",
-        "version": "1.1.6+spec-1.1.0",
+        "version": "1.2.3+spec-1.1.0",
         "requiredBy": [
-          "wickra-proof-core 0.2.1"
+          "wickra-proof-core 0.2.2"
         ]
       },
       {
@@ -80658,10 +80658,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_datetime",
-        "version": "1.1.1+spec-1.1.0",
+        "version": "1.1.3+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.25.15+spec-1.1.0"
+          "toml 1.2.3+spec-1.1.0",
+          "toml_edit 0.25.21+spec-1.1.0"
         ]
       },
       {
@@ -80677,7 +80677,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_edit",
-        "version": "0.25.15+spec-1.1.0",
+        "version": "0.25.21+spec-1.1.0",
         "requiredBy": [
           "proc-macro-crate 3.5.0"
         ]
@@ -80686,10 +80686,10 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_parser",
-        "version": "1.1.3+spec-1.1.0",
+        "version": "1.1.7+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.25.15+spec-1.1.0"
+          "toml 1.2.3+spec-1.1.0",
+          "toml_edit 0.25.21+spec-1.1.0"
         ]
       },
       {
@@ -80705,9 +80705,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "toml_writer",
-        "version": "1.1.2+spec-1.1.0",
+        "version": "1.2.0+spec-1.1.0",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0"
+          "toml 1.2.3+spec-1.1.0"
         ]
       },
       {
@@ -80746,7 +80746,7 @@
         "version": "0.3.3",
         "requiredBy": [
           "hyper-rustls 0.27.10",
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "reqwest 0.12.28",
           "tower 0.5.3",
           "tower-http 0.6.11"
@@ -80760,7 +80760,7 @@
         "requiredBy": [
           "ark-r1cs-std 0.5.0",
           "ark-relations 0.5.1",
-          "hyper-util 0.1.20",
+          "hyper-util 0.1.21",
           "quinn 0.11.12",
           "quinn-proto 0.11.19",
           "quinn-udp 0.5.16",
@@ -80807,7 +80807,7 @@
         "name": "try-lock",
         "version": "0.2.5",
         "requiredBy": [
-          "want 0.3.1"
+          "want 0.3.2"
         ]
       },
       {
@@ -80834,7 +80834,7 @@
         "name": "typeid",
         "version": "1.0.3",
         "requiredBy": [
-          "erased-serde 0.4.10"
+          "erased-serde 0.4.11"
         ]
       },
       {
@@ -80878,13 +80878,14 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "unicode-ident",
-        "version": "1.0.26",
+        "version": "1.0.27",
         "requiredBy": [
+          "napi-derive 3.7.2",
           "proc-macro2 1.0.107",
           "syn 1.0.109",
           "syn 2.0.119",
-          "syn 3.0.6",
-          "wasm-bindgen-shared 0.2.128"
+          "syn 3.0.10",
+          "wasm-bindgen-shared 0.2.130"
         ]
       },
       {
@@ -80912,7 +80913,7 @@
         "version": "0.9.0",
         "requiredBy": [
           "ring 0.17.14",
-          "rustls-webpki 0.103.16"
+          "rustls-webpki 0.103.17"
         ]
       },
       {
@@ -80929,9 +80930,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "utf8_iter",
-        "version": "1.0.4",
+        "version": "1.1.0",
         "requiredBy": [
-          "icu_collections 2.3.0",
+          "icu_collections 2.4.0",
           "idna 1.1.0"
         ]
       },
@@ -80948,10 +80949,19 @@
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
+        "name": "utf_types",
+        "version": "1.0.0",
+        "requiredBy": [
+          "utf8_iter 1.1.0"
+        ]
+      },
+      {
+        "ecosystem": "cargo",
+        "source": "Cargo.lock",
         "name": "valuable",
         "version": "0.1.1",
         "requiredBy": [
-          "ruint 1.20.1",
+          "ruint 1.21.1",
           "tracing-core 0.1.36"
         ]
       },
@@ -80961,7 +80971,7 @@
         "name": "version_check",
         "version": "0.9.5",
         "requiredBy": [
-          "ahash 0.8.12",
+          "ahash 0.8.14",
           "generic-array 0.14.7",
           "proc-macro2-diagnostics 0.10.1"
         ]
@@ -80979,18 +80989,18 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "walkdir",
-        "version": "2.5.0",
+        "version": "2.5.1",
         "requiredBy": [
-          "codspeed-criterion-compat-walltime 5.0.2"
+          "codspeed-criterion-compat-walltime 5.0.3"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "want",
-        "version": "0.3.1",
+        "version": "0.3.2",
         "requiredBy": [
-          "hyper 1.11.1"
+          "hyper 1.13.0"
         ]
       },
       {
@@ -81000,7 +81010,7 @@
         "version": "0.11.1+wasi-snapshot-preview1",
         "requiredBy": [
           "getrandom 0.2.17",
-          "mio 1.2.3"
+          "mio 1.2.5"
         ]
       },
       {
@@ -81016,17 +81026,17 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen",
-        "version": "0.2.128",
+        "version": "0.2.130",
         "requiredBy": [
           "getrandom 0.2.17",
           "getrandom 0.4.3",
           "iana-time-zone 0.1.65",
-          "js-sys 0.3.105",
+          "js-sys 0.3.107",
           "plotters 0.3.7",
           "reqwest 0.12.28",
-          "wasm-bindgen-futures 0.4.78",
+          "wasm-bindgen-futures 0.4.80",
           "wasm-streams 0.4.2",
-          "web-sys 0.3.105",
+          "web-sys 0.3.107",
           "web-time 1.1.0"
         ]
       },
@@ -81034,7 +81044,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-futures",
-        "version": "0.4.78",
+        "version": "0.4.80",
         "requiredBy": [
           "reqwest 0.12.28",
           "wasm-streams 0.4.2"
@@ -81044,28 +81054,28 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro",
-        "version": "0.2.128",
+        "version": "0.2.130",
         "requiredBy": [
-          "wasm-bindgen 0.2.128"
+          "wasm-bindgen 0.2.130"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-macro-support",
-        "version": "0.2.128",
+        "version": "0.2.130",
         "requiredBy": [
-          "wasm-bindgen-macro 0.2.128"
+          "wasm-bindgen-macro 0.2.130"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "wasm-bindgen-shared",
-        "version": "0.2.128",
+        "version": "0.2.130",
         "requiredBy": [
-          "wasm-bindgen 0.2.128",
-          "wasm-bindgen-macro-support 0.2.128"
+          "wasm-bindgen 0.2.130",
+          "wasm-bindgen-macro-support 0.2.130"
         ]
       },
       {
@@ -81081,7 +81091,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "web-sys",
-        "version": "0.3.105",
+        "version": "0.3.107",
         "requiredBy": [
           "plotters 0.3.7",
           "reqwest 0.12.28",
@@ -81096,14 +81106,14 @@
         "requiredBy": [
           "quinn 0.11.12",
           "quinn-proto 0.11.19",
-          "rustls-pki-types 1.15.1"
+          "rustls-pki-types 1.16.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "webpki-roots",
-        "version": "1.0.10",
+        "version": "1.0.12",
         "requiredBy": [
           "hyper-rustls 0.27.10",
           "reqwest 0.12.28"
@@ -81125,7 +81135,7 @@
         "version": "0.1.11",
         "requiredBy": [
           "same-file 1.0.6",
-          "walkdir 2.5.0"
+          "walkdir 2.5.1"
         ]
       },
       {
@@ -81162,8 +81172,9 @@
         "version": "0.2.1",
         "requiredBy": [
           "chrono 0.4.45",
-          "jiff 0.2.37",
-          "libloading 0.9.0",
+          "jiff 0.2.46",
+          "jiff 1.0.3",
+          "libloading 0.9.1",
           "parking_lot_core 0.9.12",
           "windows-core 0.62.2",
           "windows-result 0.4.1",
@@ -81195,14 +81206,7 @@
         "name": "windows-sys",
         "version": "0.52.0",
         "requiredBy": [
-          "colored 3.1.1",
-          "errno 0.3.14",
-          "is-terminal 0.4.17",
-          "quinn-udp 0.5.16",
-          "ring 0.17.14",
-          "rustix 1.1.6",
-          "tempfile 3.27.0",
-          "winapi-util 0.1.11"
+          "ring 0.17.14"
         ]
       },
       {
@@ -81213,10 +81217,17 @@
         "requiredBy": [
           "anstyle-query 1.1.5",
           "anstyle-wincon 3.0.11",
+          "colored 3.1.1",
           "dirs-sys 0.5.0",
-          "mio 1.2.3",
+          "errno 0.3.15",
+          "is-terminal 0.4.17",
+          "mio 1.2.5",
+          "quinn-udp 0.5.16",
+          "rustix 1.1.6",
           "socket2 0.6.5",
-          "tokio 1.53.3"
+          "tempfile 3.27.0",
+          "tokio 1.54.1",
+          "winapi-util 0.1.11"
         ]
       },
       {
@@ -81313,11 +81324,11 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "winnow",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "requiredBy": [
-          "toml 1.1.6+spec-1.1.0",
-          "toml_edit 0.25.15+spec-1.1.0",
-          "toml_parser 1.1.3+spec-1.1.0"
+          "toml 1.2.3+spec-1.1.0",
+          "toml_edit 0.25.21+spec-1.1.0",
+          "toml_parser 1.1.7+spec-1.1.0"
         ]
       },
       {
@@ -81335,8 +81346,8 @@
         "name": "writeable",
         "version": "0.6.4",
         "requiredBy": [
-          "icu_locale_core 2.3.0",
-          "icu_provider 2.3.1"
+          "icu_locale_core 2.4.0",
+          "icu_provider 2.4.0"
         ]
       },
       {
@@ -81370,12 +81381,12 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "yoke",
-        "version": "0.8.3",
+        "version": "0.8.4",
         "requiredBy": [
-          "icu_collections 2.3.0",
-          "icu_provider 2.3.1",
+          "icu_collections 2.4.0",
+          "icu_provider 2.4.0",
           "zerotrie 0.2.5",
-          "zerovec 0.11.8"
+          "zerovec 0.11.9"
         ]
       },
       {
@@ -81384,16 +81395,16 @@
         "name": "yoke-derive",
         "version": "0.8.4",
         "requiredBy": [
-          "yoke 0.8.3"
+          "yoke 0.8.4"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy",
-        "version": "0.8.57",
+        "version": "0.8.66",
         "requiredBy": [
-          "ahash 0.8.12",
+          "ahash 0.8.14",
           "half 2.7.1",
           "ppv-lite86 0.2.21"
         ]
@@ -81402,9 +81413,9 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerocopy-derive",
-        "version": "0.8.57",
+        "version": "0.8.66",
         "requiredBy": [
-          "zerocopy 0.8.57"
+          "zerocopy 0.8.66"
         ]
       },
       {
@@ -81413,11 +81424,11 @@
         "name": "zerofrom",
         "version": "0.1.8",
         "requiredBy": [
-          "icu_collections 2.3.0",
-          "icu_provider 2.3.1",
-          "yoke 0.8.3",
+          "icu_collections 2.4.0",
+          "icu_provider 2.4.0",
+          "yoke 0.8.4",
           "zerotrie 0.2.5",
-          "zerovec 0.11.8"
+          "zerovec 0.11.9"
         ]
       },
       {
@@ -81433,7 +81444,7 @@
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zeroize",
-        "version": "1.9.0",
+        "version": "1.9.2",
         "requiredBy": [
           "ark-ec 0.5.0",
           "ark-ff 0.5.0",
@@ -81441,9 +81452,9 @@
           "merlin 3.0.0",
           "num-bigint-dig 0.8.6",
           "rsa 0.9.10",
-          "ruint 1.20.1",
+          "ruint 1.21.1",
           "rustls 0.23.46",
-          "rustls-pki-types 1.15.1"
+          "rustls-pki-types 1.16.0"
         ]
       },
       {
@@ -81452,7 +81463,7 @@
         "name": "zeroize_derive",
         "version": "1.5.0",
         "requiredBy": [
-          "zeroize 1.9.0"
+          "zeroize 1.9.2"
         ]
       },
       {
@@ -81461,41 +81472,41 @@
         "name": "zerotrie",
         "version": "0.2.5",
         "requiredBy": [
-          "icu_properties 2.3.0",
-          "icu_provider 2.3.1"
+          "icu_properties 2.4.0",
+          "icu_provider 2.4.0"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerovec",
-        "version": "0.11.8",
+        "version": "0.11.9",
         "requiredBy": [
-          "icu_collections 2.3.0",
-          "icu_locale_core 2.3.0",
-          "icu_normalizer 2.3.0",
-          "icu_properties 2.3.0",
-          "icu_provider 2.3.1",
+          "icu_collections 2.4.0",
+          "icu_locale_core 2.4.0",
+          "icu_normalizer 2.4.0",
+          "icu_properties 2.4.0",
+          "icu_provider 2.4.0",
           "potential_utf 0.1.6",
-          "tinystr 0.8.4"
+          "tinystr 0.8.5"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zerovec-derive",
-        "version": "0.11.6",
+        "version": "0.11.7",
         "requiredBy": [
-          "zerovec 0.11.8"
+          "zerovec 0.11.9"
         ]
       },
       {
         "ecosystem": "cargo",
         "source": "Cargo.lock",
         "name": "zlib-rs",
-        "version": "0.6.8",
+        "version": "0.6.9",
         "requiredBy": [
-          "flate2 1.1.10"
+          "flate2 1.1.11"
         ]
       },
       {
