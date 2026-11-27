@@ -1,10 +1,38 @@
 {
-  "scanned_at": "2026-11-27T01:36:34Z",
+  "scanned_at": "2026-11-27T14:54:18Z",
   "repos": 77,
-  "dependabot": [],
+  "dependabot": [
+    {
+      "repo": "wickra-playground",
+      "number": 47,
+      "title": "deps(npm): bump minimatch, eslint, @typescript-eslint/parser, @typescript-eslint/utils and typescript-eslint",
+      "url": "https://github.com/wickra-lib/wickra-playground/pull/47",
+      "created": "2026-11-27T10:10:37Z",
+      "failing": [],
+      "checks": 9
+    }
+  ],
   "waiting": 0,
   "people": [],
   "alerts": [
+    {
+      "repo": "wickra-terminal",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 123,
+      "url": "https://github.com/wickra-lib/wickra-terminal/security/code-scanning/123",
+      "created": "2026-11-27T03:54:43Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 113,
+      "url": "https://github.com/wickra-lib/wickra-exchange/security/code-scanning/113",
+      "created": "2026-11-27T02:44:10Z",
+      "title": "Scorecard: Pinned-Dependencies"
+    },
     {
       "repo": "wickra-playground",
       "kind": "Dependabot",
@@ -13,6 +41,42 @@
       "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/22",
       "created": "2026-11-26T06:29:40Z",
       "title": "minimatch in package-lock.json: minimatch has potential denial of service via globparts amplification"
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 12,
+      "url": "https://github.com/wickra-lib/wickra-exchange/security/code-scanning/12",
+      "created": "2026-07-02T04:51:31Z",
+      "title": "Scorecard: SAST"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 99,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/code-scanning/99",
+      "created": "2026-06-28T04:00:26Z",
+      "title": "Scorecard: SAST"
+    },
+    {
+      "repo": "wickra-backtest",
+      "kind": "code scanning",
+      "severity": "low",
+      "number": 372,
+      "url": "https://github.com/wickra-lib/wickra-backtest/security/code-scanning/372",
+      "created": "2026-11-27T02:48:53Z",
+      "title": "Scorecard: CI-Tests"
+    },
+    {
+      "repo": "wickra-exchange",
+      "kind": "code scanning",
+      "severity": "low",
+      "number": 13,
+      "url": "https://github.com/wickra-lib/wickra-exchange/security/code-scanning/13",
+      "created": "2026-07-02T04:51:31Z",
+      "title": "Scorecard: CI-Tests"
     },
     {
       "repo": ".github",
