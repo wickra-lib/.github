@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-11-27T14:54:18Z",
+  "scanned_at": "2026-11-28T00:27:02Z",
   "repos": 77,
   "dependabot": [
     {
@@ -41,6 +41,15 @@
       "url": "https://github.com/wickra-lib/wickra-playground/security/dependabot/22",
       "created": "2026-11-26T06:29:40Z",
       "title": "minimatch in package-lock.json: minimatch has potential denial of service via globparts amplification"
+    },
+    {
+      "repo": "wickra-proof",
+      "kind": "code scanning",
+      "severity": "medium",
+      "number": 8,
+      "url": "https://github.com/wickra-lib/wickra-proof/security/code-scanning/8",
+      "created": "2026-07-10T21:26:43Z",
+      "title": "Scorecard: SAST"
     },
     {
       "repo": "wickra-exchange",
