@@ -12,16 +12,16 @@
   <line x1="62" y1="46.0" x2="772" y2="46.0" stroke="#333a48" stroke-width="1"/>
   <line x1="62" y1="46" x2="62" y2="356" stroke="#8a93a6" stroke-width="1"/>
   <line x1="62" y1="356" x2="772" y2="356" stroke="#8a93a6" stroke-width="1"/>
-  <path d="M 62.0 356.0 C 71.1 321.6, 80.2 277.7, 89.3 252.7 C 109.4 197.4, 129.6 149.3, 149.7 149.3 C 357.1 149.3, 564.6 149.3, 772.0 149.3 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
-  <path d="M 62.0 356.0 C 71.1 321.6, 80.2 277.7, 89.3 252.7 C 109.4 197.4, 129.6 149.3, 149.7 149.3 C 357.1 149.3, 564.6 149.3, 772.0 149.3" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 62.0 356.0 C 71.1 321.6, 80.2 277.7, 89.3 252.7 C 109.4 197.4, 129.5 149.3, 149.6 149.3 C 357.1 149.3, 564.5 149.3, 772.0 149.3 L 772.0 356.0 L 62.0 356.0 Z" fill="#ffd866" fill-opacity="0.12"/>
+  <path d="M 62.0 356.0 C 71.1 321.6, 80.2 277.7, 89.3 252.7 C 109.4 197.4, 129.5 149.3, 149.6 149.3 C 357.1 149.3, 564.5 149.3, 772.0 149.3" fill="none" stroke="#ffd866" stroke-width="2" stroke-linejoin="round"/>
   <text x="50" y="362.0" fill="#8a93a6" font-size="17" text-anchor="end">0</text>
   <text x="50" y="258.7" fill="#8a93a6" font-size="17" text-anchor="end">1</text>
   <text x="50" y="155.3" fill="#8a93a6" font-size="17" text-anchor="end">2</text>
   <text x="50" y="52.0" fill="#8a93a6" font-size="17" text-anchor="end">3</text>
-  <text x="176.6" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
-  <text x="331.8" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Sep 2026</text>
-  <text x="481.9" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Oct 2026</text>
-  <text x="637.1" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Nov 2026</text>
+  <text x="176.5" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Aug 2026</text>
+  <text x="331.3" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Sep 2026</text>
+  <text x="481.2" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Oct 2026</text>
+  <text x="636.1" y="380" fill="#8a93a6" font-size="15" text-anchor="middle">Nov 2026</text>
   </g>
   </g>
 </svg>
