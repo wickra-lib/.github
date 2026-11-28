@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-11-27T23:39:30Z",
+  "scanned_at": "2026-11-28T08:13:29Z",
   "org": "wickra-lib",
   "token": "GITHUB_TOKEN",
   "skipped": [],
@@ -18,10 +18,10 @@
     {
       "repo": ".github",
       "branch": "main",
-      "sha": "9d2e76bb",
-      "full_sha": "9d2e76bbd7207880c504c926ee4d82ee78777069",
+      "sha": "c66dec0d",
+      "full_sha": "c66dec0d71f2d9dcae5694ab5e90b5bb33fd4bac",
       "subject": "chore: refresh version snapshot",
-      "committed_at": "2026-11-27T23:01:41Z",
+      "committed_at": "2026-11-28T05:02:04Z",
       "passed": [],
       "failed": [],
       "running": [
@@ -38,6 +38,8 @@
       "subject": "chore: sync the indicator counts and the released version (2.2.1)",
       "committed_at": "2026-11-27T22:57:25Z",
       "passed": [
+        "Pull the counts and the released version",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -225,6 +227,7 @@
       "committed_at": "2026-11-27T14:22:20Z",
       "passed": [
         "Pull the released engine versions",
+        "Pull the released engine versions",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -240,6 +243,8 @@
       "subject": "chore: sync the released version to 0.2.3 and the indicator counts",
       "committed_at": "2026-11-27T22:55:46Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -365,11 +370,12 @@
     {
       "repo": "wickra-benchmark-site",
       "branch": "main",
-      "sha": "fd7e35d4",
-      "full_sha": "fd7e35d4dab9f3d2c964f07e8b756662e44648be",
-      "subject": "chore: sync the released version to 0.2.3 and the indicator counts",
-      "committed_at": "2026-11-27T22:55:34Z",
+      "sha": "6f57f071",
+      "full_sha": "6f57f0712dc64566578095a296f90271d0513ff3",
+      "subject": "chore: refresh status badge snapshots",
+      "committed_at": "2026-11-28T02:42:21Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -479,6 +485,8 @@
       "subject": "chore: sync the released version to 0.2.1 and the indicator counts",
       "committed_at": "2026-11-27T22:57:44Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -588,6 +596,8 @@
       "subject": "chore: sync the released version to 0.2.1 and the indicator counts",
       "committed_at": "2026-11-27T22:57:30Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -693,11 +703,12 @@
     {
       "repo": "wickra-darwin-site",
       "branch": "main",
-      "sha": "8f30d26d",
-      "full_sha": "8f30d26d9e66fc96aa27d2a1b109792388524669",
-      "subject": "chore: sync the released version to 0.2.2 and the indicator counts",
-      "committed_at": "2026-11-27T22:54:28Z",
+      "sha": "e24a7992",
+      "full_sha": "e24a79923df7b6b38e60cb0aea5c0a4743660e85",
+      "subject": "chore: refresh status badge snapshots",
+      "committed_at": "2026-11-28T03:55:25Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -713,6 +724,8 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-27T23:33:11Z",
       "passed": [
+        "refresh",
+        "Pull the counts and the released version",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -772,6 +785,8 @@
       "subject": "chore: sync the released version to 0.1.4 and the indicator counts",
       "committed_at": "2026-11-27T22:54:33Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -880,6 +895,8 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-27T23:25:54Z",
       "passed": [
+        "refresh",
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -990,6 +1007,8 @@
       "subject": "chore: sync the released version to 0.2.1 and the indicator counts",
       "committed_at": "2026-11-27T22:58:18Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1100,6 +1119,8 @@
       "subject": "chore: sync the released version to 0.2.1 and the indicator counts",
       "committed_at": "2026-11-27T22:55:42Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1609,10 +1630,10 @@
     {
       "repo": "wickra-gym-site",
       "branch": "main",
-      "sha": "a83e578a",
-      "full_sha": "a83e578a68a2f3e2a9a3edbbf5638baa8c60467c",
+      "sha": "806095d4",
+      "full_sha": "806095d463f5f55216b2ccb1f2cd2cc099e44d53",
       "subject": "chore: refresh status badge snapshots",
-      "committed_at": "2026-11-27T20:08:18Z",
+      "committed_at": "2026-11-28T01:59:51Z",
       "passed": [
         "Pull the released version and the indicator counts",
         "Cloudflare Pages"
@@ -1768,6 +1789,8 @@
       "subject": "chore: refresh status badge snapshots",
       "committed_at": "2026-11-27T23:25:53Z",
       "passed": [
+        "refresh",
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1798,6 +1821,8 @@
       "subject": "chore: follow the released engine versions and the indicator count",
       "committed_at": "2026-11-27T22:54:49Z",
       "passed": [
+        "Pull the released engine versions and the indicator count",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1861,6 +1886,8 @@
       "committed_at": "2026-11-27T22:54:38Z",
       "passed": [
         "refresh",
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1876,6 +1903,8 @@
       "subject": "chore: follow the released engine versions",
       "committed_at": "2026-11-27T20:09:21Z",
       "passed": [
+        "Build and prove the wheel",
+        "Pull the released engine versions",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -1891,6 +1920,8 @@
       "subject": "deps(actions): bump the github-actions group with 2 updates (#15)",
       "committed_at": "2026-11-01T17:00:43Z",
       "passed": [
+        "Pull the indicator counts",
+        "refresh",
         "Pull the indicator counts",
         "refresh",
         "Pull the indicator counts",
@@ -2226,11 +2257,12 @@
     {
       "repo": "wickra-proof-site",
       "branch": "main",
-      "sha": "224a5503",
-      "full_sha": "224a5503bdf93652181eeda2dd61b5683c62487e",
-      "subject": "chore: sync the released version to 0.2.3 and the indicator counts",
-      "committed_at": "2026-11-27T22:55:34Z",
+      "sha": "1fc7974e",
+      "full_sha": "1fc7974e27da735977247e3c3aabf5310cad8772",
+      "subject": "chore: refresh status badge snapshots",
+      "committed_at": "2026-11-28T01:58:52Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -2338,6 +2370,8 @@
       "committed_at": "2026-11-27T22:56:37Z",
       "passed": [
         "refresh",
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -2440,11 +2474,12 @@
     {
       "repo": "wickra-screener-site",
       "branch": "main",
-      "sha": "6d4b5ae2",
-      "full_sha": "6d4b5ae2671ccfcaac1a5ec6c8080f5c4b81355d",
-      "subject": "chore: sync the released version to 0.3.3 and the indicator counts",
-      "committed_at": "2026-11-27T22:54:47Z",
+      "sha": "eeca7ee3",
+      "full_sha": "eeca7ee3c66650e909c6f5caf5b61ffafb4b1461",
+      "subject": "chore: refresh status badge snapshots",
+      "committed_at": "2026-11-28T01:58:52Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -2554,6 +2589,8 @@
       "subject": "chore: sync the released version to 0.2.1 and the indicator counts",
       "committed_at": "2026-11-27T22:54:29Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -2656,11 +2693,12 @@
     {
       "repo": "wickra-strategy-ci-site",
       "branch": "main",
-      "sha": "e3f96b8a",
-      "full_sha": "e3f96b8a02250c5fb4e82b9f41a121188d578188",
-      "subject": "chore: sync the released version to 0.2.3 and the indicator counts",
-      "committed_at": "2026-11-27T22:54:33Z",
+      "sha": "bba4b28b",
+      "full_sha": "bba4b28b966400cf0c0ad36d2e3d8d924d69bfc2",
+      "subject": "chore: refresh status badge snapshots",
+      "committed_at": "2026-11-28T01:57:11Z",
       "passed": [
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -2772,6 +2810,8 @@
       "subject": "chore: sync the released version to 0.2.3 and the indicator counts",
       "committed_at": "2026-11-27T22:55:37Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -2885,6 +2925,8 @@
       "committed_at": "2026-11-27T22:57:34Z",
       "passed": [
         "refresh",
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -2995,6 +3037,8 @@
       "subject": "chore: sync the released version to 0.2.1 and the indicator counts",
       "committed_at": "2026-11-27T22:55:29Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -3111,6 +3155,8 @@
         "Pull the released version and the indicator counts",
         "refresh",
         "Pull the released version and the indicator counts",
+        "refresh",
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -3222,6 +3268,8 @@
       "subject": "chore: sync the released version to 0.2.1 and the indicator counts",
       "committed_at": "2026-11-27T19:50:52Z",
       "passed": [
+        "Pull the released version and the indicator counts",
+        "refresh",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -3339,6 +3387,8 @@
       "committed_at": "2026-11-27T22:01:56Z",
       "passed": [
         "Pull the released version and the indicator counts",
+        "refresh",
+        "Pull the released version and the indicator counts",
         "Cloudflare Pages"
       ],
       "failed": [],
@@ -3366,16 +3416,16 @@
     {
       "kind": "actions",
       "repo": ".github",
-      "id": 46083584699,
+      "id": 46124693377,
       "attempt": 1,
       "name": "Refresh main status",
       "title": "Refresh main status",
       "event": "schedule",
       "branch": "main",
-      "sha": "9d2e76bb",
+      "sha": "c66dec0d",
       "status": "in_progress",
-      "started_at": "2026-11-27T23:38:07Z",
-      "url": "https://github.com/wickra-lib/.github/actions/runs/46083584699",
+      "started_at": "2026-11-28T08:12:07Z",
+      "url": "https://github.com/wickra-lib/.github/actions/runs/46124693377",
       "stranded": false
     },
     {
